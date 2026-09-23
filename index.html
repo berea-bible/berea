@@ -187,6 +187,8 @@ a{ color:var(--accent); }
 .cmp-text{ font-family:'Source Serif 4',serif; font-size:.98rem; line-height:1.65; }
 .cmp-item.primary .cmp-code{ color:var(--gold); }
 .cmp-item.primary{ background:var(--gold-soft); margin:0 -18px; padding:13px 18px; border-bottom-color:transparent; }
+.cmp-item.live .cmp-code{ color:#5B8A3A; }
+.cmp-live-tag{ font-size:.62rem; background:var(--accent-soft); color:var(--accent); border-radius:10px; padding:1px 7px; font-weight:700; letter-spacing:.02em; }
 
 .interlinear-note{ font-size:.76rem; color:var(--ink-faint); margin:0 0 14px; line-height:1.5; }
 .iword{
@@ -249,7 +251,7 @@ a{ color:var(--accent); }
 <div id="app">
   <nav id="nav">
     <div class="nav-head">
-      <div class="brand"><em>Berea</em></div>
+      <div class="brand">Berea</div>
       <button id="themeBtn" title="Toggle theme">&#9788;</button>
     </div>
     <div id="bookList"></div>
@@ -369,6 +371,72 @@ let INDEX = null;
 const bookCache = {};
 let lexicon = null, lexiconPromise = null;
 
+/* ---------- NASB (live, via a Cloudflare Worker proxy in front of api.bible) ----------
+   The proxy holds the api.bible key server-side, so nothing secret ever reaches
+   this file or this browser. Fill these in once the Worker is deployed —
+   see cloudflare-worker/ and the README for setup. Leaving proxyUrl empty simply
+   hides the NASB option, so the rest of the app works fine without it. */
+const NASB_CONFIG = {
+  proxyUrl: 'https://berea.tommymcmichen-0ac.workers.dev/',
+  bibleId: 'b8ee27bcd1cae43a-01'
+};
+function nasbAvailable(){ return !!(NASB_CONFIG.proxyUrl && NASB_CONFIG.bibleId); }
+
+const USFM_ID = {
+  matt:'MAT', mark:'MRK', luke:'LUK', john:'JHN', acts:'ACT', rom:'ROM',
+  '1cor':'1CO', '2cor':'2CO', gal:'GAL', eph:'EPH', phil:'PHP', col:'COL',
+  '1thess':'1TH', '2thess':'2TH', '1tim':'1TI', '2tim':'2TI', titus:'TIT',
+  phlm:'PHM', heb:'HEB', jas:'JAS', '1pet':'1PE', '2pet':'2PE',
+  '1jn':'1JN', '2jn':'2JN', '3jn':'3JN', jude:'JUD', rev:'REV'
+};
+function translationCodes(){
+  const codes = Object.keys(INDEX.translations);
+  if(nasbAvailable()) codes.push('NASB');
+  return codes;
+}
+function translationName(code){
+  return code === 'NASB' ? 'New American Standard Bible (1995, live)' : INDEX.translations[code];
+}
+
+const nasbChapterCache = {}; // "bookId.chapter" -> Promise<{verse:text}>
+async function ensureNasbChapter(bookId, chapter){
+  if(!nasbAvailable()) throw new Error('NASB proxy not configured');
+  const key = bookId + '.' + chapter;
+  if(nasbChapterCache[key]) return nasbChapterCache[key];
+  const promise = (async ()=>{
+    const meta = bookMeta(bookId);
+    const count = (meta.verseCounts && meta.verseCounts[String(chapter)]) || 0;
+    const usfm = USFM_ID[bookId];
+    const verses = {};
+    const nums = []; for(let v=1; v<=count; v++) nums.push(v);
+    const batchSize = 8;
+    for(let i=0; i<nums.length; i+=batchSize){
+      const batch = nums.slice(i, i+batchSize);
+      await Promise.all(batch.map(async v=>{
+        const vid = usfm + '.' + chapter + '.' + v;
+        const url = NASB_CONFIG.proxyUrl.replace(/\/$/,'') + '/v1/bibles/' + encodeURIComponent(NASB_CONFIG.bibleId) +
+          '/verses/' + encodeURIComponent(vid) +
+          '?content-type=text&include-verse-numbers=false&include-notes=false&include-titles=false&include-chapter-numbers=false';
+        const res = await fetch(url);
+        if(!res.ok) throw new Error('NASB request failed (' + res.status + ')');
+        const data = await res.json();
+        let text = (data && data.data && data.data.content) || '';
+        text = text.replace(/\s+/g, ' ').trim();
+        if(text) verses[String(v)] = text;
+      }));
+    }
+    const book = bookCache[bookId];
+    if(book){
+      book.translations.NASB = book.translations.NASB || {};
+      book.translations.NASB[String(chapter)] = verses;
+    }
+    return verses;
+  })();
+  nasbChapterCache[key] = promise;
+  promise.catch(()=>{ delete nasbChapterCache[key]; }); // allow retry after failure
+  return promise;
+}
+
 async function fetchJSON(path){
   const res = await fetch(path);
   if(!res.ok) throw new Error('Failed to load '+path);
@@ -423,15 +491,24 @@ function renderNav(){
     btn.addEventListener('click', ()=> selectBook(b.id, 1));
     el.bookList.appendChild(btn);
   });
-  el.navFoot.textContent = INDEX.fatherAuthorCount + ' early patristic authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
-
+  el.navFoot.textContent = INDEX.fatherAuthorCount + ' early patristic authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
+  renderTranslationSelect();
+}
+function renderTranslationSelect(){
+  const prev = el.translationSelect.value;
   el.translationSelect.innerHTML = '';
   Object.keys(INDEX.translations).forEach(code=>{
     const opt = document.createElement('option');
     opt.value = code; opt.textContent = code + ' — ' + INDEX.translations[code];
-    if(code === state.translation) opt.selected = true;
     el.translationSelect.appendChild(opt);
   });
+  if(nasbAvailable()){
+    const nasbOpt = document.createElement('option');
+    nasbOpt.value = 'NASB';
+    nasbOpt.textContent = 'NASB — New American Standard (1995, live)';
+    el.translationSelect.appendChild(nasbOpt);
+  }
+  el.translationSelect.value = (prev && [...el.translationSelect.options].some(o=>o.value===prev)) ? prev : state.translation;
 }
 function markActiveBook(){
   [...el.bookList.children].forEach(btn=>{
@@ -461,7 +538,7 @@ async function selectBook(id, chapter){
   el.readingInner.innerHTML = '<div class="loading">Loading '+bookMeta(id).name+'&hellip;</div>';
   await loadBook(id);
   populateChapterSelect();
-  renderChapter();
+  await showChapter();
   savePrefs();
 }
 async function selectChapter(c){
@@ -469,8 +546,36 @@ async function selectChapter(c){
   closePanel();
   await loadBook(state.bookId);
   populateChapterSelect();
-  renderChapter();
+  await showChapter();
   savePrefs();
+}
+async function showChapter(){
+  if(state.translation === 'NASB' && !nasbAvailable()){
+    state.translation = 'KJV';
+    el.translationSelect.value = 'KJV';
+  }
+  if(state.translation === 'NASB'){
+    el.chapterTitle.innerHTML = bookMeta(state.bookId).name + ' <span class="num">' + state.chapter + '</span>';
+    el.readingInner.innerHTML = '<div class="loading">Fetching NASB&hellip;</div>';
+    try{
+      await ensureNasbChapter(state.bookId, state.chapter);
+    }catch(e){
+      el.readingInner.innerHTML =
+        '<div class="loading" style="max-width:440px;margin:60px auto 0;line-height:1.6">'+
+        'Couldn\'t load the NASB (' + escapeHtml(e.message||'') + ').<br><br>'+
+        '<button id="nasbRetryLink" class="text-btn" style="display:inline;background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;font-size:inherit">Try again</button>'+
+        ' or <button id="nasbFallbackLink" class="text-btn" style="display:inline;background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;font-size:inherit">switch to KJV</button>.'+
+        '</div>';
+      const retry = document.getElementById('nasbRetryLink');
+      if(retry) retry.addEventListener('click', ()=> showChapter());
+      const fallback = document.getElementById('nasbFallbackLink');
+      if(fallback) fallback.addEventListener('click', ()=>{
+        state.translation = 'KJV'; el.translationSelect.value = 'KJV'; showChapter(); savePrefs();
+      });
+      return;
+    }
+  }
+  renderChapter();
 }
 function renderChapter(){
   const book = bookCache[state.bookId];
@@ -484,7 +589,7 @@ function renderChapter(){
   el.chapterTitle.innerHTML = meta.name + ' <span class="num">' + state.chapter + '</span>';
 
   let html = '<h2 class="chapter-heading">'+meta.name+' '+state.chapter+'</h2>';
-  html += '<p class="chapter-sub">'+state.translation+' &middot; tap a verse number to compare translations, read the Greek, or see commentaries from the early church</p>';
+  html += '<p class="chapter-sub">'+state.translation+' &middot; tap a verse number to compare translations, read the Greek, or see the church fathers</p>';
 
   verseNums.forEach(vn=>{
     const vs = String(vn);
@@ -521,22 +626,34 @@ function escapeHtml(s){
 }
 
 /* ---------- verse detail panel ---------- */
-function openVerse(vn){
+async function openVerse(vn){
   state.selectedVerse = vn;
   [...el.readingInner.querySelectorAll('.verse')].forEach(v=> v.classList.toggle('selected', parseInt(v.dataset.v,10)===vn));
-  const book = bookCache[state.bookId];
   const meta = bookMeta(state.bookId);
   const ch = String(state.chapter), vs = String(vn);
 
   el.panelRef.textContent = meta.name + ' ' + state.chapter + ':' + vs;
+  el.paneCompare.innerHTML = '<div class="loading" style="padding:30px 0">Loading&hellip;</div>';
+  showTab('compare');
+  openPanel();
+
+  if(nasbAvailable()){
+    try{ await ensureNasbChapter(state.bookId, state.chapter); }
+    catch(e){ /* fall through — compare tab just omits NASB for this verse */ }
+  }
+  if(state.selectedVerse !== vn) return; // user moved on while we were fetching
+
+  const book = bookCache[state.bookId];
 
   /* Compare tab */
   let cmp = '';
-  Object.keys(INDEX.translations).forEach(code=>{
+  translationCodes().forEach(code=>{
     const text = ((book.translations[code]||{})[ch]||{})[vs];
     if(!text) return;
-    cmp += '<div class="cmp-item'+(code===state.translation?' primary':'')+'">'+
-      '<div class="cmp-label"><span class="cmp-code">'+code+'</span><span class="cmp-name">'+INDEX.translations[code]+'</span></div>'+
+    const isLive = code === 'NASB';
+    cmp += '<div class="cmp-item'+(code===state.translation?' primary':'')+(isLive?' live':'')+'">'+
+      '<div class="cmp-label"><span class="cmp-code">'+code+'</span><span class="cmp-name">'+translationName(code)+'</span>'+
+      (isLive ? '<span class="cmp-live-tag">LIVE</span>' : '')+'</div>'+
       '<div class="cmp-text">'+escapeHtml(text)+'</div></div>';
   });
   el.paneCompare.innerHTML = cmp || '<div class="empty-state">No text found for this verse.</div>';
@@ -574,11 +691,8 @@ function openVerse(vn){
       '</div>'
     ).join('');
   } else {
-    el.paneFathers.innerHTML = '<div class="empty-state">No surviving citations from this era (c. 100–800 AD) are indexed for this verse yet.</div>';
+    el.paneFathers.innerHTML = '<div class="empty-state">No surviving citations from this era (c. 100–800 AD) are indexed for this verse yet.</div>';
   }
-
-  showTab('compare');
-  openPanel();
 }
 function showTab(name){
   document.querySelectorAll('.tab-btn').forEach(b=> b.classList.toggle('active', b.dataset.pane===name));
@@ -638,9 +752,9 @@ el.lexBackdrop.addEventListener('click', hideLexicon);
 window.addEventListener('resize', ()=>{ if(el.lexPop.classList.contains('show')) hideLexicon(); });
 
 /* ---------- top bar controls ---------- */
-el.translationSelect.addEventListener('change', ()=>{
+el.translationSelect.addEventListener('change', async ()=>{
   state.translation = el.translationSelect.value;
-  renderChapter();
+  await showChapter();
   if(state.selectedVerse) openVerse(state.selectedVerse);
   savePrefs();
 });
@@ -672,7 +786,7 @@ async function boot(){
   const meta = bookMeta(state.bookId);
   if(state.chapter > meta.chapters) state.chapter = 1;
   populateChapterSelect();
-  renderChapter();
+  await showChapter();
 }
 boot();
 
