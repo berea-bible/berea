@@ -80,12 +80,12 @@
 .chapter-heading{ font-family:'Spectral',serif; font-size:1.7rem; font-weight:700; margin:0 0 4px; }
 .chapter-sub{ color:var(--ink-dim); font-size:.85rem; margin:0 0 28px; }
 
-.verse{ display:flex; gap:12px; margin-bottom:2px; padding:5px 10px 5px 0; border-radius:9px; scroll-margin-top:20px; }
+.verse{ display:flex; align-items:baseline; gap:12px; margin-bottom:2px; padding:5px 10px 5px 0; border-radius:9px; scroll-margin-top:20px; }
 .verse:hover{ background:var(--surface-2); }
 .verse.selected{ background:var(--accent-soft); }
 .vnum{
   flex:none; width:30px; text-align:right; font-variant-numeric:tabular-nums;
-  color:var(--ink-faint); font-size:.78rem; padding-top:.32em; cursor:pointer; border:none; background:none;
+  color:var(--ink-faint); font-size:.78rem; cursor:pointer; border:none; background:none;
   font-family:'Inter',sans-serif;
 }
 .verse:hover .vnum, .verse.selected .vnum{ color:var(--accent); font-weight:600; }
