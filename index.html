@@ -9,31 +9,39 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
 </script>
 
 <div id="app">
-  <nav id="nav">
-    <div class="nav-head">
-      <div class="brand">Berea</div>
-      <button id="themeBtn" title="Toggle theme">&#9788;</button>
-    </div>
-    <div id="bookList"></div>
-    <div class="nav-foot" id="navFoot">Loading library…</div>
-  </nav>
-
   <div id="main">
     <div id="topbar">
-      <button id="navToggle" aria-label="Books">&#9776;</button>
-      <div class="chapter-title" id="chapterTitle">&nbsp;</div>
-      <label id="interlinearToggle"><input type="checkbox" id="interlinearCheck"> Greek line</label>
-      <select id="translationSelect"></select>
+      <div class="brand">Berea</div>
       <div id="chapterNav">
         <button class="step-btn" id="prevCh" title="Previous chapter">&#8592;</button>
-        <select id="chapterSelect"></select>
+        <div class="picker-wrap">
+          <button class="picker-btn book" id="bookBtn" aria-haspopup="true" aria-expanded="false"><span id="bookLabel">&nbsp;</span><span class="caret">&#9662;</span></button>
+          <div class="picker" id="bookPicker" role="dialog" aria-label="Choose a book">
+            <div class="picker-head"><span>Books</span><button class="picker-close" aria-label="Close">&#10005;</button></div>
+            <div class="picker-body book-grid" id="bookList"></div>
+            <div class="picker-foot" id="navFoot">Loading library…</div>
+          </div>
+        </div>
+        <div class="picker-wrap">
+          <button class="picker-btn" id="chapterBtn" aria-haspopup="true" aria-expanded="false"><span id="chapterLabel">&nbsp;</span><span class="caret">&#9662;</span></button>
+          <div class="picker" id="chapterPicker" role="dialog" aria-label="Choose a chapter">
+            <div class="picker-head"><span id="chapterPickerTitle">Chapters</span><button class="picker-close" aria-label="Close">&#10005;</button></div>
+            <div class="picker-body chapter-grid" id="chapterList"></div>
+          </div>
+        </div>
         <button class="step-btn" id="nextCh" title="Next chapter">&#8594;</button>
       </div>
+      <div id="readOpts">
+        <label id="interlinearToggle"><input type="checkbox" id="interlinearCheck"> Greek line</label>
+        <select id="translationSelect"></select>
+      </div>
+      <button id="themeBtn" title="Toggle theme">&#9788;</button>
     </div>
     <div id="reading"><div id="readingInner"><div class="loading">Loading the library&hellip;</div></div></div>
   </div>
 </div>
 
+<div id="pickerBackdrop"></div>
 <div id="overlay"></div>
 <aside id="panel">
   <div class="panel-head">

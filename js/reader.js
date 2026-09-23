@@ -1,10 +1,29 @@
-/* Reader: book nav rail, top-bar controls, and the chapter reading pane. */
+/* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
 import { INDEX, bookCache, bookMeta, loadBook, nasbAvailable, ensureNasbChapter } from './data.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon } from './greek.js';
 
-/* ---------- nav ---------- */
+/* ---------- book / chapter pickers ---------- */
+const pickers = [[el.bookBtn, el.bookPicker], [el.chapterBtn, el.chapterPicker]];
+function openPicker(btn, picker){
+  closePickers();
+  picker.classList.add('show'); btn.setAttribute('aria-expanded', 'true');
+  el.pickerBackdrop.classList.add('show');
+  const active = picker.querySelector('.active');
+  if(active){ active.scrollIntoView({block:'nearest'}); active.focus({preventScroll:true}); }
+}
+function closePickers(){
+  pickers.forEach(([btn, picker])=>{ picker.classList.remove('show'); btn.setAttribute('aria-expanded', 'false'); });
+  el.pickerBackdrop.classList.remove('show');
+}
+pickers.forEach(([btn, picker])=>{
+  btn.addEventListener('click', ()=> picker.classList.contains('show') ? closePickers() : openPicker(btn, picker));
+  picker.querySelector('.picker-close').addEventListener('click', closePickers);
+});
+el.pickerBackdrop.addEventListener('click', closePickers); // swallows the dismiss click so it doesn't hit the page
+document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closePickers(); });
+
 export function renderNav(){
   el.bookList.innerHTML = '';
   INDEX.books.forEach(b=>{
@@ -12,7 +31,7 @@ export function renderNav(){
     btn.className = 'book-btn' + (b.id === state.bookId ? ' active' : '');
     btn.dataset.id = b.id;
     btn.innerHTML = '<span>'+b.name+'</span>' + (b.fatherVerseCount ? '<span class="fcount">'+b.fatherVerseCount+'</span>' : '');
-    btn.addEventListener('click', ()=> selectBook(b.id, 1));
+    btn.addEventListener('click', ()=>{ closePickers(); selectBook(b.id, 1); });
     el.bookList.appendChild(btn);
   });
   el.navFoot.textContent = INDEX.fatherAuthorCount + ' early church authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
@@ -40,14 +59,18 @@ function markActiveBook(){
   });
 }
 
-export function populateChapterSelect(){
+export function populateChapterPicker(){
   const meta = bookMeta(state.bookId);
-  el.chapterSelect.innerHTML = '';
+  el.bookLabel.textContent = meta.name;
+  el.chapterLabel.textContent = state.chapter;
+  el.chapterPickerTitle.textContent = meta.name;
+  el.chapterList.innerHTML = '';
   for(let c=1; c<=meta.chapters; c++){
-    const opt = document.createElement('option');
-    opt.value = c; opt.textContent = 'Chapter ' + c;
-    if(c === state.chapter) opt.selected = true;
-    el.chapterSelect.appendChild(opt);
+    const btn = document.createElement('button');
+    btn.className = 'ch-btn' + (c === state.chapter ? ' active' : '');
+    btn.textContent = c;
+    btn.addEventListener('click', ()=>{ closePickers(); selectChapter(c); });
+    el.chapterList.appendChild(btn);
   }
   el.prevCh.disabled = state.chapter <= 1;
   el.nextCh.disabled = state.chapter >= meta.chapters;
@@ -56,19 +79,19 @@ export function populateChapterSelect(){
 /* ---------- reading pane ---------- */
 async function selectBook(id, chapter){
   state.bookId = id; state.chapter = chapter || 1; state.selectedVerse = null;
-  closeNavMobile(); closePanel();
+  closePanel();
   markActiveBook();
+  populateChapterPicker();
   el.readingInner.innerHTML = '<div class="loading">Loading '+bookMeta(id).name+'&hellip;</div>';
   await loadBook(id);
-  populateChapterSelect();
   await showChapter();
   savePrefs();
 }
 async function selectChapter(c){
   state.chapter = c; state.selectedVerse = null;
   closePanel();
+  populateChapterPicker();
   await loadBook(state.bookId);
-  populateChapterSelect();
   await showChapter();
   savePrefs();
 }
@@ -78,7 +101,6 @@ export async function showChapter(){
     el.translationSelect.value = 'KJV';
   }
   if(state.translation === 'NASB'){
-    el.chapterTitle.innerHTML = bookMeta(state.bookId).name + ' <span class="num">' + state.chapter + '</span>';
     el.readingInner.innerHTML = '<div class="loading">Fetching NASB&hellip;</div>';
     try{
       await ensureNasbChapter(state.bookId, state.chapter);
@@ -108,8 +130,6 @@ function renderChapter(){
   const verseNums = Object.keys(verses).map(Number).sort((a,b)=>a-b);
   const greekCh = book.greek[ch] || {};
   const fathersCh = book.fathers[ch] || {};
-
-  el.chapterTitle.innerHTML = meta.name + ' <span class="num">' + state.chapter + '</span>';
 
   let html = '<h2 class="chapter-heading">'+meta.name+' '+state.chapter+'</h2>';
   html += '<p class="chapter-sub">'+state.translation+' &middot; tap a verse number to compare translations, read the Greek, or see commentaries from the early church</p>';
@@ -152,9 +172,6 @@ el.translationSelect.addEventListener('change', async ()=>{
   if(state.selectedVerse) openVerse(state.selectedVerse);
   savePrefs();
 });
-el.chapterSelect.addEventListener('change', ()=> selectChapter(parseInt(el.chapterSelect.value,10)));
 el.prevCh.addEventListener('click', ()=>{ if(state.chapter>1) selectChapter(state.chapter-1); });
 el.nextCh.addEventListener('click', ()=>{ const m=bookMeta(state.bookId); if(state.chapter<m.chapters) selectChapter(state.chapter+1); });
 el.interlinearCheck.addEventListener('change', ()=>{ state.showGreek = el.interlinearCheck.checked; renderChapter(); savePrefs(); });
-el.navToggle.addEventListener('click', ()=> el.nav.classList.toggle('show'));
-function closeNavMobile(){ el.nav.classList.remove('show'); }

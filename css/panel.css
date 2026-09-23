@@ -6,11 +6,11 @@
 #overlay.show{ opacity:1; pointer-events:auto; }
 #panel{
   position:fixed; top:0; right:0; bottom:0; width:440px; max-width:92vw; background:var(--surface);
-  border-left:1px solid var(--border); box-shadow:var(--shadow); transform:translateX(100%);
+  border-left:1px solid var(--border); transform:translateX(100%);
   transition:transform .25s ease; z-index:21; display:flex; flex-direction:column;
   padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
-#panel.show{ transform:translateX(0); }
+#panel.show{ transform:translateX(0); box-shadow:var(--shadow); }
 .panel-head{ padding:16px 18px 0; flex:none; }
 .panel-head-row{ display:flex; align-items:center; justify-content:space-between; }
 .panel-ref{ font-family:'Spectral',serif; font-weight:700; font-size:1.25rem; }

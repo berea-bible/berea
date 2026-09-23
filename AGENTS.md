@@ -17,7 +17,8 @@ index.html Markup only; links the stylesheets and loads js/main.js.
 css/
 base.css Theme tokens (light/dark), reset, typography,
 shared .loading/.empty-state.
-reader.css App shell, nav rail, top bar, reading column,
+reader.css App shell, top bar with book/chapter pickers,
+reading column,
 Greek line, mobile layout.
 panel.css Verse detail panel and lexicon popover.
 js/ Native ES modules, no bundler.
@@ -26,7 +27,8 @@ app.js Shared core: `state`, prefs, DOM refs (`el`),
 escapeHtml.
 data.js Fetching/caching of data/*.json, NASB proxy
 (`NASB_CONFIG`, `USFM_ID`, ensureNasbChapter).
-reader.js Nav rail, top-bar controls, chapter rendering.
+reader.js Book/chapter pickers (dropdown; full-screen
+at <=640px), top-bar controls, chapter rendering.
 panel.js Verse detail panel (Compare/Greek/Commentary).
 greek.js Morphology decoder and lexicon popover.
 data/ Static JSON the app fetches at runtime.
@@ -81,7 +83,7 @@ that scheme.
   appear in the data, extend the `MORPH_*` lookup tables rather than
   special-casing strings elsewhere.
 - Book IDs (`matt`, `mark`, ..., `rev`) are the canonical identifiers used
-  across `data/`, `USFM_ID` (for NASB/api.bible lookups), and the nav.
+  across `data/`, `USFM_ID` (for NASB/api.bible lookups), and the book picker.
   Don't introduce a second book-naming scheme.
 
 ## Working with `cloudflare-worker/worker.js`
@@ -129,7 +131,8 @@ locally and exercising the app in a browser (or headless via Playwright):
 python3 -m http.server 8000
 ```
 
-Then verify: chapter navigation, translation switching, the Greek
+Then verify: book/chapter pickers (desktop dropdown and full-screen at
+phone width), prev/next chapter, translation switching, the Greek
 interlinear toggle, the verse detail panel's three tabs (Compare / Greek /
 Fathers), and the lexicon popover on a Greek word click. If NASB config is
 empty, confirm NASB is absent from the translation list and nothing throws

@@ -22,12 +22,17 @@ export const state = { bookId: prefs.bookId || 'john', chapter: prefs.chapter ||
 
 /* ---------- elements ---------- */
 export const el = {
-  nav: document.getElementById('nav'),
+  bookBtn: document.getElementById('bookBtn'),
+  bookLabel: document.getElementById('bookLabel'),
+  bookPicker: document.getElementById('bookPicker'),
   bookList: document.getElementById('bookList'),
   navFoot: document.getElementById('navFoot'),
-  navToggle: document.getElementById('navToggle'),
-  chapterTitle: document.getElementById('chapterTitle'),
-  chapterSelect: document.getElementById('chapterSelect'),
+  chapterBtn: document.getElementById('chapterBtn'),
+  chapterLabel: document.getElementById('chapterLabel'),
+  chapterPicker: document.getElementById('chapterPicker'),
+  chapterPickerTitle: document.getElementById('chapterPickerTitle'),
+  chapterList: document.getElementById('chapterList'),
+  pickerBackdrop: document.getElementById('pickerBackdrop'),
   translationSelect: document.getElementById('translationSelect'),
   prevCh: document.getElementById('prevCh'),
   nextCh: document.getElementById('nextCh'),
