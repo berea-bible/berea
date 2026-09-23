@@ -1,0 +1,46 @@
+:root{
+  --bg:#FAF7F0; --surface:#FFFFFF; --surface-2:#F1ECDD; --surface-3:#E9E2CC;
+  --ink:#26241E; --ink-dim:#726B58; --ink-faint:#A39A80;
+  --border:#E1D8C0; --border-strong:#CFC2A0;
+  --accent:#1E4D6B; --accent-ink:#FFFFFF; --accent-soft:#DCE9EF;
+  --gold:#8C6D22; --gold-soft:#F1E6C6;
+  --greek:#7A3040; --greek-soft:#F3E1E3;
+  --shadow: 0 8px 30px -10px rgba(38,36,30,.25);
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14171A; --surface:#1C2124; --surface-2:#242A2D; --surface-3:#2C3336;
+    --ink:#EAE5D7; --ink-dim:#A39C8B; --ink-faint:#726C5E;
+    --border:#333A3D; --border-strong:#454D50;
+    --accent:#7FB4D6; --accent-ink:#0E1518; --accent-soft:#213640;
+    --gold:#D8B96A; --gold-soft:#3A311C;
+    --greek:#DD98A5; --greek-soft:#3A252A;
+    --shadow: 0 8px 30px -10px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14171A; --surface:#1C2124; --surface-2:#242A2D; --surface-3:#2C3336;
+  --ink:#EAE5D7; --ink-dim:#A39C8B; --ink-faint:#726C5E;
+  --border:#333A3D; --border-strong:#454D50;
+  --accent:#7FB4D6; --accent-ink:#0E1518; --accent-soft:#213640;
+  --gold:#D8B96A; --gold-soft:#3A311C;
+  --greek:#DD98A5; --greek-soft:#3A252A;
+  --shadow: 0 8px 30px -10px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.greek{ font-family:'Gentium Plus','Source Serif 4',serif; }
+h1,h2,h3,.display{ font-family:'Spectral',serif; }
+button{ font-family:inherit; }
+a{ color:var(--accent); }
+
+/* Shared status text */
+.loading{ padding:60px 0; text-align:center; color:var(--ink-faint); font-size:.9rem; }
+.empty-state{ color:var(--ink-faint); font-size:.86rem; padding:30px 4px; text-align:center; line-height:1.6; }

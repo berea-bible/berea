@@ -13,7 +13,22 @@ live via a Cloudflare Worker proxy in front of api.bible — see
 
 ## Repository layout
 
-index.html The entire app: markup, CSS, and JS in one file.
+index.html Markup only; links the stylesheets and loads js/main.js.
+css/
+base.css Theme tokens (light/dark), reset, typography,
+shared .loading/.empty-state.
+reader.css App shell, nav rail, top bar, reading column,
+Greek line, mobile layout.
+panel.css Verse detail panel and lexicon popover.
+js/ Native ES modules, no bundler.
+main.js Entry point: theme toggle, boot.
+app.js Shared core: `state`, prefs, DOM refs (`el`),
+escapeHtml.
+data.js Fetching/caching of data/*.json, NASB proxy
+(`NASB_CONFIG`, `USFM_ID`, ensureNasbChapter).
+reader.js Nav rail, top-bar controls, chapter rendering.
+panel.js Verse detail panel (Compare/Greek/Commentary).
+greek.js Morphology decoder and lexicon popover.
 data/ Static JSON the app fetches at runtime.
 books-index.json Canonical 27-book list, chapter/verse counts,
 translation display names, father stats.
@@ -31,31 +46,37 @@ README.md End-user hosting instructions (GitHub Pages) and
 NASB/Worker setup walkthrough.
 
 
-There is no build step, no package.json, no bundler. `index.html` is served
-as-is; `data/*.json` is fetched with plain `fetch()`. Any local server works
+There is no build step, no package.json, no bundler. `index.html`, `css/`,
+and `js/` are served as-is (JS as native `<script type="module">`);
+`data/*.json` is fetched with plain `fetch()`. Any local server works
 for testing (`python3 -m http.server`) — opening via `file://` does not,
-because browsers block `fetch()` of local files under that scheme.
+because browsers block `fetch()` and module imports of local files under
+that scheme.
 
-## Working in `index.html`
+## Working in the app code (`index.html`, `css/`, `js/`)
 
-- Everything is one file, wrapped in a single IIFE (`(function(){ "use
-  strict"; ... })()`). Keep it that way — don't split into modules or add a
-  build step unless explicitly asked; the whole point is zero-install
-  GitHub Pages hosting.
+- Files are split by high-level feature (reader, panel, Greek, data), not
+  per component. Add code to the file whose feature it belongs to; only
+  add a new file for a genuinely new feature area. Don't add a build step —
+  the whole point is zero-install GitHub Pages hosting.
+- Modules import each other directly (`./app.js` etc.). Keep `app.js` and
+  `data.js` free of UI-feature imports so they stay at the bottom of the
+  dependency graph.
 - State lives in a single `state` object; per-viewer prefs persist to
-  `localStorage` under the key `berea-prefs` (book, chapter, translation,
+  `localStorage` under the key `verbum-prefs` (book, chapter, translation,
   Greek-line toggle, theme), wrapped in try/catch since storage can throw
-  or be unavailable.
+  or be unavailable. The saved theme is also applied by a tiny inline
+  script in `index.html`'s head so there's no theme flash before modules run.
 - Data is loaded lazily and cached in module-scope objects (`bookCache`,
   `lexicon`) — a book's JSON is fetched once per session, not per chapter.
-- `NASB_CONFIG` (near the top of the script) holds `proxyUrl` and
+- `NASB_CONFIG` (in `js/data.js`) holds `proxyUrl` and
   `bibleId`. When either is empty, NASB is simply absent from the
   translation dropdown — no modal, no dead UI, no error state. Never
   reintroduce client-side API key storage or entry; that was deliberately
   removed in favor of the Cloudflare Worker proxy. Don't hardcode any API
-  key into this file, a commit, or a chat response — it belongs only in
+  key into the app code, a commit, or a chat response — it belongs only in
   the Worker's encrypted secret.
-- `decodeMorph()` parses Robinson/Tyndale-style morphology codes (e.g.
+- `decodeMorph()` (in `js/greek.js`) parses Robinson/Tyndale-style morphology codes (e.g.
   `N-GSM-P`, `V-PAI-3P`) into readable labels. If new tag combinations
   appear in the data, extend the `MORPH_*` lookup tables rather than
   special-casing strings elsewhere.
@@ -90,11 +111,8 @@ live before attempting to re-derive the pipeline from scratch.
 - No external JS/CSS dependencies beyond Google Fonts (`Spectral`, `Source
   Serif 4`, `Gentium Plus`, `Inter`) — keep it that way so the page keeps
   working as a plain static file indefinitely.
-- Prefer editing `index.html` in place over rewriting it wholesale; it's
-  large, and targeted edits are easier to review. A full rewrite is
-  reasonable only for large structural changes (e.g. removing an entire
-  feature's markup/CSS/JS together, as was done when NASB moved from a
-  key-entry modal to the Worker-proxy approach).
+- Prefer targeted edits over rewriting files wholesale; they're easier to
+  review. A full rewrite is reasonable only for large structural changes.
 - Don't add a bundler, framework, or `node_modules` — this app's whole
   value proposition is "clone/download, open `index.html` locally or push
   to GitHub Pages, done."

@@ -4,7 +4,8 @@
 
 A static web app: five translations, word-level Greek with lexicon definitions,
 verse comparison, and early church father citations. No build step, no server
-code — just `index.html` plus the JSON files in `data/`.
+code — just `index.html`, `css/`, `js/` (native ES modules), and the JSON
+files in `data/`.
 
 ## Run it locally
 
