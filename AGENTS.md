@@ -8,8 +8,8 @@ Berea: a static New Testament reading app. Five public-domain translations
 (KJV, ASV, WEB, YLT, DRA), word-level Greek text with a Strong's-tagged
 lexicon, per-verse translation comparison, and early-church-father citations
 (c. 100–800 AD). An optional sixth translation, NASB (1995), can be wired up
-live via a Cloudflare Worker proxy in front of api.bible — see
-`cloudflare-worker/README` notes below.
+live via an already-deployed Cloudflare Worker proxy in front of
+api.bible (maintained outside this repo).
 
 ## Repository layout
 
@@ -40,12 +40,7 @@ text by chapter/verse), greek (per-verse tagged
 Greek words), fathers (verse -> quote indices),
 quotes (deduplicated patristic citation objects).
 lexicon.json Strong's-number-keyed Greek lexicon entries.
-cloudflare-worker/
-worker.js Serverless proxy: attaches an api.bible key
-(server-side secret) to requests so the browser
-never holds it. See README.md for deploy steps.
-README.md End-user hosting instructions (GitHub Pages) and
-NASB/Worker setup walkthrough.
+README.md Project overview and local/GitHub Pages hosting.
 
 
 There is no build step, no package.json, no bundler. `index.html`, `css/`,
@@ -75,9 +70,9 @@ that scheme.
   `bibleId`. When either is empty, NASB is simply absent from the
   translation dropdown — no modal, no dead UI, no error state. Never
   reintroduce client-side API key storage or entry; that was deliberately
-  removed in favor of the Cloudflare Worker proxy. Don't hardcode any API
-  key into the app code, a commit, or a chat response — it belongs only in
-  the Worker's encrypted secret.
+  removed in favor of the Worker proxy, which holds the key server-side.
+  Don't hardcode any API key into the app code, a commit, or a chat
+  response.
 - `decodeMorph()` (in `js/greek.js`) parses Robinson/Tyndale-style morphology codes (e.g.
   `N-GSM-P`, `V-PAI-3P`) into readable labels. If new tag combinations
   appear in the data, extend the `MORPH_*` lookup tables rather than
@@ -85,18 +80,6 @@ that scheme.
 - Book IDs (`matt`, `mark`, ..., `rev`) are the canonical identifiers used
   across `data/`, `USFM_ID` (for NASB/api.bible lookups), and the book picker.
   Don't introduce a second book-naming scheme.
-
-## Working with `cloudflare-worker/worker.js`
-
-- This is the only place an api.bible key should ever be referenced, and
-  only as `env.API_BIBLE_KEY` (a Cloudflare secret set via the dashboard
-  or `wrangler secret put`), never as a literal string.
-- The Worker is a thin `/v1/*` passthrough to `https://rest.api.bible`
-  with CORS headers added. Keep it minimal — this is a security boundary,
-  not a place for app logic.
-- `ALLOWED_ORIGIN` defaults to `"*"`; production deployments should be
-  told to tighten it to their actual GitHub Pages origin (documented in
-  the main README).
 
 ## Regenerating `data/`
 

@@ -26,9 +26,8 @@ export function bookMeta(id){ return INDEX.books.find(b=>b.id===id); }
 
 /* ---------- NASB (live, via a Cloudflare Worker proxy in front of api.bible) ----------
    The proxy holds the api.bible key server-side, so nothing secret ever reaches
-   this file or this browser. Fill these in once the Worker is deployed —
-   see cloudflare-worker/ and the README for setup. Leaving proxyUrl empty simply
-   hides the NASB option, so the rest of the app works fine without it. */
+   this file or this browser. Leaving proxyUrl empty simply hides the NASB
+   option, so the rest of the app works fine without it. */
 const NASB_CONFIG = {
   proxyUrl: 'https://berea.tommymcmichen-0ac.workers.dev/',
   bibleId: 'b8ee27bcd1cae43a-01'
