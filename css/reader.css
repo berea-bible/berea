@@ -117,7 +117,6 @@
   #topbar{ padding:10px 14px; gap:8px; }
   .brand{ display:none; }
   #readOpts{ order:1; flex:1 1 100%; }  /* own row, below the navigation */
-  #translationSelect{ flex:1; min-width:0; }
   .picker-btn{ font-size:1.05rem; padding:3px 6px; }
   /* full-screen pickers */
   .picker, #bookPicker, #chapterPicker{

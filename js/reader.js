@@ -42,17 +42,25 @@ function renderTranslationSelect(){
   el.translationSelect.innerHTML = '';
   Object.keys(INDEX.translations).forEach(code=>{
     const opt = document.createElement('option');
-    opt.value = code; opt.textContent = code + ' — ' + INDEX.translations[code];
+    opt.value = code; opt.dataset.name = INDEX.translations[code];
     el.translationSelect.appendChild(opt);
   });
   if(nasbAvailable()){
     const nasbOpt = document.createElement('option');
-    nasbOpt.value = 'NASB';
-    nasbOpt.textContent = 'NASB — New American Standard (1995, live)';
+    nasbOpt.value = 'NASB'; nasbOpt.dataset.name = 'New American Standard (1995, live)';
     el.translationSelect.appendChild(nasbOpt);
   }
+  labelTranslationOptions();
   el.translationSelect.value = (prev && [...el.translationSelect.options].some(o=>o.value===prev)) ? prev : state.translation;
 }
+// phones show just the acronym ("KJV"); wider screens show "KJV — King James Version ..."
+const compactMQ = window.matchMedia('(max-width:640px)');
+function labelTranslationOptions(){
+  [...el.translationSelect.options].forEach(opt=>{
+    opt.textContent = compactMQ.matches ? opt.value : opt.value + ' — ' + opt.dataset.name;
+  });
+}
+compactMQ.addEventListener('change', labelTranslationOptions);
 function markActiveBook(){
   [...el.bookList.children].forEach(btn=>{
     btn.classList.toggle('active', btn.dataset.id === state.bookId);
