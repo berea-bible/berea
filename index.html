@@ -32,7 +32,7 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
         <button class="step-btn" id="nextCh" title="Next chapter">&#8594;</button>
       </div>
       <div id="readOpts">
-        <label id="interlinearToggle"><input type="checkbox" id="interlinearCheck"> Greek</label>
+        <label id="interlinearToggle" title="Show Greek line"><input type="checkbox" id="interlinearCheck"> <span class="full">Greek</span><span class="short greek">&Omega;</span></label>
         <select id="translationSelect"></select>
       </div>
       <button id="themeBtn" title="Toggle theme">&#9788;</button>

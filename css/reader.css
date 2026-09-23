@@ -28,14 +28,16 @@
   user-select:none;
 }
 #interlinearToggle input{ accent-color:var(--accent); }
+#interlinearToggle .short{ display:none; }
 
 /* Book / chapter pickers */
 .picker-wrap{ position:relative; min-width:0; }
 .picker-btn{
   display:flex; align-items:center; gap:6px; background:none; border:1px solid transparent; border-radius:7px;
-  padding:3px 8px; cursor:pointer; color:var(--ink); white-space:nowrap;
+  padding:3px 8px; cursor:pointer; color:var(--ink); white-space:nowrap; max-width:100%;
   font-family:'Spectral',serif; font-weight:600; font-size:1.15rem;
 }
+#bookLabel{ min-width:0; overflow:hidden; text-overflow:ellipsis; }
 #chapterBtn{ color:var(--accent); }
 .picker-btn:hover, .picker-btn[aria-expanded="true"]{ background:var(--surface-2); border-color:var(--border); }
 .picker-btn .caret{ font-family:'Inter',sans-serif; font-size:.6rem; color:var(--ink-faint); }
@@ -114,10 +116,23 @@
   #readingInner{ padding:22px 16px 90px; }
 }
 @media (max-width:640px){
-  #topbar{ padding:10px 14px; gap:8px; }
+  /* one row: nav, then Greek toggle, translation, theme; the book name truncates if needed */
+  #topbar{ padding:10px 12px; gap:6px; flex-wrap:nowrap; }
   .brand{ display:none; }
-  #readOpts{ order:1; flex:1 1 100%; }  /* own row, below the navigation */
-  .picker-btn{ font-size:1.05rem; padding:3px 6px; }
+  #chapterNav{ gap:2px; }
+  .picker-btn{ font-size:1.05rem; padding:3px 5px; gap:4px; }
+  #readOpts{ gap:6px; flex:none; }
+  #translationSelect{ padding:6px 4px; }
+  /* Greek toggle becomes a square "α" button; the checkbox stays for keyboard/screen readers */
+  #interlinearToggle{
+    position:relative; width:30px; height:30px; padding:0; justify-content:center; border-radius:7px;
+    font-size:1.05rem; color:var(--ink-dim);
+  }
+  #interlinearToggle input{ position:absolute; opacity:0; pointer-events:none; }
+  #interlinearToggle .full{ display:none; }
+  #interlinearToggle .short{ display:inline; }
+  #interlinearToggle:has(input:checked){ background:var(--greek-soft); color:var(--greek); border-color:var(--greek); }
+  #interlinearToggle:has(input:focus-visible){ outline:2px solid var(--accent); outline-offset:1px; }
   /* full-screen pickers */
   .picker, #bookPicker, #chapterPicker{
     position:fixed; inset:0; width:auto; max-height:none; border:none; border-radius:0; box-shadow:none;
