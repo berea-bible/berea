@@ -1,6 +1,6 @@
 # Berea — New Testament reading app
 
-[https://www.mcmichen.cc/berea](mcmichen.cc/berea)
+[Go to reader](https://berea-bible.github.io/reader)
 
 A static web app: five translations, word-level Greek with lexicon definitions,
 verse comparison, and early church father citations. No build step, no server
