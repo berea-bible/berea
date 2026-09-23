@@ -38,7 +38,7 @@
   font-family:'Spectral',serif; font-weight:600; font-size:1.15rem;
 }
 #bookLabel{ min-width:0; overflow:hidden; text-overflow:ellipsis; }
-#chapterBtn{ color:var(--accent); }
+#chapterBtn{ color:var(--ink); }
 .picker-btn:hover, .picker-btn[aria-expanded="true"]{ background:var(--surface-2); border-color:var(--border); }
 .picker-btn .caret{ font-family:'Inter',sans-serif; font-size:.6rem; color:var(--ink-faint); }
 .picker{
