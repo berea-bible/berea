@@ -491,7 +491,7 @@ function renderNav(){
     btn.addEventListener('click', ()=> selectBook(b.id, 1));
     el.bookList.appendChild(btn);
   });
-  el.navFoot.textContent = INDEX.fatherAuthorCount + ' early patristic authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
+  el.navFoot.textContent = INDEX.fatherAuthorCount + ' early church authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
   renderTranslationSelect();
 }
 function renderTranslationSelect(){
@@ -589,7 +589,7 @@ function renderChapter(){
   el.chapterTitle.innerHTML = meta.name + ' <span class="num">' + state.chapter + '</span>';
 
   let html = '<h2 class="chapter-heading">'+meta.name+' '+state.chapter+'</h2>';
-  html += '<p class="chapter-sub">'+state.translation+' &middot; tap a verse number to compare translations, read the Greek, or see the church fathers</p>';
+  html += '<p class="chapter-sub">'+state.translation+' &middot; tap a verse number to compare translations, read the Greek, or see commentaries from the early church</p>';
 
   verseNums.forEach(vn=>{
     const vs = String(vn);
