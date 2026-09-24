@@ -39,6 +39,15 @@ export const NASB_NOTICE_HTML = 'NASB &copy; 1995 The Lockman Foundation. All ri
   '<a href="copyright.html#nasb" target="_blank" rel="noopener">Copyright</a>';
 export function nasbAvailable(){ return !!(NASB_CONFIG.proxyUrl && NASB_CONFIG.bibleId); }
 
+/* ---------- ESV (live, via the same Worker's /esv/* route in front of api.esv.org) ----------
+   The Worker adds the api.esv.org token server-side. Empty proxyUrl hides the ESV option. */
+const ESV_CONFIG = { proxyUrl: NASB_CONFIG.proxyUrl };   // same Worker as NASB
+export function esvAvailable(){ return !!ESV_CONFIG.proxyUrl; }
+// ESV terms: identify the text as ESV and link to www.esv.org on every page that shows it.
+export const ESV_NOTICE_HTML = '<a href="https://www.esv.org" target="_blank" rel="noopener">ESV</a>&reg; text used by permission. ' +
+  'Copyright &copy; 2001 by Crossway, a publishing ministry of Good News Publishers. All rights reserved. &middot; ' +
+  '<a href="copyright.html#esv" target="_blank" rel="noopener">Copyright</a>';
+
 const USFM_ID = {
   gen:'GEN', exod:'EXO', lev:'LEV', num:'NUM', deut:'DEU', josh:'JOS', judg:'JDG', ruth:'RUT',
   '1sam':'1SA', '2sam':'2SA', '1kgs':'1KI', '2kgs':'2KI', '1chr':'1CH', '2chr':'2CH', ezra:'EZR',
@@ -58,6 +67,7 @@ export function translationAvailable(code, bookId){
 export function translationCodes(bookId){
   const codes = Object.keys(INDEX.translations).filter(c=> translationAvailable(c, bookId));
   if(nasbAvailable()) codes.push('NASB');
+  if(esvAvailable()) codes.push('ESV');
   return codes;
 }
 // The translation actually shown for a book: the viewer's pick, or KJV where it has no text.
@@ -65,8 +75,9 @@ export function translationCodes(bookId){
 export function effectiveTranslation(code, bookId){
   return translationAvailable(code, bookId) ? code : 'KJV';
 }
+const LIVE_NAMES = { NASB: 'New American Standard Bible (1995)', ESV: 'English Standard Version (2016)' };
 export function translationName(code){
-  return code === 'NASB' ? 'New American Standard Bible (1995)' : INDEX.translations[code];
+  return LIVE_NAMES[code] || INDEX.translations[code];
 }
 
 /* Keep api.bible traffic low: one request per chapter (never per verse), nothing
@@ -236,3 +247,100 @@ export function flushFumsQueue(){
   }catch(e){}
 }
 window.addEventListener('online', flushFumsQueue);
+
+/* ---------- ESV fetch + cache ----------
+   One /v3/passage/text/ request per chapter; nothing prefetched (the Compare tab offers a Load
+   button, like NASB). ESV API terms: at most 5,000 queries/day, 1,000/hour, 60/minute;
+   non-commercial use only. */
+const esvChapterCache = {};   // "bookId.chapter" -> Promise<{verse:text}>
+const ESV_CACHE_KEY = 'verbum-esv-cache';
+// HARD LIMIT from the ESV API terms ("You can cache up to 500 verses"), not a performance knob:
+// the cache is capped by total VERSES across all chapters, evicting whole oldest chapters.
+const ESV_CACHE_MAX_VERSES = 500;
+
+function readEsvCache(){
+  try{
+    const c = JSON.parse(localStorage.getItem(ESV_CACHE_KEY) || 'null');
+    if(c && Array.isArray(c.order) && c.chapters) return c;
+  }catch(e){}
+  return { order: [], chapters: {} };
+}
+// In-memory copy (session) mirrors the capped cache, so we never hold more than the limit either.
+const esvMem = readEsvCache();
+function writeEsvCache(){ try{ localStorage.setItem(ESV_CACHE_KEY, JSON.stringify(esvMem)); }catch(e){} }
+export function esvCacheVerseCount(){ return esvMem.order.reduce((n, k)=> n + (esvMem.chapters[k] ? esvMem.chapters[k].n : 0), 0); }
+
+function forgetEsv(key){
+  delete esvMem.chapters[key];
+  esvMem.order = esvMem.order.filter(k=> k !== key);
+  const [bookId, chapter] = key.split('.');
+  const book = bookCache[bookId];
+  if(book && book.translations.ESV) delete book.translations.ESV[chapter];
+}
+function rememberEsv(bookId, chapter, verses){
+  const key = bookId + '.' + chapter;
+  if(esvMem.chapters[key]) esvMem.order = esvMem.order.filter(k=> k !== key);
+  esvMem.chapters[key] = { verses, n: Object.keys(verses).length };
+  esvMem.order.push(key);
+  while(esvCacheVerseCount() > ESV_CACHE_MAX_VERSES && esvMem.order.length > 1) forgetEsv(esvMem.order[0]);
+  writeEsvCache();
+  const book = bookCache[bookId];
+  if(book){
+    book.translations.ESV = book.translations.ESV || {};
+    book.translations.ESV[String(chapter)] = verses;
+  }
+}
+
+// api.esv.org text: one string with inline "[N]" verse markers
+function parseEsvChapter(text){
+  const parts = String(text || '').split(/\[(\d+)\]/), verses = {};
+  for(let i = 1; i < parts.length; i += 2){
+    const t = parts[i + 1].replace(/\s+/g, ' ').trim();
+    if(t) verses[parts[i]] = t;
+  }
+  return verses;
+}
+
+// Local copy only (memory / capped localStorage cache): never hits the network.
+export function getCachedEsvChapter(bookId, chapter){
+  if(!esvAvailable()) return null;
+  const hit = esvMem.chapters[bookId + '.' + chapter];
+  if(!hit) return null;
+  const book = bookCache[bookId];
+  if(book){ book.translations.ESV = book.translations.ESV || {}; book.translations.ESV[String(chapter)] = hit.verses; }
+  return hit.verses;
+}
+
+export async function ensureEsvChapter(bookId, chapter){
+  if(!esvAvailable()) throw new Error('ESV proxy not configured');
+  const key = bookId + '.' + chapter;
+  if(esvChapterCache[key]) return esvChapterCache[key];
+  const promise = (async ()=>{
+    const cached = getCachedEsvChapter(bookId, chapter);
+    if(cached) return cached;
+    const params = new URLSearchParams({
+      q: bookMeta(bookId).name + ' ' + chapter,
+      'include-verse-numbers': 'true', 'include-first-verse-numbers': 'true',
+      'include-footnotes': 'false', 'include-headings': 'false', 'include-short-copyright': 'false',
+      'include-passage-references': 'false', 'include-selahs': 'true'
+    });
+    const res = await fetch(ESV_CONFIG.proxyUrl.replace(/\/$/, '') + '/esv/v3/passage/text/?' + params);
+    if(!res.ok) throw new Error('ESV request failed (' + res.status + ')');
+    const data = await res.json();
+    const verses = parseEsvChapter(data && data.passages && data.passages[0]);
+    if(!Object.keys(verses).length) throw new Error('ESV returned no text');
+    rememberEsv(bookId, chapter, verses);
+    return verses;
+  })();
+  esvChapterCache[key] = promise;
+  promise.then(()=>{ delete esvChapterCache[key]; }, ()=>{ delete esvChapterCache[key]; });   // the capped cache is the only store
+  return promise;
+}
+
+/* ---------- live translations: one table for the reader and the Compare tab ---------- */
+export const LIVE_TRANSLATIONS = {
+  NASB: { available: nasbAvailable, ensure: ensureNasbChapter, getCached: getCachedNasbChapter,
+          notice: NASB_NOTICE_HTML, report: reportNasbView },   // report = api.bible FUMS (NASB only)
+  ESV:  { available: esvAvailable, ensure: ensureEsvChapter, getCached: getCachedEsvChapter,
+          notice: ESV_NOTICE_HTML, report: null },
+};

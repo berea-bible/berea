@@ -30,7 +30,7 @@
 | **YLT** | Young's Literal Translation (1898) |
 | **DRA** | Douay-Rheims (Challoner revision) |
 
-The NASB (1995) is also available. It is fetched live through a small proxy and is never bundled with the app.
+The NASB (1995) and ESV are also available. They are fetched live through a small proxy and are never bundled with the app.
 
 **Hebrew and Greek, word by word.** Turn on the interlinear line to show the original language under each verse: Hebrew (and Aramaic) for the Old Testament, Greek for the New. Tap any word to see its Strong's number, its parsed morphology (e.g. *verb, qal perfect, 3rd person masculine singular*), and its lexicon definition.
 

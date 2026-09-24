@@ -1,6 +1,6 @@
 /* Verse detail panel: Compare / Greek-or-Hebrew / Commentary tabs. */
 import { state, el, escapeHtml } from './app.js';
-import { bookCache, bookMeta, isOT, nasbAvailable, ensureNasbChapter, getCachedNasbChapter, translationCodes, translationName, effectiveTranslation, NASB_NOTICE_HTML, reportNasbView } from './data.js';
+import { bookCache, bookMeta, isOT, translationCodes, translationName, effectiveTranslation, LIVE_TRANSLATIONS } from './data.js';
 import { decodeMorph, displayWord, showLexicon, hideLexicon } from './greek.js';
 
 export async function openVerse(vn){
@@ -14,10 +14,12 @@ export async function openVerse(vn){
   showTab('compare');
   openPanel();
 
-  // NASB comes from api.bible, so only a local copy is used here; otherwise the row
-  // offers a Load button rather than fetching on every panel open.
-  const nasbText = nasbAvailable()
-    ? ((await getCachedNasbChapter(state.bookId, state.chapter)) || {})[vs] : null;
+  // Live translations (NASB, ESV) only use a local copy here; otherwise their row offers a
+  // Load button rather than fetching on every panel open.
+  const liveText = {};
+  for(const [code, live] of Object.entries(LIVE_TRANSLATIONS)){
+    if(live.available()) liveText[code] = ((await live.getCached(state.bookId, state.chapter)) || {})[vs] || null;
+  }
   if(state.selectedVerse !== vn) return; // user moved on while we were reading the cache
 
   const book = bookCache[state.bookId];
@@ -26,7 +28,7 @@ export async function openVerse(vn){
   const shown = effectiveTranslation(state.translation, state.bookId);
   let cmp = '';
   translationCodes(state.bookId).forEach(code=>{
-    if(code === 'NASB'){ cmp += '<div class="cmp-item live" id="nasbRow"></div>'; return; }
+    if(LIVE_TRANSLATIONS[code]){ cmp += '<div class="cmp-item live" id="liveRow-'+code+'"></div>'; return; }
     const text = ((book.translations[code]||{})[ch]||{})[vs];
     if(!text) return;
     cmp += '<div class="cmp-item'+(code===shown?' primary':'')+'">'+
@@ -34,7 +36,7 @@ export async function openVerse(vn){
       '<div class="cmp-text">'+escapeHtml(text)+'</div></div>';
   });
   el.paneCompare.innerHTML = cmp || '<div class="empty-state">No text found for this verse.</div>';
-  if(nasbAvailable()) renderNasbRow(vn, nasbText ? 'text' : 'idle', nasbText);
+  for(const code in liveText) renderLiveRow(code, vn, liveText[code] ? 'text' : 'idle', liveText[code]);
 
   /* Greek / Hebrew tab */
   const hebrew = isOT(state.bookId);
@@ -77,30 +79,32 @@ export async function openVerse(vn){
     el.paneFathers.innerHTML = '<div class="empty-state">No surviving citations from this era (c. 100–800 AD) are indexed for this verse yet.</div>';
   }
 }
-// NASB row states: 'idle' (Load button), 'loading', 'error' (Try again), 'text'.
-function renderNasbRow(vn, status, text){
-  const row = document.getElementById('nasbRow');
+// Live-translation row states: 'idle' (Load button), 'loading', 'error' (Try again), 'text'.
+const LIVE_SOURCE = { NASB: 'api.bible', ESV: 'api.esv.org' };
+function renderLiveRow(code, vn, status, text){
+  const live = LIVE_TRANSLATIONS[code];
+  const row = document.getElementById('liveRow-' + code);
   if(!row || state.selectedVerse !== vn) return;
-  const primary = effectiveTranslation(state.translation, state.bookId) === 'NASB';
+  const primary = effectiveTranslation(state.translation, state.bookId) === code;
   row.className = 'cmp-item live' + (primary && status === 'text' ? ' primary' : '');
   let body;
   if(status === 'text') body = (text ? '<div class="cmp-text">'+escapeHtml(text)+'</div>'
-                                     : '<div class="cmp-note">No NASB text for this verse.</div>') +
-                               '<div class="nasb-notice cmp-notice">' + NASB_NOTICE_HTML + '</div>';
+                                     : '<div class="cmp-note">No ' + code + ' text for this verse.</div>') +
+                               '<div class="live-notice cmp-notice">' + live.notice + '</div>';
   else if(status === 'loading') body = '<div class="cmp-note">Loading&hellip;</div>';
-  else if(status === 'error') body = '<div class="cmp-note">Couldn\'t load the NASB. <button class="cmp-load">Try again</button></div>';
-  else body = '<div class="cmp-note">Fetched live from api.bible. <button class="cmp-load">Load</button></div>';
+  else if(status === 'error') body = '<div class="cmp-note">Couldn\'t load the ' + code + '. <button class="cmp-load">Try again</button></div>';
+  else body = '<div class="cmp-note">Fetched live from ' + LIVE_SOURCE[code] + '. <button class="cmp-load">Load</button></div>';
   row.innerHTML =
-    '<div class="cmp-label"><span class="cmp-code">NASB</span><span class="cmp-name">'+translationName('NASB')+'</span>'+
+    '<div class="cmp-label"><span class="cmp-code">' + code + '</span><span class="cmp-name">'+translationName(code)+'</span>'+
     '<span class="cmp-live-tag">LIVE</span></div>' + body;
-  if(status === 'text' && text) reportNasbView(state.bookId, state.chapter); // FUMS: NASB text displayed
+  if(status === 'text' && text && live.report) live.report(state.bookId, state.chapter); // FUMS (NASB)
   const btn = row.querySelector('.cmp-load');
   if(btn) btn.addEventListener('click', async ()=>{
-    renderNasbRow(vn, 'loading');
+    renderLiveRow(code, vn, 'loading');
     try{
-      const verses = await ensureNasbChapter(state.bookId, state.chapter);
-      renderNasbRow(vn, 'text', verses[String(vn)]);
-    }catch(e){ renderNasbRow(vn, 'error'); }
+      const verses = await live.ensure(state.bookId, state.chapter);
+      renderLiveRow(code, vn, 'text', verses[String(vn)]);
+    }catch(e){ renderLiveRow(code, vn, 'error'); }
   });
 }
 

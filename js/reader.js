@@ -1,6 +1,6 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation, translationCodes, translationName, NASB_NOTICE_HTML, reportNasbView } from './data.js';
+import { INDEX, bookCache, bookMeta, isOT, loadBook, translationAvailable, effectiveTranslation, translationCodes, translationName, LIVE_TRANSLATIONS } from './data.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels } from './greek.js';
 
@@ -127,24 +127,26 @@ async function selectChapter(c){
   savePrefs();
 }
 export async function showChapter(){
-  if(state.translation === 'NASB' && !nasbAvailable()){
+  const live = LIVE_TRANSLATIONS[state.translation];   // NASB / ESV: fetched through the Worker
+  if(live && !live.available()){
     state.translation = 'KJV';
     el.translationSelect.value = 'KJV';
   }
-  if(state.translation === 'NASB'){
-    el.readingInner.innerHTML = '<div class="loading">Fetching NASB&hellip;</div>';
+  const code = state.translation;
+  if(live && live.available()){
+    el.readingInner.innerHTML = '<div class="loading">Fetching ' + code + '&hellip;</div>';
     try{
-      await ensureNasbChapter(state.bookId, state.chapter);
+      await live.ensure(state.bookId, state.chapter);
     }catch(e){
       el.readingInner.innerHTML =
         '<div class="loading" style="max-width:440px;margin:60px auto 0;line-height:1.6">'+
-        'Couldn\'t load the NASB (' + escapeHtml(e.message||'') + ').<br><br>'+
-        '<button id="nasbRetryLink" class="text-btn" style="display:inline;background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;font-size:inherit">Try again</button>'+
-        ' or <button id="nasbFallbackLink" class="text-btn" style="display:inline;background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;font-size:inherit">switch to KJV</button>.'+
+        'Couldn\'t load the ' + code + ' (' + escapeHtml(e.message||'') + ').<br><br>'+
+        '<button id="liveRetryLink" class="text-btn" style="display:inline;background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;font-size:inherit">Try again</button>'+
+        ' or <button id="liveFallbackLink" class="text-btn" style="display:inline;background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;font-size:inherit">switch to KJV</button>.'+
         '</div>';
-      const retry = document.getElementById('nasbRetryLink');
+      const retry = document.getElementById('liveRetryLink');
       if(retry) retry.addEventListener('click', ()=> showChapter());
-      const fallback = document.getElementById('nasbFallbackLink');
+      const fallback = document.getElementById('liveFallbackLink');
       if(fallback) fallback.addEventListener('click', ()=>{
         state.translation = 'KJV'; el.translationSelect.value = 'KJV'; showChapter(); savePrefs();
       });
@@ -152,8 +154,8 @@ export async function showChapter(){
     }
   }
   renderChapter();
-  // FUMS: one view per chapter shown in NASB (not on Greek-line re-renders)
-  if(state.translation === 'NASB') reportNasbView(state.bookId, state.chapter);
+  // FUMS (NASB only): one view per chapter shown (not on Greek-line re-renders)
+  if(live && live.report) live.report(state.bookId, state.chapter);
 }
 function renderChapter(){
   const book = bookCache[state.bookId];
@@ -168,6 +170,8 @@ function renderChapter(){
 
   let html = '<h2 class="chapter-heading">'+meta.name+' '+state.chapter+'</h2>';
   html += '<p class="chapter-sub">'+translation+' &middot; tap a verse number to compare translations, read the '+langLabels(hebrew).name+', or see commentaries from the early church</p>';
+  // ESV terms: the notice and esv.org link sit with the translation name, on every ESV page
+  if(translation === 'ESV') html += '<p class="live-notice chapter-sub-notice">' + LIVE_TRANSLATIONS.ESV.notice + '</p>';
 
   verseNums.forEach(vn=>{
     const vs = String(vn);
@@ -188,7 +192,7 @@ function renderChapter(){
     html += '</div></div>';
   });
 
-  if(translation === 'NASB') html += '<p class="nasb-notice chapter-notice">' + NASB_NOTICE_HTML + '</p>';
+  if(translation === 'NASB') html += '<p class="live-notice chapter-notice">' + LIVE_TRANSLATIONS.NASB.notice + '</p>';
   el.readingInner.innerHTML = html;
 
   el.readingInner.querySelectorAll('.vnum, .vtext').forEach(node=>{

@@ -45,6 +45,8 @@ fathers (verse -> quote indices), quotes
 (deduplicated patristic citation objects).
 lexicon.json Strong's-number-keyed lexicon: G#### Greek,
 H#### Hebrew/Aramaic entries.
+pipeline/ Offline data tooling (not served): build_dra.py,
+versification.py; see pipeline/README.md.
 README.md Project overview and local/GitHub Pages hosting.
 
 
@@ -102,6 +104,29 @@ that scheme.
   (not on Greek-line re-renders) and whenever the Compare row shows NASB text.
   This speaks the documented FUMS v3 HTTP protocol directly — don't vendor or
   load `pkg.api.bible/fumsV3.min.js` (unlicensed, changes, third-party JS).
+- ESV is the second live translation, via the same Worker's `/esv/*` route
+  (the Worker adds the api.esv.org token; `ESV_CONFIG.proxyUrl` empty hides
+  ESV everywhere, like NASB). `ensureEsvChapter()` makes **one**
+  `/esv/v3/passage/text/?q=<Book> <ch>` request per chapter and parses the
+  `[N]` markers in `passages[0]`; nothing is prefetched, and the Compare tab
+  uses the same **Load** button. ESV API terms, which are stricter than
+  NASB's and must hold:
+  - **Cache at most 500 verses in total.** The `verbum-esv-cache`
+    localStorage cache (mirrored in memory) evicts whole oldest chapters after
+    each insert until at or under `ESV_CACHE_MAX_VERSES = 500`. It's a hard
+    ToS limit, not a tunable. There's no 30-day expiry for ESV.
+  - **Rate limits:** 5,000 queries/day, 1,000/hour, 60/minute. **Non-commercial
+    use only** (no charging, ads or sponsorships).
+  - **Notice and link on every page:** show `ESV_NOTICE_HTML` (links
+    www.esv.org) wherever ESV text appears. That's under the `chapter-sub`
+    line in the reader, and in the Compare row. `copyright.html#esv` carries
+    ESV's required copyright-page notice.
+  - **Half-book rule:** queries and display are capped at 500 verses or half a
+    book. Single- and double-chapter books (Obadiah, Philemon, 2–3 John, Jude,
+    Haggai) are exempt per the query rule and are shown in full.
+  - No FUMS for ESV. `LIVE_TRANSLATIONS` in `js/data.js` is the one table the
+    reader (`showChapter`) and panel (`renderLiveRow`) use for NASB and ESV.
+    Add any further live translation there.
 - `decodeMorph(m, hebrew)` (in `js/greek.js`) parses Robinson/Tyndale-style
   Greek codes (e.g. `N-GSM-P`, `V-PAI-3P`) or, when `hebrew` is true, OSHB
   Hebrew/Aramaic codes (e.g. `HR/Ncfsa`, `AVpi1cp`: language prefix, then
@@ -138,14 +163,17 @@ list where they disagree (Neh 7:68-69). Result: every OT chapter's Hebrew
 verse keys match `translations.KJV`, except Neh 7:68, which has no Hebrew.
 Any regenerated OT data must be remapped the same way.
 
-The DRA Psalms follow Vulgate numbering in the source (Vg 9 = KJV 9–10,
-Vg 113 = KJV 114–115, etc., titles as verse 1), which the pipeline mapped
-inconsistently. They were re-keyed once to KJV numbering via TVTMS's
-KJV/Latin columns; psalm titles are prepended to verse 1, and where the DRA
-joins two KJV verses the text sits in the first (e.g. 20:8 holds KJV 20:8–9).
-The DRA source elsewhere still contains "dummy verses inserted by amos"
-placeholders and a few lost verses (e.g. Isa 5:1–9, John 15:1–9, Rom 9:1–9);
-fixing those needs a clean DRA source.
+The DRA is the exception: it is rebuilt by `pipeline/build_dra.py` (see
+`pipeline/README.md`) from eBible.org's Douay-Rheims 1899 (Vulgate order),
+re-keyed to KJV numbering with the Copenhagen Alliance mappings (`vul.json`
+composed with the inverse of `eng.json`, in `pipeline/versification.py`),
+plus reviewed per-verse overrides where the 1899 DRA divides verses
+differently. Psalm titles are prefixed onto verse 1; where one DRA verse
+covers two KJV verses its text sits on the first. Change DRA text or
+alignment by editing the pipeline and re-running it, not by hand-editing
+`data/`. Don't reintroduce open-bibles' `eng-dra.zefania.xml` (not Vulgate
+order; contains placeholders and lost verses). The pipeline is offline
+Python (stdlib only) and not part of the served app.
 
 ## Conventions
 

@@ -52,6 +52,6 @@ a{ color:var(--accent); }
 .doc-page h2{ font-size:1.15rem; margin:30px 0 6px; }
 .doc-page p{ font-family:'Source Serif 4',serif; font-size:1rem; margin:0 0 12px; }
 
-/* Required citation wherever NASB (api.bible) text is shown */
-.nasb-notice{ font-size:.72rem; line-height:1.5; color:var(--ink-faint); }
-.nasb-notice a{ color:inherit; text-decoration:underline; text-underline-offset:2px; }
+/* Required citation wherever live (NASB / ESV) text is shown */
+.live-notice{ font-size:.72rem; line-height:1.5; color:var(--ink-faint); }
+.live-notice a{ color:inherit; text-decoration:underline; text-underline-offset:2px; }

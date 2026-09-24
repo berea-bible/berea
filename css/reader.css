@@ -115,6 +115,7 @@
 #readingInner{ max-width:700px; margin:0 auto; padding:34px 26px 90px; }
 .chapter-heading{ font-family:'Spectral',serif; font-size:1.7rem; font-weight:700; margin:0 0 4px; }
 .chapter-sub{ color:var(--ink-dim); font-size:.85rem; margin:0 0 28px; }
+.chapter-sub-notice{ margin:-20px 0 28px; }   /* ESV notice directly under the chapter-sub line */
 
 .verse{ display:flex; align-items:baseline; gap:12px; margin-bottom:2px; padding:5px 10px 5px 0; border-radius:9px; scroll-margin-top:20px; }
 .verse:hover{ background:var(--surface-2); }
