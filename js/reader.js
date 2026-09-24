@@ -1,8 +1,8 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, loadBook, nasbAvailable, ensureNasbChapter } from './data.js';
+import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation } from './data.js';
 import { openVerse, closePanel } from './panel.js';
-import { showLexicon } from './greek.js';
+import { showLexicon, displayWord, langLabels } from './greek.js';
 
 /* ---------- book / chapter pickers ---------- */
 const pickers = [[el.bookBtn, el.bookPicker], [el.chapterBtn, el.chapterPicker]];
@@ -26,7 +26,13 @@ document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closePickers();
 
 export function renderNav(){
   el.bookList.innerHTML = '';
-  INDEX.books.forEach(b=>{
+  INDEX.books.forEach((b, i)=>{
+    if(i === 0 || isOT(b.id) !== isOT(INDEX.books[i-1].id)){
+      const head = document.createElement('div');
+      head.className = 'book-section';
+      head.textContent = isOT(b.id) ? 'Old Testament' : 'New Testament';
+      el.bookList.appendChild(head);
+    }
     const btn = document.createElement('button');
     btn.className = 'book-btn' + (b.id === state.bookId ? ' active' : '');
     btn.dataset.id = b.id;
@@ -35,12 +41,11 @@ export function renderNav(){
     el.bookList.appendChild(btn);
   });
   el.navFoot.textContent = INDEX.fatherAuthorCount + ' early church authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
-  renderTranslationSelect();
 }
+// Options depend on the book (e.g. YLT has no OT text), so this re-runs on every book change.
 function renderTranslationSelect(){
-  const prev = el.translationSelect.value;
   el.translationSelect.innerHTML = '';
-  Object.keys(INDEX.translations).forEach(code=>{
+  Object.keys(INDEX.translations).filter(code=> translationAvailable(code, state.bookId)).forEach(code=>{
     const opt = document.createElement('option');
     opt.value = code; opt.dataset.name = INDEX.translations[code];
     el.translationSelect.appendChild(opt);
@@ -51,7 +56,7 @@ function renderTranslationSelect(){
     el.translationSelect.appendChild(nasbOpt);
   }
   labelTranslationOptions();
-  el.translationSelect.value = (prev && [...el.translationSelect.options].some(o=>o.value===prev)) ? prev : state.translation;
+  el.translationSelect.value = effectiveTranslation(state.translation, state.bookId);
 }
 // phones show just the acronym ("KJV"); wider screens show "KJV — King James Version ..."
 const compactMQ = window.matchMedia('(max-width:640px)');
@@ -67,7 +72,25 @@ function markActiveBook(){
   });
 }
 
-export function populateChapterPicker(){
+// "Greek"/"Hebrew" on the interlinear toggle (Ω/א on phones) and the panel tab.
+function setLanguageLabels(){
+  const hebrew = isOT(state.bookId), lang = langLabels(hebrew);
+  el.interlinearToggle.title = 'Show ' + lang.name + ' line';
+  el.interlinearToggle.querySelector('.full').textContent = lang.name;
+  const short = el.interlinearToggle.querySelector('.short');
+  short.textContent = lang.symbol;
+  short.className = 'short ' + (hebrew ? 'hebrew' : 'greek');
+  el.greekTab.textContent = lang.name;
+}
+// Everything in the top bar / panel that depends on which book is open.
+export function syncBookControls(){
+  markActiveBook();
+  populateChapterPicker();
+  renderTranslationSelect();
+  setLanguageLabels();
+}
+
+function populateChapterPicker(){
   const meta = bookMeta(state.bookId);
   el.bookLabel.textContent = meta.name;
   el.chapterLabel.textContent = state.chapter;
@@ -88,8 +111,7 @@ export function populateChapterPicker(){
 async function selectBook(id, chapter){
   state.bookId = id; state.chapter = chapter || 1; state.selectedVerse = null;
   closePanel();
-  markActiveBook();
-  populateChapterPicker();
+  syncBookControls();
   el.readingInner.innerHTML = '<div class="loading">Loading '+bookMeta(id).name+'&hellip;</div>';
   await loadBook(id);
   await showChapter();
@@ -134,13 +156,15 @@ function renderChapter(){
   const book = bookCache[state.bookId];
   const meta = bookMeta(state.bookId);
   const ch = String(state.chapter);
-  const verses = (book.translations[state.translation] || {})[ch] || {};
+  const hebrew = isOT(state.bookId);
+  const translation = effectiveTranslation(state.translation, state.bookId);
+  const verses = (book.translations[translation] || {})[ch] || {};
   const verseNums = Object.keys(verses).map(Number).sort((a,b)=>a-b);
   const greekCh = book.greek[ch] || {};
   const fathersCh = book.fathers[ch] || {};
 
   let html = '<h2 class="chapter-heading">'+meta.name+' '+state.chapter+'</h2>';
-  html += '<p class="chapter-sub">'+state.translation+' &middot; tap a verse number to compare translations, read the Greek, or see commentaries from the early church</p>';
+  html += '<p class="chapter-sub">'+translation+' &middot; tap a verse number to compare translations, read the '+langLabels(hebrew).name+', or see commentaries from the early church</p>';
 
   verseNums.forEach(vn=>{
     const vs = String(vn);
@@ -151,9 +175,9 @@ function renderChapter(){
     html += '<div class="vbody">';
     html += '<div class="vtext" data-v="'+vs+'">'+escapeHtml(text)+(hasFathers?'<span class="fmark" title="Church father citations available"></span>':'')+'</div>';
     if(state.showGreek && greekCh[vs]){
-      html += '<div class="vgreek">' + greekCh[vs].map(w=>
+      html += (hebrew ? '<div class="vgreek hebrew" dir="rtl">' : '<div class="vgreek">') + greekCh[vs].map(w=>
         '<button class="gword" data-s="'+ (w.s[0]||'') +'">'+
-          '<span class="gk">'+escapeHtml(w.g)+'</span>'+
+          '<span class="gk">'+escapeHtml(displayWord(w, hebrew))+'</span>'+
           '<span class="gl">'+escapeHtml(w.gl)+'</span>'+
         '</button>'
       ).join('') + '</div>';

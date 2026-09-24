@@ -70,6 +70,11 @@
 .ch-btn{ aspect-ratio:1; font-variant-numeric:tabular-nums; }
 .book-btn:hover, .ch-btn:hover{ background:var(--surface-2); }
 .book-btn.active, .ch-btn.active{ background:var(--accent-soft); color:var(--accent); font-weight:600; }
+.book-section{
+  grid-column:1 / -1; padding:10px 10px 4px; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--ink-faint);
+}
+.book-section:not(:first-child){ margin-top:8px; border-top:1px solid var(--border); padding-top:14px; }
 .book-btn .fcount{ font-size:.68rem; color:var(--ink-faint); font-variant-numeric:tabular-nums; }
 .book-btn.active .fcount{ color:var(--accent); opacity:.75; }
 /* sits just under the top bar (z 10) so the bar stays usable while a picker is open */
@@ -109,6 +114,9 @@
 }
 .gword:hover{ background:var(--greek-soft); }
 .gword .gk{ font-family:'Gentium Plus',serif; font-size:1.05rem; color:var(--greek); white-space:nowrap; }
+/* OT line: container is dir=rtl so words run right-to-left; glosses stay LTR */
+.vgreek.hebrew .gk{ font-family:'Noto Serif Hebrew',serif; font-size:1.2rem; }
+.vgreek.hebrew .gl{ direction:ltr; font-family:'Inter',system-ui,sans-serif; }
 .gword .gl{ font-size:.62rem; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.03em; white-space:nowrap; }
 
 /* Mobile */

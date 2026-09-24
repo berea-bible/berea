@@ -4,9 +4,9 @@ Guidance for AI coding agents working in this repository.
 
 ## What this is
 
-Berea: a static New Testament reading app. Five public-domain translations
-(KJV, ASV, WEB, YLT, DRA), word-level Greek text with a Strong's-tagged
-lexicon, per-verse translation comparison, and early-church-father citations
+Berea: a static Bible reading app (all 66 books). Five public-domain
+translations (KJV, ASV, WEB, YLT, DRA; YLT is NT-only), word-level Hebrew/Aramaic
+(OT) and Greek (NT) text with a Strong's-tagged lexicon, per-verse translation comparison, and early-church-father citations
 (c. 100–800 AD). An optional sixth translation, NASB (1995), can be wired up
 live via an already-deployed Cloudflare Worker proxy in front of
 api.bible (maintained outside this repo).
@@ -19,7 +19,7 @@ base.css Theme tokens (light/dark), reset, typography,
 shared .loading/.empty-state.
 reader.css App shell, top bar with book/chapter pickers,
 reading column,
-Greek line, mobile layout.
+original-language line (Greek, or RTL Hebrew), mobile layout.
 panel.css Verse detail panel and lexicon popover.
 js/ Native ES modules, no bundler.
 main.js Entry point: theme toggle, boot.
@@ -29,17 +29,22 @@ data.js Fetching/caching of data/*.json, NASB proxy
 (`NASB_CONFIG`, `USFM_ID`, ensureNasbChapter).
 reader.js Book/chapter pickers (dropdown; full-screen
 at <=640px), top-bar controls, chapter rendering.
-panel.js Verse detail panel (Compare/Greek/Commentary).
-greek.js Morphology decoder and lexicon popover.
+panel.js Verse detail panel (Compare/Greek-or-Hebrew/Commentary).
+greek.js Original-language helpers: Greek and Hebrew/Aramaic
+morphology decoders, word display, lexicon popover.
 data/ Static JSON the app fetches at runtime.
-books-index.json Canonical 27-book list, chapter/verse counts,
-translation display names, father stats.
-<bookid>.json One file per NT book (e.g. john.json, 1cor.json).
+books-index.json Canonical 66-book list (OT then NT), chapter/verse
+counts, translation display names, father stats,
+`otBookIds`, and `ntOnlyTranslations` (e.g. YLT).
+<bookid>.json One file per book (e.g. gen.json, john.json).
 Each holds: translations (KJV/ASV/WEB/YLT/DRA
 text by chapter/verse), greek (per-verse tagged
-Greek words), fathers (verse -> quote indices),
-quotes (deduplicated patristic citation objects).
-lexicon.json Strong's-number-keyed Greek lexicon entries.
+original-language words — Greek for NT books,
+Hebrew/Aramaic for OT books despite the key name),
+fathers (verse -> quote indices), quotes
+(deduplicated patristic citation objects).
+lexicon.json Strong's-number-keyed lexicon: G#### Greek,
+H#### Hebrew/Aramaic entries.
 README.md Project overview and local/GitHub Pages hosting.
 
 
@@ -73,11 +78,21 @@ that scheme.
   removed in favor of the Worker proxy, which holds the key server-side.
   Don't hardcode any API key into the app code, a commit, or a chat
   response.
-- `decodeMorph()` (in `js/greek.js`) parses Robinson/Tyndale-style morphology codes (e.g.
-  `N-GSM-P`, `V-PAI-3P`) into readable labels. If new tag combinations
-  appear in the data, extend the `MORPH_*` lookup tables rather than
+- `decodeMorph(m, hebrew)` (in `js/greek.js`) parses Robinson/Tyndale-style
+  Greek codes (e.g. `N-GSM-P`, `V-PAI-3P`) or, when `hebrew` is true, OSHB
+  Hebrew/Aramaic codes (e.g. `HR/Ncfsa`, `AVpi1cp`: language prefix, then
+  `/`-separated segments). Callers pass `isOT(bookId)` — don't sniff the
+  code, the two schemes overlap. If new tag combinations appear in the
+  data, extend the `MORPH_*` / `HEB_*` lookup tables rather than
   special-casing strings elsewhere.
-- Book IDs (`matt`, `mark`, ..., `rev`) are the canonical identifiers used
+- OT words carry `/` morpheme separators and cantillation marks; always
+  render them through `displayWord()` (strips both, keeps vowel points).
+  Hebrew containers get `dir="rtl"` and the `hebrew` class (Noto Serif Hebrew).
+- Translation availability is per book: use `translationAvailable()` /
+  `effectiveTranslation()` from `js/data.js` rather than reading
+  `state.translation` directly when rendering, so an NT-only pick (YLT)
+  falls back to KJV in the OT without overwriting the viewer's preference.
+- Book IDs (`gen`, `exod`, ..., `mal`, `matt`, ..., `rev`) are the canonical identifiers used
   across `data/`, `USFM_ID` (for NASB/api.bible lookups), and the book picker.
   Don't introduce a second book-naming scheme.
 
@@ -91,10 +106,18 @@ condemned/heretical writings, and anything post-800 AD or post-Reformation).
 If asked to regenerate or extend this data, ask where the source corpora
 live before attempting to re-derive the pipeline from scratch.
 
+OT Hebrew in `data/` is keyed to KJV (English) verse numbering, like the
+translations, `verseCounts`, and fathers. The pipeline's output used Hebrew
+(BHS/MT) numbering, so it was re-keyed once using STEPBible TVTMS
+(CC BY 4.0), with the detailed KJV/Hebrew tables overriding the summary
+list where they disagree (Neh 7:68-69). Result: every OT chapter's Hebrew
+verse keys match `translations.KJV`, except Neh 7:68, which has no Hebrew.
+Any regenerated OT data must be remapped the same way.
+
 ## Conventions
 
 - No external JS/CSS dependencies beyond Google Fonts (`Spectral`, `Source
-  Serif 4`, `Gentium Plus`, `Inter`) — keep it that way so the page keeps
+  Serif 4`, `Gentium Plus`, `Inter`, `Noto Serif Hebrew`) — keep it that way so the page keeps
   working as a plain static file indefinitely.
 - Prefer targeted edits over rewriting files wholesale; they're easier to
   review. A full rewrite is reasonable only for large structural changes.
@@ -114,9 +137,11 @@ locally and exercising the app in a browser (or headless via Playwright):
 python3 -m http.server 8000
 ```
 
-Then verify: book/chapter pickers (desktop dropdown and full-screen at
-phone width), prev/next chapter, translation switching, the Greek
-interlinear toggle, the verse detail panel's three tabs (Compare / Greek /
-Fathers), and the lexicon popover on a Greek word click. If NASB config is
+Then verify, in both an OT book (e.g. Genesis, Psalms) and an NT book:
+book/chapter pickers (desktop dropdown and full-screen at phone width),
+prev/next chapter, translation switching (YLT absent in the OT and restored
+in the NT), the Greek/Hebrew interlinear toggle (Hebrew runs right to
+left), the verse detail panel's three tabs (Compare / Greek-or-Hebrew /
+Fathers), and the lexicon popover on a word click. If NASB config is
 empty, confirm NASB is absent from the translation list and nothing throws
 a console error.

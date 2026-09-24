@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <em>A New Testament reader with the Greek text, five translations, and the early Church Fathers.</em>
+  <em>A Bible reader with the Hebrew and Greek texts, five translations, and the early Church Fathers.</em>
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 
 ## Features
 
-**Five public-domain translations.** Switch between translations for the whole chapter, or open any verse to compare them all side by side.
+**All 66 books, five public-domain translations.** Switch between translations for the whole chapter, or open any verse to compare them all side by side. (YLT is New Testament only.)
 
 | | |
 |---|---|
@@ -32,9 +32,9 @@
 
 The NASB (1995) is also available. It is fetched live through a small proxy and is never bundled with the app.
 
-**Greek, word by word.** Turn on the interlinear line to show the Greek under each verse. Tap any Greek word to see its Strong's number, its parsed morphology (e.g. *verb, present active indicative, 3rd person plural*), and its lexicon definition.
+**Hebrew and Greek, word by word.** Turn on the interlinear line to show the original language under each verse: Hebrew (and Aramaic) for the Old Testament, Greek for the New. Tap any word to see its Strong's number, its parsed morphology (e.g. *verb, qal perfect, 3rd person masculine singular*), and its lexicon definition.
 
-**The Church Fathers.** Each verse lists what early Christian writers (c. 100–800 AD) said about it: **41,000+ quotations from 185 authors**.
+**The Church Fathers.** Each verse lists what early Christian writers (c. 100–800 AD) said about it: **65,000+ quotations from 231 authors**.
 
 **No accounts, no tracking, no build step.** It's plain HTML, CSS, and JavaScript. Your place, translation, and theme are saved in your browser.
 
@@ -54,7 +54,7 @@ Then open <http://localhost:8000>. Any static file server works. Opening `index.
 index.html        page markup
 css/              theme, reader layout, verse panel
 js/               native ES modules (no bundler)
-data/             one JSON file per book, plus the index and Greek lexicon
+data/             one JSON file per book, plus the index and Hebrew/Greek lexicon
 ```
 
 To host your own copy, push the repository to GitHub and turn on **Pages** for the main branch.
@@ -62,3 +62,5 @@ To host your own copy, push the repository to GitHub and turn on **Pages** for t
 ## License
 
 The code is under the [MIT](LICENSE) license. The bundled translations are all in the public domain.
+
+Old Testament verse alignment between the Hebrew and English numbering uses the [STEPBible TVTMS](https://github.com/STEPBible/STEPBible-Data) versification data by Tyndale House, Cambridge ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).

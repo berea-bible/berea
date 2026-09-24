@@ -23,6 +23,7 @@ export function loadLexicon(){
   return lexiconPromise;
 }
 export function bookMeta(id){ return INDEX.books.find(b=>b.id===id); }
+export function isOT(id){ return INDEX.otBookIds.includes(id); }
 
 /* ---------- NASB (live, via a Cloudflare Worker proxy in front of api.bible) ----------
    The proxy holds the api.bible key server-side, so nothing secret ever reaches
@@ -35,16 +36,30 @@ const NASB_CONFIG = {
 export function nasbAvailable(){ return !!(NASB_CONFIG.proxyUrl && NASB_CONFIG.bibleId); }
 
 const USFM_ID = {
+  gen:'GEN', exod:'EXO', lev:'LEV', num:'NUM', deut:'DEU', josh:'JOS', judg:'JDG', ruth:'RUT',
+  '1sam':'1SA', '2sam':'2SA', '1kgs':'1KI', '2kgs':'2KI', '1chr':'1CH', '2chr':'2CH', ezra:'EZR',
+  neh:'NEH', esth:'EST', job:'JOB', ps:'PSA', prov:'PRO', eccl:'ECC', song:'SNG', isa:'ISA',
+  jer:'JER', lam:'LAM', ezek:'EZK', dan:'DAN', hos:'HOS', joel:'JOL', amos:'AMO', obad:'OBA',
+  jonah:'JON', mic:'MIC', nah:'NAM', hab:'HAB', zeph:'ZEP', hag:'HAG', zech:'ZEC', mal:'MAL',
   matt:'MAT', mark:'MRK', luke:'LUK', john:'JHN', acts:'ACT', rom:'ROM',
   '1cor':'1CO', '2cor':'2CO', gal:'GAL', eph:'EPH', phil:'PHP', col:'COL',
   '1thess':'1TH', '2thess':'2TH', '1tim':'1TI', '2tim':'2TI', titus:'TIT',
   phlm:'PHM', heb:'HEB', jas:'JAS', '1pet':'1PE', '2pet':'2PE',
   '1jn':'1JN', '2jn':'2JN', '3jn':'3JN', jude:'JUD', rev:'REV'
 };
-export function translationCodes(){
-  const codes = Object.keys(INDEX.translations);
+// Some translations (INDEX.ntOnlyTranslations, e.g. YLT) have no OT text.
+export function translationAvailable(code, bookId){
+  return !(isOT(bookId) && (INDEX.ntOnlyTranslations || []).includes(code));
+}
+export function translationCodes(bookId){
+  const codes = Object.keys(INDEX.translations).filter(c=> translationAvailable(c, bookId));
   if(nasbAvailable()) codes.push('NASB');
   return codes;
+}
+// The translation actually shown for a book: the viewer's pick, or KJV where it has no text.
+// (The pick itself is kept, so e.g. YLT comes back on returning to the NT.)
+export function effectiveTranslation(code, bookId){
+  return translationAvailable(code, bookId) ? code : 'KJV';
 }
 export function translationName(code){
   return code === 'NASB' ? 'New American Standard Bible (1995, live)' : INDEX.translations[code];

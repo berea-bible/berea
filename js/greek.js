@@ -1,4 +1,5 @@
-/* Greek helpers: morphology-code decoder and the lexicon popover. */
+/* Original-language helpers (Greek NT, Hebrew/Aramaic OT): morphology decoders,
+   word display, and the lexicon popover. */
 import { el, escapeHtml } from './app.js';
 import { loadLexicon } from './data.js';
 
@@ -15,7 +16,12 @@ const POS_NAMES = {
   COND:'Conditional Particle', I:'Interrogative Pronoun', X:'Indefinite Pronoun', INJ:'Interjection',
   F:'Reflexive Pronoun', S:'Possessive Pronoun', Q:'Correlative Pronoun', C:'Numeral', K:'Particle'
 };
-export function decodeMorph(m){
+// The caller says which scheme applies (OT book => OSHB); the codes themselves are
+// ambiguous (e.g. Greek "ADV" vs an Aramaic-prefixed "A..." code).
+export function decodeMorph(m, hebrew){
+  return hebrew ? decodeHebrewMorph(m) : decodeGreekMorph(m);
+}
+function decodeGreekMorph(m){
   if(!m) return '';
   const compound = m.indexOf(' +') !== -1;
   const main = m.split(' +')[0];
@@ -48,6 +54,75 @@ export function decodeMorph(m){
   return out;
 }
 
+/* ---------- Hebrew/Aramaic (OSHB) morphology decoder ----------
+   e.g. "HR/Ncfsa", "HVqp3ms", "AVpi1cp": a language prefix (H Hebrew, A Aramaic),
+   then "/"-separated segments (prefixes, the word, suffixes), each starting with a
+   part-of-speech letter. */
+const HEB_GEN   = {b:'Both genders', c:'Common', f:'Feminine', m:'Masculine'};
+const HEB_NUM   = {d:'Dual', p:'Plural', s:'Singular'};
+const HEB_STATE = {a:'Absolute', c:'Construct', d:'Determined'};
+const HEB_PERSON= {1:'1st Person', 2:'2nd Person', 3:'3rd Person'};
+const HEB_STEM  = {q:'Qal', N:'Niphal', p:'Piel', P:'Pual', h:'Hiphil', H:'Hophal', t:'Hithpael',
+  o:'Polel', O:'Polal', r:'Hithpolel', m:'Poel', M:'Poal', k:'Palel', K:'Pulal', Q:'Qal Passive',
+  l:'Pilpel', L:'Polpal', f:'Hithpalpel', D:'Nithpael', j:'Pealal', i:'Pilel', u:'Hothpaal',
+  c:'Tiphil', v:'Hishtaphel', w:'Nithpalel', y:'Nithpoel', z:'Hithpoel'};
+const ARAM_STEM = {q:'Peal', Q:'Peil', u:'Hithpeel', p:'Pael', P:'Ithpaal', M:'Hithpaal', a:'Aphel',
+  h:'Haphel', s:'Saphel', e:'Shaphel', H:'Hophal', i:'Ithpeel', t:'Hishtaphel', v:'Ishtaphel',
+  w:'Hithaphel', o:'Polel', z:'Ithpoel', r:'Hithpolel', f:'Hithpalpel', b:'Hephal', c:'Tiphel',
+  m:'Poel', l:'Palpel', L:'Ithpalpel', O:'Ithpolel', G:'Ittaphal'};
+const HEB_CONJ  = {p:'Perfect', q:'Sequential Perfect', i:'Imperfect', w:'Sequential Imperfect',
+  h:'Cohortative', j:'Jussive', v:'Imperative', r:'Participle (active)', s:'Participle (passive)',
+  a:'Infinitive Absolute', c:'Infinitive Construct'};
+const HEB_POS = {
+  A:{a:'Adjective', c:'Cardinal Number', g:'Gentilic Adjective', o:'Ordinal Number'},
+  N:{c:'Noun', g:'Gentilic Noun', p:'Proper Noun', x:'Noun'},
+  P:{d:'Demonstrative Pronoun', f:'Indefinite Pronoun', i:'Interrogative Pronoun', p:'Personal Pronoun', r:'Relative Pronoun'},
+  S:{d:'Directional He', h:'Paragogic He', n:'Paragogic Nun', p:'Pronominal Suffix'},
+  T:{a:'Affirmation Particle', d:'Definite Article', e:'Exhortation Particle', i:'Interrogative Particle',
+     j:'Interjection', m:'Demonstrative Particle', n:'Negative Particle', o:'Direct Object Marker', r:'Relative Particle'},
+};
+const HEB_SIMPLE = {C:'Conjunction', D:'Adverb', R:'Preposition', V:'Verb'};
+// person/gender/number (pronouns, suffixes, finite verbs) or gender/number/state
+function hebFeatures(s){
+  if(/^[123x]/.test(s)) return [HEB_PERSON[s[0]], HEB_GEN[s[1]], HEB_NUM[s[2]]];
+  return [HEB_GEN[s[0]], HEB_NUM[s[1]], HEB_STATE[s[2]]];
+}
+function decodeHebrewSeg(seg, aramaic){
+  const pos = seg[0];
+  let name, bits = [];
+  if(pos === 'V'){
+    name = 'Verb';
+    bits = [(aramaic ? ARAM_STEM : HEB_STEM)[seg[1]], HEB_CONJ[seg[2]], ...hebFeatures(seg.slice(3))];
+  } else if(HEB_POS[pos]){
+    name = HEB_POS[pos][seg[1]] || HEB_POS[pos].a || pos;
+    bits = hebFeatures(seg.slice(2));
+  } else {
+    name = HEB_SIMPLE[pos] || seg;
+    if(pos === 'R' && seg[1] === 'd') name += ' (with article)';
+  }
+  bits = bits.filter(Boolean);
+  return name + (bits.length ? ' · ' + bits.join(', ') : '');
+}
+function decodeHebrewMorph(m){
+  if(!m) return '';
+  const aramaic = m[0] === 'A';
+  const out = m.slice(1).split('/').map(seg=> decodeHebrewSeg(seg, aramaic)).join(' + ');
+  return aramaic ? out + ' (Aramaic)' : out;
+}
+
+/* ---------- word display ---------- */
+// Hebrew: drop cantillation accents, meteg, paseq and sof pasuq (keep vowel points and maqaf).
+const HEB_MARKS = /[֑-ֽ֯׀׃]/g;
+export function stripCantillation(s){ return (s||'').replace(HEB_MARKS, ''); }
+// Surface form of a tagged word; OSHB words mark morpheme boundaries with "/".
+export function displayWord(w, hebrew){
+  return hebrew ? stripCantillation(w.g.replace(/\//g, '')) : w.g;
+}
+// Toggle/tab labels for the original-language line.
+export function langLabels(hebrew){
+  return hebrew ? { name:'Hebrew', symbol:'א' } : { name:'Greek', symbol:'Ω' };
+}
+
 /* ---------- lexicon popover ---------- */
 export async function showLexicon(strongs, anchor){
   if(!strongs){ el.lexPop.innerHTML = '<div class="empty-state">No lexicon entry available.</div>'; }
@@ -63,8 +138,11 @@ export async function showLexicon(strongs, anchor){
     el.lexPop.innerHTML = '<div class="empty-state">No lexicon entry for '+strongs+'.</div>';
     return;
   }
+  const hebrew = strongs[0] === 'H';
   el.lexPop.innerHTML =
-    '<div class="lex-head"><div><div class="lex-greek">'+escapeHtml(entry.greek)+'</div>'+
+    '<div class="lex-head"><div>'+
+    (hebrew ? '<div class="lex-greek hebrew" dir="rtl">'+escapeHtml(stripCantillation(entry.greek))+'</div>'
+            : '<div class="lex-greek">'+escapeHtml(entry.greek)+'</div>')+
     '<div class="lex-translit">'+escapeHtml(entry.translit)+'</div>'+
     '<div class="lex-strongs">'+strongs+'</div></div>'+
     '<button class="lex-close" aria-label="Close">&#10005;</button></div>'+

@@ -1,7 +1,7 @@
-/* Verse detail panel: Compare / Greek / Commentary tabs. */
+/* Verse detail panel: Compare / Greek-or-Hebrew / Commentary tabs. */
 import { state, el, escapeHtml } from './app.js';
-import { bookCache, bookMeta, nasbAvailable, ensureNasbChapter, translationCodes, translationName } from './data.js';
-import { decodeMorph, showLexicon, hideLexicon } from './greek.js';
+import { bookCache, bookMeta, isOT, nasbAvailable, ensureNasbChapter, translationCodes, translationName, effectiveTranslation } from './data.js';
+import { decodeMorph, displayWord, showLexicon, hideLexicon } from './greek.js';
 
 export async function openVerse(vn){
   state.selectedVerse = vn;
@@ -23,27 +23,31 @@ export async function openVerse(vn){
   const book = bookCache[state.bookId];
 
   /* Compare tab */
+  const shown = effectiveTranslation(state.translation, state.bookId);
   let cmp = '';
-  translationCodes().forEach(code=>{
+  translationCodes(state.bookId).forEach(code=>{
     const text = ((book.translations[code]||{})[ch]||{})[vs];
     if(!text) return;
     const isLive = code === 'NASB';
-    cmp += '<div class="cmp-item'+(code===state.translation?' primary':'')+(isLive?' live':'')+'">'+
+    cmp += '<div class="cmp-item'+(code===shown?' primary':'')+(isLive?' live':'')+'">'+
       '<div class="cmp-label"><span class="cmp-code">'+code+'</span><span class="cmp-name">'+translationName(code)+'</span>'+
       (isLive ? '<span class="cmp-live-tag">LIVE</span>' : '')+'</div>'+
       '<div class="cmp-text">'+escapeHtml(text)+'</div></div>';
   });
   el.paneCompare.innerHTML = cmp || '<div class="empty-state">No text found for this verse.</div>';
 
-  /* Greek tab */
+  /* Greek / Hebrew tab */
+  const hebrew = isOT(state.bookId);
   const words = ((book.greek[ch]||{})[vs]) || [];
   if(words.length){
-    let g = '<p class="interlinear-note">Word-by-word Greek for this verse, drawn from the critical editions (NA/SBL/TR family). Tap a word for its full lexicon entry.</p>';
+    let g = hebrew
+      ? '<p class="interlinear-note">Word-by-word Hebrew for this verse (Aramaic in parts of Daniel and Ezra), from the Westminster Leningrad Codex as tagged by the Open Scriptures Hebrew Bible. Tap a word for its full lexicon entry.</p>'
+      : '<p class="interlinear-note">Word-by-word Greek for this verse, drawn from the critical editions (NA/SBL/TR family). Tap a word for its full lexicon entry.</p>';
     g += words.map(w=>
       '<button class="iword" data-s="'+(w.s[0]||'')+'">'+
-        '<span class="igk">'+escapeHtml(w.g)+'</span>'+
+        (hebrew ? '<span class="igk hebrew" dir="rtl">' : '<span class="igk">')+escapeHtml(displayWord(w, hebrew))+'</span>'+
         '<span class="imeta"><span class="igloss">'+escapeHtml(w.gl)+(w.t && w.t.trim() && w.t.trim()!==w.gl ? ' <span style="color:var(--ink-faint)">&mdash; "'+escapeHtml(w.t.trim())+'" here</span>':'')+'</span>'+
-        '<span class="imorph">'+escapeHtml(decodeMorph(w.m))+'</span></span>'+
+        '<span class="imorph">'+escapeHtml(decodeMorph(w.m, hebrew))+'</span></span>'+
       '</button>'
     ).join('');
     el.paneGreek.innerHTML = g;
@@ -51,7 +55,9 @@ export async function openVerse(vn){
       node.addEventListener('click', ()=> showLexicon(node.dataset.s, node));
     });
   } else {
-    el.paneGreek.innerHTML = '<div class="empty-state">This verse falls outside the tagged Greek New Testament data (Matthew&ndash;Revelation).</div>';
+    el.paneGreek.innerHTML = hebrew
+      ? '<div class="empty-state">This verse has no counterpart in the Hebrew (Masoretic) text.</div>'
+      : '<div class="empty-state">No tagged Greek text is available for this verse.</div>';
   }
 
   /* Fathers tab */

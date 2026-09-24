@@ -52,9 +52,10 @@
 }
 .iword:hover{ background:var(--surface-2); margin:0 -18px; padding-left:18px; padding-right:18px; width:calc(100% + 36px); }
 .iword .igk{ font-family:'Gentium Plus',serif; font-size:1.2rem; color:var(--greek); flex:none; min-width:74px; }
+.iword .igk.hebrew{ font-family:'Noto Serif Hebrew',serif; font-size:1.25rem; text-align:right; }
 .iword .imeta{ flex:1; min-width:0; }
-.iword .igloss{ font-size:.85rem; color:var(--ink); }
-.iword .imorph{ font-size:.68rem; color:var(--ink-faint); margin-top:1px; }
+.iword .igloss{ display:block; font-size:.85rem; color:var(--ink); }
+.iword .imorph{ display:block; font-size:.68rem; color:var(--ink-faint); margin-top:1px; }
 
 .father-item{ padding:14px 0; border-bottom:1px solid var(--border); }
 .father-item:last-child{ border-bottom:none; }
@@ -75,6 +76,7 @@
 #lexPop.show{ display:block; }
 .lex-head{ display:flex; align-items:baseline; justify-content:space-between; gap:10px; }
 .lex-greek{ font-family:'Gentium Plus',serif; font-size:1.5rem; color:var(--greek); }
+.lex-greek.hebrew{ font-family:'Noto Serif Hebrew',serif; }
 .lex-close{ background:none; border:none; color:var(--ink-faint); cursor:pointer; font-size:1rem; padding:2px; flex:none; }
 .lex-translit{ font-size:.78rem; color:var(--ink-faint); font-style:italic; margin-top:1px; }
 .lex-strongs{ font-size:.68rem; color:var(--ink-faint); margin-top:2px; letter-spacing:.02em; }

@@ -37,6 +37,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 .greek{ font-family:'Gentium Plus','Source Serif 4',serif; }
+.hebrew{ font-family:'Noto Serif Hebrew','Source Serif 4',serif; }
 h1,h2,h3,.display{ font-family:'Spectral',serif; }
 button{ font-family:inherit; }
 a{ color:var(--accent); }
