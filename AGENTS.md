@@ -141,7 +141,7 @@ Any regenerated OT data must be remapped the same way.
 ## Conventions
 
 - No external JS/CSS dependencies beyond Google Fonts (`Spectral`, `Source
-  Serif 4`, `Gentium Plus`, `Inter`, `Noto Serif Hebrew`) — keep it that way so the page keeps
+  Serif 4`, `Gentium Plus`, `Inter`, `Noto Serif Hebrew`, `GFS Didot` for the wordmark) — keep it that way so the page keeps
   working as a plain static file indefinitely.
 - Prefer targeted edits over rewriting files wholesale; they're easier to
   review. A full rewrite is reasonable only for large structural changes.

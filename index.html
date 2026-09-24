@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Berea</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Gentium+Plus:ital@0;1&family=Inter:wght@400;500;600;700&family=Noto+Serif+Hebrew:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Spectral:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Gentium+Plus:ital@0;1&family=Inter:wght@400;500;600;700&family=Noto+Serif+Hebrew:wght@400;500&display=swap">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/reader.css">
 <link rel="stylesheet" href="css/panel.css">
@@ -13,7 +13,10 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
 <div id="app">
   <div id="main">
     <div id="topbar">
-      <div class="brand">Berea</div>
+      <a class="brand" href="https://berea-bible.github.io/" aria-label="Berea home page">
+        <span class="face latin" aria-hidden="true"><span style="--i:0">B</span><span class="sc" style="--i:1">e</span><span class="sc" style="--i:2">r</span><span class="sc" style="--i:3">e</span><span class="sc" style="--i:4">a</span></span>
+        <span class="face greek" lang="el" aria-hidden="true"><span style="--i:0">Β</span><span style="--i:1">έ</span><span style="--i:2">ρ</span><span style="--i:3">ο</span><span style="--i:4">ι</span><span style="--i:5">α</span></span>
+      </a>
       <div id="chapterNav">
         <button class="step-btn" id="prevCh" title="Previous chapter">&#8592;</button>
         <div class="picker-wrap">
