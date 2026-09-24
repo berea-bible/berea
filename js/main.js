@@ -1,6 +1,6 @@
 /* Entry point: theme, then boot the library and show the saved chapter. */
 import { state, el, savePrefs } from './app.js';
-import { loadIndex, loadBook, bookMeta, purgeExpiredNasb } from './data.js';
+import { loadIndex, loadBook, bookMeta, purgeExpiredNasb, flushFumsQueue } from './data.js';
 import { renderNav, syncBookControls, showChapter } from './reader.js';
 
 /* ---------- theme ---------- */
@@ -21,6 +21,7 @@ async function boot(){
     return;
   }
   purgeExpiredNasb(); // drop NASB text cached more than 30 days ago (not awaited)
+  flushFumsQueue();   // send FUMS reports queued while offline
   if(!bookMeta(state.bookId)) state.bookId = 'john';
   renderNav();
   await loadBook(state.bookId);

@@ -84,7 +84,7 @@ that scheme.
   translation, and the Compare tab shows a **Load** button unless the
   chapter is already cached (`getCachedNasbChapter()` never touches the
   network). Fetched chapters are cached in IndexedDB (`berea-cache` /
-  `nasb`, key `{bibleId}:{bookId}.{ch}`, value `{verses, fetchedAt}`); per
+  `nasb`, key `{bibleId}:{bookId}.{ch}`, value `{verses, fumsToken, fetchedAt}`); per
   the api.bible agreement, entries older than 30 days are dropped on read
   and swept at boot by `purgeExpiredNasb()`. All IndexedDB access must fail
   soft (fall back to memory + network).
@@ -92,6 +92,16 @@ that scheme.
   chapter, the Compare row), show `NASB_NOTICE_HTML` (`js/data.js`) — the
   short copyright line, an API.Bible credit, and a link to the full notice
   in `copyright.html#nasb`. Any new place that renders NASB text needs it too.
+- api.bible terms §14 (FUMS) is mandatory for webapps: every display of NASB
+  text must call `reportNasbView(bookId, chapter)` (`js/data.js`), which sends
+  the chapter's `fumsToken` (stored with the IndexedDB entry, so cached
+  displays are reported too) to `https://fums.api.bible/f3` with an anonymous
+  device id (localStorage `fums.dId`) and session id (sessionStorage
+  `fums.sId`); offline reports queue under `fums.report.*` and flush at boot
+  / on `online`. Currently called once per NASB chapter shown in the reader
+  (not on Greek-line re-renders) and whenever the Compare row shows NASB text.
+  This speaks the documented FUMS v3 HTTP protocol directly — don't vendor or
+  load `pkg.api.bible/fumsV3.min.js` (unlicensed, changes, third-party JS).
 - `decodeMorph(m, hebrew)` (in `js/greek.js`) parses Robinson/Tyndale-style
   Greek codes (e.g. `N-GSM-P`, `V-PAI-3P`) or, when `hebrew` is true, OSHB
   Hebrew/Aramaic codes (e.g. `HR/Ncfsa`, `AVpi1cp`: language prefix, then

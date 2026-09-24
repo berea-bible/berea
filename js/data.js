@@ -75,6 +75,7 @@ export function translationName(code){
    swept at boot (purgeExpiredNasb). Any storage failure falls back to memory + network. */
 const NASB_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 const nasbChapterCache = {}; // "bookId.chapter" -> Promise<{verse:text}>
+const nasbTokens = {};       // "bookId.chapter" -> fumsToken from the api.bible response
 
 let nasbDbPromise = null;
 function nasbDb(){
@@ -104,8 +105,9 @@ async function readStoredNasb(bookId, chapter){
   const key = nasbKey(bookId, chapter);
   const entry = await nasbStore('readonly', s=> s.get(key));
   if(!entry) return null;
-  if(!nasbFresh(entry)){ nasbStore('readwrite', s=> s.delete(key)); return null; }
-  return entry.verses;
+  // no fumsToken = cached before FUMS reporting existed; refetch so views can be reported
+  if(!nasbFresh(entry) || !entry.fumsToken){ nasbStore('readwrite', s=> s.delete(key)); return null; }
+  return entry;
 }
 export async function purgeExpiredNasb(){
   if(!nasbAvailable()) return;
@@ -124,7 +126,8 @@ export async function purgeExpiredNasb(){
   }catch(e){ /* storage unavailable: nothing cached to purge */ }
 }
 
-function rememberNasb(bookId, chapter, verses){
+function rememberNasb(bookId, chapter, verses, fumsToken){
+  nasbTokens[bookId + '.' + chapter] = fumsToken;
   const book = bookCache[bookId];
   if(book){
     book.translations.NASB = book.translations.NASB || {};
@@ -157,9 +160,10 @@ export async function getCachedNasbChapter(bookId, chapter){
   const book = bookCache[bookId];
   const mem = book && book.translations.NASB && book.translations.NASB[String(chapter)];
   if(mem) return mem;
-  const verses = await readStoredNasb(bookId, chapter);
-  if(verses) rememberNasb(bookId, chapter, verses);
-  return verses;
+  const entry = await readStoredNasb(bookId, chapter);
+  if(!entry) return null;
+  rememberNasb(bookId, chapter, entry.verses, entry.fumsToken);
+  return entry.verses;
 }
 
 export async function ensureNasbChapter(bookId, chapter){
@@ -178,11 +182,57 @@ export async function ensureNasbChapter(bookId, chapter){
     const data = await res.json();
     const verses = parseNasbChapter(data && data.data && data.data.content);
     if(!Object.keys(verses).length) throw new Error('NASB returned no text');
-    rememberNasb(bookId, chapter, verses);
-    nasbStore('readwrite', s=> s.put({ verses, fetchedAt: Date.now() }, nasbKey(bookId, chapter)));
+    const fumsToken = (data.meta && data.meta.fumsToken) || '';
+    rememberNasb(bookId, chapter, verses, fumsToken);
+    nasbStore('readwrite', s=> s.put({ verses, fumsToken, fetchedAt: Date.now() }, nasbKey(bookId, chapter)));
     return verses;
   })();
   nasbChapterCache[key] = promise;
   promise.catch(()=>{ delete nasbChapterCache[key]; }); // allow retry after failure
   return promise;
 }
+
+/* ---------- FUMS (api.bible Fair Use Management System, terms §14) ----------
+   Required for webapps: every time NASB text is displayed, report the fumsToken from the
+   response that supplied it (including text shown from the IndexedDB cache). This speaks
+   the documented FUMS v3 HTTP protocol directly instead of loading api.bible's tracker
+   script (pkg.api.bible/fumsV3.min.js), keeping the app free of third-party JS. Only
+   anonymous ids are sent: a random device id (localStorage) and session id (sessionStorage),
+   under the same keys the official tracker uses. Reports made offline are queued. */
+const FUMS_URL = 'https://fums.api.bible/f3';
+function fumsId(){
+  const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_';
+  return Array.from(crypto.getRandomValues(new Uint8Array(21)), b=> chars[b & 63]).join('');
+}
+function fumsStoredId(storage, key){
+  try{
+    let id = window[storage].getItem(key);
+    if(!id){ id = fumsId(); window[storage].setItem(key, id); }
+    return id;
+  }catch(e){ return fumsStoredId.fallback[key] = fumsStoredId.fallback[key] || fumsId(); }
+}
+fumsStoredId.fallback = {};
+function fumsSend(url){ fetch(url, { mode:'no-cors', keepalive:true }).catch(()=>{}); }
+
+export function reportNasbView(bookId, chapter){
+  const token = nasbTokens[bookId + '.' + chapter];
+  if(!token) return;
+  let url = FUMS_URL + '?dId=' + fumsStoredId('localStorage', 'fums.dId') +
+    '&sId=' + fumsStoredId('sessionStorage', 'fums.sId') + '&t=' + encodeURIComponent(token);
+  if(navigator.onLine === false){
+    try{ localStorage.setItem('fums.report.' + fumsId(), url + '&ts=' + Date.now()); }catch(e){}
+    return;
+  }
+  fumsSend(url);
+}
+// Send any reports queued while offline (called at boot and when the browser comes back online).
+export function flushFumsQueue(){
+  try{
+    Object.keys(localStorage).filter(k=> k.startsWith('fums.report.')).forEach(k=>{
+      const url = localStorage.getItem(k);
+      localStorage.removeItem(k);
+      if(url) fumsSend(url);
+    });
+  }catch(e){}
+}
+window.addEventListener('online', flushFumsQueue);

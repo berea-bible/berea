@@ -1,6 +1,6 @@
 /* Verse detail panel: Compare / Greek-or-Hebrew / Commentary tabs. */
 import { state, el, escapeHtml } from './app.js';
-import { bookCache, bookMeta, isOT, nasbAvailable, ensureNasbChapter, getCachedNasbChapter, translationCodes, translationName, effectiveTranslation, NASB_NOTICE_HTML } from './data.js';
+import { bookCache, bookMeta, isOT, nasbAvailable, ensureNasbChapter, getCachedNasbChapter, translationCodes, translationName, effectiveTranslation, NASB_NOTICE_HTML, reportNasbView } from './data.js';
 import { decodeMorph, displayWord, showLexicon, hideLexicon } from './greek.js';
 
 export async function openVerse(vn){
@@ -93,6 +93,7 @@ function renderNasbRow(vn, status, text){
   row.innerHTML =
     '<div class="cmp-label"><span class="cmp-code">NASB</span><span class="cmp-name">'+translationName('NASB')+'</span>'+
     '<span class="cmp-live-tag">LIVE</span></div>' + body;
+  if(status === 'text' && text) reportNasbView(state.bookId, state.chapter); // FUMS: NASB text displayed
   const btn = row.querySelector('.cmp-load');
   if(btn) btn.addEventListener('click', async ()=>{
     renderNasbRow(vn, 'loading');

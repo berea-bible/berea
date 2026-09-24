@@ -36,7 +36,7 @@ The NASB (1995) is also available. It is fetched live through a small proxy and 
 
 **The Church Fathers.** Each verse lists what early Christian writers (c. 100–800 AD) said about it: **65,000+ quotations from 231 authors**.
 
-**No accounts, no tracking, no build step.** It's plain HTML, CSS, and JavaScript. Your place, translation, and theme are saved in your browser.
+**No accounts, no ads, no build step.** It's plain HTML, CSS, and JavaScript. Your place, translation, and theme are saved in your browser. The only usage reporting is the anonymous view count that API.Bible requires when you read the NASB (see [Copyright](copyright.html#nasb)); the public-domain translations send nothing.
 
 ## Run it locally
 

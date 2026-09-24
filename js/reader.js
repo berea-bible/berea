@@ -1,6 +1,6 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation, NASB_NOTICE_HTML } from './data.js';
+import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation, NASB_NOTICE_HTML, reportNasbView } from './data.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels } from './greek.js';
 
@@ -151,6 +151,8 @@ export async function showChapter(){
     }
   }
   renderChapter();
+  // FUMS: one view per chapter shown in NASB (not on Greek-line re-renders)
+  if(state.translation === 'NASB') reportNasbView(state.bookId, state.chapter);
 }
 function renderChapter(){
   const book = bookCache[state.bookId];
