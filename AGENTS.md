@@ -138,6 +138,15 @@ list where they disagree (Neh 7:68-69). Result: every OT chapter's Hebrew
 verse keys match `translations.KJV`, except Neh 7:68, which has no Hebrew.
 Any regenerated OT data must be remapped the same way.
 
+The DRA Psalms follow Vulgate numbering in the source (Vg 9 = KJV 9–10,
+Vg 113 = KJV 114–115, etc., titles as verse 1), which the pipeline mapped
+inconsistently. They were re-keyed once to KJV numbering via TVTMS's
+KJV/Latin columns; psalm titles are prepended to verse 1, and where the DRA
+joins two KJV verses the text sits in the first (e.g. 20:8 holds KJV 20:8–9).
+The DRA source elsewhere still contains "dummy verses inserted by amos"
+placeholders and a few lost verses (e.g. Isa 5:1–9, John 15:1–9, Rom 9:1–9);
+fixing those needs a clean DRA source.
+
 ## Conventions
 
 - No external JS/CSS dependencies beyond Google Fonts (`Spectral`, `Source
