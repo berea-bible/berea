@@ -66,7 +66,7 @@ export function effectiveTranslation(code, bookId){
   return translationAvailable(code, bookId) ? code : 'KJV';
 }
 export function translationName(code){
-  return code === 'NASB' ? 'New American Standard Bible (1995, live)' : INDEX.translations[code];
+  return code === 'NASB' ? 'New American Standard Bible (1995)' : INDEX.translations[code];
 }
 
 /* Keep api.bible traffic low: one request per chapter (never per verse), nothing

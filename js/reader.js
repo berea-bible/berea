@@ -1,6 +1,6 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation, NASB_NOTICE_HTML, reportNasbView } from './data.js';
+import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation, translationCodes, translationName, NASB_NOTICE_HTML, reportNasbView } from './data.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels } from './greek.js';
 
@@ -43,18 +43,19 @@ export function renderNav(){
   el.navFoot.textContent = INDEX.fatherAuthorCount + ' early church authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
 }
 // Options depend on the book (e.g. YLT has no OT text), so this re-runs on every book change.
+// Dropdown names drop a trailing year, e.g. "(1611/1769)" or "(1995)", unless two listed
+// options share a name (multiple editions of one translation), where the year tells them apart.
+const YEAR_SUFFIX = /\s*\(\d{4}[^)]*\)$/;
 function renderTranslationSelect(){
   el.translationSelect.innerHTML = '';
-  Object.keys(INDEX.translations).filter(code=> translationAvailable(code, state.bookId)).forEach(code=>{
+  const codes = translationCodes(state.bookId);
+  const base = code=> translationName(code).replace(YEAR_SUFFIX, '');
+  codes.forEach(code=>{
     const opt = document.createElement('option');
-    opt.value = code; opt.dataset.name = INDEX.translations[code];
+    const editions = codes.filter(c=> base(c) === base(code)).length;
+    opt.value = code; opt.dataset.name = editions > 1 ? translationName(code) : base(code);
     el.translationSelect.appendChild(opt);
   });
-  if(nasbAvailable()){
-    const nasbOpt = document.createElement('option');
-    nasbOpt.value = 'NASB'; nasbOpt.dataset.name = 'New American Standard (1995, live)';
-    el.translationSelect.appendChild(nasbOpt);
-  }
   labelTranslationOptions();
   el.translationSelect.value = effectiveTranslation(state.translation, state.bookId);
 }
