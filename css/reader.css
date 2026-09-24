@@ -153,3 +153,4 @@
   .chapter-grid{ grid-template-columns:repeat(5, 1fr); gap:8px; align-content:start; }
   .ch-btn{ font-size:1.05rem; background:var(--surface-2); }
 }
+.chapter-notice{ margin:28px 0 0 42px; padding-top:14px; border-top:1px solid var(--border); }

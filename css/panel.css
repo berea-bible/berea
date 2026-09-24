@@ -92,3 +92,10 @@
 @media (max-width:860px){
   #panel{ width:100%; max-width:100%; }
 }
+.cmp-note{ font-size:.82rem; color:var(--ink-faint); }
+.cmp-load{
+  font-family:inherit; font-size:.74rem; font-weight:600; color:var(--accent); background:var(--accent-soft);
+  border:none; border-radius:10px; padding:3px 10px; margin-left:4px; cursor:pointer;
+}
+.cmp-load:hover{ filter:brightness(.96); }
+.cmp-notice{ margin-top:6px; }

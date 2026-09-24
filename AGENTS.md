@@ -78,6 +78,20 @@ that scheme.
   removed in favor of the Worker proxy, which holds the key server-side.
   Don't hardcode any API key into the app code, a commit, or a chat
   response.
+- Keep api.bible traffic minimal. `ensureNasbChapter()` makes **one
+  `/chapters/{USFM}.{ch}` request per chapter** (never per verse) and nothing
+  is prefetched: the reader fetches only when NASB is the selected
+  translation, and the Compare tab shows a **Load** button unless the
+  chapter is already cached (`getCachedNasbChapter()` never touches the
+  network). Fetched chapters are cached in IndexedDB (`berea-cache` /
+  `nasb`, key `{bibleId}:{bookId}.{ch}`, value `{verses, fetchedAt}`); per
+  the api.bible agreement, entries older than 30 days are dropped on read
+  and swept at boot by `purgeExpiredNasb()`. All IndexedDB access must fail
+  soft (fall back to memory + network).
+- api.bible terms §7: wherever NASB text is displayed (end of an NASB
+  chapter, the Compare row), show `NASB_NOTICE_HTML` (`js/data.js`) — the
+  short copyright line, an API.Bible credit, and a link to the full notice
+  in `copyright.html#nasb`. Any new place that renders NASB text needs it too.
 - `decodeMorph(m, hebrew)` (in `js/greek.js`) parses Robinson/Tyndale-style
   Greek codes (e.g. `N-GSM-P`, `V-PAI-3P`) or, when `hebrew` is true, OSHB
   Hebrew/Aramaic codes (e.g. `HR/Ncfsa`, `AVpi1cp`: language prefix, then

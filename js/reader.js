@@ -1,6 +1,6 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation } from './data.js';
+import { INDEX, bookCache, bookMeta, isOT, loadBook, nasbAvailable, ensureNasbChapter, translationAvailable, effectiveTranslation, NASB_NOTICE_HTML } from './data.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels } from './greek.js';
 
@@ -185,6 +185,7 @@ function renderChapter(){
     html += '</div></div>';
   });
 
+  if(translation === 'NASB') html += '<p class="nasb-notice chapter-notice">' + NASB_NOTICE_HTML + '</p>';
   el.readingInner.innerHTML = html;
 
   el.readingInner.querySelectorAll('.vnum, .vtext').forEach(node=>{
