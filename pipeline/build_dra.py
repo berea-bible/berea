@@ -85,11 +85,47 @@ TARGET_OVERRIDES = {
     'MIC': {(5, 11): (5, 11)},
     'MRK': {(4, 40): (4, 40)},
     'ACT': {(7, 55): (7, 55), (14, 6): (14, 6)},
+    # Deuterocanonical books (by content): DRA Wis 17:9 covers KJV 17:9-10, so 17:10-20 run one behind
+    'WIS': {(17, v): (17, v + 1) for v in range(10, 21)},
+    # DRA 1 Mac 1:51 covers KJV 1:48-49, so 1:52-53 are KJV 1:50-51 (vul.json has them one earlier)
+    '1MA': {(1, 52): (1, 50), (1, 53): (1, 51)},
+    # Letter of Jeremiah (Baruch 6): KJV 6:1 is a superscription the DRA lacks, so the DRA mostly runs
+    # one behind; DRA 6:5, 6:40 and 6:43-51 each close a KJV verse the previous DRA verse started
+    'BAR': {(6, v): (6, v if v in (5, 40) or 43 <= v <= 51 else v + 1) for v in range(1, 73)},
     # Verse-order differences vul.json doesn't list: align by content
     'MAT': {(5, 4): (5, 5), (5, 5): (5, 4)},     # Vulgate has "meek" before "mourn"
     'PHP': {(1, 16): (1, 17), (1, 17): (1, 16)}, # KJV reverses 1:16-17
     '2CO': {(13, 13): (13, 14)},                 # "The grace of our Lord..." (KJV 13:13 is inside DRA 13:12)
 }
+
+
+# Deuterocanonical books. Wisdom, Baruch (ch. 6 = Letter of Jeremiah) and 1-2 Maccabees go through the mapping
+# like any book. The DRA carries the other additions inside Daniel / Esther:
+#   book -> [(source usfm, chapter, first verse, last verse, target chapter, verse offset)]
+DRA_DEUTEROCANONICAL_MAPPED = {'wis', 'bar', '1macc', '2macc'}
+DRA_DEUTEROCANONICAL_FROM = {
+    # Song of the Three (Dan 3:24-90): 3:52 covers KJV 1:29-30, then -22; the DRA has two pairs in the
+    # Greek/Vulgate order (3:54/55 = KJV 1:33/32, 3:58/59 = KJV 1:37/36)
+    'prazar':  [('DAN', 3, 24, 52, 1, -23), ('DAN', 3, 53, 53, 1, -22), ('DAN', 3, 54, 54, 1, -21),
+                ('DAN', 3, 55, 55, 1, -23), ('DAN', 3, 56, 57, 1, -22), ('DAN', 3, 58, 58, 1, -21),
+                ('DAN', 3, 59, 59, 1, -23), ('DAN', 3, 60, 90, 1, -22)],
+    'sus':     [('DAN', 13, 1, 64, 1, 0)],                   # Susanna = Dan 13
+    # Bel: Dan 13:65 is KJV 1:1, Dan 14:1-41 = 1:2-42; Dan 14:42 (Vulgate-only close) joins 1:42
+    'bel':     [('DAN', 13, 65, 65, 1, -64), ('DAN', 14, 1, 41, 1, 1), ('DAN', 14, 42, 42, 1, 0)],
+    'addesth': [('EST', 10, 4, 13, 10, 0)] + [('EST', c, 1, 99, c, 0) for c in range(11, 17)],
+}
+# No DRA for Tobit, Judith and Sirach (the Vulgate is a different recension there, so verses don't
+# correspond to the KJV/WEB), nor 1-2 Esdras / Prayer of Manasseh (not in this DRA).
+
+
+def from_additions(bid, source):
+    out = defaultdict(dict)
+    for usfm, c, a, b, tc, off in DRA_DEUTEROCANONICAL_FROM[bid]:
+        for v in range(a, b + 1):
+            if v in source[usfm].get(c, {}):
+                t = source[usfm][c][v]
+                out[tc][v + off] = (out[tc][v + off] + ' ' + t) if v + off in out[tc] else t
+    return {c: dict(sorted(vs.items())) for c, vs in out.items()}
 
 
 def fetch(url, name):
@@ -168,8 +204,14 @@ def main(dry_run):
         usfm = next(u for u, b in ids.items() if b == bid)
         book = json.load(open(os.path.join(DATA, bid + '.json'), encoding='utf-8'))
         kjv = {int(c): {int(v): t for v, t in vs.items()} for c, vs in book['translations']['KJV'].items()}
-        dra, log = remap_vulgate_to_english(mapper, usfm, apply_overrides(usfm, source[usfm]),
-                                            target_overrides=TARGET_OVERRIDES.get(usfm))
+        if bid in index.get('deuterocanonicalBookIds', []) and bid not in DRA_DEUTEROCANONICAL_MAPPED:
+            if bid not in DRA_DEUTEROCANONICAL_FROM:
+                results[bid], logs[bid] = {}, [('no-dra', bid)]
+                continue
+            dra, log = from_additions(bid, source), []
+        else:
+            dra, log = remap_vulgate_to_english(mapper, usfm, apply_overrides(usfm, source[usfm]),
+                                                target_overrides=TARGET_OVERRIDES.get(usfm))
         # chapters/verses beyond the KJV's (deuterocanonical additions such as Dan 13-14) are dropped
         extra = [(c, v) for c in dra for v in dra[c] if v not in kjv.get(c, {})]
         for c, v in extra:
@@ -212,7 +254,7 @@ def main(dry_run):
 
     # ---- report ----
     print(f"\nmean per-verse word overlap with KJV: before {overlap['old'] / overlap['n']:.3f} -> after {overlap['new'] / overlap['n']:.3f}")
-    kinds = ('split', 'fallback', 'override', 'gap', 'unmapped', 'dropped')
+    kinds = ('split', 'fallback', 'override', 'gap', 'unmapped', 'dropped', 'no-dra')
     for kind in kinds:
         items = [d for bid in logs for k, d in logs[bid] if k == kind]
         if items:
@@ -245,6 +287,12 @@ def main(dry_run):
             book['translations']['DRA'] = {str(c): {str(v): t for v, t in vs.items()} for c, vs in dra.items()}
             with open(path, 'w', encoding='utf-8') as fh:
                 json.dump(book, fh, ensure_ascii=False, separators=(',', ':'))
+        # Deuterocanonical books list their translations in the index: DRA where it was written
+        for e in index['books']:
+            if 'translations' in e:
+                e['translations'] = [c for c in e['translations'] if c != 'DRA'] + (['DRA'] if results.get(e['id']) else [])
+        with open(os.path.join(DATA, 'books-index.json'), 'w', encoding='utf-8') as fh:
+            json.dump(index, fh, ensure_ascii=False, indent=2)
         print(f'\nwrote DRA into {len(results)} book files')
     return 1 if failures else 0
 

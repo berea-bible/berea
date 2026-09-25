@@ -30,8 +30,12 @@ Downloads are cached in `pipeline/.cache/` (gitignored); delete it to re-fetch.
 - Verse 0 (psalm titles): prefixed onto English verse 1.
 - An org verse with no English number (e.g. org 1 Sam 20:42 + 21:1 = English 20:42, two-part
   psalm titles): merged into the next org verse's English verse ("fallback").
-- Vulgate material outside the 66 books (Dan 3:24-90, Dan 13-14, Esther 10:4-16:24) is dropped,
-  since the reader follows KJV chapters. It's logged, ready for an Apocrypha build.
+- The additions the DRA carries inside Daniel/Esther go to the deuterocanonical books (`DRA_DEUTEROCANONICAL_FROM`):
+  Dan 3:24-90 → Prayer of Azariah, Dan 13 → Susanna, Dan 13:65 + 14 → Bel, Esther 10:4-16:24 →
+  Additions to Esther. Wisdom, Baruch (ch. 6 = Letter of Jeremiah) and 1-2 Maccabees go through the
+  mapping (`DRA_DEUTEROCANONICAL_MAPPED`). Tobit, Judith and Sirach get no DRA: the Vulgate is a different
+  recension there, and its verses don't correspond to the KJV/WEB. 1-2 Esdras and the Prayer of
+  Manasseh aren't in this DRA. The index's per-book `translations` list gains "DRA" where it's written.
 
 **Overrides** (`build_dra.py`): where the 1899 DRA's own division differs from the `vul` scheme,
 `SOURCE_OVERRIDES` renumbers source verses first and `TARGET_OVERRIDES` pins a source verse to an

@@ -20,7 +20,7 @@
 
 ## Features
 
-**All 66 books, five public-domain translations.** Switch between translations for the whole chapter, or open any verse to compare them all side by side. (YLT is New Testament only.)
+**All 66 books plus the deuterocanonical books, five public-domain translations.** Switch between translations for the whole chapter, or open any verse to compare them all side by side. (YLT is New Testament only. The deuterocanonical books — Tobit, Judith, Wisdom, Sirach, Baruch, 1–2 Maccabees, the additions to Esther and Daniel, 1–2 Esdras and the Prayer of Manasseh — are in KJV and WEB, with the DRA where its Vulgate text lines up.)
 
 | | |
 |---|---|

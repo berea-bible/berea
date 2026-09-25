@@ -1,6 +1,6 @@
 /* Entry point: theme, then boot the library and show the saved chapter. */
 import { state, el, savePrefs } from './app.js';
-import { loadIndex, loadBook, bookMeta, purgeExpiredNasb, flushFumsQueue } from './data.js';
+import { loadIndex, loadBook, bookMeta, chapterNumbers, purgeExpiredNasb, flushFumsQueue } from './data.js';
 import { renderNav, syncBookControls, showChapter } from './reader.js';
 
 /* ---------- theme ---------- */
@@ -26,7 +26,7 @@ async function boot(){
   renderNav();
   await loadBook(state.bookId);
   const meta = bookMeta(state.bookId);
-  if(state.chapter > meta.chapters) state.chapter = 1;
+  if(!chapterNumbers(state.bookId).includes(state.chapter)) state.chapter = chapterNumbers(state.bookId)[0];
   syncBookControls();
   await showChapter();
 }

@@ -4,7 +4,7 @@ Guidance for AI coding agents working in this repository.
 
 ## What this is
 
-Berea: a static Bible reading app (all 66 books). Five public-domain
+Berea: a static Bible reading app (the 66-book canon plus 14 deuterocanonical books). Five public-domain
 translations (KJV, ASV, WEB, YLT, DRA; YLT is NT-only), word-level Hebrew/Aramaic
 (OT) and Greek (NT) text with a Strong's-tagged lexicon, per-verse translation comparison, and early-church-father citations
 (c. 100–800 AD). An optional sixth translation, NASB (1995), can be wired up
@@ -33,9 +33,10 @@ panel.js Verse detail panel (Compare/Greek-or-Hebrew/Commentary).
 greek.js Original-language helpers: Greek and Hebrew/Aramaic
 morphology decoders, word display, lexicon popover.
 data/ Static JSON the app fetches at runtime.
-books-index.json Canonical 66-book list (OT then NT), chapter/verse
+books-index.json Canonical book list (OT, deuterocanonical, NT), chapter/verse
 counts, translation display names, father stats,
-`otBookIds`, and `ntOnlyTranslations` (e.g. YLT).
+`otBookIds`, `deuterocanonicalBookIds`, `ntOnlyTranslations` (e.g. YLT),
+and per-book `translations` lists on deuterocanonical entries.
 <bookid>.json One file per book (e.g. gen.json, john.json).
 Each holds: translations (KJV/ASV/WEB/YLT/DRA
 text by chapter/verse), greek (per-verse tagged
@@ -141,19 +142,35 @@ that scheme.
   `effectiveTranslation()` from `js/data.js` rather than reading
   `state.translation` directly when rendering, so an NT-only pick (YLT)
   falls back to KJV in the OT without overwriting the viewer's preference.
+- Deuterocanonical books (`deuterocanonicalBookIds`: `1esd 2esd tob jdt addesth wis sir bar
+  prazar sus bel prman 1macc 2macc`) get their own "Deuterocanonical" section in the
+  book picker, between the OT and NT. Each index entry lists the translations
+  that carry it (KJV, WEB, plus DRA for some); `translationAvailable()` honours
+  that list, so ASV/YLT/NASB/ESV readers fall back to KJV there without losing
+  their pick. Don't fetch NASB/ESV for these (neither API serves them).
+- Chapter numbers aren't always 1..N (the Additions to Esther are 10–16, KJV
+  numbering): use `chapterNumbers(bookId)` for pickers and prev/next, never
+  `1..meta.chapters`.
 - Book IDs (`gen`, `exod`, ..., `mal`, `matt`, ..., `rev`) are the canonical identifiers used
   across `data/`, `USFM_ID` (for NASB/api.bible lookups), and the book picker.
   Don't introduce a second book-naming scheme.
 
 ## Regenerating `data/`
 
-The JSON in `data/` is the output of a one-time pipeline (not included in
-this repo) that combined: public-domain translation texts, a tagged Greek
-NT with Strong's numbers, a Greek-English lexicon, and a patristic-writings
-corpus filtered to genuine early-church sources (excluding pseudepigrapha,
-condemned/heretical writings, and anything post-800 AD or post-Reformation).
-If asked to regenerate or extend this data, ask where the source corpora
-live before attempting to re-derive the pipeline from scratch.
+The JSON in `data/` comes from the Verbum data pipeline, a separate repo that
+lives next to this one (`../pipeline`, raw sources in `../pipeline/build/raw/`).
+It combines public-domain translation texts, a tagged Greek NT with Strong's
+numbers, a Greek-English lexicon, and a patristic-writings corpus filtered to
+genuine early-church sources (excluding pseudepigrapha, condemned/heretical
+writings, and anything post-800 AD or post-Reformation).
+
+**Don't re-run its full `build_data.py` into this repo.** It regenerates all 66
+books and would undo the fixes made here since: the Hebrew re-keyed to KJV
+numbering, and the DRA rebuilt by `pipeline/build_dra.py`. The deuterocanonical books are
+built by `../pipeline/build_deuterocanonical.py --out data`. It writes only the 14 books
+(KJV + WEB, fathers), the `fathers`/`quotes` of `dan`/`esth` (the corpus files
+Susanna and Bel as "Daniel 13/14" and the Esther additions as "Esther 10:4–16:24"),
+and the index. Run `pipeline/build_dra.py` afterwards for their DRA.
 
 OT Hebrew in `data/` is keyed to KJV (English) verse numbering, like the
 translations, `verseCounts`, and fathers. The pipeline's output used Hebrew

@@ -24,6 +24,11 @@ export function loadLexicon(){
 }
 export function bookMeta(id){ return INDEX.books.find(b=>b.id===id); }
 export function isOT(id){ return INDEX.otBookIds.includes(id); }
+// A book's chapter numbers. Usually 1..N, but not always: the Additions to Esther are 10-16 (KJV numbering).
+export function chapterNumbers(id){
+  return Object.keys(bookMeta(id).verseCounts).map(Number).sort((a, b)=> a - b);
+}
+export function isDeuterocanonical(id){ return (INDEX.deuterocanonicalBookIds || []).includes(id); }
 
 /* ---------- NASB (live, via a Cloudflare Worker proxy in front of api.bible) ----------
    The proxy holds the api.bible key server-side, so nothing secret ever reaches
@@ -54,20 +59,25 @@ const USFM_ID = {
   neh:'NEH', esth:'EST', job:'JOB', ps:'PSA', prov:'PRO', eccl:'ECC', song:'SNG', isa:'ISA',
   jer:'JER', lam:'LAM', ezek:'EZK', dan:'DAN', hos:'HOS', joel:'JOL', amos:'AMO', obad:'OBA',
   jonah:'JON', mic:'MIC', nah:'NAM', hab:'HAB', zeph:'ZEP', hag:'HAG', zech:'ZEC', mal:'MAL',
+  '1esd':'1ES', '2esd':'2ES', tob:'TOB', jdt:'JDT', addesth:'ESG', wis:'WIS', sir:'SIR', bar:'BAR',
+  prazar:'S3Y', sus:'SUS', bel:'BEL', prman:'MAN', '1macc':'1MA', '2macc':'2MA',
   matt:'MAT', mark:'MRK', luke:'LUK', john:'JHN', acts:'ACT', rom:'ROM',
   '1cor':'1CO', '2cor':'2CO', gal:'GAL', eph:'EPH', phil:'PHP', col:'COL',
   '1thess':'1TH', '2thess':'2TH', '1tim':'1TI', '2tim':'2TI', titus:'TIT',
   phlm:'PHM', heb:'HEB', jas:'JAS', '1pet':'1PE', '2pet':'2PE',
   '1jn':'1JN', '2jn':'2JN', '3jn':'3JN', jude:'JUD', rev:'REV'
 };
-// Some translations (INDEX.ntOnlyTranslations, e.g. YLT) have no OT text.
+// Some translations (INDEX.ntOnlyTranslations, e.g. YLT) have no OT text. Deuterocanonical books list the
+// translations that carry them (KJV, WEB and, for some books, DRA); NASB/ESV serve none of them.
 export function translationAvailable(code, bookId){
+  const meta = bookMeta(bookId);
+  if(meta && meta.translations) return meta.translations.includes(code);
   return !(isOT(bookId) && (INDEX.ntOnlyTranslations || []).includes(code));
 }
 export function translationCodes(bookId){
   const codes = Object.keys(INDEX.translations).filter(c=> translationAvailable(c, bookId));
-  if(nasbAvailable()) codes.push('NASB');
-  if(esvAvailable()) codes.push('ESV');
+  if(nasbAvailable() && translationAvailable('NASB', bookId)) codes.push('NASB');
+  if(esvAvailable() && translationAvailable('ESV', bookId)) codes.push('ESV');
   return codes;
 }
 // The translation actually shown for a book: the viewer's pick, or KJV where it has no text.

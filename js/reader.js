@@ -1,6 +1,6 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, isOT, loadBook, translationAvailable, effectiveTranslation, translationCodes, translationName, LIVE_TRANSLATIONS } from './data.js';
+import { INDEX, bookCache, bookMeta, chapterNumbers, isOT, isDeuterocanonical, loadBook, translationAvailable, effectiveTranslation, translationCodes, translationName, LIVE_TRANSLATIONS } from './data.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels } from './greek.js';
 
@@ -26,18 +26,20 @@ document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closePickers();
 
 export function renderNav(){
   el.bookList.innerHTML = '';
+  // Old Testament, then the deuterocanonical books (kept separate, as in the 1611 KJV), then the New Testament
+  const section = id=> isOT(id) ? 'Old Testament' : isDeuterocanonical(id) ? 'Deuterocanonical' : 'New Testament';
   INDEX.books.forEach((b, i)=>{
-    if(i === 0 || isOT(b.id) !== isOT(INDEX.books[i-1].id)){
+    if(i === 0 || section(b.id) !== section(INDEX.books[i-1].id)){
       const head = document.createElement('div');
       head.className = 'book-section';
-      head.textContent = isOT(b.id) ? 'Old Testament' : 'New Testament';
+      head.textContent = section(b.id);
       el.bookList.appendChild(head);
     }
     const btn = document.createElement('button');
     btn.className = 'book-btn' + (b.id === state.bookId ? ' active' : '');
     btn.dataset.id = b.id;
     btn.innerHTML = '<span>'+b.name+'</span>' + (b.fatherVerseCount ? '<span class="fcount">'+b.fatherVerseCount+'</span>' : '');
-    btn.addEventListener('click', ()=>{ closePickers(); selectBook(b.id, 1); });
+    btn.addEventListener('click', ()=>{ closePickers(); selectBook(b.id); });
     el.bookList.appendChild(btn);
   });
   el.navFoot.textContent = INDEX.fatherAuthorCount + ' early church authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
@@ -97,20 +99,21 @@ function populateChapterPicker(){
   el.chapterLabel.textContent = state.chapter;
   el.chapterPickerTitle.textContent = meta.name;
   el.chapterList.innerHTML = '';
-  for(let c=1; c<=meta.chapters; c++){
+  const chapters = chapterNumbers(state.bookId);
+  for(const c of chapters){
     const btn = document.createElement('button');
     btn.className = 'ch-btn' + (c === state.chapter ? ' active' : '');
     btn.textContent = c;
     btn.addEventListener('click', ()=>{ closePickers(); selectChapter(c); });
     el.chapterList.appendChild(btn);
   }
-  el.prevCh.disabled = state.chapter <= 1;
-  el.nextCh.disabled = state.chapter >= meta.chapters;
+  el.prevCh.disabled = state.chapter <= chapters[0];
+  el.nextCh.disabled = state.chapter >= chapters[chapters.length - 1];
 }
 
 /* ---------- reading pane ---------- */
 async function selectBook(id, chapter){
-  state.bookId = id; state.chapter = chapter || 1; state.selectedVerse = null;
+  state.bookId = id; state.chapter = chapter || chapterNumbers(id)[0]; state.selectedVerse = null;
   closePanel();
   syncBookControls();
   el.readingInner.innerHTML = '<div class="loading">Loading '+bookMeta(id).name+'&hellip;</div>';
@@ -127,12 +130,13 @@ async function selectChapter(c){
   savePrefs();
 }
 export async function showChapter(){
-  const live = LIVE_TRANSLATIONS[state.translation];   // NASB / ESV: fetched through the Worker
-  if(live && !live.available()){
+  if(LIVE_TRANSLATIONS[state.translation] && !LIVE_TRANSLATIONS[state.translation].available()){
     state.translation = 'KJV';
     el.translationSelect.value = 'KJV';
   }
-  const code = state.translation;
+  // the translation actually shown for this book (e.g. NASB/ESV have no deuterocanonical books -> KJV)
+  const code = effectiveTranslation(state.translation, state.bookId);
+  const live = LIVE_TRANSLATIONS[code];   // NASB / ESV: fetched through the Worker
   if(live && live.available()){
     el.readingInner.innerHTML = '<div class="loading">Fetching ' + code + '&hellip;</div>';
     try{
@@ -212,6 +216,10 @@ el.translationSelect.addEventListener('change', async ()=>{
   if(state.selectedVerse) openVerse(state.selectedVerse);
   savePrefs();
 });
-el.prevCh.addEventListener('click', ()=>{ if(state.chapter>1) selectChapter(state.chapter-1); });
-el.nextCh.addEventListener('click', ()=>{ const m=bookMeta(state.bookId); if(state.chapter<m.chapters) selectChapter(state.chapter+1); });
+function stepChapter(d){
+  const chapters = chapterNumbers(state.bookId), i = chapters.indexOf(state.chapter) + d;
+  if(i >= 0 && i < chapters.length) selectChapter(chapters[i]);
+}
+el.prevCh.addEventListener('click', ()=> stepChapter(-1));
+el.nextCh.addEventListener('click', ()=> stepChapter(1));
 el.interlinearCheck.addEventListener('change', ()=>{ state.showGreek = el.interlinearCheck.checked; renderChapter(); savePrefs(); });
