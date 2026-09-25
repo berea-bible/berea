@@ -10,7 +10,7 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const reads = [];
 const data = createData({ fetchJSON: async p=>{ reads.push(p); return JSON.parse(await readFile(ROOT + 'dist/' + p, 'utf8')); } });
 
-const ALL = ['KJV', 'ASV', 'WEB', 'YLT', 'DRA', 'NASB', 'ESV'];
+const ALL = ['KJV', 'ASV', 'WEB', 'YLT', 'DRA', 'NASB', 'NIV', 'NKJV', 'ESV'];
 const refs = row=> row.verses.map(v=> `${v.book} ${v.chapter}:${v.verse}`);
 async function cmp(tr, book, ch, v, others){
   const rows = await data.compare(tr, book, ch, v, others);
@@ -69,8 +69,8 @@ test('WEB Rom 14:24 <-> KJV Rom 16:25', async ()=>{
 test('Phil 1:16-17 per translation', async ()=>{
   const r = await cmp('KJV', 'PHP', 1, 16, ALL);               // KJV 1:16: "the one preach Christ of contention"
   assert.deepEqual(refs(r.KJV), ['PHP 1:16']);
-  for(const tr of ['WEB', 'YLT']) assert.deepEqual(refs(r[tr]), ['PHP 1:16'], tr);
-  for(const tr of ['ASV', 'DRA', 'NASB', 'ESV']) assert.deepEqual(refs(r[tr]), ['PHP 1:17'], tr);
+  for(const tr of ['WEB', 'YLT', 'NKJV']) assert.deepEqual(refs(r[tr]), ['PHP 1:16'], tr);
+  for(const tr of ['ASV', 'DRA', 'NASB', 'NIV', 'ESV']) assert.deepEqual(refs(r[tr]), ['PHP 1:17'], tr);
   assert.match(r.ASV.verses[0].text, /faction|contention|strife/i);
   const grc = await data.originalForPivots('grc', [await data.vid('PHP', 1, 16)]);
   assert.deepEqual(grc.map(g=> `${g.chapter}:${g.verse}`), ['1:17']);   // NA order
@@ -108,8 +108,8 @@ test('DRA Baruch 6:1 <-> KJV Letter of Jeremiah', async ()=>{
 });
 
 test('ASV on Susanna -> not-in-translation', async ()=>{
-  const r = await cmp('KJV', 'SUS', 1, 1, ['ASV', 'YLT', 'NASB']);
-  for(const tr of ['ASV', 'YLT', 'NASB']){
+  const r = await cmp('KJV', 'SUS', 1, 1, ['ASV', 'YLT', 'NASB', 'NIV', 'NKJV']);
+  for(const tr of ['ASV', 'YLT', 'NASB', 'NIV', 'NKJV']){
     assert.deepEqual(r[tr].verses, [], tr);
     assert.equal(r[tr].absent, 'not-in-translation', tr);
   }
@@ -184,8 +184,10 @@ test('fathers citing "Daniel 13" appear on Susanna', async ()=>{
 test('Greek: 3 John 1:15 folds into KJV 1:14; words keep their NA verse', async ()=>{
   const g = await data.originalForPivots('grc', [await data.vid('3JN', 1, 14)]);
   assert.deepEqual(g.map(x=> `${x.chapter}:${x.verse}`), ['1:14', '1:15']);
-  const r = await cmp('KJV', '3JN', 1, 14, ['NASB']);
+  const r = await cmp('KJV', '3JN', 1, 14, ['NASB', 'NIV', 'NKJV']);
   assert.deepEqual(refs(r.NASB), ['3JN 1:14', '3JN 1:15']);
+  assert.deepEqual(refs(r.NIV), ['3JN 1:14', '3JN 1:15']);
+  assert.deepEqual(refs(r.NKJV), ['3JN 1:14']);                 // the NKJV keeps the KJV's 14 verses
 });
 
 test('opening a chapter reads only the catalog, one text file and nothing else', async ()=>{

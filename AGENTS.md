@@ -7,7 +7,7 @@ Guidance for AI coding agents working in this repository.
 Berea: a static Bible reading app (the 66-book canon plus 14 deuterocanonical books). Five public-domain
 translations (KJV, ASV, WEB, YLT, DRA; YLT is NT-only), word-level Hebrew/Aramaic
 (OT) and Greek (NT) text with a Strong's-tagged lexicon, per-verse translation comparison, and early-church-father citations
-(c. 100–800 AD). Two more translations, NASB (1995) and ESV, are fetched live via an
+(c. 100–800 AD). Four more translations, NASB (1995), NIV (2011), NKJV and ESV, are fetched live via an
 already-deployed Cloudflare Worker proxy in front of api.bible and api.esv.org (maintained outside
 this repo). Each translation keeps its own verse numbering; texts, words and citations are linked
 through a shared verse ID (docs/v2-plan.md).
@@ -32,7 +32,7 @@ originalForPivots / lexicon / commentary over dist/.
 Tested by tests/*.test.mjs.
 data.js The app's data layer: the berea-data instance (`lib`) and
 catalog helpers (book names, canon profiles, book lists).
-live.js NASB/ESV through the Worker proxy (`NASB_CONFIG`,
+live.js NASB/NIV/NKJV (api.bible) and ESV through the Worker proxy (`API_BIBLE`,
 ensureNasbChapter, FUMS, the ESV cache).
 reader.js Book/chapter pickers (dropdown; full-screen
 at <=640px), top-bar controls, chapter rendering,
@@ -97,41 +97,42 @@ that scheme.
   Compare (`lib.compare`), the Greek/Hebrew words (`originalForPivots`, per word), and the fathers
   (`commentary`). A verse may sit on several pivots (DRA 4:11 = KJV 1 Thess 4:11-12). Pivot IDs are
   internal: show each translation's own references, never pivots.
-- `NASB_CONFIG` (in `js/live.js`) holds `proxyUrl` and
-  `bibleId`. When either is empty, NASB is simply absent from the
-  translation dropdown — no modal, no dead UI, no error state. Never
-  reintroduce client-side API key storage or entry; that was deliberately
-  removed in favor of the Worker proxy, which holds the key server-side.
-  Don't hardcode any API key into the app code, a commit, or a chat
-  response.
-- Keep api.bible traffic minimal. `ensureNasbChapter()` makes **one
+- The api.bible translations (NASB, NIV, NKJV) are one table, `API_BIBLE` in `js/live.js`: each
+  entry is a `bibleId` (from the plan's `/v1/bibles` list) and its copyright `notice`, with
+  `PROXY_URL` (the Worker) shared. An empty `PROXY_URL`, or an entry without a `bibleId`, simply
+  hides that translation — no modal, no dead UI, no error state. To add another api.bible
+  translation: an entry there, a `LIVE_TRANSLATIONS` line, a live manifest in
+  `sources/translations/<id>/` (numbering maps checked against its text), a section in
+  `copyright.html`, and a rebuild. Never reintroduce client-side API key storage or entry; that
+  was deliberately removed in favor of the Worker proxy, which holds the key server-side. Don't
+  hardcode any API key into the app code, a commit, or a chat response.
+- Keep api.bible traffic minimal. `ensureApiBibleChapter()` makes **one
   `/chapters/{USFM}.{ch}` request per chapter** (never per verse) and nothing
-  is prefetched: the reader fetches only when NASB is the selected
-  translation, and the Compare tab shows a **Load** button unless the
-  chapter is already cached (`getCachedNasbChapter()` never touches the
-  network). Fetched chapters are cached in IndexedDB (`berea-cache` /
-  `nasb`, key `{bibleId}:{old app id}.{ch}`, e.g. `…:john.3`, kept from pre-v2 so cached chapters
+  is prefetched: the reader fetches only when that translation is shown, and the Compare tab
+  shows a **Load** button unless the chapter is already cached (`getCachedApiBibleChapter()`
+  never touches the network). Fetched chapters are cached in IndexedDB (`berea-cache` /
+  `nasb` — one store for all api.bible translations, keeping its original name — key
+  `{bibleId}:{old app id}.{ch}`, e.g. `…:john.3`, kept from pre-v2 so cached chapters
   stay valid; value `{verses, fumsToken, fetchedAt}`); per
   the api.bible agreement, entries older than 30 days are dropped on read
   and swept at boot by `purgeExpiredNasb()`. All IndexedDB access must fail
-  soft (fall back to memory + network).
-- api.bible terms §7: wherever NASB text is displayed (end of an NASB
-  chapter, the Compare row), show `NASB_NOTICE_HTML` (`js/live.js`) — the
-  short copyright line, an API.Bible credit, and a link to the full notice
-  in `copyright.html#nasb`. Any new place that renders NASB text needs it too.
-- api.bible terms §14 (FUMS) is mandatory for webapps: every display of NASB
-  text must call `reportNasbView(book, chapter)` (`js/live.js`, book = code), which sends
-  the chapter's `fumsToken` (stored with the IndexedDB entry, so cached
-  displays are reported too) to `https://fums.api.bible/f3` with an anonymous
-  device id (localStorage `fums.dId`) and session id (sessionStorage
-  `fums.sId`); offline reports queue under `fums.report.*` and flush at boot
-  / on `online`. Currently called once per NASB chapter shown in the reader
-  (not on Greek-line re-renders) and whenever the Compare row shows NASB text.
-  This speaks the documented FUMS v3 HTTP protocol directly — don't vendor or
-  load `pkg.api.bible/fumsV3.min.js` (unlicensed, changes, third-party JS).
+  soft (fall back to memory + network). The translations share the plan's quota.
+- api.bible terms §7: wherever api.bible text is displayed (end of the chapter, the Compare row),
+  show that translation's `LIVE_TRANSLATIONS[tr].notice` — its copyright line, an API.Bible
+  credit, and a link to its section of `copyright.html` (`#nasb`, `#niv`, `#nkjv`). Any new place
+  that renders api.bible text needs it too.
+- api.bible terms §14 (FUMS) is mandatory for webapps: every display of api.bible text must call
+  `LIVE_TRANSLATIONS[tr].report(book, chapter)` (book = code), which sends the chapter's
+  `fumsToken` (stored with the IndexedDB entry, so cached displays are reported too) to
+  `https://fums.api.bible/f3` with an anonymous device id (localStorage `fums.dId`) and session id
+  (sessionStorage `fums.sId`); offline reports queue under `fums.report.*` and flush at boot / on
+  `online`. Currently called once per chapter shown in the reader (not on Greek-line re-renders)
+  and whenever a Compare row shows the text. This speaks the documented FUMS v3 HTTP protocol
+  directly — don't vendor or load `pkg.api.bible/fumsV3.min.js` (unlicensed, changes,
+  third-party JS).
 - ESV is the second live translation, via the same Worker's `/esv/*` route
   (the Worker adds the api.esv.org token; `ESV_CONFIG.proxyUrl` empty hides
-  ESV everywhere, like NASB). `ensureEsvChapter()` makes **one**
+  ESV everywhere, like the api.bible ones). `ensureEsvChapter()` makes **one**
   `/esv/v3/passage/text/?q=<Book> <ch>` request per chapter and parses the
   `[N]` markers in `passages[0]`; nothing is prefetched, and the Compare tab
   uses the same **Load** button. ESV API terms, which are stricter than
@@ -150,7 +151,7 @@ that scheme.
     book. Single- and double-chapter books (Obadiah, Philemon, 2–3 John, Jude,
     Haggai) are exempt per the query rule and are shown in full.
   - No FUMS for ESV. `LIVE_TRANSLATIONS` in `js/live.js` is the one table the
-    reader (`showChapter`) and panel (`renderLiveRow`) use for NASB and ESV.
+    reader (`showChapter`) and panel (`renderLiveRow`) use for all four live translations.
     Add any further live translation there.
 - `decodeMorph(m, hebrew)` (in `js/greek.js`) parses Robinson/Tyndale-style
   Greek codes (e.g. `N-GSM-P`, `V-PAI-3P`) or, when `hebrew` is true, OSHB
@@ -164,7 +165,7 @@ that scheme.
   render them through `displayWord()` (strips both, keeps vowel points).
   Hebrew containers get `dir="rtl"` and the `hebrew` class (Noto Serif Hebrew).
 - `state.translation` is the viewer's pick; `state.shown` is the translation on screen, which is the
-  pick or, where the pick has no text, the KJV (YLT in the OT, ASV/NASB/ESV in the deuterocanonical
+  pick or, where the pick has no text, the KJV (YLT in the OT, ASV and the live translations in the deuterocanonical
   books). `state.bookId`/`state.chapter` are in `state.shown`'s own structure. Render with
   `state.shown`, and keep the pick, so it comes back when it has text again. The book list
   (`navEntries()`) is the pick's own books plus the KJV's where the pick has none. Switching

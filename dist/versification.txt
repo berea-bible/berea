@@ -331,6 +331,8 @@ Only verses that don't land on the same-numbered pivot, plus word-count decision
   2MA 15: 15:36 -> 15:36  [map] | 15:37 -> 15:36  [map] | 15:38 -> 15:37  [map] | 15:39 -> 15:38  [map] | 15:40 -> 15:39  [map]
   word-count decisions: 238
 == NASB: live, identity except 3 mapped verses
+== NIV: live, identity except 3 mapped verses
+== NKJV: live, identity except 0 mapped verses
 == ESV: live, identity except 3 mapped verses
 == grc: 7957 native verses, 7 not on the same-numbered pivot
   ACT 19: 19:40 -> 19:40, 19:41

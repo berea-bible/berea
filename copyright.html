@@ -23,11 +23,26 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
   <p>NASB text is not stored with this app. It is retrieved live from
   <a href="https://api.bible/" rel="noopener">API.Bible</a> when you choose to read it, and any
   copy kept in your browser is refreshed at least every 30 days.</p>
-  <p>As API.Bible's terms require, each time NASB text is shown the app reports an anonymous
+  <p>As API.Bible's terms require, each time NASB (or NIV or NKJV) text is shown the app reports an anonymous
   view to API.Bible's <a href="https://docs.api.bible/guides/fair-use/" rel="noopener">Fair Use
   Management System</a> so publishers can see how their translations are read. The report
   contains only a request token and random device and session ids; no account, name, or other
   personal information is sent. Reading the public-domain translations sends nothing.</p>
+
+  <h2 id="niv">New International Version (NIV)</h2>
+  <p>The Holy Bible, New International Version&reg; NIV&reg; Copyright &copy; 1973, 1978, 1984, 2011 by
+  Biblica, Inc.&reg; Used by permission of Biblica, Inc.&reg; All rights reserved worldwide.</p>
+  <p>Website: <a href="https://www.biblica.com/" rel="noopener">https://www.biblica.com/</a></p>
+
+  <h2 id="nkjv">New King James Version (NKJV)</h2>
+  <p>New King James Version&reg;, Copyright &copy; 1982, Thomas Nelson. Used by permission. All rights
+  reserved.</p>
+  <p>Website: <a href="https://www.thomasnelsonbibles.com/" rel="noopener">https://www.thomasnelsonbibles.com/</a></p>
+
+  <p>Like the NASB, the NIV and NKJV texts are not stored with this app: they are retrieved live from
+  <a href="https://api.bible/" rel="noopener">API.Bible</a> when you choose to read them, any copy kept
+  in your browser is refreshed at least every 30 days, and each view is reported to API.Bible's Fair Use
+  Management System as described above.</p>
 
   <h2 id="esv">English Standard Version (ESV)</h2>
   <p>Scripture quotations marked “ESV” are from the ESV&reg; Bible (The Holy Bible, English Standard
@@ -48,12 +63,8 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
   <a href="https://ebible.org/details.php?id=engDRA" rel="noopener">eBible.org</a>.</p>
 
   <h2>Versification data</h2>
-  <p>The Douay-Rheims is aligned from Vulgate to English verse numbering with the
-  <a href="https://github.com/Copenhagen-Alliance/versification-specification" rel="noopener">Copenhagen
-  Alliance versification mappings</a>, licensed under
-  <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA 4.0</a>.</p>
-  <p>Old Testament verse alignment between the Hebrew and English numbering uses the
-  <a href="https://github.com/STEPBible/STEPBible-Data" rel="noopener">STEPBible TVTMS</a>
-  versification data by Tyndale House, Cambridge, licensed under
+  <p>Verse alignment between the translations and the Hebrew and Greek texts, each kept in its own
+  numbering, uses the <a href="https://github.com/STEPBible/STEPBible-Data" rel="noopener">STEPBible
+  TVTMS</a> versification data by Tyndale House, Cambridge, licensed under
   <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>.</p>
 </main>

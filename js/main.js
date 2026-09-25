@@ -44,7 +44,7 @@ async function boot(){
     el.readingInner.innerHTML = '<div class="loading">Could not load the library. Please reload.</div>';
     return;
   }
-  purgeExpiredNasb(); // drop NASB text cached more than 30 days ago (not awaited)
+  purgeExpiredNasb(); // drop api.bible text cached more than 30 days ago (not awaited)
   flushFumsQueue();   // send FUMS reports queued while offline
   await restorePlace();
   await renderNav();

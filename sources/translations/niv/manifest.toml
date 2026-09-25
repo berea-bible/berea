@@ -1,0 +1,24 @@
+# Live: fetched per chapter through the Cloudflare Worker (api.bible); no text is stored here.
+name = "New International Version (2011)"
+abbrev = "NIV"
+language = "en"
+license = "(c) Biblica, Inc.; via api.bible"
+upstream = "https://api.bible/"
+importer = "live"
+versification = "identity"
+
+# Checked against the api.bible text: modern English numbering, which is the KJV's except for these.
+[[map]]
+from = "3JN 1:15"
+to = "3JN 1:14"
+reason = "The NIV's 3 John has 15 verses; the KJV's 1:14 includes the greetings the NIV numbers 1:15."
+
+[[map]]
+from = "PHP 1:16"
+to = "PHP 1:17"
+reason = "Greek order: 'The latter do so out of love' comes first (KJV 1:17)."
+
+[[map]]
+from = "PHP 1:17"
+to = "PHP 1:16"
+reason = "Greek order (see 1:16)."

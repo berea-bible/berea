@@ -34,7 +34,7 @@ ATNACH = "֑"
 OT = [b["code"] for b in BOOKS if b["group"] == "ot"]
 NT = [b["code"] for b in BOOKS if b["group"] == "nt"]
 CATHOLIC_DC = ["TOB", "JDT", "ADE", "WIS", "SIR", "BAR", "LJE", "S3Y", "SUS", "BEL", "1MA", "2MA"]
-DISPLAY_ORDER = ["kjv", "asv", "web", "ylt", "dra", "nasb", "esv"]   # translation order in the app
+DISPLAY_ORDER = ["kjv", "asv", "web", "ylt", "dra", "nasb", "niv", "nkjv", "esv"]   # translation order in the app
 PROFILES = {
     "protestant": OT + NT,
     "catholic": OT + CATHOLIC_DC + NT,

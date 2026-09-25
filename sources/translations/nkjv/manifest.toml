@@ -1,0 +1,10 @@
+# Live: fetched per chapter through the Cloudflare Worker (api.bible); no text is stored here.
+name = "New King James Version (1982)"
+abbrev = "NKJV"
+language = "en"
+license = "(c) Thomas Nelson; via api.bible"
+upstream = "https://api.bible/"
+importer = "live"
+# Checked against the api.bible text: the KJV's numbering throughout (Phil 1:16-17 in the KJV order,
+# 3 John in 14 verses, Revelation 12 in 17), so no corrections.
+versification = "identity"

@@ -37,13 +37,13 @@ The deuterocanonical books are in the KJV and WEB, with the DRA where its Vulgat
 | **YLT** | Young's Literal Translation (1898) |
 | **DRA** | Douay-Rheims (Challoner revision) |
 
-The NASB (1995) and ESV are also available. They are fetched live through a small proxy and are never bundled with the app.
+The NASB (1995), NIV (2011), NKJV and ESV are also available. They are fetched live through a small proxy and are never bundled with the app.
 
 **Hebrew and Greek, word by word.** Turn on the interlinear line to show the original language under each verse: Hebrew (and Aramaic) for the Old Testament, Greek for the New. Tap any word to see its Strong's number, its parsed morphology (e.g. *verb, qal perfect, 3rd person masculine singular*), and its lexicon definition.
 
 **The Church Fathers.** Each verse lists what early Christian writers (c. 100–800 AD) said about it: **65,000+ quotations from 231 authors**.
 
-**No accounts, no ads, no build step.** It's plain HTML, CSS, and JavaScript. Your place and settings are saved in your browser. The only usage reporting is the anonymous view count that API.Bible requires when you read the NASB (see [Copyright](copyright.html#nasb)); the public-domain translations send nothing.
+**No accounts, no ads, no build step.** It's plain HTML, CSS, and JavaScript. Your place and settings are saved in your browser. The only usage reporting is the anonymous view count that API.Bible requires when you read the NASB, NIV or NKJV (see [Copyright](copyright.html#nasb)); the public-domain translations send nothing.
 
 ## Run it locally
 

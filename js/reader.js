@@ -191,7 +191,7 @@ export async function showChapter(){
     state.translation = state.shown = 'KJV';
   }
   const code = state.shown;
-  const live = LIVE_TRANSLATIONS[code];   // NASB / ESV: fetched through the Worker
+  const live = LIVE_TRANSLATIONS[code];   // NASB / NIV / NKJV / ESV: fetched through the Worker
   if(live){
     el.readingInner.innerHTML = '<div class="loading">Fetching ' + code + '&hellip;</div>';
     let verses;
@@ -222,7 +222,7 @@ export async function showChapter(){
   }
   await Promise.all([ensureCitations(), ensureOriginal()]);
   renderChapter();
-  // FUMS (NASB only): one view per chapter shown (not on Greek-line re-renders)
+  // FUMS (api.bible translations): one view per chapter shown (not on Greek-line re-renders)
   if(live && live.report) live.report(state.bookId, state.chapter);
 }
 // Which verses of the chapter have church-father citations (the index only; bodies load in the panel).
@@ -351,7 +351,8 @@ function renderChapter(){
   });
 
   while(gi < gaps.length){ html += gapNote(gaps[gi]); gi++; }
-  if(translation === 'NASB') html += '<p class="live-notice chapter-notice">' + LIVE_TRANSLATIONS.NASB.notice + '</p>';
+  // api.bible terms: the translation's copyright notice with its text (the ESV's sits at the top, above)
+  if(LIVE_TRANSLATIONS[translation] && translation !== 'ESV') html += '<p class="live-notice chapter-notice">' + LIVE_TRANSLATIONS[translation].notice + '</p>';
   el.readingInner.innerHTML = html;
 
   el.readingInner.querySelectorAll('.vnum, .vtext').forEach(node=>{

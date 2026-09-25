@@ -152,7 +152,7 @@ async function renderFathers(){
     '</div>'
   ).join('');
 }
-// Live translations (NASB, ESV) use only a local copy when the panel opens; otherwise their row offers a
+// Live translations (NASB, NIV, NKJV, ESV) use only a local copy when the panel opens; otherwise their row offers a
 // Load button rather than fetching on every panel open. A row can span verses in another numbering
 // (e.g. ESV 3 John 1:14-15 for KJV 1:14), so it works from the refs Compare returned.
 const liveRefs = {};   // translation -> [{book, chapter, verse, renumbered}] for the open verse
@@ -166,7 +166,6 @@ async function cachedLiveText(code, refs){
   return parts;
 }
 // Live-translation row states: 'idle' (Load button), 'loading', 'error' (Try again), 'text'.
-const LIVE_SOURCE = { NASB: 'api.bible', ESV: 'api.esv.org' };
 function renderLiveRow(code, vn, status, parts){
   const live = LIVE_TRANSLATIONS[code];
   const row = document.getElementById('liveRow-' + code);
@@ -181,11 +180,11 @@ function renderLiveRow(code, vn, status, parts){
     '<div class="live-notice cmp-notice">' + live.notice + '</div>';
   else if(status === 'loading') body = '<div class="cmp-note">Loading&hellip;</div>';
   else if(status === 'error') body = '<div class="cmp-note">Couldn\'t load the ' + code + '. <button class="cmp-load">Try again</button></div>';
-  else body = '<div class="cmp-note">Fetched live from ' + LIVE_SOURCE[code] + '. <button class="cmp-load">Load</button></div>';
+  else body = '<div class="cmp-note">Fetched live from ' + live.source + '. <button class="cmp-load">Load</button></div>';
   row.innerHTML =
     '<div class="cmp-label"><span class="cmp-code">' + code + '</span><span class="cmp-name">'+translationName(code)+'</span>'+
     '<span class="cmp-live-tag">LIVE</span></div>' + body;
-  if(status === 'text' && parts && parts.length && live.report)       // FUMS (NASB): each chapter shown
+  if(status === 'text' && parts && parts.length && live.report)       // FUMS (api.bible): each chapter shown
     [...new Set(parts.map(p=> p.ref.book + '/' + p.ref.chapter))].forEach(k=>{ const [b, c] = k.split('/'); live.report(b, Number(c)); });
   const btn = row.querySelector('.cmp-load');
   if(btn) btn.addEventListener('click', async ()=>{
