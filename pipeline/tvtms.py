@@ -44,8 +44,8 @@ def tv_book(name):
 
 
 def native_to_tv(code, ch):
-    """The book TVTMS files a native verse under: the KJV's Letter of Jeremiah is "Bar.6", its Additions
-    to Esther (10:4-16:24) are "Est"; WEB's LJE (chapter 1) is TVTMS's own "Lje"."""
+    """The book TVTMS files a native verse under: a Letter of Jeremiah numbered as chapter 6 (KJV, WEB) is
+    "Bar.6", the KJV's Additions to Esther (10:4-16:24) are "Est"; a chapter-1 LJE would be TVTMS's "Lje"."""
     if code == "LJE" and ch == 6:
         return "BAR"
     if code == "ADE":

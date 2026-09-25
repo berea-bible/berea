@@ -217,8 +217,12 @@ open-bibles' `eng-dra.zefania.xml` (not Vulgate order; contains placeholders and
 
 ## Testing
 
-There's no test suite. Sanity-check changes by serving the directory
-locally and exercising the app in a browser (or headless via Playwright):
+`node --test tests/*.test.mjs` runs the v2 data tests (`js/berea-data.js` against the built `dist/`:
+versification links, absences, canon profiles, lexicon, fathers). They need only Node, and must pass
+after any rebuild or manifest change.
+
+The app itself has no automated suite. Sanity-check changes by serving the directory locally and
+exercising the app in a browser (or headless via Playwright):
 
 ```bash
 python3 -m http.server 8000

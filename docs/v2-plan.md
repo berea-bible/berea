@@ -1,6 +1,6 @@
 # Berea v2 data architecture: plan
 
-Status: phase 3 (engine, compiler, dist/, compat) done, see §11; phase 2 (sources) in §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
+Status: phase 4 (runtime module + tests) done, see §12; phase 3 (engine, compiler, dist/, compat) in §11; phase 2 (sources) in §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
 for every source, separate deuterocanonical books, one pipeline (raw/ → sources/ → dist/), static site,
 Python stdlib, and the app working throughout via a compatibility data/. This document maps how the
 current code becomes v2, file by file. Open questions are in §9.
@@ -93,7 +93,7 @@ pipeline/
   compat.py                  dist/ → data/ in today's format
 js/berea-data.js             runtime module (§7)
 js/live.js                   NASB/ESV/FUMS code moved out of data.js, otherwise unchanged
-tests/*.test.mjs             Node tests (`node --test tests/`)
+tests/*.test.mjs             Node tests (`node --test tests/*.test.mjs`)
 docs/v2-plan.md              this file
 ```
 
@@ -372,7 +372,7 @@ today these sit on the Hebrew-text Dan 3:24–30). No citations are filed under 
 Source-format notes found in phase 2:
 
 - The KJV files the Letter of Jeremiah as its own book (`EpJer`) with chapter 6, so it is native LJE 6. The
-  WEB's LJE is chapter 1.
+  WEB's LJE is chapter 6 too. (An earlier version of this note said chapter 1; phase 4's tests caught it.)
 - TAGNT numbers words within the NRSV verse, so under NA numbering (Mark 12:14–15) word numbers repeat.
   Each word row keeps the raw ref in `alt` (e.g. `12.15(12.14)`), which is what rebuilt today's KJV keying
   exactly.
@@ -463,3 +463,44 @@ There are 1,017 in all: ASV 181, KJV 196, WEB 184, DRA 238 and Hebrew 218; YLT a
   columns. It loads only with the Greek line or tab; the columns can be split off if that matters.
 - **Canon toggle.** The `catholic` profile excludes 1–2 Esdras and the Prayer of Manasseh, which the app
   shows today under "Deuterocanonical". Decide whether "on" means `catholic` or a broader list.
+
+## 12. Phase 4 result: runtime module and tests
+
+`js/berea-data.js` is one plain ES module with no dependencies. `createData({base, fetchJSON})` returns
+`compare`, `chapter`, `chapters`, `navBooks`, `originalForPivots`, `lexicon`, `commentary`,
+`commentaryRefs`, `vid` and `ref`. The loader is injectable, so the Node tests read `dist/` from disk
+with the code the browser runs; it was also checked in Chromium loading `dist/` over `fetch`. Each file
+is fetched once per session, and failures aren't cached.
+
+Behaviour worth knowing for the switch-over:
+
+- **`compare`** returns, per translation, the verses whose pivots overlap the clicked verse's. Each
+  carries its own reference and `renumbered`.
+  - Empty rows (WEB's placeholders) are left out, and `absent` then says why: `variant`, `empty`,
+    `recension`, `missing`, or `not-in-translation` when the translation doesn't cover that pivot book.
+  - Live translations (NASB/ESV) return refs only, since their text is fetched through the Worker as
+    today. They are identity-numbered except the verses in `text/<TR>/pivots.json`.
+- **`chapter(tr, book, ch, profile)`** hides a verse only when all its pivots are outside the profile.
+  **`chapters()`** drops chapters with nothing visible. **`navBooks()`** orders a translation's books by
+  where their pivot books fall in the profile.
+- **`commentaryRefs`** reads only the index (for the badge); **`commentary`** also loads the bodies.
+- Opening a chapter reads `catalog.json` and one text file, and a test checks that.
+
+`node --test tests/*.test.mjs` runs 21 tests, all passing in about 0.4 s. They cover every case in the
+brief:
+
+- KJV Mark 9:1 ↔ DRA 8:39; Rev 13:1 ↔ DRA 12:18 + 13:1; Ps 23:1 ↔ DRA 22:1
+- KJV Ps 3 title ↔ Hebrew 3:1; Ps 51:1 ↔ Hebrew 51:3, with the two-verse title on 51:0
+- WEB Rom 14:24 ↔ KJV 16:25; Phil 1:16–17 in all 7 translations and the Greek
+- 1 Thess 4:18 ↔ DRA 4:17 (and DRA 4:11 = KJV 4:11–12)
+- DRA Dan 13:1 ↔ KJV Susanna 1:1 (and 13:65 ↔ Bel 1:1); DRA Esther 11:2 ↔ KJV Additions; DRA Baruch 6:1
+  ↔ KJV Letter of Jeremiah 6:2
+- ASV/YLT/NASB on Susanna and YLT on Genesis → `not-in-translation`; WEB Acts 8:37 → `empty`; DRA Tobit
+  → `recension`
+- The protestant profile hides Tobit, DRA Daniel 13–14 and Dan 3:24–90
+- Lexicon lookups in both languages, including extended Strong's
+- Fathers: 106 on John 1:1, and a "Daniel 13" citation on Susanna (reachable from the DRA's Daniel 13)
+- Also: 3 John 1:15 folds into KJV 1:14, and the chapter-open load budget
+
+The tests caught a wrong phase-2 note: the WEB's Letter of Jeremiah is chapter 6, like the KJV's, not
+chapter 1. The note in §10 and the comment in `tvtms.py` are corrected; no data changed.
