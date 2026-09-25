@@ -34,6 +34,7 @@ ATNACH = "֑"
 OT = [b["code"] for b in BOOKS if b["group"] == "ot"]
 NT = [b["code"] for b in BOOKS if b["group"] == "nt"]
 CATHOLIC_DC = ["TOB", "JDT", "ADE", "WIS", "SIR", "BAR", "LJE", "S3Y", "SUS", "BEL", "1MA", "2MA"]
+DISPLAY_ORDER = ["kjv", "asv", "web", "ylt", "dra", "nasb", "esv"]   # translation order in the app
 PROFILES = {
     "protestant": OT + NT,
     "catholic": OT + CATHOLIC_DC + NT,
@@ -106,7 +107,9 @@ def decisions_text(name, mapping, decisions, overrides, maps):
 # ---------------------------------------------------------------- translations
 def compile_translations(out, table, mapper, report, universe):
     catalog, kjv_mapping = {}, None
-    for tid in sources.translation_ids():
+    _, kjv_books = sources.translation("kjv")
+    ids = sources.translation_ids()
+    for tid in [t for t in DISPLAY_ORDER if t in ids] + [t for t in ids if t not in DISPLAY_ORDER]:
         m, books = sources.translation(tid)
         name = m["abbrev"]
         rec = set(m.get("recension", []))
@@ -118,7 +121,8 @@ def compile_translations(out, table, mapper, report, universe):
             for (b, c, v), ps in sorted(explicit.items()):
                 pivots[b][str(ref_int(c, v))] = [vid_of(p) for p in ps]
             dump(os.path.join(out, "text", name, "pivots.json"), pivots)
-            entry["books"] = {b: {"pivots": [b], "nav": [p for p, bs in PROFILES.items() if b in bs]} for b in OT + NT}
+            entry["books"] = {b: {"chapters": sorted({c for c, v, t in kjv_books[b]}), "pivots": [b],
+                                  "nav": [p for p, bs in PROFILES.items() if b in bs]} for b in OT + NT}
             report.lines += [f"== {name}: live, identity except {len(explicit)} mapped verses"]
             catalog[name] = entry
             continue
@@ -391,7 +395,9 @@ def main():
     fathers = compile_fathers(tmp, universe, report)
     catalog = {
         "vid": {"book": 2 ** 20, "chapter": 2 ** 10},
-        "books": [{"code": b["code"], "ord": b["ord"], "group": b["group"], "name": b["name"]} for b in BOOKS],
+        # legacy = the pre-v2 app id (saved prefs, the NASB cache keys); absent for books new in v2
+        "books": [{"code": b["code"], "ord": b["ord"], "group": b["group"], "name": b["name"],
+                   **({"legacy": b["app"]} if b["app"] else {})} for b in BOOKS],
         "profiles": PROFILES,
         "translations": translations,
         "original": original,

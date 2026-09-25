@@ -1,8 +1,9 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, chapterNumbers, loadOriginal, isOT, isDeuterocanonical, loadBook, translationAvailable, effectiveTranslation, translationCodes, translationName, LIVE_TRANSLATIONS } from './data.js';
+import { CAT, lib, navEntries, bookName, bookGroup, hasBook, translationsFor, translationName,
+         LIVE_TRANSLATIONS, pivotsIn } from './data.js';
 import { openVerse, closePanel } from './panel.js';
-import { showLexicon, displayWord, langLabels } from './greek.js';
+import { showLexicon, displayWord, langLabels, ORIGINAL_LANG, legacyWord } from './greek.js';
 
 /* ---------- book / chapter pickers ---------- */
 const pickers = [[el.bookBtn, el.bookPicker], [el.chapterBtn, el.chapterPicker]];
@@ -24,33 +25,70 @@ pickers.forEach(([btn, picker])=>{
 el.pickerBackdrop.addEventListener('click', closePickers); // swallows the dismiss click so it doesn't hit the page
 document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closePickers(); });
 
-export function renderNav(){
+// The book list follows the pick's own book structure (the DRA's Daniel has chapters 13-14; the KJV
+// has Susanna), with the KJV's books wherever the pick has no text.
+const SECTION = { ot: 'Old Testament', dc: 'Deuterocanonical', nt: 'New Testament' };
+export async function renderNav(){
+  const entries = await navEntries(state.translation, state.canon);
   el.bookList.innerHTML = '';
-  // Old Testament, then the deuterocanonical books (kept separate, as in the 1611 KJV), then the New Testament
-  const section = id=> isOT(id) ? 'Old Testament' : isDeuterocanonical(id) ? 'Deuterocanonical' : 'New Testament';
-  INDEX.books.forEach((b, i)=>{
-    if(i === 0 || section(b.id) !== section(INDEX.books[i-1].id)){
+  entries.forEach((b, i)=>{
+    if(i === 0 || bookGroup(b.code) !== bookGroup(entries[i-1].code)){
       const head = document.createElement('div');
       head.className = 'book-section';
-      head.textContent = section(b.id);
+      head.textContent = SECTION[bookGroup(b.code)];
       el.bookList.appendChild(head);
     }
     const btn = document.createElement('button');
-    btn.className = 'book-btn' + (b.id === state.bookId ? ' active' : '');
-    btn.dataset.id = b.id;
-    btn.innerHTML = '<span>'+b.name+'</span>' + (b.fatherVerseCount ? '<span class="fcount">'+b.fatherVerseCount+'</span>' : '');
-    btn.addEventListener('click', ()=>{ closePickers(); selectBook(b.id); });
+    btn.className = 'book-btn';
+    btn.dataset.id = b.code; btn.dataset.tr = b.tr;
+    btn.innerHTML = '<span>'+b.name+'</span>' + (b.fathers ? '<span class="fcount">'+b.fathers+'</span>' : '');
+    btn.addEventListener('click', ()=>{ closePickers(); selectBook(b.code, b.tr); });
     el.bookList.appendChild(btn);
   });
-  el.navFoot.textContent = INDEX.fatherAuthorCount + ' early church authors · ' + INDEX.fatherQuoteCount.toLocaleString() + ' citations, c. 100–800 AD';
+  markCanon();
+  const f = CAT.commentary.fathers;
+  el.navFoot.textContent = f.authors + ' early church authors · ' + f.quotes.toLocaleString() + ' citations, c. 100–800 AD';
+  markActiveBook();
 }
+/* ---------- canon profile ---------- */
+function markCanon(){
+  el.canonSwitch.querySelectorAll('button').forEach(b=> b.setAttribute('aria-pressed', String(b.dataset.canon === state.canon)));
+}
+el.canonSwitch.querySelectorAll('button').forEach(btn=> btn.addEventListener('click', ()=> setCanon(btn.dataset.canon)));
+// Switch the book list, reader, Compare and Fathers to another canon. The picker stays open so the list
+// visibly changes; if the open book or chapter isn't in the new canon, the reader moves to the nearest
+// chapter that is (DRA Daniel 13 -> 12), or to the first book of the list.
+async function setCanon(canon){
+  if(canon === state.canon) return;
+  state.canon = canon;
+  markCanon();
+  await renderNav();
+  if(!(await navHasCurrent())){
+    const entries = await navEntries(state.translation, canon);
+    const first = entries[0];
+    closePanel();
+    await selectBook(first.code, first.tr);
+  } else {
+    const chs = CAT.translations[state.shown].live ? CAT.translations[state.shown].books[state.bookId].chapters
+                                                   : await lib.chapters(state.shown, state.bookId, canon);
+    if(!chs.includes(state.chapter)) state.chapter = [...chs].reverse().find(c=> c < state.chapter) || chs[0];
+    closePanel();
+    await syncBookControls();
+    await showChapter();
+  }
+  savePrefs();
+}
+async function navHasCurrent(){
+  return (await navEntries(state.translation, state.canon)).some(b=> b.code === state.bookId && b.tr === state.shown);
+}
+
 // Options depend on the book (e.g. YLT has no OT text), so this re-runs on every book change.
 // Dropdown names drop a trailing year, e.g. "(1611/1769)" or "(1995)", unless two listed
 // options share a name (multiple editions of one translation), where the year tells them apart.
 const YEAR_SUFFIX = /\s*\(\d{4}[^)]*\)$/;
 function renderTranslationSelect(){
   el.translationSelect.innerHTML = '';
-  const codes = translationCodes(state.bookId);
+  const codes = translationsFor(state.shown, state.bookId);
   const base = code=> translationName(code).replace(YEAR_SUFFIX, '');
   codes.forEach(code=>{
     const opt = document.createElement('option');
@@ -59,7 +97,7 @@ function renderTranslationSelect(){
     el.translationSelect.appendChild(opt);
   });
   labelTranslationOptions();
-  el.translationSelect.value = effectiveTranslation(state.translation, state.bookId);
+  el.translationSelect.value = state.shown;
 }
 // phones show just the acronym ("KJV"); wider screens show "KJV — King James Version ..."
 const compactMQ = window.matchMedia('(max-width:640px)');
@@ -70,14 +108,14 @@ function labelTranslationOptions(){
 }
 compactMQ.addEventListener('change', labelTranslationOptions);
 function markActiveBook(){
-  [...el.bookList.children].forEach(btn=>{
-    btn.classList.toggle('active', btn.dataset.id === state.bookId);
+  [...el.bookList.querySelectorAll('.book-btn')].forEach(btn=>{
+    btn.classList.toggle('active', btn.dataset.id === state.bookId && btn.dataset.tr === state.shown);
   });
 }
 
 // "Greek"/"Hebrew" on the interlinear toggle (Ω/א on phones) and the panel tab.
 function setLanguageLabels(){
-  const hebrew = isOT(state.bookId), lang = langLabels(hebrew);
+  const hebrew = bookGroup(state.bookId) === 'ot', lang = langLabels(hebrew);
   el.interlinearToggle.title = 'Show ' + lang.name + ' line';
   el.interlinearToggle.querySelector('.full').textContent = lang.name;
   const short = el.interlinearToggle.querySelector('.short');
@@ -86,61 +124,83 @@ function setLanguageLabels(){
   el.greekTab.textContent = lang.name;
 }
 // Everything in the top bar / panel that depends on which book is open.
-export function syncBookControls(){
+export async function syncBookControls(){
   markActiveBook();
-  populateChapterPicker();
+  await populateChapterPicker();
   renderTranslationSelect();
   setLanguageLabels();
 }
 
-function populateChapterPicker(){
-  const meta = bookMeta(state.bookId);
-  el.bookLabel.textContent = meta.name;
+// Chapters of the open book that have anything visible under the canon profile.
+let chapterList = [];
+async function populateChapterPicker(){
+  const name = bookName(state.bookId);
+  chapterList = CAT.translations[state.shown].live
+    ? CAT.translations[state.shown].books[state.bookId].chapters
+    : await lib.chapters(state.shown, state.bookId, state.canon);
+  el.bookLabel.textContent = name;
   el.chapterLabel.textContent = state.chapter;
-  el.chapterPickerTitle.textContent = meta.name;
+  el.chapterPickerTitle.textContent = name;
   el.chapterList.innerHTML = '';
-  const chapters = chapterNumbers(state.bookId);
-  for(const c of chapters){
+  for(const c of chapterList){
     const btn = document.createElement('button');
     btn.className = 'ch-btn' + (c === state.chapter ? ' active' : '');
     btn.textContent = c;
     btn.addEventListener('click', ()=>{ closePickers(); selectChapter(c); });
     el.chapterList.appendChild(btn);
   }
-  el.prevCh.disabled = state.chapter <= chapters[0];
-  el.nextCh.disabled = state.chapter >= chapters[chapters.length - 1];
+  el.prevCh.disabled = state.chapter <= chapterList[0];
+  el.nextCh.disabled = state.chapter >= chapterList[chapterList.length - 1];
 }
 
-/* ---------- reading pane ---------- */
-async function selectBook(id, chapter){
-  state.bookId = id; state.chapter = chapter || chapterNumbers(id)[0]; state.selectedVerse = null;
+/* ---------- moving around ---------- */
+async function selectBook(code, tr, chapter){
+  state.bookId = code; state.shown = tr; state.selectedVerse = null;
+  const chs = CAT.translations[tr].live ? CAT.translations[tr].books[code].chapters : await lib.chapters(tr, code, state.canon);
+  state.chapter = chapter && chs.includes(chapter) ? chapter : chs[0];
   closePanel();
-  syncBookControls();
-  el.readingInner.innerHTML = '<div class="loading">Loading '+bookMeta(id).name+'&hellip;</div>';
-  await loadBook(id);
+  el.readingInner.innerHTML = '<div class="loading">Loading '+bookName(code)+'&hellip;</div>';
+  await syncBookControls();
   await showChapter();
   savePrefs();
 }
 async function selectChapter(c){
   state.chapter = c; state.selectedVerse = null;
   closePanel();
-  populateChapterPicker();
-  await loadBook(state.bookId);
+  await populateChapterPicker();
   await showChapter();
   savePrefs();
 }
-export async function showChapter(){
-  if(LIVE_TRANSLATIONS[state.translation] && !LIVE_TRANSLATIONS[state.translation].available()){
-    state.translation = 'KJV';
-    el.translationSelect.value = 'KJV';
+/* Put the reader on `tr`'s own verse for the pivots in view (the selected verse, else the chapter's first
+   numbered verse). Falls back to the KJV where `tr` has no text there. Returns the verse located. */
+export async function moveTo(tr){
+  // anchor on the selected verse, else the first numbered verse (titles are folded into verse 1 in some)
+  const row = state.rows.find(r=> r.verse === state.selectedVerse && r.text) ||
+              state.rows.find(r=> r.text && r.verse > 0) || state.rows.find(r=> r.text);
+  if(!row) return null;
+  for(const t of tr === 'KJV' ? ['KJV'] : [tr, 'KJV']){
+    if(t === state.shown) return { book: state.bookId, chapter: state.chapter, verse: row.verse };
+    const loc = await lib.locate(t, row.pivots);
+    if(loc && hasBook(t, loc.book, state.canon)){
+      state.shown = t; state.bookId = loc.book; state.chapter = loc.chapter;
+      return loc;
+    }
   }
-  // the translation actually shown for this book (e.g. NASB/ESV have no deuterocanonical books -> KJV)
-  const code = effectiveTranslation(state.translation, state.bookId);
+  return null;
+}
+
+/* ---------- reading pane ---------- */
+export async function showChapter(){
+  if(LIVE_TRANSLATIONS[state.shown] && !LIVE_TRANSLATIONS[state.shown].available()){
+    state.translation = state.shown = 'KJV';
+  }
+  const code = state.shown;
   const live = LIVE_TRANSLATIONS[code];   // NASB / ESV: fetched through the Worker
-  if(live && live.available()){
+  if(live){
     el.readingInner.innerHTML = '<div class="loading">Fetching ' + code + '&hellip;</div>';
+    let verses;
     try{
-      await live.ensure(state.bookId, state.chapter);
+      verses = await live.ensure(state.bookId, state.chapter);
     }catch(e){
       el.readingInner.innerHTML =
         '<div class="loading" style="max-width:440px;margin:60px auto 0;line-height:1.6">'+
@@ -151,50 +211,87 @@ export async function showChapter(){
       const retry = document.getElementById('liveRetryLink');
       if(retry) retry.addEventListener('click', ()=> showChapter());
       const fallback = document.getElementById('liveFallbackLink');
-      if(fallback) fallback.addEventListener('click', ()=>{
-        state.translation = 'KJV'; el.translationSelect.value = 'KJV'; showChapter(); savePrefs();
+      if(fallback) fallback.addEventListener('click', async ()=>{
+        state.translation = state.shown = 'KJV'; await renderNav(); await syncBookControls(); showChapter(); savePrefs();
       });
       return;
     }
+    state.rows = await lib.liveRows(code, state.bookId, state.chapter, verses);
+    state.hidden = [];
+  } else {
+    const [visible, all] = await Promise.all([lib.chapter(code, state.bookId, state.chapter, state.canon),
+                                              lib.chapter(code, state.bookId, state.chapter)]);
+    state.rows = visible;
+    state.hidden = all.filter(r=> !visible.some(v=> v.verse === r.verse) && r.text);
   }
-  if(state.showGreek) await ensureOriginal();
+  await Promise.all([ensureCitations(), ensureOriginal()]);
   renderChapter();
   // FUMS (NASB only): one view per chapter shown (not on Greek-line re-renders)
   if(live && live.report) live.report(state.bookId, state.chapter);
 }
-// Attach the book's original-language words (own file) before rendering the Greek/Hebrew line.
-// A failed load just renders without the line; turning the line off and on retries.
-async function ensureOriginal(){
-  const book = bookCache[state.bookId];
-  if(!book || book.greek) return;
-  try{ book.greek = await loadOriginal(state.bookId); }catch(e){ /* line stays empty */ }
+// Which verses of the chapter have church-father citations (the index only; bodies load in the panel).
+let cited = null;   // {key, verses: Set}
+async function ensureCitations(){
+  const key = state.shown + '/' + state.bookId + '/' + state.chapter + '/' + state.canon;
+  if(cited && cited.key === key) return;
+  try{
+    const counts = await Promise.all(state.rows.map(r=> lib.commentaryRefs('fathers', pivotsIn(r.pivots, state.canon))));
+    cited = { key, verses: new Set(state.rows.filter((r, i)=> counts[i].length).map(r=> r.verse)) };
+  }catch(e){ cited = null; /* marks stay off */ }
 }
+// The original-language words for the chapter in view, by pivot (loaded only when the line is on).
+// Each verse shows the words on its own pivots: DRA Mark 8:39 shows the Greek of 9:1, a KJV psalm
+// title (verse 0) the Hebrew title.
+let original = null;   // {key, byPivot: {vid: [word]}}
+async function ensureOriginal(){
+  const lang = ORIGINAL_LANG[bookGroup(state.bookId)];
+  const key = state.shown + '/' + state.bookId + '/' + state.chapter;
+  if(!state.showGreek || !lang || (original && original.key === key)) return;
+  try{
+    const groups = await lib.originalForPivots(lang, state.rows.flatMap(r=> r.pivots));
+    const byPivot = {};
+    groups.forEach(g=> g.words.forEach(w=> (byPivot[w.pivot] = byPivot[w.pivot] || []).push(legacyWord(w))));
+    original = { key, byPivot };
+  }catch(e){ original = null; /* the line stays empty; turning it off and on retries */ }
+}
+const wordsOf = r=> (original && original.key === state.shown + '/' + state.bookId + '/' + state.chapter)
+  ? r.pivots.flatMap(p=> original.byPivot[p] || []) : [];
 function renderChapter(){
-  const book = bookCache[state.bookId];
-  const meta = bookMeta(state.bookId);
-  const ch = String(state.chapter);
-  const hebrew = isOT(state.bookId);
-  const translation = effectiveTranslation(state.translation, state.bookId);
-  const verses = (book.translations[translation] || {})[ch] || {};
-  const verseNums = Object.keys(verses).map(Number).sort((a,b)=>a-b);
-  const greekCh = (book.greek || {})[ch] || {};
-  const fathersCh = book.fathers[ch] || {};
+  const hebrew = bookGroup(state.bookId) === 'ot';
+  const translation = state.shown;
 
-  let html = '<h2 class="chapter-heading">'+meta.name+' '+state.chapter+'</h2>';
+  let html = '<h2 class="chapter-heading">'+bookName(state.bookId)+' '+state.chapter+'</h2>';
   html += '<p class="chapter-sub">'+translation+' &middot; tap a verse number to compare translations, read the '+langLabels(hebrew).name+', or see commentaries from the early church</p>';
   // ESV terms: the notice and esv.org link sit with the translation name, on every ESV page
   if(translation === 'ESV') html += '<p class="live-notice chapter-sub-notice">' + LIVE_TRANSLATIONS.ESV.notice + '</p>';
 
-  verseNums.forEach(vn=>{
-    const vs = String(vn);
-    const text = verses[vs];
-    const hasFathers = fathersCh[vs] && fathersCh[vs].length;
-    html += '<div class="verse" data-v="'+vs+'">';
-    html += '<button class="vnum" data-v="'+vs+'">'+vs+'</button>';
-    html += '<div class="vbody">';
-    html += '<div class="vtext" data-v="'+vs+'">'+escapeHtml(text)+(hasFathers?'<span class="fmark" title="Church father citations available"></span>':'')+'</div>';
-    if(state.showGreek && greekCh[vs]){
-      html += (hebrew ? '<div class="vgreek hebrew" dir="rtl">' : '<div class="vgreek">') + greekCh[vs].map(w=>
+  // verses the canon hides inside this chapter, noted where they would be (runs of consecutive verses)
+  const CANON_NAME = { protestant: 'Protestant', catholic: 'Catholic', orthodox: 'Orthodox' };
+  const gaps = [];
+  (state.hidden || []).forEach(r=>{
+    const g = gaps[gaps.length - 1];
+    if(g && r.verse === g.last + 1) g.last = r.verse; else gaps.push({ first: r.verse, last: r.verse });
+  });
+  const gapNote = g=> '<div class="canon-gap">' + (g.first === g.last ? 'Verse ' + g.first : 'Verses ' + g.first + '–' + g.last) +
+    ' not shown: not in the ' + CANON_NAME[state.canon] + ' canon (change it in the book list).</div>';
+  let gi = 0;
+  state.rows.forEach(r=>{
+    while(gi < gaps.length && gaps[gi].first < r.verse){ html += gapNote(gaps[gi]); gi++; }
+    if(!r.text) return;                         // numbered but empty in this translation (e.g. WEB Acts 8:37)
+    const vs = String(r.verse);
+    const hasFathers = cited && cited.verses.has(r.verse);
+    const mark = hasFathers ? '<span class="fmark" title="Church father citations available"></span>' : '';
+    const words = state.showGreek ? wordsOf(r) : [];
+    if(r.verse === 0){                          // psalm title: an unnumbered superscription
+      html += '<div class="verse title" data-v="0"><div class="vbody"><div class="vtext" data-v="0">'+escapeHtml(r.text)+mark+'</div>';
+    } else {
+      html += '<div class="verse" data-v="'+vs+'">';
+      html += '<button class="vnum" data-v="'+vs+'">'+vs+'</button>';
+      html += '<div class="vbody">';
+      html += '<div class="vtext" data-v="'+vs+'">'+escapeHtml(r.text)+mark+'</div>';
+    }
+    if(words.length){
+      html += (hebrew ? '<div class="vgreek hebrew" dir="rtl">' : '<div class="vgreek">') + words.map(w=>
         '<button class="gword" data-s="'+ (w.s[0]||'') +'">'+
           '<span class="gk">'+escapeHtml(displayWord(w, hebrew))+'</span>'+
           '<span class="gl">'+escapeHtml(w.gl)+'</span>'+
@@ -204,6 +301,7 @@ function renderChapter(){
     html += '</div></div>';
   });
 
+  while(gi < gaps.length){ html += gapNote(gaps[gi]); gi++; }
   if(translation === 'NASB') html += '<p class="live-notice chapter-notice">' + LIVE_TRANSLATIONS.NASB.notice + '</p>';
   el.readingInner.innerHTML = html;
 
@@ -219,19 +317,24 @@ function renderChapter(){
 /* ---------- top bar controls ---------- */
 el.interlinearCheck.checked = state.showGreek;
 el.translationSelect.addEventListener('change', async ()=>{
+  const selected = state.selectedVerse;
   state.translation = el.translationSelect.value;
+  const loc = await moveTo(state.translation);
+  closePanel();
+  await renderNav();
+  await syncBookControls();
   await showChapter();
-  if(state.selectedVerse) openVerse(state.selectedVerse);
+  if(selected !== null && loc && state.rows.some(r=> r.verse === loc.verse)) openVerse(loc.verse);
   savePrefs();
 });
 function stepChapter(d){
-  const chapters = chapterNumbers(state.bookId), i = chapters.indexOf(state.chapter) + d;
-  if(i >= 0 && i < chapters.length) selectChapter(chapters[i]);
+  const i = chapterList.indexOf(state.chapter) + d;
+  if(i >= 0 && i < chapterList.length) selectChapter(chapterList[i]);
 }
 el.prevCh.addEventListener('click', ()=> stepChapter(-1));
 el.nextCh.addEventListener('click', ()=> stepChapter(1));
 el.interlinearCheck.addEventListener('change', async ()=>{
   state.showGreek = el.interlinearCheck.checked;
-  if(state.showGreek) await ensureOriginal();
+  await ensureOriginal();
   renderChapter(); savePrefs();
 });

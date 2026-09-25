@@ -127,10 +127,13 @@ export function createData({ base = 'dist/', fetchJSON } = {}){
      verses: the translation's own verses whose pivots overlap the clicked verse's pivots, each
      {book, chapter, verse, text, renumbered}; renumbered = not the clicked verse's own book/ch:v.
      absent: null, a reason from absent.json ("variant" | "empty" | "recension" | "missing"),
-     or "not-in-translation" when the translation doesn't have that part of the Bible at all. */
-  async function compare(primaryTr, code, ch, v, otherTrs = []){
+     or "not-in-translation" when the translation doesn't have that part of the Bible at all.
+     profile (optional): leave out verses that lie wholly outside that canon profile. */
+  async function compare(primaryTr, code, ch, v, otherTrs = [], profile = null){
     const cat = await catalog();
-    const clicked = (await bookRows(primaryTr, code)).find(r=> r.chapter === ch && r.verse === v);
+    const clicked = cat.translations[primaryTr].live
+      ? (await liveRows(primaryTr, code, ch, { [v]: '' }))[0]          // a live verse: identity or pivots.json
+      : (await bookRows(primaryTr, code)).find(r=> r.chapter === ch && r.verse === v);
     if(!clicked) return [];
     const P = new Set(clicked.pivots), books = pivotBooks(cat, clicked.pivots);
     const same = r=> r.book === code && r.chapter === ch && r.verse === v;
@@ -142,8 +145,9 @@ export function createData({ base = 'dist/', fetchJSON } = {}){
                  absent: refs.length ? null : 'not-in-translation' };
       }
       const natives = Object.keys(info.books).filter(nb=> info.books[nb].pivots.some(p=> books.includes(p)));
+      const visible = profile ? visibleIn(cat, profile) : ()=> true;
       const rows = (await Promise.all(natives.map(nb=> bookRows(tr, nb)))).flat()
-        .filter(r=> r.pivots.some(p=> P.has(p)));
+        .filter(r=> r.pivots.some(p=> P.has(p)) && visible(r));
       const verses = rows.filter(r=> r.text).map(r=> ({ book: r.book, chapter: r.chapter, verse: r.verse,
                                                         text: r.text, renumbered: !same(r) }));
       let absent = null;
@@ -154,6 +158,33 @@ export function createData({ base = 'dist/', fetchJSON } = {}){
       }
       return { translation: tr, verses, absent };
     }));
+  }
+
+  // The translation's own first verse (with text) on any of these pivots, or null. Used to keep the
+  // reader's place when the translation changes (KJV Susanna 1 -> DRA Daniel 13).
+  async function locate(tr, vids){
+    const cat = await catalog(), info = cat.translations[tr];
+    if(info.live){ const r = await liveRefs(cat, tr, vids); return r[0] || null; }
+    const P = new Set(vids), books = pivotBooks(cat, vids);
+    for(const nb of Object.keys(info.books).filter(nb=> info.books[nb].pivots.some(p=> books.includes(p)))){
+      const r = (await bookRows(tr, nb)).find(r=> r.text && r.pivots.some(p=> P.has(p)));
+      if(r) return { book: r.book, chapter: r.chapter, verse: r.verse };
+    }
+    return null;
+  }
+  // Does the translation have any of these pivots' books? (catalog only, no text loaded)
+  async function covers(tr, vids){
+    const cat = await catalog(), books = pivotBooks(cat, vids);
+    return Object.values(cat.translations[tr].books).some(b=> b.pivots.some(p=> books.includes(p)));
+  }
+  // Rows for a live translation's chapter, from the verses its API returned ({verse: text}).
+  async function liveRows(tr, code, ch, verses){
+    const cat = await catalog();
+    if(!liveMaps[tr]) await liveRefs(cat, tr, []);
+    const m = await loadOnce('text/' + tr + '/pivots.json');
+    return Object.keys(verses).map(Number).sort((a, b)=> a - b).map(v=>({
+      book: code, chapter: ch, verse: v, text: verses[v],
+      pivots: (m[code] || {})[ch * 1000 + v] || [encode(cat, code, ch, v)] }));
   }
 
   /* ---------- original languages ---------- */
@@ -229,7 +260,8 @@ export function createData({ base = 'dist/', fetchJSON } = {}){
     return locs.map(l=>{ const cut = l.lastIndexOf('/'); return bodies[l.slice(0, cut)][Number(l.slice(cut + 1))]; });
   }
 
-  return { catalog, navBooks, chapter, chapters, compare, originalForPivots, lexicon, commentary, commentaryRefs,
+  return { catalog, navBooks, chapter, chapters, compare, locate, covers, liveRows, originalForPivots, lexicon,
+           commentary, commentaryRefs,
            vid: async (code, ch, v)=> encode(await catalog(), code, ch, v),
            ref: async vid=> decode(await catalog(), vid) };
 }

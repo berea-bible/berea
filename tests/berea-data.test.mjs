@@ -194,3 +194,17 @@ test('opening a chapter reads only the catalog, one text file and nothing else',
   await d.chapter('KJV', 'JHN', 1, 'protestant');
   assert.deepEqual(fresh.sort(), ['catalog.json', 'text/KJV/JHN.json']);
 });
+
+test('locate keeps the place across translations; liveRows maps live verses', async ()=>{
+  const sus = await data.chapter('KJV', 'SUS', 1);
+  assert.deepEqual(await data.locate('DRA', sus[0].pivots), { book: 'DAN', chapter: 13, verse: 1 });
+  assert.deepEqual(await data.locate('KJV', (await data.chapter('DRA', 'PSA', 22))[1].pivots), { book: 'PSA', chapter: 23, verse: 2 });
+  assert.equal(await data.locate('YLT', [await data.vid('GEN', 1, 1)]), null);
+  assert.equal(await data.covers('ASV', sus[0].pivots), false);
+  assert.equal(await data.covers('WEB', sus[0].pivots), true);
+  const rows = await data.liveRows('ESV', '3JN', 1, { 14: 'I hope to see you soon', 15: 'Peace be to you.' });
+  assert.deepEqual(rows.map(r=> r.pivots), [[await data.vid('3JN', 1, 14)], [await data.vid('3JN', 1, 14)]]);
+  const fromLive = await cmp('ESV', '3JN', 1, 15, ['KJV', 'DRA']);      // reading a live translation
+  assert.deepEqual(refs(fromLive.KJV), ['3JN 1:14']);
+  assert.equal(fromLive.KJV.verses[0].renumbered, true);
+});

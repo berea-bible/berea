@@ -1,7 +1,7 @@
 /* Entry point: theme, then boot the library and show the saved chapter. */
 import { state, el, savePrefs } from './app.js';
-import { loadIndex, loadBook, bookMeta, chapterNumbers, purgeExpiredNasb, flushFumsQueue } from './data.js';
-import { renderNav, syncBookControls, showChapter } from './reader.js';
+import { loadCatalog, CAT, lib, hasBook, codeFromLegacy, purgeExpiredNasb, flushFumsQueue, LIVE_TRANSLATIONS } from './data.js';
+import { renderNav, syncBookControls, showChapter, moveTo } from './reader.js';
 
 /* ---------- theme ---------- */
 el.themeBtn.addEventListener('click', ()=>{
@@ -13,21 +13,47 @@ el.themeBtn.addEventListener('click', ()=>{
 });
 
 /* ---------- boot ---------- */
+// Put the saved place into the shown translation's own structure. Prefs from before v2 hold old ids
+// ('ps') and KJV-numbered chapters for every translation, so they are read as a KJV place and then
+// located in the pick (a saved DRA 'ps' 23 opens DRA Psalm 22; 'sus' opens DRA Daniel 13). A book the
+// pick doesn't have natively is handled the same way.
+// The canon defaults to Protestant. Prefs from before v2 have none: if they were left on a
+// deuterocanonical book, pick the canon that shows it, so returning readers keep their place.
+function restoreCanon(){
+  if(CAT.profiles[state.canon]) return;
+  const code = CAT.byCode[state.bookId] ? state.bookId : codeFromLegacy(state.bookId);
+  state.canon = !code || CAT.profiles.protestant.includes(code) ? 'protestant'
+              : CAT.profiles.catholic.includes(code) ? 'catholic' : 'orthodox';
+}
+async function restorePlace(){
+  restoreCanon();
+  const legacy = !CAT.byCode[state.bookId];
+  if(legacy) state.bookId = codeFromLegacy(state.bookId) || 'JHN';
+  const pick = CAT.translations[state.translation] && !(LIVE_TRANSLATIONS[state.translation] && !LIVE_TRANSLATIONS[state.translation].available())
+    ? state.translation : 'KJV';
+  state.translation = pick;
+  state.shown = hasBook(pick, state.bookId, state.canon) && !legacy ? pick : hasBook('KJV', state.bookId, state.canon) ? 'KJV' : null;
+  if(!state.shown){ state.bookId = 'JHN'; state.chapter = 1; state.shown = hasBook(pick, 'JHN') ? pick : 'KJV'; }
+  const chs = CAT.translations[state.shown].live ? CAT.translations[state.shown].books[state.bookId].chapters
+                                                 : await lib.chapters(state.shown, state.bookId, state.canon);
+  if(!chs.includes(state.chapter)) state.chapter = chs[0];
+  if(state.shown !== pick){
+    state.rows = await lib.chapter(state.shown, state.bookId, state.chapter, state.canon);
+    await moveTo(pick);
+  }
+}
 async function boot(){
   try{
-    await loadIndex();
+    await loadCatalog();
   }catch(e){
     el.readingInner.innerHTML = '<div class="loading">Could not load the library. Please reload.</div>';
     return;
   }
   purgeExpiredNasb(); // drop NASB text cached more than 30 days ago (not awaited)
   flushFumsQueue();   // send FUMS reports queued while offline
-  if(!bookMeta(state.bookId)) state.bookId = 'john';
-  renderNav();
-  await loadBook(state.bookId);
-  const meta = bookMeta(state.bookId);
-  if(!chapterNumbers(state.bookId).includes(state.chapter)) state.chapter = chapterNumbers(state.bookId)[0];
-  syncBookControls();
-  await showChapter();
+  await restorePlace();
+  await renderNav();
+  await syncBookControls();
+  await showChapter();   // prefs aren't saved here: old ids are migrated again on each load
 }
 boot();

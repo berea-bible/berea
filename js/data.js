@@ -1,82 +1,54 @@
-/* Library data: books index, per-book JSON, church-fathers quotes, lexicon, and the live NASB/ESV proxy. */
+/* Library data: the v2 runtime (dist/, via berea-data.js: catalog, canon profiles, book lists) and the
+   live NASB/ESV proxy. Book ids are native book codes (USFM, e.g. 'JHN'); `legacyId()` gives the
+   pre-v2 app id ('john'), used only to migrate saved prefs and to keep live-text cache keys stable. */
+import { createData } from './berea-data.js';
 
-export let INDEX = null;
-export const bookCache = {};
-
-async function fetchJSON(path){
-  const res = await fetch(path);
-  if(!res.ok) throw new Error('Failed to load '+path);
-  return res.json();
+/* ---------- v2: dist/ ---------- */
+export const lib = createData({ base: 'dist/' });
+export let CAT = null;
+export async function loadCatalog(){ CAT = await lib.catalog(); return CAT; }
+export const bookName = code=> CAT.byCode[code].name;
+export const bookGroup = code=> CAT.byCode[code].group;
+// pre-v2 app ids ('john', 'addesth'): saved prefs, the NASB cache keys, and the data/ bridge
+export const legacyId = code=> (CAT.byCode[code] || {}).legacy;
+export const codeFromLegacy = id=> (CAT.books.find(b=> b.legacy === id) || {}).code;
+export const hasBook = (tr, code, profile)=>{
+  const b = CAT.translations[tr] && CAT.translations[tr].books[code];
+  return !!b && (!profile || b.nav.includes(profile));
+};
+// A verse's pivots that lie inside a canon profile (citations elsewhere aren't shown under it).
+export const pivotsIn = (vids, profile)=>{
+  const allowed = new Set(CAT.profiles[profile]);
+  return vids.filter(v=> allowed.has(CAT.byOrd[Math.floor(v / 2 ** 20)].code));
+};
+// Where a native book falls in a canon profile's order (by the first of its pivot books there).
+function profilePos(tr, code, profile){
+  const order = CAT.profiles[profile];
+  const ps = CAT.translations[tr].books[code].pivots.map(p=> order.indexOf(p)).filter(i=> i >= 0);
+  return ps.length ? Math.min(...ps) : Infinity;
 }
-export async function loadIndex(){
-  INDEX = await fetchJSON('data/books-index.json');
-  return INDEX;
+/* The book list for a pick: the translation's own books, plus the KJV's for any part of the Bible it
+   doesn't have (YLT in the OT, the deuterocanonical books for ASV/NASB/ESV, Tobit for the DRA), each
+   tagged with the translation actually shown there. */
+export async function navEntries(pick, profile){
+  const own = (await lib.navBooks(pick, profile)).map(b=> ({ ...b, tr: pick }));
+  const covered = new Set(own.flatMap(b=> CAT.translations[pick].books[b.code].pivots));
+  const fallback = pick === 'KJV' ? [] : (await lib.navBooks('KJV', profile))
+    .filter(b=> !CAT.translations.KJV.books[b.code].pivots.some(p=> covered.has(p))).map(b=> ({ ...b, tr: 'KJV' }));
+  const allowed = new Set(CAT.profiles[profile]);
+  return [...own, ...fallback]
+    .map(b=> ({ ...b, fathers: CAT.translations[b.tr].books[b.code].pivots.filter(p=> allowed.has(p))
+                              .reduce((n, p)=> n + (CAT.commentary.fathers.verses[p] || 0), 0) }))
+    .sort((a, b)=> profilePos(a.tr, a.code, profile) - profilePos(b.tr, b.code, profile));
 }
-export function loadBook(id){
-  if(bookCache[id]) return Promise.resolve(bookCache[id]);
-  return fetchJSON('data/'+id+'.json').then(d=>{ bookCache[id]=d; return d; });
-}
-// Fetch a JSON file once per session (failures aren't cached, so they can be retried).
-const fileCache = {};
-function loadOnce(path){
-  if(!fileCache[path]){
-    fileCache[path] = fetchJSON(path);
-    fileCache[path].catch(()=>{ delete fileCache[path]; });
-  }
-  return fileCache[path];
-}
-
-// Tagged Greek/Hebrew words ({ch: {v: [word]}}), kept out of the book file: loaded only when the
-// original-language line is on or the Greek/Hebrew tab is opened.
-export function loadOriginal(bookId){ return loadOnce('data/original/' + bookId + '.json'); }
-
-/* ---------- church-fathers quotes ----------
-   A book file's `fathers` index maps verse -> quote refs. A ref is an index into that chapter's
-   quote file (data/fathers/<book>/<ch>.json), or "book/ch/i" for a quote stored with another
-   chapter (each distinct quote is stored once). Bodies load only when the Fathers tab opens. */
-export async function loadQuotes(bookId, chapter, refs){
-  const loc = refs.map(r=>{
-    if(typeof r === 'number') return [bookId + '/' + chapter, r];
-    const cut = r.lastIndexOf('/');
-    return [r.slice(0, cut), Number(r.slice(cut + 1))];
+// Translations with text for (part of) a native book, in display order; live ones only when configured.
+export function translationsFor(tr, code){
+  const want = new Set(CAT.translations[tr].books[code].pivots);
+  return Object.keys(CAT.translations).filter(t=>{
+    if(CAT.translations[t].live && !(LIVE_TRANSLATIONS[t] && LIVE_TRANSLATIONS[t].available())) return false;
+    return Object.values(CAT.translations[t].books).some(b=> b.pivots.some(p=> want.has(p)));
   });
-  const paths = [...new Set(loc.map(l=> l[0]))];
-  const files = await Promise.all(paths.map(p=> loadOnce('data/fathers/' + p + '.json')));
-  const byPath = Object.fromEntries(paths.map((p, i)=> [p, files[i]]));
-  return loc.map(([p, i])=> byPath[p][i]);
 }
-
-/* ---------- lexicon ----------
-   data/lexicon/index-G.json / index-H.json: {id: [lemma, translit, gloss, pos]}, loaded on the first
-   word click in that language; definitions in buckets of INDEX.lexiconBucketSize Strong's numbers
-   (data/lexicon/G/<n>.json), each loaded when a word in its range is clicked. */
-function lexiconKey(index, strongs){
-  if(index[strongs]) return strongs;
-  // extended Strong's (e.g. G2424G) falls back to the base number, zero-padded (Greek) or not (Hebrew)
-  const m = /^([GH])0*(\d+)([A-Za-z]*)$/i.exec(strongs);
-  if(!m) return null;
-  const lang = m[1].toUpperCase();
-  return [lang + m[2].padStart(4, '0') + m[3], lang + m[2] + m[3], lang + m[2].padStart(4, '0'), lang + m[2]]
-    .find(k=> index[k]) || null;
-}
-export async function lookupLexicon(strongs){
-  const lang = String(strongs)[0].toUpperCase();
-  if(lang !== 'G' && lang !== 'H') return null;
-  const index = await loadOnce('data/lexicon/index-' + lang + '.json');
-  const key = lexiconKey(index, strongs);
-  if(!key) return null;
-  const [greek, translit, gloss, pos] = index[key];
-  const bucket = Math.floor(Number(key.replace(/\D/g, '')) / (INDEX.lexiconBucketSize || 500));
-  const defs = await loadOnce('data/lexicon/' + lang + '/' + bucket + '.json');
-  return { id: key, greek, translit, gloss, pos, definition: defs[key] || '' };
-}
-export function bookMeta(id){ return INDEX.books.find(b=>b.id===id); }
-export function isOT(id){ return INDEX.otBookIds.includes(id); }
-// A book's chapter numbers. Usually 1..N, but not always: the Additions to Esther are 10-16 (KJV numbering).
-export function chapterNumbers(id){
-  return Object.keys(bookMeta(id).verseCounts).map(Number).sort((a, b)=> a - b);
-}
-export function isDeuterocanonical(id){ return (INDEX.deuterocanonicalBookIds || []).includes(id); }
 
 /* ---------- NASB (live, via a Cloudflare Worker proxy in front of api.bible) ----------
    The proxy holds the api.bible key server-side, so nothing secret ever reaches
@@ -101,50 +73,19 @@ export const ESV_NOTICE_HTML = '<a href="https://www.esv.org" target="_blank" re
   'Copyright &copy; 2001 by Crossway, a publishing ministry of Good News Publishers. All rights reserved. &middot; ' +
   '<a href="copyright.html#esv" target="_blank" rel="noopener">Copyright</a>';
 
-const USFM_ID = {
-  gen:'GEN', exod:'EXO', lev:'LEV', num:'NUM', deut:'DEU', josh:'JOS', judg:'JDG', ruth:'RUT',
-  '1sam':'1SA', '2sam':'2SA', '1kgs':'1KI', '2kgs':'2KI', '1chr':'1CH', '2chr':'2CH', ezra:'EZR',
-  neh:'NEH', esth:'EST', job:'JOB', ps:'PSA', prov:'PRO', eccl:'ECC', song:'SNG', isa:'ISA',
-  jer:'JER', lam:'LAM', ezek:'EZK', dan:'DAN', hos:'HOS', joel:'JOL', amos:'AMO', obad:'OBA',
-  jonah:'JON', mic:'MIC', nah:'NAM', hab:'HAB', zeph:'ZEP', hag:'HAG', zech:'ZEC', mal:'MAL',
-  '1esd':'1ES', '2esd':'2ES', tob:'TOB', jdt:'JDT', addesth:'ESG', wis:'WIS', sir:'SIR', bar:'BAR',
-  prazar:'S3Y', sus:'SUS', bel:'BEL', prman:'MAN', '1macc':'1MA', '2macc':'2MA',
-  matt:'MAT', mark:'MRK', luke:'LUK', john:'JHN', acts:'ACT', rom:'ROM',
-  '1cor':'1CO', '2cor':'2CO', gal:'GAL', eph:'EPH', phil:'PHP', col:'COL',
-  '1thess':'1TH', '2thess':'2TH', '1tim':'1TI', '2tim':'2TI', titus:'TIT',
-  phlm:'PHM', heb:'HEB', jas:'JAS', '1pet':'1PE', '2pet':'2PE',
-  '1jn':'1JN', '2jn':'2JN', '3jn':'3JN', jude:'JUD', rev:'REV'
-};
-// Some translations (INDEX.ntOnlyTranslations, e.g. YLT) have no OT text. Deuterocanonical books list the
-// translations that carry them (KJV, WEB and, for some books, DRA); NASB/ESV serve none of them.
-export function translationAvailable(code, bookId){
-  const meta = bookMeta(bookId);
-  if(meta && meta.translations) return meta.translations.includes(code);
-  return !(isOT(bookId) && (INDEX.ntOnlyTranslations || []).includes(code));
-}
-export function translationCodes(bookId){
-  const codes = Object.keys(INDEX.translations).filter(c=> translationAvailable(c, bookId));
-  if(nasbAvailable() && translationAvailable('NASB', bookId)) codes.push('NASB');
-  if(esvAvailable() && translationAvailable('ESV', bookId)) codes.push('ESV');
-  return codes;
-}
-// The translation actually shown for a book: the viewer's pick, or KJV where it has no text.
-// (The pick itself is kept, so e.g. YLT comes back on returning to the NT.)
-export function effectiveTranslation(code, bookId){
-  return translationAvailable(code, bookId) ? code : 'KJV';
-}
-const LIVE_NAMES = { NASB: 'New American Standard Bible (1995)', ESV: 'English Standard Version (2016)' };
-export function translationName(code){
-  return LIVE_NAMES[code] || INDEX.translations[code];
-}
+export function translationName(code){ return CAT.translations[code].name; }
 
 /* Keep api.bible traffic low: one request per chapter (never per verse), nothing
    prefetched, and fetched chapters cached in IndexedDB. Per the api.bible agreement,
    cached text is refreshed after 30 days: expired entries are dropped when read and
    swept at boot (purgeExpiredNasb). Any storage failure falls back to memory + network. */
 const NASB_TTL_MS = 30 * 24 * 60 * 60 * 1000;
-const nasbChapterCache = {}; // "bookId.chapter" -> Promise<{verse:text}>
-const nasbTokens = {};       // "bookId.chapter" -> fumsToken from the api.bible response
+const nasbChapterCache = {}; // "BOOK.chapter" -> Promise<{verse:text}>
+const nasbTokens = {};       // "BOOK.chapter" -> fumsToken from the api.bible response
+const nasbMem = {};          // "BOOK.chapter" -> {verse: text}, this session
+// Live functions take book codes (USFM, e.g. 'JHN'). Stored cache keys keep the pre-v2 app id
+// ('john'), so chapters cached before v2 stay valid.
+const cacheId = code=> legacyId(code) || code;
 
 let nasbDbPromise = null;
 function nasbDb(){
@@ -167,7 +108,7 @@ async function nasbStore(mode, fn){
     });
   }catch(e){ return null; }
 }
-const nasbKey = (bookId, chapter)=> NASB_CONFIG.bibleId + ':' + bookId + '.' + chapter;
+const nasbKey = (code, chapter)=> NASB_CONFIG.bibleId + ':' + cacheId(code) + '.' + chapter;
 const nasbFresh = entry=> entry && Date.now() - entry.fetchedAt < NASB_TTL_MS;
 
 async function readStoredNasb(bookId, chapter){
@@ -197,11 +138,7 @@ export async function purgeExpiredNasb(){
 
 function rememberNasb(bookId, chapter, verses, fumsToken){
   nasbTokens[bookId + '.' + chapter] = fumsToken;
-  const book = bookCache[bookId];
-  if(book){
-    book.translations.NASB = book.translations.NASB || {};
-    book.translations.NASB[String(chapter)] = verses;
-  }
+  nasbMem[bookId + '.' + chapter] = verses;
 }
 // api.bible "json" chapter content: nested para/char tags whose text nodes carry attrs.verseId ("JHN.3.16").
 // Poetry lines are separate paras with no trailing space, so a space is added at each para boundary.
@@ -226,8 +163,7 @@ function parseNasbChapter(content){
 // Local copy only (memory or a fresh IndexedDB entry) — never hits the network.
 export async function getCachedNasbChapter(bookId, chapter){
   if(!nasbAvailable()) return null;
-  const book = bookCache[bookId];
-  const mem = book && book.translations.NASB && book.translations.NASB[String(chapter)];
+  const mem = nasbMem[bookId + '.' + chapter];
   if(mem) return mem;
   const entry = await readStoredNasb(bookId, chapter);
   if(!entry) return null;
@@ -243,7 +179,7 @@ export async function ensureNasbChapter(bookId, chapter){
     const cached = await getCachedNasbChapter(bookId, chapter);
     if(cached) return cached;
     const url = NASB_CONFIG.proxyUrl.replace(/\/$/,'') + '/v1/bibles/' + encodeURIComponent(NASB_CONFIG.bibleId) +
-      '/chapters/' + encodeURIComponent(USFM_ID[bookId] + '.' + chapter) +
+      '/chapters/' + encodeURIComponent(bookId + '.' + chapter) +
       '?content-type=json&include-notes=false&include-titles=false&include-chapter-numbers=false' +
       '&include-verse-numbers=false&include-verse-spans=false';
     const res = await fetch(url);
@@ -331,22 +267,14 @@ export function esvCacheVerseCount(){ return esvMem.order.reduce((n, k)=> n + (e
 function forgetEsv(key){
   delete esvMem.chapters[key];
   esvMem.order = esvMem.order.filter(k=> k !== key);
-  const [bookId, chapter] = key.split('.');
-  const book = bookCache[bookId];
-  if(book && book.translations.ESV) delete book.translations.ESV[chapter];
 }
 function rememberEsv(bookId, chapter, verses){
-  const key = bookId + '.' + chapter;
+  const key = cacheId(bookId) + '.' + chapter;
   if(esvMem.chapters[key]) esvMem.order = esvMem.order.filter(k=> k !== key);
   esvMem.chapters[key] = { verses, n: Object.keys(verses).length };
   esvMem.order.push(key);
   while(esvCacheVerseCount() > ESV_CACHE_MAX_VERSES && esvMem.order.length > 1) forgetEsv(esvMem.order[0]);
   writeEsvCache();
-  const book = bookCache[bookId];
-  if(book){
-    book.translations.ESV = book.translations.ESV || {};
-    book.translations.ESV[String(chapter)] = verses;
-  }
 }
 
 // api.esv.org text: one string with inline "[N]" verse markers
@@ -362,11 +290,8 @@ function parseEsvChapter(text){
 // Local copy only (memory / capped localStorage cache): never hits the network.
 export function getCachedEsvChapter(bookId, chapter){
   if(!esvAvailable()) return null;
-  const hit = esvMem.chapters[bookId + '.' + chapter];
-  if(!hit) return null;
-  const book = bookCache[bookId];
-  if(book){ book.translations.ESV = book.translations.ESV || {}; book.translations.ESV[String(chapter)] = hit.verses; }
-  return hit.verses;
+  const hit = esvMem.chapters[cacheId(bookId) + '.' + chapter];
+  return hit ? hit.verses : null;
 }
 
 export async function ensureEsvChapter(bookId, chapter){
@@ -377,7 +302,7 @@ export async function ensureEsvChapter(bookId, chapter){
     const cached = getCachedEsvChapter(bookId, chapter);
     if(cached) return cached;
     const params = new URLSearchParams({
-      q: bookMeta(bookId).name + ' ' + chapter,
+      q: bookName(bookId) + ' ' + chapter,
       'include-verse-numbers': 'true', 'include-first-verse-numbers': 'true',
       'include-footnotes': 'false', 'include-headings': 'false', 'include-short-copyright': 'false',
       'include-passage-references': 'false', 'include-selahs': 'true'

@@ -23,6 +23,9 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
           <button class="picker-btn book" id="bookBtn" aria-haspopup="true" aria-expanded="false"><span id="bookLabel">&nbsp;</span><span class="caret">&#9662;</span></button>
           <div class="picker" id="bookPicker" role="dialog" aria-label="Choose a book">
             <div class="picker-head"><span>Books</span><button class="picker-close" aria-label="Close">&#10005;</button></div>
+            <div class="canon-switch" id="canonSwitch" role="group" aria-label="Canon">
+              <button data-canon="protestant">Protestant</button><button data-canon="catholic">Catholic</button><button data-canon="orthodox">Orthodox</button>
+            </div>
             <div class="picker-body book-grid" id="bookList"></div>
             <div class="picker-foot" id="navFoot">Loading library…</div>
           </div>

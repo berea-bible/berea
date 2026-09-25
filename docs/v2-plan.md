@@ -1,6 +1,6 @@
 # Berea v2 data architecture: plan
 
-Status: phase 4 (runtime module + tests) done, see §12; phase 3 (engine, compiler, dist/, compat) in §11; phase 2 (sources) in §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
+Status: phase 5 (app switch-over) done, see §13; phase 4 (runtime module + tests) in §12; phase 3 (engine, compiler, dist/, compat) in §11; phase 2 (sources) in §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
 for every source, separate deuterocanonical books, one pipeline (raw/ → sources/ → dist/), static site,
 Python stdlib, and the app working throughout via a compatibility data/. This document maps how the
 current code becomes v2, file by file. Open questions are in §9.
@@ -461,8 +461,16 @@ There are 1,017 in all: ASV 181, KJV 196, WEB 184, DRA 238 and Hebrew 218; YLT a
   `comm/fathers/idx/JHN.json`: about 203 KB (47 KB gzipped), versus 600 KB (172 KB gzipped) after step 1.
   The Greek token file for John is 184 KB gzipped, versus 159 KB, because of the translit/editions
   columns. It loads only with the Greek line or tab; the columns can be split off if that matters.
-- **Canon toggle.** The `catholic` profile excludes 1–2 Esdras and the Prayer of Manasseh, which the app
-  shows today under "Deuterocanonical". Decide whether "on" means `catholic` or a broader list.
+- **Canon toggle. Decided:** it replaces the on/off switch with three settings, Protestant, Catholic
+  and Orthodox, which are the three `catalog.json` profiles:
+
+  | Setting | Shows |
+  |---|---|
+  | Protestant | the 66 books |
+  | Catholic | adds Tobit, Judith, the Additions to Esther, Wisdom, Sirach, Baruch, the Letter of Jeremiah, the Prayer of Azariah, Susanna, Bel and 1–2 Maccabees |
+  | Orthodox | adds 1–2 Esdras, the Prayer of Manasseh and the WEB's Greek Esther |
+
+  1–2 Esdras and the Prayer of Manasseh, shown to everyone today, then appear only under Orthodox.
 
 ## 12. Phase 4 result: runtime module and tests
 
@@ -504,3 +512,38 @@ brief:
 
 The tests caught a wrong phase-2 note: the WEB's Letter of Jeremiah is chapter 6, like the KJV's, not
 chapter 1. The note in §10 and the comment in `tvtms.py` are corrected; no data changed.
+
+## 13. Phase 5 result: the app reads dist/
+
+The app switched one feature at a time, in the brief's order. After each step: the step-1 browser
+checks, the v2 checks for that step and everything before it, desktop and iPhone emulation, and no
+console errors. Features not yet switched read `data/` through a legacy-id bridge, removed at the end.
+Nothing in the app reads `data/` any more; a check fails on any request to it.
+
+| Step | What changed |
+|---|---|
+| Reader | Book list, chapters and verses from `dist/`, in the shown translation's own structure (DRA: Psalm 22, Daniel 13–14; KJV: Susanna, the Letter of Jeremiah as its own book). Psalm titles are verse 0, shown as a superscription. The pick (`state.translation`) and the translation on screen (`state.shown`: the pick, else the KJV) are separate; switching translation keeps the place via `lib.locate()`. Old saved prefs (`john`, KJV-numbered) are migrated: a saved DRA "ps 23" opens DRA Psalm 22. |
+| Compare | `lib.compare()`: each translation's own verses, labelled with their reference when numbered differently ("Mark 8:39"). Translations without the passage say why: "Not in ASV", a verse some manuscripts omit, a different recension (DRA Tobit/Judith/Sirach), no corresponding verse, or "No separate title" on psalm titles. NASB/ESV keep the Load button and work from refs (ESV 3 John 1:14–15 for KJV 1:14). |
+| Greek/Hebrew | Line and tab from `lib.originalForPivots()`: each verse shows the words on its own pivots (DRA Mark 8:39 shows the Greek of 9:1; KJV psalm titles carry the Hebrew title). Still loaded only when the line or tab is used. |
+| Lexicon | `lib.lexicon()`, same popover. |
+| Fathers | Marks, badge and tab from `commentaryRefs`/`commentary` (DRA Daniel 13:1 shows the Susanna 1:1 citations). |
+| Canon + nav | Protestant / Catholic / Orthodox switch at the top of the book list, saved in prefs, Protestant by default. It applies in the book list, reader, Compare and Fathers. A chapter partly outside the canon shows a note at the gap (DRA Daniel 3:24–90). Switching away from a hidden book or chapter moves to the nearest one shown (DRA Daniel 13 → 12; Tobit → Genesis 1). Old prefs left on a deuterocanonical book get the canon that shows it. |
+
+The NASB/ESV code now takes book codes: NASB requests `/chapters/JHN.3`, and ESV queries use the
+catalog's book name. The IndexedDB/localStorage cache keys keep the old ids (`…:john.3`), so text cached
+before v2 stays valid. This was checked with a mocked Worker: the reader, a Compare row served from the
+cache, a FUMS report per chapter shown, and ESV 3 John.
+
+Data loaded, measured in the browser (John, KJV, Protestant):
+
+| Action | Now | After step 1 |
+|---|---|---|
+| Open John 1 | 0.213 MB (0.047 MB gzipped): catalog + `text/KJV/JHN` + fathers index | 0.677 MB (0.198 MB gzipped) |
+| First verse opened | +0.426 MB (0.132 MB gzipped): the other translations' John, once per book | nothing extra |
+| Fathers tab | 1.243 MB (0.355 MB gzipped) | 1.247 MB (0.359 MB gzipped) |
+| Greek tab | 0.930 MB (0.187 MB gzipped) | 1.195 MB (0.167 MB gzipped) |
+| First word click | 0.863 MB (0.271 MB gzipped) | 0.867 MB (0.273 MB gzipped) |
+| Next chapter in the same book | nothing new | nothing new |
+
+Chapter-open plus first verse together (0.639 MB, 0.179 MB gzipped) is still below what step 1 loaded
+just to open the chapter.

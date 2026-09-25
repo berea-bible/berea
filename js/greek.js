@@ -1,7 +1,7 @@
 /* Original-language helpers (Greek NT, Hebrew/Aramaic OT): morphology decoders,
    word display, and the lexicon popover. */
 import { el, escapeHtml } from './app.js';
-import { lookupLexicon } from './data.js';
+import { lib } from './data.js';
 
 /* ---------- morphology decoder ---------- */
 const MORPH_CASE = {N:'Nominative',G:'Genitive',D:'Dative',A:'Accusative',V:'Vocative'};
@@ -111,6 +111,10 @@ function decodeHebrewMorph(m){
 }
 
 /* ---------- word display ---------- */
+// Which tagged text a book group has (the deuterocanonical books have none).
+export const ORIGINAL_LANG = { ot: 'hbo', nt: 'grc' };
+// dist/ words -> the field names the renderers use (g surface, s Strong's, m morph, gl gloss, t in context)
+export const legacyWord = w=> ({ g: w.surface, s: w.strong, m: w.morph, gl: w.gloss, t: w.translation || '' });
 // Hebrew: drop cantillation accents, meteg, paseq and sof pasuq (keep vowel points and maqaf).
 const HEB_MARKS = /[֑-ֽ֯׀׃]/g;
 export function stripCantillation(s){ return (s||'').replace(HEB_MARKS, ''); }
@@ -133,7 +137,8 @@ export async function showLexicon(strongs, anchor){
   el.lexPop.classList.add('show'); el.lexBackdrop.classList.add('show');
   if(!strongs) return;
   let entry = null;
-  try{ entry = await lookupLexicon(strongs); }catch(e){ /* treated as no entry */ }
+  const lang = strongs[0].toUpperCase() === 'H' ? 'hbo' : strongs[0].toUpperCase() === 'G' ? 'grc' : null;
+  try{ if(lang) entry = await lib.lexicon(lang, strongs); }catch(e){ /* treated as no entry */ }
   if(!entry){
     el.lexPop.innerHTML = '<div class="empty-state">No lexicon entry for '+strongs+'.</div>';
     return;
@@ -141,8 +146,8 @@ export async function showLexicon(strongs, anchor){
   const hebrew = strongs[0] === 'H';
   el.lexPop.innerHTML =
     '<div class="lex-head"><div>'+
-    (hebrew ? '<div class="lex-greek hebrew" dir="rtl">'+escapeHtml(stripCantillation(entry.greek))+'</div>'
-            : '<div class="lex-greek">'+escapeHtml(entry.greek)+'</div>')+
+    (hebrew ? '<div class="lex-greek hebrew" dir="rtl">'+escapeHtml(stripCantillation(entry.lemma))+'</div>'
+            : '<div class="lex-greek">'+escapeHtml(entry.lemma)+'</div>')+
     '<div class="lex-translit">'+escapeHtml(entry.translit)+'</div>'+
     '<div class="lex-strongs">'+strongs+'</div></div>'+
     '<button class="lex-close" aria-label="Close">&#10005;</button></div>'+

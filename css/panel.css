@@ -41,6 +41,12 @@
 .cmp-name{ font-size:.68rem; color:var(--ink-faint); }
 .cmp-text{ font-family:'Source Serif 4',serif; font-size:.98rem; line-height:1.65; }
 .cmp-item.primary .cmp-code{ color:var(--gold); }
+/* the translation's own reference, where it numbers the verse differently (e.g. DRA Mark 8:39) */
+.cmp-ref{ font-size:.68rem; font-weight:600; color:var(--ink-dim); margin:6px 0 1px; font-variant-numeric:tabular-nums; }
+.cmp-label + .cmp-ref{ margin-top:0; }
+.cmp-item.absent{ padding:8px 0; }
+.cmp-item.absent .cmp-label{ margin-bottom:1px; }
+.cmp-item.absent .cmp-code{ color:var(--ink-faint); }
 .cmp-item.primary{ background:var(--gold-soft); margin:0 -18px; padding:13px 18px; border-bottom-color:transparent; }
 .cmp-item.live .cmp-code{ color:#5B8A3A; }
 .cmp-live-tag{ font-size:.62rem; background:var(--accent-soft); color:var(--accent); border-radius:10px; padding:1px 7px; font-weight:700; letter-spacing:.02em; }

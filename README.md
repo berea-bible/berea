@@ -20,7 +20,14 @@
 
 ## Features
 
-**All 66 books plus the deuterocanonical books, five public-domain translations.** Switch between translations for the whole chapter, or open any verse to compare them all side by side. (YLT is New Testament only. The deuterocanonical books — Tobit, Judith, Wisdom, Sirach, Baruch, 1–2 Maccabees, the additions to Esther and Daniel, 1–2 Esdras and the Prayer of Manasseh — are in KJV and WEB, with the DRA where its Vulgate text lines up.)
+**All 66 books plus the deuterocanonical books, five public-domain translations.** Switch between translations for the whole chapter, or open any verse to compare them all side by side. Each translation keeps its own book layout and verse numbers: the Douay-Rheims reads Psalm 22 where the KJV reads Psalm 23, and Compare lines them up. (YLT is New Testament only.)
+
+**Protestant, Catholic or Orthodox canon.** Choose in the book list:
+- **Protestant** (the default): the 66 books.
+- **Catholic:** adds Tobit, Judith, Wisdom, Sirach, Baruch, 1–2 Maccabees and the additions to Esther and Daniel.
+- **Orthodox:** adds 1–2 Esdras, the Prayer of Manasseh and the WEB's Greek Esther.
+
+The deuterocanonical books are in the KJV and WEB, with the DRA where its Vulgate text lines up.
 
 | | |
 |---|---|
@@ -54,9 +61,10 @@ Then open <http://localhost:8000>. Any static file server works. Opening `index.
 index.html        page markup
 css/              theme, reader layout, verse panel
 js/               native ES modules (no bundler)
-data/             one JSON file per book, plus the index, original/ (Greek/Hebrew words per book),
-                  fathers/ (quote bodies by chapter) and lexicon/ (index + definition buckets);
-                  regenerate with python3 pipeline/build.py
+dist/             the data the app reads: every translation in its own verse numbering, linked
+                  through one shared verse ID (catalog.json, text/, orig/, lex/, comm/)
+sources/          the committed source layer dist/ is built from (one manifest per source)
+pipeline/         the build: python3 pipeline/build.py (see docs/v2-plan.md)
 ```
 
 To host your own copy, push the repository to GitHub and turn on **Pages** for the main branch.
