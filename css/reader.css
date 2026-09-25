@@ -9,15 +9,22 @@
   position:relative; z-index:10;
 }
 /* Wordmark, matching the landing page (../page): GFS Didot with small caps under an
-   oxblood rule. It links to the landing page; on hover (or keyboard focus) it glows
-   oxblood and each letter flips, one after another, from Berea to Βέροια. */
+   oxblood pen-stroke overscore. It links to the landing page; on hover (or keyboard focus)
+   each letter flips, one after another, from Berea to Βέροια, keeping its ink colour. */
 .brand{
   font-family:'GFS Didot',serif; font-weight:400; font-size:1.45rem; line-height:1;
   position:relative; display:inline-grid; padding-top:.16em; margin-right:6px;
   letter-spacing:.1em; color:inherit; text-decoration:none; user-select:none; -webkit-tap-highlight-color:transparent;
-  transition:color .3s ease, text-shadow .3s ease;
 }
-.brand::before{ content:""; position:absolute; top:0; left:9%; right:9%; height:.07em; background:var(--greek); }
+.brand::before{
+  content:""; position:absolute; top:.03em; left:8%; right:8%; height:.1em;
+  background:var(--greek);
+  /* shaped like a scribe's pen stroke (the same path as the landing page and favicon): a heavier
+     touchdown on the left, a slight rise across, and a taper where the pen lifts off at the right */
+  --stroke:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'%3E%3Cpath d='M1.5 6.2C1.2 3.6 3.8 2.6 9 2.7C40 2.9 90 2.4 140 1.9C170 1.6 190 2 197.5 3.1C199.3 3.4 199.4 4.4 197.6 4.8C189 6.2 170 6.6 140 6.9C90 7.3 40 7.8 9 8.3C4.2 8.4 1.8 7.8 1.5 6.2Z'/%3E%3C/svg%3E");
+  -webkit-mask:var(--stroke) center/100% 100% no-repeat; mask:var(--stroke) center/100% 100% no-repeat;
+  transform:rotate(-.4deg);
+}
 .brand .sc{ text-transform:uppercase; font-size:.9em; letter-spacing:.2em; }
 .brand .face{ grid-area:1/1; justify-self:center; perspective:4em; }
 .brand .face > span{
@@ -27,12 +34,10 @@
 .brand .latin > span{ transition-delay:calc(180ms + var(--i) * 45ms); }
 .brand .greek > span{ transform:rotateX(-90deg); opacity:0; transition-delay:calc(var(--i) * 45ms); }
 @media (hover: hover){
-  .brand:hover{ color:var(--greek); text-shadow:0 0 .35em color-mix(in srgb, var(--greek) 55%, transparent); }
   .brand:hover .latin > span{ transform:rotateX(90deg); opacity:0; transition-delay:calc(var(--i) * 45ms); }
   .brand:hover .greek > span{ transform:none; opacity:1; transition-delay:calc(180ms + var(--i) * 45ms); }
 }
-.brand:focus-visible{ outline:2px solid var(--accent); outline-offset:4px; border-radius:2px;
-  color:var(--greek); text-shadow:0 0 .35em color-mix(in srgb, var(--greek) 55%, transparent); }
+.brand:focus-visible{ outline:2px solid var(--accent); outline-offset:4px; border-radius:2px; }
 .brand:focus-visible .latin > span{ transform:rotateX(90deg); opacity:0; transition-delay:calc(var(--i) * 45ms); }
 .brand:focus-visible .greek > span{ transform:none; opacity:1; transition-delay:calc(180ms + var(--i) * 45ms); }
 @media (prefers-reduced-motion: reduce){
