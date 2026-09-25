@@ -2,7 +2,7 @@
 import { state, el, escapeHtml } from './app.js';
 import { CAT, lib, translationName, bookName, bookGroup, pivotsIn } from './data.js';
 import { LIVE_TRANSLATIONS } from './live.js';
-import { decodeMorph, displayWord, showLexicon, hideLexicon, ORIGINAL_LANG, legacyWord } from './greek.js';
+import { decodeMorph, displayWord, showLexicon, hideLexicon, ORIGINAL_LANG, legacyWord, noOriginalNote } from './greek.js';
 
 const ABSENT_NOTE = {
   'not-in-translation': code=> 'Not in ' + code + '.',
@@ -117,9 +117,7 @@ async function renderGreekTab(){
       node.addEventListener('click', ()=> showLexicon(node.dataset.s, node));
     });
   } else {
-    el.paneGreek.innerHTML = hebrew
-      ? '<div class="empty-state">This verse has no counterpart in the Hebrew (Masoretic) text.</div>'
-      : '<div class="empty-state">No tagged Greek text is available for this verse.</div>';
+    el.paneGreek.innerHTML = '<div class="empty-state">' + noOriginalNote(f.vn, hebrew) + '</div>';
   }
 }
 

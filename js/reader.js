@@ -3,7 +3,7 @@ import { state, el, savePrefs, escapeHtml } from './app.js';
 import { CAT, lib, navEntries, bookName, bookGroup, hasBook, translationsFor, translationName, pivotsIn } from './data.js';
 import { LIVE_TRANSLATIONS, liveAvailable } from './live.js';
 import { openVerse, closePanel } from './panel.js';
-import { showLexicon, displayWord, langLabels, ORIGINAL_LANG, legacyWord } from './greek.js';
+import { showLexicon, displayWord, langLabels, ORIGINAL_LANG, legacyWord, noOriginalNote } from './greek.js';
 
 /* ---------- book / chapter pickers ---------- */
 const pickers = [[el.bookBtn, el.bookPicker], [el.chapterBtn, el.chapterPicker]];
@@ -191,6 +191,7 @@ export async function moveTo(tr){
 
 /* ---------- reading pane ---------- */
 export async function showChapter(){
+  openLines.clear();
   if(LIVE_TRANSLATIONS[state.shown] && !LIVE_TRANSLATIONS[state.shown].available()){
     state.translation = state.shown = 'KJV';
   }
@@ -243,21 +244,80 @@ async function ensureCitations(){
 // Each verse shows the words on its own pivots: DRA Mark 8:39 shows the Greek of 9:1, a KJV psalm
 // title (verse 0) the Hebrew title.
 let original = null;   // {key, byPivot: {vid: [word]}}
-async function ensureOriginal(){
+// Loaded when the global line is on, or on the first per-verse toggle (force). Returns false on failure.
+async function ensureOriginal(force = false){
   const lang = ORIGINAL_LANG[bookGroup(state.bookId)];
   const key = state.shown + '/' + state.bookId + '/' + state.chapter;
-  if(!state.showGreek || !lang || (original && original.key === key)) return;
+  if((!state.showGreek && !force) || !lang || (original && original.key === key)) return true;
   try{
     const groups = await lib.originalForPivots(lang, state.rows.flatMap(r=> r.pivots));
     const byPivot = {};
     groups.forEach(g=> g.words.forEach(w=> (byPivot[w.pivot] = byPivot[w.pivot] || []).push(legacyWord(w))));
     original = { key, byPivot };
-  }catch(e){ original = null; /* the line stays empty; turning it off and on retries */ }
+    return true;
+  }catch(e){ original = null; return false; /* the line stays empty; toggling again retries */ }
 }
 const wordsOf = r=> (original && original.key === state.shown + '/' + state.bookId + '/' + state.chapter)
   ? r.pivots.flatMap(p=> original.byPivot[p] || []) : [];
+/* ---------- the original-language line ----------
+   With the global Greek/Hebrew toggle on, every verse shows its line. With it off, each verse has its
+   own Ω / א button that opens or closes just that verse's line in place (no re-render, the scroll
+   position stays). There are no per-verse buttons while the global line is on, so a verse can't be
+   closed on its own then; switching the global line off closes them all. Per-verse opens reset on
+   every chapter load. */
+const openLines = new Set();
+function lineToggle(v, hebrew){
+  const l = langLabels(hebrew), open = openLines.has(v);
+  return '<button class="vorig ' + (hebrew ? 'hebrew' : 'greek') + '" data-v="' + v + '" aria-pressed="' + open + '"' +
+    ' aria-label="' + (open ? 'Hide' : 'Show') + ' the ' + l.name + (v ? ' of verse ' + v : ' of the title') + '"' +
+    ' title="' + l.name + '">' + l.symbol + '</button>';
+}
+// explicit: a per-verse toggle, which says so when the verse has no original text (DRA Dan 3:24)
+function lineHtml(r, hebrew, explicit){
+  const words = wordsOf(r);
+  if(!words.length) return explicit ? '<div class="vgreek-none">' + noOriginalNote(r.verse, hebrew) + '</div>' : '';
+  return (hebrew ? '<div class="vgreek hebrew" dir="rtl">' : '<div class="vgreek">') + words.map(w=>
+    '<button class="gword" data-s="'+ (w.s[0]||'') +'">'+
+      '<span class="gk">'+escapeHtml(displayWord(w, hebrew))+'</span>'+
+      '<span class="gl">'+escapeHtml(w.gl)+'</span>'+
+    '</button>'
+  ).join('') + '</div>';
+}
+function bindWords(root){
+  root.querySelectorAll('.gword').forEach(node=>{
+    node.addEventListener('click', (e)=>{ e.stopPropagation(); showLexicon(node.dataset.s, node); });
+  });
+}
+async function toggleLine(btn){
+  const v = parseInt(btn.dataset.v, 10), body = btn.closest('.vbody');
+  const hebrew = bookGroup(state.bookId) === 'ot', name = langLabels(hebrew).name;
+  const label = open=> btn.setAttribute('aria-label', (open ? 'Hide' : 'Show') + ' the ' + name + (v ? ' of verse ' + v : ' of the title'));
+  if(openLines.has(v)){
+    openLines.delete(v);
+    body.querySelectorAll('.vgreek, .vgreek-none').forEach(n=> n.remove());
+    btn.setAttribute('aria-pressed', 'false'); label(false);
+    return;
+  }
+  openLines.add(v);
+  btn.setAttribute('aria-pressed', 'true'); label(true); btn.classList.add('loading');
+  const key = state.shown + '/' + state.bookId + '/' + state.chapter;
+  const loaded = await ensureOriginal(true);
+  btn.classList.remove('loading');
+  if(key !== state.shown + '/' + state.bookId + '/' + state.chapter || !openLines.has(v) || !btn.isConnected) return;
+  if(!loaded){                                   // couldn't load: back to closed, a tap retries
+    openLines.delete(v); btn.setAttribute('aria-pressed', 'false'); label(false);
+    btn.title = 'Couldn\'t load the ' + name + ' (tap to try again)';
+    return;
+  }
+  btn.title = name;
+  const r = state.rows.find(x=> x.verse === v);
+  body.insertAdjacentHTML('beforeend', lineHtml(r, hebrew, true));
+  bindWords(body.lastElementChild);
+}
+
 function renderChapter(){
   const hebrew = bookGroup(state.bookId) === 'ot';
+  const lang = ORIGINAL_LANG[bookGroup(state.bookId)];
   const translation = state.shown;
 
   let html = '<h2 class="chapter-heading">'+bookName(state.bookId)+' '+state.chapter+'</h2>';
@@ -281,23 +341,17 @@ function renderChapter(){
     const vs = String(r.verse);
     const hasFathers = cited && cited.verses.has(r.verse);
     const mark = hasFathers ? '<span class="fmark" title="Church father citations available"></span>' : '';
-    const words = state.showGreek ? wordsOf(r) : [];
+    const toggle = lang && !state.showGreek ? lineToggle(r.verse, hebrew) : '';
     if(r.verse === 0){                          // psalm title: an unnumbered superscription
-      html += '<div class="verse title" data-v="0"><div class="vbody"><div class="vtext" data-v="0">'+escapeHtml(r.text)+mark+'</div>';
+      html += '<div class="verse title" data-v="0"><div class="vbody"><div class="vtext" data-v="0">'+escapeHtml(r.text)+mark+toggle+'</div>';
     } else {
       html += '<div class="verse" data-v="'+vs+'">';
       html += '<button class="vnum" data-v="'+vs+'">'+vs+'</button>';
       html += '<div class="vbody">';
-      html += '<div class="vtext" data-v="'+vs+'">'+escapeHtml(r.text)+mark+'</div>';
+      html += '<div class="vtext" data-v="'+vs+'">'+escapeHtml(r.text)+mark+toggle+'</div>';
     }
-    if(words.length){
-      html += (hebrew ? '<div class="vgreek hebrew" dir="rtl">' : '<div class="vgreek">') + words.map(w=>
-        '<button class="gword" data-s="'+ (w.s[0]||'') +'">'+
-          '<span class="gk">'+escapeHtml(displayWord(w, hebrew))+'</span>'+
-          '<span class="gl">'+escapeHtml(w.gl)+'</span>'+
-        '</button>'
-      ).join('') + '</div>';
-    }
+    if(state.showGreek) html += lineHtml(r, hebrew, false);
+    else if(openLines.has(r.verse)) html += lineHtml(r, hebrew, true);
     html += '</div></div>';
   });
 
@@ -308,9 +362,10 @@ function renderChapter(){
   el.readingInner.querySelectorAll('.vnum, .vtext').forEach(node=>{
     node.addEventListener('click', ()=> openVerse(parseInt(node.dataset.v,10)));
   });
-  el.readingInner.querySelectorAll('.gword').forEach(node=>{
-    node.addEventListener('click', (e)=>{ e.stopPropagation(); showLexicon(node.dataset.s, node); });
+  el.readingInner.querySelectorAll('.vorig').forEach(node=>{
+    node.addEventListener('click', (e)=>{ e.stopPropagation(); toggleLine(node); });
   });
+  bindWords(el.readingInner);
   el.reading.scrollTop = 0;
 }
 
@@ -383,6 +438,9 @@ el.reading.addEventListener('touchend', async ()=>{
 el.reading.addEventListener('touchcancel', ()=>{ swipe = null; slide(0, true); });
 el.interlinearCheck.addEventListener('change', async ()=>{
   state.showGreek = el.interlinearCheck.checked;
+  openLines.clear();                             // on: every verse shows it; off: all closed
   await ensureOriginal();
+  const top = el.reading.scrollTop;
   renderChapter(); savePrefs();
+  el.reading.scrollTop = top;
 });

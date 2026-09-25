@@ -148,6 +148,20 @@
   display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--gold);
   margin-left:5px; vertical-align:middle; opacity:.8;
 }
+/* per-verse Greek/Hebrew toggle (only while the global line is off) */
+.vorig{
+  display:inline-flex; align-items:center; justify-content:center; vertical-align:2px;
+  min-width:24px; height:22px; margin-left:8px; padding:0 5px; border-radius:6px;
+  border:1px solid var(--border); background:none; color:var(--ink-faint); cursor:pointer;
+  font-size:.86rem; line-height:1; position:relative;
+}
+.vorig.greek{ font-family:'Gentium Plus',serif; }
+.vorig.hebrew{ font-family:'Noto Serif Hebrew',serif; font-size:.9rem; }
+.vorig::before{ content:''; position:absolute; inset:-8px -6px; }   /* a finger-sized hit area */
+.vorig:hover{ color:var(--greek); border-color:var(--greek); }
+.vorig[aria-pressed="true"]{ background:var(--greek-soft); color:var(--greek); border-color:var(--greek); }
+.vorig.loading{ opacity:.5; }
+.vgreek-none{ margin-top:6px; font-size:.8rem; color:var(--ink-faint); font-style:italic; }
 .vgreek{
   margin-top:6px; display:flex; flex-wrap:wrap; gap:2px 3px; padding:8px 10px; background:var(--surface-2);
   border-radius:8px; border:1px solid var(--border);

@@ -113,6 +113,13 @@ function decodeHebrewMorph(m){
 /* ---------- word display ---------- */
 // Which tagged text a book group has (the deuterocanonical books have none).
 export const ORIGINAL_LANG = { ot: 'hbo', nt: 'grc' };
+// Why a verse shows no original-language words. A psalm title with none is one the Hebrew counts as
+// part of verse 1 (e.g. Ps 23 "A Psalm of David"), where its words are.
+export function noOriginalNote(verse, hebrew){
+  if(!hebrew) return 'No tagged Greek text is available for this verse.';
+  return verse === 0 ? 'In the Hebrew, this title is part of verse 1.'
+                     : 'This verse has no counterpart in the Hebrew (Masoretic) text.';
+}
 // dist/ words -> the field names the renderers use (g surface, s Strong's, m morph, gl gloss, t in context)
 export const legacyWord = w=> ({ g: w.surface, s: w.strong, m: w.morph, gl: w.gloss, t: w.translation || '' });
 // Hebrew: drop cantillation accents, meteg, paseq and sof pasuq (keep vowel points and maqaf).

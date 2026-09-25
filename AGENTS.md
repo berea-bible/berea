@@ -36,7 +36,8 @@ live.js NASB/ESV through the Worker proxy (`NASB_CONFIG`,
 ensureNasbChapter, FUMS, the ESV cache).
 reader.js Book/chapter pickers (dropdown; full-screen
 at <=640px), top-bar controls, chapter rendering,
-swipe left/right between chapters on touch screens.
+per-verse Greek/Hebrew toggles (Ω / א; none while the
+global line is on), swipe between chapters on touch screens.
 panel.js Verse detail panel (Compare/Greek-or-Hebrew/Commentary).
 greek.js Original-language helpers: Greek and Hebrew/Aramaic
 morphology decoders, word display, lexicon popover.
