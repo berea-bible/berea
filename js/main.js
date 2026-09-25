@@ -1,17 +1,10 @@
-/* Entry point: theme, then boot the library and show the saved chapter. */
-import { state, el, savePrefs } from './app.js';
+/* Entry point: boot the library, show the saved chapter, set up the settings menu. (The saved theme is
+   applied before first paint by an inline script in index.html.) */
+import { state, el } from './app.js';
 import { loadCatalog, CAT, lib, hasBook, codeFromLegacy } from './data.js';
 import { purgeExpiredNasb, flushFumsQueue, LIVE_TRANSLATIONS } from './live.js';
 import { renderNav, syncBookControls, showChapter, moveTo } from './reader.js';
-
-/* ---------- theme ---------- */
-el.themeBtn.addEventListener('click', ()=>{
-  const cur = document.documentElement.getAttribute('data-theme');
-  const sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const next = cur === 'dark' ? 'light' : cur === 'light' ? 'dark' : (sysDark ? 'light' : 'dark');
-  document.documentElement.setAttribute('data-theme', next);
-  savePrefs();
-});
+import { initSettings } from './settings.js';
 
 /* ---------- boot ---------- */
 // Put the saved place into the shown translation's own structure. Prefs from before v2 hold old ids
@@ -33,6 +26,7 @@ async function restorePlace(){
   const pick = CAT.translations[state.translation] && !(LIVE_TRANSLATIONS[state.translation] && !LIVE_TRANSLATIONS[state.translation].available())
     ? state.translation : 'KJV';
   state.translation = pick;
+  if(!CAT.translations[state.defaultTranslation] || (LIVE_TRANSLATIONS[state.defaultTranslation] && !LIVE_TRANSLATIONS[state.defaultTranslation].available())) state.defaultTranslation = 'KJV';
   state.shown = hasBook(pick, state.bookId, state.canon) && !legacy ? pick : hasBook('KJV', state.bookId, state.canon) ? 'KJV' : null;
   if(!state.shown){ state.bookId = 'JHN'; state.chapter = 1; state.shown = hasBook(pick, 'JHN') ? pick : 'KJV'; }
   const chs = CAT.translations[state.shown].live ? CAT.translations[state.shown].books[state.bookId].chapters
@@ -55,6 +49,7 @@ async function boot(){
   await restorePlace();
   await renderNav();
   await syncBookControls();
+  initSettings();
   await showChapter();   // prefs aren't saved here: old ids are migrated again on each load
 }
 boot();

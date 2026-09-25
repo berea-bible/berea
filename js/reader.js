@@ -6,7 +6,8 @@ import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels, ORIGINAL_LANG, legacyWord, noOriginalNote } from './greek.js';
 
 /* ---------- book / chapter pickers ---------- */
-const pickers = [[el.bookBtn, el.bookPicker], [el.chapterBtn, el.chapterPicker]];
+// the book and chapter pickers, and the settings menu (js/settings.js fills it)
+const pickers = [[el.bookBtn, el.bookPicker], [el.chapterBtn, el.chapterPicker], [el.menuBtn, el.settingsMenu]];
 function openPicker(btn, picker){
   closePickers();
   picker.classList.add('show'); btn.setAttribute('aria-expanded', 'true');
@@ -45,23 +46,17 @@ export async function renderNav(){
     btn.addEventListener('click', ()=>{ closePickers(); selectBook(b.code, b.tr); });
     el.bookList.appendChild(btn);
   });
-  markCanon();
   const f = CAT.commentary.fathers;
   el.navFoot.textContent = f.authors + ' early church authors · ' + f.quotes.toLocaleString() + ' citations, c. 100–800 AD';
   markActiveBook();
 }
 /* ---------- canon profile ---------- */
-function markCanon(){
-  el.canonSwitch.querySelectorAll('button').forEach(b=> b.setAttribute('aria-pressed', String(b.dataset.canon === state.canon)));
-}
-el.canonSwitch.querySelectorAll('button').forEach(btn=> btn.addEventListener('click', ()=> setCanon(btn.dataset.canon)));
-// Switch the book list, reader, Compare and Fathers to another canon. The picker stays open so the list
-// visibly changes; if the open book or chapter isn't in the new canon, the reader moves to the nearest
-// chapter that is (DRA Daniel 13 -> 12), or to the first book of the list.
-async function setCanon(canon){
+// Switch the book list, reader, Compare and Fathers to another canon (Settings > Tradition). If the
+// open book or chapter isn't in the new canon, the reader moves to the nearest chapter that is (DRA
+// Daniel 13 -> 12), or to the first book of the list.
+export async function setCanon(canon){
   if(canon === state.canon) return;
   state.canon = canon;
-  markCanon();
   await renderNav();
   if(!(await navHasCurrent())){
     const entries = await navEntries(state.translation, canon);
@@ -333,7 +328,7 @@ function renderChapter(){
     if(g && r.verse === g.last + 1) g.last = r.verse; else gaps.push({ first: r.verse, last: r.verse });
   });
   const gapNote = g=> '<div class="canon-gap">' + (g.first === g.last ? 'Verse ' + g.first : 'Verses ' + g.first + '–' + g.last) +
-    ' not shown: not in the ' + CANON_NAME[state.canon] + ' canon (change it in the book list).</div>';
+    ' not shown: not in the ' + CANON_NAME[state.canon] + ' canon (change the tradition in Settings, ☰).</div>';
   let gi = 0;
   state.rows.forEach(r=>{
     while(gi < gaps.length && gaps[gi].first < r.verse){ html += gapNote(gaps[gi]); gi++; }
@@ -371,9 +366,11 @@ function renderChapter(){
 
 /* ---------- top bar controls ---------- */
 el.interlinearCheck.checked = state.showGreek;
-el.translationSelect.addEventListener('change', async ()=>{
+// Switch the translation for this visit (the top-bar menu; Settings also calls it for a new default),
+// keeping the place and, if a verse was open, reopening it in the new translation.
+export async function switchTranslation(code){
   const selected = state.selectedVerse;
-  state.translation = el.translationSelect.value;
+  state.translation = code;
   const loc = await moveTo(state.translation);
   closePanel();
   await renderNav();
@@ -381,7 +378,8 @@ el.translationSelect.addEventListener('change', async ()=>{
   await showChapter();
   if(selected !== null && loc && state.rows.some(r=> r.verse === loc.verse)) openVerse(loc.verse);
   savePrefs();
-});
+}
+el.translationSelect.addEventListener('change', ()=> switchTranslation(el.translationSelect.value));
 const hasStep = d=>{ const i = chapterList.indexOf(state.chapter) + d; return i >= 0 && i < chapterList.length; };
 async function stepChapter(d){
   if(hasStep(d)) await selectChapter(chapterList[chapterList.indexOf(state.chapter) + d]);

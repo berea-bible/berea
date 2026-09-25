@@ -22,7 +22,7 @@
 
 **All 66 books plus the deuterocanonical books, five public-domain translations.** Switch between translations for the whole chapter, or open any verse to compare them all side by side. Each translation keeps its own book layout and verse numbers: the Douay-Rheims reads Psalm 22 where the KJV reads Psalm 23, and Compare lines them up. (YLT is New Testament only.)
 
-**Protestant, Catholic or Orthodox canon.** Choose in the book list:
+**Protestant, Catholic or Orthodox canon.** Choose the tradition in Settings (☰), which also holds your default translation and light/dark mode:
 - **Protestant** (the default): the 66 books.
 - **Catholic:** adds Tobit, Judith, Wisdom, Sirach, Baruch, 1–2 Maccabees and the additions to Esther and Daniel.
 - **Orthodox:** adds 1–2 Esdras, the Prayer of Manasseh and the WEB's Greek Esther.
@@ -43,7 +43,7 @@ The NASB (1995) and ESV are also available. They are fetched live through a smal
 
 **The Church Fathers.** Each verse lists what early Christian writers (c. 100–800 AD) said about it: **65,000+ quotations from 231 authors**.
 
-**No accounts, no ads, no build step.** It's plain HTML, CSS, and JavaScript. Your place, translation, and theme are saved in your browser. The only usage reporting is the anonymous view count that API.Bible requires when you read the NASB (see [Copyright](copyright.html#nasb)); the public-domain translations send nothing.
+**No accounts, no ads, no build step.** It's plain HTML, CSS, and JavaScript. Your place and settings are saved in your browser. The only usage reporting is the anonymous view count that API.Bible requires when you read the NASB (see [Copyright](copyright.html#nasb)); the public-domain translations send nothing.
 
 ## Run it locally
 

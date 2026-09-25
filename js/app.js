@@ -7,24 +7,33 @@ function loadPrefs(){
     return raw ? JSON.parse(raw) : {};
   }catch(e){ return {}; }
 }
+// The top bar's translation menu is a switch for this visit (kept across reloads of the tab), while
+// the saved `translation` is the default translation from Settings.
+function loadSession(){
+  try{ return JSON.parse(sessionStorage.getItem('verbum-session') || '{}') || {}; }catch(e){ return {}; }
+}
 export function savePrefs(){
   try{
     localStorage.setItem('verbum-prefs', JSON.stringify({
-      bookId: state.bookId, chapter: state.chapter, translation: state.translation, canon: state.canon,
+      bookId: state.bookId, chapter: state.chapter, translation: state.defaultTranslation, canon: state.canon,
       showGreek: state.showGreek, theme: document.documentElement.getAttribute('data-theme') || ''
     }));
   }catch(e){}
+  try{ sessionStorage.setItem('verbum-session', JSON.stringify({ translation: state.translation })); }catch(e){}
 }
 export const prefs = loadPrefs();
+const session = loadSession();
 
 /* ---------- state ----------
-   translation: the viewer's pick. shown: the translation actually on screen, which is the pick, or
+   defaultTranslation: the Settings default (saved); Berea opens in it. translation: the viewer's pick
+   for this visit (the top-bar menu), starting at the default. shown: the translation actually on screen, which is the pick, or
    the KJV where the pick has no text (YLT in the OT). bookId/chapter are in the shown translation's
    own book structure and numbering (a native book code, e.g. 'DAN'; saved prefs from before v2 hold
    the old ids, e.g. 'dan', and are migrated at boot). canon: the canon profile ('protestant',
    'catholic', 'orthodox') that the book list, reader, Compare and Fathers show; see main.js for its default. */
-export const state = { bookId: prefs.bookId || 'JHN', chapter: prefs.chapter || 1, translation: prefs.translation || 'KJV',
-  shown: prefs.translation || 'KJV', canon: prefs.canon || null, rows: [], selectedVerse: null, showGreek: !!prefs.showGreek };
+export const state = { bookId: prefs.bookId || 'JHN', chapter: prefs.chapter || 1,
+  defaultTranslation: prefs.translation || 'KJV', translation: session.translation || prefs.translation || 'KJV',
+  shown: session.translation || prefs.translation || 'KJV', canon: prefs.canon || null, rows: [], selectedVerse: null, showGreek: !!prefs.showGreek };
 
 /* ---------- elements ---------- */
 export const el = {
@@ -58,7 +67,11 @@ export const el = {
   paneFathers: document.getElementById('pane-fathers'),
   lexPop: document.getElementById('lexPop'),
   lexBackdrop: document.getElementById('lexBackdrop'),
-  themeBtn: document.getElementById('themeBtn'),
+  menuBtn: document.getElementById('menuBtn'),
+  settingsMenu: document.getElementById('settingsMenu'),
+  defaultTranslation: document.getElementById('defaultTranslation'),
+  themeSwitch: document.getElementById('themeSwitch'),
+  canonHint: document.getElementById('canonHint'),
 };
 
 export function escapeHtml(s){

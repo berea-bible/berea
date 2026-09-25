@@ -23,9 +23,6 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
           <button class="picker-btn book" id="bookBtn" aria-haspopup="true" aria-expanded="false"><span id="bookLabel">&nbsp;</span><span class="caret">&#9662;</span></button>
           <div class="picker" id="bookPicker" role="dialog" aria-label="Choose a book">
             <div class="picker-head"><span>Books</span><button class="picker-close" aria-label="Close">&#10005;</button></div>
-            <div class="canon-switch" id="canonSwitch" role="group" aria-label="Canon">
-              <button data-canon="protestant">Protestant</button><button data-canon="catholic">Catholic</button><button data-canon="orthodox">Orthodox</button>
-            </div>
             <div class="picker-body book-grid" id="bookList"></div>
             <div class="picker-foot" id="navFoot">Loading library…</div>
           </div>
@@ -43,7 +40,35 @@ try{ const t = JSON.parse(localStorage.getItem('verbum-prefs') || '{}').theme; i
         <label id="interlinearToggle" title="Show Greek line"><input type="checkbox" id="interlinearCheck"> <span class="full">Greek</span><span class="short greek">&Omega;</span></label>
         <select id="translationSelect"></select>
       </div>
-      <button id="themeBtn" title="Toggle theme">&#9788;</button>
+      <div class="picker-wrap settings-wrap">
+        <button id="menuBtn" aria-label="Settings" title="Settings" aria-haspopup="dialog" aria-expanded="false">
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M3 5.5h14M3 10h14M3 14.5h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="picker settings" id="settingsMenu" role="dialog" aria-label="Settings">
+          <div class="picker-head"><span>Settings</span><button class="picker-close" aria-label="Close">&#10005;</button></div>
+          <div class="settings-body">
+            <div class="setting">
+              <label class="setting-label" for="defaultTranslation">Default translation</label>
+              <select id="defaultTranslation"></select>
+              <p class="setting-hint">Berea opens in this translation. The menu in the top bar switches for this visit only.</p>
+            </div>
+            <div class="setting">
+              <div class="setting-label" id="themeLabel">Appearance</div>
+              <div class="seg" id="themeSwitch" role="group" aria-labelledby="themeLabel">
+                <button data-theme-choice="">System</button><button data-theme-choice="light">Light</button><button data-theme-choice="dark">Dark</button>
+              </div>
+            </div>
+            <div class="setting">
+              <div class="setting-label" id="canonLabel">Tradition</div>
+              <div class="seg" id="canonSwitch" role="group" aria-labelledby="canonLabel">
+                <button data-canon="protestant">Protestant</button><button data-canon="catholic">Catholic</button><button data-canon="orthodox">Orthodox</button>
+              </div>
+              <p class="setting-hint" id="canonHint"></p>
+            </div>
+          </div>
+          <div class="picker-foot"><a href="copyright.html">Copyright and sources</a> &middot; Settings are saved in this browser.</div>
+        </div>
+      </div>
     </div>
     <div id="reading"><div id="readingInner"><div class="loading">Loading the library&hellip;</div></div></div>
   </div>
