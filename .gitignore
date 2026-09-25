@@ -1,6 +1,3 @@
-pipeline/.cache/
-pipeline/.stage/
 __pycache__/
 raw/
 dist.tmp/
-data.tmp/

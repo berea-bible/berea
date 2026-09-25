@@ -8,7 +8,8 @@ Codes are USFM, except ADE (the Additions to Esther as the 1611 KJV numbers them
 which USFM has no code for (its ESG is the whole Greek Esther, a different book).
 
 Per-source names, used by the importers to recognise a source's own book ids:
-  app     today's data/ id (the app's book ids, used by compat.py and to migrate saved prefs)
+  app     the pre-v2 app id ('john'): catalog.json's `legacy`, used to migrate saved prefs and keep
+          the NASB/ESV cache keys stable
   osis    KJV OSIS book id (also the morphhb/WLC file name for OT books)
   zef     Zefania bname (ASV, YLT)
   tagnt   TAGNT book id (Greek NT)

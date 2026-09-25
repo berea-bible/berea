@@ -67,6 +67,8 @@ sources/          the committed source layer dist/ is built from (one manifest p
 pipeline/         the build: python3 pipeline/build.py (see docs/v2-plan.md)
 ```
 
+To add a translation, see "Adding a translation" in [AGENTS.md](AGENTS.md): it's a new `sources/translations/<id>/` folder with a manifest, then `python3 pipeline/build.py`.
+
 To host your own copy, push the repository to GitHub and turn on **Pages** for the main branch.
 
 ## License

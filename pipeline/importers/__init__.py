@@ -5,7 +5,7 @@ import html, re
 
 
 def clean(txt):
-    """Collapse whitespace and unescape entities (the same cleaning today's data/ was built with)."""
+    """Collapse whitespace and unescape entities (the same cleaning the pre-v2 data used)."""
     txt = re.sub(r"\s+", " ", txt).strip()
     return html.unescape(txt)
 

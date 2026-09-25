@@ -7,14 +7,11 @@
                                                        run pipeline/fetch.py if anything is missing)
   2. pipeline/compile.py          sources/ -> dist/  (+ dist/validation.json, dist/versification.txt;
                                                        fails, leaving dist/ untouched, on any error)
-  3. pipeline/compat.py           dist/ -> data/     (today's format, until the app reads dist/; staged
-                                                       and swapped in only when it succeeds)
 
-Python >= 3.11, standard library only. Deterministic: two runs give byte-identical sources/, dist/, data/.
-See docs/v2-plan.md. (The pre-v2 scripts build_dra.py, remap_hebrew.py, finalize.py and versification.py
-are no longer used; they are removed in phase 6.)
+Python >= 3.11, standard library only. Deterministic: two runs give byte-identical sources/ and dist/.
+See docs/v2-plan.md.
 """
-import os, shutil, subprocess, sys
+import os, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -30,13 +27,6 @@ def run(*cmd):
 def main():
     run(os.path.join(HERE, "import_sources.py"))
     run(os.path.join(HERE, "compile.py"))
-    stage = os.path.join(ROOT, "data.tmp")
-    shutil.rmtree(stage, ignore_errors=True)
-    run(os.path.join(HERE, "compat.py"), "--out", stage)
-    data = os.path.join(ROOT, "data")
-    shutil.rmtree(data, ignore_errors=True)
-    os.replace(stage, data)
-    print(f"\ndata/ regenerated ({sum(len(fs) for _, _, fs in os.walk(data))} files)")
 
 
 if __name__ == "__main__":

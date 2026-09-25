@@ -1,7 +1,7 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { CAT, lib, navEntries, bookName, bookGroup, hasBook, translationsFor, translationName,
-         LIVE_TRANSLATIONS, pivotsIn } from './data.js';
+import { CAT, lib, navEntries, bookName, bookGroup, hasBook, translationsFor, translationName, pivotsIn } from './data.js';
+import { LIVE_TRANSLATIONS, liveAvailable } from './live.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels, ORIGINAL_LANG, legacyWord } from './greek.js';
 
@@ -88,7 +88,7 @@ async function navHasCurrent(){
 const YEAR_SUFFIX = /\s*\(\d{4}[^)]*\)$/;
 function renderTranslationSelect(){
   el.translationSelect.innerHTML = '';
-  const codes = translationsFor(state.shown, state.bookId);
+  const codes = translationsFor(state.shown, state.bookId, liveAvailable);
   const base = code=> translationName(code).replace(YEAR_SUFFIX, '');
   codes.forEach(code=>{
     const opt = document.createElement('option');

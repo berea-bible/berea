@@ -1,6 +1,7 @@
 /* Entry point: theme, then boot the library and show the saved chapter. */
 import { state, el, savePrefs } from './app.js';
-import { loadCatalog, CAT, lib, hasBook, codeFromLegacy, purgeExpiredNasb, flushFumsQueue, LIVE_TRANSLATIONS } from './data.js';
+import { loadCatalog, CAT, lib, hasBook, codeFromLegacy } from './data.js';
+import { purgeExpiredNasb, flushFumsQueue, LIVE_TRANSLATIONS } from './live.js';
 import { renderNav, syncBookControls, showChapter, moveTo } from './reader.js';
 
 /* ---------- theme ---------- */

@@ -1,6 +1,6 @@
 # Berea v2 data architecture: plan
 
-Status: phase 5 (app switch-over) done, see §13; phase 4 (runtime module + tests) in §12; phase 3 (engine, compiler, dist/, compat) in §11; phase 2 (sources) in §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
+Status: **all six phases done** (phase 6 cleanup and the done-when check in §14); phase 5 (app switch-over) in §13; phase 4 (runtime module + tests) in §12; phase 3 (engine, compiler, dist/, compat) in §11; phase 2 (sources) in §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
 for every source, separate deuterocanonical books, one pipeline (raw/ → sources/ → dist/), static site,
 Python stdlib, and the app working throughout via a compatibility data/. This document maps how the
 current code becomes v2, file by file. Open questions are in §9.
@@ -547,3 +547,32 @@ Data loaded, measured in the browser (John, KJV, Protestant):
 
 Chapter-open plus first verse together (0.639 MB, 0.179 MB gzipped) is still below what step 1 loaded
 just to open the chapter.
+
+## 14. Phase 6 result: cleanup, and the done-when check
+
+Removed:
+- `data/` and `pipeline/compat.py`; the build is now `import_sources.py` → `compile.py`
+- the pre-v2 scripts `pipeline/build_dra.py`, `remap_hebrew.py`, `finalize.py` and `versification.py`
+- `pipeline/.cache/`
+
+The sibling `../pipeline` repo is left untouched: it is archived, not edited, as planned in §3.3.
+Nothing references it any more.
+
+The NASB/ESV/FUMS code moved from `js/data.js` to `js/live.js`, unchanged apart from the book-code
+arguments. `data.js` (catalog helpers) no longer imports it, so it stays at the bottom of the module
+graph.
+
+`AGENTS.md` describes the v2 layout, the build and **adding a translation** (a
+`sources/translations/<id>/` folder with a manifest; build; read `validation.json`; correct only
+where it shows problems; test). `pipeline/README.md` is the pipeline reference, and the README
+links the guide.
+
+**Done when:**
+
+| Criterion | Result |
+|---|---|
+| One command rebuilds everything from `raw/`; two runs are byte-identical | ✓ `python3 pipeline/build.py`; `fetch.py` restores `raw/` from the lock (checked from empty in phase 2) |
+| `validation.json` has no errors, and every warning is explained | ✓ 0 errors; the warnings are explained in §11 |
+| All the tests pass | ✓ 22 Node tests (`node --test tests/*.test.mjs`) |
+| Every existing feature works as before | ✓ browser checks on desktop and iPhone, no console errors: the step-1 checks, the v2 checks for each switch-over step, the mocked NASB/ESV check. The one intended change: every translation reads in its own numbering |
+| Opening a chapter loads no more than after step 1 | ✓ John 1: 0.213 MB (0.047 MB gzipped) vs 0.677 MB (0.198 MB gzipped) |

@@ -1,6 +1,7 @@
 /* Verse detail panel: Compare / Greek-or-Hebrew / Commentary tabs. */
 import { state, el, escapeHtml } from './app.js';
-import { CAT, lib, translationName, LIVE_TRANSLATIONS, bookName, bookGroup, pivotsIn } from './data.js';
+import { CAT, lib, translationName, bookName, bookGroup, pivotsIn } from './data.js';
+import { LIVE_TRANSLATIONS } from './live.js';
 import { decodeMorph, displayWord, showLexicon, hideLexicon, ORIGINAL_LANG, legacyWord } from './greek.js';
 
 const ABSENT_NOTE = {
