@@ -1,0 +1,877 @@
+chapter	verse	word	type	surface	lemma	morph	id
+1	1	1		מַשָּׂ֥א	4853 b	HNcmsa	39xeN
+1	1	2		דְבַר	1697	HNcmsc	39Nvk
+1	1	3		יְהוָ֖ה	3068	HNp	39TyA
+1	1	4		אֶל	413	HR	39vuQ
+1	1	5		יִשְׂרָאֵ֑ל	3478	HNp	39TSc
+1	1	6		בְּ/יַ֖ד	b/3027	HR/Ncbsc	39k5P
+1	1	7		מַלְאָכִֽי	4401	HNp	39nPh
+1	2	1		אָהַ֤בְתִּי	157	HVqp1cs	39LN3
+1	2	2		אֶתְ/כֶם֙	853	HTo/Sp2mp	39Qzf
+1	2	3		אָמַ֣ר	559	HVqp3ms	39aPd
+1	2	4		יְהוָ֔ה	3068	HNp	39eYX
+1	2	5		וַ/אֲמַרְתֶּ֖ם	c/559	HC/Vqp2mp	39C5U
+1	2	6		בַּ/מָּ֣ה	b/4100	HR/Ti	39qNN
+1	2	7		אֲהַבְתָּ֑/נוּ	157	HVqp2ms/Sp1cp	39EVS
+1	2	8		הֲ/לוֹא	i/3808	HTi/Tn	39PB6
+1	2	9		אָ֨ח	251	HNcmsa	3937c
+1	2	10		עֵשָׂ֤ו	6215	HNp	39x9c
+1	2	11		לְ/יַֽעֲקֹב֙	l/3290	HR/Np	39yNB
+1	2	12		נְאֻם	5002	HNcmsc	3929t
+1	2	13		יְהוָ֔ה	3068	HNp	39KZG
+1	2	14		וָ/אֹהַ֖ב	c/157	HC/Vqw1cs	39TZE
+1	2	15		אֶֽת	853	HTo	39thY
+1	2	16		יַעֲקֹֽב	3290	HNp	39JM7
+1	3	1		וְ/אֶת	c/853	HC/To	39fpo
+1	3	2		עֵשָׂ֖ו	6215	HNp	39W26
+1	3	3		שָׂנֵ֑אתִי	8130	HVqp1cs	39yw4
+1	3	4		וָ/אָשִׂ֤ים	c/7760 a	HC/Vqw1cs	39jbg
+1	3	5		אֶת	853	HTo	39USR
+1	3	6		הָרָי/ו֙	2022	HNcmpc/Sp3ms	39v6U
+1	3	7		שְׁמָמָ֔ה	8077 a	HNcfsa	395SS
+1	3	8		וְ/אֶת	c/853	HC/To	39GzE
+1	3	9		נַחֲלָת֖/וֹ	5159	HNcfsc/Sp3ms	39qCU
+1	3	10		לְ/תַנּ֥וֹת	l/8568	HR/Ncbpc	39g2y
+1	3	11		מִדְבָּֽר	4057 b	HNcmsa	39jQb
+1	4	1		כִּֽי	3588 a	HC	39794
+1	4	2		תֹאמַ֨ר	559	HVqi3fs	39CsU
+1	4	3		אֱד֜וֹם	123	HNp	39XR4
+1	4	4		רֻשַּׁ֗שְׁנוּ	7567	HVPp1cp	39KvS
+1	4	5		וְ/נָשׁוּב֙	c/7725	HC/Vqi1cp	39dBc
+1	4	6		וְ/נִבְנֶ֣ה	c/1129	HC/Vqi1cp	39nAB
+1	4	7		חֳרָב֔וֹת	2723	HNcfpa	39kfX
+1	4	8		כֹּ֤ה	3541	HD	39Wkf
+1	4	9		אָמַר֙	559	HVqp3ms	39wrL
+1	4	10		יְהוָ֣ה	3068	HNp	393TL
+1	4	11		צְבָא֔וֹת	6635 b	HNcbpa	39LeN
+1	4	12		הֵ֥מָּה	1992	HPp3mp	39sMn
+1	4	13		יִבְנ֖וּ	1129	HVqi3mp	39Y3z
+1	4	14		וַ/אֲנִ֣י	c/589	HC/Pp1cs	39NQN
+1	4	15		אֶהֱר֑וֹס	2040	HVqi1cs	39uLf
+1	4	16		וְ/קָרְא֤וּ	c/7121	HC/Vqq3cp	39kA7
+1	4	17		לָ/הֶם֙	l	HR/Sp3mp	393TS
+1	4	18		גְּב֣וּל	1366	HNcmsc	39NFp
+1	4	19		רִשְׁעָ֔ה	7564	HNcfsa	397am
+1	4	20		וְ/הָ/עָ֛ם	c/d/5971 a	HC/Td/Ncmsa	39hh7
+1	4	21		אֲשֶׁר	834 a	HTr	39BsK
+1	4	22		זָעַ֥ם	2194	HVqp3ms	39fsu
+1	4	23		יְהוָ֖ה	3068	HNp	398M6
+1	4	24		עַד	5704	HR	39wM5
+1	4	25		עוֹלָֽם	5769	HNcmsa	39qty
+1	5	1		וְ/עֵינֵי/כֶ֖ם	c/5869 a	HC/Ncbdc/Sp2mp	395gQ
+1	5	2		תִּרְאֶ֑ינָה	7200	HVqi3fp	39Xw6
+1	5	3		וְ/אַתֶּ֤ם	c/859 d	HC/Pp2mp	39eHJ
+1	5	4		תֹּֽאמְרוּ֙	559	HVqi2mp	39H6L
+1	5	5		יִגְדַּ֣ל	1431	HVqj3ms	39bmv
+1	5	6		יְהוָ֔ה	3068	HNp	39FV9
+1	5	7		מֵ/עַ֖ל	m/5921 a	HR/R	39Xm1
+1	5	8		לִ/גְב֥וּל	l/1366	HR/Ncmsc	39UE6
+1	5	9		יִשְׂרָאֵֽל	3478	HNp	39goK
+1	6	1		בֵּ֛ן	1121 a	HNcmsa	39CyH
+1	6	2		יְכַבֵּ֥ד	3513	HVpi3ms	39A4a
+1	6	3		אָ֖ב	1	HNcmsa	395Pr
+1	6	4		וְ/עֶ֣בֶד	c/5650	HC/Ncmsa	39L4k
+1	6	5		אֲדֹנָ֑י/ו	113	HNcmpc/Sp3ms	39Mnv
+1	6	6		וְ/אִם	c/518 a	HC/C	39mwU
+1	6	7		אָ֣ב	1	HNcmsa	39tKT
+1	6	8		אָ֣נִי	589	HPp1cs	39NRT
+1	6	9		אַיֵּ֣ה	346	HTi	39sRU
+1	6	10		כְבוֹדִ֡/י	3519	HNcbsc/Sp1cs	39Wxq
+1	6	11		וְ/אִם	c/518 a	HC/C	399qY
+1	6	12		אֲדוֹנִ֣ים	113	HNcmpa	39n5f
+1	6	13		אָנִי֩	589	HPp1cs	39YUq
+1	6	14		אַיֵּ֨ה	346	HTi	39fQr
+1	6	15		מוֹרָאִ֜/י	4172 a	HNcmsc/Sp1cs	39L7t
+1	6	16		אָמַ֣ר	559	HVqp3ms	39A74
+1	6	17		יְהוָ֣ה	3068	HNp	39dNE
+1	6	18		צְבָא֗וֹת	6635 b	HNcbpa	39xdF
+1	6	19		לָ/כֶם֙	l	HR/Sp2mp	39AYg
+1	6	20		הַ/כֹּֽהֲנִים֙	d/3548	HTd/Ncmpa	39Ls9
+1	6	21		בּוֹזֵ֣י	959	HVqrmpc	39Snp
+1	6	22		שְׁמִ֔/י	8034	HNcmsc/Sp1cs	3987B
+1	6	23		וַ/אֲמַרְתֶּ֕ם	c/559	HC/Vqq2mp	39nLp
+1	6	24		בַּ/מֶּ֥ה	b/4100	HR/Ti	39PzC
+1	6	25		בָזִ֖ינוּ	959	HVqp1cp	39NPq
+1	6	26		אֶת	853	HTo	39d5m
+1	6	27		שְׁמֶֽ/ךָ	8034	HNcmsc/Sp2ms	39BYa
+1	7	1		מַגִּישִׁ֤ים	5066	HVhrmpa	39LJh
+1	7	2		עַֽל	5921 a	HR	39tRR
+1	7	3		מִזְבְּחִ/י֙	4196	HNcmsc/Sp1cs	39Q7E
+1	7	4		לֶ֣חֶם	3899	HNcbsa	39dv1
+1	7	5		מְגֹאָ֔ל	1351	HVPsmsa	39QwM
+1	7	6		וַ/אֲמַרְתֶּ֖ם	c/559	HC/Vqq2mp	39a62
+1	7	7		בַּ/מֶּ֣ה	b/4100	HR/Ti	39KvD
+1	7	8		גֵֽאַלְנ֑וּ/ךָ	1351	HVpp1cp/Sp2ms	39GLz
+1	7	9		בֶּ/אֱמָרְ/כֶ֕ם	b/559	HR/Vqc/Sp2mp	39BU7
+1	7	10		שֻׁלְחַ֥ן	7979	HNcmsc	39iy2
+1	7	11		יְהוָ֖ה	3068	HNp	39zQ2
+1	7	12		נִבְזֶ֥ה	959	HVNrmsa	39Wxx
+1	7	13		הֽוּא	1931	HPp3ms	39jQ8
+1	8	1		וְ/כִֽי	c/3588 a	HC/C	39Haa
+1	8	2		תַגִּשׁ֨וּ/ן	5066	HVhi2mp/Sn	39fJN
+1	8	3		עִוֵּ֤ר	5787	HAamsa	399KV
+1	8	4		לִ/זְבֹּ֨חַ֙	l/2076	HR/Vqc	39F1s
+1	8	5		אֵ֣ין	369	HTn	39dns
+1	8	6		רָ֔ע	7451 a	HAamsa	39GK3
+1	8	7		וְ/כִ֥י	c/3588 a	HC/C	39nRZ
+1	8	8		תַגִּ֛ישׁוּ	5066	HVhi2mp	39cpb
+1	8	9		פִּסֵּ֥חַ	6455	HAamsa	39zio
+1	8	10		וְ/חֹלֶ֖ה	c/2470 a	HC/Vqrmsa	39Qsh
+1	8	11		אֵ֣ין	369	HTn	39zTj
+1	8	12		רָ֑ע	7451 a	HAamsa	39fPi
+1	8	13		הַקְרִיבֵ֨/הוּ	7126	HVhv2ms/Sp3ms	39GYe
+1	8	14		נָ֜א	4994	HTe	39Bbz
+1	8	15		לְ/פֶחָתֶ֗/ךָ	l/6346	HR/Ncmsc/Sp2ms	39VA9
+1	8	16		הֲ/יִּרְצְ/ךָ֙	i/7521	HTi/Vqi3ms/Sp2ms	39fV3
+1	8	17		א֚וֹ	176 a	HC	39Sov
+1	8	18		הֲ/יִשָּׂ֣א	i/5375	HTi/Vqi3ms	39V27
+1	8	19		פָנֶ֔י/ךָ	6440	HNcbpc/Sp2ms	39ifp
+1	8	20		אָמַ֖ר	559	HVqp3ms	397ZG
+1	8	21		יְהוָ֥ה	3068	HNp	39B2d
+1	8	22		צְבָאֽוֹת	6635 b	HNcbpa	39ewe
+1	9	1		וְ/עַתָּ֛ה	c/6258	HC/D	39SV6
+1	9	2		חַלּוּ	2470 b	HVpv2mp	39G83
+1	9	3		נָ֥א	4994	HTe	39vzS
+1	9	4		פְנֵי	6440	HNcbpc	39Gq9
+1	9	5		אֵ֖ל	410	HNcmsa	393y8
+1	9	6		וִֽ/יחָנֵ֑/נוּ	c/2603 a	HC/Vqj3ms/Sp1cp	39TXw
+1	9	7		מִ/יֶּדְ/כֶם֙	m/3027	HR/Ncbsc/Sp2mp	39Y4K
+1	9	8		הָ֣יְתָה	1961	HVqp3fs	39C32
+1	9	9		זֹּ֔את	2063	HPdxfs	39aMT
+1	9	10		הֲ/יִשָּׂ֤א	i/5375	HTi/Vqi3ms	39Cof
+1	9	11		מִ/כֶּם֙	m/4480 a	HR/Sp2mp	39YWU
+1	9	12		פָּנִ֔ים	6440	HNcbpa	39rAQ
+1	9	13		אָמַ֖ר	559	HVqp3ms	39fLi
+1	9	14		יְהוָ֥ה	3068	HNp	39Ptj
+1	9	15		צְבָאֽוֹת	6635 b	HNcbpa	39AJj
+1	10	1		מִ֤י	4310	HTi	399Hv
+1	10	2		גַם	1571	HD	39j1i
+1	10	3		בָּ/כֶם֙	b	HR/Sp2mp	39J9J
+1	10	4		וְ/יִסְגֹּ֣ר	c/5462	HC/Vqj3ms	39U4n
+1	10	5		דְּלָתַ֔יִם	1817 c	HNcfda	392Kt
+1	10	6		וְ/לֹֽא	c/3808	HC/Tn	39RmH
+1	10	7		תָאִ֥ירוּ	215	HVhi2mp	39SWL
+1	10	8		מִזְבְּחִ֖/י	4196	HNcmsc/Sp1cs	3975P
+1	10	9		חִנָּ֑ם	2600	HD	393Lj
+1	10	10		אֵֽין	369	HTn	39Qa3
+1	10	11		לִ֨/י	l	HR/Sp1cs	39WTe
+1	10	12		חֵ֜פֶץ	2656	HNcmsa	396VM
+1	10	13		בָּ/כֶ֗ם	b	HR/Sp2mp	39sKn
+1	10	14		אָמַר֙	559	HVqp3ms	39oAj
+1	10	15		יְהוָ֣ה	3068	HNp	39AxB
+1	10	16		צְבָא֔וֹת	6635 b	HNcbpa	39Ap3
+1	10	17		וּ/מִנְחָ֖ה	c/4503	HC/Ncfsa	39CEu
+1	10	18		לֹֽא	3808	HTn	39zpy
+1	10	19		אֶרְצֶ֥ה	7521	HVqi1cs	39FiN
+1	10	20		מִ/יֶּדְ/כֶֽם	m/3027	HR/Ncbsc/Sp2mp	39cLk
+1	11	1		כִּ֣י	3588 a	HC	3992v
+1	11	2		מִ/מִּזְרַח	m/4217	HR/Ncmsc	39j63
+1	11	3		שֶׁ֜מֶשׁ	8121	HNcbsa	39LFW
+1	11	4		וְ/עַד	c/5704	HC/R	39FbT
+1	11	5		מְבוֹא֗/וֹ	3996	HNcmsc/Sp3ms	39Bx7
+1	11	6		גָּד֤וֹל	1419 a	HAamsa	39btu
+1	11	7		שְׁמִ/י֙	8034	HNcmsc/Sp1cs	39rTK
+1	11	8		בַּ/גּוֹיִ֔ם	b/1471 a	HRd/Ncmpa	39SHw
+1	11	9		וּ/בְ/כָל	c/b/3605	HC/R/Ncmsc	39VuH
+1	11	10		מָק֗וֹם	4725	HNcmsa	39Axb
+1	11	11		מֻקְטָ֥ר	6999 b	HVHsmsa	39xva
+1	11	12		מֻגָּ֛שׁ	5066	HVHsmsa	39NrT
+1	11	13		לִ/שְׁמִ֖/י	l/8034	HR/Ncmsc/Sp1cs	39iAD
+1	11	14		וּ/מִנְחָ֣ה	c/4503	HC/Ncfsa	39372
+1	11	15		טְהוֹרָ֑ה	2889	HAafsa	39FMU
+1	11	16		כִּֽי	3588 a	HC	39SaV
+1	11	17		גָד֤וֹל	1419 a	HAamsa	394W9
+1	11	18		שְׁמִ/י֙	8034	HNcmsc/Sp1cs	39MmM
+1	11	19		בַּ/גּוֹיִ֔ם	b/1471 a	HRd/Ncmpa	39wJn
+1	11	20		אָמַ֖ר	559	HVqp3ms	39CQo
+1	11	21		יְהוָ֥ה	3068	HNp	39XyU
+1	11	22		צְבָאֽוֹת	6635 b	HNcbpa	39BG4
+1	12	1		וְ/אַתֶּ֖ם	c/859 d	HC/Pp2mp	39YHH
+1	12	2		מְחַלְּלִ֣ים	2490 c	HVprmpa	39sHf
+1	12	3		אוֹת֑/וֹ	853	HTo/Sp3ms	39iee
+1	12	4		בֶּ/אֱמָרְ/כֶ֗ם	b/559	HR/Vqc/Sp2mp	393eS
+1	12	5		שֻׁלְחַ֤ן	7979	HNcmsc	39ddd
+1	12	6		אֲדֹנָ/י֙	136	HNcmpc/Sp1cs	39hxo
+1	12	7		מְגֹאָ֣ל	1351	HVPsmsa	39TW6
+1	12	8		ה֔וּא	1931	HPp3ms	39PVx
+1	12	9		וְ/נִיב֖/וֹ	c/5108 b	HC/Ncmsc/Sp3ms	39PGK
+1	12	10		נִבְזֶ֥ה	959	HVNrmsa	39U4a
+1	12	11		אָכְלֽ/וֹ	400	HNcmsc/Sp3ms	39dSQ
+1	13	1		וַ/אֲמַרְתֶּם֩	c/559	HC/Vqq2mp	39Qbs
+1	13	2		הִנֵּ֨ה	2009	HTm	39ndZ
+1	13	3		מַ/תְּלָאָ֜ה	m/4972	HTi/Ncfsa	39Xa1
+1	13	4		וְ/הִפַּחְתֶּ֣ם	c/5301	HC/Vhq2mp	393yJ
+1	13	5		אוֹת֗/וֹ	853	HTo/Sp3ms	39B6c
+1	13	6		אָמַר֙	559	HVqp3ms	39bju
+1	13	7		יְהוָ֣ה	3068	HNp	39cn3
+1	13	8		צְבָא֔וֹת	6635 b	HNcbpa	397mS
+1	13	9		וַ/הֲבֵאתֶ֣ם	c/935	HC/Vhq2mp	39dJe
+1	13	10		גָּז֗וּל	1497	HVqsmsa	39WvG
+1	13	11		וְ/אֶת	c/853	HC/To	39RXg
+1	13	12		הַ/פִּסֵּ֨חַ֙	d/6455	HTd/Aamsa	39pqY
+1	13	13		וְ/אֶת	c/853	HC/To	39n9v
+1	13	14		הַ֣/חוֹלֶ֔ה	d/2470 a	HTd/Vqrmsa	39gYe
+1	13	15		וַ/הֲבֵאתֶ֖ם	c/935	HC/Vhq2mp	39eXj
+1	13	16		אֶת	853	HTo	398ro
+1	13	17		הַ/מִּנְחָ֑ה	d/4503	HTd/Ncfsa	39v5z
+1	13	18		הַ/אֶרְצֶ֥ה	i/7521	HTi/Vqi1cs	39bCC
+1	13	19		אוֹתָ֛/הּ	853	HTo/Sp3fs	396By
+1	13	20		מִ/יֶּדְ/כֶ֖ם	m/3027	HR/Ncbsc/Sp2mp	39CZB
+1	13	21		אָמַ֥ר	559	HVqp3ms	39VTb
+1	13	22		יְהוָֽה	3068	HNp	396qf
+1	14	1		וְ/אָר֣וּר	c/779	HC/Vqsmsa	39efz
+1	14	2		נוֹכֵ֗ל	5230	HVqrmsa	39QG5
+1	14	3		וְ/יֵ֤שׁ	c/3426	HC/Tm	393k3
+1	14	4		בְּ/עֶדְר/וֹ֙	b/5739	HR/Ncmsc/Sp3ms	391rL
+1	14	5		זָכָ֔ר	2145	HAamsa	39W2c
+1	14	6		וְ/נֹדֵ֛ר	c/5087	HC/Vqrmsa	39mL3
+1	14	7		וְ/זֹבֵ֥חַ	c/2076	HC/Vqrmsa	39zfc
+1	14	8		מָשְׁחָ֖ת	7843	HVHsmsa	39sYp
+1	14	9		לַֽ/אדֹנָ֑/י	l/136	HR/Ncmpc/Sp1cs	39GvF
+1	14	10		כִּי֩	3588 a	HC	39dAC
+1	14	11		מֶ֨לֶךְ	4428	HNcmsa	39i4W
+1	14	12		גָּד֜וֹל	1419 a	HAamsa	39chR
+1	14	13		אָ֗נִי	589	HPp1cs	39Ddq
+1	14	14		אָמַר֙	559	HVqp3ms	39dSp
+1	14	15		יְהוָ֣ה	3068	HNp	39ecS
+1	14	16		צְבָא֔וֹת	6635 b	HNcbpa	392tG
+1	14	17		וּ/שְׁמִ֖/י	c/8034	HC/Ncmsc/Sp1cs	39Xzm
+1	14	18		נוֹרָ֥א	3372	HVNrmsa	39CCj
+1	14	19		בַ/גּוֹיִֽם	b/1471 a	HRd/Ncmpa	39gV8
+2	1	1		וְ/עַתָּ֗ה	c/6258	HC/D	39Czz
+2	1	2		אֲלֵי/כֶ֛ם	413	HR/Sp2mp	39uXX
+2	1	3		הַ/מִּצְוָ֥ה	d/4687	HTd/Ncfsa	39xCL
+2	1	4		הַ/זֹּ֖את	d/2063	HTd/Pdxfs	39Qnr
+2	1	5		הַ/כֹּהֲנִֽים	d/3548	HTd/Ncmpa	396kU
+2	2	1		אִם	518 a	HC	39qry
+2	2	2		לֹ֣א	3808	HTn	39bvP
+2	2	3		תִשְׁמְע֡וּ	8085	HVqi2mp	39wjj
+2	2	4		וְ/אִם	c/518 a	HC/C	39Tn7
+2	2	5		לֹא֩	3808	HTn	39hEs
+2	2	6		תָשִׂ֨ימוּ	7760 a	HVqi2mp	39xAF
+2	2	7		עַל	5921 a	HR	39qg1
+2	2	8		לֵ֜ב	3820 a	HNcmsa	396w9
+2	2	9		לָ/תֵ֧ת	l/5414	HR/Vqc	39wA4
+2	2	10		כָּב֣וֹד	3519	HNcbsa	39ibe
+2	2	11		לִ/שְׁמִ֗/י	l/8034	HR/Ncmsc/Sp1cs	39v8V
+2	2	12		אָמַר֙	559	HVqp3ms	39T2S
+2	2	13		יְהוָ֣ה	3068	HNp	39tkJ
+2	2	14		צְבָא֔וֹת	6635 b	HNcbpa	39EXL
+2	2	15		וְ/שִׁלַּחְתִּ֤י	c/7971	HC/Vpq1cs	39ZPN
+2	2	16		בָ/כֶם֙	b	HR/Sp2mp	39q1G
+2	2	17		אֶת	853	HTo	39bYD
+2	2	18		הַ/מְּאֵרָ֔ה	d/3994	HTd/Ncfsa	39v2F
+2	2	19		וְ/אָרוֹתִ֖י	c/779	HC/Vqq1cs	397vt
+2	2	20		אֶת	853	HTo	39kDm
+2	2	21		בִּרְכֽוֹתֵי/כֶ֑ם	1293	HNcfpc/Sp2mp	39doW
+2	2	22		וְ/גַם֙	c/1571	HC/Ta	39eRa
+2	2	23		אָרוֹתִ֔י/הָ	779	HVqp1cs/Sp3fs	39kDf
+2	2	24		כִּ֥י	3588 a	HC	3963G
+2	2	25		אֵינְ/כֶ֖ם	369	HTn/Sp2mp	39WPn
+2	2	26		שָׂמִ֥ים	7760 a	HVqrmpa	391jv
+2	2	27		עַל	5921 a	HR	39cK8
+2	2	28		לֵֽב	3820 a	HNcmsa	39DDb
+2	3	1		הִנְ/נִ֨י	2005	HTm/Sp1cs	39RCg
+2	3	2		גֹעֵ֤ר	1605	HVqrmsa	395KE
+2	3	3		לָ/כֶם֙	l	HR/Sp2mp	39qVd
+2	3	4		אֶת	853	HTo	39koG
+2	3	5		הַ/זֶּ֔רַע	d/2233	HTd/Ncmsa	39e6B
+2	3	6		וְ/זֵרִ֤יתִי	c/2219	HC/Vpq1cs	398GY
+2	3	7		פֶ֨רֶשׁ֙	6569	HNcmsa	39GpK
+2	3	8		עַל	5921 a	HR	3968C
+2	3	9		פְּנֵי/כֶ֔ם	6440	HNcbpc/Sp2mp	39CMz
+2	3	10		פֶּ֖רֶשׁ	6569	HNcmsc	39D4c
+2	3	11		חַגֵּי/כֶ֑ם	2282	HNcmpc/Sp2mp	39ta1
+2	3	12		וְ/נָשָׂ֥א	c/5375	HC/Vqq3ms	39JnD
+2	3	13		אֶתְ/כֶ֖ם	853	HTo/Sp2mp	39jfz
+2	3	14		אֵלָֽי/ו	413	HR/Sp3ms	39ErQ
+2	4	1		וִֽ/ידַעְתֶּ֕ם	c/3045	HC/Vqq2mp	394fv
+2	4	2		כִּ֚י	3588 a	HC	39yDv
+2	4	3		שִׁלַּ֣חְתִּי	7971	HVpp1cs	39jyT
+2	4	4		אֲלֵי/כֶ֔ם	413	HR/Sp2mp	39Unh
+2	4	5		אֵ֖ת	853	HTo	39QH2
+2	4	6		הַ/מִּצְוָ֣ה	d/4687	HTd/Ncfsa	39xxn
+2	4	7		הַ/זֹּ֑את	d/2063	HTd/Pdxfs	39ou4
+2	4	8		לִֽ/הְי֤וֹת	l/1961	HR/Vqc	393KZ
+2	4	9		בְּרִיתִ/י֙	1285	HNcfsc/Sp1cs	39jNE
+2	4	10		אֶת	854	HR	39hj3
+2	4	11		לֵוִ֔י	3878	HNp	39iDs
+2	4	12		אָמַ֖ר	559	HVqp3ms	396Lo
+2	4	13		יְהוָ֥ה	3068	HNp	39JZq
+2	4	14		צְבָאֽוֹת	6635 b	HNcbpa	39ZpQ
+2	5	1		בְּרִיתִ֣/י	1285	HNcfsc/Sp1cs	399gS
+2	5	2		הָיְתָ֣ה	1961	HVqp3fs	39LAe
+2	5	3		אִתּ֗/וֹ	854	HR/Sp3ms	39qK3
+2	5	4		הַֽ/חַיִּים֙	d/2416 e	HTd/Ncmpa	391Cv
+2	5	5		וְ/הַ֨/שָּׁל֔וֹם	c/d/7965	HC/Td/Ncmsa	39PBQ
+2	5	6		וָ/אֶתְּנֵֽ/ם	c/5414	HC/Vqw1cs/Sp3mp	39mr5
+2	5	7		ל֥/וֹ	l	HR/Sp3ms	39QDu
+2	5	8		מוֹרָ֖א	4172 a	HNcmsa	39PbY
+2	5	9		וַ/יִּֽירָאֵ֑/נִי	c/3372	HC/Vqw3ms/Sp1cs	39Ew6
+2	5	10		וּ/מִ/פְּנֵ֥י	c/m/6440	HC/R/Ncbpc	3974R
+2	5	11		שְׁמִ֖/י	8034	HNcmsc/Sp1cs	396zt
+2	5	12		נִחַ֥ת	2865	HVNp3ms	39zEm
+2	5	13		הֽוּא	1931	HPp3ms	392dm
+2	6	1		תּוֹרַ֤ת	8451	HNcfsc	39uYh
+2	6	2		אֱמֶת֙	571	HNcfsa	39YxK
+2	6	3		הָיְתָ֣ה	1961	HVqp3fs	39aSJ
+2	6	4		בְּ/פִ֔י/הוּ	b/6310	HR/Ncmsc/Sp3ms	39Kz2
+2	6	5		וְ/עַוְלָ֖ה	c/5766 b	HC/Ncbsa	39YhQ
+2	6	6		לֹא	3808	HTn	39azZ
+2	6	7		נִמְצָ֣א	4672	HVNp3ms	39oiy
+2	6	8		בִ/שְׂפָתָ֑י/ו	b/8193	HR/Ncfdc/Sp3ms	39gPX
+2	6	9		בְּ/שָׁל֤וֹם	b/7965	HR/Ncmsa	39gtq
+2	6	10		וּ/בְ/מִישׁוֹר֙	c/b/4334	HC/R/Ncmsa	39HSQ
+2	6	11		הָלַ֣ךְ	1980	HVqp3ms	39fbB
+2	6	12		אִתִּ֔/י	854	HR/Sp1cs	39k1L
+2	6	13		וְ/רַבִּ֖ים	c/7227 a	HC/Aampa	392tS
+2	6	14		הֵשִׁ֥יב	7725	HVhp3ms	39EVu
+2	6	15		מֵ/עָוֺֽן	m/5771	HR/Ncbsa	39ygU
+2	7	1		כִּֽי	3588 a	HC	39swV
+2	7	2		שִׂפְתֵ֤י	8193	HNcfdc	39HjU
+2	7	3		כֹהֵן֙	3548	HNcmsa	39d3U
+2	7	4		יִשְׁמְרוּ	8104	HVqi3mp	39NtK
+2	7	5		דַ֔עַת	1847	HNcfsa	39U94
+2	7	6		וְ/תוֹרָ֖ה	c/8451	HC/Ncfsa	39zqr
+2	7	7		יְבַקְשׁ֣וּ	1245	HVpi3mp	396JA
+2	7	8		מִ/פִּ֑י/הוּ	m/6310	HR/Ncmsc/Sp3ms	39JyD
+2	7	9		כִּ֛י	3588 a	HC	39jjy
+2	7	10		מַלְאַ֥ךְ	4397	HNcmsc	3979E
+2	7	11		יְהוָֽה	3068	HNp	39Zuo
+2	7	12		צְבָא֖וֹת	6635 b	HNcbpa	39LXS
+2	7	13		הֽוּא	1931	HPp3ms	39mR4
+2	8	1		וְ/אַתֶּם֙	c/859 d	HC/Pp2mp	39MC8
+2	8	2		סַרְתֶּ֣ם	5493	HVqp2mp	39BnR
+2	8	3		מִן	4480 a	HR	39PUg
+2	8	4		הַ/דֶּ֔רֶךְ	d/1870	HTd/Ncbsa	39pUN
+2	8	5		הִכְשַׁלְתֶּ֥ם	3782	HVhp2mp	39gc8
+2	8	6		רַבִּ֖ים	7227 a	HAampa	39Lsp
+2	8	7		בַּ/תּוֹרָ֑ה	b/8451	HRd/Ncfsa	39SAE
+2	8	8		שִֽׁחַתֶּם֙	7843	HVpp2mp	393gY
+2	8	9		בְּרִ֣ית	1285	HNcfsc	39RuM
+2	8	10		הַ/לֵּוִ֔י	d/3878	HTd/Np	39WFU
+2	8	11		אָמַ֖ר	559	HVqp3ms	39BJv
+2	8	12		יְהוָ֥ה	3068	HNp	39ExP
+2	8	13		צְבָאֽוֹת	6635 b	HNcbpa	39ypu
+2	9	1		וְ/גַם	c/1571	HC/Ta	39mP3
+2	9	2		אֲנִ֞י	589	HPp1cs	39V8b
+2	9	3		נָתַ֧תִּי	5414	HVqp1cs	39suQ
+2	9	4		אֶתְ/כֶ֛ם	853	HTo/Sp2mp	391Su
+2	9	5		נִבְזִ֥ים	959	HVNsmpa	39MEz
+2	9	6		וּ/שְׁפָלִ֖ים	c/8217	HC/Aampa	39Q2u
+2	9	7		לְ/כָל	l/3605	HR/Ncmsc	39yT5
+2	9	8		הָ/עָ֑ם	d/5971 a	HTd/Ncmsa	39b5Q
+2	9	9		כְּ/פִ֗י	k/6310	HR/Ncmsc	39F88
+2	9	10		אֲשֶׁ֤ר	834 a	HTr	39AXb
+2	9	11		אֵֽינְ/כֶם֙	369	HTn/Sp2mp	39Wjz
+2	9	12		שֹׁמְרִ֣ים	8104	HVqrmpa	39bPJ
+2	9	13		אֶת	853	HTo	39hS1
+2	9	14		דְּרָכַ֔/י	1870	HNcbpc/Sp1cs	39h53
+2	9	15		וְ/נֹשְׂאִ֥ים	c/5375	HC/Vqrmpa	39vpK
+2	9	16		פָּנִ֖ים	6440	HNcbpa	39G6E
+2	9	17		בַּ/תּוֹרָֽה	b/8451	HRd/Ncfsa	394vX
+2	10	1		הֲ/ל֨וֹא	i/3808	HTi/Tn	39X1R
+2	10	2		אָ֤ב	1	HNcmsa	39bsu
+2	10	3		אֶחָד֙	259	HAcmsa	39Ygn
+2	10	4		לְ/כֻלָּ֔/נוּ	l/3605	HR/Ncmsc/Sp1cp	392gM
+2	10	5		הֲ/ל֛וֹא	i/3808	HTi/Tn	39pAw
+2	10	6		אֵ֥ל	410	HNcmsa	39mVV
+2	10	7		אֶֽחָ֖ד	259	HAcmsa	39FMa
+2	10	8		בְּרָאָ֑/נוּ	1254 a	HVqp3ms/Sp1cp	39KPU
+2	10	9		מַדּ֗וּעַ	4069	HTi	39ki2
+2	10	10		נִבְגַּד֙	898	HVqi1cp	395pZ
+2	10	11		אִ֣ישׁ	376	HNcmsa	39HWo
+2	10	12		בְּ/אָחִ֔י/ו	b/251	HR/Ncmsc/Sp3ms	39zkA
+2	10	13		לְ/חַלֵּ֖ל	l/2490 c	HR/Vpc	39JMT
+2	10	14		בְּרִ֥ית	1285	HNcfsc	39jEX
+2	10	15		אֲבֹתֵֽי/נוּ	1	HNcmpc/Sp1cp	39uUA
+2	11	1		בָּגְדָ֣ה	898	HVqp3fs	39tKf
+2	11	2		יְהוּדָ֔ה	3063	HNp	39awE
+2	11	3		וְ/תוֹעֵבָ֛ה	c/8441	HC/Ncfsa	39yNT
+2	11	4		נֶעֶשְׂתָ֥ה	6213 a	HVNp3fs	39Azu
+2	11	5		בְ/יִשְׂרָאֵ֖ל	b/3478	HR/Np	39884
+2	11	6		וּ/בִ/ירֽוּשָׁלִָ֑ם	c/b/3389	HC/R/Np	39XMu
+2	11	7		כִּ֣י	3588 a	HC	39mrn
+2	11	8		חִלֵּ֣ל	2490 c	HVpp3ms	39Xh9
+2	11	9		יְהוּדָ֗ה	3063	HNp	39D3a
+2	11	10		קֹ֤דֶשׁ	6944	HNcmsc	39wEr
+2	11	11		יְהוָה֙	3068	HNp	39Rvc
+2	11	12		אֲשֶׁ֣ר	834 a	HTr	39c6V
+2	11	13		אָהֵ֔ב	157	HVqp3ms	398eM
+2	11	14		וּ/בָעַ֖ל	c/1166	HC/Vqp3ms	39xkK
+2	11	15		בַּת	1323	HNcfsc	39rGa
+2	11	16		אֵ֥ל	410	HNcmsc	39fp1
+2	11	17		נֵכָֽר	5236	HNcmsa	39Y9g
+2	12	1		יַכְרֵ֨ת	3772	HVhj3ms	39mGU
+2	12	2		יְהוָ֜ה	3068	HNp	39gBW
+2	12	3		לָ/אִ֨ישׁ	l/376	HRd/Ncmsa	39eLD
+2	12	4		אֲשֶׁ֤ר	834 a	HTr	3993F
+2	12	5		יַעֲשֶׂ֨/נָּה֙	6213 a	HVqi3ms/Sn	39eyL
+2	12	6		עֵ֣ר	5782	HVqrmsa	39pm7
+2	12	7		וְ/עֹנֶ֔ה	c/6030 b	HC/Vqrmsa	39teU
+2	12	8		מֵ/אָהֳלֵ֖י	m/168	HR/Ncmpc	39c58
+2	12	9		יַֽעֲקֹ֑ב	3290	HNp	39MRA
+2	12	10		וּ/מַגִּ֣ישׁ	c/5066	HC/Vhrmsa	39xp4
+2	12	11		מִנְחָ֔ה	4503	HNcfsa	39Hki
+2	12	12		לַֽ/יהוָ֖ה	l/3068	HR/Np	39QvZ
+2	12	13		צְבָאֽוֹת	6635 b	HNcbpa	39S38
+2	13	1		וְ/זֹאת֙	c/2063	HC/Pdxfs	39eN1
+2	13	2		שֵׁנִ֣ית	8145	HAofsa	39HoD
+2	13	3		תַּֽעֲשׂ֔וּ	6213 a	HVqi2mp	39P5s
+2	13	4		כַּסּ֤וֹת	3680	HVpc	395QX
+2	13	5		דִּמְעָה֙	1832	HNcfsa	39Mxy
+2	13	6		אֶת	853	HTo	39w6u
+2	13	7		מִזְבַּ֣ח	4196	HNcmsc	39e3z
+2	13	8		יְהוָ֔ה	3068	HNp	392c6
+2	13	9		בְּכִ֖י	1065	HNcmsa	393RL
+2	13	10		וַֽ/אֲנָקָ֑ה	c/603	HC/Ncfsa	39JUf
+2	13	11		מֵ/אֵ֣ין	m/369	HR/Tn	39ce9
+2	13	12		ע֗וֹד	5750	HD	39dPK
+2	13	13		פְּנוֹת֙	6437	HVqc	39vLv
+2	13	14		אֶל	413	HR	39UrG
+2	13	15		הַ/מִּנְחָ֔ה	d/4503	HTd/Ncfsa	39Sxc
+2	13	16		וְ/לָ/קַ֥חַת	c/l/3947	HC/R/Vqc	39xwN
+2	13	17		רָצ֖וֹן	7522	HNcmsa	39GjY
+2	13	18		מִ/יֶּדְ/כֶֽם	m/3027	HR/Ncbsc/Sp2mp	39KNo
+2	14	1		וַ/אֲמַרְתֶּ֖ם	c/559	HC/Vqq2mp	39NLD
+2	14	2		עַל	5921 a	HR	39GUh
+2	14	3		מָ֑ה	4100	HTi	395aF
+2	14	4		עַ֡ל	5921 a	HR	39taY
+2	14	5		כִּי	3588 a	HC	39EZz
+2	14	6		יְהוָה֩	3068	HNp	39Hnw
+2	14	7		הֵעִ֨יד	5749 b	HVhp3ms	39pXi
+2	14	8		בֵּינְ/ךָ֜	996	HR/Sp2ms	39Nq4
+2	14	9		וּ/בֵ֣ין	c/996	HC/R	39rZH
+2	14	10		אֵ֣שֶׁת	802	HNcfsc	39GtT
+2	14	11		נְעוּרֶ֗י/ךָ	5271 a	HNcbpc/Sp2ms	39kwz
+2	14	12		אֲשֶׁ֤ר	834 a	HTr	39tc4
+2	14	13		אַתָּה֙	859 a	HPp2ms	39CMD
+2	14	14		בָּגַ֣דְתָּה	898	HVqp2ms	395eq
+2	14	15		בָּ֔/הּ	b	HR/Sp3fs	39Cj2
+2	14	16		וְ/הִ֥יא	c/1931	HC/Pp3fs	39Ttm
+2	14	17		חֲבֶרְתְּ/ךָ֖	2278	HNcfsc/Sp2ms	396Vi
+2	14	18		וְ/אֵ֥שֶׁת	c/802	HC/Ncfsc	39V8W
+2	14	19		בְּרִיתֶֽ/ךָ	1285	HNcfsc/Sp2ms	39zg2
+2	15	1		וְ/לֹא	c/3808	HC/Tn	39gXh
+2	15	2		אֶחָ֣ד	259	HAcmsa	393iR
+2	15	3		עָשָׂ֗ה	6213 a	HVqp3ms	39RoG
+2	15	4		וּ/שְׁאָ֥ר	c/7605	HC/Ncmsc	39jP7
+2	15	5		ר֨וּחַ֙	7307	HNcbsa	39vCn
+2	15	6		ל֔/וֹ	l	HR/Sp3ms	39jv3
+2	15	7		וּ/מָה֙	c/4100	HC/Ti	39ggL
+2	15	8		הָֽ/אֶחָ֔ד	d/259	HTd/Acmsa	39MVq
+2	15	9		מְבַקֵּ֖שׁ	1245	HVprmsa	39g1y
+2	15	10		זֶ֣רַע	2233	HNcmsc	39CBH
+2	15	11		אֱלֹהִ֑ים	430	HNcmpa	393t6
+2	15	12		וְ/נִשְׁמַרְתֶּם֙	c/8104	HC/VNq2mp	39g33
+2	15	13		בְּ/ר֣וּחֲ/כֶ֔ם	b/7307	HR/Ncbsc/Sp2mp	39LDn
+2	15	14		וּ/בְ/אֵ֥שֶׁת	c/b/802	HC/R/Ncfsc	393jG
+2	15	15		נְעוּרֶ֖י/ךָ	5271 a	HNcbpc/Sp2ms	39WDP
+2	15	16		אַל	408	HTn	39eeF
+2	15	17		יִבְגֹּֽד	898	HVqj3ms	39idA
+2	16	1		כִּֽי	3588 a	HC	39Z4D
+2	16	2		שָׂנֵ֣א	8130	HVqp3ms	39VMC
+2	16	3		שַׁלַּ֗ח	7971	HVpc	39K8W
+2	16	4		אָמַ֤ר	559	HVqp3ms	396RX
+2	16	5		יְהוָה֙	3068	HNp	39bYm
+2	16	6		אֱלֹהֵ֣י	430	HNcmpc	39M7H
+2	16	7		יִשְׂרָאֵ֔ל	3478	HNp	39gcK
+2	16	8		וְ/כִסָּ֤ה	c/3680	HC/Vpq3ms	39p7s
+2	16	9		חָמָס֙	2555	HNcmsa	39ZBR
+2	16	10		עַל	5921 a	HR	39ACh
+2	16	11		לְבוּשׁ֔/וֹ	3830	HNcmsc/Sp3ms	39mnL
+2	16	12		אָמַ֖ר	559	HVqp3ms	3989r
+2	16	13		יְהוָ֣ה	3068	HNp	39GmF
+2	16	14		צְבָא֑וֹת	6635 b	HNcbpa	39fcv
+2	16	15		וְ/נִשְׁמַרְתֶּ֥ם	c/8104	HC/VNq2mp	39knb
+2	16	16		בְּ/רוּחֲ/כֶ֖ם	b/7307	HR/Ncbsc/Sp2mp	39Qpj
+2	16	17		וְ/לֹ֥א	c/3808	HC/Tn	39MDS
+2	16	18		תִבְגֹּֽדוּ	898	HVqi2mp	39YBx
+2	17	1		הוֹגַעְתֶּ֤ם	3021	HVhp2mp	39kMZ
+2	17	2		יְהוָה֙	3068	HNp	39uqC
+2	17	3		בְּ/דִבְרֵי/כֶ֔ם	b/1697	HR/Ncmpc/Sp2mp	39VY5
+2	17	4		וַ/אֲמַרְתֶּ֖ם	c/559	HC/Vqq2mp	39WJY
+2	17	5		בַּ/מָּ֣ה	b/4100	HR/Ti	39brh
+2	17	6		הוֹגָ֑עְנוּ	3021	HVhp1cp	39w1U
+2	17	7		בֶּ/אֱמָרְ/כֶ֗ם	b/559	HR/Vqc/Sp2mp	39aqT
+2	17	8		כָּל	3605	HNcmsc	39zXi
+2	17	9		עֹ֨שֵׂה	6213 a	HVqrmsc	39H8a
+2	17	10		רָ֜ע	7451 a	HAamsa	39Sjh
+2	17	11		ט֣וֹב	2896 a	HAamsa	39oYp
+2	17	12		בְּ/עֵינֵ֣י	b/5869 a	HR/Ncbdc	39Pht
+2	17	13		יְהוָ֗ה	3068	HNp	39idy
+2	17	14		וּ/בָ/הֶם֙	c/b	HC/R/Sp3mp	39PU6
+2	17	15		ה֣וּא	1931	HPp3ms	39FCP
+2	17	16		חָפֵ֔ץ	2654 a	HVqp3ms	39YuY
+2	17	17		א֥וֹ	176 a	HC	398Js
+2	17	18		אַיֵּ֖ה	346	HTi	39FyK
+2	17	19		אֱלֹהֵ֥י	430	HNcmpc	39XjR
+2	17	20		הַ/מִּשְׁפָּֽט	d/4941	HTd/Ncmsa	39jaD
+3	1	1		הִנְ/נִ֤י	2005	HTm/Sp1cs	39W7V
+3	1	2		שֹׁלֵחַ֙	7971	HVqrmsa	39U2Y
+3	1	3		מַלְאָכִ֔/י	4397	HNcmsc/Sp1cs	398na
+3	1	4		וּ/פִנָּה	c/6437	HC/Vpq3ms	39sgw
+3	1	5		דֶ֖רֶךְ	1870	HNcbsa	39MDX
+3	1	6		לְ/פָנָ֑/י	l/6440	HR/Ncbpc/Sp1cs	39pPp
+3	1	7		וּ/פִתְאֹם֩	c/6597	HC/D	39ieN
+3	1	8		יָב֨וֹא	935	HVqi3ms	39Csj
+3	1	9		אֶל	413	HR	39rHn
+3	1	10		הֵיכָל֜/וֹ	1964	HNcmsc/Sp3ms	39ViB
+3	1	11		הָ/אָד֣וֹן	d/113	HTd/Ncmsa	39CFo
+3	1	12		אֲשֶׁר	834 a	HTr	395Ja
+3	1	13		אַתֶּ֣ם	859 d	HPp2mp	39UXS
+3	1	14		מְבַקְשִׁ֗ים	1245	HVprmpa	39YQ8
+3	1	15		וּ/מַלְאַ֨ךְ	c/4397	HC/Ncmsc	39Abd
+3	1	16		הַ/בְּרִ֜ית	d/1285	HTd/Ncfsa	392UV
+3	1	17		אֲשֶׁר	834 a	HTr	39ZtS
+3	1	18		אַתֶּ֤ם	859 d	HPp2mp	39gMU
+3	1	19		חֲפֵצִים֙	2655	HAampa	39nWb
+3	1	20		הִנֵּה	2009	HTm	39GXk
+3	1	21		בָ֔א	935	HVqrmsa	39TZa
+3	1	22		אָמַ֖ר	559	HVqp3ms	395qp
+3	1	23		יְהוָ֥ה	3068	HNp	39uHZ
+3	1	24		צְבָאֽוֹת	6635 b	HNcbpa	39pAL
+3	2	1		וּ/מִ֤י	c/4310	HC/Ti	39hSr
+3	2	2		מְכַלְכֵּל֙	3557	HVlrmsa	39ZMk
+3	2	3		אֶת	853	HTo	39irW
+3	2	4		י֣וֹם	3117	HNcmsc	39x72
+3	2	5		בּוֹא֔/וֹ	935	HVqc/Sp3ms	39FYV
+3	2	6		וּ/מִ֥י	c/4310	HC/Ti	39Uoo
+3	2	7		הָ/עֹמֵ֖ד	d/5975	HTd/Vqrmsa	39sC3
+3	2	8		בְּ/הֵרָֽאוֹת֑/וֹ	b/7200	HR/VNc/Sp3ms	394CS
+3	2	9		כִּֽי	3588 a	HC	396n2
+3	2	10		הוּא֙	1931	HPp3ms	39HqY
+3	2	11		כְּ/אֵ֣שׁ	k/784	HR/Ncbsa	39BFZ
+3	2	12		מְצָרֵ֔ף	6884	HVprmsa	39shy
+3	2	13		וּ/כְ/בֹרִ֖ית	c/k/1287	HC/R/Ncfsa	39nzj
+3	2	14		מְכַבְּסִֽים	3526	HVprmpa	39vpT
+3	3	1		וְ/יָשַׁ֨ב	c/3427	HC/Vqq3ms	393Sx
+3	3	2		מְצָרֵ֤ף	6884	HVprmsa	39qVv
+3	3	3		וּ/מְטַהֵר֙	c/2891	HC/Vprmsa	39Kov
+3	3	4		כֶּ֔סֶף	3701	HNcmsa	39HNy
+3	3	5		וְ/טִהַ֤ר	c/2891	HC/Vpq3ms	39Ta6
+3	3	6		אֶת	853	HTo	39ER2
+3	3	7		בְּנֵֽי	1121 a	HNcmpc	39yP1
+3	3	8		לֵוִי֙	3878	HNp	39w4T
+3	3	9		וְ/זִקַּ֣ק	c/2212	HC/Vpq3ms	39Cyx
+3	3	10		אֹתָ֔/ם	853	HTo/Sp3mp	39qTT
+3	3	11		כַּ/זָּהָ֖ב	k/2091	HRd/Ncmsa	39m55
+3	3	12		וְ/כַ/כָּ֑סֶף	c/k/3701	HC/Rd/Ncmsa	39AF1
+3	3	13		וְ/הָיוּ֙	c/1961	HC/Vqq3cp	395ED
+3	3	14		לַֽ/יהוָ֔ה	l/3068	HR/Np	39zCS
+3	3	15		מַגִּישֵׁ֥י	5066	HVhrmpc	39LsC
+3	3	16		מִנְחָ֖ה	4503	HNcfsa	39B4x
+3	3	17		בִּ/צְדָקָֽה	b/6666	HR/Ncfsa	39JB6
+3	4	1		וְ/עָֽרְבָה֙	c/6149	HC/Vqq3fs	39LzS
+3	4	2		לַֽ/יהוָ֔ה	l/3068	HR/Np	3983E
+3	4	3		מִנְחַ֥ת	4503	HNcfsc	39hQD
+3	4	4		יְהוּדָ֖ה	3063	HNp	39LZD
+3	4	5		וִ/ירֽוּשָׁלִָ֑ם	c/3389	HC/Np	396bH
+3	4	6		כִּ/ימֵ֣י	k/3117	HR/Ncmpc	39Ekx
+3	4	7		עוֹלָ֔ם	5769	HNcmsa	39PG7
+3	4	8		וּ/כְ/שָׁנִ֖ים	c/k/8141	HC/R/Ncfpa	39EL8
+3	4	9		קַדְמֹנִיּֽוֹת	6931	HAafpa	39ufm
+3	5	1		וְ/קָרַבְתִּ֣י	c/7126	HC/Vqq1cs	39XSi
+3	5	2		אֲלֵי/כֶם֮	413	HR/Sp2mp	39ELV
+3	5	3		לַ/מִּשְׁפָּט֒	l/4941	HRd/Ncmsa	39Y6w
+3	5	4		וְ/הָיִ֣יתִי	c/1961	HC/Vqq1cs	39qLR
+3	5	5		עֵ֣ד	5707	HNcmsa	39vfq
+3	5	6		מְמַהֵ֗ר	4116 a	HVprmsa	39Qsx
+3	5	7		בַּֽ/מְכַשְּׁפִים֙	b/3784	HRd/Vprmpa	398KZ
+3	5	8		וּ/בַ/מְנָ֣אֲפִ֔ים	c/b/5003	HC/Rd/Vprmpa	39GXq
+3	5	9		וּ/בַ/נִּשְׁבָּעִ֖ים	c/b/7650	HC/Rd/VNrmpa	39iCi
+3	5	10		לַ/שָּׁ֑קֶר	l/8267	HRd/Ncmsa	39vwH
+3	5	11		וּ/בְ/עֹשְׁקֵ֣י	c/b/6231	HC/R/Vqrmpc	39dbM
+3	5	12		שְׂכַר	7939	HNcmsc	39Dqb
+3	5	13		שָׂ֠כִיר	7916	HAamsa	39kCD
+3	5	14		אַלְמָנָ֨ה	490	HNcfsa	39XgW
+3	5	15		וְ/יָת֤וֹם	c/3490	HC/Ncmsa	396PV
+3	5	16		וּ/מַטֵּי	c/5186	HC/Vhrmpc	39qGs
+3	5	17		גֵר֙	1616	HNcmsa	39w7p
+3	5	18		וְ/לֹ֣א	c/3808	HC/Tn	39k7H
+3	5	19		יְרֵא֔וּ/נִי	3372	HVqp3cp/Sp1cs	39r6F
+3	5	20		אָמַ֖ר	559	HVqp3ms	39Ugz
+3	5	21		יְהוָ֥ה	3068	HNp	39Mjg
+3	5	22		צְבָאֽוֹת	6635 b	HNcbpa	39mdR
+3	6	1		כִּ֛י	3588 a	HC	39eWA
+3	6	2		אֲנִ֥י	589	HPp1cs	39CqN
+3	6	3		יְהוָ֖ה	3068	HNp	39Cpt
+3	6	4		לֹ֣א	3808	HTn	39aSi
+3	6	5		שָׁנִ֑יתִי	8138 a	HVqp1cs	397VU
+3	6	6		וְ/אַתֶּ֥ם	c/859 d	HC/Pp2mp	39eK3
+3	6	7		בְּנֵֽי	1121 a	HNcmpc	39c63
+3	6	8		יַעֲקֹ֖ב	3290	HNp	39TuL
+3	6	9		לֹ֥א	3808	HTn	39emQ
+3	6	10		כְלִיתֶֽם	3615	HVqp2mp	39uf4
+3	7	1		לְ/מִ/ימֵ֨י	l/m/3117	HR/R/Ncmpc	39jQv
+3	7	2		אֲבֹתֵי/כֶ֜ם	1	HNcmpc/Sp2mp	39ME1
+3	7	3		סַרְתֶּ֤ם	5493	HVqp2mp	39ht4
+3	7	4		מֵֽ/חֻקַּ/י֙	m/2706	HR/Ncmpc/Sp1cs	393Yo
+3	7	5		וְ/לֹ֣א	c/3808	HC/Tn	39pYb
+3	7	6		שְׁמַרְתֶּ֔ם	8104	HVqp2mp	39g5u
+3	7	7		שׁ֤וּבוּ	7725	HVqv2mp	39w6U
+3	7	8		אֵלַ/י֙	413	HR/Sp1cs	39ifL
+3	7	9		וְ/אָשׁ֣וּבָה	c/7725	HC/Vqh1cs	39LZU
+3	7	10		אֲלֵי/כֶ֔ם	413	HR/Sp2mp	39yHT
+3	7	11		אָמַ֖ר	559	HVqp3ms	399Dq
+3	7	12		יְהוָ֣ה	3068	HNp	397Vg
+3	7	13		צְבָא֑וֹת	6635 b	HNcbpa	393LR
+3	7	14		וַ/אֲמַרְתֶּ֖ם	c/559	HC/Vqq2mp	39vdQ
+3	7	15		בַּ/מֶּ֥ה	b/4100	HR/Ti	39zAa
+3	7	16		נָשֽׁוּב	7725	HVqi1cp	39HK3
+3	8	1		הֲ/יִקְבַּ֨ע	i/6906	HTi/Vqi3ms	39sCi
+3	8	2		אָדָ֜ם	120	HNcmsa	39S3d
+3	8	3		אֱלֹהִ֗ים	430	HNcmpa	39RFe
+3	8	4		כִּ֤י	3588 a	HC	39PfQ
+3	8	5		אַתֶּם֙	859 d	HPp2mp	39AwN
+3	8	6		קֹבְעִ֣ים	6906	HVqrmpa	39khc
+3	8	7		אֹתִ֔/י	853	HTo/Sp1cs	39kYA
+3	8	8		וַ/אֲמַרְתֶּ֖ם	c/559	HC/Vqq2mp	39u6F
+3	8	9		בַּ/מֶּ֣ה	b/4100	HR/Ti	39PYJ
+3	8	10		קְבַעֲנ֑וּ/ךָ	6906	HVqp1cp/Sp2ms	391Za
+3	8	11		הַֽ/מַּעֲשֵׂ֖ר	d/4643	HTd/Ncmsa	39gam
+3	8	12		וְ/הַ/תְּרוּמָֽה	c/d/8641	HC/Td/Ncfsa	39un5
+3	9	1		בַּ/מְּאֵרָה֙	b/3994	HRd/Ncfsa	39WSe
+3	9	2		אַתֶּ֣ם	859 d	HPp2mp	39AFs
+3	9	3		נֵֽאָרִ֔ים	779	HVNsmpa	39aJe
+3	9	4		וְ/אֹתִ֖/י	c/853	HC/To/Sp1cs	39g2t
+3	9	5		אַתֶּ֣ם	859 d	HPp2mp	398HV
+3	9	6		קֹבְעִ֑ים	6906	HVqrmpa	39j8W
+3	9	7		הַ/גּ֖וֹי	d/1471 a	HTd/Ncmsa	39h73
+3	9	8		כֻּלּֽ/וֹ	3605	HNcmsc/Sp3ms	399Yh
+3	10	1		הָבִ֨יאוּ	935	HVhv2mp	39SkM
+3	10	2		אֶת	853	HTo	39yXK
+3	10	3		כָּל	3605	HNcmsc	39hDf
+3	10	4		הַֽ/מַּעֲשֵׂ֜ר	d/4643	HTd/Ncmsa	39PuA
+3	10	5		אֶל	413	HR	39myi
+3	10	6		בֵּ֣ית	1004 b	HNcmsc	39YLn
+3	10	7		הָ/אוֹצָ֗ר	d/214	HTd/Ncmsa	39AXU
+3	10	8		וִ/יהִ֥י	c/1961	HC/Vqj3ms	39reD
+3	10	9		טֶ֨רֶף֙	2964	HNcmsa	39VFM
+3	10	10		בְּ/בֵיתִ֔/י	b/1004 b	HR/Ncmsc/Sp1cs	39SGf
+3	10	11		וּ/בְחָנ֤וּ/נִי	c/974	HC/Vqv2mp/Sp1cs	399jX
+3	10	12		נָא֙	4994	HTe	396t4
+3	10	13		בָּ/זֹ֔את	b/2063	HR/Pdxfs	39Yu7
+3	10	14		אָמַ֖ר	559	HVqp3ms	39vL9
+3	10	15		יְהוָ֣ה	3068	HNp	39G2d
+3	10	16		צְבָא֑וֹת	6635 b	HNcbpa	39xY3
+3	10	17		אִם	518 a	HC	39Zmd
+3	10	18		לֹ֧א	3808	HTn	39Wyn
+3	10	19		אֶפְתַּ֣ח	6605 a	HVqi1cs	39njg
+3	10	20		לָ/כֶ֗ם	l	HR/Sp2mp	39L6G
+3	10	21		אֵ֚ת	853	HTo	39EDP
+3	10	22		אֲרֻבּ֣וֹת	699	HNcfpc	39QUP
+3	10	23		הַ/שָּׁמַ֔יִם	d/8064	HTd/Ncmpa	39fv8
+3	10	24		וַ/הֲרִיקֹתִ֥י	c/7324	HC/Vhq1cs	392SX
+3	10	25		לָ/כֶ֛ם	l	HR/Sp2mp	39pwZ
+3	10	26		בְּרָכָ֖ה	1293	HNcfsa	39KKJ
+3	10	27		עַד	5704	HR	39U9v
+3	10	28		בְּלִי	1097	HTn	393V4
+3	10	29		דָֽי	1767	HNcmsa	39gJ1
+3	11	1		וְ/גָעַרְתִּ֤י	c/1605	HC/Vqq1cs	39rWk
+3	11	2		לָ/כֶם֙	l	HR/Sp2mp	396gQ
+3	11	3		בָּֽ/אֹכֵ֔ל	b/398	HRd/Vqrmsa	39mSF
+3	11	4		וְ/לֹֽא	c/3808	HC/Tn	39awX
+3	11	5		יַשְׁחִ֥ת	7843	HVhi3ms	39wik
+3	11	6		לָ/כֶ֖ם	l	HR/Sp2mp	39CVM
+3	11	7		אֶת	853	HTo	39gbT
+3	11	8		פְּרִ֣י	6529	HNcmsc	39wMq
+3	11	9		הָ/אֲדָמָ֑ה	d/127	HTd/Ncfsa	392GY
+3	11	10		וְ/לֹא	c/3808	HC/Tn	39Doj
+3	11	11		תְשַׁכֵּ֨ל	7921 a	HVpi3fs	39m3h
+3	11	12		לָ/כֶ֤ם	l	HR/Sp2mp	39Djb
+3	11	13		הַ/גֶּ֨פֶן֙	d/1612	HTd/Ncbsa	39F5r
+3	11	14		בַּ/שָּׂדֶ֔ה	b/7704 b	HRd/Ncmsa	39V4p
+3	11	15		אָמַ֖ר	559	HVqp3ms	39HsZ
+3	11	16		יְהוָ֥ה	3068	HNp	39DgA
+3	11	17		צְבָאֽוֹת	6635 b	HNcbpa	39QCa
+3	12	1		וְ/אִשְּׁר֥וּ	c/833	HC/Vpq3cp	39nps
+3	12	2		אֶתְ/כֶ֖ם	853	HTo/Sp2mp	39oA2
+3	12	3		כָּל	3605	HNcmsc	39CYW
+3	12	4		הַ/גּוֹיִ֑ם	d/1471 a	HTd/Ncmpa	39TDs
+3	12	5		כִּֽי	3588 a	HC	39fhx
+3	12	6		תִהְי֤וּ	1961	HVqi2mp	39JPp
+3	12	7		אַתֶּם֙	859 d	HPp2mp	39dWm
+3	12	8		אֶ֣רֶץ	776	HNcbsc	39BYg
+3	12	9		חֵ֔פֶץ	2656	HNcmsa	399by
+3	12	10		אָמַ֖ר	559	HVqp3ms	39VRt
+3	12	11		יְהוָ֥ה	3068	HNp	39CPS
+3	12	12		צְבָאֽוֹת	6635 b	HNcbpa	39fiV
+3	13	1		חָזְק֥וּ	2388	HVqp3cp	39vAa
+3	13	2		עָלַ֛/י	5921 a	HR/Sp1cs	398Na
+3	13	3		דִּבְרֵי/כֶ֖ם	1697	HNcmpc/Sp2mp	39RZN
+3	13	4		אָמַ֣ר	559	HVqp3ms	39krV
+3	13	5		יְהוָ֑ה	3068	HNp	39sQy
+3	13	6		וַ/אֲמַרְתֶּ֕ם	c/559	HC/Vqq2mp	39asy
+3	13	7		מַה	4100	HTi	39rxG
+3	13	8		נִּדְבַּ֖רְנוּ	1696	HVNp1cp	396fj
+3	13	9		עָלֶֽי/ךָ	5921 a	HR/Sp2ms	39oGi
+3	14	1		אֲמַרְתֶּ֕ם	559	HVqp2mp	39PrG
+3	14	2		שָׁ֖וְא	7723	HNcmsa	39Ao4
+3	14	3		עֲבֹ֣ד	5647	HVqc	39fjK
+3	14	4		אֱלֹהִ֑ים	430	HNcmpa	39Dwm
+3	14	5		וּ/מַה	c/4100	HC/Ti	3931Z
+3	14	6		בֶּ֗צַע	1215	HNcmsa	39nRw
+3	14	7		כִּ֤י	3588 a	HC	39qjY
+3	14	8		שָׁמַ֨רְנוּ֙	8104	HVqp1cp	392oH
+3	14	9		מִשְׁמַרְתּ֔/וֹ	4931	HNcfsc/Sp3ms	39H3W
+3	14	10		וְ/כִ֤י	c/3588 a	HC/C	39wQL
+3	14	11		הָלַ֨כְנוּ֙	1980	HVqp1cp	394LW
+3	14	12		קְדֹ֣רַנִּ֔ית	6941	HD	39q4j
+3	14	13		מִ/פְּנֵ֖י	m/6440	HR/Ncbpc	39Jdu
+3	14	14		יְהוָ֥ה	3068	HNp	39cgg
+3	14	15		צְבָאֽוֹת	6635 b	HNcbpa	39x5W
+3	15	1		וְ/עַתָּ֕ה	c/6258	HC/D	39s3h
+3	15	2		אֲנַ֖חְנוּ	587	HPp1cp	39ymv
+3	15	3		מְאַשְּׁרִ֣ים	833	HVprmpa	3962T
+3	15	4		זֵדִ֑ים	2086	HAampa	39NmZ
+3	15	5		גַּם	1571	HTa	39RD4
+3	15	6		נִבְנוּ֙	1129	HVNp3cp	39Xjv
+3	15	7		עֹשֵׂ֣י	6213 a	HVqrmpc	39WVH
+3	15	8		רִשְׁעָ֔ה	7564	HNcfsa	39WMK
+3	15	9		גַּ֧ם	1571	HTa	39ctU
+3	15	10		בָּחֲנ֛וּ	974	HVqp3cp	39CmP
+3	15	11		אֱלֹהִ֖ים	430	HNcmpa	39LY2
+3	15	12		וַ/יִּמָּלֵֽטוּ	c/4422	HC/VNw3mp	39k7w
+3	16	1		אָ֧ז	227 a	HD	39JFy
+3	16	2		נִדְבְּר֛וּ	1696	HVNp3cp	39Amf
+3	16	3		יִרְאֵ֥י	3372	HAampc	39i9m
+3	16	4		יְהוָ֖ה	3068	HNp	39FCo
+3	16	5		אִ֣ישׁ	376	HNcmsa	39wNS
+3	16	6		אֶת	854	HR	39XPV
+3	16	7		רֵעֵ֑/הוּ	7453	HNcmsc/Sp3ms	39K9E
+3	16	8		וַ/יַּקְשֵׁ֤ב	c/7181	HC/Vhw3ms	39sNR
+3	16	9		יְהוָה֙	3068	HNp	39pww
+3	16	10		וַ/יִּשְׁמָ֔ע	c/8085	HC/Vqw3ms	39d1k
+3	16	11		וַ֠/יִּכָּתֵב	c/3789	HC/VNw3ms	39Gpp
+3	16	12		סֵ֣פֶר	5612 a	HNcmsc	39T85
+3	16	13		זִכָּר֤וֹן	2146	HNcmsa	39E2x
+3	16	14		לְ/פָנָי/ו֙	l/6440	HR/Ncbpc/Sp3ms	39vUM
+3	16	15		לְ/יִרְאֵ֣י	l/3372	HR/Aampc	39pMW
+3	16	16		יְהוָ֔ה	3068	HNp	39fiZ
+3	16	17		וּ/לְ/חֹשְׁבֵ֖י	c/l/2803	HC/R/Vqrmpc	39FQf
+3	16	18		שְׁמֽ/וֹ	8034	HNcmsc/Sp3ms	39Gbx
+3	17	1		וְ/הָ֣יוּ	c/1961	HC/Vqq3cp	39H82
+3	17	2		לִ֗/י	l	HR/Sp1cs	39XaZ
+3	17	3		אָמַר֙	559	HVqp3ms	39RGz
+3	17	4		יְהוָ֣ה	3068	HNp	39tQ1
+3	17	5		צְבָא֔וֹת	6635 b	HNcbpa	39oSR
+3	17	6		לַ/יּ֕וֹם	l/3117	HRd/Ncmsa	39rUR
+3	17	7		אֲשֶׁ֥ר	834 a	HTr	39NME
+3	17	8		אֲנִ֖י	589	HPp1cs	39eQs
+3	17	9		עֹשֶׂ֣ה	6213 a	HVqrmsa	39fE2
+3	17	10		סְגֻלָּ֑ה	5459	HNcfsa	39rio
+3	17	11		וְ/חָמַלְתִּ֣י	c/2550	HC/Vqq1cs	39hum
+3	17	12		עֲלֵי/הֶ֔ם	5921 a	HR/Sp3mp	39UG5
+3	17	13		כַּֽ/אֲשֶׁר֙	k/834 d	HR/Tr	39tZb
+3	17	14		יַחְמֹ֣ל	2550	HVqi3ms	39UEd
+3	17	15		אִ֔ישׁ	376	HNcmsa	39zit
+3	17	16		עַל	5921 a	HR	39pcg
+3	17	17		בְּנ֖/וֹ	1121 a	HNcmsc/Sp3ms	391pD
+3	17	18		הָ/עֹבֵ֥ד	d/5647	HTd/Vqrmsa	39UCh
+3	17	19		אֹתֽ/וֹ	853	HTo/Sp3ms	39jZZ
+3	18	1		וְ/שַׁבְתֶּם֙	c/7725	HC/Vqq2mp	397a3
+3	18	2		וּ/רְאִיתֶ֔ם	c/7200	HC/Vqq2mp	39k23
+3	18	3		בֵּ֥ין	996	HR	39nxs
+3	18	4		צַדִּ֖יק	6662	HAamsa	39Rs7
+3	18	5		לְ/רָשָׁ֑ע	l/7563	HR/Aamsa	39x1q
+3	18	6		בֵּ֚ין	996	HR	39ozK
+3	18	7		עֹבֵ֣ד	5647	HVqrmsc	396Tj
+3	18	8		אֱלֹהִ֔ים	430	HNcmpa	39Wp4
+3	18	9		לַ/אֲשֶׁ֖ר	l/834 a	HR/Tr	39ayu
+3	18	10		לֹ֥א	3808	HTn	39izi
+3	18	11		עֲבָדֽ/וֹ	5647	HVqp3ms/Sp3ms	39cNi
+3	19	1		כִּֽי	3588 a	HC	392Z3
+3	19	2		הִנֵּ֤ה	2009	HTm	39bTo
+3	19	3		הַ/יּוֹם֙	d/3117	HTd/Ncmsa	39hvK
+3	19	4		בָּ֔א	935	HVqrmsa	39XQw
+3	19	5		בֹּעֵ֖ר	1197 a	HVqrmsa	39Ssi
+3	19	6		כַּ/תַּנּ֑וּר	k/8574	HRd/Ncmsa	39UtQ
+3	19	7		וְ/הָי֨וּ	c/1961	HC/Vqq3cp	39MVx
+3	19	8		כָל	3605	HNcmsc	394dp
+3	19	9		זֵדִ֜ים	2086	HAampa	39nsw
+3	19	10		וְ/כָל	c/3605	HC/Ncmsc	39KGj
+3	19	11		עֹשֵׂ֤ה	6213 a	HVqrmsc	398xz
+3	19	12		רִשְׁעָה֙	7564	HNcfsa	39y1Z
+3	19	13		קַ֔שׁ	7179	HNcmsa	39Uq9
+3	19	14		וְ/לִהַ֨ט	c/3857	HC/Vpp3ms	39TiM
+3	19	15		אֹתָ֜/ם	853	HTo/Sp3mp	39NqW
+3	19	16		הַ/יּ֣וֹם	d/3117	HTd/Ncmsa	39emv
+3	19	17		הַ/בָּ֗א	d/935	HTd/Vqrmsa	393r3
+3	19	18		אָמַר֙	559	HVqp3ms	39sEP
+3	19	19		יְהוָ֣ה	3068	HNp	39BYi
+3	19	20		צְבָא֔וֹת	6635 b	HNcbpa	39K78
+3	19	21		אֲשֶׁ֛ר	834 a	HTr	39LG5
+3	19	22		לֹא	3808	HTn	39pvY
+3	19	23		יַעֲזֹ֥ב	5800 a	HVqi3ms	39B6g
+3	19	24		לָ/הֶ֖ם	l	HR/Sp3mp	39UDg
+3	19	25		שֹׁ֥רֶשׁ	8328	HNcmsa	39Baw
+3	19	26		וְ/עָנָֽף	c/6057	HC/Ncmsa	39MZ9
+3	20	1		וְ/זָרְחָ֨ה	c/2224	HC/Vqq3fs	39Svn
+3	20	2		לָ/כֶ֜ם	l	HR/Sp2mp	39x62
+3	20	3		יִרְאֵ֤י	3373	HAampc	39dQK
+3	20	4		שְׁמִ/י֙	8034	HNcmsc/Sp1cs	39dDm
+3	20	5		שֶׁ֣מֶשׁ	8121	HNcbsc	39XwG
+3	20	6		צְדָקָ֔ה	6666	HNcfsa	39iPC
+3	20	7		וּ/מַרְפֵּ֖א	c/4832	HC/Ncmsa	398E1
+3	20	8		בִּ/כְנָפֶ֑י/הָ	b/3671	HR/Ncfdc/Sp3fs	394vF
+3	20	9		וִֽ/יצָאתֶ֥ם	c/3318	HC/Vqq2mp	39y7z
+3	20	10		וּ/פִשְׁתֶּ֖ם	c/6335 a	HC/Vqq2mp	39bvs
+3	20	11		כְּ/עֶגְלֵ֥י	k/5695	HR/Ncmpc	39Gxe
+3	20	12		מַרְבֵּֽק	4770	HNcmsa	39Qjd
+3	21	1		וְ/עַסּוֹתֶ֣ם	c/6072	HC/Vqq2mp	39t98
+3	21	2		רְשָׁעִ֔ים	7563	HAampa	39YfW
+3	21	3		כִּֽי	3588 a	HC	39P1s
+3	21	4		יִהְי֣וּ	1961	HVqi3mp	39a9X
+3	21	5		אֵ֔פֶר	665	HNcmsa	39RUp
+3	21	6		תַּ֖חַת	8478	HR	397Kw
+3	21	7		כַּפּ֣וֹת	3709	HNcfpc	39E6n
+3	21	8		רַגְלֵי/כֶ֑ם	7272	HNcfdc/Sp2mp	394YU
+3	21	9		בַּ/יּוֹם֙	b/3117	HRd/Ncmsa	39yMS
+3	21	10		אֲשֶׁ֣ר	834 a	HTr	39RZD
+3	21	11		אֲנִ֣י	589	HPp1cs	39T97
+3	21	12		עֹשֶׂ֔ה	6213 a	HVqrmsa	395L1
+3	21	13		אָמַ֖ר	559	HVqp3ms	39nY7
+3	21	14		יְהוָ֥ה	3068	HNp	39S83
+3	21	15		צְבָאֽוֹת	6635 b	HNcbpa	39SDb
+3	22	1		זִכְר֕וּ	2142	HVqv2mp	39DKS
+3	22	2		תּוֹרַ֖ת	8451	HNcfsc	39YKr
+3	22	3		מֹשֶׁ֣ה	4872	HNp	39r66
+3	22	4		עַבְדִּ֑/י	5650	HNcmsc/Sp1cs	39TW5
+3	22	5		אֲשֶׁר֩	834 a	HTr	39KaN
+3	22	6		צִוִּ֨יתִי	6680	HVpp1cs	39FsE
+3	22	7		אוֹת֤/וֹ	853	HTo/Sp3ms	397Np
+3	22	8		בְ/חֹרֵב֙	b/2722	HR/Np	39965
+3	22	9		עַל	5921 a	HR	39MeK
+3	22	10		כָּל	3605	HNcmsc	39Pw8
+3	22	11		יִשְׂרָאֵ֔ל	3478	HNp	39Bxn
+3	22	12		חֻקִּ֖ים	2706	HNcmpa	39Gne
+3	22	13		וּ/מִשְׁפָּטִֽים	c/4941	HC/Ncmpa	39uXm
+3	23	1		הִנֵּ֤ה	2009	HTm	39Cmf
+3	23	2		אָֽנֹכִי֙	595	HPp1cs	39K6T
+3	23	3		שֹׁלֵ֣חַ	7971	HVqrmsa	39XFF
+3	23	4		לָ/כֶ֔ם	l	HR/Sp2mp	39gKP
+3	23	5		אֵ֖ת	853	HTo	39YUv
+3	23	6		אֵלִיָּ֣ה	452	HNp	39HQ9
+3	23	7		הַ/נָּבִ֑יא	d/5030	HTd/Ncmsa	39D5P
+3	23	8		לִ/פְנֵ֗י	l/6440	HR/Ncbpc	39pVx
+3	23	9		בּ֚וֹא	935	HVqc	39WAq
+3	23	10		י֣וֹם	3117	HNcmsc	39PxM
+3	23	11		יְהוָ֔ה	3068	HNp	39oCH
+3	23	12		הַ/גָּד֖וֹל	d/1419 a	HTd/Aamsa	39tQE
+3	23	13		וְ/הַ/נּוֹרָֽא	c/d/3372	HC/Td/VNrmsa	39wtX
+3	24	1		וְ/הֵשִׁ֤יב	c/7725	HC/Vhq3ms	39Hso
+3	24	2		לֵב	3820 a	HNcmsc	39yS3
+3	24	3		אָבוֹת֙	1	HNcmpa	39PHG
+3	24	4		עַל	5921 a	HR	391go
+3	24	5		בָּנִ֔ים	1121 a	HNcmpa	39XLB
+3	24	6		וְ/לֵ֥ב	c/3820 a	HC/Ncmsc	39KTJ
+3	24	7		בָּנִ֖ים	1121 a	HNcmpa	39twL
+3	24	8		עַל	5921 a	HR	393MS
+3	24	9		אֲבוֹתָ֑/ם	1	HNcmpc/Sp3mp	39GnD
+3	24	10		פֶּן	6435	HC	39rVJ
+3	24	11		אָב֕וֹא	935	HVqi1cs	39w2R
+3	24	12		וְ/הִכֵּיתִ֥י	c/5221	HC/Vhq1cs	39JsR
+3	24	13		אֶת	853	HTo	39Sv8
+3	24	14		הָ/אָ֖רֶץ	d/776	HTd/Ncbsa	39adR
+3	24	15		חֵֽרֶם	2764 a	HNcmsa	39xek

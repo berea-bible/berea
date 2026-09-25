@@ -1,0 +1,563 @@
+chapter	verse	word	type	surface	lemma	morph	id
+1	1	1		מַשָּׂ֖א	4853 b	HNcmsc	34xeN
+1	1	2		נִֽינְוֵ֑ה	5210	HNp	34Nvk
+1	1	3		סֵ֧פֶר	5612 a	HNcmsc	34TyA
+1	1	4		חֲז֛וֹן	2377	HNcmsc	34vuQ
+1	1	5		נַח֖וּם	5151	HNp	34TSc
+1	1	6		הָ/אֶלְקֹשִֽׁי	d/512	HTd/Ngmsa	34k5P
+1	2	1		אֵ֣ל	410	HNcmsa	34nPh
+1	2	2		קַנּ֤וֹא	7072	HAamsa	34LN3
+1	2	3		וְ/נֹקֵם֙	c/5358	HC/Vqrmsa	34Qzf
+1	2	4		יְהוָ֔ה	3068	HNp	34aPd
+1	2	5		נֹקֵ֥ם	5358	HVqrmsa	34eYX
+1	2	6		יְהוָ֖ה	3068	HNp	34C5U
+1	2	7		וּ/בַ֣עַל	c/1167	HC/Ncmsc	34qNN
+1	2	8		חֵמָ֑ה	2534	HNcfsa	34EVS
+1	2	9		נֹקֵ֤ם	5358	HVqrmsa	34PB6
+1	2	10		יְהוָה֙	3068	HNp	3437c
+1	2	11		לְ/צָרָ֔י/ו	l/6862 c	HR/Ncmpc/Sp3ms	34x9c
+1	2	12		וְ/נוֹטֵ֥ר	c/5201	HC/Vqrmsa	34yNB
+1	2	13		ה֖וּא	1931	HPp3ms	3429t
+1	2	14		לְ/אֹיְבָֽי/ו	l/341	HR/Vqrmpc/Sp3ms	34KZG
+1	3	1		יְהֹוָ֗ה	3068	HNp	34TZE
+1	3	2		אֶ֤רֶךְ	750	HAamsc	34thY
+1	3	3		אַפַּ֨יִם֙	639	HNcmda	34JM7
+1	3	4	x-ketiv	ו/גדול	c/1419 a	HC/Aamsc	34fpo
+1	3	5		וּ/גְדָל	c/1419 a	HC/Aamsc	34W26
+1	3	6		כֹּ֔חַ	3581 b	HNcmsa	34yw4
+1	3	7		וְ/נַקֵּ֖ה	c/5352	HC/Vpa	34jbg
+1	3	8		לֹ֣א	3808	HTn	34USR
+1	3	9		יְנַקֶּ֑ה	5352	HVpi3ms	34v6U
+1	3	10		יְהוָ֗ה	3068	HNp	345SS
+1	3	11		בְּ/סוּפָ֤ה	b/5492 a	HR/Ncfsa	34GzE
+1	3	12		וּ/בִ/שְׂעָרָה֙	c/b/8183	HC/R/Ncfsa	34qCU
+1	3	13		דַּרְכּ֔/וֹ	1870	HNcbsc/Sp3ms	34g2y
+1	3	14		וְ/עָנָ֖ן	c/6051	HC/Ncmsa	34jQb
+1	3	15		אֲבַ֥ק	80	HNcmsc	34794
+1	3	16		רַגְלָֽי/ו	7272	HNcfdc/Sp3ms	34CsU
+1	4	1		גּוֹעֵ֤ר	1605	HVqrmsa	34XR4
+1	4	2		בַּ/יָּם֙	b/3220	HRd/Ncmsa	34KvS
+1	4	3		וַֽ/יַּבְּשֵׁ֔/הוּ	c/3001	HC/Vpw3ms/Sp3ms	34dBc
+1	4	4		וְ/כָל	c/3605	HC/Ncmsc	34nAB
+1	4	5		הַ/נְּהָר֖וֹת	d/5104	HTd/Ncmpa	34kfX
+1	4	6		הֶֽחֱרִ֑יב	2717 a	HVhp3ms	34Wkf
+1	4	7		אֻמְלַ֤ל	535	HVKp3ms	34wrL
+1	4	8		בָּשָׁן֙	1316	HNp	343TL
+1	4	9		וְ/כַרְמֶ֔ל	c/3760	HC/Np	34LeN
+1	4	10		וּ/פֶ֥רַח	c/6525	HC/Ncmsc	34sMn
+1	4	11		לְבָנ֖וֹן	3844	HNp	34Y3z
+1	4	12		אֻמְלָֽל	535	HVKp3ms	34NQN
+1	5	1		הָרִים֙	2022	HNcmpa	34uLf
+1	5	2		רָעֲשׁ֣וּ	7493	HVqp3cp	34kA7
+1	5	3		מִמֶּ֔/נּוּ	4480 a	HR/Sp1cp	343TS
+1	5	4		וְ/הַ/גְּבָע֖וֹת	c/d/1389	HC/Td/Ncfpa	34NFp
+1	5	5		הִתְמֹגָ֑גוּ	4127	HVrp3cp	347am
+1	5	6		וַ/תִּשָּׂ֤א	c/5375	HC/Vqw3fs	34hh7
+1	5	7		הָ/אָ֨רֶץ֙	d/776	HTd/Ncbsa	34BsK
+1	5	8		מִ/פָּנָ֔י/ו	m/6440	HR/Ncbpc/Sp3ms	34fsu
+1	5	9		וְ/תֵבֵ֖ל	c/8398	HC/Ncfsa	348M6
+1	5	10		וְ/כָל	c/3605	HC/Ncmsc	34wM5
+1	5	11		יֹ֥שְׁבֵי	3427	HVqrmpc	34qty
+1	5	12		בָֽ/הּ	b	HR/Sp3fs	345gQ
+1	6	1		לִ/פְנֵ֤י	l/6440	HR/Ncbpc	34Xw6
+1	6	2		זַעְמ/וֹ֙	2195	HNcmsc/Sp3ms	34eHJ
+1	6	3		מִ֣י	4310	HTi	34H6L
+1	6	4		יַֽעֲמ֔וֹד	5975	HVqi3ms	34bmv
+1	6	5		וּ/מִ֥י	c/4310	HC/Ti	34FV9
+1	6	6		יָק֖וּם	6965 b	HVqi3ms	34Xm1
+1	6	7		בַּ/חֲר֣וֹן	b/2740	HR/Ncmsc	34UE6
+1	6	8		אַפּ֑/וֹ	639	HNcmsc/Sp3ms	34goK
+1	6	9		חֲמָת/וֹ֙	2534	HNcfsc/Sp3ms	34CyH
+1	6	10		נִתְּכָ֣ה	5413	HVNp3fs	34A4a
+1	6	11		כָ/אֵ֔שׁ	k/784	HRd/Ncbsa	345Pr
+1	6	12		וְ/הַ/צֻּרִ֖ים	c/d/6697	HC/Td/Ncmpa	34L4k
+1	6	13		נִתְּצ֥וּ	5422	HVNp3cp	34Mnv
+1	6	14		מִמֶּֽ/נּוּ	4480 a	HR/Sp3ms	34mwU
+1	7	1		ט֣וֹב	2896 a	HAamsa	34tKT
+1	7	2		יְהוָ֔ה	3068	HNp	34NRT
+1	7	3		לְ/מָע֖וֹז	l/4581	HR/Ncmsa	34sRU
+1	7	4		בְּ/י֣וֹם	b/3117	HR/Ncmsc	34Wxq
+1	7	5		צָרָ֑ה	6869 b	HNcfsa	349qY
+1	7	6		וְ/יֹדֵ֖עַ	c/3045	HC/Vqrmsa	34n5f
+1	7	7		חֹ֥סֵי	2620	HVqrmpc	34YUq
+1	7	8		בֽ/וֹ	b	HR/Sp3ms	34fQr
+1	8	1		וּ/בְ/שֶׁ֣טֶף	c/b/7858	HC/R/Ncmsa	34L7t
+1	8	2		עֹבֵ֔ר	5674 a	HVqrmsa	34A74
+1	8	3		כָּלָ֖ה	3617	HNcfsa	34dNE
+1	8	4		יַעֲשֶׂ֣ה	6213 a	HVqi3ms	34xdF
+1	8	5		מְקוֹמָ֑/הּ	4725	HNcmsc/Sp3fs	34AYg
+1	8	6		וְ/אֹיְבָ֖י/ו	c/341	HC/Vqrmpc/Sp3ms	34Ls9
+1	8	7		יְרַדֶּף	7291	HVpi3ms	34Snp
+1	8	8		חֹֽשֶׁךְ	2822	HNcmsa	3487B
+1	9	1		מַה	4100	HTi	34nLp
+1	9	2		תְּחַשְּׁבוּ/ן֙	2803	HVpi2mp/Sn	34PzC
+1	9	3		אֶל	413	HR	34NPq
+1	9	4		יְהוָ֔ה	3068	HNp	34d5m
+1	9	5		כָּלָ֖ה	3617	HNcfsa	34BYa
+1	9	6		ה֣וּא	1931	HPp3ms	34LJh
+1	9	7		עֹשֶׂ֑ה	6213 a	HVqrmsa	34tRR
+1	9	8		לֹֽא	3808	HTn	34Q7E
+1	9	9		תָק֥וּם	6965 b	HVqi3fs	34dv1
+1	9	10		פַּעֲמַ֖יִם	6471	HNcfda	34QwM
+1	9	11		צָרָֽה	6869 b	HNcfsa	34a62
+1	10	1		כִּ֚י	3588 a	HC	34KvD
+1	10	2		עַד	5704	HR	34GLz
+1	10	3		סִירִ֣ים	5518 b	HNcfpa	34BU7
+1	10	4		סְבֻכִ֔ים	5440	HVqsmpa	34iy2
+1	10	5		וּ/כְ/סָבְאָ֖/ם	c/k/5435	HC/R/Ncmsc/Sp3mp	34zQ2
+1	10	6		סְבוּאִ֑ים	5433 a	HVqsmpa	34Wxx
+1	10	7		אֻ֨כְּל֔וּ	398	HVQp3cp	34jQ8
+1	10	8		כְּ/קַ֥שׁ	k/7179	HR/Ncmsa	34Haa
+1	10	9		יָבֵ֖שׁ	3002	HAamsa	34fJN
+1	10	10		מָלֵֽא	4392	HAamsa	349KV
+1	11	1		מִמֵּ֣/ךְ	4480 a	HR/Sp2fs	34F1s
+1	11	2		יָצָ֔א	3318	HVqp3ms	34dns
+1	11	3		חֹשֵׁ֥ב	2803	HVqrmsa	34GK3
+1	11	4		עַל	5921 a	HR	34nRZ
+1	11	5		יְהוָ֖ה	3068	HNp	34cpb
+1	11	6		רָעָ֑ה	7451 c	HNcfsa	34zio
+1	11	7		יֹעֵ֖ץ	3289	HVqrmsc	34Qsh
+1	11	8		בְּלִיָּֽעַל	1100	HNcmsa	34zTj
+1	12	1		כֹּ֣ה	3541	HD	34fPi
+1	12	2		אָמַ֣ר	559	HVqp3ms	34GYe
+1	12	3		יְהוָ֗ה	3068	HNp	34Bbz
+1	12	4		אִם	518 a	HC	34VA9
+1	12	5		שְׁלֵמִים֙	8003	HAampa	34fV3
+1	12	6		וְ/כֵ֣ן	c/3651 c	HC/Tm	34Sov
+1	12	7		רַבִּ֔ים	7227 a	HAampa	34V27
+1	12	8		וְ/כֵ֥ן	c/3651 c	HC/Tm	34ifp
+1	12	9		נָגֹ֖זּוּ	1494	HVNp3cp	347ZG
+1	12	10		וְ/עָבָ֑ר	c/5674 a	HC/Vqp3ms	34B2d
+1	12	11		וְ/עִ֨נִּתִ֔/ךְ	c/6031 b	HC/Vpp1cs/Sp2fs	34ewe
+1	12	12		לֹ֥א	3808	HTn	34SV6
+1	12	13		אֲעַנֵּ֖/ךְ	6031 b	HVpi1cs/Sp2fs	34G83
+1	12	14		עֽוֹד	5750	HD	34vzS
+1	13	1		וְ/עַתָּ֕ה	c/6258	HC/D	34Gq9
+1	13	2		אֶשְׁבֹּ֥ר	7665	HVqi1cs	343y8
+1	13	3		מֹטֵ֖/הוּ	4132	HNcmsc/Sp3ms	34TXw
+1	13	4		מֵֽ/עָלָ֑יִ/ךְ	m/5921 a	HR/R/Sp2fs	34Y4K
+1	13	5		וּ/מוֹסְרֹתַ֖יִ/ךְ	c/4147	HC/Ncbpc/Sp2fs	34C32
+1	13	6		אֲנַתֵּֽק	5423	HVpi1cs	34aMT
+1	14	1		וְ/צִוָּ֤ה	c/6680	HC/Vpp3ms	34Cof
+1	14	2		עָלֶ֨י/ךָ֙	5921 a	HR/Sp2ms	34YWU
+1	14	3		יְהוָ֔ה	3068	HNp	34rAQ
+1	14	4		לֹֽא	3808	HTn	34fLi
+1	14	5		יִזָּרַ֥ע	2232	HVNi3ms	34Ptj
+1	14	6		מִ/שִּׁמְ/ךָ֖	m/8034	HR/Ncmsc/Sp2ms	34AJj
+1	14	7		ע֑וֹד	5750	HD	349Hv
+1	14	8		מִ/בֵּ֨ית	m/1004 b	HR/Ncmsc	34j1i
+1	14	9		אֱלֹהֶ֜י/ךָ	430	HNcmpc/Sp2ms	34J9J
+1	14	10		אַכְרִ֨ית	3772	HVhi1cs	34U4n
+1	14	11		פֶּ֧סֶל	6459	HNcmsa	342Kt
+1	14	12		וּ/מַסֵּכָ֛ה	c/4541 a	HC/Ncfsa	34RmH
+1	14	13		אָשִׂ֥ים	7760 a	HVqi1cs	34SWL
+1	14	14		קִבְרֶ֖/ךָ	6913	HNcmsc/Sp2ms	3475P
+1	14	15		כִּ֥י	3588 a	HC	343Lj
+1	14	16		קַלּֽוֹתָ	7043	HVqp2ms	34Qa3
+2	1	1		הִנֵּ֨ה	2009	HTm	34WTe
+2	1	2		עַל	5921 a	HR	346VM
+2	1	3		הֶ/הָרִ֜ים	d/2022	HTd/Ncmpa	34sKn
+2	1	4		רַגְלֵ֤י	7272	HNcfdc	34oAj
+2	1	5		מְבַשֵּׂר֙	1319	HVprmsa	34AxB
+2	1	6		מַשְׁמִ֣יעַ	8085	HVhrmsa	34Ap3
+2	1	7		שָׁל֔וֹם	7965	HNcmsa	34CEu
+2	1	8		חָגִּ֧י	2287	HVqv2fs	34zpy
+2	1	9		יְהוּדָ֛ה	3063	HNp	34FiN
+2	1	10		חַגַּ֖יִ/ךְ	2282	HNcmpc/Sp2fs	34cLk
+2	1	11		שַׁלְּמִ֣י	7999 a	HVpv2fs	3492v
+2	1	12		נְדָרָ֑יִ/ךְ	5088	HNcmpc/Sp2fs	34j63
+2	1	13		כִּי֩	3588 a	HC	34LFW
+2	1	14		לֹ֨א	3808	HTn	34FbT
+2	1	15		יוֹסִ֥יף	3254	HVhi3ms	34Bx7
+2	1	16		ע֛וֹד	5750	HD	34btu
+2	1	17	x-ketiv	ל/עבור	l/5674 a	HR/Vqc	34rTK
+2	1	18		לַֽ/עֲבָר	l/5674 a	HR/Vqc	34SHw
+2	1	19		בָּ֥/ךְ	b	HR/Sp2fs	34VuH
+2	1	20		בְּלִיַּ֖עַל	1100	HNcmsa	34Axb
+2	1	21		כֻּלֹּ֥/ה	3605	HNcmsc/Sp3ms	34xva
+2	1	22		נִכְרָֽת	3772	HVNp3ms	34NrT
+2	2	1		עָלָ֥ה	5927	HVqp3ms	34iAD
+2	2	2		מֵפִ֛יץ	6327 b	HVhrmsa	34372
+2	2	3		עַל	5921 a	HR	34FMU
+2	2	4		פָּנַ֖יִ/ךְ	6440	HNcbpc/Sp2fs	34SaV
+2	2	5		נָצ֣וֹר	5341	HVqa	344W9
+2	2	6		מְצֻרָ֑ה	4694	HNcfsa	34MmM
+2	2	7		צַפֵּה	6822	HVpv2ms	34wJn
+2	2	8		דֶ֨רֶךְ֙	1870	HNcbsa	34CQo
+2	2	9		חַזֵּ֣ק	2388	HVpv2ms	34XyU
+2	2	10		מָתְנַ֔יִם	4975	HNcmda	34BG4
+2	2	11		אַמֵּ֥ץ	553	HVpv2ms	34YHH
+2	2	12		כֹּ֖חַ	3581 b	HNcmsa	34sHf
+2	2	13		מְאֹֽד	3966	HD	34iee
+2	3	1		כִּ֣י	3588 a	HC	343eS
+2	3	2		שָׁ֤ב	7725	HVqp3ms	34ddd
+2	3	3		יְהוָה֙	3068	HNp	34hxo
+2	3	4		אֶת	853	HTo	34TW6
+2	3	5		גְּא֣וֹן	1347	HNcmsc	34PVx
+2	3	6		יַעֲקֹ֔ב	3290	HNp	34PGK
+2	3	7		כִּ/גְא֖וֹן	k/1347	HR/Ncmsc	34U4a
+2	3	8		יִשְׂרָאֵ֑ל	3478	HNp	34dSQ
+2	3	9		כִּ֤י	3588 a	HC	34Qbs
+2	3	10		בְקָקוּ/ם֙	1238 b	HVqp3cp/Sp3mp	34ndZ
+2	3	11		בֹּֽקְקִ֔ים	1238 b	HVqrmpa	34Xa1
+2	3	12		וּ/זְמֹרֵי/הֶ֖ם	c/2156	HC/Ncfpc/Sp3mp	343yJ
+2	3	13		שִׁחֵֽתוּ	7843	HVpp3cp	34B6c
+2	4	1		מָגֵ֨ן	4043	HNcbsc	34bju
+2	4	2		גִּבֹּרֵ֜י/הוּ	1368	HAampc/Sp3ms	34cn3
+2	4	3		מְאָדָּ֗ם	119	HVPsmsa	347mS
+2	4	4		אַנְשֵׁי	376	HNcmpc	34dJe
+2	4	5		חַ֨יִל֙	2428	HNcmsa	34WvG
+2	4	6		מְתֻלָּעִ֔ים	8529	HVPsmpa	34RXg
+2	4	7		בְּ/אֵשׁ	b/784	HR/Ncbsc	34pqY
+2	4	8		פְּלָד֥וֹת	6393	HNcfpa	34n9v
+2	4	9		הָ/רֶ֖כֶב	d/7393	HTd/Ncmsa	34gYe
+2	4	10		בְּ/י֣וֹם	b/3117	HR/Ncmsc	34eXj
+2	4	11		הֲכִינ֑/וֹ	3559 a	HVhc/Sp3ms	348ro
+2	4	12		וְ/הַ/בְּרֹשִׁ֖ים	c/d/1265	HC/Td/Ncmpa	34v5z
+2	4	13		הָרְעָֽלוּ	7477	HVHp3cp	34bCC
+2	5	1		בַּֽ/חוּצוֹת֙	b/2351	HRd/Ncmpa	346By
+2	5	2		יִתְהוֹלְל֣וּ	1984 b	HVri3mp	34CZB
+2	5	3		הָ/רֶ֔כֶב	d/7393	HTd/Ncmsa	34VTb
+2	5	4		יִֽשְׁתַּקְשְׁק֖וּ/ן	8264	HVfi3mp/Sn	346qf
+2	5	5		בָּ/רְחֹב֑וֹת	b/7339	HRd/Ncfpa	34efz
+2	5	6		מַרְאֵי/הֶן֙	4758	HNcmsc/Sp3fp	34QG5
+2	5	7		כַּ/לַּפִּידִ֔ם	k/3940	HRd/Ncmpa	343k3
+2	5	8		כַּ/בְּרָקִ֖ים	k/1300 b	HRd/Ncmpa	341rL
+2	5	9		יְרוֹצֵֽצוּ	7323	HVoi3mp	34W2c
+2	6	1		יִזְכֹּר֙	2142	HVqi3ms	34mL3
+2	6	2		אַדִּירָ֔י/ו	117	HAampc/Sp3ms	34zfc
+2	6	3		יִכָּשְׁל֖וּ	3782	HVNi3mp	34sYp
+2	6	4	x-ketiv	ב/הלכות/ם	b/1979	HR/Ncfpc/Sp3mp	34GvF
+2	6	5		בַּ/הֲלִֽיכָתָ֑/ם	b/1979	HR/Ncfsc/Sp3mp	34dAC
+2	6	6		יְמַֽהֲרוּ֙	4116 a	HVpi3mp	34i4W
+2	6	7		חֽוֹמָתָ֔/הּ	2346	HNcfsc/Sp3fs	34chR
+2	6	8		וְ/הֻכַ֖ן	c/3559 a	HC/VHp3ms	34Ddq
+2	6	9		הַ/סֹּכֵֽךְ	d/5526 d	HTd/Ncmsa	34dSp
+2	7	1		שַׁעֲרֵ֥י	8179	HNcmpc	34ecS
+2	7	2		הַ/נְּהָר֖וֹת	d/5104	HTd/Ncmpa	342tG
+2	7	3		נִפְתָּ֑חוּ	6605 a	HVNp3cp	34Xzm
+2	7	4		וְ/הַֽ/הֵיכָ֖ל	c/d/1964	HC/Td/Ncmsa	34CCj
+2	7	5		נָמֽוֹג	4127	HVNp3ms	34gV8
+2	8	1		וְ/הֻצַּ֖ב	c/5324	HC/VHp3ms	34Czz
+2	8	2		גֻּלְּתָ֣ה	1540	HVPp3fs	34uXX
+2	8	3		הֹֽעֲלָ֑תָה	5927	HVHp3fs	34xCL
+2	8	4		וְ/אַמְהֹתֶ֗י/הָ	c/519	HC/Ncfpc/Sp3fs	34Qnr
+2	8	5		מְנַֽהֲגוֹת֙	5090 b	HVprfpa	346kU
+2	8	6		כְּ/ק֣וֹל	k/6963 a	HR/Ncmsc	34qry
+2	8	7		יוֹנִ֔ים	3123	HNcfpa	34bvP
+2	8	8		מְתֹפְפֹ֖ת	8608	HVmrfpa	34wjj
+2	8	9		עַל	5921 a	HR	34Tn7
+2	8	10		לִבְבֵ/הֶֽן	3824	HNcmpc/Sp3fp	34hEs
+2	9	1		וְ/נִינְוֵ֥ה	c/5210	HC/Np	34xAF
+2	9	2		כִ/בְרֵֽכַת	k/1295	HR/Ncfsc	34qg1
+2	9	3		מַ֖יִם	4325	HNcmpa	346w9
+2	9	4		מִ֣/ימֵי	m/3117	HR/Ncmpc	34wA4
+2	9	5		הִ֑יא	1931	HPp3fs	34ibe
+2	9	6		וְ/הֵ֣מָּה	c/1992	HC/Pp3mp	34v8V
+2	9	7		נָסִ֔ים	5127	HVqrmpa	34T2S
+2	9	8		עִמְד֥וּ	5975	HVqv2mp	34tkJ
+2	9	9		עֲמֹ֖דוּ	5975	HVqv2mp	34EXL
+2	9	10		וְ/אֵ֥ין	c/369	HC/Tn	34ZPN
+2	9	11		מַפְנֶֽה	6437	HVhrmsa	34q1G
+2	10	1		בֹּ֥זּוּ	962	HVqv2mp	34bYD
+2	10	2		כֶ֖סֶף	3701	HNcmsa	34v2F
+2	10	3		בֹּ֣זּוּ	962	HVqv2mp	347vt
+2	10	4		זָהָ֑ב	2091	HNcmsa	34kDm
+2	10	5		וְ/אֵ֥ין	c/369	HC/Tn	34doW
+2	10	6		קֵ֨צֶה֙	7097 b	HNcbsa	34eRa
+2	10	7		לַ/תְּכוּנָ֔ה	l/8498	HRd/Ncfsa	34kDf
+2	10	8		כָּבֹ֕ד	3519	HNcbsa	3463G
+2	10	9		מִ/כֹּ֖ל	m/3605	HR/Ncmsc	34WPn
+2	10	10		כְּלִ֥י	3627	HNcmsc	341jv
+2	10	11		חֶמְדָּֽה	2532 a	HNcfsa	34cK8
+2	11	1		בּוּקָ֥ה	950	HNcfsa	34DDb
+2	11	2		וּ/מְבוּקָ֖ה	c/4003	HC/Ncfsa	34RCg
+2	11	3		וּ/מְבֻלָּקָ֑ה	c/1110	HC/VPsfsa	345KE
+2	11	4		וְ/לֵ֨ב	c/3820 a	HC/Ncmsa	34qVd
+2	11	5		נָמֵ֜ס	4549	HVNp3ms	34koG
+2	11	6		וּ/פִ֣ק	c/6375	HC/Ncmsc	34e6B
+2	11	7		בִּרְכַּ֗יִם	1290	HNcfda	348GY
+2	11	8		וְ/חַלְחָלָה֙	c/2479	HC/Ncfsa	34GpK
+2	11	9		בְּ/כָל	b/3605	HR/Ncmsc	3468C
+2	11	10		מָתְנַ֔יִם	4975	HNcmda	34CMz
+2	11	11		וּ/פְנֵ֥י	c/6440	HC/Ncbpc	34D4c
+2	11	12		כֻלָּ֖/ם	3605	HNcmsc/Sp3mp	34ta1
+2	11	13		קִבְּצ֥וּ	6908	HVpp3cp	34JnD
+2	11	14		פָארֽוּר	6289	HNcmsa	34jfz
+2	12	1		אַיֵּה֙	346	HTi	34ErQ
+2	12	2		מְע֣וֹן	4583	HNcbsc	344fv
+2	12	3		אֲרָי֔וֹת	738 a	HNcmpa	34yDv
+2	12	4		וּ/מִרְעֶ֥ה	c/4829	HC/Ncmsa	34jyT
+2	12	5		ה֖וּא	1931	HPp3ms	34Unh
+2	12	6		לַ/כְּפִרִ֑ים	l/3715 a	HRd/Ncmpa	34QH2
+2	12	7		אֲשֶׁ֣ר	834 a	HTr	34xxn
+2	12	8		הָלַךְ֩	1980	HVqp3ms	34ou4
+2	12	9		אַרְיֵ֨ה	738 b	HNcmsa	343KZ
+2	12	10		לָבִ֥יא	3833 c	HNcbsa	34jNE
+2	12	11		שָׁ֛ם	8033	HD	34hj3
+2	12	12		גּ֥וּר	1482	HNcmsc	34iDs
+2	12	13		אַרְיֵ֖ה	738 b	HNcmsa	346Lo
+2	12	14		וְ/אֵ֥ין	c/369	HC/Tn	34JZq
+2	12	15		מַחֲרִֽיד	2729	HVhrmsa	34ZpQ
+2	13	1		אַרְיֵ֤ה	738 b	HNcmsa	349gS
+2	13	2		טֹרֵף֙	2963	HVqrmsa	34LAe
+2	13	3		בְּ/דֵ֣י	b/1767	HR/Ncmsc	34qK3
+2	13	4		גֹֽרוֹתָ֔י/ו	1484	HNcmpc/Sp3ms	341Cv
+2	13	5		וּ/מְחַנֵּ֖ק	c/2614	HC/Vprmsa	34PBQ
+2	13	6		לְ/לִבְאֹתָ֑י/ו	l/3833 a	HR/Ncbpc/Sp3ms	34mr5
+2	13	7		וַ/יְמַלֵּא	c/4390	HC/Vpw3ms	34QDu
+2	13	8		טֶ֣רֶף	2964	HNcmsa	34PbY
+2	13	9		חֹרָ֔י/ו	2356	HNcmpc/Sp3ms	34Ew6
+2	13	10		וּ/מְעֹֽנֹתָ֖י/ו	c/4585	HC/Ncbpc/Sp3ms	3474R
+2	13	11		טְרֵפָֽה	2966	HNcfsa	346zt
+2	14	1		הִנְ/נִ֣י	2005	HTm/Sp1cs	34zEm
+2	14	2		אֵלַ֗יִ/ךְ	413	HR/Sp2fs	342dm
+2	14	3		נְאֻם֙	5002	HNcmsc	34uYh
+2	14	4		יְהוָ֣ה	3068	HNp	34YxK
+2	14	5		צְבָא֔וֹת	6635 b	HNcbpa	34aSJ
+2	14	6		וְ/הִבְעַרְתִּ֤י	c/1197 a	HC/Vhp1cs	34Kz2
+2	14	7		בֶֽ/עָשָׁן֙	b/6227	HRd/Ncmsa	34YhQ
+2	14	8		רִכְבָּ֔/הּ	7393	HNcmsc/Sp3fs	34azZ
+2	14	9		וּ/כְפִירַ֖יִ/ךְ	c/3715 a	HC/Ncmpc/Sp2fs	34oiy
+2	14	10		תֹּ֣אכַל	398	HVqi3fs	34gPX
+2	14	11		חָ֑רֶב	2719	HNcfsa	34gtq
+2	14	12		וְ/הִכְרַתִּ֤י	c/3772	HC/Vhq1cs	34HSQ
+2	14	13		מֵ/אֶ֨רֶץ֙	m/776	HR/Ncbsa	34fbB
+2	14	14		טַרְפֵּ֔/ךְ	2964	HNcmsc/Sp2fs	34k1L
+2	14	15		וְ/לֹֽא	c/3808	HC/Tn	342tS
+2	14	16		יִשָּׁמַ֥ע	8085	HVNi3ms	34EVu
+2	14	17		ע֖וֹד	5750	HD	34ygU
+2	14	18		ק֥וֹל	6963 a	HNcmsc	34swV
+2	14	19		מַלְאָכֵֽ/כֵה	4397	HNcmpc/Sp2fs	34HjU
+3	1	1		ה֖וֹי	1945	HTj	34d3U
+3	1	2		עִ֣יר	5892 b	HNcfsc	34NtK
+3	1	3		דָּמִ֑ים	1818	HNcmpa	34U94
+3	1	4		כֻּלָּ֗/הּ	3605	HNcmsc/Sp3fs	34zqr
+3	1	5		כַּ֤חַשׁ	3585	HNcmsa	346JA
+3	1	6		פֶּ֨רֶק֙	6563	HNcmsa	34JyD
+3	1	7		מְלֵאָ֔ה	4395	HAafsa	34jjy
+3	1	8		לֹ֥א	3808	HTn	3479E
+3	1	9		יָמִ֖ישׁ	4185	HVqi3ms	34Zuo
+3	1	10		טָֽרֶף	2964	HNcmsa	34LXS
+3	2	1		ק֣וֹל	6963 a	HNcmsc	34mR4
+3	2	2		שׁ֔וֹט	7752	HNcmsa	34MC8
+3	2	3		וְ/ק֖וֹל	c/6963 a	HC/Ncmsc	34BnR
+3	2	4		רַ֣עַשׁ	7494	HNcmsc	34PUg
+3	2	5		אוֹפָ֑ן	212	HNcmsa	34pUN
+3	2	6		וְ/ס֣וּס	c/5483 b	HC/Ncmsa	34gc8
+3	2	7		דֹּהֵ֔ר	1725	HVqrmsa	34Lsp
+3	2	8		וּ/מֶרְכָּבָ֖ה	c/4818	HC/Ncfsa	34SAE
+3	2	9		מְרַקֵּדָֽה	7540	HVprfsa	343gY
+3	3	1		פָּרָ֣שׁ	6571 b	HNcmsa	34RuM
+3	3	2		מַעֲלֶ֗ה	5927	HVhrmsa	34WFU
+3	3	3		וְ/לַ֤הַב	c/3851	HC/Ncmsc	34BJv
+3	3	4		חֶ֨רֶב֙	2719	HNcfsa	34ExP
+3	3	5		וּ/בְרַ֣ק	c/1300 b	HC/Ncmsc	34ypu
+3	3	6		חֲנִ֔ית	2595	HNcfsa	34mP3
+3	3	7		וְ/רֹ֥ב	c/7230	HC/Ncbsc	34V8b
+3	3	8		חָלָ֖ל	2491 a	HAamsa	34suQ
+3	3	9		וְ/כֹ֣בֶד	c/3514	HC/Ncmsc	341Su
+3	3	10		פָּ֑גֶר	6297	HNcmsa	34MEz
+3	3	11		וְ/אֵ֥ין	c/369	HC/Tn	34Q2u
+3	3	12		קֵ֨צֶה֙	7097 b	HNcbsa	34yT5
+3	3	13		לַ/גְּוִיָּ֔ה	l/1472	HRd/Ncfsa	34b5Q
+3	3	14	x-ketiv	יכשלו	3782	HVNi3mp	34F88
+3	3	15		וְ/כָשְׁל֖וּ	c/3782	HC/Vqp3cp	34AXb
+3	3	16		בִּ/גְוִיָּתָֽ/ם	b/1472	HR/Ncfsc/Sp3mp	34Wjz
+3	4	1		מֵ/רֹב֙	m/7230	HR/Ncbsc	34bPJ
+3	4	2		זְנוּנֵ֣י	2183	HNcmpc	34hS1
+3	4	3		זוֹנָ֔ה	2181	HVqrfsa	34h53
+3	4	4		ט֥וֹבַת	2896 a	HAafsc	34vpK
+3	4	5		חֵ֖ן	2580	HNcmsa	34G6E
+3	4	6		בַּעֲלַ֣ת	1172	HNcfsc	344vX
+3	4	7		כְּשָׁפִ֑ים	3785	HNcmpa	34X1R
+3	4	8		הַ/מֹּכֶ֤רֶת	d/4376	HTd/Vqrfsa	34bsu
+3	4	9		גּוֹיִם֙	1471 a	HNcmpa	34Ygn
+3	4	10		בִּ/זְנוּנֶ֔י/הָ	b/2183	HR/Ncmpc/Sp3fs	342gM
+3	4	11		וּ/מִשְׁפָּח֖וֹת	c/4940	HC/Ncfpa	34pAw
+3	4	12		בִּ/כְשָׁפֶֽי/הָ	b/3785	HR/Ncmpc/Sp3fs	34mVV
+3	5	1		הִנְ/נִ֣י	2005	HTm/Sp1cs	34FMa
+3	5	2		אֵלַ֗יִ/ךְ	413	HR/Sp2fs	34KPU
+3	5	3		נְאֻם֙	5002	HNcmsc	34ki2
+3	5	4		יְהוָ֣ה	3068	HNp	345pZ
+3	5	5		צְבָא֔וֹת	6635 b	HNcbpa	34HWo
+3	5	6		וְ/גִלֵּיתִ֥י	c/1540	HC/Vpp1cs	34zkA
+3	5	7		שׁוּלַ֖יִ/ךְ	7757	HNcmpc/Sp2fs	34JMT
+3	5	8		עַל	5921 a	HR	34jEX
+3	5	9		פָּנָ֑יִ/ךְ	6440	HNcbpc/Sp2fs	34uUA
+3	5	10		וְ/הַרְאֵיתִ֤י	c/7200	HC/Vhp1cs	34tKf
+3	5	11		גוֹיִם֙	1471 a	HNcmpa	34awE
+3	5	12		מַעְרֵ֔/ךְ	4626	HNcmsc/Sp2fs	34yNT
+3	5	13		וּ/מַמְלָכ֖וֹת	c/4467	HC/Ncfpa	34Azu
+3	5	14		קְלוֹנֵֽ/ךְ	7036	HNcmsc/Sp2fs	34884
+3	6	1		וְ/הִשְׁלַכְתִּ֥י	c/7993	HC/Vhp1cs	34XMu
+3	6	2		עָלַ֛יִ/ךְ	5921 a	HR/Sp2fs	34mrn
+3	6	3		שִׁקֻּצִ֖ים	8251	HNcmpa	34Xh9
+3	6	4		וְ/נִבַּלְתִּ֑י/ךְ	c/5034 a	HC/Vpp1cs/Sp2fs	34D3a
+3	6	5		וְ/שַׂמְתִּ֖י/ךְ	c/7760 a	HC/Vqp1cs/Sp2fs	34wEr
+3	6	6		כְּ/רֹֽאִי	k/7210	HR/Ncmsa	34Rvc
+3	7	1		וְ/הָיָ֤ה	c/1961	HC/Vqp3ms	34c6V
+3	7	2		כָל	3605	HNcmsc	348eM
+3	7	3		רֹאַ֨יִ/ךְ֙	7200	HVqrmpc/Sp2fs	34xkK
+3	7	4		יִדּ֣וֹד	5074	HVqi3ms	34rGa
+3	7	5		מִמֵּ֔/ךְ	4480 a	HR/Sp2fs	34fp1
+3	7	6		וְ/אָמַר֙	c/559	HC/Vqp3ms	34Y9g
+3	7	7		שָׁדְּדָ֣ה	7703	HVPp3fs	34mGU
+3	7	8		נִֽינְוֵ֔ה	5210	HNp	34gBW
+3	7	9		מִ֖י	4310	HTi	34eLD
+3	7	10		יָנ֣וּד	5110	HVqi3ms	3493F
+3	7	11		לָ֑/הּ	l	HR/Sp3fs	34eyL
+3	7	12		מֵ/אַ֛יִן	m/370	HR/Ti	34pm7
+3	7	13		אֲבַקֵּ֥שׁ	1245	HVpi1cs	34teU
+3	7	14		מְנַחֲמִ֖ים	5162	HVprmpa	34c58
+3	7	15		לָֽ/ךְ	l	HR/Sp2fs	34MRA
+3	8	1		הֲ/תֵֽיטְבִי֙	i/3190	HTi/Vhi2fs	34xp4
+3	8	2		מִ/נֹּ֣א	m/4996	HR/Np	34Hki
+3	8	3		אָמ֔וֹן	528	HNp	34QvZ
+3	8	4		הַ/יֹּֽשְׁבָה֙	d/3427	HTd/Vqrfsa	34S38
+3	8	5		בַּ/יְאֹרִ֔ים	b/2975	HRd/Ncmpa	34eN1
+3	8	6		מַ֖יִם	4325	HNcmpa	34HoD
+3	8	7		סָבִ֣יב	5439	HNcbsa	34P5s
+3	8	8		לָ֑/הּ	l	HR/Sp3fs	345QX
+3	8	9		אֲשֶׁר	834 a	HTr	34Mxy
+3	8	10		חֵ֣יל	2426	HNcmsc	34w6u
+3	8	11		יָ֔ם	3220	HNcmsa	34e3z
+3	8	12		מִ/יָּ֖ם	m/3220	HR/Ncmsa	342c6
+3	8	13		חוֹמָתָֽ/הּ	2346	HNcfsc/Sp3fs	343RL
+3	9	1		כּ֥וּשׁ	3568 a	HNp	34JUf
+3	9	2		עָצְמָ֛/ה	6109	HNcfsc/Sp3fs	34ce9
+3	9	3		וּ/מִצְרַ֖יִם	c/4714	HC/Np	34dPK
+3	9	4		וְ/אֵ֣ין	c/369	HC/Tn	34vLv
+3	9	5		קֵ֑צֶה	7097 b	HNcbsa	34UrG
+3	9	6		פּ֣וּט	6316	HNp	34Sxc
+3	9	7		וְ/לוּבִ֔ים	c/3864	HC/Ngmpa	34xwN
+3	9	8		הָי֖וּ	1961	HVqp3cp	34GjY
+3	9	9		בְּ/עֶזְרָתֵֽ/ךְ	b/5833	HR/Ncfsc/Sp2fs	34KNo
+3	10	1		גַּם	1571	HTa	34NLD
+3	10	2		הִ֗יא	1931	HPp3fs	34GUh
+3	10	3		לַ/גֹּלָה֙	l/1473	HRd/Ncfsa	345aF
+3	10	4		הָלְכָ֣ה	1980	HVqp3fs	34taY
+3	10	5		בַ/שֶּׁ֔בִי	b/7628 a	HRd/Ncbsa	34EZz
+3	10	6		גַּ֧ם	1571	HTa	34Hnw
+3	10	7		עֹלָלֶ֛י/הָ	5768	HNcmpc/Sp3fs	34pXi
+3	10	8		יְרֻטְּשׁ֖וּ	7376	HVPi3mp	34Nq4
+3	10	9		בְּ/רֹ֣אשׁ	b/7218 a	HR/Ncmsc	34rZH
+3	10	10		כָּל	3605	HNcmsc	34GtT
+3	10	11		חוּצ֑וֹת	2351	HNcmpa	34kwz
+3	10	12		וְ/עַל	c/5921 a	HC/R	34tc4
+3	10	13		נִכְבַּדֶּ֨י/הָ֙	3513	HVNsmpc/Sp3fs	34CMD
+3	10	14		יַדּ֣וּ	3032	HVqp3cp	345eq
+3	10	15		גוֹרָ֔ל	1486	HNcmsa	34Cj2
+3	10	16		וְ/כָל	c/3605	HC/Ncmsc	34Ttm
+3	10	17		גְּדוֹלֶ֖י/הָ	1419 a	HAampc/Sp3fs	346Vi
+3	10	18		רֻתְּק֥וּ	7576	HVPp3cp	34V8W
+3	10	19		בַ/זִּקִּֽים	b/2131 b	HRd/Ncmpa	34zg2
+3	11	1		גַּם	1571	HTa	34gXh
+3	11	2		אַ֣תְּ	859 c	HPp2fs	343iR
+3	11	3		תִּשְׁכְּרִ֔י	7937	HVqi2fs	34RoG
+3	11	4		תְּהִ֖י	1961	HVqi3fs	34jP7
+3	11	5		נַֽעֲלָמָ֑ה	5956	HVNsfsa	34vCn
+3	11	6		גַּם	1571	HTa	34jv3
+3	11	7		אַ֛תְּ	859 c	HPp2fs	34ggL
+3	11	8		תְּבַקְשִׁ֥י	1245	HVpi2fs	34MVq
+3	11	9		מָע֖וֹז	4581	HNcmsa	34g1y
+3	11	10		מֵ/אוֹיֵֽב	m/341	HR/Vqrmsa	34CBH
+3	12	1		כָּ֨ל	3605	HNcmsc	343t6
+3	12	2		מִבְצָרַ֔יִ/ךְ	4013	HNcmpc/Sp2fs	34g33
+3	12	3		תְּאֵנִ֖ים	8384	HNcfpa	34LDn
+3	12	4		עִם	5973 a	HR	343jG
+3	12	5		בִּכּוּרִ֑ים	1061	HNcbpa	34WDP
+3	12	6		אִם	518 a	HC	34eeF
+3	12	7		יִנּ֕וֹעוּ	5128	HVNi3mp	34idA
+3	12	8		וְ/נָפְל֖וּ	c/5307	HC/Vqp3cp	34Z4D
+3	12	9		עַל	5921 a	HR	34VMC
+3	12	10		פִּ֥י	6310	HNcmsc	34K8W
+3	12	11		אוֹכֵֽל	398	HVqrmsa	346RX
+3	13	1		הִנֵּ֨ה	2009	HTm	34bYm
+3	13	2		עַמֵּ֤/ךְ	5971 a	HNcmsc/Sp2fs	34M7H
+3	13	3		נָשִׁים֙	802	HNcfpa	34gcK
+3	13	4		בְּ/קִרְבֵּ֔/ךְ	b/7130	HR/Ncmsc/Sp2fs	34p7s
+3	13	5		לְ/אֹ֣יְבַ֔יִ/ךְ	l/341	HR/Vqrmpc/Sp2fs	34ZBR
+3	13	6		פָּת֥וֹחַ	6605 a	HVqa	34ACh
+3	13	7		נִפְתְּח֖וּ	6605 a	HVNp3cp	34mnL
+3	13	8		שַׁעֲרֵ֣י	8179	HNcmpc	3489r
+3	13	9		אַרְצֵ֑/ךְ	776	HNcbsc/Sp2fs	34GmF
+3	13	10		אָכְלָ֥ה	398	HVqp3fs	34fcv
+3	13	11		אֵ֖שׁ	784	HNcbsa	34knb
+3	13	12		בְּרִיחָֽיִ/ך	1280	HNcmpc/Sp2fs	34Qpj
+3	14	1		מֵ֤י	4325	HNcmpc	34MDS
+3	14	2		מָצוֹר֙	4692	HNcmsa	34YBx
+3	14	3		שַֽׁאֲבִי	7579	HVqv2fs	34kMZ
+3	14	4		לָ֔/ךְ	l	HR/Sp2fs	34uqC
+3	14	5		חַזְּקִ֖י	2388	HVpv2fs	34VY5
+3	14	6		מִבְצָרָ֑יִ/ךְ	4013	HNcmpc/Sp2fs	34WJY
+3	14	7		בֹּ֧אִי	935	HVqv2fs	34brh
+3	14	8		בַ/טִּ֛יט	b/2916	HRd/Ncmsa	34w1U
+3	14	9		וְ/רִמְסִ֥י	c/7429	HC/Vqv2fs	34aqT
+3	14	10		בַ/חֹ֖מֶר	b/2563 a	HRd/Ncmsa	34zXi
+3	14	11		הַחֲזִ֥יקִי	2388	HVhv2fs	34H8a
+3	14	12		מַלְבֵּֽן	4404	HNcmsa	34Sjh
+3	15	1		שָׁ֚ם	8033	HD	34oYp
+3	15	2		תֹּאכְלֵ֣/ךְ	398	HVqi3fs/Sp2fs	34Pht
+3	15	3		אֵ֔שׁ	784	HNcbsa	34idy
+3	15	4		תַּכְרִיתֵ֣/ךְ	3772	HVhi3fs/Sp2fs	34PU6
+3	15	5		חֶ֔רֶב	2719	HNcfsa	34FCP
+3	15	6		תֹּאכְלֵ֖/ךְ	398	HVqi3fs/Sp2fs	34YuY
+3	15	7		כַּ/יָּ֑לֶק	k/3218	HRd/Ncmsa	348Js
+3	15	8		הִתְכַּבֵּ֣ד	3513	HVtv2ms	34FyK
+3	15	9		כַּ/יֶּ֔לֶק	k/3218	HRd/Ncmsa	34XjR
+3	15	10		הִֽתְכַּבְּדִ֖י	3513	HVtv2fs	34jaD
+3	15	11		כָּ/אַרְבֶּֽה	k/697	HRd/Ncmsa	34W7V
+3	16	1		הִרְבֵּית֙	7235 a	HVhp2fs	34U2Y
+3	16	2		רֹֽכְלַ֔יִ/ךְ	7402	HVqrmpc/Sp2fs	348na
+3	16	3		מִ/כּוֹכְבֵ֖י	m/3556	HR/Ncmpc	34sgw
+3	16	4		הַ/שָּׁמָ֑יִם	d/8064	HTd/Ncmpa	34MDX
+3	16	5		יֶ֥לֶק	3218	HNcmsa	34pPp
+3	16	6		פָּשַׁ֖ט	6584	HVqp3ms	34ieN
+3	16	7		וַ/יָּעֹֽף	c/5774 a	HC/Vqw3ms	34Csj
+3	17	1		מִנְּזָרַ֨יִ/ךְ֙	4502	HNcmpc/Sp2fs	34rHn
+3	17	2		כָּֽ/אַרְבֶּ֔ה	k/697	HRd/Ncmsa	34ViB
+3	17	3		וְ/טַפְסְרַ֖יִ/ךְ	c/2951	HC/Ncmpc/Sp2fs	34CFo
+3	17	4		כְּ/ג֣וֹב	k/1462 a	HR/Ncmsc	345Ja
+3	17	5		גֹּבָ֑י	1462 b	HNcmpa	34UXS
+3	17	6		הַֽ/חוֹנִ֤ים	d/2583	HTd/Vqrmpa	34YQ8
+3	17	7		בַּ/גְּדֵרוֹת֙	b/1448	HRd/Ncfpa	34Abd
+3	17	8		בְּ/י֣וֹם	b/3117	HR/Ncmsc	342UV
+3	17	9		קָרָ֔ה	7135	HNcfsa	34ZtS
+3	17	10		שֶׁ֤מֶשׁ	8121	HNcbsa	34gMU
+3	17	11		זָֽרְחָה֙	2224	HVqp3fs	34nWb
+3	17	12		וְ/נוֹדַ֔ד	c/5074	HC/VMp3ms	34GXk
+3	17	13		וְ/לֹֽא	c/3808	HC/Tn	34TZa
+3	17	14		נוֹדַ֥ע	3045	HVNp3ms	345qp
+3	17	15		מְקוֹמ֖/וֹ	4725	HNcmsc/Sp3ms	34uHZ
+3	17	16		אַיָּֽ/ם	335	HTi/Sp3mp	34pAL
+3	18	1		נָמ֤וּ	5123	HVqp3cp	34hSr
+3	18	2		רֹעֶ֨י/ךָ֙	7462 b	HVqrmpc/Sp2ms	34ZMk
+3	18	3		מֶ֣לֶךְ	4428	HNcmsc	34irW
+3	18	4		אַשּׁ֔וּר	804	HNp	34x72
+3	18	5		יִשְׁכְּנ֖וּ	7931	HVqi3mp	34FYV
+3	18	6		אַדִּירֶ֑י/ךָ	117	HAampc/Sp2ms	34Uoo
+3	18	7		נָפֹ֧שׁוּ	6335 b	HVNp3cp	34sC3
+3	18	8		עַמְּ/ךָ֛	5971 a	HNcmsc/Sp2ms	344CS
+3	18	9		עַל	5921 a	HR	346n2
+3	18	10		הֶ/הָרִ֖ים	d/2022	HTd/Ncmpa	34HqY
+3	18	11		וְ/אֵ֥ין	c/369	HC/Tn	34BFZ
+3	18	12		מְקַבֵּֽץ	6908	HVprmsa	34shy
+3	19	1		אֵין	369	HTn	34nzj
+3	19	2		כֵּהָ֣ה	3545	HNcfsa	34vpT
+3	19	3		לְ/שִׁבְרֶ֔/ךָ	l/7667	HR/Ncmsc/Sp2ms	343Sx
+3	19	4		נַחְלָ֖ה	2470 a	HVNsfsa	34qVv
+3	19	5		מַכָּתֶ֑/ךָ	4347	HNcfsc/Sp2ms	34Kov
+3	19	6		כֹּ֣ל	3605	HNcmsc	34HNy
+3	19	7		שֹׁמְעֵ֣י	8085	HVqrmpc	34Ta6
+3	19	8		שִׁמְעֲ/ךָ֗	8088 b	HNcmsc/Sp2ms	34ER2
+3	19	9		תָּ֤קְעוּ	8628	HVqp3cp	34yP1
+3	19	10		כַף֙	3709	HNcfsa	34w4T
+3	19	11		עָלֶ֔י/ךָ	5921 a	HR/Sp2ms	34Cyx
+3	19	12		כִּ֗י	3588 a	HC	34qTT
+3	19	13		עַל	5921 a	HR	34m55
+3	19	14		מִ֛י	4310	HTi	34AF1
+3	19	15		לֹֽא	3808	HTn	345ED
+3	19	16		עָבְרָ֥ה	5674 a	HVqp3fs	34zCS
+3	19	17		רָעָתְ/ךָ֖	7451 c	HNcfsc/Sp2ms	34LsC
+3	19	18		תָּמִֽיד	8548	HNcmsa	34B4x

@@ -1,0 +1,7 @@
+name = "Hebrew/Aramaic Old Testament (OSHB, Westminster Leningrad Codex)"
+language = "hbo"
+license = "CC BY 4.0, Open Scriptures Hebrew Bible"
+raw = "raw/morphhb/wlc"
+upstream = "https://github.com/openscriptures/morphhb"
+importer = "morphhb"
+versification = "auto"

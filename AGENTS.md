@@ -39,13 +39,22 @@ counts, translation display names, father stats,
 and per-book `translations` lists on deuterocanonical entries.
 <bookid>.json One file per book (e.g. gen.json, john.json).
 Each holds: translations (KJV/ASV/WEB/YLT/DRA
-text by chapter/verse), greek (per-verse tagged
-original-language words — Greek for NT books,
-Hebrew/Aramaic for OT books despite the key name),
-fathers (verse -> quote indices), quotes
-(deduplicated patristic citation objects).
-lexicon.json Strong's-number-keyed lexicon: G#### Greek,
-H#### Hebrew/Aramaic entries.
+text by chapter/verse) and fathers (verse -> quote
+refs: an index into fathers/<book>/<ch>.json, or
+"book/ch/i").
+original/<bookid>.json Tagged original-language words by chapter/verse:
+Greek for NT books, Hebrew/Aramaic for OT books
+(the app attaches it as `book.greek`); loaded only
+when the Greek/Hebrew line is on or its tab opens.
+fathers/<book>/<ch>.json, or "book/ch/i").
+fathers/<book>/<ch>.json Quote bodies [{father, quote, source_title,
+source_url}], each distinct quote stored once (in
+the chapter citing it first); loaded when the
+Fathers tab opens.
+lexicon/index-G.json, index-H.json {id: [lemma, translit, gloss, pos]},
+loaded on the first word click in that language.
+lexicon/G|H/<n>.json Definitions for Strong's n*500..n*500+499
+(bucket size in books-index `lexiconBucketSize`).
 pipeline/ Offline data tooling (not served): build_dra.py,
 versification.py; see pipeline/README.md.
 README.md Project overview and local/GitHub Pages hosting.
@@ -72,8 +81,11 @@ that scheme.
   Greek-line toggle, theme), wrapped in try/catch since storage can throw
   or be unavailable. The saved theme is also applied by a tiny inline
   script in `index.html`'s head so there's no theme flash before modules run.
-- Data is loaded lazily and cached in module-scope objects (`bookCache`,
-  `lexicon`) — a book's JSON is fetched once per session, not per chapter.
+- Data is loaded lazily and each file is fetched once per session (`bookCache`,
+  `loadOnce()` in `js/data.js`). Keep the heavy data out of the book files. A book file
+  holds only the translations and the fathers index. The original-language words
+  (`loadOriginal()`), quote bodies (`loadQuotes()`) and lexicon entries (`lookupLexicon()`, which resolves extended
+  Strong's ids like `G2424G` to the base number) come from their own files, on click.
 - `NASB_CONFIG` (in `js/data.js`) holds `proxyUrl` and
   `bibleId`. When either is empty, NASB is simply absent from the
   translation dropdown — no modal, no dead UI, no error state. Never
@@ -164,13 +176,22 @@ numbers, a Greek-English lexicon, and a patristic-writings corpus filtered to
 genuine early-church sources (excluding pseudepigrapha, condemned/heretical
 writings, and anything post-800 AD or post-Reformation).
 
-**Don't re-run its full `build_data.py` into this repo.** It regenerates all 66
-books and would undo the fixes made here since: the Hebrew re-keyed to KJV
-numbering, and the DRA rebuilt by `pipeline/build_dra.py`. The deuterocanonical books are
-built by `../pipeline/build_deuterocanonical.py --out data`. It writes only the 14 books
-(KJV + WEB, fathers), the `fathers`/`quotes` of `dan`/`esth` (the corpus files
-Susanna and Bel as "Daniel 13/14" and the Esther additions as "Esther 10:4–16:24"),
-and the index. Run `pipeline/build_dra.py` afterwards for their DRA.
+**Regenerate everything with one command: `python3 pipeline/build.py`.** It
+builds into `pipeline/.stage/` and replaces `data/` only if every step
+passes, and two runs produce byte-identical output. The steps:
+
+1. `../pipeline/build_data.py`: the 66-book canon, lexicon and fathers.
+2. `pipeline/remap_hebrew.py`: OT Hebrew to KJV numbering, via TVTMS.
+3. `../pipeline/build_deuterocanonical.py`: the 14 books, plus the
+   Daniel/Esther fathers.
+4. `pipeline/build_dra.py`: the DRA from eBible.
+5. `pipeline/finalize.py`: data fixes (the WEB Romans doxology moved to
+   16:25–27, and `FATHERS_REF_FIXES`), a check that **fails the build if any
+   fathers reference points to a verse that doesn't exist in KJV numbering**,
+   and the split fathers/lexicon format.
+
+Don't hand-edit `data/`, and don't run `../pipeline/build_data.py` into it
+directly: its output is only the first step's input.
 
 OT Hebrew in `data/` is keyed to KJV (English) verse numbering, like the
 translations, `verseCounts`, and fathers. The pipeline's output used Hebrew

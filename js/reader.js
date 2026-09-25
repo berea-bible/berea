@@ -1,6 +1,6 @@
 /* Reader: top-bar navigation (book/chapter pickers), controls, and the chapter reading pane. */
 import { state, el, savePrefs, escapeHtml } from './app.js';
-import { INDEX, bookCache, bookMeta, chapterNumbers, isOT, isDeuterocanonical, loadBook, translationAvailable, effectiveTranslation, translationCodes, translationName, LIVE_TRANSLATIONS } from './data.js';
+import { INDEX, bookCache, bookMeta, chapterNumbers, loadOriginal, isOT, isDeuterocanonical, loadBook, translationAvailable, effectiveTranslation, translationCodes, translationName, LIVE_TRANSLATIONS } from './data.js';
 import { openVerse, closePanel } from './panel.js';
 import { showLexicon, displayWord, langLabels } from './greek.js';
 
@@ -157,9 +157,17 @@ export async function showChapter(){
       return;
     }
   }
+  if(state.showGreek) await ensureOriginal();
   renderChapter();
   // FUMS (NASB only): one view per chapter shown (not on Greek-line re-renders)
   if(live && live.report) live.report(state.bookId, state.chapter);
+}
+// Attach the book's original-language words (own file) before rendering the Greek/Hebrew line.
+// A failed load just renders without the line; turning the line off and on retries.
+async function ensureOriginal(){
+  const book = bookCache[state.bookId];
+  if(!book || book.greek) return;
+  try{ book.greek = await loadOriginal(state.bookId); }catch(e){ /* line stays empty */ }
 }
 function renderChapter(){
   const book = bookCache[state.bookId];
@@ -169,7 +177,7 @@ function renderChapter(){
   const translation = effectiveTranslation(state.translation, state.bookId);
   const verses = (book.translations[translation] || {})[ch] || {};
   const verseNums = Object.keys(verses).map(Number).sort((a,b)=>a-b);
-  const greekCh = book.greek[ch] || {};
+  const greekCh = (book.greek || {})[ch] || {};
   const fathersCh = book.fathers[ch] || {};
 
   let html = '<h2 class="chapter-heading">'+meta.name+' '+state.chapter+'</h2>';
@@ -222,4 +230,8 @@ function stepChapter(d){
 }
 el.prevCh.addEventListener('click', ()=> stepChapter(-1));
 el.nextCh.addEventListener('click', ()=> stepChapter(1));
-el.interlinearCheck.addEventListener('change', ()=>{ state.showGreek = el.interlinearCheck.checked; renderChapter(); savePrefs(); });
+el.interlinearCheck.addEventListener('change', async ()=>{
+  state.showGreek = el.interlinearCheck.checked;
+  if(state.showGreek) await ensureOriginal();
+  renderChapter(); savePrefs();
+});

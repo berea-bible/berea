@@ -1,0 +1,7 @@
+name = "Early church fathers (c. 100-800 AD)"
+license = "See each quote's source_url"
+raw = "raw/fathers"
+upstream = "https://github.com/HistoricalChristianFaith/Commentaries-Database"
+importer = "fathers"
+versification = "identity"
+# overrides and maps (Daniel 13-14, the reference fixes) are added with the engine in phase 3

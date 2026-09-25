@@ -1,0 +1,1565 @@
+chapter	verse	word	type	surface	lemma	morph	id
+1	1	1		אֵיכָ֣ה	349 b	HTi	25xeN
+1	1	2		יָשְׁבָ֣ה	3427	HVqp3fs	25Nvk
+1	1	3		בָדָ֗ד	910	HNcmsa	25TyA
+1	1	4		הָ/עִיר֙	d/5892 b	HTd/Ncfsa	25vuQ
+1	1	5		רַבָּ֣תִי	7227 a	HAafsc	25TSc
+1	1	6		עָ֔ם	5971 a	HNcmsa	25k5P
+1	1	7		הָיְתָ֖ה	1961	HVqp3fs	25nPh
+1	1	8		כְּ/אַלְמָנָ֑ה	k/490	HR/Ncfsa	25LN3
+1	1	9		רַּבָּ֣תִי	7227 a	HAafsc	25Qzf
+1	1	10		בַ/גּוֹיִ֗ם	b/1471 a	HRd/Ncmpa	25aPd
+1	1	11		שָׂרָ֨תִי֙	8282	HNcfsc	25eYX
+1	1	12		בַּ/מְּדִינ֔וֹת	b/4082	HRd/Ncfpa	25C5U
+1	1	13		הָיְתָ֖ה	1961	HVqp3fs	25qNN
+1	1	14		לָ/מַֽס	l/4522	HR/Ncmsa	25EVS
+1	2	1		בָּכ֨וֹ	1058	HVqa	25PB6
+1	2	2		תִבְכֶּ֜ה	1058	HVqi3fs	2537c
+1	2	3		בַּ/לַּ֗יְלָה	b/3915	HRd/Ncmsa	25x9c
+1	2	4		וְ/דִמְעָתָ/הּ֙	c/1832	HC/Ncfsc/Sp3fs	25yNB
+1	2	5		עַ֣ל	5921 a	HR	2529t
+1	2	6		לֶֽחֱיָ֔/הּ	3895	HNcbsc/Sp3fs	25KZG
+1	2	7		אֵֽין	369	HTn	25TZE
+1	2	8		לָ֥/הּ	l	HR/Sp3fs	25thY
+1	2	9		מְנַחֵ֖ם	5162	HVprmsa	25JM7
+1	2	10		מִ/כָּל	m/3605	HR/Ncmsc	25fpo
+1	2	11		אֹהֲבֶ֑י/הָ	157	HVqrmpc/Sp3fs	25W26
+1	2	12		כָּל	3605	HNcmsc	25yw4
+1	2	13		רֵעֶ֨י/הָ֙	7453	HNcmpc/Sp3fs	25jbg
+1	2	14		בָּ֣גְדוּ	898	HVqp3cp	25USR
+1	2	15		בָ֔/הּ	b	HR/Sp3fs	25v6U
+1	2	16		הָ֥יוּ	1961	HVqp3cp	255SS
+1	2	17		לָ֖/הּ	l	HR/Sp3fs	25GzE
+1	2	18		לְ/אֹיְבִֽים	l/341	HR/Vqrmpa	25qCU
+1	3	1		גָּֽלְתָ֨ה	1540	HVqp3fs	25g2y
+1	3	2		יְהוּדָ֤ה	3063	HNp	25jQb
+1	3	3		מֵ/עֹ֨נִי֙	m/6040	HR/Ncmsa	25794
+1	3	4		וּ/מֵ/רֹ֣ב	c/m/7230	HC/R/Ncbsc	25CsU
+1	3	5		עֲבֹדָ֔ה	5656	HNcfsa	25XR4
+1	3	6		הִ֚יא	1931	HPp3fs	25KvS
+1	3	7		יָשְׁבָ֣ה	3427	HVqp3fs	25dBc
+1	3	8		בַ/גּוֹיִ֔ם	b/1471 a	HRd/Ncmpa	25nAB
+1	3	9		לֹ֥א	3808	HTn	25kfX
+1	3	10		מָצְאָ֖ה	4672	HVqp3fs	25Wkf
+1	3	11		מָנ֑וֹחַ	4494	HNcbsa	25wrL
+1	3	12		כָּל	3605	HNcmsc	253TL
+1	3	13		רֹדְפֶ֥י/הָ	7291	HVqrmpc/Sp3fs	25LeN
+1	3	14		הִשִּׂיג֖וּ/הָ	5381	HVhp3cp/Sp3fs	25sMn
+1	3	15		בֵּ֥ין	996	HR	25Y3z
+1	3	16		הַ/מְּצָרִֽים	d/4712	HTd/Ncmpa	25NQN
+1	4	1		דַּרְכֵ֨י	1870	HNcbpc	25uLf
+1	4	2		צִיּ֜וֹן	6726	HNp	25kA7
+1	4	3		אֲבֵל֗וֹת	57	HAafpa	253TS
+1	4	4		מִ/בְּלִי֙	m/1097	HR/Ncmsc	25NFp
+1	4	5		בָּאֵ֣י	935	HVqrmpc	257am
+1	4	6		מוֹעֵ֔ד	4150	HNcmsa	25hh7
+1	4	7		כָּל	3605	HNcmsc	25BsK
+1	4	8		שְׁעָרֶ֨י/הָ֙	8179	HNcmpc/Sp3fs	25fsu
+1	4	9		שֽׁוֹמֵמִ֔ין	8074	HVqrmpa	258M6
+1	4	10		כֹּהֲנֶ֖י/הָ	3548	HNcmpc/Sp3fs	25wM5
+1	4	11		נֶאֱנָחִ֑ים	584	HVNsmpa	25qty
+1	4	12		בְּתוּלֹתֶ֥י/הָ	1330	HNcfpc/Sp3fs	255gQ
+1	4	13		נּוּג֖וֹת	3013	HVNsfpa	25Xw6
+1	4	14		וְ/הִ֥יא	c/1931	HC/Pp3fs	25eHJ
+1	4	15		מַר	4751	HVqp3ms	25H6L
+1	4	16		לָֽ/הּ	l	HR/Sp3fs	25bmv
+1	5	1		הָי֨וּ	1961	HVqp3cp	25FV9
+1	5	2		צָרֶ֤י/הָ	6862 c	HNcmpc/Sp3fs	25Xm1
+1	5	3		לְ/רֹאשׁ֙	l/7218 a	HR/Ncmsa	25UE6
+1	5	4		אֹיְבֶ֣י/הָ	341	HVqrmpc/Sp3fs	25goK
+1	5	5		שָׁל֔וּ	7951	HVqp3cp	25CyH
+1	5	6		כִּֽי	3588 a	HC	25A4a
+1	5	7		יְהוָ֥ה	3068	HNp	255Pr
+1	5	8		הוֹגָ֖/הּ	3013	HVhp3ms/Sp3fs	25L4k
+1	5	9		עַ֣ל	5921 a	HR	25Mnv
+1	5	10		רֹב	7230	HNcbsc	25mwU
+1	5	11		פְּשָׁעֶ֑י/הָ	6588	HNcmpc/Sp3fs	25tKT
+1	5	12		עוֹלָלֶ֛י/הָ	5768	HNcmpc/Sp3fs	25NRT
+1	5	13		הָלְכ֥וּ	1980	HVqp3cp	25sRU
+1	5	14		שְׁבִ֖י	7628 a	HNcbsa	25Wxq
+1	5	15		לִ/פְנֵי	l/6440	HR/Ncbpc	259qY
+1	5	16		צָֽר	6862 c	HNcmsa	25n5f
+1	6	1		וַ/יֵּצֵ֥א	c/3318	HC/Vqw3ms	25YUq
+1	6	2	x-ketiv	מן	4480 a	HR	25fQr
+1	6	3	x-ketiv	בת	1323	HNcfsc	25L7t
+1	6	4		מִ/בַּת	m/1323	HR/Ncfsc	25A74
+1	6	5		צִיּ֖וֹן	6726	HNp	25dNE
+1	6	6		כָּל	3605	HNcmsc	25xdF
+1	6	7		הֲדָרָ֑/הּ	1926	HNcmsc/Sp3fs	25AYg
+1	6	8		הָי֣וּ	1961	HVqp3cp	25Ls9
+1	6	9		שָׂרֶ֗י/הָ	8269	HNcmpc/Sp3fs	25Snp
+1	6	10		כְּ/אַיָּלִים֙	k/354	HR/Ncbpa	2587B
+1	6	11		לֹא	3808	HTn	25nLp
+1	6	12		מָצְא֣וּ	4672	HVqp3cp	25PzC
+1	6	13		מִרְעֶ֔ה	4829	HNcmsa	25NPq
+1	6	14		וַ/יֵּלְכ֥וּ	c/3212	HC/Vqw3mp	25d5m
+1	6	15		בְ/לֹא	b/3808	HR/Tn	25BYa
+1	6	16		כֹ֖חַ	3581 b	HNcmsa	25LJh
+1	6	17		לִ/פְנֵ֥י	l/6440	HR/Ncbpc	25tRR
+1	6	18		רוֹדֵֽף	7291	HVqrmsa	25Q7E
+1	7	1		זָֽכְרָ֣ה	2142	HVqp3fs	25dv1
+1	7	2		יְרוּשָׁלִַ֗ם	3389	HNp	25QwM
+1	7	3		יְמֵ֤י	3117	HNcmpc	25a62
+1	7	4		עָנְיָ/הּ֙	6040	HNcmsc/Sp3fs	25KvD
+1	7	5		וּ/מְרוּדֶ֔י/הָ	c/4788	HC/Ncmpc/Sp3fs	25GLz
+1	7	6		כֹּ֚ל	3605	HNcmsc	25BU7
+1	7	7		מַחֲמֻדֶ֔י/הָ	4262	HNcmpc/Sp3fs	25iy2
+1	7	8		אֲשֶׁ֥ר	834 a	HTr	25zQ2
+1	7	9		הָי֖וּ	1961	HVqp3cp	25Wxx
+1	7	10		מִ֣/ימֵי	m/3117	HR/Ncmpc	25jQ8
+1	7	11		קֶ֑דֶם	6924 a	HNcmsa	25Haa
+1	7	12		בִּ/נְפֹ֧ל	b/5307	HR/Vqc	25fJN
+1	7	13		עַמָּ֣/הּ	5971 a	HNcmsc/Sp3fs	259KV
+1	7	14		בְּ/יַד	b/3027	HR/Ncbsc	25F1s
+1	7	15		צָ֗ר	6862 c	HNcmsa	25dns
+1	7	16		וְ/אֵ֤ין	c/369	HC/Tn	25GK3
+1	7	17		עוֹזֵר֙	5826	HVqrmsa	25nRZ
+1	7	18		לָ֔/הּ	l	HR/Sp3fs	25cpb
+1	7	19		רָא֣וּ/הָ	7200	HVqp3cp/Sp3fs	25zio
+1	7	20		צָרִ֔ים	6862 c	HNcmpa	25Qsh
+1	7	21		שָׂחֲק֖וּ	7832	HVqp3cp	25zTj
+1	7	22		עַ֥ל	5921 a	HR	25fPi
+1	7	23		מִשְׁבַּתֶּֽ/הָ	4868	HNcmpc/Sp3fs	25GYe
+1	8	1		חֵ֤טְא	2399	HNcmsa	25Bbz
+1	8	2		חָֽטְאָה֙	2398	HVqp3fs	25VA9
+1	8	3		יְר֣וּשָׁלִַ֔ם	3389	HNp	25fV3
+1	8	4		עַל	5921 a	HR	25Sov
+1	8	5		כֵּ֖ן	3651 c	HTm	25V27
+1	8	6		לְ/נִידָ֣ה	l/5206	HR/Ncfsa	25ifp
+1	8	7		הָיָ֑תָה	1961	HVqp3fs	257ZG
+1	8	8		כָּֽל	3605	HNcmsc	25B2d
+1	8	9		מְכַבְּדֶ֤י/הָ	3513	HVprmpc/Sp3fs	25ewe
+1	8	10		הִזִּיל֨וּ/הָ֙	2107	HVhp3cp/Sp3fs	25SV6
+1	8	11		כִּי	3588 a	HC	25G83
+1	8	12		רָא֣וּ	7200	HVqp3cp	25vzS
+1	8	13		עֶרְוָתָ֔/הּ	6172	HNcfsc/Sp3fs	25Gq9
+1	8	14		גַּם	1571	HTa	253y8
+1	8	15		הִ֥יא	1931	HPp3fs	25TXw
+1	8	16		נֶאֶנְחָ֖ה	584	HVNp3fs	25Y4K
+1	8	17		וַ/תָּ֥שָׁב	c/7725	HC/Vqw3fs	25C32
+1	8	18		אָחֽוֹר	268	HNcmsa	25aMT
+1	9	1		טֻמְאָתָ֣/הּ	2932	HNcfsc/Sp3fs	25Cof
+1	9	2		בְּ/שׁוּלֶ֗י/הָ	b/7757	HR/Ncmpc/Sp3fs	25YWU
+1	9	3		לֹ֤א	3808	HTn	25rAQ
+1	9	4		זָֽכְרָה֙	2142	HVqp3fs	25fLi
+1	9	5		אַחֲרִיתָ֔/הּ	319	HNcfsc/Sp3fs	25Ptj
+1	9	6		וַ/תֵּ֣רֶד	c/3381	HC/Vqw3fs	25AJj
+1	9	7		פְּלָאִ֔ים	6382	HNcmpa	259Hv
+1	9	8		אֵ֥ין	369	HTn	25j1i
+1	9	9		מְנַחֵ֖ם	5162	HVprmsa	25J9J
+1	9	10		לָ֑/הּ	l	HR/Sp3fs	25U4n
+1	9	11		רְאֵ֤ה	7200	HVqv2ms	252Kt
+1	9	12		יְהוָה֙	3068	HNp	25RmH
+1	9	13		אֶת	853	HTo	25SWL
+1	9	14		עָנְיִ֔/י	6040	HNcmsc/Sp1cs	2575P
+1	9	15		כִּ֥י	3588 a	HC	253Lj
+1	9	16		הִגְדִּ֖יל	1431	HVhp3ms	25Qa3
+1	9	17		אוֹיֵֽב	341	HVqrmsa	25WTe
+1	10	1		יָד/וֹ֙	3027	HNcbsc/Sp3ms	256VM
+1	10	2		פָּ֣רַשׂ	6566	HVqp3ms	25sKn
+1	10	3		צָ֔ר	6862 c	HNcmsa	25oAj
+1	10	4		עַ֖ל	5921 a	HR	25AxB
+1	10	5		כָּל	3605	HNcmsc	25Ap3
+1	10	6		מַחֲמַדֶּ֑י/הָ	4261	HNcmpc/Sp3fs	25CEu
+1	10	7		כִּֽי	3588 a	HC	25zpy
+1	10	8		רָאֲתָ֤ה	7200	HVqp3fs	25FiN
+1	10	9		גוֹיִם֙	1471 a	HNcmpa	25cLk
+1	10	10		בָּ֣אוּ	935	HVqp3cp	2592v
+1	10	11		מִקְדָּשָׁ֔/הּ	4720	HNcmsc/Sp3fs	25j63
+1	10	12		אֲשֶׁ֣ר	834 a	HTr	25LFW
+1	10	13		צִוִּ֔יתָה	6680	HVpp2ms	25FbT
+1	10	14		לֹא	3808	HTn	25Bx7
+1	10	15		יָבֹ֥אוּ	935	HVqi3mp	25btu
+1	10	16		בַ/קָּהָ֖ל	b/6951	HRd/Ncmsa	25rTK
+1	10	17		לָֽ/ךְ	l	HR/Sp2fs	25SHw
+1	11	1		כָּל	3605	HNcmsc	25VuH
+1	11	2		עַמָּ֤/הּ	5971 a	HNcmsc/Sp3fs	25Axb
+1	11	3		נֶאֱנָחִים֙	584	HVNsmpa	25xva
+1	11	4		מְבַקְּשִׁ֣ים	1245	HVprmpa	25NrT
+1	11	5		לֶ֔חֶם	3899	HNcbsa	25iAD
+1	11	6		נָתְנ֧וּ	5414	HVqp3cp	25372
+1	11	7	x-ketiv	מחמודי/הם	4262	HNcmpc/Sp3mp	25FMU
+1	11	8		מַחֲמַדֵּי/הֶ֛ם	4261	HNcmpc/Sp3mp	25SaV
+1	11	9		בְּ/אֹ֖כֶל	b/400	HR/Ncmsa	254W9
+1	11	10		לְ/הָשִׁ֣יב	l/7725	HR/Vhc	25MmM
+1	11	11		נָ֑פֶשׁ	5315	HNcbsa	25wJn
+1	11	12		רְאֵ֤ה	7200	HVqv2ms	25CQo
+1	11	13		יְהוָה֙	3068	HNp	25XyU
+1	11	14		וְֽ/הַבִּ֔יטָ/ה	c/5027	HC/Vhv2ms/Sh	25BG4
+1	11	15		כִּ֥י	3588 a	HC	25YHH
+1	11	16		הָיִ֖יתִי	1961	HVqp1cs	25sHf
+1	11	17		זוֹלֵלָֽה	2151 b	HVqrfsa	25iee
+1	12	1		ל֣וֹא	3808	HTn	253eS
+1	12	2		אֲלֵי/כֶם֮	413	HR/Sp2mp	25ddd
+1	12	3		כָּל	3605	HNcmsc	25hxo
+1	12	4		עֹ֣בְרֵי	5674 a	HVqrmpc	25TW6
+1	12	5		דֶרֶךְ֒	1870	HNcbsa	25PVx
+1	12	6		הַבִּ֣יטוּ	5027	HVhv2mp	25PGK
+1	12	7		וּ/רְא֗וּ	c/7200	HC/Vqv2mp	25U4a
+1	12	8		אִם	518 a	HC	25dSQ
+1	12	9		יֵ֤שׁ	3426	HTm	25Qbs
+1	12	10		מַכְאוֹב֙	4341	HNcmsa	25ndZ
+1	12	11		כְּ/מַכְאֹבִ֔/י	k/4341	HR/Ncmsc/Sp1cs	25Xa1
+1	12	12		אֲשֶׁ֥ר	834 a	HTr	253yJ
+1	12	13		עוֹלַ֖ל	5953 a	HVMp3ms	25B6c
+1	12	14		לִ֑/י	l	HR/Sp1cs	25bju
+1	12	15		אֲשֶׁר֙	834 a	HTr	25cn3
+1	12	16		הוֹגָ֣ה	3013	HVhp3ms	257mS
+1	12	17		יְהוָ֔ה	3068	HNp	25dJe
+1	12	18		בְּ/י֖וֹם	b/3117	HR/Ncmsc	25WvG
+1	12	19		חֲר֥וֹן	2740	HNcmsc	25RXg
+1	12	20		אַפּֽ/וֹ	639	HNcmsc/Sp3ms	25pqY
+1	13	1		מִ/מָּר֛וֹם	m/4791	HR/Ncmsa	25n9v
+1	13	2		שָֽׁלַח	7971	HVqp3ms	25gYe
+1	13	3		אֵ֥שׁ	784	HNcbsa	25eXj
+1	13	4		בְּ/עַצְמֹתַ֖/י	b/6106	HR/Ncfpc/Sp1cs	258ro
+1	13	5		וַ/יִּרְדֶּ֑/נָּה	c/7287 a	HC/Vqw3ms/Sp3fs	25v5z
+1	13	6		פָּרַ֨שׂ	6566	HVqp3ms	25bCC
+1	13	7		רֶ֤שֶׁת	7568	HNcfsa	256By
+1	13	8		לְ/רַגְלַ/י֙	l/7272	HR/Ncfdc/Sp1cs	25CZB
+1	13	9		הֱשִׁיבַ֣/נִי	7725	HVhp3ms/Sp1cs	25VTb
+1	13	10		אָח֔וֹר	268	HNcmsa	256qf
+1	13	11		נְתָנַ֨/נִי֙	5414	HVqp3ms/Sp1cs	25efz
+1	13	12		שֹֽׁמֵמָ֔ה	8076	HVqrfsa	25QG5
+1	13	13		כָּל	3605	HNcmsc	253k3
+1	13	14		הַ/יּ֖וֹם	d/3117	HTd/Ncmsa	251rL
+1	13	15		דָּוָֽה	1739	HAafsa	25W2c
+1	14	1		נִשְׂקַד֩	8244	HVNp3ms	25mL3
+1	14	2		עֹ֨ל	5923	HNcmsc	25zfc
+1	14	3		פְּשָׁעַ֜/י	6588	HNcmpc/Sp1cs	25sYp
+1	14	4		בְּ/יָד֗/וֹ	b/3027	HR/Ncbsc/Sp3ms	25GvF
+1	14	5		יִשְׂתָּֽרְג֛וּ	8276	HVti3mp	25dAC
+1	14	6		עָל֥וּ	5927	HVqp3cp	25i4W
+1	14	7		עַל	5921 a	HR	25chR
+1	14	8		צַוָּארִ֖/י	6677 a	HNcmsc/Sp1cs	25Ddq
+1	14	9		הִכְשִׁ֣יל	3782	HVhp3ms	25dSp
+1	14	10		כֹּחִ֑/י	3581 b	HNcmsc/Sp1cs	25ecS
+1	14	11		נְתָנַ֣/נִי	5414	HVqp3ms/Sp1cs	252tG
+1	14	12		אֲדֹנָ֔/י	136	HNcmpc/Sp1cs	25Xzm
+1	14	13		בִּ/ידֵ֖י	b/3027	HR/Ncbdc	25CCj
+1	14	14		לֹא	3808	HTn	25gV8
+1	14	15		אוּכַ֥ל	3201	HVqi1cs	25Czz
+1	14	16		קֽוּם	6965 b	HVqc	25uXX
+1	15	1		סִלָּ֨ה	5541 a	HVpp3ms	25xCL
+1	15	2		כָל	3605	HNcmsc	25Qnr
+1	15	3		אַבִּירַ֤/י	47	HAampc/Sp1cs	256kU
+1	15	4		אֲדֹנָ/י֙	136	HNcmpc/Sp1cs	25qry
+1	15	5		בְּ/קִרְבִּ֔/י	b/7130	HR/Ncmsc/Sp1cs	25bvP
+1	15	6		קָרָ֥א	7121	HVqp3ms	25wjj
+1	15	7		עָלַ֛/י	5921 a	HR/Sp1cs	25Tn7
+1	15	8		מוֹעֵ֖ד	4150	HNcmsa	25hEs
+1	15	9		לִ/שְׁבֹּ֣ר	l/7665	HR/Vqc	25xAF
+1	15	10		בַּחוּרָ֑/י	970	HNcmpc/Sp1cs	25qg1
+1	15	11		גַּ֚ת	1660	HNcfsa	256w9
+1	15	12		דָּרַ֣ךְ	1869	HVqp3ms	25wA4
+1	15	13		אֲדֹנָ֔/י	136	HNcmpc/Sp1cs	25ibe
+1	15	14		לִ/בְתוּלַ֖ת	l/1330	HR/Ncfsc	25v8V
+1	15	15		בַּת	1323	HNcfsc	25T2S
+1	15	16		יְהוּדָֽה	3063	HNp	25tkJ
+1	16	1		עַל	5921 a	HR	25EXL
+1	16	2		אֵ֣לֶּה	428	HPdxcp	25ZPN
+1	16	3		אֲנִ֣י	589	HPp1cs	25q1G
+1	16	4		בוֹכִיָּ֗ה	1058	HVqrfsa	25bYD
+1	16	5		עֵינִ֤/י	5869 a	HNcbsc/Sp1cs	25v2F
+1	16	6		עֵינִ/י֙	5869 a	HNcbsc/Sp1cs	257vt
+1	16	7		יֹ֣רְדָה	3381	HVqrfsa	25kDm
+1	16	8		מַּ֔יִם	4325	HNcmpa	25doW
+1	16	9		כִּֽי	3588 a	HC	25eRa
+1	16	10		רָחַ֥ק	7368	HVqp3ms	25kDf
+1	16	11		מִמֶּ֛/נִּי	4480 a	HR/Sp1cs	2563G
+1	16	12		מְנַחֵ֖ם	5162	HVprmsa	25WPn
+1	16	13		מֵשִׁ֣יב	7725	HVhrmsa	251jv
+1	16	14		נַפְשִׁ֑/י	5315	HNcbsc/Sp1cs	25cK8
+1	16	15		הָי֤וּ	1961	HVqp3cp	25DDb
+1	16	16		בָנַ/י֙	1121 a	HNcmpc/Sp1cs	25RCg
+1	16	17		שֽׁוֹמֵמִ֔ים	8074	HVqrmpa	255KE
+1	16	18		כִּ֥י	3588 a	HC	25qVd
+1	16	19		גָבַ֖ר	1396	HVqp3ms	25koG
+1	16	20		אוֹיֵֽב	341	HVqrmsa	25e6B
+1	17	1		פֵּֽרְשָׂ֨ה	6566	HVpp3fs	258GY
+1	17	2		צִיּ֜וֹן	6726	HNp	25GpK
+1	17	3		בְּ/יָדֶ֗י/הָ	b/3027	HR/Ncbdc/Sp3fs	2568C
+1	17	4		אֵ֤ין	369	HTn	25CMz
+1	17	5		מְנַחֵם֙	5162	HVprmsa	25D4c
+1	17	6		לָ֔/הּ	l	HR/Sp3fs	25ta1
+1	17	7		צִוָּ֧ה	6680	HVpp3ms	25JnD
+1	17	8		יְהוָ֛ה	3068	HNp	25jfz
+1	17	9		לְ/יַעֲקֹ֖ב	l/3290	HR/Np	25ErQ
+1	17	10		סְבִיבָ֣י/ו	5439	HNcbpc/Sp3ms	254fv
+1	17	11		צָרָ֑י/ו	6862 c	HNcmpc/Sp3ms	25yDv
+1	17	12		הָיְתָ֧ה	1961	HVqp3fs	25jyT
+1	17	13		יְרוּשָׁלִַ֛ם	3389	HNp	25Unh
+1	17	14		לְ/נִדָּ֖ה	l/5079	HR/Ncfsa	25QH2
+1	17	15		בֵּינֵי/הֶֽם	996	HR/Sp3mp	25xxn
+1	18	1		צַדִּ֥יק	6662	HAamsa	25ou4
+1	18	2		ה֛וּא	1931	HPp3ms	253KZ
+1	18	3		יְהוָ֖ה	3068	HNp	25jNE
+1	18	4		כִּ֣י	3588 a	HC	25hj3
+1	18	5		פִ֣י/הוּ	6310	HNcmsc/Sp3ms	25iDs
+1	18	6		מָרִ֑יתִי	4784	HVqp1cs	256Lo
+1	18	7		שִׁמְעוּ	8085	HVqv2mp	25JZq
+1	18	8		נָ֣א	4994	HTe	25ZpQ
+1	18	9		כָל	3605	HNcmsc	259gS
+1	18	10	x-ketiv	עמים	5971 a	HNcmpa	25LAe
+1	18	11		הָֽ/עַמִּ֗ים	d/5971 a	HTd/Ncmpa	25qK3
+1	18	12		וּ/רְאוּ֙	c/7200	HC/Vqv2mp	251Cv
+1	18	13		מַכְאֹבִ֔/י	4341	HNcmsc/Sp1cs	25PBQ
+1	18	14		בְּתוּלֹתַ֥/י	1330	HNcfpc/Sp1cs	25mr5
+1	18	15		וּ/בַחוּרַ֖/י	c/970	HC/Ncmpc/Sp1cs	25QDu
+1	18	16		הָלְכ֥וּ	1980	HVqp3cp	25PbY
+1	18	17		בַ/שֶּֽׁבִי	b/7628 a	HRd/Ncbsa	25Ew6
+1	19	1		קָרָ֤אתִי	7121	HVqp1cs	2574R
+1	19	2		לַֽ/מְאַהֲבַ/י֙	l/157	HRd/Vprmpc/Sp1cs	256zt
+1	19	3		הֵ֣מָּה	1992	HPp3mp	25zEm
+1	19	4		רִמּ֔וּ/נִי	7411 b	HVpp3cp/Sp1cs	252dm
+1	19	5		כֹּהֲנַ֥/י	3548	HNcmpc/Sp1cs	25uYh
+1	19	6		וּ/זְקֵנַ֖/י	c/2205	HC/Aampc/Sp1cs	25YxK
+1	19	7		בָּ/עִ֣יר	b/5892 b	HRd/Ncfsa	25aSJ
+1	19	8		גָּוָ֑עוּ	1478	HVqp3cp	25Kz2
+1	19	9		כִּֽי	3588 a	HC	25YhQ
+1	19	10		בִקְשׁ֥וּ	1245	HVpp3cp	25azZ
+1	19	11		אֹ֨כֶל֙	400	HNcmsa	25oiy
+1	19	12		לָ֔/מוֹ	l	HR/Sp3mp	25gPX
+1	19	13		וְ/יָשִׁ֖יבוּ	c/7725	HC/Vhj3mp	25gtq
+1	19	14		אֶת	853	HTo	25HSQ
+1	19	15		נַפְשָֽׁ/ם	5315	HNcbsc/Sp3mp	25fbB
+1	20	1		רְאֵ֨ה	7200	HVqv2ms	25k1L
+1	20	2		יְהוָ֤ה	3068	HNp	252tS
+1	20	3		כִּֽי	3588 a	HC	25EVu
+1	20	4		צַר	6887	HAamsa	25ygU
+1	20	5		לִ/י֙	l	HR/Sp1cs	25swV
+1	20	6		מֵעַ֣/י	4578	HNcmpc/Sp1cs	25HjU
+1	20	7		חֳמַרְמָ֔רוּ	2560 a	HVjp3cp	25d3U
+1	20	8		נֶהְפַּ֤ךְ	2015	HVNp3ms	25NtK
+1	20	9		לִבִּ/י֙	3820 a	HNcmsc/Sp1cs	25U94
+1	20	10		בְּ/קִרְבִּ֔/י	b/7130	HR/Ncmsc/Sp1cs	25zqr
+1	20	11		כִּ֥י	3588 a	HC	256JA
+1	20	12		מָר֖וֹ	4784	HVqa	25JyD
+1	20	13		מָרִ֑יתִי	4784	HVqp1cs	25jjy
+1	20	14		מִ/ח֥וּץ	m/2351	HR/Ncmsa	2579E
+1	20	15		שִׁכְּלָה	7921 a	HVpp3fs	25Zuo
+1	20	16		חֶ֖רֶב	2719	HNcfsa	25LXS
+1	20	17		בַּ/בַּ֥יִת	b/1004 b	HRd/Ncmsa	25mR4
+1	20	18		כַּ/מָּֽוֶת	k/4194	HRd/Ncmsa	25MC8
+1	21	1		שָׁמְע֞וּ	8085	HVqp3cp	25BnR
+1	21	2		כִּ֧י	3588 a	HC	25PUg
+1	21	3		נֶאֱנָחָ֣ה	584	HVNsfsa	25pUN
+1	21	4		אָ֗נִי	589	HPp1cs	25gc8
+1	21	5		אֵ֤ין	369	HTn	25Lsp
+1	21	6		מְנַחֵם֙	5162	HVprmsa	25SAE
+1	21	7		לִ֔/י	l	HR/Sp1cs	253gY
+1	21	8		כָּל	3605	HNcmsc	25RuM
+1	21	9		אֹ֨יְבַ֜/י	341	HVqrmpc/Sp1cs	25WFU
+1	21	10		שָׁמְע֤וּ	8085	HVqp3cp	25BJv
+1	21	11		רָֽעָתִ/י֙	7451 c	HNcfsc/Sp1cs	25ExP
+1	21	12		שָׂ֔שׂוּ	7797	HVqp3cp	25ypu
+1	21	13		כִּ֥י	3588 a	HC	25mP3
+1	21	14		אַתָּ֖ה	859 a	HPp2ms	25V8b
+1	21	15		עָשִׂ֑יתָ	6213 a	HVqp2ms	25suQ
+1	21	16		הֵבֵ֥אתָ	935	HVhp2ms	251Su
+1	21	17		יוֹם	3117	HNcmsa	25MEz
+1	21	18		קָרָ֖אתָ	7121	HVqp2ms	25Q2u
+1	21	19		וְ/יִֽהְי֥וּ	c/1961	HC/Vqi3mp	25yT5
+1	21	20		כָמֽוֹ/נִי	3644	HR/Sp1cs	25b5Q
+1	22	1		תָּבֹ֨א	935	HVqi3fs	25F88
+1	22	2		כָל	3605	HNcmsc	25AXb
+1	22	3		רָעָתָ֤/ם	7451 c	HNcfsc/Sp3mp	25Wjz
+1	22	4		לְ/פָנֶ֨י/ךָ֙	l/6440	HR/Ncbpc/Sp2ms	25bPJ
+1	22	5		וְ/עוֹלֵ֣ל	c/5953 a	HC/Vmv2ms	25hS1
+1	22	6		לָ֔/מוֹ	l	HR/Sp3mp	25h53
+1	22	7		כַּ/אֲשֶׁ֥ר	k/834 d	HR/Tr	25vpK
+1	22	8		עוֹלַ֛לְתָּ	5953 a	HVmp2ms	25G6E
+1	22	9		לִ֖/י	l	HR/Sp1cs	254vX
+1	22	10		עַ֣ל	5921 a	HR	25X1R
+1	22	11		כָּל	3605	HNcmsc	25bsu
+1	22	12		פְּשָׁעָ֑/י	6588	HNcmpc/Sp1cs	25Ygn
+1	22	13		כִּֽי	3588 a	HC	252gM
+1	22	14		רַבּ֥וֹת	7227 a	HAafpa	25pAw
+1	22	15		אַנְחֹתַ֖/י	585	HNcfpc/Sp1cs	25mVV
+1	22	16		וְ/לִבִּ֥/י	c/3820 a	HC/Ncmsc/Sp1cs	25FMa
+1	22	17		דַוָּֽי	1742	HAamsa	25KPU
+2	1	1		אֵיכָה֩	349 b	HTi	25ki2
+2	1	2		יָעִ֨יב	5743	HVhi3ms	255pZ
+2	1	3		בְּ/אַפּ֤/וֹ	b/639	HR/Ncmsc/Sp3ms	25HWo
+2	1	4		אֲדֹנָ/י֙	136	HNcmpc/Sp1cs	25zkA
+2	1	5		אֶת	853	HTo	25JMT
+2	1	6		בַּת	1323	HNcfsc	25jEX
+2	1	7		צִיּ֔וֹן	6726	HNp	25uUA
+2	1	8		הִשְׁלִ֤יךְ	7993	HVhp3ms	25tKf
+2	1	9		מִ/שָּׁמַ֨יִם֙	m/8064	HR/Ncmpa	25awE
+2	1	10		אֶ֔רֶץ	776	HNcbsa	25yNT
+2	1	11		תִּפְאֶ֖רֶת	8597	HNcfsc	25Azu
+2	1	12		יִשְׂרָאֵ֑ל	3478	HNp	25884
+2	1	13		וְ/לֹא	c/3808	HC/Tn	25XMu
+2	1	14		זָכַ֥ר	2142	HVqp3ms	25mrn
+2	1	15		הֲדֹם	1916	HNcmsc	25Xh9
+2	1	16		רַגְלָ֖י/ו	7272	HNcfdc/Sp3ms	25D3a
+2	1	17		בְּ/י֥וֹם	b/3117	HR/Ncmsc	25wEr
+2	1	18		אַפּֽ/וֹ	639	HNcmsc/Sp3ms	25Rvc
+2	2	1		בִּלַּ֨ע	1104	HVpp3ms	25c6V
+2	2	2		אֲדֹנָ֜/י	136	HNcmpc/Sp1cs	258eM
+2	2	3	x-ketiv	לא	3808	HTn	25xkK
+2	2	4		וְ/לֹ֣א	c/3808	HC/Tn	25rGa
+2	2	5		חָמַ֗ל	2550	HVqp3ms	25fp1
+2	2	6		אֵ֚ת	853	HTo	25Y9g
+2	2	7		כָּל	3605	HNcmsc	25mGU
+2	2	8		נְא֣וֹת	4999	HNcfpc	25gBW
+2	2	9		יַעֲקֹ֔ב	3290	HNp	25eLD
+2	2	10		הָרַ֧ס	2040	HVqp3ms	2593F
+2	2	11		בְּ/עֶבְרָת֛/וֹ	b/5678	HR/Ncfsc/Sp3ms	25eyL
+2	2	12		מִבְצְרֵ֥י	4013	HNcmpc	25pm7
+2	2	13		בַת	1323	HNcfsc	25teU
+2	2	14		יְהוּדָ֖ה	3063	HNp	25c58
+2	2	15		הִגִּ֣יעַ	5060	HVhp3ms	25MRA
+2	2	16		לָ/אָ֑רֶץ	l/776	HRd/Ncbsa	25xp4
+2	2	17		חִלֵּ֥ל	2490 c	HVpp3ms	25Hki
+2	2	18		מַמְלָכָ֖ה	4467	HNcfsa	25QvZ
+2	2	19		וְ/שָׂרֶֽי/הָ	c/8269	HC/Ncmpc/Sp3fs	25S38
+2	3	1		גָּדַ֣ע	1438	HVqp3ms	25eN1
+2	3	2		בָּֽ/חֳרִי	b/2750	HR/Ncmsc	25HoD
+2	3	3		אַ֗ף	639	HTa	25P5s
+2	3	4		כֹּ֚ל	3605	HNcmsc	255QX
+2	3	5		קֶ֣רֶן	7161 a	HNcbsc	25Mxy
+2	3	6		יִשְׂרָאֵ֔ל	3478	HNp	25w6u
+2	3	7		הֵשִׁ֥יב	7725	HVhp3ms	25e3z
+2	3	8		אָח֛וֹר	268	HNcmsa	252c6
+2	3	9		יְמִינ֖/וֹ	3225	HNcfsc/Sp3ms	253RL
+2	3	10		מִ/פְּנֵ֣י	m/6440	HR/Ncbpc	25JUf
+2	3	11		אוֹיֵ֑ב	341	HVqrmsa	25ce9
+2	3	12		וַ/יִּבְעַ֤ר	c/1197 a	HC/Vqw3ms	25dPK
+2	3	13		בְּ/יַעֲקֹב֙	b/3290	HR/Np	25vLv
+2	3	14		כְּ/אֵ֣שׁ	k/784	HR/Ncbsc	25UrG
+2	3	15		לֶֽהָבָ֔ה	3852	HNcfsa	25Sxc
+2	3	16		אָכְלָ֖ה	398	HVqp3fs	25xwN
+2	3	17		סָבִֽיב	5439	HNcbsa	25GjY
+2	4	1		דָּרַ֨ךְ	1869	HVqp3ms	25KNo
+2	4	2		קַשְׁתּ֜/וֹ	7198	HNcfsc/Sp3ms	25NLD
+2	4	3		כְּ/אוֹיֵ֗ב	k/341	HR/Vqrmsa	25GUh
+2	4	4		נִצָּ֤ב	5324	HVNrmsa	255aF
+2	4	5		יְמִינ/וֹ֙	3225	HNcfsc/Sp3ms	25taY
+2	4	6		כְּ/צָ֔ר	k/6862 c	HR/Ncmsa	25EZz
+2	4	7		וַֽ/יַּהֲרֹ֔ג	c/2026	HC/Vqw3ms	25Hnw
+2	4	8		כֹּ֖ל	3605	HNcmsc	25pXi
+2	4	9		מַחֲמַדֵּי	4261	HNcmpc	25Nq4
+2	4	10		עָ֑יִן	5869 a	HNcbsa	25rZH
+2	4	11		בְּ/אֹ֨הֶל֙	b/168	HR/Ncmsc	25GtT
+2	4	12		בַּת	1323	HNcfsc	25kwz
+2	4	13		צִיּ֔וֹן	6726	HNp	25tc4
+2	4	14		שָׁפַ֥ךְ	8210	HVqp3ms	25CMD
+2	4	15		כָּ/אֵ֖שׁ	k/784	HRd/Ncbsa	255eq
+2	4	16		חֲמָתֽ/וֹ	2534	HNcfsc/Sp3ms	25Cj2
+2	5	1		הָיָ֨ה	1961	HVqp3ms	25Ttm
+2	5	2		אֲדֹנָ֤/י	136	HNcmpc/Sp1cs	256Vi
+2	5	3		כְּ/אוֹיֵב֙	k/341	HR/Vqrmsa	25V8W
+2	5	4		בִּלַּ֣ע	1104	HVpp3ms	25zg2
+2	5	5		יִשְׂרָאֵ֔ל	3478	HNp	25gXh
+2	5	6		בִּלַּע֙	1104	HVpp3ms	253iR
+2	5	7		כָּל	3605	HNcmsc	25RoG
+2	5	8		אַרְמְנוֹתֶ֔י/הָ	759	HNcmpc/Sp3fs	25jP7
+2	5	9		שִׁחֵ֖ת	7843	HVpp3ms	25vCn
+2	5	10		מִבְצָרָ֑י/ו	4013	HNcmpc/Sp3ms	25jv3
+2	5	11		וַ/יֶּ֨רֶב֙	c/7235 a	HC/Vhw3ms	25ggL
+2	5	12		בְּ/בַת	b/1323	HR/Ncfsc	25MVq
+2	5	13		יְהוּדָ֔ה	3063	HNp	25g1y
+2	5	14		תַּאֲנִיָּ֖ה	8386	HNcfsa	25CBH
+2	5	15		וַ/אֲנִיָּֽה	c/592	HC/Ncfsa	253t6
+2	6	1		וַ/יַּחְמֹ֤ס	c/2554	HC/Vqw3ms	25g33
+2	6	2		כַּ/גַּן֙	k/1588	HRd/Ncbsa	25LDn
+2	6	3		שֻׂכּ֔/וֹ	7900	HNcmsc/Sp3ms	253jG
+2	6	4		שִׁחֵ֖ת	7843	HVpp3ms	25WDP
+2	6	5		מוֹעֲד֑/וֹ	4150	HNcmsc/Sp3ms	25eeF
+2	6	6		שִׁכַּ֨ח	7911	HVpp3ms	25idA
+2	6	7		יְהוָ֤ה	3068	HNp	25Z4D
+2	6	8		בְּ/צִיּוֹן֙	b/6726	HR/Np	25VMC
+2	6	9		מוֹעֵ֣ד	4150	HNcmsa	25K8W
+2	6	10		וְ/שַׁבָּ֔ת	c/7676	HC/Ncbsa	256RX
+2	6	11		וַ/יִּנְאַ֥ץ	c/5006	HC/Vqw3ms	25bYm
+2	6	12		בְּ/זַֽעַם	b/2195	HR/Ncmsc	25M7H
+2	6	13		אַפּ֖/וֹ	639	HNcmsc/Sp3ms	25gcK
+2	6	14		מֶ֥לֶךְ	4428	HNcmsa	25p7s
+2	6	15		וְ/כֹהֵֽן	c/3548	HC/Ncmsa	25ZBR
+2	7	1		זָנַ֨ח	2186 a	HVqp3ms	25ACh
+2	7	2		אֲדֹנָ֤/י	136	HNcmpc/Sp1cs	25mnL
+2	7	3		מִזְבְּח/וֹ֙	4196	HNcmsc/Sp3ms	2589r
+2	7	4		נִאֵ֣ר	5010	HVpp3ms	25GmF
+2	7	5		מִקְדָּשׁ֔/וֹ	4720	HNcmsc/Sp3ms	25fcv
+2	7	6		הִסְגִּיר֙	5462	HVhp3ms	25knb
+2	7	7		בְּ/יַד	b/3027	HR/Ncbsc	25Qpj
+2	7	8		אוֹיֵ֔ב	341	HVqrmsa	25MDS
+2	7	9		חוֹמֹ֖ת	2346	HNcfpc	25YBx
+2	7	10		אַרְמְנוֹתֶ֑י/הָ	759	HNcmpc/Sp3fs	25kMZ
+2	7	11		ק֛וֹל	6963 a	HNcmsa	25uqC
+2	7	12		נָתְנ֥וּ	5414	HVqp3cp	25VY5
+2	7	13		בְּ/בֵית	b/1004 b	HR/Ncmsc	25WJY
+2	7	14		יְהוָ֖ה	3068	HNp	25brh
+2	7	15		כְּ/י֥וֹם	k/3117	HR/Ncmsc	25w1U
+2	7	16		מוֹעֵֽד	4150	HNcmsa	25aqT
+2	8	1		חָשַׁ֨ב	2803	HVqp3ms	25zXi
+2	8	2		יְהוָ֤ה	3068	HNp	25H8a
+2	8	3		לְ/הַשְׁחִית֙	l/7843	HR/Vhc	25Sjh
+2	8	4		חוֹמַ֣ת	2346	HNcfsc	25oYp
+2	8	5		בַּת	1323	HNcfsc	25Pht
+2	8	6		צִיּ֔וֹן	6726	HNp	25idy
+2	8	7		נָ֣טָה	5186	HVqp3ms	25PU6
+2	8	8		קָ֔ו	6957 b	HNcmsa	25FCP
+2	8	9		לֹא	3808	HTn	25YuY
+2	8	10		הֵשִׁ֥יב	7725	HVhp3ms	258Js
+2	8	11		יָד֖/וֹ	3027	HNcbsc/Sp3ms	25FyK
+2	8	12		מִ/בַּלֵּ֑עַ	m/1104	HR/Vpc	25XjR
+2	8	13		וַ/יַּֽאֲבֶל	c/56	HC/Vhw3ms	25jaD
+2	8	14		חֵ֥ל	2426	HNcmsa	25W7V
+2	8	15		וְ/חוֹמָ֖ה	c/2346	HC/Ncfsa	25U2Y
+2	8	16		יַחְדָּ֥ו	3162 b	HD	258na
+2	8	17		אֻמְלָֽלוּ	535	HVKp3cp	25sgw
+2	9	1		טָבְע֤וּ	2883	HVqp3cp	25MDX
+2	9	2		בָ/אָ֨רֶץ֙	b/776	HRd/Ncbsa	25pPp
+2	9	3		שְׁעָרֶ֔י/הָ	8179	HNcmpc/Sp3fs	25ieN
+2	9	4		אִבַּ֥ד	6	HVpp3ms	25Csj
+2	9	5		וְ/שִׁבַּ֖ר	c/7665	HC/Vpp3ms	25rHn
+2	9	6		בְּרִיחֶ֑י/הָ	1280	HNcmpc/Sp3fs	25ViB
+2	9	7		מַלְכָּ֨/הּ	4428	HNcmsc/Sp3fs	25CFo
+2	9	8		וְ/שָׂרֶ֤י/הָ	c/8269	HC/Ncmpc/Sp3fs	255Ja
+2	9	9		בַ/גּוֹיִם֙	b/1471 a	HRd/Ncmpa	25UXS
+2	9	10		אֵ֣ין	369	HTn	25YQ8
+2	9	11		תּוֹרָ֔ה	8451	HNcfsa	25Abd
+2	9	12		גַּם	1571	HTa	252UV
+2	9	13		נְבִיאֶ֕י/הָ	5030	HNcmpc/Sp3fs	25ZtS
+2	9	14		לֹא	3808	HTn	25gMU
+2	9	15		מָצְא֥וּ	4672	HVqp3cp	25nWb
+2	9	16		חָז֖וֹן	2377	HNcmsa	25GXk
+2	9	17		מֵ/יְהוָֽה	m/3068	HR/Np	25TZa
+2	10	1		יֵשְׁב֨וּ	3427	HVqi3mp	255qp
+2	10	2		לָ/אָ֤רֶץ	l/776	HRd/Ncbsa	25uHZ
+2	10	3		יִדְּמוּ֙	1826 a	HVqi3mp	25pAL
+2	10	4		זִקְנֵ֣י	2205	HAampc	25hSr
+2	10	5		בַת	1323	HNcfsc	25ZMk
+2	10	6		צִיּ֔וֹן	6726	HNp	25irW
+2	10	7		הֶֽעֱל֤וּ	5927	HVhp3cp	25x72
+2	10	8		עָפָר֙	6083	HNcmsa	25FYV
+2	10	9		עַל	5921 a	HR	25Uoo
+2	10	10		רֹאשָׁ֔/ם	7218 a	HNcmsc/Sp3mp	25sC3
+2	10	11		חָגְר֖וּ	2296	HVqp3cp	254CS
+2	10	12		שַׂקִּ֑ים	8242	HNcmpa	256n2
+2	10	13		הוֹרִ֤ידוּ	3381	HVhp3cp	25HqY
+2	10	14		לָ/אָ֨רֶץ֙	l/776	HRd/Ncbsa	25BFZ
+2	10	15		רֹאשָׁ֔/ן	7218 a	HNcmsc/Sp3fp	25shy
+2	10	16		בְּתוּלֹ֖ת	1330	HNcfpc	25nzj
+2	10	17		יְרוּשָׁלִָֽם	3389	HNp	25vpT
+2	11	1		כָּל֨וּ	3615	HVqp3cp	253Sx
+2	11	2		בַ/דְּמָע֤וֹת	b/1832	HRd/Ncfpa	25qVv
+2	11	3		עֵינַ/י֙	5869 a	HNcbdc/Sp1cs	25Kov
+2	11	4		חֳמַרְמְר֣וּ	2560 a	HVjp3cp	25HNy
+2	11	5		מֵעַ֔/י	4578	HNcmpc/Sp1cs	25Ta6
+2	11	6		נִשְׁפַּ֤ךְ	8210	HVNp3ms	25ER2
+2	11	7		לָ/אָ֨רֶץ֙	l/776	HRd/Ncbsa	25yP1
+2	11	8		כְּבֵדִ֔/י	3516	HNcfsc/Sp1cs	25w4T
+2	11	9		עַל	5921 a	HR	25Cyx
+2	11	10		שֶׁ֖בֶר	7667	HNcmsc	25qTT
+2	11	11		בַּת	1323	HNcfsc	25m55
+2	11	12		עַמִּ֑/י	5971 a	HNcmsc/Sp1cs	25AF1
+2	11	13		בֵּֽ/עָטֵ֤ף	b/5848 c	HR/VNc	255ED
+2	11	14		עוֹלֵל֙	5768	HNcmsa	25zCS
+2	11	15		וְ/יוֹנֵ֔ק	c/3243	HC/Vqrmsa	25LsC
+2	11	16		בִּ/רְחֹב֖וֹת	b/7339	HR/Ncfpc	25B4x
+2	11	17		קִרְיָֽה	7151	HNcfsa	25JB6
+2	12	1		לְ/אִמֹּתָ/ם֙	l/517	HR/Ncfpc/Sp3mp	25LzS
+2	12	2		יֹֽאמְר֔וּ	559	HVqi3mp	2583E
+2	12	3		אַיֵּ֖ה	346	HTi	25hQD
+2	12	4		דָּגָ֣ן	1715	HNcmsa	25LZD
+2	12	5		וָ/יָ֑יִן	c/3196	HC/Ncmsa	256bH
+2	12	6		בְּ/הִֽתְעַטְּפָ֤/ם	b/5848 c	HR/Vtc/Sp3mp	25Ekx
+2	12	7		כֶּֽ/חָלָל֙	k/2491 a	HRd/Aamsa	25PG7
+2	12	8		בִּ/רְחֹב֣וֹת	b/7339	HR/Ncfpc	25EL8
+2	12	9		עִ֔יר	5892 b	HNcfsa	25ufm
+2	12	10		בְּ/הִשְׁתַּפֵּ֣ךְ	b/8210	HR/Vtc	25XSi
+2	12	11		נַפְשָׁ֔/ם	5315	HNcbsc/Sp3mp	25ELV
+2	12	12		אֶל	413	HR	25Y6w
+2	12	13		חֵ֖יק	2436	HNcmsc	25qLR
+2	12	14		אִמֹּתָֽ/ם	517	HNcfpc/Sp3mp	25vfq
+2	13	1		מָֽה	4100	HTi	25Qsx
+2	13	2		אֲעִידֵ֞/ךְ	5749 b	HVhi1cs/Sp2fs	258KZ
+2	13	3		מָ֣ה	4100	HTi	25GXq
+2	13	4		אֲדַמֶּה	1819	HVpi1cs	25iCi
+2	13	5		לָּ֗/ךְ	l	HR/Sp2fs	25vwH
+2	13	6		הַ/בַּת֙	d/1323	HTd/Ncfsa	25dbM
+2	13	7		יְר֣וּשָׁלִַ֔ם	3389	HNp	25Dqb
+2	13	8		מָ֤ה	4100	HTi	25kCD
+2	13	9		אַשְׁוֶה	7737 a	HVhi1cs	25XgW
+2	13	10		לָּ/ךְ֙	l	HR/Sp2fs	256PV
+2	13	11		וַ/אֲנַֽחֲמֵ֔/ךְ	c/5162	HC/Vpi1cs/Sp2fs	25qGs
+2	13	12		בְּתוּלַ֖ת	1330	HNcfsc	25w7p
+2	13	13		בַּת	1323	HNcfsc	25k7H
+2	13	14		צִיּ֑וֹן	6726	HNp	25r6F
+2	13	15		כִּֽי	3588 a	HC	25Ugz
+2	13	16		גָד֥וֹל	1419 a	HAamsa	25Mjg
+2	13	17		כַּ/יָּ֛ם	k/3220	HRd/Ncmsa	25mdR
+2	13	18		שִׁבְרֵ֖/ךְ	7667	HNcmsc/Sp2fs	25eWA
+2	13	19		מִ֥י	4310	HTi	25CqN
+2	13	20		יִרְפָּא	7495	HVqi3ms	25Cpt
+2	13	21		לָֽ/ךְ	l	HR/Sp2fs	25aSi
+2	14	1		נְבִיאַ֗יִ/ךְ	5030	HNcmpc/Sp2fs	257VU
+2	14	2		חָ֤זוּ	2372	HVqp3cp	25eK3
+2	14	3		לָ/ךְ֙	l	HR/Sp2fs	25c63
+2	14	4		שָׁ֣וְא	7723	HNcmsa	25TuL
+2	14	5		וְ/תָפֵ֔ל	c/8602 a	HC/Aamsa	25emQ
+2	14	6		וְ/לֹֽא	c/3808	HC/Tn	25uf4
+2	14	7		גִלּ֥וּ	1540	HVpp3cp	25jQv
+2	14	8		עַל	5921 a	HR	25ME1
+2	14	9		עֲוֺנֵ֖/ךְ	5771	HNcbsc/Sp2fs	25ht4
+2	14	10		לְ/הָשִׁ֣יב	l/7725	HR/Vhc	253Yo
+2	14	11	x-ketiv	שבית/ך	7622	HNcfsc/Sp2fs	25pYb
+2	14	12		שְׁבוּתֵ֑/ךְ	7622	HNcfsc/Sp2fs	25g5u
+2	14	13		וַ/יֶּ֣חֱזוּ	c/2372	HC/Vqw3mp	25w6U
+2	14	14		לָ֔/ךְ	l	HR/Sp2fs	25ifL
+2	14	15		מַשְׂא֥וֹת	4864	HNcfpc	25LZU
+2	14	16		שָׁ֖וְא	7723	HNcmsa	25yHT
+2	14	17		וּ/מַדּוּחִֽים	c/4065	HC/Ncmpa	259Dq
+2	15	1		סָֽפְק֨וּ	5606 a	HVqp3cp	257Vg
+2	15	2		עָלַ֤יִ/ךְ	5921 a	HR/Sp2fs	253LR
+2	15	3		כַּפַּ֨יִם֙	3709	HNcfda	25vdQ
+2	15	4		כָּל	3605	HNcmsc	25zAa
+2	15	5		עֹ֣בְרֵי	5674 a	HVqrmpc	25HK3
+2	15	6		דֶ֔רֶךְ	1870	HNcbsa	25sCi
+2	15	7		שָֽׁרְקוּ֙	8319	HVqp3cp	25S3d
+2	15	8		וַ/יָּנִ֣עוּ	c/5128	HC/Vhw3mp	25RFe
+2	15	9		רֹאשָׁ֔/ם	7218 a	HNcmsc/Sp3mp	25PfQ
+2	15	10		עַל	5921 a	HR	25AwN
+2	15	11		בַּ֖ת	1323	HNcfsc	25khc
+2	15	12		יְרוּשָׁלִָ֑ם	3389	HNp	25kYA
+2	15	13		הֲ/זֹ֣את	i/2063	HTi/Pdxfs	25u6F
+2	15	14		הָ/עִ֗יר	d/5892 b	HTd/Ncfsa	25PYJ
+2	15	15		שֶׁ/יֹּֽאמְרוּ֙	s/559	HTr/Vqi3mp	251Za
+2	15	16		כְּלִ֣ילַת	3632	HAafsc	25gam
+2	15	17		יֹ֔פִי	3308	HNcmsa	25un5
+2	15	18		מָשׂ֖וֹשׂ	4885	HNcmsa	25WSe
+2	15	19		לְ/כָל	l/3605	HR/Ncmsc	25AFs
+2	15	20		הָ/אָֽרֶץ	d/776	HTd/Ncbsa	25aJe
+2	16	1		פָּצ֨וּ	6475	HVqp3cp	25g2t
+2	16	2		עָלַ֤יִ/ךְ	5921 a	HR/Sp2fs	258HV
+2	16	3		פִּי/הֶם֙	6310	HNcmsc/Sp3mp	25j8W
+2	16	4		כָּל	3605	HNcmsc	25h73
+2	16	5		א֣וֹיְבַ֔יִ/ךְ	341	HVqrmpc/Sp2fs	259Yh
+2	16	6		שָֽׁרְקוּ֙	8319	HVqp3cp	25SkM
+2	16	7		וַ/יַּֽחַרְקוּ	c/2786	HC/Vqw3mp	25yXK
+2	16	8		שֵׁ֔ן	8127	HNcbsa	25hDf
+2	16	9		אָמְר֖וּ	559	HVqp3cp	25PuA
+2	16	10		בִּלָּ֑עְנוּ	1104	HVpp1cp	25myi
+2	16	11		אַ֣ךְ	389	HTa	25YLn
+2	16	12		זֶ֥ה	2088	HPdxms	25AXU
+2	16	13		הַ/יּ֛וֹם	d/3117	HTd/Ncmsa	25reD
+2	16	14		שֶׁ/קִּוִּינֻ֖/הוּ	s/6960 a	HTr/Vpp1cp/Sp3ms	25VFM
+2	16	15		מָצָ֥אנוּ	4672	HVqp1cp	25SGf
+2	16	16		רָאִֽינוּ	7200	HVqp1cp	259jX
+2	17	1		עָשָׂ֨ה	6213 a	HVqp3ms	256t4
+2	17	2		יְהוָ֜ה	3068	HNp	25Yu7
+2	17	3		אֲשֶׁ֣ר	834 a	HTr	25vL9
+2	17	4		זָמָ֗ם	2161	HVqp3ms	25G2d
+2	17	5		בִּצַּ֤ע	1214	HVpp3ms	25xY3
+2	17	6		אֶמְרָת/וֹ֙	565 b	HNcfsc/Sp3ms	25Zmd
+2	17	7		אֲשֶׁ֣ר	834 a	HTr	25Wyn
+2	17	8		צִוָּ֣ה	6680	HVpp3ms	25njg
+2	17	9		מִֽ/ימֵי	m/3117	HR/Ncmpc	25L6G
+2	17	10		קֶ֔דֶם	6924 a	HNcmsa	25EDP
+2	17	11		הָרַ֖ס	2040	HVqp3ms	25QUP
+2	17	12		וְ/לֹ֣א	c/3808	HC/Tn	25fv8
+2	17	13		חָמָ֑ל	2550	HVqp3ms	252SX
+2	17	14		וַ/יְשַׂמַּ֤ח	c/8055	HC/Vpw3ms	25pwZ
+2	17	15		עָלַ֨יִ/ךְ֙	5921 a	HR/Sp2fs	25KKJ
+2	17	16		אוֹיֵ֔ב	341	HVqrmsa	25U9v
+2	17	17		הֵרִ֖ים	7311 a	HVhp3ms	253V4
+2	17	18		קֶ֥רֶן	7161 a	HNcbsc	25gJ1
+2	17	19		צָרָֽיִ/ךְ	6862 c	HNcmpc/Sp2fs	25rWk
+2	18	1		צָעַ֥ק	6817	HVqp3ms	256gQ
+2	18	2		לִבָּ֖/ם	3820 a	HNcmsc/Sp3mp	25mSF
+2	18	3		אֶל	413	HR	25awX
+2	18	4		אֲדֹנָ֑/י	136	HNcmpc/Sp1cs	25wik
+2	18	5		חוֹמַ֣ת	2346	HNcfsc	25CVM
+2	18	6		בַּת	1323	HNcfsc	25gbT
+2	18	7		צִ֠יּוֹן	6726	HNp	25wMq
+2	18	8		הוֹרִ֨ידִי	3381	HVhv2fs	252GY
+2	18	9		כַ/נַּ֤חַל	k/5158 a	HRd/Ncmsa	25Doj
+2	18	10		דִּמְעָה֙	1832	HNcfsa	25m3h
+2	18	11		יוֹמָ֣ם	3119	HD	25Djb
+2	18	12		וָ/לַ֔יְלָה	c/3915	HC/Ncmsa	25F5r
+2	18	13		אַֽל	408	HTn	25V4p
+2	18	14		תִּתְּנִ֤י	5414	HVqj2fs	25HsZ
+2	18	15		פוּגַת֙	6314	HNcfsa	25DgA
+2	18	16		לָ֔/ךְ	l	HR/Sp2fs	25QCa
+2	18	17		אַל	408	HTn	25nps
+2	18	18		תִּדֹּ֖ם	1826 a	HVqj3fs	25oA2
+2	18	19		בַּת	1323	HNcfsc	25CYW
+2	18	20		עֵינֵֽ/ךְ	5869 a	HNcbsc/Sp2fs	25TDs
+2	19	1		ק֣וּמִי	6965 b	HVqv2fs	25fhx
+2	19	2		רֹ֣נִּי	7442 b	HVqv2fs	25JPp
+2	19	3	x-ketiv	ב/ליל	b/3915	HRd/Ncmsa	25dWm
+2	19	4		בַ/לַּ֗יְלָה	b/3915	HRd/Ncmsa	25BYg
+2	19	5		לְ/רֹאשׁ֙	l/7218 a	HR/Ncmsc	259by
+2	19	6		אַשְׁמֻר֔וֹת	821	HNcfpa	25VRt
+2	19	7		שִׁפְכִ֤י	8210	HVqv2fs	25CPS
+2	19	8		כַ/מַּ֨יִם֙	k/4325	HRd/Ncmpa	25fiV
+2	19	9		לִבֵּ֔/ךְ	3820 a	HNcmsc/Sp2fs	25vAa
+2	19	10		נֹ֖כַח	5227	HR	258Na
+2	19	11		פְּנֵ֣י	6440	HNcbpc	25RZN
+2	19	12		אֲדֹנָ֑/י	136	HNcmpc/Sp1cs	25krV
+2	19	13		שְׂאִ֧י	5375	HVqv2fs	25sQy
+2	19	14		אֵלָ֣י/ו	413	HR/Sp3ms	25asy
+2	19	15		כַּפַּ֗יִ/ךְ	3709	HNcfdc/Sp2fs	25rxG
+2	19	16		עַל	5921 a	HR	256fj
+2	19	17		נֶ֨פֶשׁ֙	5315	HNcbsc	25oGi
+2	19	18		עֽוֹלָלַ֔יִ/ךְ	5768	HNcmpc/Sp2fs	25PrG
+2	19	19		הָ/עֲטוּפִ֥ים	d/5848 c	HTd/Vqsmpa	25Ao4
+2	19	20		בְּ/רָעָ֖ב	b/7458	HR/Ncmsa	25fjK
+2	19	21		בְּ/רֹ֥אשׁ	b/7218 a	HR/Ncmsc	25Dwm
+2	19	22		כָּל	3605	HNcmsc	2531Z
+2	19	23		חוּצֽוֹת	2351	HNcmpa	25nRw
+2	20	1		רְאֵ֤ה	7200	HVqv2ms	25qjY
+2	20	2		יְהוָה֙	3068	HNp	252oH
+2	20	3		וְֽ/הַבִּ֔יטָ/ה	c/5027	HC/Vhv2ms/Sh	25H3W
+2	20	4		לְ/מִ֖י	l/4310	HR/Ti	25wQL
+2	20	5		עוֹלַ֣לְתָּ	5953 a	HVmp2ms	254LW
+2	20	6		כֹּ֑ה	3541	HD	25q4j
+2	20	7		אִם	518 a	HC	25Jdu
+2	20	8		תֹּאכַ֨לְנָה	398	HVqi3fp	25cgg
+2	20	9		נָשִׁ֤ים	802	HNcfpa	25x5W
+2	20	10		פִּרְיָ/ם֙	6529	HNcmsc/Sp3mp	25s3h
+2	20	11		עֹלֲלֵ֣י	5768	HNcmpc	25ymv
+2	20	12		טִפֻּחִ֔ים	2949	HNcmpa	2562T
+2	20	13		אִם	518 a	HC	25NmZ
+2	20	14		יֵהָרֵ֛ג	2026	HVNi3ms	25RD4
+2	20	15		בְּ/מִקְדַּ֥שׁ	b/4720	HR/Ncmsc	25Xjv
+2	20	16		אֲדֹנָ֖/י	136	HNcmpc/Sp1cs	25WVH
+2	20	17		כֹּהֵ֥ן	3548	HNcmsa	25WMK
+2	20	18		וְ/נָבִֽיא	c/5030	HC/Ncmsa	25ctU
+2	21	1		שָׁכְב֨וּ	7901	HVqp3cp	25CmP
+2	21	2		לָ/אָ֤רֶץ	l/776	HRd/Ncbsa	25LY2
+2	21	3		חוּצוֹת֙	2351	HNcmpa	25k7w
+2	21	4		נַ֣עַר	5288	HNcmsa	25JFy
+2	21	5		וְ/זָקֵ֔ן	c/2205	HC/Aamsa	25Amf
+2	21	6		בְּתוּלֹתַ֥/י	1330	HNcfpc/Sp1cs	25i9m
+2	21	7		וּ/בַחוּרַ֖/י	c/970	HC/Ncmpc/Sp1cs	25FCo
+2	21	8		נָפְל֣וּ	5307	HVqp3cp	25wNS
+2	21	9		בֶ/חָ֑רֶב	b/2719	HRd/Ncfsa	25XPV
+2	21	10		הָרַ֨גְתָּ֙	2026	HVqp2ms	25K9E
+2	21	11		בְּ/י֣וֹם	b/3117	HR/Ncmsc	25sNR
+2	21	12		אַפֶּ֔/ךָ	639	HNcmsc/Sp2ms	25pww
+2	21	13		טָבַ֖חְתָּ	2873	HVqp2ms	25d1k
+2	21	14		לֹ֥א	3808	HTn	25Gpp
+2	21	15		חָמָֽלְתָּ	2550	HVqp2ms	25T85
+2	22	1		תִּקְרָא֩	7121	HVqi2ms	25E2x
+2	22	2		כְ/י֨וֹם	k/3117	HR/Ncmsc	25vUM
+2	22	3		מוֹעֵ֤ד	4150	HNcmsa	25pMW
+2	22	4		מְגוּרַ/י֙	4032	HNcmpc/Sp1cs	25fiZ
+2	22	5		מִ/סָּבִ֔יב	m/5439	HR/Ncbsa	25FQf
+2	22	6		וְ/לֹ֥א	c/3808	HC/Tn	25Gbx
+2	22	7		הָיָ֛ה	1961	HVqp3ms	25H82
+2	22	8		בְּ/י֥וֹם	b/3117	HR/Ncmsc	25XaZ
+2	22	9		אַף	639	HTa	25RGz
+2	22	10		יְהוָ֖ה	3068	HNp	25tQ1
+2	22	11		פָּלִ֣יט	6412 a	HNcmsa	25oSR
+2	22	12		וְ/שָׂרִ֑יד	c/8300	HC/Ncmsa	25rUR
+2	22	13		אֲשֶׁר	834 a	HTr	25NME
+2	22	14		טִפַּ֥חְתִּי	2946	HVpp1cs	25eQs
+2	22	15		וְ/רִבִּ֖יתִי	c/7235 a	HC/Vpp1cs	25fE2
+2	22	16		אֹיְבִ֥/י	341	HVqrmsc/Sp1cs	25rio
+2	22	17		כִלָּֽ/ם	3615	HVpp3ms/Sp3mp	25hum
+3	1	1		אֲנִ֤י	589	HPp1cs	25UG5
+3	1	2		הַ/גֶּ֨בֶר֙	d/1397	HTd/Ncmsa	25tZb
+3	1	3		רָאָ֣ה	7200	HVqp3ms	25UEd
+3	1	4		עֳנִ֔י	6040	HNcmsa	25zit
+3	1	5		בְּ/שֵׁ֖בֶט	b/7626	HR/Ncmsc	25pcg
+3	1	6		עֶבְרָתֽ/וֹ	5678	HNcfsc/Sp3ms	251pD
+3	2	1		אוֹתִ֥/י	853	HTo/Sp1cs	25UCh
+3	2	2		נָהַ֛ג	5090 a	HVqp3ms	25jZZ
+3	2	3		וַ/יֹּלַ֖ךְ	c/3212	HC/Vhw3ms	257a3
+3	2	4		חֹ֥שֶׁךְ	2822	HNcmsa	25k23
+3	2	5		וְ/לֹא	c/3808	HC/Tn	25nxs
+3	2	6		אֽוֹר	216	HNcbsa	25Rs7
+3	3	1		אַ֣ךְ	389	HTa	25x1q
+3	3	2		בִּ֥/י	b	HR/Sp1cs	25ozK
+3	3	3		יָשֻׁ֛ב	7725	HVqi3ms	256Tj
+3	3	4		יַהֲפֹ֥ךְ	2015	HVqi3ms	25Wp4
+3	3	5		יָד֖/וֹ	3027	HNcbsc/Sp3ms	25ayu
+3	3	6		כָּל	3605	HNcmsc	25izi
+3	3	7		הַ/יּֽוֹם	d/3117	HTd/Ncmsa	25cNi
+3	4	1		בִּלָּ֤ה	1086	HVpp3ms	252Z3
+3	4	2		בְשָׂרִ/י֙	1320	HNcmsc/Sp1cs	25bTo
+3	4	3		וְ/עוֹרִ֔/י	c/5785	HC/Ncmsc/Sp1cs	25hvK
+3	4	4		שִׁבַּ֖ר	7665	HVpp3ms	25XQw
+3	4	5		עַצְמוֹתָֽ/י	6106	HNcfpc/Sp1cs	25Ssi
+3	5	1		בָּנָ֥ה	1129	HVqp3ms	25UtQ
+3	5	2		עָלַ֛/י	5921 a	HR/Sp1cs	25MVx
+3	5	3		וַ/יַּקַּ֖ף	c/5362 b	HC/Vhw3ms	254dp
+3	5	4		רֹ֥אשׁ	7219	HNcmsa	25nsw
+3	5	5		וּ/תְלָאָֽה	c/8513	HC/Ncfsa	25KGj
+3	6	1		בְּ/מַחֲשַׁכִּ֥ים	b/4285	HR/Ncmpa	258xz
+3	6	2		הוֹשִׁיבַ֖/נִי	3427	HVhp3ms/Sp1cs	25y1Z
+3	6	3		כְּ/מֵתֵ֥י	k/4191	HR/Vqrmpc	25Uq9
+3	6	4		עוֹלָֽם	5769	HNcmsa	25TiM
+3	7	1		גָּדַ֧ר	1443	HVqp3ms	25NqW
+3	7	2		בַּעֲדִ֛/י	1157	HR/Sp1cs	25emv
+3	7	3		וְ/לֹ֥א	c/3808	HC/Tn	253r3
+3	7	4		אֵצֵ֖א	3318	HVqi1cs	25sEP
+3	7	5		הִכְבִּ֥יד	3513	HVhp3ms	25BYi
+3	7	6		נְחָשְׁתִּֽ/י	5178 a	HNcfsc/Sp1cs	25K78
+3	8	1		גַּ֣ם	1571	HTa	25LG5
+3	8	2		כִּ֤י	3588 a	HC	25pvY
+3	8	3		אֶזְעַק֙	2199	HVqi1cs	25B6g
+3	8	4		וַ/אֲשַׁוֵּ֔עַ	c/7768	HC/Vpi1cs	25UDg
+3	8	5		שָׂתַ֖ם	5640 b	HVqp3ms	25Baw
+3	8	6		תְּפִלָּתִֽ/י	8605	HNcfsc/Sp1cs	25MZ9
+3	9	1		גָּדַ֤ר	1443	HVqp3ms	25Svn
+3	9	2		דְּרָכַ/י֙	1870	HNcbpc/Sp1cs	25x62
+3	9	3		בְּ/גָזִ֔ית	b/1496	HR/Ncfsa	25dQK
+3	9	4		נְתִיבֹתַ֖/י	5410 b	HNcbpc/Sp1cs	25dDm
+3	9	5		עִוָּֽה	5753 a	HVpp3ms	25XwG
+3	10	1		דֹּ֣ב	1677	HNcmsa	25iPC
+3	10	2		אֹרֵ֥ב	693	HVqrmsa	258E1
+3	10	3		הוּא֙	1931	HPp3ms	254vF
+3	10	4		לִ֔/י	l	HR/Sp1cs	25y7z
+3	10	5	x-ketiv	אריה	738 a	HNcmsa	25bvs
+3	10	6		אֲרִ֖י	738 a	HNcmsa	25Gxe
+3	10	7		בְּ/מִסְתָּרִֽים	b/4565	HR/Ncmpa	25Qjd
+3	11	1		דְּרָכַ֥/י	1870	HNcbpc/Sp1cs	25t98
+3	11	2		סוֹרֵ֛ר	5493	HVop3ms	25YfW
+3	11	3		וַֽ/יְפַשְּׁחֵ֖/נִי	c/6582	HC/Vpw3ms/Sp1cs	25P1s
+3	11	4		שָׂמַ֥/נִי	7760 a	HVqp3ms/Sp1cs	25a9X
+3	11	5		שֹׁמֵֽם	8076	HVqrmsa	25RUp
+3	12	1		דָּרַ֤ךְ	1869	HVqp3ms	257Kw
+3	12	2		קַשְׁת/וֹ֙	7198	HNcfsc/Sp3ms	25E6n
+3	12	3		וַ/יַּצִּיבֵ֔/נִי	c/5324	HC/Vhw3ms/Sp1cs	254YU
+3	12	4		כַּ/מַּטָּרָ֖א	k/4307	HRd/Ncfsa	25yMS
+3	12	5		לַ/חֵֽץ	l/2671	HRd/Ncmsa	25RZD
+3	13	1		הֵבִיא֙	935	HVhp3ms	25T97
+3	13	2		בְּ/כִלְיוֹתָ֔/י	b/3629	HR/Ncfpc/Sp1cs	255L1
+3	13	3		בְּנֵ֖י	1121 a	HNcmpc	25nY7
+3	13	4		אַשְׁפָּתֽ/וֹ	827	HNcfsc/Sp3ms	25S83
+3	14	1		הָיִ֤יתִי	1961	HVqp1cs	25SDb
+3	14	2		שְּׂחֹק֙	7814	HNcmsa	25DKS
+3	14	3		לְ/כָל	l/3605	HR/Ncmsc	25YKr
+3	14	4		עַמִּ֔/י	5971 a	HNcmsc/Sp1cs	25r66
+3	14	5		נְגִינָתָ֖/ם	5058	HNcfsc/Sp3mp	25TW5
+3	14	6		כָּל	3605	HNcmsc	25KaN
+3	14	7		הַ/יּֽוֹם	d/3117	HTd/Ncmsa	25FsE
+3	15	1		הִשְׂבִּיעַ֥/נִי	7646	HVhp3ms/Sp1cs	257Np
+3	15	2		בַ/מְּרוֹרִ֖ים	b/4844	HRd/Ncmpa	25965
+3	15	3		הִרְוַ֥/נִי	7301	HVhp3ms/Sp1cs	25MeK
+3	15	4		לַעֲנָֽה	3939	HNcfsa	25Pw8
+3	16	1		וַ/יַּגְרֵ֤ס	c/1638	HC/Vhw3ms	25Bxn
+3	16	2		בֶּֽ/חָצָץ֙	b/2687	HRd/Ncmsa	25Gne
+3	16	3		שִׁנָּ֔/י	8127	HNcbdc/Sp1cs	25uXm
+3	16	4		הִכְפִּישַׁ֖/נִי	3728	HVhp3ms/Sp1cs	25Cmf
+3	16	5		בָּ/אֵֽפֶר	b/665	HRd/Ncmsa	25K6T
+3	17	1		וַ/תִּזְנַ֧ח	c/2186 a	HC/Vqw3fs	25XFF
+3	17	2		מִ/שָּׁל֛וֹם	m/7965	HR/Ncmsa	25gKP
+3	17	3		נַפְשִׁ֖/י	5315	HNcbsc/Sp1cs	25YUv
+3	17	4		נָשִׁ֥יתִי	5382	HVqp1cs	25HQ9
+3	17	5		טוֹבָֽה	2896 c	HAafsa	25D5P
+3	18	1		וָ/אֹמַר֙	c/559	HC/Vqw1cs	25pVx
+3	18	2		אָבַ֣ד	6	HVqp3ms	25WAq
+3	18	3		נִצְחִ֔/י	5331	HNcmsc/Sp1cs	25PxM
+3	18	4		וְ/תוֹחַלְתִּ֖/י	c/8431	HC/Ncfsc/Sp1cs	25oCH
+3	18	5		מֵ/יְהוָֽה	m/3068	HR/Np	25tQE
+3	19	1		זְכָר	2142	HVqv2ms	25wtX
+3	19	2		עָנְיִ֥/י	6040	HNcmsc/Sp1cs	25Hso
+3	19	3		וּ/מְרוּדִ֖/י	c/4788	HC/Ncmsc/Sp1cs	25yS3
+3	19	4		לַעֲנָ֥ה	3939	HNcfsa	25PHG
+3	19	5		וָ/רֹֽאשׁ	c/7219	HC/Ncmsa	251go
+3	20	1		זָכ֣וֹר	2142	HVqa	25XLB
+3	20	2		תִּזְכּ֔וֹר	2142	HVqi3fs	25KTJ
+3	20	3	x-ketiv	ו/תשיח	c/7743	HC/Vhi3fs	25twL
+3	20	4		וְ/תָשׁ֥וֹחַ	c/7743	HC/Vqi3fs	253MS
+3	20	5		עָלַ֖/י	5921 a	HR/Sp1cs	25GnD
+3	20	6		נַפְשִֽׁ/י	5315	HNcbsc/Sp1cs	25rVJ
+3	21	1		זֹ֛את	2063	HPdxfs	25w2R
+3	21	2		אָשִׁ֥יב	7725	HVhi1cs	25JsR
+3	21	3		אֶל	413	HR	25Sv8
+3	21	4		לִבִּ֖/י	3820 a	HNcmsc/Sp1cs	25adR
+3	21	5		עַל	5921 a	HR	25xek
+3	21	6		כֵּ֥ן	3651 c	HTm	25UEH
+3	21	7		אוֹחִֽיל	3176	HVhi1cs	25L2G
+3	22	1		חַֽסְדֵ֤י	2617 a	HNcmpc	25oPm
+3	22	2		יְהוָה֙	3068	HNp	25azH
+3	22	3		כִּ֣י	3588 a	HC	25fZA
+3	22	4		לֹא	3808	HTn	256Hj
+3	22	5		תָ֔מְנוּ	8552	HVqp1cp	25UCE
+3	22	6		כִּ֥י	3588 a	HC	25dvY
+3	22	7		לֹא	3808	HTn	25YkN
+3	22	8		כָל֖וּ	3615	HVqp3cp	25k6s
+3	22	9		רַחֲמָֽי/ו	7356 b	HNcmpc/Sp3ms	25awY
+3	23	1		חֲדָשִׁים֙	2319	HAampa	25Wb1
+3	23	2		לַ/בְּקָרִ֔ים	l/1242	HRd/Ncmpa	25EAT
+3	23	3		רַבָּ֖ה	7227 a	HAafsa	25MzG
+3	23	4		אֱמוּנָתֶֽ/ךָ	530	HNcfsc/Sp2ms	25RBM
+3	24	1		חֶלְקִ֤/י	2506 a	HNcmsc/Sp1cs	25wzx
+3	24	2		יְהוָה֙	3068	HNp	257Vm
+3	24	3		אָמְרָ֣ה	559	HVqp3fs	25vSy
+3	24	4		נַפְשִׁ֔/י	5315	HNcbsc/Sp1cs	25qgp
+3	24	5		עַל	5921 a	HR	25bcQ
+3	24	6		כֵּ֖ן	3651 c	HTm	25GFP
+3	24	7		אוֹחִ֥יל	3176	HVhi1cs	25QZx
+3	24	8		לֽ/וֹ	l	HR/Sp3ms	25JH9
+3	25	1		ט֤וֹב	2896 a	HAamsa	25Cdg
+3	25	2		יְהוָה֙	3068	HNp	25Uv6
+3	25	3		לְ/קוָֹ֔/ו	l/6960 a	HR/Vqrmpc/Sp3ms	25eec
+3	25	4		לְ/נֶ֖פֶשׁ	l/5315	HR/Ncbsa	25bea
+3	25	5		תִּדְרְשֶֽׁ/נּוּ	1875	HVqi3fs/Sp3ms	25zx5
+3	26	1		ט֤וֹב	2896 a	HAamsa	25SMW
+3	26	2		וְ/יָחִיל֙	c/3175	HC/Aamsa	25GYp
+3	26	3		וְ/דוּמָ֔ם	c/1748	HC/D	251GH
+3	26	4		לִ/תְשׁוּעַ֖ת	l/8668	HR/Ncfsc	253QW
+3	26	5		יְהוָֽה	3068	HNp	25tAW
+3	27	1		ט֣וֹב	2896 a	HAamsa	25DCB
+3	27	2		לַ/גֶּ֔בֶר	l/1397	HRd/Ncmsa	25r2Z
+3	27	3		כִּֽי	3588 a	HC	25don
+3	27	4		יִשָּׂ֥א	5375	HVqi3ms	25cdc
+3	27	5		עֹ֖ל	5923	HNcmsa	25Ybs
+3	27	6		בִּ/נְעוּרָֽי/ו	b/5271 a	HR/Ncbpc/Sp3ms	25iFe
+3	28	1		יֵשֵׁ֤ב	3427	HVqj3ms	259w8
+3	28	2		בָּדָד֙	910	HNcmsa	259fJ
+3	28	3		וְ/יִדֹּ֔ם	c/1826 a	HC/Vqj3ms	25rMg
+3	28	4		כִּ֥י	3588 a	HC	25T3v
+3	28	5		נָטַ֖ל	5190	HVqp3ms	25e37
+3	28	6		עָלָֽי/ו	5921 a	HR/Sp3ms	25F5j
+3	29	1		יִתֵּ֤ן	5414	HVqi3ms	25drK
+3	29	2		בֶּֽ/עָפָר֙	b/6083	HRd/Ncmsa	251TS
+3	29	3		פִּ֔י/הוּ	6310	HNcmsc/Sp3ms	25e65
+3	29	4		אוּלַ֖י	194	HD	25Fkx
+3	29	5		יֵ֥שׁ	3426	HTm	25ZVs
+3	29	6		תִּקְוָֽה	8615 b	HNcfsa	25bmu
+3	30	1		יִתֵּ֧ן	5414	HVqi3ms	25eis
+3	30	2		לְ/מַכֵּ֛/הוּ	l/5221	HR/Vhrmsc/Sp3ms	25B8V
+3	30	3		לֶ֖חִי	3895	HNcbsa	25gjk
+3	30	4		יִשְׂבַּ֥ע	7646	HVqj3ms	25tiD
+3	30	5		בְּ/חֶרְפָּֽה	b/2781	HR/Ncfsa	25kXw
+3	31	1		כִּ֣י	3588 a	HC	25cHm
+3	31	2		לֹ֥א	3808	HTn	25Loa
+3	31	3		יִזְנַ֛ח	2186 a	HVqi3ms	25NW8
+3	31	4		לְ/עוֹלָ֖ם	l/5769	HR/Ncmsa	25Ufy
+3	31	5		אֲדֹנָֽ/י	136	HNcmpc/Sp1cs	25FCe
+3	32	1		כִּ֣י	3588 b	HC	25CBn
+3	32	2		אִם	518 b	HC	25QFm
+3	32	3		הוֹגָ֔ה	3013	HVhp3ms	252st
+3	32	4		וְ/רִחַ֖ם	c/7355	HC/Vpq3ms	25rCW
+3	32	5		כְּ/רֹ֥ב	k/7230	HR/Ncbsc	257gm
+3	32	6	x-ketiv	חסד/ו	2617 a	HNcmsc/Sp3ms	25zkf
+3	32	7		חֲסָדָֽי/ו	2617 a	HNcmpc/Sp3ms	25941
+3	33	1		כִּ֣י	3588 a	HC	256C3
+3	33	2		לֹ֤א	3808	HTn	25WMb
+3	33	3		עִנָּה֙	6031 b	HVpp3ms	25ZgJ
+3	33	4		מִ/לִּבּ֔/וֹ	m/3820 a	HR/Ncmsc/Sp3ms	25Ft4
+3	33	5		וַ/יַּגֶּ֖ה	c/3013	HC/Vpw3ms	25iMP
+3	33	6		בְנֵי	1121 a	HNcmpc	25aom
+3	33	7		אִֽישׁ	376	HNcmsa	25xKf
+3	34	1		לְ/דַכֵּא֙	l/1792	HR/Vpc	25EnU
+3	34	2		תַּ֣חַת	8478	HR	25Zax
+3	34	3		רַגְלָ֔י/ו	7272	HNcfdc/Sp3ms	25Q2e
+3	34	4		כֹּ֖ל	3605	HNcmsc	25ZRJ
+3	34	5		אֲסִ֥ירֵי	615	HNcmpc	25YEi
+3	34	6		אָֽרֶץ	776	HNcbsa	25gvb
+3	35	1		לְ/הַטּוֹת֙	l/5186	HR/Vhc	25bJa
+3	35	2		מִשְׁפַּט	4941	HNcmsc	2589f
+3	35	3		גָּ֔בֶר	1397	HNcmsa	25re5
+3	35	4		נֶ֖גֶד	5048	HR	25Xh3
+3	35	5		פְּנֵ֥י	6440	HNcbpc	25EyU
+3	35	6		עֶלְיֽוֹן	5945 b	HAamsa	25aci
+3	36	1		לְ/עַוֵּ֤ת	l/5791	HR/Vpc	25kbc
+3	36	2		אָדָם֙	120	HNcmsa	25baF
+3	36	3		בְּ/רִיב֔/וֹ	b/7379	HR/Ncbsc/Sp3ms	25ZNU
+3	36	4		אֲדֹנָ֖/י	136	HNcmpc/Sp1cs	25KqQ
+3	36	5		לֹ֥א	3808	HTn	25gLV
+3	36	6		רָאָֽה	7200	HVqp3ms	25KTp
+3	37	1		מִ֣י	4310	HTi	25rzR
+3	37	2		זֶ֤ה	2088	HPdxms	25bh3
+3	37	3		אָמַר֙	559	HVqp3ms	25duZ
+3	37	4		וַ/תֶּ֔הִי	c/1961	HC/Vqw3fs	25YHi
+3	37	5		אֲדֹנָ֖/י	136	HNcmpc/Sp1cs	25GV7
+3	37	6		לֹ֥א	3808	HTn	25A76
+3	37	7		צִוָּֽה	6680	HVpp3ms	25eHZ
+3	38	1		מִ/פִּ֤י	m/6310	HR/Ncmsc	25ycY
+3	38	2		עֶלְיוֹן֙	5945 b	HAamsa	25ejK
+3	38	3		לֹ֣א	3808	HTn	25Jb3
+3	38	4		תֵצֵ֔א	3318	HVqi3fs	25XXt
+3	38	5		הָ/רָע֖וֹת	d/7451 c	HTd/Ncfpa	25rKT
+3	38	6		וְ/הַ/טּֽוֹב	c/d/2896 a	HC/Td/Aamsa	25Q8c
+3	39	1		מַה	4100	HTi	25rHh
+3	39	2		יִּתְאוֹנֵן֙	596	HVri3ms	25mUo
+3	39	3		אָדָ֣ם	120	HNcmsa	25Hfj
+3	39	4		חָ֔י	2416 a	HAamsa	25ACV
+3	39	5		גֶּ֖בֶר	1397	HNcmsa	25ioH
+3	39	6		עַל	5921 a	HR	25FCG
+3	39	7	x-ketiv	חטא/ו	2399	HNcmsc/Sp3ms	257Jo
+3	39	8		חֲטָאָֽי/ו	2399	HNcmpc/Sp3ms	25wKF
+3	40	1		נַחְפְּשָׂ֤ה	2664	HVqh1cp	25YU5
+3	40	2		דְרָכֵ֨י/נוּ֙	1870	HNcbpc/Sp1cp	25xmV
+3	40	3		וְֽ/נַחְקֹ֔רָה	c/2713	HC/Vqh1cp	25ZvX
+3	40	4		וְ/נָשׁ֖וּבָה	c/7725	HC/Vqh1cp	257Ch
+3	40	5		עַד	5704	HR	25S67
+3	40	6		יְהוָֽה	3068	HNp	25Hmd
+3	41	1		נִשָּׂ֤א	5375	HVqh1cp	254Yz
+3	41	2		לְבָבֵ֨/נוּ֙	3824	HNcmsc/Sp1cp	25zbA
+3	41	3		אֶל	413	HR	25koP
+3	41	4		כַּפָּ֔יִם	3709	HNcfda	25Mdv
+3	41	5		אֶל	413	HR	25TXv
+3	41	6		אֵ֖ל	410	HNcmsa	25pbV
+3	41	7		בַּ/שָּׁמָֽיִם	b/8064	HRd/Ncmpa	25MSY
+3	42	1		נַ֤חְנוּ	5168	HPp1cp	25GXC
+3	42	2		פָשַׁ֨עְנוּ֙	6586	HVqp1cp	25Y6k
+3	42	3		וּ/מָרִ֔ינוּ	c/4784	HC/Vqp1cp	25ctR
+3	42	4		אַתָּ֖ה	859 a	HPp2ms	25Qq3
+3	42	5		לֹ֥א	3808	HTn	25GdR
+3	42	6		סָלָֽחְתָּ	5545	HVqp2ms	25kV4
+3	43	1		סַכֹּ֤תָה	5526 b	HVqp2ms	25Zy7
+3	43	2		בָ/אַף֙	b/639	HR/Ncmsa	25ozy
+3	43	3		וַֽ/תִּרְדְּפֵ֔/נוּ	c/7291	HC/Vqw2ms/Sp1cp	25H6W
+3	43	4		הָרַ֖גְתָּ	2026	HVqp2ms	25297
+3	43	5		לֹ֥א	3808	HTn	25Eyi
+3	43	6		חָמָֽלְתָּ	2550	HVqp2ms	25kz6
+3	44	1		סַכּ֤וֹתָה	5526 b	HVqp2ms	25PZP
+3	44	2		בֶֽ/עָנָן֙	b/6051	HRd/Ncmsa	25tkv
+3	44	3		לָ֔/ךְ	l	HR/Sp2fs	25YJk
+3	44	4		מֵ/עֲב֖וֹר	m/5674 a	HR/Vqc	25zp3
+3	44	5		תְּפִלָּֽה	8605	HNcfsa	25GVz
+3	45	1		סְחִ֧י	5501	HNcmsa	25MRd
+3	45	2		וּ/מָא֛וֹס	c/3973	HC/Ncmsa	25Ci2
+3	45	3		תְּשִׂימֵ֖/נוּ	7760 a	HVqi2ms/Sp1cp	25TD8
+3	45	4		בְּ/קֶ֥רֶב	b/7130	HR/Ncmsc	256R1
+3	45	5		הָ/עַמִּֽים	d/5971 a	HTd/Ncmpa	25c7o
+3	46	1		פָּצ֥וּ	6475	HVqp3cp	252Ss
+3	46	2		עָלֵ֛י/נוּ	5921 a	HR/Sp1cp	25JyU
+3	46	3		פִּי/הֶ֖ם	6310	HNcmsc/Sp3mp	25uF7
+3	46	4		כָּל	3605	HNcmsc	25fbk
+3	46	5		אֹיְבֵֽי/נוּ	341	HVqrmpc/Sp1cp	25RxS
+3	47	1		פַּ֧חַד	6343	HNcmsa	25PTT
+3	47	2		וָ/פַ֛חַת	c/6354	HC/Ncmsa	251bY
+3	47	3		הָ֥יָה	1961	HVqp3ms	25GMz
+3	47	4		לָ֖/נוּ	l	HR/Sp1cp	25uCN
+3	47	5		הַ/שֵּׁ֥את	d/7612	HTd/Ncfsa	25Wmn
+3	47	6		וְ/הַ/שָּֽׁבֶר	c/d/7667	HC/Td/Ncmsa	25Lri
+3	48	1		פַּלְגֵי	6388	HNcmpc	25ymB
+3	48	2		מַ֨יִם֙	4325	HNcmpa	25fac
+3	48	3		תֵּרַ֣ד	3381	HVqi3fs	25X2q
+3	48	4		עֵינִ֔/י	5869 a	HNcbsc/Sp1cs	259d7
+3	48	5		עַל	5921 a	HR	25bj4
+3	48	6		שֶׁ֖בֶר	7667	HNcmsc	25ZRD
+3	48	7		בַּת	1323	HNcfsc	25iFV
+3	48	8		עַמִּֽ/י	5971 a	HNcmsc/Sp1cs	25JzQ
+3	49	1		עֵינִ֧/י	5869 a	HNcbsc/Sp1cs	25qbn
+3	49	2		נִגְּרָ֛ה	5064	HVNp3fs	25WeU
+3	49	3		וְ/לֹ֥א	c/3808	HC/Tn	25TMW
+3	49	4		תִדְמֶ֖ה	1820	HVqi3fs	25KvW
+3	49	5		מֵ/אֵ֥ין	m/369	HR/Tn	25wz5
+3	49	6		הֲפֻגֽוֹת	2014	HNcfpa	25g5b
+3	50	1		עַד	5704	HR	256Cg
+3	50	2		יַשְׁקִ֣יף	8259	HVhi3ms	25cqw
+3	50	3		וְ/יֵ֔רֶא	c/7200	HC/Vqi3ms	2576C
+3	50	4		יְהוָ֖ה	3068	HNp	25t1W
+3	50	5		מִ/שָּׁמָֽיִם	m/8064	HR/Ncmpa	25vfm
+3	51	1		עֵינִ/י֙	5869 a	HNcbsc/Sp1cs	25pjd
+3	51	2		עֽוֹלְלָ֣ה	5953 a	HVmp3fs	25Atm
+3	51	3		לְ/נַפְשִׁ֔/י	l/5315	HR/Ncbsc/Sp1cs	25vFb
+3	51	4		מִ/כֹּ֖ל	m/3605	HR/Ncmsc	25sFr
+3	51	5		בְּנ֥וֹת	1323	HNcfpc	25Q98
+3	51	6		עִירִֽ/י	5892 b	HNcfsc/Sp1cs	25e6Q
+3	52	1		צ֥וֹד	6679 a	HVqa	25Zzk
+3	52	2		צָד֛וּ/נִי	6679 a	HVqp3cp/Sp1cs	25Ynf
+3	52	3		כַּ/צִּפּ֖וֹר	k/6833	HRd/Ncbsa	255pP
+3	52	4		אֹיְבַ֥/י	341	HVqrmpc/Sp1cs	25Xxj
+3	52	5		חִנָּֽם	2600	HD	25eNB
+3	53	1		צָֽמְת֤וּ	6789	HVqp3cp	25r8g
+3	53	2		בַ/בּוֹר֙	b/953 a	HRd/Ncmsa	25sJk
+3	53	3		חַיָּ֔/י	2416 e	HNcmpc/Sp1cs	25wBJ
+3	53	4		וַ/יַּדּוּ	c/3034	HC/Vpw3mp	25tvR
+3	53	5		אֶ֖בֶן	68	HNcfsa	25Uoi
+3	53	6		בִּֽ/י	b	HR/Sp1cs	25H29
+3	54	1		צָֽפוּ	6687	HVqp3cp	25m2e
+3	54	2		מַ֥יִם	4325	HNcmpa	25WQ1
+3	54	3		עַל	5921 a	HR	257uv
+3	54	4		רֹאשִׁ֖/י	7218 a	HNcmsc/Sp1cs	25Z1J
+3	54	5		אָמַ֥רְתִּי	559	HVqp1cs	25KZa
+3	54	6		נִגְזָֽרְתִּי	1504	HVNp1cs	252u6
+3	55	1		קָרָ֤אתִי	7121	HVqp1cs	25CGY
+3	55	2		שִׁמְ/ךָ֙	8034	HNcmsc/Sp2ms	25cy3
+3	55	3		יְהוָ֔ה	3068	HNp	255EE
+3	55	4		מִ/בּ֖וֹר	m/953 a	HR/Ncmsc	257yo
+3	55	5		תַּחְתִּיּֽוֹת	8482	HAafpa	256ot
+3	56	1		קוֹלִ֖/י	6963 a	HNcmsc/Sp1cs	252Sx
+3	56	2		שָׁמָ֑עְתָּ	8085	HVqp2ms	254mo
+3	56	3		אַל	408	HTn	25RqC
+3	56	4		תַּעְלֵ֧ם	5956	HVhj2ms	25ESM
+3	56	5		אָזְנְ/ךָ֛	241	HNcfsc/Sp2ms	25mCp
+3	56	6		לְ/רַוְחָתִ֖/י	l/7309	HR/Ncfsc/Sp1cs	25DCR
+3	56	7		לְ/שַׁוְעָתִֽ/י	l/7775	HR/Ncfsc/Sp1cs	259jq
+3	57	1		קָרַ֨בְתָּ֙	7126	HVqp2ms	25uFy
+3	57	2		בְּ/י֣וֹם	b/3117	HR/Ncmsa	25rnW
+3	57	3		אֶקְרָאֶ֔/ךָּ	7121	HVqi1cs/Sp2ms	25to2
+3	57	4		אָמַ֖רְתָּ	559	HVqp2ms	25XrY
+3	57	5		אַל	408	HTn	254De
+3	57	6		תִּירָֽא	3372	HVqj2ms	25dPn
+3	58	1		רַ֧בְתָּ	7378	HVqp2ms	25Qve
+3	58	2		אֲדֹנָ֛/י	136	HNcmpc/Sp1cs	253dz
+3	58	3		רִיבֵ֥י	7379	HNcbpc	25vcq
+3	58	4		נַפְשִׁ֖/י	5315	HNcbsc/Sp1cs	254Ed
+3	58	5		גָּאַ֥לְתָּ	1350 a	HVqp2ms	25kfR
+3	58	6		חַיָּֽ/י	2416 e	HNcmpc/Sp1cs	25FUa
+3	59	1		רָאִ֤יתָה	7200	HVqp2ms	25RZP
+3	59	2		יְהוָה֙	3068	HNp	25qLo
+3	59	3		עַוָּ֣תָתִ֔/י	5792	HNcfsc/Sp1cs	25UwQ
+3	59	4		שָׁפְטָ֖/ה	8199	HVqv2ms/Sh	25EG9
+3	59	5		מִשְׁפָּטִֽ/י	4941	HNcmsc/Sp1cs	25fSj
+3	60	1		רָאִ֨יתָה֙	7200	HVqp2ms	25LGP
+3	60	2		כָּל	3605	HNcmsc	25oYa
+3	60	3		נִקְמָתָ֔/ם	5360	HNcfsc/Sp3mp	25L3V
+3	60	4		כָּל	3605	HNcmsc	25Nkc
+3	60	5		מַחְשְׁבֹתָ֖/ם	4284	HNcfpc/Sp3mp	258qm
+3	60	6		לִֽ/י	l	HR/Sp1cs	25XRb
+3	61	1		שָׁמַ֤עְתָּ	8085	HVqp2ms	25AkY
+3	61	2		חֶרְפָּתָ/ם֙	2781	HNcfsc/Sp3mp	25e5T
+3	61	3		יְהוָ֔ה	3068	HNp	25MGG
+3	61	4		כָּל	3605	HNcmsc	256q3
+3	61	5		מַחְשְׁבֹתָ֖/ם	4284	HNcfpc/Sp3mp	25MDa
+3	61	6		עָלָֽ/י	5921 a	HR/Sp1cs	25WBd
+3	62	1		שִׂפְתֵ֤י	8193	HNcfdc	25jGt
+3	62	2		קָמַ/י֙	6965 b	HVqrmpc/Sp1cs	25tyS
+3	62	3		וְ/הֶגְיוֹנָ֔/ם	c/1902	HC/Ncmsc/Sp3mp	25k6N
+3	62	4		עָלַ֖/י	5921 a	HR/Sp1cs	25mY8
+3	62	5		כָּל	3605	HNcmsc	25Hod
+3	62	6		הַ/יּֽוֹם	d/3117	HTd/Ncmsa	25LbG
+3	63	1		שִׁבְתָּ֤/ם	3427	HVqc/Sp3mp	25jJf
+3	63	2		וְ/קִֽימָתָ/ם֙	c/7012	HC/Ncfsc/Sp3mp	25zJw
+3	63	3		הַבִּ֔יטָ/ה	5027	HVhv2ms/Sh	25Sho
+3	63	4		אֲנִ֖י	589	HPp1cs	258zu
+3	63	5		מַנְגִּינָתָֽ/ם	4485	HNcfsc/Sp3mp	256TZ
+3	64	1		תָּשִׁ֨יב	7725	HVhi2ms	25mQU
+3	64	2		לָ/הֶ֥ם	l	HR/Sp3mp	255oN
+3	64	3		גְּמ֛וּל	1576	HNcmsa	25HQC
+3	64	4		יְהוָ֖ה	3068	HNp	25tFU
+3	64	5		כְּ/מַעֲשֵׂ֥ה	k/4639	HR/Ncmsc	25QHV
+3	64	6		יְדֵי/הֶֽם	3027	HNcbdc/Sp3mp	25ot3
+3	65	1		תִּתֵּ֤ן	5414	HVqi2ms	25HBY
+3	65	2		לָ/הֶם֙	l	HR/Sp3mp	255H9
+3	65	3		מְגִנַּת	4044	HNcfsc	25eWk
+3	65	4		לֵ֔ב	3820 a	HNcmsa	25UNQ
+3	65	5		תַּאֲלָֽתְ/ךָ֖	8381	HNcfsc/Sp2ms	25GX8
+3	65	6		לָ/הֶֽם	l	HR/Sp3mp	25pky
+3	66	1		תִּרְדֹּ֤ף	7291	HVqi2ms	253N5
+3	66	2		בְּ/אַף֙	b/639	HR/Ncmsa	25gv9
+3	66	3		וְ/תַשְׁמִידֵ֔/ם	c/8045	HC/Vhi2ms/Sp3mp	2528H
+3	66	4		מִ/תַּ֖חַת	m/8478	HR/R	25cog
+3	66	5		שְׁמֵ֥י	8064	HNcmpc	25dVq
+3	66	6		יְהוָֽה	3068	HNp	25SmU
+4	1	1		אֵיכָה֙	349 b	HTi	25xRR
+4	1	2		יוּעַ֣ם	6004	HVHi3ms	25NYp
+4	1	3		זָהָ֔ב	2091	HNcmsa	25Gjw
+4	1	4		יִשְׁנֶ֖א	8132	HVqi3ms	259Na
+4	1	5		הַ/כֶּ֣תֶם	d/3800	HTd/Ncmsa	25xjb
+4	1	6		הַ/טּ֑וֹב	d/2896 a	HTd/Aamsa	2578y
+4	1	7		תִּשְׁתַּפֵּ֨כְנָה֙	8210	HVti3fp	25Vgg
+4	1	8		אַבְנֵי	68	HNcfpc	25F1H
+4	1	9		קֹ֔דֶשׁ	6944	HNcmsa	25j2J
+4	1	10		בְּ/רֹ֖אשׁ	b/7218 a	HR/Ncmsc	25ch4
+4	1	11		כָּל	3605	HNcmsc	25etU
+4	1	12		חוּצֽוֹת	2351	HNcmpa	25ean
+4	2	1		בְּנֵ֤י	1121 a	HNcmpc	25aJG
+4	2	2		צִיּוֹן֙	6726	HNp	25nF8
+4	2	3		הַ/יְקָרִ֔ים	d/3368	HTd/Aampa	25wEW
+4	2	4		הַ/מְסֻלָּאִ֖ים	d/5537	HTd/VPsmpa	25fJd
+4	2	5		בַּ/פָּ֑ז	b/6337	HRd/Ncmsa	25eEh
+4	2	6		אֵיכָ֤ה	349 b	HTi	25K1s
+4	2	7		נֶחְשְׁבוּ֙	2803	HVNp3cp	2576o
+4	2	8		לְ/נִבְלֵי	l/5035 a	HR/Ncmpc	25omx
+4	2	9		חֶ֔רֶשׂ	2789	HNcmsa	25XBe
+4	2	10		מַעֲשֵׂ֖ה	4639	HNcmsc	258A2
+4	2	11		יְדֵ֥י	3027	HNcbdc	253Qm
+4	2	12		יוֹצֵֽר	3335	HNcmsa	25yeG
+4	3	1		גַּם	1571	HTa	251NW
+4	3	2	x-ketiv	תנין	8568	HNcbpa	25f13
+4	3	3		תַּנִּים֙	8568	HNcbpa	255on
+4	3	4		חָ֣לְצוּ	2502 a	HVqp3cp	25b2J
+4	3	5		שַׁ֔ד	7699 a	HNcmsa	25MnD
+4	3	6		הֵינִ֖יקוּ	3243	HVhp3cp	252B3
+4	3	7		גּוּרֵי/הֶ֑ן	1482	HNcmpc/Sp3fp	25eAA
+4	3	8		בַּת	1323	HNcfsc	25usA
+4	3	9		עַמִּ֣/י	5971 a	HNcmsc/Sp1cs	25bmL
+4	3	10		לְ/אַכְזָ֔ר	l/393	HR/Aamsa	25DK9
+4	3	11	x-ketiv	כי	3588 a	HC	257vQ
+4	3	12	x-ketiv	ענים	3283	HNcmpa	25JoL
+4	3	13		כַּ/יְעֵנִ֖ים	k/3283	HRd/Ncmpa	25Zzg
+4	3	14		בַּ/מִּדְבָּֽר	b/4057 b	HRd/Ncmsa	25k3m
+4	4	1		דָּבַ֨ק	1692	HVqp3ms	25Q2N
+4	4	2		לְשׁ֥וֹן	3956	HNcbsc	25Ggr
+4	4	3		יוֹנֵ֛ק	3243	HVqrmsa	25hnA
+4	4	4		אֶל	413	HR	257tY
+4	4	5		חכּ֖/וֹ	2441	HNcmsc/Sp3ms	252Dp
+4	4	6		בַּ/צָּמָ֑א	b/6772	HRd/Ncmsa	25BQa
+4	4	7		עֽוֹלָלִים֙	5768	HNcmpa	25qNm
+4	4	8		שָׁ֣אֲלוּ	7592	HVqp3cp	254xx
+4	4	9		לֶ֔חֶם	3899	HNcbsa	25E57
+4	4	10		פֹּרֵ֖שׂ	6566	HVqrmsa	25zfG
+4	4	11		אֵ֥ין	369	HTn	25y3Z
+4	4	12		לָ/הֶֽם	l	HR/Sp3mp	25vtM
+4	5	1		הָ/אֹֽכְלִים֙	d/398	HTd/Vqrmpa	25BNu
+4	5	2		לְ/מַ֣עֲדַנִּ֔ים	l/4574	HR/Ncbpa	25QTj
+4	5	3		נָשַׁ֖מּוּ	8074	HVNp3cp	25Tgd
+4	5	4		בַּ/חוּצ֑וֹת	b/2351	HRd/Ncmpa	25hAp
+4	5	5		הָ/אֱמֻנִים֙	d/539	HTd/Vqsmpa	25KNK
+4	5	6		עֲלֵ֣י	5921 a	HR	25nk3
+4	5	7		תוֹלָ֔ע	8438 a	HNcbsa	25wj3
+4	5	8		חִבְּק֖וּ	2263	HVpp3cp	25vFK
+4	5	9		אַשְׁפַּתּֽוֹת	830	HNcmpa	25QNk
+4	6	1		וַ/יִּגְדַּל֙	c/1431	HC/Vqw3ms	25h1i
+4	6	2		עֲוֺ֣ן	5771	HNcbsc	25c5a
+4	6	3		בַּת	1323	HNcfsc	25MZK
+4	6	4		עַמִּ֔/י	5971 a	HNcmsc/Sp1cs	25Hx4
+4	6	5		מֵֽ/חַטַּ֖את	m/2403 b	HR/Ncfsc	25f6t
+4	6	6		סְדֹ֑ם	5467	HNp	25BzF
+4	6	7		הַֽ/הֲפוּכָ֣ה	d/2015	HTd/Vqsfsa	25mrv
+4	6	8		כְמוֹ	3644	HR	25TVv
+4	6	9		רָ֔גַע	7281	HNcmsa	25ZUH
+4	6	10		וְ/לֹא	c/3808	HC/Tn	25HWF
+4	6	11		חָ֥לוּ	2342 a	HVqp3cp	25rhu
+4	6	12		בָ֖/הּ	b	HR/Sp3fs	257YX
+4	6	13		יָדָֽיִם	3027	HNcbda	25caE
+4	7	1		זַכּ֤וּ	2141	HVqp3cp	25w2r
+4	7	2		נְזִירֶ֨י/הָ֙	5139	HNcmpc/Sp3fs	25j2a
+4	7	3		מִ/שֶּׁ֔לֶג	m/7950	HR/Ncmsa	254ei
+4	7	4		צַח֖וּ	6705	HVqp3cp	25iQS
+4	7	5		מֵ/חָלָ֑ב	m/2461	HR/Ncmsa	25pu1
+4	7	6		אָ֤דְמוּ	119	HVqp3cp	259Gr
+4	7	7		עֶ֨צֶם֙	6106	HNcfsa	25jGA
+4	7	8		מִ/פְּנִינִ֔ים	m/6443	HR/Ncbpa	25Q9B
+4	7	9		סַפִּ֖יר	5601	HNcmsa	258LK
+4	7	10		גִּזְרָתָֽ/ם	1508	HNcfsc/Sp3mp	25aWe
+4	8	1		חָשַׁ֤ךְ	2821	HVqp3ms	25JRh
+4	8	2		מִ/שְּׁחוֹר֙	m/7815	HR/Ncmsa	25iqH
+4	8	3		תָּֽאֳרָ֔/ם	8389	HNcmsc/Sp3mp	254ze
+4	8	4		לֹ֥א	3808	HTn	25Eur
+4	8	5		נִכְּר֖וּ	5234 a	HVNp3cp	25e9g
+4	8	6		בַּ/חוּצ֑וֹת	b/2351	HRd/Ncmpa	25hHu
+4	8	7		צָפַ֤ד	6821	HVqp3ms	25C47
+4	8	8		עוֹרָ/ם֙	5785	HNcmsc/Sp3mp	25TWu
+4	8	9		עַל	5921 a	HR	25EWV
+4	8	10		עַצְמָ֔/ם	6106	HNcfsc/Sp3mp	25nDr
+4	8	11		יָבֵ֖שׁ	3001	HVqp3ms	25NH6
+4	8	12		הָיָ֥ה	1961	HVqp3ms	25PP2
+4	8	13		כָ/עֵֽץ	k/6086	HRd/Ncmsa	25sgH
+4	9	1		טוֹבִ֤ים	2896 a	HAampa	257YZ
+4	9	2		הָיוּ֙	1961	HVqp3cp	25DLP
+4	9	3		חַלְלֵי	2491 a	HAampc	25Wgd
+4	9	4		חֶ֔רֶב	2719	HNcfsa	25tA5
+4	9	5		מֵֽ/חַלְלֵ֖י	m/2491 a	HR/Aampc	25FQu
+4	9	6		רָעָ֑ב	7458	HNcmsa	25rxc
+4	9	7		שֶׁ֣/הֵ֤ם	s/1992	HTr/Pp3mp	25185
+4	9	8		יָז֨וּבוּ֙	2100	HVqi3mp	25ssA
+4	9	9		מְדֻקָּרִ֔ים	1856	HVPsmpa	25un2
+4	9	10		מִ/תְּנוּבֹ֖ת	m/8570	HR/Ncfpc	254Ei
+4	9	11		שָׂדָֽי	7704 a	HNcmsa	25wp8
+4	10	1		יְדֵ֗י	3027	HNcbdc	25fZr
+4	10	2		נָשִׁים֙	802	HNcfpa	25qsm
+4	10	3		רַחֲמָ֣נִיּ֔וֹת	7362	HAafpa	25Yvd
+4	10	4		בִּשְּׁל֖וּ	1310	HVpp3cp	25qo8
+4	10	5		יַלְדֵי/הֶ֑ן	3206	HNcmpc/Sp3fp	25Rvz
+4	10	6		הָי֤וּ	1961	HVqp3cp	25UiP
+4	10	7		לְ/בָרוֹת֙	l/1262	HR/Vpc	25zc2
+4	10	8		לָ֔/מוֹ	l	HR/Sp3mp	25jWU
+4	10	9		בְּ/שֶׁ֖בֶר	b/7667	HR/Ncmsc	25WRL
+4	10	10		בַּת	1323	HNcfsc	25MEe
+4	10	11		עַמִּֽ/י	5971 a	HNcmsc/Sp1cs	25Lz7
+4	11	1		כִּלָּ֤ה	3615	HVpp3ms	25C5b
+4	11	2		יְהוָה֙	3068	HNp	25KGK
+4	11	3		אֶת	853	HTo	25V8j
+4	11	4		חֲמָת֔/וֹ	2534	HNcfsc/Sp3ms	25PaR
+4	11	5		שָׁפַ֖ךְ	8210	HVqp3ms	25Env
+4	11	6		חֲר֣וֹן	2740	HNcmsc	258Dt
+4	11	7		אַפּ֑/וֹ	639	HNcmsc/Sp3ms	25iSw
+4	11	8		וַ/יַּצֶּת	c/3341	HC/Vhw3ms	25cX6
+4	11	9		אֵ֣שׁ	784	HNcbsa	25nM3
+4	11	10		בְּ/צִיּ֔וֹן	b/6726	HR/Np	257Xe
+4	11	11		וַ/תֹּ֖אכַל	c/398	HC/Vqw3fs	25noN
+4	11	12		יְסוֹדֹתֶֽי/הָ	3247	HNcmpc/Sp3fs	25hHR
+4	12	1		לֹ֤א	3808	HTn	25CoS
+4	12	2		הֶאֱמִ֨ינוּ֙	539	HVhp3cp	25KXg
+4	12	3		מַלְכֵי	4428	HNcmpc	25Gq2
+4	12	4		אֶ֔רֶץ	776	HNcbsa	25sk8
+4	12	5	x-ketiv	ו/כל	c/3605	HC/Ncmsc	25Vfr
+4	12	6		כֹּ֖ל	3605	HNcmsc	25tkY
+4	12	7		יֹשְׁבֵ֣י	3427	HVqrmpc	25r5i
+4	12	8		תֵבֵ֑ל	8398	HNcfsa	252bH
+4	12	9		כִּ֤י	3588 a	HC	25wCy
+4	12	10		יָבֹא֙	935	HVqi3ms	252ee
+4	12	11		צַ֣ר	6862 c	HNcmsa	25b7E
+4	12	12		וְ/אוֹיֵ֔ב	c/341	HC/Vqrmsa	2545a
+4	12	13		בְּ/שַׁעֲרֵ֖י	b/8179	HR/Ncmpc	25Gby
+4	12	14		יְרוּשָׁלִָֽם	3389	HNp	25t6e
+4	13	1		מֵֽ/חַטֹּ֣את	m/2403 b	HR/Ncfpc	254wi
+4	13	2		נְבִיאֶ֔י/הָ	5030	HNcmpc/Sp3fs	25LNA
+4	13	3		עֲוֺנ֖וֹת	5771	HNcbpc	25bU4
+4	13	4		כֹּהֲנֶ֑י/הָ	3548	HNcmpc/Sp3fs	25R6Q
+4	13	5		הַ/שֹּׁפְכִ֥ים	d/8210	HTd/Vqrmpa	25LiE
+4	13	6		בְּ/קִרְבָּ֖/הּ	b/7130	HR/Ncmsc/Sp3fs	25uCS
+4	13	7		דַּ֥ם	1818	HNcmsc	25taS
+4	13	8		צַדִּיקִֽים	6662	HAampa	25Erp
+4	14	1		נָע֤וּ	5128	HVqp3cp	25azc
+4	14	2		עִוְרִים֙	5787	HAampa	25HpH
+4	14	3		בַּֽ/חוּצ֔וֹת	b/2351	HRd/Ncmpa	25wcd
+4	14	4		נְגֹֽאֲל֖וּ	1351	HVNp3cp	25DR2
+4	14	5		בַּ/דָּ֑ם	b/1818	HRd/Ncmsa	258MF
+4	14	6		בְּ/לֹ֣א	b/3808	HR/Tn	255wJ
+4	14	7		יֽוּכְל֔וּ	3201	HVqi3mp	25AuA
+4	14	8		יִגְּע֖וּ	5060	HVqi3mp	25pa7
+4	14	9		בִּ/לְבֻשֵׁי/הֶֽם	b/3830	HR/Ncmpc/Sp3mp	251Q7
+4	15	1		ס֣וּרוּ	5493	HVqv2mp	25147
+4	15	2		טָמֵ֞א	2931	HAamsa	25qpX
+4	15	3		קָ֣רְאוּ	7121	HVqp3cp	25eEg
+4	15	4		לָ֗/מוֹ	l	HR/Sp3mp	25FHa
+4	15	5		ס֤וּרוּ	5493	HVqv2mp	25ExS
+4	15	6		ס֨וּרוּ֙	5493	HVqv2mp	2516M
+4	15	7		אַל	408	HTn	25nj6
+4	15	8		תִּגָּ֔עוּ	5060	HVqj2mp	257hm
+4	15	9		כִּ֥י	3588 a	HC	25yrZ
+4	15	10		נָצ֖וּ	5132 a	HVqp3cp	25cpd
+4	15	11		גַּם	1571	HTa	25QR7
+4	15	12		נָ֑עוּ	5128	HVqp3cp	25388
+4	15	13		אָֽמְרוּ֙	559	HVqp3cp	25D9B
+4	15	14		בַּ/גּוֹיִ֔ם	b/1471 a	HRd/Ncmpa	25KQr
+4	15	15		לֹ֥א	3808	HTn	25bRM
+4	15	16		יוֹסִ֖יפוּ	3254	HVhi3mp	25TPs
+4	15	17		לָ/גֽוּר	l/1481 a	HR/Vqc	25Mef
+4	16	1		פְּנֵ֤י	6440	HNcbpc	25UeD
+4	16	2		יְהוָה֙	3068	HNp	25Ddz
+4	16	3		חִלְּקָ֔/ם	2505 a	HVpp3ms/Sp3mp	25VYG
+4	16	4		לֹ֥א	3808	HTn	25zd1
+4	16	5		יוֹסִ֖יף	3254	HVhi3ms	25mw6
+4	16	6		לְ/הַבִּיטָ֑/ם	l/5027	HR/Vhc/Sp3mp	254AV
+4	16	7		פְּנֵ֤י	6440	HNcbpc	25RJM
+4	16	8		כֹהֲנִים֙	3548	HNcmpa	25ZPm
+4	16	9		לֹ֣א	3808	HTn	25aZX
+4	16	10		נָשָׂ֔אוּ	5375	HVqp3cp	25QJg
+4	16	11	x-ketiv	זקנים	2205	HAampa	25P5E
+4	16	12		וּ/זְקֵנִ֖ים	c/2205	HC/Aampa	25yrH
+4	16	13		לֹ֥א	3808	HTn	25sud
+4	16	14		חָנָֽנוּ	2603 a	HVqp3cp	25id4
+4	17	1	x-ketiv	עוד/ינה	5750	HD/Sp3fp	25rbK
+4	17	2		עוֹדֵ֨י/נוּ֙	5750	HD/Sp1cp	25fQG
+4	17	3		תִּכְלֶ֣ינָה	3615	HVqi3fp	25HAz
+4	17	4		עֵינֵ֔י/נוּ	5869 a	HNcbdc/Sp1cp	25J4B
+4	17	5		אֶל	413	HR	25cc4
+4	17	6		עֶזְרָתֵ֖/נוּ	5833	HNcfsc/Sp1cp	25oRq
+4	17	7		הָ֑בֶל	1892	HNcmsa	25cUw
+4	17	8		בְּ/צִפִּיָּתֵ֣/נוּ	b/6836	HR/Ncfsc/Sp1cp	25MVU
+4	17	9		צִפִּ֔ינוּ	6822	HVpp1cp	25CE4
+4	17	10		אֶל	413	HR	25Li4
+4	17	11		גּ֖וֹי	1471 a	HNcmsa	25L6s
+4	17	12		לֹ֥א	3808	HTn	25g5n
+4	17	13		יוֹשִֽׁעַ	3467	HVhi3ms	25jmB
+4	18	1		צָד֣וּ	6679 a	HVqp3cp	25kmE
+4	18	2		צְעָדֵ֔י/נוּ	6806	HNcmpc/Sp1cp	25hyH
+4	18	3		מִ/לֶּ֖כֶת	m/3212	HR/Vqc	25DMx
+4	18	4		בִּ/רְחֹבֹתֵ֑י/נוּ	b/7339	HR/Ncfpc/Sp1cp	25D1c
+4	18	5		קָרַ֥ב	7126	HVqp3ms	25sgn
+4	18	6		קִצֵּ֛י/נוּ	7093	HNcmsc/Sp1cp	25cLA
+4	18	7		מָלְא֥וּ	4390	HVqp3cp	25Jrt
+4	18	8		יָמֵ֖י/נוּ	3117	HNcmpc/Sp1cp	25jwP
+4	18	9		כִּי	3588 a	HC	25XZe
+4	18	10		בָ֥א	935	HVqp3ms	25dip
+4	18	11		קִצֵּֽי/נוּ	7093	HNcmsc/Sp1cp	25f7v
+4	19	1		קַלִּ֤ים	7031	HAampa	255hr
+4	19	2		הָיוּ֙	1961	HVqp3cp	25RDs
+4	19	3		רֹדְפֵ֔י/נוּ	7291	HVqrmpc/Sp1cp	25Tvm
+4	19	4		מִ/נִּשְׁרֵ֖י	m/5404	HR/Ncmpc	251vy
+4	19	5		שָׁמָ֑יִם	8064	HNcmpa	25JzC
+4	19	6		עַל	5921 a	HR	25Pv9
+4	19	7		הֶ/הָרִ֣ים	d/2022	HTd/Ncmpa	25u6Y
+4	19	8		דְּלָקֻ֔/נוּ	1814	HVqp3cp/Sp1cp	25iTM
+4	19	9		בַּ/מִּדְבָּ֖ר	b/4057 b	HRd/Ncmsa	25jDe
+4	19	10		אָ֥רְבוּ	693	HVqp3cp	25uHz
+4	19	11		לָֽ/נוּ	l	HR/Sp1cp	252iJ
+4	20	1		ר֤וּחַ	7307	HNcbsc	25evD
+4	20	2		אַפֵּ֨י/נוּ֙	639	HNcmdc/Sp1cp	25vKo
+4	20	3		מְשִׁ֣יחַ	4899	HNcmsc	25mvJ
+4	20	4		יְהוָ֔ה	3068	HNp	25pDQ
+4	20	5		נִלְכַּ֖ד	3920	HVNp3ms	25deG
+4	20	6		בִּ/שְׁחִיתוֹתָ֑/ם	b/7825	HR/Ncfpc/Sp3mp	25Nvj
+4	20	7		אֲשֶׁ֣ר	834 a	HTr	25Gye
+4	20	8		אָמַ֔רְנוּ	559	HVqp1cp	25qCo
+4	20	9		בְּ/צִלּ֖/וֹ	b/6738	HR/Ncmsc/Sp3ms	25h3K
+4	20	10		נִֽחְיֶ֥ה	2421	HVqi1cp	25USJ
+4	20	11		בַ/גּוֹיִֽם	b/1471 a	HRd/Ncmpa	25rMp
+4	21	1		שִׂ֤ישִׂי	7797	HVqv2fs	25sd2
+4	21	2		וְ/שִׂמְחִי֙	c/8055	HC/Vqv2fs	25Ssu
+4	21	3		בַּת	1323	HNcfsc	25x1x
+4	21	4		אֱד֔וֹם	123	HNp	25w5T
+4	21	5	x-ketiv	יושבתי	3427	HVqrfsc	25FrL
+4	21	6		יוֹשֶׁ֖בֶת	3427	HVqrfsa	25q3X
+4	21	7		בְּ/אֶ֣רֶץ	b/776	HR/Ncbsc	25YjW
+4	21	8		ע֑וּץ	5780	HNp	254i9
+4	21	9		גַּם	1571	HTa	25Afw
+4	21	10		עָלַ֨יִ/ךְ֙	5921 a	HR/Sp2fs	25Vcq
+4	21	11		תַּעֲבָר	5674 a	HVqi3fs	25eF7
+4	21	12		כּ֔וֹס	3563 a	HNcfsa	25wPX
+4	21	13		תִּשְׁכְּרִ֖י	7937	HVqi2fs	25tUi
+4	21	14		וְ/תִתְעָרִֽי	c/6168	HC/Vti2fs	25S6i
+4	22	1		תַּם	8552	HVqp3ms	25KNH
+4	22	2		עֲוֺנֵ/ךְ֙	5771	HNcbsc/Sp2fs	25XUc
+4	22	3		בַּת	1323	HNcfsc	25KGa
+4	22	4		צִיּ֔וֹן	6726	HNp	25jzU
+4	22	5		לֹ֥א	3808	HTn	253ws
+4	22	6		יוֹסִ֖יף	3254	HVhi3ms	25nkE
+4	22	7		לְ/הַגְלוֹתֵ֑/ךְ	l/1540	HR/Vhc/Sp2fs	25UeK
+4	22	8		פָּקַ֤ד	6485 a	HVqp3ms	25CYD
+4	22	9		עֲוֺנֵ/ךְ֙	5771	HNcbsc/Sp2fs	259gs
+4	22	10		בַּת	1323	HNcfsc	25GTQ
+4	22	11		אֱד֔וֹם	123	HNp	25gKo
+4	22	12		גִּלָּ֖ה	1540	HVpp3ms	25oZb
+4	22	13		עַל	5921 a	HR	25KCy
+4	22	14		חַטֹּאתָֽיִ/ךְ	2403 b	HNcfpc/Sp2fs	25juz
+5	1	1		זְכֹ֤ר	2142	HVqv2ms	25DH2
+5	1	2		יְהוָה֙	3068	HNp	254VF
+5	1	3		מֶֽה	4100	HTi	2572H
+5	1	4		הָ֣יָה	1961	HVqp3ms	2525j
+5	1	5		לָ֔/נוּ	l	HR/Sp1cp	25Vo3
+5	1	6	x-ketiv	הביט	5027	HVhv2ms	25dhD
+5	1	7		הַבִּ֖יטָ/ה	5027	HVhv2ms/Sh	256uw
+5	1	8		וּ/רְאֵ֥ה	c/7200	HC/Vqv2ms	25zjv
+5	1	9		אֶת	853	HTo	251Mn
+5	1	10		חֶרְפָּתֵֽ/נוּ	2781	HNcfsc/Sp1cp	256qW
+5	2	1		נַחֲלָתֵ֨/נוּ֙	5159	HNcfsc/Sp1cp	25Zjx
+5	2	2		נֶֽהֶפְכָ֣ה	2015	HVNp3fs	25aoZ
+5	2	3		לְ/זָרִ֔ים	l/2114 a	HR/Aampa	25EJP
+5	2	4		בָּתֵּ֖י/נוּ	1004 b	HNcmpc/Sp1cp	254HM
+5	2	5		לְ/נָכְרִֽים	l/5237	HR/Aampa	25EjA
+5	3	1		יְתוֹמִ֤ים	3490	HNcmpa	25E1f
+5	3	2		הָיִ֨ינוּ֙	1961	HVqp1cp	25Hwq
+5	3	3	x-ketiv	אין	369	HTn	25MWU
+5	3	4		וְ/אֵ֣ין	c/369	HC/Tn	25vD2
+5	3	5		אָ֔ב	1	HNcmsa	25ygZ
+5	3	6		אִמֹּתֵ֖י/נוּ	517	HNcfpc/Sp1cp	256YP
+5	3	7		כְּ/אַלְמָנֽוֹת	k/490	HR/Ncfpa	25UhH
+5	4	1		מֵימֵ֨י/נוּ֙	4325	HNcmpc/Sp1cp	25MSM
+5	4	2		בְּ/כֶ֣סֶף	b/3701	HR/Ncmsa	25TYN
+5	4	3		שָׁתִ֔ינוּ	8354	HVqp1cp	25cMr
+5	4	4		עֵצֵ֖י/נוּ	6086	HNcmpc/Sp1cp	254Up
+5	4	5		בִּ/מְחִ֥יר	b/4242	HR/Ncmsa	25pa1
+5	4	6		יָבֹֽאוּ	935	HVqi3mp	25GDg
+5	5	1		עַ֤ל	5921 a	HR	25ZxK
+5	5	2		צַוָּארֵ֨/נוּ֙	6677 a	HNcmsc/Sp1cp	25KpZ
+5	5	3		נִרְדָּ֔פְנוּ	7291	HVNp1cp	25nwq
+5	5	4		יָגַ֖עְנוּ	3021	HVqp1cp	25Lgy
+5	5	5	x-ketiv	לא	3808	HTn	255AY
+5	5	6		וְ/לֹ֥א	c/3808	HC/Tn	25HUX
+5	5	7		הֽוּנַ֖ח	5117	HVHp3ms	25RYU
+5	5	8		לָֽ/נוּ	l	HR/Sp1cp	253Q1
+5	6	1		מִצְרַ֨יִם֙	4714	HNp	25ikx
+5	6	2		נָתַ֣נּוּ	5414	HVqp1cp	255Xt
+5	6	3		יָ֔ד	3027	HNcbsa	258jj
+5	6	4		אַשּׁ֖וּר	804	HNp	253v4
+5	6	5		לִ/שְׂבֹּ֥עַֽ	l/7646	HR/Vqc	25hFh
+5	6	6		לָֽחֶם	3899	HNcbsa	253it
+5	7	1		אֲבֹתֵ֤י/נוּ	1	HNcmpc/Sp1cp	25pf7
+5	7	2		חָֽטְאוּ֙	2398	HVqp3cp	25Dne
+5	7	3	x-ketiv	אינ/ם	369	HTn/Sp3mp	25fqZ
+5	7	4		וְ/אֵינָ֔/ם	c/369	HC/Tn/Sp3mp	257ev
+5	7	5	x-ketiv	אנחנו	587	HPp1cp	25eWV
+5	7	6		וַ/אֲנַ֖חְנוּ	c/587	HC/Pp1cp	25DUZ
+5	7	7		עֲוֺנֹתֵי/הֶ֥ם	5771	HNcbpc/Sp3mp	25abv
+5	7	8		סָבָֽלְנוּ	5445	HVqp1cp	259XH
+5	8	1		עֲבָדִים֙	5650	HNcmpa	25tui
+5	8	2		מָ֣שְׁלוּ	4910	HVqp3cp	255mW
+5	8	3		בָ֔/נוּ	b	HR/Sp1cp	259p4
+5	8	4		פֹּרֵ֖ק	6561	HVqrmsa	251AP
+5	8	5		אֵ֥ין	369	HTn	25Dh6
+5	8	6		מִ/יָּדָֽ/ם	m/3027	HR/Ncbsc/Sp3mp	25q22
+5	9	1		בְּ/נַפְשֵׁ֨/נוּ֙	b/5315	HR/Ncbsc/Sp1cp	25Z1p
+5	9	2		נָבִ֣יא	935	HVhi1cp	254mF
+5	9	3		לַחְמֵ֔/נוּ	3899	HNcbsc/Sp1cp	25PJU
+5	9	4		מִ/פְּנֵ֖י	m/6440	HR/Ncbpc	25eKG
+5	9	5		חֶ֥רֶב	2719	HNcfsc	25Anx
+5	9	6		הַ/מִּדְבָּֽר	d/4057 b	HTd/Ncmsa	25kWB
+5	10	1		עוֹרֵ֨/נוּ֙	5785	HNcmsc/Sp1cp	2526j
+5	10	2		כְּ/תַנּ֣וּר	k/8574	HR/Ncmsa	25ZiN
+5	10	3		נִכְמָ֔רוּ	3648	HVNp3cp	25NAb
+5	10	4		מִ/פְּנֵ֖י	m/6440	HR/Ncbpc	25NJS
+5	10	5		זַלְעֲפ֥וֹת	2152	HNcfpc	25S4e
+5	10	6		רָעָֽב	7458	HNcmsa	25cZG
+5	11	1		נָשִׁים֙	802	HNcfpa	25Nqf
+5	11	2		בְּ/צִיּ֣וֹן	b/6726	HR/Np	25tKV
+5	11	3		עִנּ֔וּ	6031 b	HVpp3cp	25hpd
+5	11	4		בְּתֻלֹ֖ת	1330	HNcfpa	25CAC
+5	11	5		בְּ/עָרֵ֥י	b/5892 b	HR/Ncfpc	25MBs
+5	11	6		יְהוּדָֽה	3063	HNp	25uCk
+5	12	1		שָׂרִים֙	8269	HNcmpa	25KHf
+5	12	2		בְּ/יָדָ֣/ם	b/3027	HR/Ncbsc/Sp3mp	25bcM
+5	12	3		נִתְל֔וּ	8518	HVNp3cp	25mry
+5	12	4		פְּנֵ֥י	6440	HNcbpc	25e4r
+5	12	5		זְקֵנִ֖ים	2205	HAampa	25rFe
+5	12	6		לֹ֥א	3808	HTn	25bu5
+5	12	7		נֶהְדָּֽרוּ	1921	HVNp3cp	25nfi
+5	13	1		בַּחוּרִים֙	970	HNcmpa	25kkD
+5	13	2		טְח֣וֹן	2911	HNcmsa	25EPr
+5	13	3		נָשָׂ֔אוּ	5375	HVqp3cp	25KoZ
+5	13	4		וּ/נְעָרִ֖ים	c/5288	HC/Ncmpa	25A4n
+5	13	5		בָּ/עֵ֥ץ	b/6086	HRd/Ncmsa	25Eq3
+5	13	6		כָּשָֽׁלוּ	3782	HVqp3cp	254c8
+5	14	1		זְקֵנִים֙	2205	HAampa	25Npb
+5	14	2		מִ/שַּׁ֣עַר	m/8179	HR/Ncmsa	25ETF
+5	14	3		שָׁבָ֔תוּ	7673 a	HVqp3cp	25TmV
+5	14	4		בַּחוּרִ֖ים	970	HNcmpa	25tBT
+5	14	5		מִ/נְּגִינָתָֽ/ם	m/5058	HR/Ncfsc/Sp3mp	25BBm
+5	15	1		שָׁבַת֙	7673 a	HVqp3ms	25qKL
+5	15	2		מְשׂ֣וֹשׂ	4885	HNcmsc	25qip
+5	15	3		לִבֵּ֔/נוּ	3820 a	HNcmsc/Sp1cp	25p4D
+5	15	4		נֶהְפַּ֥ךְ	2015	HVNp3ms	25G5R
+5	15	5		לְ/אֵ֖בֶל	l/60	HR/Ncmsa	25GXr
+5	15	6		מְחֹלֵֽ/נוּ	4234	HNcmsc/Sp1cp	25XSa
+5	16	1		נָֽפְלָה֙	5307	HVqp3fs	25bsA
+5	16	2		עֲטֶ֣רֶת	5850	HNcfsc	25nnJ
+5	16	3		רֹאשֵׁ֔/נוּ	7218 a	HNcmsc/Sp1cp	25b2r
+5	16	4		אֽוֹי	188	HTj	25Tzx
+5	16	5		נָ֥א	4994	HTe	25fTQ
+5	16	6		לָ֖/נוּ	l	HR/Sp1cp	25nCu
+5	16	7		כִּ֥י	3588 a	HC	25Gds
+5	16	8		חָטָֽאנוּ	2398	HVqp1cp	259cC
+5	17	1		עַל	5921 a	HR	25Y4b
+5	17	2		זֶ֗ה	2088	HPdxms	25RWu
+5	17	3		הָיָ֤ה	1961	HVqp3ms	25MLc
+5	17	4		דָוֶה֙	1739	HAamsa	25DKB
+5	17	5		לִבֵּ֔/נוּ	3820 a	HNcmsc/Sp1cp	25h2V
+5	17	6		עַל	5921 a	HR	25Z2k
+5	17	7		אֵ֖לֶּה	428	HPdxcp	255VT
+5	17	8		חָשְׁכ֥וּ	2821	HVqp3cp	258JC
+5	17	9		עֵינֵֽי/נוּ	5869 a	HNcbdc/Sp1cp	25Lqq
+5	18	1		עַ֤ל	5921 a	HR	25qDM
+5	18	2		הַר	2022	HNcmsc	25qqx
+5	18	3		צִיּוֹן֙	6726	HNp	25Q3F
+5	18	4		שֶׁ/שָּׁמֵ֔ם	s/8074	HTr/Vqp3ms	252Kw
+5	18	5		שׁוּעָלִ֖ים	7776	HNcmpa	25jCk
+5	18	6		הִלְּכוּ	1980	HVpp3cp	25jJB
+5	18	7		בֽ/וֹ	b	HR/Sp3ms	252Ur
+5	19	1		אַתָּ֤ה	859 a	HPp2ms	25bTz
+5	19	2		יְהוָה֙	3068	HNp	25CfS
+5	19	3		לְ/עוֹלָ֣ם	l/5769	HR/Ncmsa	25RZe
+5	19	4		תֵּשֵׁ֔ב	3427	HVqi2ms	25jDT
+5	19	5		כִּסְאֲ/ךָ֖	3678	HNcmsc/Sp2ms	25euw
+5	19	6		לְ/דֹ֥ר	l/1755	HR/Ncmsa	25WXb
+5	19	7		וָ/דֽוֹר	c/1755	HC/Ncmsa	25KPQ
+5	20	1		לָ֤/מָּה	l/4100	HR/Ti	25wNE
+5	20	2		לָ/נֶ֨צַח֙	l/5331	HR/Ncmsa	25rtc
+5	20	3		תִּשְׁכָּחֵ֔/נוּ	7911	HVqi2ms/Sp1cp	25xpP
+5	20	4		תַּֽעַזְבֵ֖/נוּ	5800 a	HVqi2ms/Sp1cp	25yvH
+5	20	5		לְ/אֹ֥רֶךְ	l/753	HR/Ncmsc	25456
+5	20	6		יָמִֽים	3117	HNcmpa	25neV
+5	21	1		הֲשִׁיבֵ֨/נוּ	7725	HVhv2ms/Sp1cp	25bEv
+5	21	2		יְהוָ֤ה	3068	HNp	25yWa
+5	21	3		אֵלֶ֨י/ךָ֙	413	HR/Sp2ms	25PL3
+5	21	4	x-ketiv	ו/נשוב	c/7725	HC/Vqi1cp	251SP
+5	21	5		וְֽ/נָשׁ֔וּבָה	c/7725	HC/Vqh1cp	25TZB
+5	21	6		חַדֵּ֥שׁ	2318	HVpv2ms	25fd5
+5	21	7		יָמֵ֖י/נוּ	3117	HNcmpc/Sp1cp	25GYA
+5	21	8		כְּ/קֶֽדֶם	k/6924 a	HR/Ncmsa	25K5D
+5	22	1		כִּ֚י	3588 b	HC	257rm
+5	22	2		אִם	518 b	HC	25aFY
+5	22	3		מָאֹ֣ס	3988 a	HVqa	25F4N
+5	22	4		מְאַסְתָּ֔/נוּ	3988 a	HVqp2ms/Sp1cp	25Q12
+5	22	5		קָצַ֥פְתָּ	7107	HVqp2ms	25EF4
+5	22	6		עָלֵ֖י/נוּ	5921 a	HR/Sp1cp	25pmF
+5	22	7		עַד	5704	HR	25124
+5	22	8		מְאֹֽד	3966	HD	25rtz

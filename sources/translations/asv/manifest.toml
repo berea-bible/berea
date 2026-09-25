@@ -1,0 +1,8 @@
+name = "American Standard Version (1901)"
+abbrev = "ASV"
+language = "en"
+license = "Public domain"
+raw = "raw/translations/eng-asv.zefania.xml"
+upstream = "https://github.com/seven1m/open-bibles"
+importer = "zefania"
+versification = "auto"

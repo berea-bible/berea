@@ -1,0 +1,7 @@
+name = "Greek New Testament (TAGNT: NA27/28, SBL, TR and other editions)"
+language = "grc"
+license = "CC BY 4.0, STEPBible.org (Tyndale House)"
+raw = ["raw/greek/tagnt_matjhn.txt", "raw/greek/tagnt_actrev.txt"]
+upstream = "https://github.com/STEPBible/STEPBible-Data"
+importer = "tagnt"
+versification = "auto"

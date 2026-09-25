@@ -1,2 +1,4 @@
 pipeline/.cache/
+pipeline/.stage/
 __pycache__/
+raw/

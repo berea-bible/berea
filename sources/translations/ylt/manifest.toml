@@ -1,0 +1,8 @@
+name = "Young's Literal Translation (1898)"
+abbrev = "YLT"
+language = "en"
+license = "Public domain"
+raw = "raw/translations/eng-ylt.zefania.xml"   # New Testament only
+upstream = "https://github.com/seven1m/open-bibles"
+importer = "zefania"
+versification = "auto"

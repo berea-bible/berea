@@ -1,0 +1,65 @@
+{
+  "inputs": {
+    "raw/translations/eng-kjv.osis.xml": {
+      "url": "https://raw.githubusercontent.com/seven1m/open-bibles/f257a3559025c3f873b48a75019f53a9354ed7de/eng-kjv.osis.xml",
+      "sha256": "eeeae647fc28360ce47f9c0d5cc3b397b7fdd9913fe53dc9f44eb6deee50e253"
+    },
+    "raw/translations/eng-asv.zefania.xml": {
+      "url": "https://raw.githubusercontent.com/seven1m/open-bibles/f257a3559025c3f873b48a75019f53a9354ed7de/eng-asv.zefania.xml",
+      "sha256": "ef20ebf6b56bf1e3dfab949af55e83ff5887565ed24aeecd51da7a45210914bf"
+    },
+    "raw/translations/eng-ylt.zefania.xml": {
+      "url": "https://raw.githubusercontent.com/seven1m/open-bibles/f257a3559025c3f873b48a75019f53a9354ed7de/eng-ylt.zefania.xml",
+      "sha256": "e6fd78a6c26d758ec5cf06fdd0d702bb770628e227d932156ba835e5e46b4665"
+    },
+    "raw/translations/eng-web.usfx.xml": {
+      "url": "https://raw.githubusercontent.com/seven1m/open-bibles/f257a3559025c3f873b48a75019f53a9354ed7de/eng-web.usfx.xml",
+      "sha256": "5ffa2626f170a109a4a96afc90775c06f0821cb4ba81ed34e63663e085708d68"
+    },
+    "raw/engDRA_vpl.zip": {
+      "url": "https://ebible.org/Scriptures/engDRA_vpl.zip",
+      "note": "eBible publishes no versioned URL; fetch.py refuses a download whose sha256 differs",
+      "sha256": "d953c97b16ab4529ed119f6673c89cc928a1e790160b4f286b7af01782997a4f"
+    },
+    "raw/greek/tagnt_matjhn.txt": {
+      "url": "https://raw.githubusercontent.com/STEPBible/STEPBible-Data/b99716b0cddb648ddb95cc786a197180f2f97d48/Translators%20Amalgamated%20OT%2BNT/TAGNT%20Mat-Jhn%20-%20Translators%20Amalgamated%20Greek%20NT%20-%20STEPBible.org%20CC-BY.txt",
+      "sha256": "ab8eaaeb68e17a1dcfa34e1e9350358f22f03bc2a97244d848750ad81044bc8e"
+    },
+    "raw/greek/tagnt_actrev.txt": {
+      "url": "https://raw.githubusercontent.com/STEPBible/STEPBible-Data/b99716b0cddb648ddb95cc786a197180f2f97d48/Translators%20Amalgamated%20OT%2BNT/TAGNT%20Act-Rev%20-%20Translators%20Amalgamated%20Greek%20NT%20-%20STEPBible.org%20CC-BY.txt",
+      "sha256": "524e32375361e6d3fa2f7ef00b87605fdc4317a762f395651a05fdc31ad031b7"
+    },
+    "raw/greek/tbesg_lexicon.txt": {
+      "url": "https://raw.githubusercontent.com/STEPBible/STEPBible-Data/b99716b0cddb648ddb95cc786a197180f2f97d48/Lexicons/TBESG%20-%20Translators%20Brief%20lexicon%20of%20Extended%20Strongs%20for%20Greek%20-%20STEPBible.org%20CC%20BY.txt",
+      "sha256": "312f723d7b8ef263bbdfb0451c9b8057125804dfff390b6f8544cff2a84b57f4"
+    },
+    "raw/tvtms.txt": {
+      "url": "https://raw.githubusercontent.com/STEPBible/STEPBible-Data/b99716b0cddb648ddb95cc786a197180f2f97d48/Versification/TVTMS%20-%20Translators%20Versification%20Traditions%20with%20Methodology%20for%20Standardisation%20for%20Eng%2BHeb%2BLat%2BGrk%2BOthers%20-%20STEPBible.org%20CC%20BY.txt",
+      "sha256": "63058e0f20201af4bdaa7d830da5be8f493455d947c5f147d84840b33db9ddf8"
+    },
+    "raw/morphhb": {
+      "archive": "https://github.com/openscriptures/morphhb/archive/3d15126fb1ef74867fc1434be1942e837932691f.tar.gz",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "include": [
+        "wlc/*.xml"
+      ],
+      "sha256": "26e589388c1cbd29176111b75ae0a3a07e4e9457cbd58c3249727cad2d303082"
+    },
+    "raw/HebrewLexicon": {
+      "archive": "https://github.com/openscriptures/HebrewLexicon/archive/21c9add13bc727d3a951361778e97e3ff7afd1ce.tar.gz",
+      "commit": "21c9add13bc727d3a951361778e97e3ff7afd1ce",
+      "include": [
+        "HebrewStrong.xml"
+      ],
+      "sha256": "9104eecc810660e356aa5474c764302c2ac866471e90872dabef3d01398dd680"
+    },
+    "raw/fathers": {
+      "archive": "https://github.com/HistoricalChristianFaith/Commentaries-Database/archive/8e8082b5f541e7e4105f48692f973956caa72dcd.tar.gz",
+      "commit": "8e8082b5f541e7e4105f48692f973956caa72dcd",
+      "include": [
+        "*/*.toml"
+      ],
+      "sha256": "6411001dfb929ba702d3ff18d43231a59aecc1db7c61a1fc39be59e7317509d8"
+    }
+  }
+}

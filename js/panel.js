@@ -1,6 +1,6 @@
 /* Verse detail panel: Compare / Greek-or-Hebrew / Commentary tabs. */
 import { state, el, escapeHtml } from './app.js';
-import { bookCache, bookMeta, isOT, translationCodes, translationName, effectiveTranslation, LIVE_TRANSLATIONS } from './data.js';
+import { bookCache, bookMeta, isOT, translationCodes, translationName, effectiveTranslation, LIVE_TRANSLATIONS, loadQuotes, loadOriginal } from './data.js';
 import { decodeMorph, displayWord, showLexicon, hideLexicon } from './greek.js';
 
 export async function openVerse(vn){
@@ -38,9 +38,40 @@ export async function openVerse(vn){
   el.paneCompare.innerHTML = cmp || '<div class="empty-state">No text found for this verse.</div>';
   for(const code in liveText) renderLiveRow(code, vn, liveText[code] ? 'text' : 'idle', liveText[code]);
 
-  /* Greek / Hebrew tab */
-  const hebrew = isOT(state.bookId);
-  const words = ((book.greek[ch]||{})[vs]) || [];
+  /* Greek / Hebrew tab: words load (own file) when the tab opens */
+  greekFor = { vn, bookId: state.bookId, ch, vs, rendered: false };
+  el.paneGreek.innerHTML = '';
+  if(document.getElementById('pane-greek').classList.contains('active')) renderGreekTab();
+
+  /* Fathers tab: the count comes from the verse index; quote bodies load when the tab opens */
+  const refs = ((book.fathers[ch]||{})[vs]) || [];
+  el.fathersBadge.textContent = refs.length;
+  fathersFor = { vn, bookId: state.bookId, chapter: state.chapter, refs, rendered: false };
+  el.paneFathers.innerHTML = '';
+  if(document.getElementById('pane-fathers').classList.contains('active')) renderFathers();
+}
+
+// The verse whose words the Greek/Hebrew tab shows (fetched on first view).
+let greekFor = null;
+async function renderGreekTab(){
+  const f = greekFor;
+  if(!f || f.rendered) return;
+  f.rendered = true;
+  const book = bookCache[f.bookId];
+  if(!book.greek){
+    el.paneGreek.innerHTML = '<div class="loading" style="padding:30px 0">Loading&hellip;</div>';
+    try{ book.greek = await loadOriginal(f.bookId); }
+    catch(e){
+      if(greekFor !== f) return;
+      f.rendered = false;
+      el.paneGreek.innerHTML = '<div class="empty-state">Couldn\'t load the original-language text. <button class="cmp-load" id="greekRetry">Try again</button></div>';
+      document.getElementById('greekRetry').addEventListener('click', renderGreekTab);
+      return;
+    }
+    if(greekFor !== f) return;   // another verse was opened meanwhile
+  }
+  const hebrew = isOT(f.bookId);
+  const words = ((book.greek[f.ch]||{})[f.vs]) || [];
   if(words.length){
     let g = hebrew
       ? '<p class="interlinear-note">Word-by-word Hebrew for this verse (Aramaic in parts of Daniel and Ezra), from the Westminster Leningrad Codex as tagged by the Open Scriptures Hebrew Bible. Tap a word for its full lexicon entry.</p>'
@@ -61,23 +92,38 @@ export async function openVerse(vn){
       ? '<div class="empty-state">This verse has no counterpart in the Hebrew (Masoretic) text.</div>'
       : '<div class="empty-state">No tagged Greek text is available for this verse.</div>';
   }
+}
 
-  /* Fathers tab */
-  const qIdxs = ((book.fathers[ch]||{})[vs]) || [];
-  el.fathersBadge.textContent = qIdxs.length;
-  if(qIdxs.length){
-    const quotes = qIdxs.map(i => book.quotes[i]).sort((a,b)=> a.father.localeCompare(b.father));
-    el.paneFathers.innerHTML = quotes.map(q=>
-      '<div class="father-item">'+
-        '<div class="father-name">'+escapeHtml(q.father)+'</div>'+
-        '<div class="father-source">'+escapeHtml(q.source_title)+'</div>'+
-        '<div class="father-quote">'+escapeHtml(q.quote)+'</div>'+
-        (q.source_url ? '<a class="father-link" href="'+q.source_url+'" target="_blank" rel="noopener">Read the full source ↗</a>' : '')+
-      '</div>'
-    ).join('');
-  } else {
+// The verse whose citations the Fathers tab shows (bodies are fetched on first view).
+let fathersFor = null;
+async function renderFathers(){
+  const f = fathersFor;
+  if(!f || f.rendered) return;
+  f.rendered = true;
+  if(!f.refs.length){
     el.paneFathers.innerHTML = '<div class="empty-state">No surviving citations from this era (c. 100–800 AD) are indexed for this verse yet.</div>';
+    return;
   }
+  el.paneFathers.innerHTML = '<div class="loading" style="padding:30px 0">Loading&hellip;</div>';
+  let quotes;
+  try{ quotes = await loadQuotes(f.bookId, f.chapter, f.refs); }
+  catch(e){
+    if(fathersFor !== f) return;
+    f.rendered = false;
+    el.paneFathers.innerHTML = '<div class="empty-state">Couldn\'t load the citations. <button class="cmp-load" id="fathersRetry">Try again</button></div>';
+    document.getElementById('fathersRetry').addEventListener('click', renderFathers);
+    return;
+  }
+  if(fathersFor !== f) return;   // another verse was opened meanwhile
+  quotes.sort((a,b)=> a.father.localeCompare(b.father));
+  el.paneFathers.innerHTML = quotes.map(q=>
+    '<div class="father-item">'+
+      '<div class="father-name">'+escapeHtml(q.father)+'</div>'+
+      '<div class="father-source">'+escapeHtml(q.source_title)+'</div>'+
+      '<div class="father-quote">'+escapeHtml(q.quote)+'</div>'+
+      (q.source_url ? '<a class="father-link" href="'+q.source_url+'" target="_blank" rel="noopener">Read the full source ↗</a>' : '')+
+    '</div>'
+  ).join('');
 }
 // Live-translation row states: 'idle' (Load button), 'loading', 'error' (Try again), 'text'.
 const LIVE_SOURCE = { NASB: 'api.bible', ESV: 'api.esv.org' };
@@ -111,6 +157,8 @@ function renderLiveRow(code, vn, status, text){
 function showTab(name){
   document.querySelectorAll('.tab-btn').forEach(b=> b.classList.toggle('active', b.dataset.pane===name));
   document.querySelectorAll('.panel-pane').forEach(p=> p.classList.toggle('active', p.id==='pane-'+name));
+  if(name === 'fathers') renderFathers();
+  if(name === 'greek') renderGreekTab();
 }
 document.querySelectorAll('.tab-btn').forEach(b=> b.addEventListener('click', ()=> showTab(b.dataset.pane)));
 

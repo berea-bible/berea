@@ -9,6 +9,7 @@ written; KJV/ASV/WEB/YLT and everything else in the book files are left untouche
 Usage:
   python3 pipeline/build_dra.py --dry-run   # fetch, remap, validate, report; write nothing
   python3 pipeline/build_dra.py             # same, then write data/<book>.json
+  python3 pipeline/build_dra.py --data DIR  # use another data directory
 """
 import io, json, os, re, sys, urllib.request, zipfile
 from collections import defaultdict
@@ -298,4 +299,6 @@ def main(dry_run):
 
 
 if __name__ == '__main__':
+    if '--data' in sys.argv:            # build into another directory (pipeline/build.py's staging dir)
+        DATA = os.path.abspath(sys.argv[sys.argv.index('--data') + 1])
     sys.exit(main('--dry-run' in sys.argv))

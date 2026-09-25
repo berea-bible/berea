@@ -1,0 +1,9 @@
+name = "World English Bible"
+abbrev = "WEB"
+language = "en"
+license = "Public domain"
+raw = "raw/translations/eng-web.usfx.xml"
+upstream = "https://github.com/seven1m/open-bibles"
+importer = "usfx"
+versification = "auto"
+exclude = ["PS2", "3MA", "4MA"]   # not in the app yet; ordinals reserved in books.py

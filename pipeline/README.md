@@ -1,5 +1,15 @@
 # pipeline/
 
+**v2 (in progress, see `docs/v2-plan.md`):** `python3 pipeline/fetch.py` fills `raw/` (gitignored) from
+`sources/sources.lock.json`. `python3 pipeline/import_sources.py` then rebuilds `sources/` from `raw/`, in
+each source's own verse numbering. The app still reads `data/`, built by the pipeline below, until the
+switch-over.
+
+**`python3 pipeline/build.py` regenerates all of `data/` from the raw sources** (the sibling
+`../pipeline` repo and its `build/raw/`), in the order: canon build → `remap_hebrew.py` →
+`build_deuterocanonical.py` → `build_dra.py` → `finalize.py`. See each script's docstring. The build is
+staged in `pipeline/.stage/` and swapped in only when every step succeeds; output is deterministic.
+
 Offline data tooling. Nothing here is served or needed by the app. Python 3, standard library only.
 
 ## `build_dra.py`: the Douay-Rheims (DRA)

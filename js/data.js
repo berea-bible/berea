@@ -1,8 +1,7 @@
-/* Library data: books index, per-book JSON, lexicon, and the live NASB proxy. */
+/* Library data: books index, per-book JSON, church-fathers quotes, lexicon, and the live NASB/ESV proxy. */
 
 export let INDEX = null;
 export const bookCache = {};
-let lexicon = null, lexiconPromise = null;
 
 async function fetchJSON(path){
   const res = await fetch(path);
@@ -17,10 +16,59 @@ export function loadBook(id){
   if(bookCache[id]) return Promise.resolve(bookCache[id]);
   return fetchJSON('data/'+id+'.json').then(d=>{ bookCache[id]=d; return d; });
 }
-export function loadLexicon(){
-  if(lexicon) return Promise.resolve(lexicon);
-  if(!lexiconPromise) lexiconPromise = fetchJSON('data/lexicon.json').then(d=>{ lexicon=d; return d; });
-  return lexiconPromise;
+// Fetch a JSON file once per session (failures aren't cached, so they can be retried).
+const fileCache = {};
+function loadOnce(path){
+  if(!fileCache[path]){
+    fileCache[path] = fetchJSON(path);
+    fileCache[path].catch(()=>{ delete fileCache[path]; });
+  }
+  return fileCache[path];
+}
+
+// Tagged Greek/Hebrew words ({ch: {v: [word]}}), kept out of the book file: loaded only when the
+// original-language line is on or the Greek/Hebrew tab is opened.
+export function loadOriginal(bookId){ return loadOnce('data/original/' + bookId + '.json'); }
+
+/* ---------- church-fathers quotes ----------
+   A book file's `fathers` index maps verse -> quote refs. A ref is an index into that chapter's
+   quote file (data/fathers/<book>/<ch>.json), or "book/ch/i" for a quote stored with another
+   chapter (each distinct quote is stored once). Bodies load only when the Fathers tab opens. */
+export async function loadQuotes(bookId, chapter, refs){
+  const loc = refs.map(r=>{
+    if(typeof r === 'number') return [bookId + '/' + chapter, r];
+    const cut = r.lastIndexOf('/');
+    return [r.slice(0, cut), Number(r.slice(cut + 1))];
+  });
+  const paths = [...new Set(loc.map(l=> l[0]))];
+  const files = await Promise.all(paths.map(p=> loadOnce('data/fathers/' + p + '.json')));
+  const byPath = Object.fromEntries(paths.map((p, i)=> [p, files[i]]));
+  return loc.map(([p, i])=> byPath[p][i]);
+}
+
+/* ---------- lexicon ----------
+   data/lexicon/index-G.json / index-H.json: {id: [lemma, translit, gloss, pos]}, loaded on the first
+   word click in that language; definitions in buckets of INDEX.lexiconBucketSize Strong's numbers
+   (data/lexicon/G/<n>.json), each loaded when a word in its range is clicked. */
+function lexiconKey(index, strongs){
+  if(index[strongs]) return strongs;
+  // extended Strong's (e.g. G2424G) falls back to the base number, zero-padded (Greek) or not (Hebrew)
+  const m = /^([GH])0*(\d+)([A-Za-z]*)$/i.exec(strongs);
+  if(!m) return null;
+  const lang = m[1].toUpperCase();
+  return [lang + m[2].padStart(4, '0') + m[3], lang + m[2] + m[3], lang + m[2].padStart(4, '0'), lang + m[2]]
+    .find(k=> index[k]) || null;
+}
+export async function lookupLexicon(strongs){
+  const lang = String(strongs)[0].toUpperCase();
+  if(lang !== 'G' && lang !== 'H') return null;
+  const index = await loadOnce('data/lexicon/index-' + lang + '.json');
+  const key = lexiconKey(index, strongs);
+  if(!key) return null;
+  const [greek, translit, gloss, pos] = index[key];
+  const bucket = Math.floor(Number(key.replace(/\D/g, '')) / (INDEX.lexiconBucketSize || 500));
+  const defs = await loadOnce('data/lexicon/' + lang + '/' + bucket + '.json');
+  return { id: key, greek, translit, gloss, pos, definition: defs[key] || '' };
 }
 export function bookMeta(id){ return INDEX.books.find(b=>b.id===id); }
 export function isOT(id){ return INDEX.otBookIds.includes(id); }

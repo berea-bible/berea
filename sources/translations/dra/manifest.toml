@@ -1,0 +1,8 @@
+name = "Douay-Rheims (Challoner rev.)"
+abbrev = "DRA"
+language = "en"
+license = "Public domain"
+raw = "raw/engDRA_vpl.zip"
+upstream = "https://ebible.org/find/details.php?id=engDRA"
+importer = "vpl"
+versification = "auto"

@@ -1,0 +1,8 @@
+name = "King James Version (1611/1769)"
+abbrev = "KJV"
+language = "en"
+license = "Public domain"
+raw = "raw/translations/eng-kjv.osis.xml"
+upstream = "https://github.com/seven1m/open-bibles"
+importer = "osis"
+versification = "auto"

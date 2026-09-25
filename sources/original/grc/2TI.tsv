@@ -1,0 +1,1274 @@
+chapter	verse	word	type	surface	translit	strongs	morph	lemma	gloss	translation	editions	alt
+1	1	1	NKO	Παῦλος	Paulos	G3972G	N-NSM-P	Παῦλος	Paul	Paul	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	2	NKO	ἀπόστολος	apostolos	G0652	N-NSM	ἀπόστολος	apostle	an apostle	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	3	NKO	Χριστοῦ	Christou	G5547	N-GSM-T	Χριστός	Christ	of Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR»1+Byz»1	
+1	1	4	NKO	Ἰησοῦ	Iēsou	G2424G	N-GSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	5	NKO	διὰ	dia	G1223	PREP	διά	through/because of	through	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	6	NKO	θελήματος	thelēmatos	G2307	N-GSN	θέλημα	will/desire	[the] will	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	7	NKO	θεοῦ	theou	G2316	N-GSM-T	θεός	God	of God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	8	NKO	κατ᾽	kat᾽	G2596	PREP	κατά	according to	according to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	9	NKO	ἐπαγγελίαν	epangelian	G1860	N-ASF	ἐπαγγελία	promise	[the] promise	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	10	NKO	ζωῆς	zōēs	G2222	N-GSF	ζωή	life	of life	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	11	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	12	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	13	NKO	Χριστῷ	Christō	G5547	N-DSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	1	14	NKO	Ἰησοῦ	Iēsou	G2424G	N-DSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	1	NKO	Τιμοθέῳ	Timotheō	G5095	N-DSM-P	Τιμόθεος	Timothy	To Timothy	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	2	NKO	ἀγαπητῷ	agapētō	G0027	A-DSN	ἀγαπητός	beloved	[my] beloved	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	3	NKO	τέκνῳ·	teknō	G5043	N-DSN	τέκνον	child	child:	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	4	NKO	χάρις,	charis	G5485	N-NSF	χάρις	grace	Grace,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	5	NKO	ἔλεος,	eleos	G1656	N-NSN	ἔλεος	mercy	mercy,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	6	NKO	εἰρήνη	eirēnē	G1515	N-NSF	εἰρήνη	peace	[and] peace	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	7	NKO	ἀπὸ	apo	G0575	PREP	ἀπό	away from	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	8	NKO	θεοῦ	theou	G2316	N-GSM-T	θεός	God	God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	9	NKO	πατρὸς	patros	G3962	N-GSM-T	πατήρ	father	[the] Father	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	10	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	11	NKO	Χριστοῦ	Christou	G5547	N-GSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	12	NKO	Ἰησοῦ	Iēsou	G2424G	N-GSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	13	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	14	NKO	κυρίου	kuriou	G2962G	N-GSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	2	15	NKO	ἡμῶν.¶	hēmōn	G3165	P-1GP	ἐγώ	I/we	of us.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	1	NKO	Χάριν	Charin	G5485	N-ASF	χάρις	grace	Thankful	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	2	NKO	ἔχω	echō	G2192	V-PAI-1S	ἔχω	to have/be	I am	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	3	NKO	τῷ	tō	G3588	T-DSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	4	NKO	θεῷ,	theō	G2316	N-DSM-T	θεός	God	to God,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	5	NKO	ᾧ	hō	G3739	R-DSM	ὅς, ἥ	which	whom	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	6	NKO	λατρεύω	latreuō	G3000	V-PAI-1S	λατρεύω	to minister	I serve	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	7	NKO	ἀπὸ	apo	G0575	PREP	ἀπό	away from	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	8	NKO	προγόνων	progonōn	G4269	N-GPM	πρόγονος	parent/ancestor	[my] forefathers	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	9	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	10	NKO	καθαρᾷ	kathara	G2513	A-DSF	καθαρός	clean	a pure	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	11	NKO	συνειδήσει,	suneidēsei	G4893	N-DSF	συνείδησις	conscience	conscience,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	12	NKO	ὡς	hōs	G5613	PRT	ὡς	which/how	as	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	13	NKO	ἀδιάλειπτον	adialeipton	G0088	A-ASF	ἀδιάλειπτος	continuous	unceasingly	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	14	NKO	ἔχω	echō	G2192	V-PAI-1S	ἔχω	to have/be	I have	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	15	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	16	NKO	περὶ	peri	G4012	PREP	περί	about	of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	17	NKO	σοῦ	sou	G4771	P-2GS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	18	NKO	μνείαν	mneian	G3417	N-ASF	μνεία	remembrance	remembrance	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	19	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	20	NKO	ταῖς	tais	G3588	T-DPF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	21	NKO	δεήσεσίν	deēsesin	G1162	N-DPF	δέησις	petition	prayers	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	22	NKO	μου	mou	G3165	P-1GS	ἐγώ	I/we	of mine	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	23	NKO	νυκτὸς	nuktos	G3571	N-GSF	νύξ	night	night	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	24	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	3	25	NKO	ἡμέρας	hēmeras	G2250	N-GSF	ἡμέρα	day	day	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	1	NKO	ἐπιποθῶν	epipothōn	G1971	V-PAP-NSM	ἐπιποθέω	to long for	longing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	2	NKO	σε	se	G4771	P-2AS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	3	NKO	ἰδεῖν,	idein	G1492H	V-2AAN	εἴδω	to perceive	to see,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	4	NKO	μεμνημένος	memnēmenos	G3403	V-RMP-NSM	μιμνήσκω	to remember	having yourself recalled	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	5	NKO	σου	sou	G4771	P-2GS	σύ	you	your	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	6	NKO	τῶν	tōn	G3588	T-GPN	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	7	NKO	δακρύων,	dakruōn	G1144	N-GPN	δάκρυ, δάκρυον	teardrop	tears,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	8	NKO	ἵνα	ina	G2443	CONJ	ἵνα	in order that/to	so that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	9	NKO	χαρᾶς	charas	G5479	N-GSF	χαρά	joy	with joy	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	4	10	NKO	πληρωθῶ	plērōthō	G4137	V-APS-1S	πληρόω	to fulfill	I may be filled	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	1	NKO	ὑπόμνησιν	hupomnēsin	G5280	N-ASF	ὑπόμνησις	remembrance	remembrance	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	2	N(k)O	λαβὼν	labōn	G2983	V-2AAP-NSM	λαμβάνω	to take	having taken	NA28+NA27+Tyn+SBL+WH+Treg	
+1	5	3	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	4	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	within	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	5	NKO	σοὶ	soi	G4771	P-2DS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	6	NKO	ἀνυποκρίτου	anupokritou	G0505	A-GSF	ἀνυπόκριτος	genuine	sincere	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	7	NKO	πίστεως,	pisteōs	G4102G	N-GSF	πίστις	faith	faith,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	8	NKO	ἥτις	hētis	G3748	R-NSF	ὅστις	who/which	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	9	NKO	ἐνῴκησεν	enōkēsen	G1774	V-AAI-3S	ἐνοικέω	to dwell in/with	dwelt	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	10	NKO	πρῶτον	prōton	G4413G	A-ASN	πρῶτος	first	first	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	11	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	12	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	13	NKO	μάμμῃ	mammē	G3125	N-DSF	μάμμη	grandmother	grandmother	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	14	NKO	σου	sou	G4771	P-2GS	σύ	you	of you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	15	NKO	Λωΐδι	Lōidi	G3090	N-DSF-P	Λωΐς	Lois	Lois	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	16	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	17	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	in the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	18	NKO	μητρί	mētri	G3384	N-DSF	μήτηρ	mother	mother	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	19	NKO	σου	sou	G4771	P-2GS	σύ	you	of you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	20	NKO	Εὐνίκῃ,	Eunikē	G2131	N-DSF-P	Εὐνίκη	Eunice	Eunice,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	21	NKO	πέπεισμαι	pepeismai	G3982	V-RPI-1S	πείθω	to persuade	I have been persuaded	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	22	NKO	δὲ	de	G1161	CONJ	δέ	but/and	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	23	NKO	ὅτι	hoti	G3754G	CONJ	ὅτι	that/since	that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	24	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	25	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	[it is] in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	5	26	NKO	σοί.¶	soi	G4771	P-2DS	σύ	you	you.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	1	NKO	Δι᾽	Di᾽	G1223	PREP	διά	through/because of	For	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	2	NKO	ἣν	hēn	G3739	R-ASF	ὅς, ἥ	which	this	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	3	NKO	αἰτίαν	aitian	G0156	N-ASF	αἰτία	cause/charge	reason	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	4	NKO	ἀναμιμνῄσκω	anamimnēskō	G0363	V-PAI-1S	ἀναμιμνήσκω	to remind	I remind	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	5	NKO	σε	se	G4771	P-2AS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	6	NKO	ἀναζωπυρεῖν	anazōpurein	G0329	V-PAN	ἀναζωπυρέω	to rekindle	to kindle anew	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	7	NKO	τὸ	to	G3588	T-ASN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	8	NKO	χάρισμα	charisma	G5486	N-ASN	χάρισμα	gift	gift	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	9	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	10	NKO	θεοῦ,	theou	G2316	N-GSM-T	θεός	God	of God,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	11	NKO	ὅ	ho	G3739	R-NSN	ὅς, ἥ	which	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	12	NKO	ἐστιν	estin	G1510	V-PAI-3S	εἰμί	to be	is	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	13	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	14	NKO	σοὶ	soi	G4771	P-2DS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	15	NKO	διὰ	dia	G1223	PREP	διά	through/because of	through	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	16	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	17	NKO	ἐπιθέσεως	epitheseōs	G1936	N-GSF	ἐπίθεσις	laying on	laying on	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	18	NKO	τῶν	tōn	G3588	T-GPF	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	19	NKO	χειρῶν	cheirōn	G5495	N-GPF	χείρ	hand	hands	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	6	20	NKO	μου·	mou	G3165	P-1GS	ἐγώ	I/we	of mine;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	1	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	Not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	2	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	3	NKO	ἔδωκεν	edōken	G1325	V-AAI-3S	δίδωμι	to give	has given	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	4	NKO	ἡμῖν	hēmin	G3165	P-1DP	ἐγώ	I/we	us	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	5	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	6	NKO	θεὸς	theos	G2316	N-NSM-T	θεός	God	God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	7	NKO	πνεῦμα	pneuma	G4151G	N-ASN	πνεῦμα	spirit/breath	a spirit	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	8	NKO	δειλίας	deilias	G1167	N-GSF	δειλία	timidity	of cowardice	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	9	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	10	NKO	δυνάμεως	dunameōs	G1411	N-GSF	δύναμις	power	of power	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	11	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	12	NKO	ἀγάπης	agapēs	G0026	N-GSF	ἀγάπη	love	of love	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	13	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	7	14	NKO	σωφρονισμοῦ.¶	sōphronismou	G4995	N-GSM	σωφρονισμός	self-discipline	of self-control.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	1	NKO	Μὴ	Mē	G3361	PRT-N	μή	not	Not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	2	NKO	οὖν	oun	G3767	CONJ	οὖν	therefore/then	therefore	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	3	NKO	ἐπαισχυνθῇς	epaischunthēas	G1870	V-AOS-2S	ἐπαισχύνομαι	be ashamed of	you may be ashamed of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	4	NKO	τὸ	to	G3588	T-ASN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	5	NKO	μαρτύριον	marturion	G3142	N-ASN	μαρτύριον	testimony	testimony	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	6	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	7	NKO	κυρίου	kuriou	G2962G	N-GSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	8	NKO	ἡμῶν	hēmōn	G3165	P-1GP	ἐγώ	I/we	of us	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	9	NKO	μηδὲ	mēde	G3366	CONJ-N	μηδέ	nor	nor	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	10	NKO	ἐμὲ	eme	G1473	P-1AS	ἐγώ	I/we	of me myself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	11	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	12	NKO	δέσμιον	desmion	G1198	N-ASM	δέσμιος	prisoner	prisoner	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	13	NKO	αὐτοῦ,	autou	G0846	P-GSM	αὐτός	he/she/it/self	of Him,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	14	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	15	NKO	συγκακοπάθησον	sugkakopathēson	G4777	V-AAM-2S	συγκακοπαθέω	to suffer with	do suffer together	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	16	NKO	τῷ	tō	G3588	T-DSN	ὁ	the/this/who	for the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	17	NKO	εὐαγγελίῳ	euangeliō	G2098	N-DSN	εὐαγγέλιον	gospel	gospel	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	18	NKO	κατὰ	kata	G2596	PREP	κατά	according to	according to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	19	NKO	δύναμιν	dunamin	G1411	N-ASF	δύναμις	power	[the] power	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	8	20	NKO	θεοῦ	theou	G2316	N-GSM-T	θεός	God	of God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	1	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	the [One who]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	2	NKO	σώσαντος	sōsantos	G4982	V-AAP-GSM	σῴζω	to save	having saved	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	3	NKO	ἡμᾶς	hēmas	G3165	P-1AP	ἐγώ	I/we	us	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	4	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	5	NKO	καλέσαντος	kalesantos	G2564G	V-AAP-GSM	καλέω	to call	having called [us]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	6	NKO	κλήσει	klēsei	G2821	N-DSF	κλῆσις	calling	with a calling	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	7	NKO	ἁγίᾳ,	hagia	G0040G	A-DSF	ἅγιος	holy	holy,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	8	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	9	NKO	κατὰ	kata	G2596	PREP	κατά	according to	according to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	10	NKO	τὰ	ta	G3588	T-APN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	11	NKO	ἔργα	erga	G2041	N-APN	ἔργον	work	works	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	12	NKO	ἡμῶν	hēmōn	G3165	P-1GP	ἐγώ	I/we	of us	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	13	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	14	NKO	κατὰ	kata	G2596	PREP	κατά	according to	according to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	15	NKO	ἰδίαν	idian	G2398	A-ASF	ἴδιος	one's own/private	[His] own	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	16	NKO	πρόθεσιν	prothesin	G4286	N-ASF	πρόθεσις	purpose	purpose	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	17	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	18	NKO	χάριν	charin	G5485	N-ASF	χάρις	grace	grace	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	19	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	20	NKO	δοθεῖσαν	dotheisan	G1325	V-APP-ASF	δίδωμι	to give	having been given	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	21	NKO	ἡμῖν	hēmin	G3165	P-1DP	ἐγώ	I/we	us	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	22	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	23	NKO	Χριστῷ	Christō	G5547	N-DSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	24	NKO	Ἰησοῦ	Iēsou	G2424G	N-DSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	25	NKO	πρὸ	pro	G4253	PREP	πρό	before	before	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	26	NKO	χρόνων	chronōn	G5550	N-GPM	χρόνος	time	time	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	9	27	NKO	αἰωνίων,	aiōniōn	G0166	A-GPM	αἰώνιος	eternal	eternal,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	1	NKO	φανερωθεῖσαν	phanerōtheisan	G5319	V-APP-ASF	φανερόω	to manifest	having been made manifest	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	3	NKO	νῦν	nun	G3568	ADV	νῦν	now	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	4	NKO	διὰ	dia	G1223	PREP	διά	through/because of	through	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	5	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	6	NKO	ἐπιφανείας	epiphaneias	G2015	N-GSF	ἐπιφάνεια	appearing	appearing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	7	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	8	NKO	σωτῆρος	sōtēros	G4990	N-GSM	σωτήρ	savior	Savior	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	9	NKO	ἡμῶν	hēmōn	G3165	P-1GP	ἐγώ	I/we	of us	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	10	NKO	Χριστοῦ	Christou	G5547	N-GSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	11	NKO	Ἰησοῦ,	Iēsou	G2424G	N-GSM-P	Ἰησοῦς	Jesus/Joshua	Jesus,	NA28+NA27+Tyn«2+SBL«2+WH+Treg+TR«2+Byz«2	
+1	10	12	NKO	καταργήσαντος	katargēsantos	G2673	V-AAP-GSM	καταργέω	to abate	having abolished	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	13	NKO	μὲν	men	G3303	PRT	μέν	on one hand	indeed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	14	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	15	NKO	θάνατον,	thanaton	G2288	N-ASM	θάνατος	death	death,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	16	NKO	φωτίσαντος	phōtisantos	G5461	V-AAP-GSM	φωτίζω	to illuminate	having brought to light	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	17	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	18	NKO	ζωὴν	zōēn	G2222	N-ASF	ζωή	life	life	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	19	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	20	NKO	ἀφθαρσίαν	aphtharsian	G0861	N-ASF	ἀφθαρσία	incorruptibility	immortality	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	21	NKO	διὰ	dia	G1223	PREP	διά	through/because of	through	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	22	NKO	τοῦ	tou	G3588	T-GSN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	10	23	NKO	εὐαγγελίου,	euangeliou	G2098	N-GSN	εὐαγγέλιον	gospel	gospel,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	1	NKO	εἰς	eis	G1519	PREP	εἰς	toward	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	2	NKO	ὃ	ho	G3739	R-ASN	ὅς, ἥ	which	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	3	NKO	ἐτέθην	etethēn	G5087	V-API-1S	τίθημι	to place	was appointed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	4	NKO	ἐγὼ	egō	G1473	P-1NS	ἐγώ	I/we	I myself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	5	NKO	κῆρυξ	kērux	G2783	N-NSM	κῆρυξ	preacher	a herald	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	6	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	7	NKO	ἀπόστολος	apostolos	G0652	N-NSM	ἀπόστολος	apostle	an apostle	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	8	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	9	NKO	διδάσκαλος	didaskalos	G1320	N-NSM	διδάσκαλος	teacher	a teacher	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	11	10	KO	ἐθνῶν·	ethnōn	G1484	N-GPN	ἔθνος	Gentile nation	of gentiles;	Treg+TR+Byz	
+1	12	1	NKO	δι᾽	di᾽	G1223	PREP	διά	through/because of	For	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	2	NKO	ἣν	hēn	G3739	R-ASF	ὅς, ἥ	which	this	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	3	NKO	αἰτίαν	aitian	G0156	N-ASF	αἰτία	cause/charge	reason	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	4	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	5	NKO	ταῦτα	tauta	G3778	D-APN	οὗτος	this/he/she/it	these things	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	6	NKO	πάσχω,	paschō	G3958	V-PAI-1S	πάσχω	to suffer	I suffer,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	7	NKO	ἀλλ᾽	all᾽	G0235	CONJ	ἀλλά	but	But	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	8	NKO	οὐκ	ouk	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	9	NKO	ἐπαισχύνομαι·	epaischunomai	G1870	V-PNI-1S	ἐπαισχύνομαι	be ashamed of	I am ashamed;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	10	NKO	οἶδα	oida	G6063	V-RAI-1S	εἴδω	to perceive	I know	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	11	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	12	NKO	ᾧ	hō	G3739	R-DSM	ὅς, ἥ	which	in whom	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	13	NKO	πεπίστευκα	pepisteuka	G4100	V-RAI-1S	πιστεύω	to trust (in)	I have believed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	14	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	15	NKO	πέπεισμαι	pepeismai	G3982	V-RPI-1S	πείθω	to persuade	I have been persuaded	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	16	NKO	ὅτι	hoti	G3754G	CONJ	ὅτι	that/since	that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	17	NKO	δυνατός	dunatos	G1415	A-NSM	δυνατός	able	able	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	18	NKO	ἐστιν	estin	G1510	V-PAI-3S	εἰμί	to be	He is	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	19	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	20	NKO	παραθήκην	parathēkēn	G3866	N-ASF	παραθήκη	deposit	entrusted deposit	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	21	NKO	μου	mou	G3165	P-1GS	ἐγώ	I/we	of mine	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	22	NKO	φυλάξαι	phulaxai	G5442I	V-AAN	φυλάσσω	to keep/guard	to guard	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	23	NKO	εἰς	eis	G1519	PREP	εἰς	toward	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	24	NKO	ἐκείνην	ekeinēn	G1565	D-ASF	ἐκεῖνος	that	that [very]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	25	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	12	26	NKO	ἡμέραν.¶	hēmeran	G2250	N-ASF	ἡμέρα	day	day.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	1	NKO	Ὑποτύπωσιν	Hupotupōsin	G5296	N-ASF	ὑποτύπωσις	example	[The] pattern	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	2	NKO	ἔχε	eche	G2192	V-PAM-2S	ἔχω	to have/be	do retain	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	3	NKO	ὑγιαινόντων	hugiainontōn	G5198	V-PAP-GPM	ὑγιαίνω	be healthy	of sound	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	4	NKO	λόγων	logōn	G3056	N-GPM	λόγος	word	words	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	5	NKO	ὧν	hōn	G3739	R-GPM	ὅς, ἥ	which	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	6	NKO	παρ᾽	par᾽	G3844	PREP	παρά	from with	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	7	NKO	ἐμοῦ	emou	G1473	S-1SGSN	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	8	NKO	ἤκουσας	ēkousas	G0191	V-AAI-2S	ἀκούω	to hear	you did hear	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	9	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	10	NKO	πίστει	pistei	G4102G	N-DSF	πίστις	faith	[the] faith	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	11	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	12	NKO	ἀγάπῃ	agapē	G0026	N-DSF	ἀγάπη	love	love	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	13	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	that [are]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	14	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	15	NKO	Χριστῷ	Christō	G5547	N-DSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	13	16	NKO	Ἰησοῦ·	Iēsou	G2424G	N-DSM-P	Ἰησοῦς	Jesus/Joshua	Jesus;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	1	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	The	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	2	NKO	καλὴν	kalēn	G2570G	A-ASF	καλός	good	good	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	3	N(k)O	παραθήκην	parathēkēn	G3866	N-ASF	παραθήκη	deposit	entrusted deposit	NA28+NA27+Tyn+SBL+WH+Treg+Byz	
+1	14	4	NKO	φύλαξον	phulaxon	G5442I	V-AAM-2S	φυλάσσω	to keep/guard	do keep	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	5	NKO	διὰ	dia	G1223	PREP	διά	through/because of	through	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	6	NKO	πνεύματος	pneumatos	G4151G	N-GSN	πνεῦμα	spirit/breath	[the] Spirit	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	7	NKO	ἁγίου	hagiou	G0040G	A-GSN	ἅγιος	holy	Holy	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	8	NKO	τοῦ	tou	G3588	T-GSN	ὁ	the/this/who	who	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	9	NKO	ἐνοικοῦντος	enoikountos	G1774	V-PAP-GSN	ἐνοικέω	to dwell in/with	is dwelling	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	10	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	14	11	NKO	ἡμῖν.¶	hēmin	G3165	P-1DP	ἐγώ	I/we	us.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	1	NKO	Οἶδας	Oidas	G6063	V-RAI-2S	εἴδω	to perceive	You know	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	2	NKO	τοῦτο,	touto	G3778	D-ASN	οὗτος	this/he/she/it	this,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	3	NKO	ὅτι	hoti	G3754G	CONJ	ὅτι	that/since	that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	4	NKO	ἀπεστράφησάν	apestraphēsan	G0654	V-API-3P	ἀποστρέφω	to turn away	turned away from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	5	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	6	NKO	πάντες	pantes	G3956	A-NPM	πᾶς	all	all	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	7	NKO	οἱ	hoi	G3588	T-NPM	ὁ	the/this/who	those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	8	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	9	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	10	NKO	Ἀσίᾳ,	Asia	G0773	N-DSF-L	Ἀσία	Asia	Asia,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	11	NKO	ὧν	hōn	G3739	R-GPM	ὅς, ἥ	which	among whom	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	12	NKO	ἐστιν	estin	G1510	V-PAI-3S	εἰμί	to be	are	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	13	NKO	Φύγελος	Phugelos	G5436	N-NSM-P	Φύγελλος	Phygelus	Phygelus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	14	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	15	15	NKO	Ἑρμογένης.	Hermogenēs	G2061	N-NSM-P	Ἑρμογένης	Hermogenes	Hermogenes.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	1	NKO	δῴη	dōē	G1325	V-2AAO-3S	δίδωμι	to give	would grant	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	2	NKO	ἔλεος	eleos	G1656	N-ASN	ἔλεος	mercy	mercy	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	3	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	4	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	5	NKO	τῷ	tō	G3588	T-DSM	ὁ	the/this/who	to the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	6	NKO	Ὀνησιφόρου	Onēsiphorou	G3683	N-GSM-P	Ὀνησίφορος	Onesiphorus	of Onesiphorus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	7	NKO	οἴκῳ·	oikō	G3624H	N-DSM	οἶκος	house	household;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	8	NKO	ὅτι	hoti	G3754H	CONJ	ὅτι	that/since	because	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	9	NKO	πολλάκις	pollakis	G4178	ADV	πολλάκις	often	often	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	10	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	11	NKO	ἀνέψυξεν	anepsuxen	G0404	V-AAI-3S	ἀναψύχω	to refresh	he refreshed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	12	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	13	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	14	NKO	ἅλυσίν	halusin	G0254	N-ASF	ἅλυσις	chain	chain	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	15	NKO	μου	mou	G3165	P-1GS	ἐγώ	I/we	of mine	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	16	NKO	οὐκ	ouk	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	16	17	N(k)O	ἐπαισχύνθη,	epaischunthē	G1870	V-AOI-3S	ἐπαισχύνομαι	be ashamed of	he was ashamed of,	NA28+NA27+Tyn+SBL+WH+Treg+Byz	
+1	17	1	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	But	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	17	2	NKO	γενόμενος	genomenos	G1096	V-2ADP-NSM	γίνομαι	to be	having arrived	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	17	3	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	17	4	NKO	Ῥώμῃ	Rhōmē	G4516	N-DSF-L	Ῥώμη	Rome	Rome	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	17	5	N(k)O	σπουδαίως	spoudaiōs	G4709	ADV	σπουδαίως	diligently	earnestly	NA28+NA27+Tyn+SBL+WH+Treg	
+1	17	6	NKO	ἐζήτησέν	ezētēsen	G2212	V-AAI-3S	ζητέω	to seek	he sought out	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	17	7	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	17	8	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	17	9	NKO	εὗρεν·	heuren	G2147	V-2AAI-3S	εὑρίσκω	to find/meet	found [me];	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	1	NKO	δῴη	dōē	G1325	V-2AAO-3S	δίδωμι	to give	would grant	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	2	NKO	αὐτῷ	autō	G0846	P-DSM	αὐτός	he/she/it/self	unto him	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	3	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	4	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	5	NKO	εὑρεῖν	heurein	G2147	V-2AAN	εὑρίσκω	to find/meet	to find	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	6	NKO	ἔλεος	eleos	G1656	N-ASN	ἔλεος	mercy	mercy	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	7	NKO	παρὰ	para	G3844	PREP	παρά	from with	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	8	NKO	κυρίου	kuriou	G2962G	N-GSM-T	κύριος	lord	[the] Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	9	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	10	NKO	ἐκείνῃ	ekeinē	G1565	D-DSF	ἐκεῖνος	that	that [very]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	11	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	12	NKO	ἡμέρᾳ.	hēmera	G2250	N-DSF	ἡμέρα	day	day!	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	13	NKO	καὶ	kai	G2532	CONJ	καί	and	And	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	14	NKO	ὅσα	hosa	G3745	K-APN	ὅσος	just as/how much	how much	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	15	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	16	NKO	Ἐφέσῳ	Ephesō	G2181	N-DSF-L	Ἔφεσος	Ephesus	Ephesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	17	NKO	διηκόνησεν,	diēkonēsen	G1247	V-AAI-3S	διακονέω	to serve	he served	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	18	NKO	βέλτιον	beltion	G0957	A-ASN-C	βελτίων	better	very well	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	19	NKO	σὺ	su	G4771	P-2NS	σύ	you	you yourself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+1	18	20	NKO	γινώσκεις.¶	ginōskeis	G1097	V-PAI-2S	γινώσκω	to know	know.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	1	NKO	Σὺ	Su	G4771	P-2NS	σύ	you	You yourself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	2	NKO	οὖν,	oun	G3767	CONJ	οὖν	therefore/then	therefore,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	3	NKO	τέκνον	teknon	G5043	N-VSN	τέκνον	child	child	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	4	NKO	μου,	mou	G3165	P-1GS	ἐγώ	I/we	of mine,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	5	NKO	ἐνδυναμοῦ	endunamou	G1743	V-PPM-2S	ἐνδυναμόω	to empower	do be strong	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	6	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	7	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	8	NKO	χάριτι	chariti	G5485	N-DSF	χάρις	grace	grace	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	9	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	that [is]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	10	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	11	NKO	Χριστῷ	Christō	G5547	N-DSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	1	12	NKO	Ἰησοῦ,	Iēsou	G2424G	N-DSM-P	Ἰησοῦς	Jesus/Joshua	Jesus,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	1	NKO	καὶ	kai	G2532	CONJ	καί	and	And	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	2	NKO	ἃ	ha	G3739	R-APN	ὅς, ἥ	which	[the things] which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	3	NKO	ἤκουσας	ēkousas	G0191	V-AAI-2S	ἀκούω	to hear	you have heard	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	4	NKO	παρ᾽	par᾽	G3844	PREP	παρά	from with	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	5	NKO	ἐμοῦ	emou	G1473	S-1SGSN	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	6	NKO	διὰ	dia	G1223	PREP	διά	through/because of	among	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	7	NKO	πολλῶν	pollōn	G4183	A-GPM	πολύς	much	many	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	8	NKO	μαρτύρων,	marturōn	G3144	N-GPM	μάρτυς	witness	witnesses,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	9	NKO	ταῦτα	tauta	G3778	D-APN	οὗτος	this/he/she/it	these	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	10	NKO	παράθου	parathou	G3908	V-2AMM-2S	παρατίθημι	to set before	do yourself entrust	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	11	NKO	πιστοῖς	pistois	G4103	A-DPM	πιστός	faithful	to faithful	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	12	NKO	ἀνθρώποις,	anthrōpois	G0444	N-DPM	ἄνθρωπος	a human	men,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	13	NKO	οἵτινες	oitines	G3748	R-NPM	ὅστις	who/which	such as	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	14	NKO	ἱκανοὶ	hikanoi	G2425	A-NPM	ἱκανός	sufficient	sufficient	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	15	NKO	ἔσονται	esontai	G1510	V-FDI-3P	εἰμί	to be	will be	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	16	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	17	NKO	ἑτέρους	heterous	G2087	A-APM	ἕτερος	other	others	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	2	18	NKO	διδάξαι.	didaxai	G1321	V-AAN	διδάσκω	to teach	to teach.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	3	1	k	σὺ	su	G4771	P-2NS	σύ	you	you yourself	TR+Byz	
+2	3	2	K	οὖν	oun	G3767	CONJ	οὖν	therefore/then	therefore	TR+Byz	
+2	3	3	N(k)O	συγκακοπάθησον	sugkakopathēson	G4777	V-AAM-2S	συγκακοπαθέω	to suffer with	do share in suffering	NA28+NA27+Tyn+SBL+WH+Treg	
+2	3	4	NKO	ὡς	hōs	G5613	PRT	ὡς	which/how	as	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	3	5	NKO	καλὸς	kalos	G2570G	A-NSM	καλός	good	[a] good	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	3	6	NKO	στρατιώτης	stratiōtēs	G4757	N-NSM	στρατιώτης	soldier	soldier	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	3	7	NKO	Χριστοῦ	Christou	G5547	N-GSM-T	Χριστός	Christ	of Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR»1+Byz»1	
+2	3	8	NKO	Ἰησοῦ.	Iēsou	G2424G	N-GSM-P	Ἰησοῦς	Jesus/Joshua	Jesus.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	1	NKO	οὐδεὶς	oudeis	G3762	A-NSM	οὐδείς	none	No [one]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	2	NKO	στρατευόμενος	strateuomenos	G4754	V-PMP-NSM	στρατεύω	to battle	serving as a soldier	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	3	NKO	ἐμπλέκεται	empleketai	G1707	V-PMI-3S	ἐμπλέκω	to entangle/involve	entangles himself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	4	NKO	ταῖς	tais	G3588	T-DPF	ὁ	the/this/who	in the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	5	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	of this	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	6	NKO	βίου	biou	G0979	N-GSM	βίος	life	life	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	7	NKO	πραγματείαις,	pragmateiais	G4230	N-DPF	πραγματεία	affairs	affairs,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	8	NKO	ἵνα	ina	G2443	CONJ	ἵνα	in order that/to	so that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	9	NKO	τῷ	tō	G3588	T-DSM	ὁ	the/this/who	the [one]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	10	NKO	στρατολογήσαντι	stratologēsanti	G4758	V-AAP-DSM	στρατολογέω	to enlist	having enlisted him	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	4	11	NKO	ἀρέσῃ.	aresē	G0700	V-AAS-3S	ἀρέσκω	to please	he may please.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	1	NKO	ἐὰν	ean	G1437	COND	ἐάν	if	If	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	3	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	4	NKO	ἀθλῇ	athlēa	G0118	V-PAS-3S	ἀθλέω	to compete	shall compete	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	5	NKO	τις,	tis	G5100	X-NSM	τις	one	anyone,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	6	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	7	NKO	στεφανοῦται	stephanoutai	G4737	V-PPI-3S	στεφανόω	to crown	he is crowned	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	8	NKO	ἐὰν	ean	G1437	COND	ἐάν	if	only	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	9	NKO	μὴ	mē	G3361	PRT-N	μή	not	unless	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	10	NKO	νομίμως	nomimōs	G3545	ADV	νομίμως	lawfully	lawfully	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	5	11	NKO	ἀθλήσῃ.	athlēsē	G0118	V-AAS-3S	ἀθλέω	to compete	he shall compete.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	1	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	For the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	2	NKO	κοπιῶντα	kopiōnta	G2872	V-PAP-ASM	κοπιάω	to labor	hardworking	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	3	NKO	γεωργὸν	geōrgon	G1092	N-ASM	γεωργός	farmer	farmer	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	4	NKO	δεῖ	dei	G1163	V-PAI-3S	δεῖ	be necessary	it is necessary	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	5	NKO	πρῶτον	prōton	G4413G	A-ASN	πρῶτος	first	first	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	6	NKO	τῶν	tōn	G3588	T-GPM	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	7	NKO	καρπῶν	karpōn	G2590	N-GPM	καρπός	fruit	fruits	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	6	8	NKO	μεταλαμβάνειν·	metalambanein	G3335	V-PAN	μεταλαμβάνω	to partake	to partake;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	1	NKO	νόει	noei	G3539	V-PAM-2S	νοέω	to understand	do consider	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	2	N(k)O	ὃ	ho	G3739	R-ASN	ὅς, ἥ	which	[the] thing	NA28+NA27+Tyn+SBL+WH+Treg	
+2	7	3	NKO	λέγω·	legō	G3004G	V-PAI-1S	λέγω	to speak	I am saying;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	4	N(k)O	δώσει	dōsei	G1325	V-FAI-3S	δίδωμι	to give	will grant	NA28+NA27+Tyn+SBL+WH+Treg	
+2	7	5	NKO	γάρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	6	NKO	σοι	soi	G4771	P-2DS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	7	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	8	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	9	NKO	σύνεσιν	sunesin	G4907	N-ASF	σύνεσις	understanding	understanding	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	10	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	7	11	NKO	πᾶσιν.¶	pasin	G3956	A-DPN	πᾶς	all	all things.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	1	NKO	Μνημόνευε	Mnēmoneue	G3421	V-PAM-2S	μνημονεύω	to remember	do remember	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	2	NKO	Ἰησοῦν	Iēsoun	G2424G	N-ASM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	3	NKO	Χριστὸν	Christon	G5547	N-ASM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	4	NKO	ἐγηγερμένον	egēgermenon	G1453	V-RPP-ASM	ἐγείρω	to arise	raised	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	5	NKO	ἐκ	ek	G1537	PREP	ἐκ	out from	out from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	6	NKO	νεκρῶν	nekrōn	G3498	A-GPM	νεκρός	dead	[the] dead	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	7	NKO	ἐκ	ek	G1537	PREP	ἐκ	out from	from [the]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	8	NKO	σπέρματος	spermatos	G4690G	N-GSN	σπέρμα	seed	seed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	9	NKO	Δαυὶδ	Dauid	G1138	N-GSM-P	Δαυείδ, Δαυίδ, Δαβίδ	David	of David	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	10	NKO	κατὰ	kata	G2596	PREP	κατά	according to	according to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	11	NKO	τὸ	to	G3588	T-ASN	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	12	NKO	εὐαγγέλιόν	euangelion	G2098	N-ASN	εὐαγγέλιον	gospel	gospel	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	8	13	NKO	μου·	mou	G3165	P-1GS	ἐγώ	I/we	of mine;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	1	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	2	NKO	ᾧ	hō	G3739	R-DSN	ὅς, ἥ	which	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	3	NKO	κακοπαθῶ	kakopathō	G2553	V-PAI-1S	κακοπαθέω	to endure	I suffer hardship	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	4	NKO	μέχρι	mechri	G3360	PREP	μέχρι	until	even to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	5	NKO	δεσμῶν	desmōn	G1199	N-GPM	δεσμός	chain	chains	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	6	NKO	ὡς	hōs	G5613	PRT	ὡς	which/how	as	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	7	NKO	κακοῦργος,	kakourgos	G2557	A-NSM	κακοῦργος	criminal	an evildoer,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	8	NKO	ἀλλ᾽	all᾽	G0235	CONJ	ἀλλά	but	But	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	9	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	10	NKO	λόγος	logos	G3056	N-NSM	λόγος	word	word	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	11	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	12	NKO	θεοῦ	theou	G2316	N-GSM-T	θεός	God	of God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	13	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	9	14	NKO	δέδεται.	dedetai	G1210	V-RPI-3S	δέω	to bind	has been bound!	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	1	NKO	διὰ	dia	G1223	PREP	διά	through/because of	Because of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	2	NKO	τοῦτο	touto	G3778	D-ASN	οὗτος	this/he/she/it	this	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	3	NKO	πάντα	panta	G3956	A-APN	πᾶς	all	all things	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	4	NKO	ὑπομένω	hupomenō	G5278	V-PAI-1S	ὑπομένω	to remain/endure	I endure	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	5	NKO	διὰ	dia	G1223	PREP	διά	through/because of	for the sake of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	6	NKO	τοὺς	tous	G3588	T-APM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	7	NKO	ἐκλεκτούς,	eklektous	G1588	A-APM	ἐκλεκτός	select	elect,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	8	NKO	ἵνα	ina	G2443	CONJ	ἵνα	in order that/to	so that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	9	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	10	NKO	αὐτοὶ	autoi	G0846	P-NPM	αὐτός	he/she/it/self	they themselves	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	11	NKO	σωτηρίας	sōtērias	G4991	N-GSF	σωτηρία	salvation	[the] salvation	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	12	NKO	τύχωσιν	tuchōsin	G5177	V-2AAS-3P	τυγχάνω	to obtain/happen	may obtain	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	13	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	that [is]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	14	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	15	NKO	Χριστῷ	Christō	G5547	N-DSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	16	NKO	Ἰησοῦ	Iēsou	G2424G	N-DSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	17	NKO	μετὰ	meta	G3326	PREP	μετά	with/after	with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	18	NKO	δόξης	doxēs	G1391	N-GSF	δόξα	glory	glory	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	10	19	NKO	αἰωνίου.¶	aiōniou	G0166	A-GSF	αἰώνιος	eternal	eternal.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	1	NKO	Πιστὸς	Pistos	G4103	A-NSM	πιστός	faithful	Trustworthy [is]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	2	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	3	NKO	λόγος·	logos	G3056	N-NSM	λόγος	word	saying:	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	4	NKO	εἰ	ei	G1487G	COND	εἰ	if	If	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	5	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	6	NKO	συναπεθάνομεν,	sunapethanomen	G4880	V-2AAI-1P	συναποθνήσκω	to die with	we have died with [Him],	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	7	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	11	8	NKO	συζήσομεν·	suzēsomen	G4800	V-FAI-1P	συζάω	to live together	we will live with [Him];	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	1	NKO	εἰ	ei	G1487G	COND	εἰ	if	if	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	2	NKO	ὑπομένομεν,	hupomenomen	G5278	V-PAI-1P	ὑπομένω	to remain/endure	we endure,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	3	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	4	NKO	συμβασιλεύσομεν·	sumbasileusomen	G4821	V-FAI-1P	συμβασιλεύω	to reign with	we will reign with [Him];	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	5	NKO	εἰ	ei	G1487G	COND	εἰ	if	if	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	6	N(k)O	ἀρνησόμεθα,	arnēsometha	G0720	V-FDI-1P	ἀρνέομαι	to deny	we will deny [Him],	NA28+NA27+Tyn+SBL+WH+Treg	
+2	12	7	NKO	κἀκεῖνος	kakeinos	G2532	CONJ + G1565=D-NSM	κἀκεῖνος	and that one	He also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	8	NKO	ἀρνήσεται	arnēsetai	G0720	V-FDI-3S	ἀρνέομαι	to deny	will deny	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	12	9	NKO	ἡμᾶς·	hēmas	G3165	P-1AP	ἐγώ	I/we	us;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	1	NKO	εἰ	ei	G1487G	COND	εἰ	if	if	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	2	NKO	ἀπιστοῦμεν,	apistoumen	G0569	V-PAI-1P	ἀπιστέω	to disbelieve	we are faithless,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	3	NKO	ἐκεῖνος	ekeinos	G1565	D-NSM	ἐκεῖνος	that	He	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	4	NKO	πιστὸς	pistos	G4103	A-NSM	πιστός	faithful	faithful	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	5	NKO	μένει·	menei	G3306	V-PAI-3S	μένω	to stay	remains;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	6	NKO	ἀρνήσασθαι	arnēsasthai	G0720	V-ADN	ἀρνέομαι	to deny	to deny	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	7	no	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+WH+Treg	
+2	13	8	NKO	ἑαυτὸν	he'auton	G1438	F-3ASM	ἑαυτοῦ	my/your/him-self	Himself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	9	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	13	10	NKO	δύναται.¶	dunatai	G1410	V-PNI-3S	δύναμαι	be able	He is able.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	1	NKO	Ταῦτα	Tauta	G3778	D-APN	οὗτος	this/he/she/it	These things	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	2	NKO	ὑπομίμνῃσκε	hupomimnēske	G5279	V-PAM-2S	ὑπομιμνήσκω	to remind	do remind [them]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	3	NKO	διαμαρτυρόμενος	diamarturomenos	G1263	V-PNP-NSM	διαμαρτύρομαι	to testify solemnly	solemnly charging [them]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	4	NKO	ἐνώπιον	enōpion	G1799	PREP	ἐνώπιον	before	before	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	5	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	6	N(K)O	θεοῦ	theou	G2316	N-GSM-T	θεός	God	God	NA28+NA27+WH+Treg	
+2	14	7	NKO	μὴ	mē	G3361	PRT-N	μή	not	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	8	NKO	λογομαχεῖν	logomachein	G3054	V-PAN	λογομαχέω	to quarrel	to quarrel about words	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	9	N(k)O	ἐπ᾽	ep᾽	G1909	PREP	ἐπί	upon/to/against	upon	NA28+NA27+Tyn+SBL+WH+Treg	
+2	14	10	NKO	οὐδὲν	ouden	G3762	A-ASN	οὐδείς	none	no [thing]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	11	NKO	χρήσιμον	chrēsimon	G5539	A-ASN	χρήσιμος	profitable	profitable	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	12	NKO	ἐπὶ	epi	G1909	PREP	ἐπί	upon/to/against	[but] to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	13	NKO	καταστροφῇ	katastrophēa	G2692	N-DSF	καταστροφή	ruin	[the] subversion	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	14	NKO	τῶν	tōn	G3588	T-GPM	ὁ	the/this/who	of those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	14	15	NKO	ἀκουόντων.	akouontōn	G0191	V-PAP-GPM	ἀκούω	to hear	hearing.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	1	NKO	σπούδασον	spoudason	G4704	V-AAM-2S	σπουδάζω	be eager	do hasten	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	2	NKO	σεαυτὸν	seauton	G4771	F-2ASM	σεαυτοῦ	yourself	yourself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	3	NKO	δόκιμον	dokimon	G1384	A-ASM	δόκιμος	tested	approved	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	4	NKO	παραστῆσαι	parastēsai	G3936	V-2AAN	παρίστημι	to stand by	to present	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	5	NKO	τῷ	tō	G3588	T-DSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	6	NKO	θεῷ,	theō	G2316	N-DSM-T	θεός	God	to God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	7	NKO	ἐργάτην	ergatēn	G2040	N-ASM	ἐργάτης	worker	a workman	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	8	NKO	ἀνεπαίσχυντον,	anepaischunton	G0422	A-ASM	ἀνεπαίσχυντος	unashamed	not ashamed,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	9	NKO	ὀρθοτομοῦντα	orthotomounta	G3718	V-PAP-ASM	ὀρθοτομέω	to cut straight	accurately handling	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	10	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	11	NKO	λόγον	logon	G3056	N-ASM	λόγος	word	word	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	12	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	15	13	NKO	ἀληθείας.¶	alētheias	G0225	N-GSF	ἀλήθεια	truth	of truth.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	1	NKO	Τὰς	Tas	G3588	T-APF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	But	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	3	NKO	βεβήλους	bebēlous	G0952	A-APF	βέβηλος	profane	worldly	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	4	NKO	κενοφωνίας	kenophōnias	G2757	N-APF	κενοφωνία	empty talk	empty babblings	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	5	NKO	περιΐστασο·	periistaso	G4026	V-PMM-2S	περιΐστημι	to stand around	do yourself avoid;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	6	NKO	ἐπὶ	epi	G1909	PREP	ἐπί	upon/to/against	on	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	7	NKO	πλεῖον	pleion	G4119	A-ASN-C	πλείων, πλεῖον	greater	to more	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	8	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	9	NKO	προκόψουσιν	prokopsousin	G4298	V-FAI-3P	προκόπτω	to advance	they will lead	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	16	10	NKO	ἀσεβείας,	asebeias	G0763	N-GSF	ἀσέβεια	ungodlinessness	to ungodliness,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	1	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	2	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	3	NKO	λόγος	logos	G3056	N-NSM	λόγος	word	talk	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	4	NKO	αὐτῶν	autōn	G0846	P-GPM	αὐτός	he/she/it/self	of them	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	5	NKO	ὡς	hōs	G5613	PRT	ὡς	which/how	like	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	6	NKO	γάγγραινα	gangraina	G1044	N-NSF	γάγγραινα	gangrene	gangrene	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	7	NKO	νομὴν	nomēn	G3542	N-ASF	νομή	pasture	pasture to grow	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	8	NKO	ἕξει·	hexei	G2192	V-FAI-3S	ἔχω	to have/be	will have;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	9	NKO	ὧν	hōn	G3739	R-GPM	ὅς, ἥ	which	among whom	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	10	NKO	ἐστιν	estin	G1510	V-PAI-3S	εἰμί	to be	are	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	11	NKO	Ὑμέναιος	Humenaios	G5211	N-NSM-P	Ὑμεναῖος	Hymenaeus	Hymenaeus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	12	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	17	13	NKO	Φίλητος,	Philētos	G5372	N-NSM-P	Φίλητος	Philetus	Philetus,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	1	NKO	οἵτινες	oitines	G3748	R-NPM	ὅστις	who/which	who	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	2	NKO	περὶ	peri	G4012	PREP	περί	about	concerning	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	3	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	4	NKO	ἀλήθειαν	alētheian	G0225	N-ASF	ἀλήθεια	truth	truth	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	5	NKO	ἠστόχησαν	ēstochēsan	G0795	V-AAI-3P	ἀστοχέω	to deviate	went astray	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	6	NKO	λέγοντες	legontes	G3004G	V-PAP-NPM	λέγω	to speak	asserting	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	7	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+TR+Byz	
+2	18	8	NKO	ἀνάστασιν	anastasin	G0386	N-ASF	ἀνάστασις	resurrection	resurrection	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	9	NKO	ἤδη	ēdē	G2235	ADV	ἤδη	already	already	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	10	NKO	γεγονέναι,	gegonenai	G1096	V-2RAN	γίνομαι	to be	to have taken place,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	11	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	12	NKO	ἀνατρέπουσιν	anatrepousin	G0396	V-PAI-3P	ἀνατρέπω	to overturn	they are overthrowing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	13	NKO	τήν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	14	NKO	τινων	tinōn	G5100	X-GPM	τις	one	of some	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	18	15	NKO	πίστιν.	pistin	G4102G	N-ASF	πίστις	faith	faith.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	1	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	2	NKO	μέντοι	mentoi	G3305	CONJ	μέντοι	yet	Nevertheless	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	3	NKO	στερεὸς	stereos	G4731	A-NSM	στερεός	strong	the firm	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	4	NKO	θεμέλιος	themelios	G2310	N-NSM	θεμέλιος	foundation	foundation	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	5	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	6	NKO	θεοῦ	theou	G2316	N-GSM-T	θεός	God	of God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	7	NKO	ἕστηκεν	hestēken	G2476	V-RAI-3S	ἵστημι	to stand	has stood	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	8	NKO	ἔχων	echōn	G2192	V-PAP-NSM	ἔχω	to have/be	having	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	9	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	10	NKO	σφραγῖδα	sphragida	G4973	N-ASF	σφραγίς	seal	seal	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	11	NKO	ταύτην·	tautēn	G3778	D-ASF	οὗτος	this/he/she/it	this:	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	12	NKO	ἔγνω	egnō	G1097	V-2AAI-3S	γινώσκω	to know	Knows	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	13	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	[the] Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	14	NKO	τοὺς	tous	G3588	T-APM	ὁ	the/this/who	those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	15	NKO	ὄντας	ontas	G1510	V-PAP-APM	εἰμί	to be	being	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	16	NKO	αὐτοῦ,	autou	G0846	P-GSM	αὐτός	he/she/it/self	His,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	17	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	18	NKO	ἀποστήτω	apostētō	G0868	V-2AAM-3S	ἀφίστημι	to leave	should depart	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	19	NKO	ἀπὸ	apo	G0575	PREP	ἀπό	away from	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	20	NKO	ἀδικίας	adikias	G0093	N-GSF	ἀδικία	unrighteousness	iniquity	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	21	NKO	πᾶς	pas	G3956	A-NSM	πᾶς	all	everyone	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	22	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	who	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	23	NKO	ὀνομάζων	onomazōn	G3687	V-PAP-NSM	ὀνομάζω	to name	is naming	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	24	NKO	τὸ	to	G3588	T-ASN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	25	NKO	ὄνομα	onoma	G3686	N-ASN	ὄνομα	name	name	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	19	26	N(K)O	κυρίου.¶	kuriou	G2962G	N-GSM-T	κύριος	lord	of the Lord.	NA28+NA27+Tyn+SBL+WH+Treg+Byz	
+2	20	1	NKO	Ἐν	En	G1722	PREP	ἐν	in/on/among	In	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	2	NKO	μεγάλῃ	megalē	G3173	A-DSF	μέγας	great	a great	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	3	NKO	δὲ	de	G1161	CONJ	δέ	but/and	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	4	NKO	οἰκίᾳ	oikia	G3614G	N-DSF	οἰκία	home	house	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	5	NKO	οὐκ	ouk	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	6	NKO	ἔστιν	estin	G1510	V-PAI-3S	εἰμί	to be	there are	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	7	NKO	μόνον	monon	G3441	A-ASN	μόνος	alone	only	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	8	NKO	σκεύη	skeuē	G4632	N-NPN	σκεῦος	vessel	vessels	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	9	NKO	χρυσᾶ	chrusa	G5552	A-NPN	χρύσεος	golden	golden	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	10	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	11	NKO	ἀργυρᾶ	argura	G0693	A-NPN	ἀργύρεος	silver	silver	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	12	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	13	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	14	NKO	ξύλινα	xulina	G3585	A-NPN	ξύλινος	wooden	wooden	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	15	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	16	NKO	ὀστράκινα,	ostrakina	G3749	A-NPN	ὀστράκινος	clay	earthen,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	17	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	18	NKO	ἃ	ha	G3739	R-NPN	ὅς, ἥ	which	some	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	19	NKO	μὲν	men	G3303	PRT	μέν	on one hand	indeed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	20	NKO	εἰς	eis	G1519	PREP	εἰς	toward	unto	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	21	NKO	τιμὴν	timēn	G5092	N-ASF	τιμή	honor	honor	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	22	NKO	ἃ	ha	G3739	R-NPN	ὅς, ἥ	which	some	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	23	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	24	NKO	εἰς	eis	G1519	PREP	εἰς	toward	unto	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	20	25	NKO	ἀτιμίαν.	atimian	G0819	N-ASF	ἀτιμία	dishonour	dishonor.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	1	NKO	ἐὰν	ean	G1437	COND	ἐάν	if	If	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	2	NKO	οὖν	oun	G3767	CONJ	οὖν	therefore/then	therefore	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	3	NKO	τις	tis	G5100	X-NSM	τις	one	anyone	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	4	NKO	ἐκκαθάρῃ	ekkatharē	G1571	V-AAS-3S	ἐκκαθαίρω	to cleanse	shall cleanse	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	5	NKO	ἑαυτὸν	he'auton	G1438	F-3ASM	ἑαυτοῦ	my/your/him-self	himself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	6	NKO	ἀπὸ	apo	G0575	PREP	ἀπό	away from	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	7	NKO	τούτων,	toutōn	G3778	D-GPN	οὗτος	this/he/she/it	these,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	8	NKO	ἔσται	estai	G1510	V-FDI-3S	εἰμί	to be	he will be	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	9	NKO	σκεῦος	skeuos	G4632	N-NSN	σκεῦος	vessel	a vessel	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	10	NKO	εἰς	eis	G1519	PREP	εἰς	toward	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	11	NKO	τιμὴν	timēn	G5092	N-ASF	τιμή	honor	honor	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	12	NKO	ἡγιασμένον	hēgiasmenon	G0037	V-RPP-NSN	ἁγιάζω	to sanctify	sanctified	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	13	k	καὶ	kai	G2532	CONJ	καί	and	and	TR+Byz	
+2	21	14	NKO	εὔχρηστον	euchrēston	G2173	A-NSN	εὔχρηστος	helpful	useful	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	15	NKO	τῷ	tō	G3588	T-DSM	ὁ	the/this/who	to the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	16	NKO	δεσπότῃ,	despotē	G1203	N-DSM-T	δεσπότης	master	Master,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	17	NKO	εἰς	eis	G1519	PREP	εἰς	toward	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	18	NKO	πᾶν	pan	G3956	A-ASN	πᾶς	all	every	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	19	NKO	ἔργον	ergon	G2041	N-ASN	ἔργον	work	work	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	20	NKO	ἀγαθὸν	agathon	G0018	A-ASN	ἀγαθός	good-doer	good	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	21	21	NKO	ἡτοιμασμένον.¶	hētoimasmenon	G2090	V-RPP-NSN	ἑτοιμάζω	to make ready	prepared.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	1	NKO	Τὰς	Tas	G3588	T-APF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	And	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	3	NKO	νεωτερικὰς	neōterikas	G3512	A-APF	νεωτερικός	youthful	youthful	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	4	NKO	ἐπιθυμίας	epithumias	G1939	N-APF	ἐπιθυμία	desire	lusts	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	5	NKO	φεῦγε,	pheuge	G5343	V-PAM-2S	φεύγω	to flee	do flee,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	6	NKO	δίωκε	diōke	G1377	V-PAM-2S	διώκω	to pursue	do pursue	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	7	NKO	δὲ	de	G1161	CONJ	δέ	but/and	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	8	NKO	δικαιοσύνην,	dikaiosunēn	G1343	N-ASF	δικαιοσύνη	righteousness	righteousness,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	9	NKO	πίστιν,	pistin	G4102G	N-ASF	πίστις	faith	faith,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	10	NKO	ἀγάπην,	agapēn	G0026	N-ASF	ἀγάπη	love	love,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	11	NKO	εἰρήνην	eirēnēn	G1515	N-ASF	εἰρήνη	peace	[and] peace	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	12	NKO	μετὰ	meta	G3326	PREP	μετά	with/after	along with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	13	NKO	τῶν	tōn	G3588	T-GPM	ὁ	the/this/who	those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	14	NKO	ἐπικαλουμένων	epikaloumenōn	G1941	V-PMP-GPM	ἐπικαλέω	to call (on)/name	calling on	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	15	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	16	NKO	κύριον	kurion	G2962G	N-ASM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	17	NKO	ἐκ	ek	G1537	PREP	ἐκ	out from	out of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	18	NKO	καθαρᾶς	katharas	G2513	A-GSF	καθαρός	clean	pure	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	22	19	NKO	καρδίας.	kardias	G2588	N-GSF	καρδία	heart	a heart.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	1	NKO	τὰς	tas	G3588	T-APF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	And	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	3	NKO	μωρὰς	mōras	G3474	A-APF	μωρός	foolish	foolish	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	4	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	5	NKO	ἀπαιδεύτους	apaideutous	G0521	A-APF	ἀπαίδευτος	uninstructed	ignorant	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	6	NKO	ζητήσεις	zētēseis	G2214	N-APF	ζήτησις	controversy	speculations	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	7	NKO	παραιτοῦ	paraitou	G3868	V-PNM-2S	παραιτέομαι	to refuse/excuse	do refuse	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	8	NKO	εἰδὼς	eidōs	G6063	V-RAP-NSM	εἴδω	to perceive	knowing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	9	NKO	ὅτι	hoti	G3754G	CONJ	ὅτι	that/since	that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	10	NKO	γεννῶσιν	gennōsin	G1080	V-PAI-3P	γεννάω	to beget	they breed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	23	11	NKO	μάχας·	machas	G3163	N-APF	μάχη	quarrel	quarrels;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	1	NKO	δοῦλον	doulon	G1401	N-ASM	δοῦλος	slave	[The] bond-servant	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	3	NKO	κυρίου	kuriou	G2962G	N-GSM-T	κύριος	lord	of [the] Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	4	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	5	NKO	δεῖ	dei	G1163	V-PAI-3S	δεῖ	be necessary	it behooves	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	6	NKO	μάχεσθαι	machesthai	G3164	V-PNN	μάχομαι	to quarrel	to quarrel	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	7	NKO	ἀλλ᾽	all᾽	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	8	NKO	ἤπιον	ēpion	G2261	A-ASM	ἤπιος	gentle	gentle	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	9	NKO	εἶναι	einai	G1511	V-PAN	εἰμί	to be	to be	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	10	NKO	πρὸς	pros	G4314	PREP	πρός	to/with	toward	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	11	NKO	πάντας,	pantas	G3956	A-APM	πᾶς	all	all,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	12	NKO	διδακτικόν,	didaktikon	G1317	A-ASM	διδακτικός	able to teach	able to teach,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	24	13	NKO	ἀνεξίκακον,	anexikakon	G0420	A-ASM	ἀνεξίκακος	not resentful	forbearing,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	1	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	2	NKO	πραΰτητι	prautēti	G4236	N-DSF	πραΰτης	gentleness	gentleness	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	3	NKO	παιδεύοντα	paideuonta	G3811	V-PAP-ASM	παιδεύω	to instruct	disciplining	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	4	NKO	τοὺς	tous	G3588	T-APM	ὁ	the/this/who	those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	5	NKO	ἀντιδιατιθεμένους,	antidiatithemenous	G0475	V-PMP-APM	ἀντιδιατίθημι	to oppose	opposing,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	6	NKO	μήποτε	mēpote	G3361	PRT-N + G4218=PRT	μήποτε	lest + πότε=when	otherwise	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	7	NK(o)	δώῃ	dōē	G1325	V-2AAS-3S	δίδωμι	to give	he may give	NA28+NA27+Tyn+SBL+TR+Byz	
+2	25	8	NKO	αὐτοῖς	autois	G0846	P-DPM	αὐτός	he/she/it/self	to them	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	9	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	10	NKO	θεὸς	theos	G2316	N-NSM-T	θεός	God	God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	11	NKO	μετάνοιαν	metanoian	G3341	N-ASF	μετάνοια	repentance	repentance	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	12	NKO	εἰς	eis	G1519	PREP	εἰς	toward	unto	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	13	NKO	ἐπίγνωσιν	epignōsin	G1922	N-ASF	ἐπίγνωσις	knowledge	a knowledge	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	25	14	NKO	ἀληθείας,	alētheias	G0225	N-GSF	ἀλήθεια	truth	of [the] truth,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	1	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	2	NKO	ἀνανήψωσιν	ananēpsōsin	G0366	V-AAS-3P	ἀνανήφω	to regain senses	they may recover	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	3	NKO	ἐκ	ek	G1537	PREP	ἐκ	out from	out of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	4	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	5	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	6	NKO	διαβόλου	diabolou	G1228	A-GSM	διάβολος	devilish/the Devil	devil	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	7	NKO	παγίδος	pagidos	G3803	N-GSF	παγίς	trap	snare	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	8	NKO	ἐζωγρημένοι	ezōgrēmenoi	G2221	V-RPP-NPM	ζωγρέω	to capture alive	captured	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	9	NKO	ὑπ᾽	hup᾽	G5259G	PREP	ὑπό	by/under	by	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	10	NKO	αὐτοῦ	autou	G0846	P-GSM	αὐτός	he/she/it/self	him	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	11	NKO	εἰς	eis	G1519	PREP	εἰς	toward	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	12	NKO	τὸ	to	G3588	T-ASN	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	13	NKO	ἐκείνου	ekeinou	G1565	D-GSM	ἐκεῖνος	that	his	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+2	26	14	NKO	θέλημα.¶	thelēma	G2307	N-ASN	θέλημα	will/desire	will.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	1	NKO	Τοῦτο	Touto	G3778	D-ASN	οὗτος	this/he/she/it	This	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	3	NKO	γίνωσκε,	ginōske	G1097	V-PAM-2S	γινώσκω	to know	do realize,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	4	NKO	ὅτι	hoti	G3754G	CONJ	ὅτι	that/since	that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	5	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	6	NKO	ἐσχάταις	eschatais	G2078	A-DPF	ἔσχατος	last/least	[the] last	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	7	NKO	ἡμέραις	hēmerais	G2250	N-DPF	ἡμέρα	day	days	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	8	NKO	ἐνστήσονται	enstēsontai	G1764	V-FDI-3P	ἐνίστημι	be present	will be present	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	9	NKO	καιροὶ	kairoi	G2540	N-NPM	καιρός	time/right time	times	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	1	10	NKO	χαλεποί.	chalepoi	G5467	A-NPM	χαλεπός	harsh	difficult.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	1	NKO	ἔσονται	esontai	G1510	V-FDI-3P	εἰμί	to be	Will be	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	2	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	3	NKO	οἱ	hoi	G3588	T-NPM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	4	NKO	ἄνθρωποι	anthrōpoi	G0444	N-NPM	ἄνθρωπος	a human	men	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	5	NKO	φίλαυτοι,	philautoi	G5367	A-NPM	φίλαυτος	selfish	lovers of self,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	6	NKO	φιλάργυροι,	philarguroi	G5366	A-NPM	φιλάργυρος	money-loving	lovers of money,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	7	NKO	ἀλαζόνες,	alazones	G0213	N-NPM	ἀλαζών	braggart	boastful,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	8	NKO	ὑπερήφανοι,	huperēphanoi	G5244	A-NPM	ὑπερήφανος	arrogant	proud,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	9	NKO	βλάσφημοι,	blasphēmoi	G0989	A-NPM	βλάσφημος	blasphemous	abusive,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	10	NKO	γονεῦσιν	goneusin	G1118	N-DPM	γονεύς	parent	to parents	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	11	NKO	ἀπειθεῖς,	apeitheis	G0545	A-NPM	ἀπειθής	disobedient	disobedient,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	12	NKO	ἀχάριστοι,	acharistoi	G0884	A-NPM	ἀχάριστος	ungrateful	ungrateful,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	2	13	NKO	ἀνόσιοι,	anosioi	G0462	A-NPM	ἀνόσιος	unholy	unholy,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	3	1	NKO	ἄστοργοι,	astorgoi	G0794	A-NPM	ἄστοργος	unfeeling	unloving,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	3	2	NKO	ἄσπονδοι,	aspondoi	G0786	A-NPM	ἄσπονδος	irreconcilable	implacable,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	3	3	NKO	διάβολοι,	diaboloi	G1228	A-NPM	διάβολος	devilish/the Devil	slanderous,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	3	4	NKO	ἀκρατεῖς,	akrateis	G0193	A-NPM	ἀκρατής	intemperate	without self-control,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	3	5	NKO	ἀνήμεροι,	anēmeroi	G0434	A-NPM	ἀνήμερος	brutal	savage,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	3	6	NKO	ἀφιλάγαθοι,	aphilagathoi	G0865	A-NPM	ἀφιλάγαθος	hating good	without love of good,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	4	1	NKO	προδόται,	prodotai	G4273	N-NPM	προδότης	traitor	treacherous,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	4	2	NKO	προπετεῖς,	propeteis	G4312	A-NPM	προπετής	reckless	reckless,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	4	3	NKO	τετυφωμένοι,	tetuphōmenoi	G5187	V-RPP-NPM	τυφόω	be conceited	puffed up,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	4	4	NKO	φιλήδονοι	philēdonoi	G5369	A-NPM	φιλήδονος	pleasure-loving	lovers of pleasure	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	4	5	NKO	μᾶλλον	mallon	G3123H	ADV	μᾶλλον	more	rather	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	4	6	NKO	ἢ	ē	G2228	CONJ	ἤ	or/than	than	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	4	7	NKO	φιλόθεοι,	philotheoi	G5377	A-NPM	φιλόθεος	God-loving	lovers of God,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	1	NKO	ἔχοντες	echontes	G2192	V-PAP-NPM	ἔχω	to have/be	having	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	2	NKO	μόρφωσιν	morphōsin	G3446	N-ASF	μόρφωσις	form	a form	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	3	NKO	εὐσεβείας,	eusebeias	G2150	N-GSF	εὐσέβεια	piety	of godliness	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	4	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	5	NKO	δὲ	de	G1161	CONJ	δέ	but/and	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	6	NKO	δύναμιν	dunamin	G1411	N-ASF	δύναμις	power	the power	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	7	NKO	αὐτῆς	autēs	G0846	P-GSF	αὐτός	he/she/it/self	of it	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	8	NKO	ἠρνημένοι.	ērnēmenoi	G0720	V-RNP-NPM	ἀρνέομαι	to deny	already denying.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	9	NKO	καὶ	kai	G2532	CONJ	καί	and	And	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	10	NKO	τούτους	toutous	G3778	D-APM	οὗτος	this/he/she/it	these	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	5	11	NKO	ἀποτρέπου.	apotrepou	G0665	V-PMM-2S	ἀποτρέπω	to avoid	do yourself turn away from.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	1	NKO	ἐκ	ek	G1537	PREP	ἐκ	out from	Out of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	2	NKO	τούτων	toutōn	G3778	D-GPM	οὗτος	this/he/she/it	this sort	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	3	NKO	γάρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	4	NKO	εἰσιν	eisin	G1510	V-PAI-3P	εἰμί	to be	are	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	5	NKO	οἱ	hoi	G3588	T-NPM	ὁ	the/this/who	those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	6	NKO	ἐνδύνοντες	endunontes	G1744	V-PAP-NPM	ἐνδύνω	to sneak	entering	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	7	NKO	εἰς	eis	G1519	PREP	εἰς	toward	into	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	8	NKO	τὰς	tas	G3588	T-APF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	9	NKO	οἰκίας	oikias	G3614H	N-APF	οἰκία	home	households	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	10	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	11	N(k)O	αἰχμαλωτίζοντες	aichmalōtizontes	G0163	V-PAP-NPM	αἰχμαλωτίζω	to capture	being captured	NA28+NA27+Tyn+SBL+WH+Treg	
+3	6	12	k	τὰ	ta	G3588	T-APN	ὁ	the/this/who	<the>	TR	
+3	6	13	NKO	γυναικάρια	gunaikaria	G1133	N-APN	γυναικάριον	weak-willed woman	weak women	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	14	NKO	σεσωρευμένα	sesōreumena	G4987	V-RPP-APN	σωρεύω	to pile up	burdened	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	15	NKO	ἁμαρτίαις,	hamartiais	G0266	N-DPF	ἁμαρτία	sin	with sins,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	16	NKO	ἀγόμενα	agomena	G0071	V-PPP-APN	ἄγω	to bring	being led away	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	17	NKO	ἐπιθυμίαις	epithumiais	G1939	N-DPF	ἐπιθυμία	desire	by passions	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	6	18	NKO	ποικίλαις,	poikilais	G4164	A-DPF	ποικίλος	various	various,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	1	NKO	πάντοτε	pantote	G3842	ADV	πάντοτε	always	always	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	2	NKO	μανθάνοντα	manthanonta	G3129	V-PAP-APN	μανθάνω	to learn	learning	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	3	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	4	NKO	μηδέποτε	mēdepote	G3368	ADV-N	μηδέποτε	never	never	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	5	NKO	εἰς	eis	G1519	PREP	εἰς	toward	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	6	NKO	ἐπίγνωσιν	epignōsin	G1922	N-ASF	ἐπίγνωσις	knowledge	a knowledge	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	7	NKO	ἀληθείας	alētheias	G0225	N-GSF	ἀλήθεια	truth	of [the] truth	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	8	NKO	ἐλθεῖν	elthein	G2064	V-2AAN	ἔρχομαι	to come/go	to come	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	7	9	NKO	δυνάμενα.¶	dunamena	G1410	V-PNP-APN	δύναμαι	be able	being able.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	1	NKO	Ὃν	Hon	G3739	R-ASM	ὅς, ἥ	which	By which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	2	NKO	τρόπον	tropon	G5158	N-ASM	τρόπος	way	way	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	3	NKO	δὲ	de	G1161	CONJ	δέ	but/and	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	4	NKO	Ἰάννης	Iannēs	G2389	N-NSM-P	Ἰαννῆς	Jannes	Jannes	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	5	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	6	NKO	Ἰαμβρῆς	Iambrēs	G2387	N-NSM-P	Ἰαμβρῆς	Jambres	Jambres	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	7	NKO	ἀντέστησαν	antestēsan	G0436	V-2AAI-3P	ἀνθίστημι	to oppose	opposed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	8	NKO	Μωϋσεῖ,	Mōusei	G3475	N-DSM-P	Μωϋσῆς, Μωσῆς	Moses	to Moses,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	9	NKO	οὕτως	houtōs	G3779	ADV	οὕτω, οὕτως	thus(-ly)	so	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	10	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	11	NKO	οὗτοι	houtoi	G3778	D-NPM	οὗτος	this/he/she/it	these	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	12	NKO	ἀνθίστανται	anthistantai	G0436	V-PMI-3P	ἀνθίστημι	to oppose	oppose	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	13	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	to the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	14	NKO	ἀληθείᾳ,	alētheia	G0225	N-DSF	ἀλήθεια	truth	truth,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	15	NKO	ἄνθρωποι	anthrōpoi	G0444	N-NPM	ἄνθρωπος	a human	men	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	16	NKO	κατεφθαρμένοι	katephtharmenoi	G2704	V-RPP-NPM	καταφθείρω	to deprave	depraved	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	17	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	18	NKO	νοῦν,	noun	G3563	N-ASM	νοῦς	mind	in mind,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	19	NKO	ἀδόκιμοι	adokimoi	G0096	A-NPM	ἀδόκιμος	failing	disqualified	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	20	NKO	περὶ	peri	G4012	PREP	περί	about	regarding	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	21	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	8	22	NKO	πίστιν.	pistin	G4102G	N-ASF	πίστις	faith	faith.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	1	NKO	ἀλλ᾽	all᾽	G0235	CONJ	ἀλλά	but	But	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	2	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	3	NKO	προκόψουσιν	prokopsousin	G4298	V-FAI-3P	προκόπτω	to advance	they will advance	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	4	NKO	ἐπὶ	epi	G1909	PREP	ἐπί	upon/to/against	further	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	5	NKO	πλεῖον·	pleion	G4119	A-ASN-C	πλείων, πλεῖον	greater	much;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	6	NKO	ἡ	hē	G3588	T-NSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	7	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	8	NKO	ἄνοια	anoia	G0454	N-NSF	ἄνοια	folly	the folly	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	9	NKO	αὐτῶν	autōn	G0846	P-GPM	αὐτός	he/she/it/self	of them	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	10	NKO	ἔκδηλος	ekdēlos	G1552	A-NSF	ἔκδηλος	clearly evident	plain	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	11	NKO	ἔσται	estai	G1510	V-FDI-3S	εἰμί	to be	will be	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	12	NKO	πᾶσιν,	pasin	G3956	A-DPM	πᾶς	all	to all,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	13	NKO	ὡς	hōs	G5613	PRT	ὡς	which/how	as	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	14	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	15	NKO	ἡ	hē	G3588	T-NSF	ὁ	the/this/who	that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	16	NKO	ἐκείνων	ekeinōn	G1565	D-GPM	ἐκεῖνος	that	of those [two]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	9	17	NKO	ἐγένετο.¶	egeneto	G1096	V-2ADI-3S	γίνομαι	to be	became.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	1	NKO	Σὺ	Su	G4771	P-2NS	σύ	you	You yourself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	3	N(k)O	παρηκολούθησάς	parēkolouthēsas	G3877	V-AAI-2S	παρακολουθέω	to follow	closely followed	NA28+NA27+Tyn+SBL+WH+Treg	
+3	10	4	NKO	μου	mou	G3165	P-1GS	ἐγώ	I/we	after my	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	5	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	6	NKO	διδασκαλίᾳ,	didaskalia	G1319	N-DSF	διδασκαλία	teaching	teaching,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	7	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	8	NKO	ἀγωγῇ,	agōgēa	G0072	N-DSF	ἀγωγή	self-conduct	conduct,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	9	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	10	NKO	προθέσει,	prothesei	G4286	N-DSF	πρόθεσις	purpose	purpose,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	11	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	12	NKO	πίστει,	pistei	G4102G	N-DSF	πίστις	faith	faith,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	13	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	14	NKO	μακροθυμίᾳ,	makrothumia	G3115	N-DSF	μακροθυμία	patience	patience,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	15	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	16	NKO	ἀγάπῃ,	agapē	G0026	N-DSF	ἀγάπη	love	love,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	17	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	10	18	NKO	ὑπομονῇ,	hupomonēa	G5281	N-DSF	ὑπομονή	perseverance	endurance,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	1	NKO	τοῖς	tois	G3588	T-DPM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	2	NKO	διωγμοῖς,	diōgmois	G1375	N-DPM	διωγμός	persecution	persecutions,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	3	NKO	τοῖς	tois	G3588	T-DPN	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	4	NKO	παθήμασιν,	pathēmasin	G3804	N-DPN	πάθημα	suffering	sufferings	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	5	NKO	οἷά	hoia	G3634	K-NPN	οἷος	such as	such as	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	6	NKO	μοι	moi	G3165	P-1DS	ἐγώ	I/we	to me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	7	NKO	ἐγένετο	egeneto	G1096	V-2ADI-3S	γίνομαι	to be	happened	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	8	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	9	NKO	Ἀντιοχείᾳ,	Antiocheia	G0490H	N-DSF-L	Ἀντιόχεια	Antioch	Antioch,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	10	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	11	NKO	Ἰκονίῳ,	Ikoniō	G2430	N-DSN-L	Ἰκόνιον	Iconium	Iconium,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	12	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	13	NKO	Λύστροις·	Lustrois	G3082	N-DPN-L	Λύστρα	Lystra	Lystra;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	14	NKO	οἵους	oious	G3634	K-APM	οἷος	such as	what manner of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	15	NKO	διωγμοὺς	diōgmous	G1375	N-APM	διωγμός	persecution	persecutions	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	16	NKO	ὑπήνεγκα,	hupēnegka	G5297	V-AAI-1S	ὑποφέρω	to endure	I endured!	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	17	NKO	καὶ	kai	G2532	CONJ	καί	and	And yet	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	18	NKO	ἐκ	ek	G1537	PREP	ἐκ	out from	out of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	19	NKO	πάντων	pantōn	G3956	A-GPN	πᾶς	all	all	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	20	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	21	NKO	ἐρρύσατο	errusato	G4506	V-ANI-3S	ῥύομαι	to deliver	delivered	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	22	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	11	23	NKO	κύριος.	kurios	G2962G	N-NSM-T	κύριος	lord	Lord.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	1	NKO	καὶ	kai	G2532	CONJ	καί	and	Also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	2	NKO	πάντες	pantes	G3956	A-NPM	πᾶς	all	all	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	3	NKO	δὲ	de	G1161	CONJ	δέ	but/and	now	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	4	NKO	οἱ	hoi	G3588	T-NPM	ὁ	the/this/who	those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	5	NKO	θέλοντες	thelontes	G2309	V-PAP-NPM	θέλω	to will/desire	desiring	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	6	NKO	εὐσεβῶς	eusebōs	G2153	ADV	εὐσεβῶς	piously	piously	NA28+NA27+Tyn»1+SBL»1+WH»1+Treg»1+TR+Byz	
+3	12	7	NKO	ζῆν	zēn	G2198	V-PAN	ζάω	to live	to live	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	8	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	9	NKO	Χριστῷ	Christō	G5547	N-DSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	10	NKO	Ἰησοῦ	Iēsou	G2424G	N-DSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	12	11	NKO	διωχθήσονται.	diōchthēsontai	G1377	V-FPI-3P	διώκω	to pursue	will be persecuted.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	1	NKO	πονηροὶ	ponēroi	G4190	A-NPM	πονηρός	evil/bad	Evil	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	3	NKO	ἄνθρωποι	anthrōpoi	G0444	N-NPM	ἄνθρωπος	a human	men	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	4	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	5	NKO	γόητες	goētes	G1114	N-NPM	γόης	imposter	imposters	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	6	NKO	προκόψουσιν	prokopsousin	G4298	V-FAI-3P	προκόπτω	to advance	will advance	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	7	NKO	ἐπὶ	epi	G1909	PREP	ἐπί	upon/to/against	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	8	NKO	τὸ	to	G3588	T-ASN	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	9	NKO	χεῖρον	cheiron	G5501	A-ASN-C	χείρων	worse than	worse	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	10	NKO	πλανῶντες	planōntes	G4105	V-PAP-NPM	πλανάω	to lead astray	deceiving	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	11	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	13	12	NKO	πλανώμενοι.	planōmenoi	G4105	V-PPP-NPM	πλανάω	to lead astray	being deceived.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	1	NKO	σὺ	su	G4771	P-2NS	σύ	you	You yourself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	3	NKO	μένε	mene	G3306	V-PAM-2S	μένω	to stay	do abide	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	4	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	5	NKO	οἷς	hois	G3739	R-DPN	ὅς, ἥ	which	[the] things	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	6	NKO	ἔμαθες	emathes	G3129	V-2AAI-2S	μανθάνω	to learn	you have learned	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	7	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	8	NKO	ἐπιστώθης	epistōthēs	G4104	V-API-2S	πιστόω	be convinced	you were assured of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	9	NKO	εἰδὼς	eidōs	G6063	V-RAP-NSM	εἴδω	to perceive	knowing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	10	NKO	παρὰ	para	G3844	PREP	παρά	from with	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	14	11	N(k)O	τίνων	tinōn	G5101	I-GPM	τίς	which?	which [people]	NA28+NA27+Tyn+SBL+WH+Treg	
+3	14	12	NKO	ἔμαθες,	emathes	G3129	V-2AAI-2S	μανθάνω	to learn	you learned [them],	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	1	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	2	NKO	ὅτι	hoti	G3754H	CONJ	ὅτι	that/since	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	3	NKO	ἀπὸ	apo	G0575	PREP	ἀπό	away from	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	4	NKO	βρέφους	brephous	G1025	N-GSN	βρέφος	infant	childhood	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	5	NKO	τὰ	ta	G3588	T-APN	ὁ	the/this/who	the	NA28+NA27+Tyn+Treg+TR+Byz	
+3	15	6	NKO	ἱερὰ	hi'era	G2413	A-APN	ἱερός	sacred	sacred	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	7	NKO	γράμματα	grammata	G1121	N-APN	γράμμα	something written	writings	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	8	NKO	οἶδας,	oidas	G6063	V-RAI-2S	εἴδω	to perceive	you know,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	9	NKO	τὰ	ta	G3588	T-APN	ὁ	the/this/who	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	10	NKO	δυνάμενά	dunamena	G1410	V-PMP-APN	δύναμαι	be able	are being able	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	11	NKO	σε	se	G4771	P-2AS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	12	NKO	σοφίσαι	sophisai	G4679	V-AAN	σοφίζω	to make wise	to make wise	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	13	NKO	εἰς	eis	G1519	PREP	εἰς	toward	unto	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	14	NKO	σωτηρίαν	sōtērian	G4991	N-ASF	σωτηρία	salvation	salvation	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	15	NKO	διὰ	dia	G1223	PREP	διά	through/because of	through	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	16	NKO	πίστεως	pisteōs	G4102G	N-GSF	πίστις	faith	faith	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	17	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	18	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	19	NKO	Χριστῷ	Christō	G5547	N-DSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	15	20	NKO	Ἰησοῦ.¶	Iēsou	G2424G	N-DSM-P	Ἰησοῦς	Jesus/Joshua	Jesus.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	1	NKO	Πᾶσα	Pasa	G3956	A-NSF	πᾶς	all	Every	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	2	NKO	γραφὴ	graphē	G1124	N-NSF	γραφή	a writing	Scripture [is]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	3	NKO	θεόπνευστος	theopneustos	G2315	A-NSF	θεόπνευστος	God-breathed	God-breathed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	4	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	5	NKO	ὠφέλιμος	ōphelimos	G5624	A-NSF	ὠφέλιμος	valuable	profitable	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	6	NKO	πρὸς	pros	G4314	PREP	πρός	to/with	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	7	NKO	διδασκαλίαν,	didaskalian	G1319	N-ASF	διδασκαλία	teaching	instruction,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	8	NKO	πρὸς	pros	G4314	PREP	πρός	to/with	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	9	NKO	ἐλεγμόν,	elegmon	G6031	N-ASM	ἐλεγμός	rebuke	conviction,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	10	NKO	πρὸς	pros	G4314	PREP	πρός	to/with	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	11	NKO	ἐπανόρθωσιν,	epanorthōsin	G1882	N-ASF	ἐπανόρθωσις	correcting	correction,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	12	NKO	πρὸς	pros	G4314	PREP	πρός	to/with	[and] for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	13	NKO	παιδείαν	paideian	G3809	N-ASF	παιδεία	discipline	training	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	14	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	15	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	16	16	NKO	δικαιοσύνῃ,	dikaiosunē	G1343	N-DSF	δικαιοσύνη	righteousness	righteousness,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	1	NKO	ἵνα	ina	G2443	CONJ	ἵνα	in order that/to	so that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	2	NKO	ἄρτιος	artios	G0739	A-NSM	ἄρτιος	competent	complete	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	3	NKO	ᾖ	ē	G1510	V-PAS-3S	εἰμί	to be	may be	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	4	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	5	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	6	NKO	θεοῦ	theou	G2316	N-GSM-T	θεός	God	of God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	7	NKO	ἄνθρωπος,	anthrōpos	G0444	N-NSM	ἄνθρωπος	a human	man,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	8	NKO	πρὸς	pros	G4314	PREP	πρός	to/with	toward	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	9	NKO	πᾶν	pan	G3956	A-ASN	πᾶς	all	every	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	10	NKO	ἔργον	ergon	G2041	N-ASN	ἔργον	work	work	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	11	NKO	ἀγαθὸν	agathon	G0018	A-ASN	ἀγαθός	good-doer	good	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+3	17	12	NKO	ἐξηρτισμένος.¶	exērtismenos	G1822	V-RPP-NSM	ἐξαρτίζω	to finish/furnish	fully equipped.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	1	NKO	Διαμαρτύρομαι	Diamarturomai	G1263	V-PNI-1S	διαμαρτύρομαι	to testify solemnly	I earnestly declare	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	2	K	οὖν	oun	G3767	CONJ	οὖν	therefore/then	therefore	TR+Byz	
+4	1	3	k	ἐγὼ	egō	G1473	P-1NS	ἐγώ	I/we	I myself	TR+Byz	
+4	1	4	NKO	ἐνώπιον	enōpion	G1799	PREP	ἐνώπιον	before	before	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	5	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	6	NKO	θεοῦ	theou	G2316	N-GSM-T	θεός	God	God	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	7	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	8	K	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	<the>	TR+Byz	
+4	1	9	K	κυρίου	kuriou	G2962G	N-GSM-T	κύριος	lord	Lord	TR+Byz	
+4	1	10	NKO	Χριστοῦ	Christou	G5547	N-GSM-T	Χριστός	Christ	Christ	NA28+NA27+Tyn+SBL+WH+Treg+TR»1+Byz»1	
+4	1	11	NKO	Ἰησοῦ	Iēsou	G2424G	N-GSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	12	NKO	τοῦ	tou	G3588	T-GSM	ὁ	the/this/who	who	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	13	NKO	μέλλοντος	mellontos	G3195	V-PAP-GSM	μέλλω	to ensue	is being about	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	14	NKO	κρίνειν	krinein	G2919	V-PAN	κρίνω	to judge	to judge	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	15	NKO	ζῶντας	zōntas	G2198	V-PAP-APM	ζάω	to live	[the] living	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	16	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	17	NKO	νεκρούς,	nekrous	G3498	A-APM	νεκρός	dead	[the] dead,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	18	N(K)O	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg	
+4	1	19	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	by the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	20	NKO	ἐπιφάνειαν	epiphaneian	G2015	N-ASF	ἐπιφάνεια	appearing	appearing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	21	NKO	αὐτοῦ	autou	G0846	P-GSM	αὐτός	he/she/it/self	of Him	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	22	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	23	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	24	NKO	βασιλείαν	basileian	G0932	N-ASF	βασιλεία	kingdom	kingdom	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	1	25	NKO	αὐτοῦ,	autou	G0846	P-GSM	αὐτός	he/she/it/self	of Him,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	1	NKO	κήρυξον	kēruxon	G2784	V-AAM-2S	κηρύσσω	to preach	do preach	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	2	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	3	NKO	λόγον,	logon	G3056	N-ASM	λόγος	word	word,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	4	NKO	ἐπίστηθι	epistēthi	G2186	V-2AAM-2S	ἐφίστημι	to approach	do be ready	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	5	NKO	εὐκαίρως	eukairōs	G2122	ADV	εὐκαίρως	well timed	in season	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	6	NKO	ἀκαίρως,	akairōs	G0171	ADV	ἀκαίρως	unseasonably	[and] out of season,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	7	NKO	ἔλεγξον,	elegxon	G1651	V-AAM-2S	ἐλέγχω	to rebuke	do convict,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	8	NKO	ἐπιτίμησον,	epitimēson	G2008	V-AAM-2S	ἐπιτιμάω	to rebuke	do rebuke,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	9	NKO	παρακάλεσον	parakaleson	G3870	V-AAM-2S	παρακαλέω	to plead/comfort	[and] do exhort	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	10	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	11	NKO	πάσῃ	pasē	G3956	A-DSF	πᾶς	all	complete	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	12	NKO	μακροθυμίᾳ	makrothumia	G3115	N-DSF	μακροθυμία	patience	patience	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	13	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	2	14	NKO	διδαχῇ.	didachēa	G1322	N-DSF	διδαχή	teaching	with instruction.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	1	NKO	ἔσται	estai	G1510	V-FDI-3S	εἰμί	to be	There will be	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	2	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	3	NKO	καιρὸς	kairos	G2540	N-NSM	καιρός	time/right time	a time	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	4	NKO	ὅτε	hote	G3753	PREP	ὅτε	when	when	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	5	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	6	NKO	ὑγιαινούσης	hugiainousēs	G5198	V-PAP-GSF	ὑγιαίνω	be healthy	sound	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	7	NKO	διδασκαλίας	didaskalias	G1319	N-GSF	διδασκαλία	teaching	teaching	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	8	NKO	οὐκ	ouk	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	9	NKO	ἀνέξονται,	anexontai	G0430	V-FDI-3P	ἀνέχω	to endure	they will endure,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	10	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	11	NKO	κατὰ	kata	G2596	PREP	κατά	according to	according to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	12	NKO	τὰς	tas	G3588	T-APF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR»3+Byz»3	
+4	3	13	NKO	ἰδίας	idias	G2398	A-APF	ἴδιος	one's own/private	[their] own	NA28+NA27+Tyn+SBL+WH+Treg+TR»2+Byz»2	
+4	3	14	k	τὰς	tas	G3588	T-APF	ὁ	the/this/who	<the>	TR+Byz	
+4	3	15	NKO	ἐπιθυμίας	epithumias	G1939	N-APF	ἐπιθυμία	desire	desires	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	16	NKO	ἑαυτοῖς	he'autois	G1438	F-3DPM	ἑαυτοῦ	my/your/him-self	to themselves	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	17	NKO	ἐπισωρεύσουσιν	episōreusousin	G2002	V-FAI-3P	ἐπισωρεύω	to accumulate	they will gather around [them]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	18	NKO	διδασκάλους	didaskalous	G1320	N-APM	διδάσκαλος	teacher	teachers	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	19	NKO	κνηθόμενοι	knēthomenoi	G2833	V-PPP-NPM	κνήθω	to itch	having an itching	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	20	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	3	21	NKO	ἀκοήν·	akoēn	G0189	N-ASF	ἀκοή	hearing	ear;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	1	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	2	NKO	ἀπὸ	apo	G0575	PREP	ἀπό	away from	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	3	NKO	μὲν	men	G3303	PRT	μέν	on one hand	indeed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	4	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	5	NKO	ἀληθείας	alētheias	G0225	N-GSF	ἀλήθεια	truth	truth	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	6	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	7	NKO	ἀκοὴν	akoēn	G0189	N-ASF	ἀκοή	hearing	hearing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	8	NKO	ἀποστρέψουσιν,	apostrepsousin	G0654	V-FAI-3P	ἀποστρέφω	to turn away	they will turn away,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	9	NKO	ἐπὶ	epi	G1909	PREP	ἐπί	upon/to/against	unto	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	10	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	11	NKO	τοὺς	tous	G3588	T-APM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	12	NKO	μύθους	muthous	G3454	N-APM	μῦθος	myth	myths	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	4	13	NKO	ἐκτραπήσονται.¶	ektrapēsontai	G1624	V-2FPI-3P	ἐκτρέπω	to turn/wander away	they will be turned aside.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	1	NKO	Σὺ	Su	G4771	P-2NS	σύ	you	You yourself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	3	NKO	νῆφε	nēphe	G3525	V-PAM-2S	νήφω	be sober	do be sober	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	4	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	5	NKO	πᾶσιν,	pasin	G3956	A-DPN	πᾶς	all	all things,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	6	NKO	κακοπάθησον,	kakopathēson	G2553	V-AAM-2S	κακοπαθέω	to endure	do endure afflictions,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	7	NKO	ἔργον	ergon	G2041	N-ASN	ἔργον	work	[the] work	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	8	NKO	ποίησον	poiēson	G4160G	V-AAM-2S	ποιέω	to do/make	do perform	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	9	NKO	εὐαγγελιστοῦ,	euangelistou	G2099	N-GSM	εὐαγγελιστής	evangelist	of an evangelist,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	10	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	11	NKO	διακονίαν	diakonian	G1248	N-ASF	διακονία	service	ministry	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	12	NKO	σου	sou	G4771	P-2GS	σύ	you	of you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	5	13	NKO	πληροφόρησον.¶	plērophorēson	G4135	V-AAM-2S	πληροφορέω	to fulfill	do fully carry out.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	1	NKO	Ἐγὼ	Egō	G1473	P-1NS	ἐγώ	I/we	I myself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	2	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	3	NKO	ἤδη	ēdē	G2235	ADV	ἤδη	already	already	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	4	NKO	σπένδομαι,	spendomai	G4689	V-PPI-1S	σπένδω	to pour a libation	am being poured out,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	5	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	6	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	7	NKO	καιρὸς	kairos	G2540	N-NSM	καιρός	time/right time	time	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	8	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	9	NKO	ἀναλύσεώς	analuseōs	G0359	N-GSF	ἀνάλυσις	departure	departure	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	6	10	N(k)O	μου	mou	G3165	P-1GS	ἐγώ	I/we	of me	NA28+NA27+Tyn+SBL+WH+Treg	
+4	6	11	NKO	ἐφέστηκεν.	ephestēken	G2186	V-RAI-3S	ἐφίστημι	to approach	has come.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	1	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	The	NA28+NA27+Tyn+SBL+WH+Treg+TR»3+Byz»3	
+4	7	2	NKO	καλὸν	kalon	G2570G	A-ASM	καλός	good	good	NA28+NA27+Tyn+SBL+WH+Treg+TR»2+Byz»2	
+4	7	3	k	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	<the>	TR+Byz	
+4	7	4	NKO	ἀγῶνα	agōna	G0073	N-ASM	ἀγών	fight	fight	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	5	NKO	ἠγώνισμαι,	ēgōnismai	G0075	V-RNI-1S	ἀγωνίζομαι	to struggle	I have fought,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	6	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	7	NKO	δρόμον	dromon	G1408	N-ASM	δρόμος	racecourse	race	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	8	NKO	τετέλεκα,	teteleka	G5055	V-RAI-1S	τελέω	to finish	I have finished,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	9	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	10	NKO	πίστιν	pistin	G4102G	N-ASF	πίστις	faith	faith	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	7	11	NKO	τετήρηκα·	tetērēka	G5083G	V-RAI-1S	τηρέω	to keep	I have kept;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	1	NKO	λοιπὸν	loipon	G3063	A-ASN	λοιπόν	henceforth	From now on	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	2	NKO	ἀπόκειταί	apokeitai	G0606	V-PNI-3S	ἀπόκειμαι	to lay up	is laid up	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	3	NKO	μοι	moi	G3165	P-1DS	ἐγώ	I/we	for me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	4	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	5	NKO	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	6	NKO	δικαιοσύνης	dikaiosunēs	G1343	N-GSF	δικαιοσύνη	righteousness	of righteousness	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	7	NKO	στέφανος	stephanos	G4735	N-NSM	στέφανος	crown	crown	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	8	NKO	ὃν	hon	G3739	R-ASM	ὅς, ἥ	which	which	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	9	NKO	ἀποδώσει	apodōsei	G0591	V-FAI-3S	ἀποδίδωμι	to pay	will award	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	10	NKO	μοι	moi	G3165	P-1DS	ἐγώ	I/we	to me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	11	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	12	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	13	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	14	NKO	ἐκείνῃ	ekeinē	G1565	D-DSF	ἐκεῖνος	that	that [very]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	15	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	16	NKO	ἡμέρᾳ,	hēmera	G2250	N-DSF	ἡμέρα	day	day,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	17	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	18	NKO	δίκαιος	dikaios	G1342	A-NSM	δίκαιος	just	righteous	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	19	NKO	κριτής·	kritēs	G2923	N-NSM	κριτής	judge	judge;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	20	NKO	οὐ	ou	G3756	PRT-N	οὐ	no	not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	21	NKO	μόνον	monon	G3441	A-ASN	μόνος	alone	only	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	22	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	23	NKO	ἐμοί,	emoi	G1473	P-1DS	ἐγώ	I/we	to me myself,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	24	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	25	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	26	NKO	πᾶσιν	pasin	G3956	A-DPM	πᾶς	all	to all	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	27	NKO	τοῖς	tois	G3588	T-DPM	ὁ	the/this/who	those	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	28	NKO	ἠγαπηκόσιν	ēgapēkosin	G0025	V-RAP-DPM	ἀγαπάω	to love	already loving	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	29	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	30	NKO	ἐπιφάνειαν	epiphaneian	G2015	N-ASF	ἐπιφάνεια	appearing	appearing	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	8	31	NKO	αὐτοῦ.¶	autou	G0846	P-GSM	αὐτός	he/she/it/self	of Him.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	9	1	NKO	Σπούδασον	Spoudason	G4704	V-AAM-2S	σπουδάζω	be eager	do be diligent	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	9	2	NKO	ἐλθεῖν	elthein	G2064	V-2AAN	ἔρχομαι	to come/go	to come	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	9	3	NKO	πρός	pros	G4314	PREP	πρός	to/with	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	9	4	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	9	5	NKO	ταχέως.	tacheōs	G5030	ADV	ταχέως	quickly	soon.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	1	NKO	Δημᾶς	Dēmas	G1214	N-NSM-P	Δημᾶς	Demas	Demas	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	2	NKO	γάρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	3	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	4	NK(o)	ἐγκατέλιπεν	egkatelipen	G1459	V-2AAI-3S	ἐγκαταλείπω	to leave behind	has deserted	NA28+NA27+SBL+Treg+TR+Byz	
+4	10	5	NKO	ἀγαπήσας	agapēsas	G0025	V-AAP-NSM	ἀγαπάω	to love	having loved	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	6	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	7	NKO	νῦν	nun	G3568	ADV	νῦν	now	present	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	8	NKO	αἰῶνα	aiōna	G0165G	N-ASM	αἰών	an age	age	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	9	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	10	NKO	ἐπορεύθη	eporeuthē	G4198	V-AOI-3S	πορεύω	to travel	he has gone	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	11	NKO	εἰς	eis	G1519	PREP	εἰς	toward	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	12	NKO	Θεσσαλονίκην·	Thessalonikēn	G2332	N-ASF-L	Θεσσαλονίκη	Thessalonica	Thessalonica;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	13	NKO	Κρήσκης	Krēskēs	G2913	N-NSM-P	Κρήσκης	Crescens	Crescens	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	14	NKO	εἰς	eis	G1519	PREP	εἰς	toward	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	15	NKO	Γαλατίαν,	Galatian	G1053	N-ASF-L	Γαλατία	Galatia	Galatia,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	16	NKO	Τίτος	Titos	G5103	N-NSM-P	Τίτος	Titus	[and] Titus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	17	NKO	εἰς	eis	G1519	PREP	εἰς	toward	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	10	18	NKO	Δαλματίαν·	Dalmatian	G1149	N-ASF-L	Δαλματία	Dalmatia	Dalmatia;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	1	NKO	Λουκᾶς	Loukas	G3065	N-NSM-P	Λουκᾶς	Luke	Luke	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	2	NKO	ἐστιν	estin	G1510	V-PAI-3S	εἰμί	to be	is	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	3	NKO	μόνος	monos	G3441	A-NSM	μόνος	alone	alone	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	4	NKO	μετ᾽	met᾽	G3326	PREP	μετά	with/after	with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	5	NKO	ἐμοῦ.	emou	G1473	S-1SGSN	ἐγώ	I/we	me.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	6	NKO	Μᾶρκον	Markon	G3138	N-ASM-P	Μάρκος	Mark	Mark	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	7	NKO	ἀναλαβὼν	analabōn	G0353	V-2AAP-NSM	ἀναλαμβάνω	to take up	having taken	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	8	NKO	ἄγε	age	G0071	V-PAM-2S	ἄγω	to bring	do bring [him]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	9	NKO	μετὰ	meta	G3326	PREP	μετά	with/after	with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	10	NKO	σεαυτοῦ·	seautou	G4771	F-2GSM	σεαυτοῦ	yourself	yourself;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	11	NKO	ἔστιν	estin	G1510	V-PAI-3S	εἰμί	to be	he is	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	12	NKO	γάρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	13	NKO	μοι	moi	G3165	P-1DS	ἐγώ	I/we	to me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	14	NKO	εὔχρηστος	euchrēstos	G2173	A-NSM	εὔχρηστος	helpful	useful	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	15	NKO	εἰς	eis	G1519	PREP	εἰς	toward	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	11	16	NKO	διακονίαν.	diakonian	G1248	N-ASF	διακονία	service	[the] ministry.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	12	1	NKO	Τύχικον	Tuchikon	G5190	N-ASM-P	Τυχικός	Tychicus	Tychicus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	12	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	12	3	NKO	ἀπέστειλα	apesteila	G0649	V-AAI-1S	ἀποστέλλω	to send	I have sent	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	12	4	NKO	εἰς	eis	G1519	PREP	εἰς	toward	to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	12	5	NKO	Ἔφεσον.¶	Epheson	G2181	N-ASF-L	Ἔφεσος	Ephesus	Ephesus.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	1	NKO	Τὸν	Ton	G3588	T-ASM	ὁ	the/this/who	The	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	2	NKO	φαιλόνην	phailonēn	G5341	N-ASM	φελόνης, φαιλόνης	cloak	cloak	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	3	NKO	ὃν	hon	G3739	R-ASM	ὅς, ἥ	which	that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	4	NK(o)	ἀπέλιπον	apelipon	G0620	V-2AAI-1S	ἀπολείπω	to leave	I left	NA28+NA27+SBL+Treg+TR+Byz	
+4	13	5	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	6	NKO	Τρῳάδι	Trōadi	G5174	N-DSF-L	Τρωάς	Troas	Troas	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	7	NKO	παρὰ	para	G3844	PREP	παρά	from with	with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	8	NKO	Κάρπῳ,	Karpō	G2591	N-DSM-P	Κάρπος	Carpus	Carpus,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	9	NKO	ἐρχόμενος	erchomenos	G2064	V-PNP-NSM	ἔρχομαι	to come/go	[upon] coming	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	10	NKO	φέρε	phere	G5342	V-PAM-2S	φέρω	to bear/lead	do bring	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	11	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	12	NKO	τὰ	ta	G3588	T-APN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	13	NKO	βιβλία	biblia	G0975	N-APN	βιβλίον	scroll	books	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	14	NKO	μάλιστα	malista	G3122	ADV	μάλιστα	especially	especially	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	15	NKO	τὰς	tas	G3588	T-APF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	13	16	NKO	μεμβράνας.¶	membranas	G3200	N-APF	μεμβράνα	parchment	parchments.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	1	NKO	Ἀλέξανδρος	Alexandros	G0223J	N-NSM-P	Ἀλέξανδρος	Alexander	Alexander	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	2	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	3	NKO	χαλκεὺς	chalkeus	G5471	N-NSM	χαλκεύς	coppersmith	coppersmith	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	4	NKO	πολλά	polla	G4183	A-APN	πολύς	much	great	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	5	NKO	μοι	moi	G3165	P-1DS	ἐγώ	I/we	to me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	6	NKO	κακὰ	kaka	G2556H	A-APN	κακός	evil/harm	harm	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	7	NKO	ἐνεδείξατο·	enedeixato	G1731	V-AMI-3S	ἐνδείκνυμι	to show	did;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	8	N(k)O	ἀποδώσει	apodōsei	G0591	V-FAI-3S	ἀποδίδωμι	to pay	Will render	NA28+NA27+Tyn+SBL+WH+Treg	
+4	14	9	NKO	αὐτῷ	autō	G0846	P-DSM	αὐτός	he/she/it/self	to him	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	10	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	11	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	12	NKO	κατὰ	kata	G2596	PREP	κατά	according to	according to	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	13	NKO	τὰ	ta	G3588	T-APN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	14	NKO	ἔργα	erga	G2041	N-APN	ἔργον	work	deeds	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	14	15	NKO	αὐτοῦ·	autou	G0846	P-GSM	αὐτός	he/she/it/self	of him;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	1	NKO	ὃν	hon	G3739	R-ASM	ὅς, ἥ	which	whom	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	2	NKO	καὶ	kai	G2532	CONJ	καί	and	also	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	3	NKO	σὺ	su	G4771	P-2NS	σύ	you	you yourself	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	4	NKO	φυλάσσου·	phulassou	G5442I	V-PMM-2S	φυλάσσω	to keep/guard	do yourself beware of;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	5	NKO	λίαν	lian	G3029	ADV	λίαν	greatly	exceedingly	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	6	NKO	γὰρ	gar	G1063	CONJ	γάρ	for	for	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	7	N(k)O	ἀντέστη	antestē	G0436	V-2AAI-3S	ἀνθίστημι	to oppose	has opposed	NA28+NA27+Tyn+SBL+WH+Treg	
+4	15	8	NKO	τοῖς	tois	G3588	T-DPM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	9	NKO	ἡμετέροις	hēmeterois	G1473	S-1PDPM	ἡμέτερος	our	our own	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	15	10	NKO	λόγοις.¶	logois	G3056	N-DPM	λόγος	word	message.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	1	NKO	Ἐν	En	G1722	PREP	ἐν	in/on/among	In	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	2	NKO	τῇ	tēa	G3588	T-DSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	3	NKO	πρώτῃ	prōtē	G4413G	A-DSF	πρῶτος	first	first	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	4	NKO	μου	mou	G3165	P-1GS	ἐγώ	I/we	of my	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	5	NKO	ἀπολογίᾳ	apologia	G0627	N-DSF	ἀπολογία	defence	defense	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	6	NKO	οὐδείς	oudeis	G3762	A-NSM	οὐδείς	none	no [one]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	7	NKO	μοι	moi	G3165	P-1DS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	8	N(k)O	παρεγένετο,	paregeneto	G3854	V-2ADI-3S	παραγίνομαι	to come	attended	NA28+NA27+Tyn+SBL+WH+Treg	
+4	16	9	NKO	ἀλλὰ	alla	G0235	CONJ	ἀλλά	but	but	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	10	NKO	πάντες	pantes	G3956	A-NPM	πᾶς	all	all	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	11	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	12	NK(o)	ἐγκατέλιπον·	egkatelipon	G1459	V-2AAI-3P	ἐγκαταλείπω	to leave behind	deserted;	NA28+NA27+SBL+Treg+TR+Byz	
+4	16	13	NKO	μὴ	mē	G3361	PRT-N	μή	not	Not	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	14	NKO	αὐτοῖς	autois	G0846	P-DPM	αὐτός	he/she/it/self	to them	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	16	15	NKO	λογισθείη.	logistheiē	G3049	V-AOO-3S	λογίζομαι	to count	would it be charged!	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	1	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	2	NKO	δὲ	de	G1161	CONJ	δέ	but/and	And	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	3	NKO	κύριός	kurios	G2962G	N-NSM-T	κύριος	lord	the Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	4	NKO	μοι	moi	G3165	P-1DS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	5	NKO	παρέστη	parestē	G3936	V-2AAI-3S	παρίστημι	to stand by	stood by	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	6	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	7	NKO	ἐνεδυνάμωσέν	enedunamōsen	G1743	V-AAI-3S	ἐνδυναμόω	to empower	He strengthened	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	8	NKO	με,	me	G3165	P-1AS	ἐγώ	I/we	me,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	9	NKO	ἵνα	ina	G2443	CONJ	ἵνα	in order that/to	so that	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	10	NKO	δι᾽	di᾽	G1223	PREP	διά	through/because of	through	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	11	NKO	ἐμοῦ	emou	G1473	S-1SGSN	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	12	NKO	τὸ	to	G3588	T-NSN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	13	NKO	κήρυγμα	kērugma	G2782	N-NSN	κήρυγμα	preaching	proclamation	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	14	NKO	πληροφορηθῇ,	plērophorēthēa	G4135	V-APS-3S	πληροφορέω	to fulfill	may be fully accomplished,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	15	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	16	N(k)O	ἀκούσωσιν	akousōsin	G0191	V-AAS-3P	ἀκούω	to hear	may hear	NA28+NA27+Tyn+SBL+WH+Treg	
+4	17	17	NKO	πάντα	panta	G3956	A-NPN	πᾶς	all	all	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	18	NKO	τὰ	ta	G3588	T-NPN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	19	NKO	ἔθνη,	ethnē	G1484	N-NPN	ἔθνος	Gentile nation	Gentiles,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	20	NKO	καὶ	kai	G2532	CONJ	καί	and	And	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	21	NKO	ἐρρύσθην	errusthēn	G4506	V-API-1S	ῥύομαι	to deliver	I was delivered	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	22	NKO	ἐκ	ek	G1537	PREP	ἐκ	out from	out of	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	23	NKO	στόματος	stomatos	G4750	N-GSN	στόμα	mouth	[the] mouth	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	17	24	NKO	λέοντος.	leontos	G3023	N-GSM	λέων	lion	of the lion.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	1	k	καὶ	kai	G2532	CONJ	καί	and	and	TR+Byz	
+4	18	2	NKO	ῥύσεταί	rhusetai	G4506	V-FDI-3S	ῥύομαι	to deliver	Will deliver	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	3	NKO	με	me	G3165	P-1AS	ἐγώ	I/we	me	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	4	NKO	ὁ	ho	G3588	T-NSM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	5	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	6	NKO	ἀπὸ	apo	G0575	PREP	ἀπό	away from	from	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	7	NKO	παντὸς	pantos	G3956	A-GSN	πᾶς	all	every	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	8	NKO	ἔργου	ergou	G2041	N-GSN	ἔργον	work	deed	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	9	NKO	πονηροῦ	ponērou	G4190	A-GSN	πονηρός	evil/bad	evil	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	10	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	11	NKO	σώσει	sōsei	G4982	V-FAI-3S	σῴζω	to save	will bring [me] safely	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	12	NKO	εἰς	eis	G1519	PREP	εἰς	toward	into	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	13	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	14	NKO	βασιλείαν	basileian	G0932	N-ASF	βασιλεία	kingdom	kingdom	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	15	NKO	αὐτοῦ	autou	G0846	P-GSM	αὐτός	he/she/it/self	of Him	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	16	NKO	τὴν	tēn	G3588	T-ASF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	17	NKO	ἐπουράνιον·	epouranion	G2032	A-ASF	ἐπουράνιος	heavenly	heavenly;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	18	NKO	ᾧ	hō	G3739	R-DSM	ὅς, ἥ	which	to whom [is]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	19	NKO	ἡ	hē	G3588	T-NSF	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	20	NKO	δόξα	doxa	G1391	N-NSF	δόξα	glory	glory	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	21	NKO	εἰς	eis	G1519	PREP	εἰς	toward	unto	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	22	NKO	τοὺς	tous	G3588	T-APM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	23	NKO	αἰῶνας	aiōnas	G0165H	N-APM	αἰών	an age	ages	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	24	NKO	τῶν	tōn	G3588	T-GPM	ὁ	the/this/who	of the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	25	NKO	αἰώνων,	aiōnōn	G0165H	N-GPM	αἰών	an age	ages,	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	18	26	NKO	ἀμήν.¶	amēn	G0281	INJ-HEB	ἀμήν	amen	Amen.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	1	NKO	Ἄσπασαι	Aspasai	G0782	V-ADM-2S	ἀσπάζομαι	to pay respects to	do greet	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	2	NKO	Πρίσκαν	Priskan	G4251	N-ASF-P	Πρίσκα	Prisca	Prisca	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	3	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	4	NKO	Ἀκύλαν	Akulan	G0207	N-ASM-P	Ἀκύλας	Aquila	Aquila	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	5	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	6	NKO	τὸν	ton	G3588	T-ASM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	7	NKO	Ὀνησιφόρου	Onēsiphorou	G3683	N-GSM-P	Ὀνησίφορος	Onesiphorus	of Onesiphorus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	19	8	NKO	οἶκον.¶	oikon	G3624H	N-ASM	οἶκος	house	house.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	1	NKO	Ἔραστος	Erastos	G2037	N-NSM-P	Ἔραστος	Erastus	Erastus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	2	NKO	ἔμεινεν	emeinen	G3306	V-AAI-3S	μένω	to stay	remained	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	3	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	4	NKO	Κορίνθῳ·	Korinthō	G2882	N-DSF-L	Κόρινθος	Corinth	Corinth;	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	5	NKO	Τρόφιμον	Trophimon	G5161	N-ASM-P	Τρόφιμος	Trophimus	Trophimus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	6	NKO	δὲ	de	G1161	CONJ	δέ	but/and	however	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	7	NK(o)	ἀπέλιπον	apelipon	G0620	V-2AAI-1S	ἀπολείπω	to leave	I left	NA28+NA27+Tyn+SBL+Treg+TR+Byz	
+4	20	8	NKO	ἐν	en	G1722	PREP	ἐν	in/on/among	in	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	9	NKO	Μιλήτῳ	Milētō	G3399	N-DSF-L	Μίλητος	Miletus	Miletus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	20	10	NKO	ἀσθενοῦντα.¶	asthenounta	G0770H	V-PAP-ASM	ἀσθενέω	be weak	ailing.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	1	NKO	Σπούδασον	Spoudason	G4704	V-AAM-2S	σπουδάζω	be eager	do be eager	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	2	NKO	πρὸ	pro	G4253	PREP	πρό	before	before	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	3	NKO	χειμῶνος	cheimōnos	G5494	N-GSM	χειμών	winter	winter	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	4	NKO	ἐλθεῖν.¶	elthein	G2064	V-2AAN	ἔρχομαι	to come/go	to come.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	5	NKO	Ἀσπάζεταί	Aspazetai	G0782	V-PNI-3S	ἀσπάζομαι	to pay respects to	Greets	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	6	NKO	σε	se	G4771	P-2AS	σύ	you	you	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	7	NKO	Εὔβουλος	Euboulos	G2103	N-NSM-P	Εὔβουλος	Eubulus	Eubulus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	8	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	9	NKO	Πούδης	Poudēs	G4227	N-NSM-P	Πούδης	Pudens	Pudens	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	10	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	11	NKO	Λίνος	Linos	G3044	N-NSM-P	Λίνος	Linus	Linus	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	12	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	13	NKO	Κλαυδία	Klaudia	G2803	N-NSF-P	Κλαυδία	Claudia	Claudia	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	14	NKO	καὶ	kai	G2532	CONJ	καί	and	and	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	15	NKO	οἱ	hoi	G3588	T-NPM	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	16	NKO	ἀδελφοὶ	adelphoi	G0080	N-NPM	ἀδελφός	brother	brothers	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	21	17	NKO	πάντες.¶	pantes	G3956	A-NPM	πᾶς	all	all.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	1	NKO	Ὁ	Ho	G3588	T-NSM	ὁ	the/this/who	The	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	2	NKO	κύριος	kurios	G2962G	N-NSM-T	κύριος	lord	Lord	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	3	K	Ἰησοῦς	Iēsous	G2424G	N-NSM-P	Ἰησοῦς	Jesus/Joshua	Jesus	TR+Byz	
+4	22	4	K	Χριστὸς	Christos	G5547	N-NSM-T	Χριστός	Christ	Christ	TR+Byz	
+4	22	5	NKO	μετὰ	meta	G3326	PREP	μετά	with/after	[be] with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	6	NKO	τοῦ	tou	G3588	T-GSN	ὁ	the/this/who	the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	7	NKO	πνεύματός	pneumatos	G4151G	N-GSN	πνεῦμα	spirit/breath	spirit	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	8	NKO	σου.	sou	G4771	P-2GS	σύ	you	of you.	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	9	NKO	ἡ	hē	G3588	T-NSF	ὁ	the/this/who	<the>	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	10	NKO	χάρις	charis	G5485	N-NSF	χάρις	grace	Grace [be]	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	11	NKO	μεθ᾽	meth᾽	G3326	PREP	μετά	with/after	with	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	12	NKO	ὑμῶν	humōn	G4771	P-2GP	σύ	you	you all	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz	
+4	22	13	KO	ἀμήν.	amēn	G0281	INJ-HEB	ἀμήν	amen	Amen.	TR+Byz	
+4	22	14	K	πρός	pros	G4314	PREP	πρός	to/with	to	TR	
+4	22	15	K	Τιμόθεον	Timotheon	G5095	N-ASM-P	Τιμόθεος	Timothy	Timothy	TR	
+4	22	16	K	δευτέρᾳ	deutera	G1208	A-NSF	δεύτερος	secondly	second [epistle]	TR	
+4	22	17	K	τῆς	tēs	G3588	T-GSF	ὁ	the/this/who	of the	TR	
+4	22	18	K	Ἐφεσίων	Ephesiōn	G2180	A-GPM-LG	Ἐφέσιος	Ephesian	Ephesian	TR	
+4	22	19	K	ἐκκλησίας	ekklēsias	G1577	N-GSF	ἐκκλησία	assembly	church	TR	
+4	22	20	K	πρῶτον	prōton	G4413G	A-ASM-S	πρῶτος	first	first	TR	
+4	22	21	K	ἐπίσκοπον	episkopon	G1985	N-ASM	ἐπίσκοπος	overseer	overseer	TR	
+4	22	22	K	χειροτονηθέντα	cheirotonēthenta	G5500	V-APP-ASM	χειροτονέω	to appoint	having been chosen	TR	
+4	22	23	K	ἐγράφη	egraphē	G1125	V-2API-3S	γράφω	to write	It was written	TR	
+4	22	24	K	ἀπό	apo	G0575	PREP	ἀπό	away from	from	TR	
+4	22	25	K	Ῥώμης	Rhōmēs	G4516	N-GSF-L	Ῥώμη	Rome	Rome	TR	
+4	22	26	K	ὅτε	hote	G3753	PREP	ὅτε	when	when	TR	
+4	22	27	K	ἐκ	ek	G1537	PREP	ἐκ	out from	from	TR	
+4	22	28	K	δευτέρου	deuterou	G1208	A-GSN	δεύτερος	secondly	second time	TR	
+4	22	29	K	παρέστη	parestē	G3936	V-2AAI-3S	παρίστημι	to stand by	stood	TR	
+4	22	30	K	Παῦλος	Paulos	G3972G	N-NSM-P	Παῦλος	Paul	Paul	TR	
+4	22	31	K	τῷ	tō	G3588	T-DSM	ὁ	the/this/who	<the>	TR	
+4	22	32	K	Καίσαρί	Kaisari	G2541I	N-DSM-T	Καῖσαρ	Caesar	before Caesar	TR	
+4	22	33	K	Νέρωνι¶	Nerōni	G3505	N-DSM-P	Νέρων	Nero	Nero	TR	

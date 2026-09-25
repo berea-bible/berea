@@ -54,7 +54,9 @@ Then open <http://localhost:8000>. Any static file server works. Opening `index.
 index.html        page markup
 css/              theme, reader layout, verse panel
 js/               native ES modules (no bundler)
-data/             one JSON file per book, plus the index and Hebrew/Greek lexicon
+data/             one JSON file per book, plus the index, original/ (Greek/Hebrew words per book),
+                  fathers/ (quote bodies by chapter) and lexicon/ (index + definition buckets);
+                  regenerate with python3 pipeline/build.py
 ```
 
 To host your own copy, push the repository to GitHub and turn on **Pages** for the main branch.

@@ -1,0 +1,1307 @@
+chapter	verse	word	type	surface	lemma	morph	id
+1	1	1		וַ/יְהִ֗י	c/1961	HC/Vqw3ms	08xeN
+1	1	2		בִּ/ימֵי֙	b/3117	HR/Ncmpc	08Nvk
+1	1	3		שְׁפֹ֣ט	8199	HVqc	08TyA
+1	1	4		הַ/שֹּׁפְטִ֔ים	d/8199	HTd/Vqrmpa	08vuQ
+1	1	5		וַ/יְהִ֥י	c/1961	HC/Vqw3ms	08TSc
+1	1	6		רָעָ֖ב	7458	HNcmsa	08k5P
+1	1	7		בָּ/אָ֑רֶץ	b/776	HRd/Ncbsa	08nPh
+1	1	8		וַ/יֵּ֨לֶךְ	c/3212	HC/Vqw3ms	08LN3
+1	1	9		אִ֜ישׁ	376	HNcmsa	08Qzf
+1	1	10		מִ/בֵּ֧ית	m/1035+	HR/Np	08aPd
+1	1	11		לֶ֣חֶם	1035	HNp	08eYX
+1	1	12		יְהוּדָ֗ה	3063	HNp	08C5U
+1	1	13		לָ/גוּר֙	l/1481 a	HR/Vqc	08qNN
+1	1	14		בִּ/שְׂדֵ֣י	b/7704 b	HR/Ncmpc	08EVS
+1	1	15		מוֹאָ֔ב	4124	HNp	08PB6
+1	1	16		ה֥וּא	1931	HPp3ms	0837c
+1	1	17		וְ/אִשְׁתּ֖/וֹ	c/802	HC/Ncfsc/Sp3ms	08x9c
+1	1	18		וּ/שְׁנֵ֥י	c/8147	HC/Acmdc	08yNB
+1	1	19		בָנָֽי/ו	1121 a	HNcmpc/Sp3ms	0829t
+1	2	1		וְ/שֵׁ֣ם	c/8034	HC/Ncmsc	08KZG
+1	2	2		הָ/אִ֣ישׁ	d/376	HTd/Ncmsa	08TZE
+1	2	3		אֱֽלִימֶ֡לֶךְ	458	HNp	08thY
+1	2	4		וְ/שֵׁם֩	c/8034	HC/Ncmsc	08JM7
+1	2	5		אִשְׁתּ֨/וֹ	802	HNcfsc/Sp3ms	08fpo
+1	2	6		נָעֳמִ֜י	5281	HNp	08W26
+1	2	7		וְ/שֵׁ֥ם	c/8034	HC/Ncmsc	08yw4
+1	2	8		שְׁנֵֽי	8147	HAcmdc	08jbg
+1	2	9		בָנָ֣י/ו	1121 a	HNcmpc/Sp3ms	08USR
+1	2	10		מַחְל֤וֹן	4248	HNp	08v6U
+1	2	11		וְ/כִלְיוֹן֙	c/3630	HC/Np	085SS
+1	2	12		אֶפְרָתִ֔ים	673	HNgmpa	08GzE
+1	2	13		מִ/בֵּ֥ית	m/1035+	HR/Np	08qCU
+1	2	14		לֶ֖חֶם	1035	HNp	08g2y
+1	2	15		יְהוּדָ֑ה	3063	HNp	08jQb
+1	2	16		וַ/יָּבֹ֥אוּ	c/935	HC/Vqw3mp	08794
+1	2	17		שְׂדֵי	7704 b	HNcmpc	08CsU
+1	2	18		מוֹאָ֖ב	4124	HNp	08XR4
+1	2	19		וַ/יִּֽהְיוּ	c/1961	HC/Vqw3mp	08KvS
+1	2	20		שָֽׁם	8033	HD	08dBc
+1	3	1		וַ/יָּ֥מָת	c/4191	HC/Vqw3ms	08nAB
+1	3	2		אֱלִימֶ֖לֶךְ	458	HNp	08kfX
+1	3	3		אִ֣ישׁ	376	HNcmsc	08Wkf
+1	3	4		נָעֳמִ֑י	5281	HNp	08wrL
+1	3	5		וַ/תִּשָּׁאֵ֥ר	c/7604	HC/VNw3fs	083TL
+1	3	6		הִ֖יא	1931	HPp3fs	08LeN
+1	3	7		וּ/שְׁנֵ֥י	c/8147	HC/Acmdc	08sMn
+1	3	8		בָנֶֽי/הָ	1121 a	HNcmpc/Sp3fs	08Y3z
+1	4	1		וַ/יִּשְׂא֣וּ	c/5375	HC/Vqw3mp	08NQN
+1	4	2		לָ/הֶ֗ם	l	HR/Sp3mp	08uLf
+1	4	3		נָשִׁים֙	802	HNcfpa	08kA7
+1	4	4		מֹֽאֲבִיּ֔וֹת	4125	HNgfpa	083TS
+1	4	5		שֵׁ֤ם	8034	HNcmsc	08NFp
+1	4	6		הָֽ/אַחַת֙	d/259	HTd/Acfsa	087am
+1	4	7		עָרְפָּ֔ה	6204	HNp	08hh7
+1	4	8		וְ/שֵׁ֥ם	c/8034	HC/Ncmsc	08BsK
+1	4	9		הַ/שֵּׁנִ֖ית	d/8145	HTd/Aofsa	08fsu
+1	4	10		ר֑וּת	7327	HNp	088M6
+1	4	11		וַ/יֵּ֥שְׁבוּ	c/3427	HC/Vqw3mp	08wM5
+1	4	12		שָׁ֖ם	8033	HD	08qty
+1	4	13		כְּ/עֶ֥שֶׂר	k/6235	HR/Acfsa	085gQ
+1	4	14		שָׁנִֽים	8141	HNcfpa	08Xw6
+1	5	1		וַ/יָּמ֥וּתוּ	c/4191	HC/Vqw3mp	08eHJ
+1	5	2		גַם	1571	HD	08H6L
+1	5	3		שְׁנֵי/הֶ֖ם	8147	HAcmdc/Sp3mp	08bmv
+1	5	4		מַחְל֣וֹן	4248	HNp	08FV9
+1	5	5		וְ/כִלְי֑וֹן	c/3630	HC/Np	08Xm1
+1	5	6		וַ/תִּשָּׁאֵר֙	c/7604	HC/VNw3fs	08UE6
+1	5	7		הָֽ/אִשָּׁ֔ה	d/802	HTd/Ncfsa	08goK
+1	5	8		מִ/שְּׁנֵ֥י	m/8147	HR/Acmdc	08CyH
+1	5	9		יְלָדֶ֖י/הָ	3206	HNcmpc/Sp3fs	08A4a
+1	5	10		וּ/מֵ/אִישָֽׁ/הּ	c/m/376	HC/R/Ncmsc/Sp3fs	085Pr
+1	6	1		וַ/תָּ֤קָם	c/6965 b	HC/Vqw3fs	08L4k
+1	6	2		הִיא֙	1931	HPp3fs	08Mnv
+1	6	3		וְ/כַלֹּתֶ֔י/הָ	c/3618	HC/Ncfpc/Sp3fs	08mwU
+1	6	4		וַ/תָּ֖שָׁב	c/7725	HC/Vqw3fs	08tKT
+1	6	5		מִ/שְּׂדֵ֣י	m/7704 b	HR/Ncmpc	08NRT
+1	6	6		מוֹאָ֑ב	4124	HNp	08sRU
+1	6	7		כִּ֤י	3588 a	HC	08Wxq
+1	6	8		שָֽׁמְעָה֙	8085	HVqp3fs	089qY
+1	6	9		בִּ/שְׂדֵ֣ה	b/7704 b	HR/Ncmsc	08n5f
+1	6	10		מוֹאָ֔ב	4124	HNp	08YUq
+1	6	11		כִּֽי	3588 a	HC	08fQr
+1	6	12		פָקַ֤ד	6485 a	HVqp3ms	08L7t
+1	6	13		יְהוָה֙	3068	HNp	08A74
+1	6	14		אֶת	853	HTo	08dNE
+1	6	15		עַמּ֔/וֹ	5971 a	HNcmsc/Sp3ms	08xdF
+1	6	16		לָ/תֵ֥ת	l/5414	HR/Vqc	08AYg
+1	6	17		לָ/הֶ֖ם	l	HR/Sp3mp	08Ls9
+1	6	18		לָֽחֶם	3899	HNcbsa	08Snp
+1	7	1		וַ/תֵּצֵ֗א	c/3318	HC/Vqw3fs	0887B
+1	7	2		מִן	4480 a	HR	08nLp
+1	7	3		הַ/מָּקוֹם֙	d/4725	HTd/Ncmsa	08PzC
+1	7	4		אֲשֶׁ֣ר	834 a	HTr	08NPq
+1	7	5		הָיְתָה	1961	HVqp3fs	08d5m
+1	7	6		שָׁ֔מָּ/ה	8033	HD/Sd	08BYa
+1	7	7		וּ/שְׁתֵּ֥י	c/8147	HC/Acfdc	08LJh
+1	7	8		כַלֹּתֶ֖י/הָ	3618	HNcfpc/Sp3fs	08tRR
+1	7	9		עִמָּ֑/הּ	5973 a	HR/Sp3fs	08Q7E
+1	7	10		וַ/תֵּלַ֣כְנָה	c/3212	HC/Vqw3fp	08dv1
+1	7	11		בַ/דֶּ֔רֶךְ	b/1870	HRd/Ncbsa	08QwM
+1	7	12		לָ/שׁ֖וּב	l/7725	HR/Vqc	08a62
+1	7	13		אֶל	413	HR	08KvD
+1	7	14		אֶ֥רֶץ	776	HNcbsc	08GLz
+1	7	15		יְהוּדָֽה	3063	HNp	08BU7
+1	8	1		וַ/תֹּ֤אמֶר	c/559	HC/Vqw3fs	08iy2
+1	8	2		נָעֳמִי֙	5281	HNp	08zQ2
+1	8	3		לִ/שְׁתֵּ֣י	l/8147	HR/Acfdc	08Wxx
+1	8	4		כַלֹּתֶ֔י/הָ	3618	HNcfpc/Sp3fs	08jQ8
+1	8	5		לֵ֣כְנָה	3212	HVqv2fp	08Haa
+1	8	6		שֹּׁ֔בְנָה	7725	HVqv2fp	08fJN
+1	8	7		אִשָּׁ֖ה	802	HNcfsa	089KV
+1	8	8		לְ/בֵ֣ית	l/1004 b	HR/Ncmsc	08F1s
+1	8	9		אִמָּ֑/הּ	517	HNcfsc/Sp3fs	08dns
+1	8	10	x-ketiv	יעשה	6213 a	HVqi3ms	08GK3
+1	8	11		יַ֣עַשׂ	6213 a	HVqj3ms	08nRZ
+1	8	12		יְהוָ֤ה	3068	HNp	08cpb
+1	8	13		עִמָּ/כֶם֙	5973 a	HR/Sp2mp	08zio
+1	8	14		חֶ֔סֶד	2617 a	HNcmsa	08Qsh
+1	8	15		כַּ/אֲשֶׁ֧ר	k/834 d	HR/Tr	08zTj
+1	8	16		עֲשִׂיתֶ֛ם	6213 a	HVqp2mp	08fPi
+1	8	17		עִם	5973 a	HR	08GYe
+1	8	18		הַ/מֵּתִ֖ים	d/4191	HTd/Vqrmpa	08Bbz
+1	8	19		וְ/עִמָּדִֽ/י	c/5973 a	HC/R/Sp1cs	08VA9
+1	9	1		יִתֵּ֤ן	5414	HVqi3ms	08fV3
+1	9	2		יְהוָה֙	3068	HNp	08Sov
+1	9	3		לָ/כֶ֔ם	l	HR/Sp2mp	08V27
+1	9	4		וּ/מְצֶ֣אןָ	c/4672	HC/Vqv2fp	08ifp
+1	9	5		מְנוּחָ֔ה	4496	HNcbsa	087ZG
+1	9	6		אִשָּׁ֖ה	802	HNcfsa	08B2d
+1	9	7		בֵּ֣ית	1004 b	HNcmsc	08ewe
+1	9	8		אִישָׁ֑/הּ	376	HNcmsc/Sp3fs	08SV6
+1	9	9		וַ/תִּשַּׁ֣ק	c/5401 a	HC/Vqw3fs	08G83
+1	9	10		לָ/הֶ֔ן	l	HR/Sp3fp	08vzS
+1	9	11		וַ/תִּשֶּׂ֥אנָה	c/5375	HC/Vqw3fp	08Gq9
+1	9	12		קוֹלָ֖/ן	6963 a	HNcmsc/Sp3fp	083y8
+1	9	13		וַ/תִּבְכֶּֽינָה	c/1058	HC/Vqw3fp	08TXw
+1	10	1		וַ/תֹּאמַ֖רְנָה	c/559	HC/Vqw3fp	08Y4K
+1	10	2		לָּ֑/הּ	l	HR/Sp3fs	08C32
+1	10	3		כִּי	3588 a	HC	08aMT
+1	10	4		אִתָּ֥/ךְ	854	HR/Sp2fs	08Cof
+1	10	5		נָשׁ֖וּב	7725	HVqi1cp	08YWU
+1	10	6		לְ/עַמֵּֽ/ךְ	l/5971 a	HR/Ncmsc/Sp2fs	08rAQ
+1	11	1		וַ/תֹּ֤אמֶר	c/559	HC/Vqw3fs	08fLi
+1	11	2		נָעֳמִי֙	5281	HNp	08Ptj
+1	11	3		שֹׁ֣בְנָה	7725	HVqv2fp	08AJj
+1	11	4		בְנֹתַ֔/י	1323	HNcfpc/Sp1cs	089Hv
+1	11	5		לָ֥/מָּה	l/4100	HR/Ti	08j1i
+1	11	6		תֵלַ֖כְנָה	3212	HVqi2fp	08J9J
+1	11	7		עִמִּ֑/י	5973 a	HR/Sp1cs	08U4n
+1	11	8		הַֽ/עֽוֹד	i/5750	HTi/D	082Kt
+1	11	9		לִ֤/י	l	HR/Sp1cs	08RmH
+1	11	10		בָנִים֙	1121 a	HNcmpa	08SWL
+1	11	11		בְּֽ/מֵעַ֔/י	b/4578	HR/Ncmpc/Sp1cs	0875P
+1	11	12		וְ/הָי֥וּ	c/1961	HC/Vqq3cp	083Lj
+1	11	13		לָ/כֶ֖ם	l	HR/Sp2mp	08Qa3
+1	11	14		לַ/אֲנָשִֽׁים	l/376	HR/Ncmpa	08WTe
+1	12	1		שֹׁ֤בְנָה	7725	HVqv2fp	086VM
+1	12	2		בְנֹתַ/י֙	1323	HNcfpc/Sp1cs	08sKn
+1	12	3		לֵ֔כְןָ	3212	HVqv2fp	08oAj
+1	12	4		כִּ֥י	3588 a	HC	08AxB
+1	12	5		זָקַ֖נְתִּי	2204	HVqp1cs	08Ap3
+1	12	6		מִ/הְי֣וֹת	m/1961	HR/Vqc	08CEu
+1	12	7		לְ/אִ֑ישׁ	l/376	HR/Ncmsa	08zpy
+1	12	8		כִּ֤י	3588 a	HC	08FiN
+1	12	9		אָמַ֨רְתִּי֙	559	HVqp1cs	08cLk
+1	12	10		יֶשׁ	3426	HTm	0892v
+1	12	11		לִ֣/י	l	HR/Sp1cs	08j63
+1	12	12		תִקְוָ֔ה	8615 b	HNcfsa	08LFW
+1	12	13		גַּ֣ם	1571	HTa	08FbT
+1	12	14		הָיִ֤יתִי	1961	HVqp1cs	08Bx7
+1	12	15		הַ/לַּ֨יְלָה֙	d/3915	HTd/Ncmsa	08btu
+1	12	16		לְ/אִ֔ישׁ	l/376	HR/Ncmsa	08rTK
+1	12	17		וְ/גַ֖ם	c/1571	HC/Ta	08SHw
+1	12	18		יָלַ֥דְתִּי	3205	HVqp1cs	08VuH
+1	12	19		בָנִֽים	1121 a	HNcmpa	08Axb
+1	13	1		הֲ/לָהֵ֣ן	i/3860	HTi/C	08xva
+1	13	2		תְּשַׂבֵּ֗רְנָה	7663 b	HVpi2fp	08NrT
+1	13	3		עַ֚ד	5704	HD	08iAD
+1	13	4		אֲשֶׁ֣ר	834 a	HTr	08372
+1	13	5		יִגְדָּ֔לוּ	1431	HVqi3mp	08FMU
+1	13	6		הֲ/לָהֵן֙	i/3860	HTi/C	08SaV
+1	13	7		תֵּֽעָגֵ֔נָה	5702	HVNi2fp	084W9
+1	13	8		לְ/בִלְתִּ֖י	l/1115	HR/C	08MmM
+1	13	9		הֱי֣וֹת	1961	HVqc	08wJn
+1	13	10		לְ/אִ֑ישׁ	l/376	HR/Ncmsa	08CQo
+1	13	11		אַ֣ל	408	HTn	08XyU
+1	13	12		בְּנֹתַ֗/י	1323	HNcfpc/Sp1cs	08BG4
+1	13	13		כִּֽי	3588 a	HC	08YHH
+1	13	14		מַר	4843	HVqp3ms	08sHf
+1	13	15		לִ֤/י	l	HR/Sp1cs	08iee
+1	13	16		מְאֹד֙	3966	HD	083eS
+1	13	17		מִ/כֶּ֔ם	m/4480 a	HR/Sp2mp	08ddd
+1	13	18		כִּֽי	3588 a	HC	08hxo
+1	13	19		יָצְאָ֥ה	3318	HVqp3fs	08TW6
+1	13	20		בִ֖/י	b	HR/Sp1cs	08PVx
+1	13	21		יַד	3027	HNcbsc	08PGK
+1	13	22		יְהוָֽה	3068	HNp	08U4a
+1	14	1		וַ/תִּשֶּׂ֣נָה	c/5375	HC/Vqw3fp	08dSQ
+1	14	2		קוֹלָ֔/ן	6963 a	HNcmsc/Sp3fp	08Qbs
+1	14	3		וַ/תִּבְכֶּ֖ינָה	c/1058	HC/Vqw3fp	08ndZ
+1	14	4		ע֑וֹד	5750	HD	08Xa1
+1	14	5		וַ/תִּשַּׁ֤ק	c/5401 a	HC/Vqw3fs	083yJ
+1	14	6		עָרְפָּה֙	6204	HNp	08B6c
+1	14	7		לַ/חֲמוֹתָ֔/הּ	l/2545	HR/Ncfsc/Sp3fs	08bju
+1	14	8		וְ/ר֖וּת	c/7327	HC/Np	08cn3
+1	14	9		דָּ֥בְקָה	1692	HVqp3fs	087mS
+1	14	10		בָּֽ/הּ	b	HR/Sp3fs	08dJe
+1	15	1		וַ/תֹּ֗אמֶר	c/559	HC/Vqw3fs	08WvG
+1	15	2		הִנֵּה֙	2009	HTm	08RXg
+1	15	3		שָׁ֣בָה	7725	HVqp3fs	08pqY
+1	15	4		יְבִמְתֵּ֔/ךְ	2994	HNcfsc/Sp2fs	08n9v
+1	15	5		אֶל	413	HR	08gYe
+1	15	6		עַמָּ֖/הּ	5971 a	HNcmsc/Sp3fs	08eXj
+1	15	7		וְ/אֶל	c/413	HC/R	088ro
+1	15	8		אֱלֹהֶ֑י/הָ	430	HNcmpc/Sp3fs	08v5z
+1	15	9		שׁ֖וּבִי	7725	HVqv2fs	08bCC
+1	15	10		אַחֲרֵ֥י	310 a	HR	086By
+1	15	11		יְבִמְתֵּֽ/ךְ	2994	HNcfsc/Sp2fs	08CZB
+1	16	1		וַ/תֹּ֤אמֶר	c/559	HC/Vqw3fs	08VTb
+1	16	2		רוּת֙	7327	HNp	086qf
+1	16	3		אַל	408	HTn	08efz
+1	16	4		תִּפְגְּעִי	6293	HVqj2fs	08QG5
+1	16	5		בִ֔/י	b	HR/Sp1cs	083k3
+1	16	6		לְ/עָזְבֵ֖/ךְ	l/5800 a	HR/Vqc/Sp2fs	081rL
+1	16	7		לָ/שׁ֣וּב	l/7725	HR/Vqc	08W2c
+1	16	8		מֵ/אַחֲרָ֑יִ/ךְ	m/310 a	HR/R/Sp2fs	08mL3
+1	16	9		כִּ֠י	3588 a	HC	08zfc
+1	16	10		אֶל	413	HR	08sYp
+1	16	11		אֲשֶׁ֨ר	834 a	HTr	08GvF
+1	16	12		תֵּלְכִ֜י	3212	HVqi2fs	08dAC
+1	16	13		אֵלֵ֗ךְ	3212	HVqi1cs	08i4W
+1	16	14		וּ/בַ/אֲשֶׁ֤ר	c/b/834 b	HC/R/Tr	08chR
+1	16	15		תָּלִ֨ינִי֙	3885 a	HVqi2fs	08Ddq
+1	16	16		אָלִ֔ין	3885 a	HVqi1cs	08dSp
+1	16	17		עַמֵּ֣/ךְ	5971 a	HNcmsc/Sp2fs	08ecS
+1	16	18		עַמִּ֔/י	5971 a	HNcmsc/Sp1cs	082tG
+1	16	19		וֵ/אלֹהַ֖יִ/ךְ	c/430	HC/Ncmpc/Sp2fs	08Xzm
+1	16	20		אֱלֹהָֽ/י	430	HNcmpc/Sp1cs	08CCj
+1	17	1		בַּ/אֲשֶׁ֤ר	b/834 b	HR/Tr	08gV8
+1	17	2		תָּמ֨וּתִי֙	4191	HVqi2fs	08Czz
+1	17	3		אָמ֔וּת	4191	HVqi1cs	08uXX
+1	17	4		וְ/שָׁ֖ם	c/8033	HC/D	08xCL
+1	17	5		אֶקָּבֵ֑ר	6912	HVNi1cs	08Qnr
+1	17	6		כֹּה֩	3541	HD	086kU
+1	17	7		יַעֲשֶׂ֨ה	6213 a	HVqi3ms	08qry
+1	17	8		יְהוָ֥ה	3068	HNp	08bvP
+1	17	9		לִ/י֙	l	HR/Sp1cs	08wjj
+1	17	10		וְ/כֹ֣ה	c/3541	HC/D	08Tn7
+1	17	11		יֹסִ֔יף	3254	HVhi3ms	08hEs
+1	17	12		כִּ֣י	3588 a	HC	08xAF
+1	17	13		הַ/מָּ֔וֶת	d/4194	HTd/Ncmsa	08qg1
+1	17	14		יַפְרִ֖יד	6504	HVhi3ms	086w9
+1	17	15		בֵּינִ֥/י	996	HR/Sp1cs	08wA4
+1	17	16		וּ/בֵינֵֽ/ךְ	c/996	HC/R/Sp2fs	08ibe
+1	18	1		וַ/תֵּ֕רֶא	c/7200	HC/Vqw3fs	08v8V
+1	18	2		כִּֽי	3588 a	HC	08T2S
+1	18	3		מִתְאַמֶּ֥צֶת	553	HVtrfsa	08tkJ
+1	18	4		הִ֖יא	1931	HPp3fs	08EXL
+1	18	5		לָ/לֶ֣כֶת	l/3212	HR/Vqc	08ZPN
+1	18	6		אִתָּ֑/הּ	854	HR/Sp3fs	08q1G
+1	18	7		וַ/תֶּחְדַּ֖ל	c/2308	HC/Vqw3fs	08bYD
+1	18	8		לְ/דַבֵּ֥ר	l/1696	HR/Vpc	08v2F
+1	18	9		אֵלֶֽי/הָ	413	HR/Sp3fs	087vt
+1	19	1		וַ/תֵּלַ֣כְנָה	c/3212	HC/Vqw3fp	08kDm
+1	19	2		שְׁתֵּי/הֶ֔ם	8147	HAcfdc/Sp3mp	08doW
+1	19	3		עַד	5704	HR	08eRa
+1	19	4		בֹּאָ֖/נָה	935	HVqc/Sp3fp	08kDf
+1	19	5		בֵּ֣ית	1035+	HNp	0863G
+1	19	6		לָ֑חֶם	1035	HNp	08WPn
+1	19	7		וַ/יְהִ֗י	c/1961	HC/Vqw3ms	081jv
+1	19	8		כְּ/בֹאָ֨/נָה֙	k/935	HR/Vqc/Sp3fp	08cK8
+1	19	9		בֵּ֣ית	1035+	HNp	08DDb
+1	19	10		לֶ֔חֶם	1035	HNp	08RCg
+1	19	11		וַ/תֵּהֹ֤ם	c/1949	HC/VNw3fs	085KE
+1	19	12		כָּל	3605	HNcmsc	08qVd
+1	19	13		הָ/עִיר֙	d/5892 b	HTd/Ncfsa	08koG
+1	19	14		עֲלֵי/הֶ֔ן	5921 a	HR/Sp3fp	08e6B
+1	19	15		וַ/תֹּאמַ֖רְנָה	c/559	HC/Vqw3fp	088GY
+1	19	16		הֲ/זֹ֥את	i/2063	HTi/Pdxfs	08GpK
+1	19	17		נָעֳמִֽי	5281	HNp	0868C
+1	20	1		וַ/תֹּ֣אמֶר	c/559	HC/Vqw3fs	08CMz
+1	20	2		אֲלֵי/הֶ֔ן	413	HR/Sp3fp	08D4c
+1	20	3		אַל	408	HTn	08ta1
+1	20	4		תִּקְרֶ֥אנָה	7121	HVqj2fp	08JnD
+1	20	5		לִ֖/י	l	HR/Sp1cs	08jfz
+1	20	6		נָעֳמִ֑י	5281	HNp	08ErQ
+1	20	7		קְרֶ֤אןָ	7121	HVqv2fp	084fv
+1	20	8		לִ/י֙	l	HR/Sp1cs	08yDv
+1	20	9		מָרָ֔א	4755	HNp	08jyT
+1	20	10		כִּי	3588 a	HC	08Unh
+1	20	11		הֵמַ֥ר	4843	HVhp3ms	08QH2
+1	20	12		שַׁדַּ֛י	7706	HNp	08xxn
+1	20	13		לִ֖/י	l	HR/Sp1cs	08ou4
+1	20	14		מְאֹֽד	3966	HD	083KZ
+1	21	1		אֲנִי֙	589	HPp1cs	08jNE
+1	21	2		מְלֵאָ֣ה	4392	HAafsa	08hj3
+1	21	3		הָלַ֔כְתִּי	1980	HVqp1cs	08iDs
+1	21	4		וְ/רֵיקָ֖ם	c/7387	HC/D	086Lo
+1	21	5		הֱשִׁיבַ֣/נִי	7725	HVhp3ms/Sp1cs	08JZq
+1	21	6		יְהוָ֑ה	3068	HNp	08ZpQ
+1	21	7		לָ֣/מָּה	l/4100	HR/Ti	089gS
+1	21	8		תִקְרֶ֤אנָה	7121	HVqi2fp	08LAe
+1	21	9		לִ/י֙	l	HR/Sp1cs	08qK3
+1	21	10		נָעֳמִ֔י	5281	HNp	081Cv
+1	21	11		וַֽ/יהוָה֙	c/3068	HC/Np	08PBQ
+1	21	12		עָ֣נָה	6030 b	HVqp3ms	08mr5
+1	21	13		בִ֔/י	b	HR/Sp1cs	08QDu
+1	21	14		וְ/שַׁדַּ֖י	c/7706	HC/Np	08PbY
+1	21	15		הֵ֥רַֽע	7489 a	HVhp3ms	08Ew6
+1	21	16		לִֽ/י	l	HR/Sp1cs	0874R
+1	22	1		וַ/תָּ֣שָׁב	c/7725	HC/Vqw3fs	086zt
+1	22	2		נָעֳמִ֗י	5281	HNp	08zEm
+1	22	3		וְ/ר֨וּת	c/7327	HC/Np	082dm
+1	22	4		הַ/מּוֹאֲבִיָּ֤ה	d/4125	HTd/Ngfsa	08uYh
+1	22	5		כַלָּתָ/הּ֙	3618	HNcfsc/Sp3fs	08YxK
+1	22	6		עִמָּ֔/הּ	5973 a	HR/Sp3fs	08aSJ
+1	22	7		הַ/שָּׁ֖בָה	d/7725	HTd/Vqp3fs	08Kz2
+1	22	8		מִ/שְּׂדֵ֣י	m/7704 b	HR/Ncmpc	08YhQ
+1	22	9		מוֹאָ֑ב	4124	HNp	08azZ
+1	22	10		וְ/הֵ֗מָּה	c/1992	HC/Pp3mp	08oiy
+1	22	11		בָּ֚אוּ	935	HVqp3cp	08gPX
+1	22	12		בֵּ֣ית	1035+	HNp	08gtq
+1	22	13		לֶ֔חֶם	1035	HNp	08HSQ
+1	22	14		בִּ/תְחִלַּ֖ת	b/8462	HR/Ncfsc	08fbB
+1	22	15		קְצִ֥יר	7105 a	HNcmsc	08k1L
+1	22	16		שְׂעֹרִֽים	8184	HNcfpa	082tS
+2	1	1		וּֽ/לְ/נָעֳמִ֞י	c/l/5281	HC/R/Np	08EVu
+2	1	2	x-ketiv	מידע	3045	HVPsmsa	08ygU
+2	1	3		מוֹדַ֣ע	4129	HNcmsa	08swV
+2	1	4		לְ/אִישָׁ֗/הּ	l/376	HR/Ncmsc/Sp3fs	08HjU
+2	1	5		אִ֚ישׁ	376	HNcmsa	08d3U
+2	1	6		גִּבּ֣וֹר	1368	HAamsc	08NtK
+2	1	7		חַ֔יִל	2428	HNcmsa	08U94
+2	1	8		מִ/מִּשְׁפַּ֖חַת	m/4940	HR/Ncfsc	08zqr
+2	1	9		אֱלִימֶ֑לֶךְ	458	HNp	086JA
+2	1	10		וּ/שְׁמ֖/וֹ	c/8034	HC/Ncmsc/Sp3ms	08JyD
+2	1	11		בֹּֽעַז	1162	HNp	08jjy
+2	2	1		וַ/תֹּאמֶר֩	c/559	HC/Vqw3fs	0879E
+2	2	2		ר֨וּת	7327	HNp	08Zuo
+2	2	3		הַ/מּוֹאֲבִיָּ֜ה	d/4125	HTd/Ngfsa	08LXS
+2	2	4		אֶֽל	413	HR	08mR4
+2	2	5		נָעֳמִ֗י	5281	HNp	08MC8
+2	2	6		אֵֽלְכָה	3212	HVqh1cs	08BnR
+2	2	7		נָּ֤א	4994	HTj	08PUg
+2	2	8		הַ/שָּׂדֶה֙	d/7704 b	HTd/Ncmsa	08pUN
+2	2	9		וַ/אֲלַקֳטָּ֣ה	c/3950	HC/Vph1cs	08gc8
+2	2	10		בַ/שִׁבֳּלִ֔ים	b/7641 b	HRd/Ncfpa	08Lsp
+2	2	11		אַחַ֕ר	310 a	HR	08SAE
+2	2	12		אֲשֶׁ֥ר	834 a	HTr	083gY
+2	2	13		אֶמְצָא	4672	HVqi1cs	08RuM
+2	2	14		חֵ֖ן	2580	HNcmsa	08WFU
+2	2	15		בְּ/עֵינָ֑י/ו	b/5869 a	HR/Ncbdc/Sp3ms	08BJv
+2	2	16		וַ/תֹּ֥אמֶר	c/559	HC/Vqw3fs	08ExP
+2	2	17		לָ֖/הּ	l	HR/Sp3fs	08ypu
+2	2	18		לְכִ֥י	3212	HVqv2fs	08mP3
+2	2	19		בִתִּֽ/י	1323	HNcfsc/Sp1cs	08V8b
+2	3	1		וַ/תֵּ֤לֶךְ	c/3212	HC/Vqw3fs	08suQ
+2	3	2		וַ/תָּבוֹא֙	c/935	HC/Vqw3fs	081Su
+2	3	3		וַ/תְּלַקֵּ֣ט	c/3950	HC/Vpw3fs	08MEz
+2	3	4		בַּ/שָּׂדֶ֔ה	b/7704 b	HRd/Ncmsa	08Q2u
+2	3	5		אַחֲרֵ֖י	310 a	HR	08yT5
+2	3	6		הַ/קֹּצְרִ֑ים	d/7114 b	HTd/Vqrmpa	08b5Q
+2	3	7		וַ/יִּ֣קֶר	c/7136 a	HC/Vqw3ms	08F88
+2	3	8		מִקְרֶ֔/הָ	4745	HNcmsc/Sp3fs	08AXb
+2	3	9		חֶלְקַ֤ת	2513 a	HNcfsc	08Wjz
+2	3	10		הַ/שָּׂדֶה֙	d/7704 b	HTd/Ncmsa	08bPJ
+2	3	11		לְ/בֹ֔עַז	l/1162	HR/Np	08hS1
+2	3	12		אֲשֶׁ֖ר	834 a	HTr	08h53
+2	3	13		מִ/מִּשְׁפַּ֥חַת	m/4940	HR/Ncfsc	08vpK
+2	3	14		אֱלִימֶֽלֶךְ	458	HNp	08G6E
+2	4	1		וְ/הִנֵּה	c/2009	HC/Tm	084vX
+2	4	2		בֹ֗עַז	1162	HNp	08X1R
+2	4	3		בָּ֚א	935	HVqrmsa	08bsu
+2	4	4		מִ/בֵּ֣ית	m/1035+	HR/Np	08Ygn
+2	4	5		לֶ֔חֶם	1035	HNp	082gM
+2	4	6		וַ/יֹּ֥אמֶר	c/559	HC/Vqw3ms	08pAw
+2	4	7		לַ/קּוֹצְרִ֖ים	l/7114 b	HRd/Vqrmpa	08mVV
+2	4	8		יְהוָ֣ה	3068	HNp	08FMa
+2	4	9		עִמָּ/כֶ֑ם	5973 a	HR/Sp2mp	08KPU
+2	4	10		וַ/יֹּ֥אמְרוּ	c/559	HC/Vqw3mp	08ki2
+2	4	11		ל֖/וֹ	l	HR/Sp3ms	085pZ
+2	4	12		יְבָרֶכְ/ךָ֥	1288	HVpi3ms/Sp2ms	08HWo
+2	4	13		יְהוָֽה	3068	HNp	08zkA
+2	5	1		וַ/יֹּ֤אמֶר	c/559	HC/Vqw3ms	08JMT
+2	5	2		בֹּ֨עַז֙	1162	HNp	08jEX
+2	5	3		לְ/נַעֲר֔/וֹ	l/5288	HR/Ncmsc/Sp3ms	08uUA
+2	5	4		הַ/נִּצָּ֖ב	d/5324	HTd/VNrmsa	08tKf
+2	5	5		עַל	5921 a	HR	08awE
+2	5	6		הַ/קּֽוֹצְרִ֑ים	d/7114 b	HTd/Vqrmpa	08yNT
+2	5	7		לְ/מִ֖י	l/4310	HR/Ti	08Azu
+2	5	8		הַ/נַּעֲרָ֥ה	d/5291	HTd/Ncfsa	08884
+2	5	9		הַ/זֹּֽאת	d/2063	HTd/Pdxfs	08XMu
+2	6	1		וַ/יַּ֗עַן	c/6030 b	HC/Vqw3ms	08mrn
+2	6	2		הַ/נַּ֛עַר	d/5288	HTd/Ncmsa	08Xh9
+2	6	3		הַ/נִּצָּ֥ב	d/5324	HTd/VNrmsa	08D3a
+2	6	4		עַל	5921 a	HR	08wEr
+2	6	5		הַ/קּוֹצְרִ֖ים	d/7114 b	HTd/Vqrmpa	08Rvc
+2	6	6		וַ/יֹּאמַ֑ר	c/559	HC/Vqw3ms	08c6V
+2	6	7		נַעֲרָ֤ה	5291	HNcfsa	088eM
+2	6	8		מֽוֹאֲבִיָּה֙	4125	HNgfsa	08xkK
+2	6	9		הִ֔יא	1931	HPp3fs	08rGa
+2	6	10		הַ/שָּׁ֥בָה	d/7725	HTd/Vqrfsa	08fp1
+2	6	11		עִֽם	5973 a	HR	08Y9g
+2	6	12		נָעֳמִ֖י	5281	HNp	08mGU
+2	6	13		מִ/שְּׂדֵ֥ה	m/7704 b	HR/Ncmsc	08gBW
+2	6	14		מוֹאָֽב	4124	HNp	08eLD
+2	7	1		וַ/תֹּ֗אמֶר	c/559	HC/Vqw3fs	0893F
+2	7	2		אֲלַקֳטָה	3950	HVph1cs	08eyL
+2	7	3		נָּא֙	4994	HTj	08pm7
+2	7	4		וְ/אָסַפְתִּ֣י	c/622	HC/Vqq1cs	08teU
+2	7	5		בָֽ/עֳמָרִ֔ים	b/6016 a	HRd/Ncmpa	08c58
+2	7	6		אַחֲרֵ֖י	310 a	HR	08MRA
+2	7	7		הַ/קּוֹצְרִ֑ים	d/7114 b	HTd/Vqrmpa	08xp4
+2	7	8		וַ/תָּב֣וֹא	c/935	HC/Vqw3fs	08Hki
+2	7	9		וַֽ/תַּעֲמ֗וֹד	c/5975	HC/Vqw3fs	08QvZ
+2	7	10		מֵ/אָ֤ז	m/227 b	HR/D	08S38
+2	7	11		הַ/בֹּ֨קֶר֙	d/1242	HTd/Ncmsa	08eN1
+2	7	12		וְ/עַד	c/5704	HC/R	08HoD
+2	7	13		עַ֔תָּה	6258	HD	08P5s
+2	7	14		זֶ֛ה	2088	HPdxms	085QX
+2	7	15		שִׁבְתָּ֥/הּ	3427	HVqc/Sp3fs	08Mxy
+2	7	16		הַ/בַּ֖יִת	d/1004 b	HTd/Ncmsa	08w6u
+2	7	17		מְעָֽט	4592	HAamsa	08e3z
+2	8	1		וַ/יֹּאמֶר֩	c/559	HC/Vqw3ms	082c6
+2	8	2		בֹּ֨עַז	1162	HNp	083RL
+2	8	3		אֶל	413	HR	08JUf
+2	8	4		ר֜וּת	7327	HNp	08ce9
+2	8	5		הֲ/ל֧וֹא	i/3808	HTi/Tn	08dPK
+2	8	6		שָׁמַ֣עַתְּ	8085	HVqp2fs	08vLv
+2	8	7		בִּתִּ֗/י	1323	HNcfsc/Sp1cs	08UrG
+2	8	8		אַל	408	HTn	08Sxc
+2	8	9		תֵּלְכִי֙	3212	HVqj2fs	08xwN
+2	8	10		לִ/לְקֹט֙	l/3950	HR/Vqc	08GjY
+2	8	11		בְּ/שָׂדֶ֣ה	b/7704 b	HR/Ncmsa	08KNo
+2	8	12		אַחֵ֔ר	312	HAamsa	08NLD
+2	8	13		וְ/גַ֛ם	c/1571	HC/Ta	08GUh
+2	8	14		לֹ֥א	3808	HTn	085aF
+2	8	15		תַעֲבוּרִ֖י	5674 a	HVqi2fs	08taY
+2	8	16		מִ/זֶּ֑ה	m/2088	HR/Pdxms	08EZz
+2	8	17		וְ/כֹ֥ה	c/3541	HC/D	08Hnw
+2	8	18		תִדְבָּקִ֖י/ן	1692	HVqi2fs/Sn	08pXi
+2	8	19		עִם	5973 a	HR	08Nq4
+2	8	20		נַעֲרֹתָֽ/י	5291	HNcfpc/Sp1cs	08rZH
+2	9	1		עֵינַ֜יִ/ךְ	5869 a	HNcbdc/Sp2fs	08GtT
+2	9	2		בַּ/שָּׂדֶ֤ה	b/7704 b	HRd/Ncmsa	08kwz
+2	9	3		אֲשֶׁר	834 a	HTr	08tc4
+2	9	4		יִקְצֹרוּ/ן֙	7114 b	HVqi3mp/Sn	08CMD
+2	9	5		וְ/הָלַ֣כְתִּ	c/1980	HC/Vqq2fs	085eq
+2	9	6		אַחֲרֵי/הֶ֔ן	310 a	HR/Sp3fp	08Cj2
+2	9	7		הֲ/ל֥וֹא	i/3808	HTi/Tn	08Ttm
+2	9	8		צִוִּ֛יתִי	6680	HVpp1cs	086Vi
+2	9	9		אֶת	853	HTo	08V8W
+2	9	10		הַ/נְּעָרִ֖ים	d/5288	HTd/Ncmpa	08zg2
+2	9	11		לְ/בִלְתִּ֣י	l/1115	HR/C	08gXh
+2	9	12		נָגְעֵ֑/ךְ	5060	HVqc/Sp2fs	083iR
+2	9	13		וְ/צָמִ֗ת	c/6770	HC/Vqq2fs	08RoG
+2	9	14		וְ/הָלַכְתְּ֙	c/1980	HC/Vqq2fs	08jP7
+2	9	15		אֶל	413	HR	08vCn
+2	9	16		הַ/כֵּלִ֔ים	d/3627	HTd/Ncmpa	08jv3
+2	9	17		וְ/שָׁתִ֕ית	c/8354	HC/Vqq2fs	08ggL
+2	9	18		מֵ/אֲשֶׁ֥ר	m/834 c	HR/Tr	08MVq
+2	9	19		יִשְׁאֲב֖וּ/ן	7579	HVqi3mp/Sn	08g1y
+2	9	20		הַ/נְּעָרִֽים	d/5288	HTd/Ncmpa	08CBH
+2	10	1		וַ/תִּפֹּל֙	c/5307	HC/Vqw3fs	083t6
+2	10	2		עַל	5921 a	HR	08g33
+2	10	3		פָּנֶ֔י/הָ	6440	HNcbpc/Sp3fs	08LDn
+2	10	4		וַ/תִּשְׁתַּ֖חוּ	c/7812	HC/Vvw3fs	083jG
+2	10	5		אָ֑רְצָ/ה	776	HNcbsa/Sd	08WDP
+2	10	6		וַ/תֹּ֣אמֶר	c/559	HC/Vqw3fs	08eeF
+2	10	7		אֵלָ֗י/ו	413	HR/Sp3ms	08idA
+2	10	8		מַדּוּעַ֩	4069	HTi	08Z4D
+2	10	9		מָצָ֨אתִי	4672	HVqp1cs	08VMC
+2	10	10		חֵ֤ן	2580	HNcmsa	08K8W
+2	10	11		בְּ/עֵינֶ֨י/ךָ֙	b/5869 a	HR/Ncbdc/Sp2ms	086RX
+2	10	12		לְ/הַכִּירֵ֔/נִי	l/5234 a	HR/Vhc/Sp1cs	08bYm
+2	10	13		וְ/אָּנֹכִ֖י	c/595	HC/Pp1cs	08M7H
+2	10	14		נָכְרִיָּֽה	5237	HAafsa	08gcK
+2	11	1		וַ/יַּ֤עַן	c/6030 b	HC/Vqw3ms	08p7s
+2	11	2		בֹּ֨עַז֙	1162	HNp	08ZBR
+2	11	3		וַ/יֹּ֣אמֶר	c/559	HC/Vqw3ms	08ACh
+2	11	4		לָ֔/הּ	l	HR/Sp3fs	08mnL
+2	11	5		הֻגֵּ֨ד	5046	HVHa	0889r
+2	11	6		הֻגַּ֜ד	5046	HVHp3ms	08GmF
+2	11	7		לִ֗/י	l	HR/Sp1cs	08fcv
+2	11	8		כֹּ֤ל	3605	HNcmsa	08knb
+2	11	9		אֲשֶׁר	834 a	HTr	08Qpj
+2	11	10		עָשִׂית֙	6213 a	HVqp2fs	08MDS
+2	11	11		אֶת	854	HR	08YBx
+2	11	12		חֲמוֹתֵ֔/ךְ	2545	HNcfsc/Sp2fs	08kMZ
+2	11	13		אַחֲרֵ֖י	310 a	HR	08uqC
+2	11	14		מ֣וֹת	4194	HNcmsc	08VY5
+2	11	15		אִישֵׁ֑/ךְ	376	HNcmsc/Sp2fs	08WJY
+2	11	16		וַ/תַּֽעַזְבִ֞י	c/5800 a	HC/Vqw2fs	08brh
+2	11	17		אָּבִ֣י/ךְ	1	HNcmsc/Sp2fs	08w1U
+2	11	18		וְ/אִמֵּ֗/ךְ	c/517	HC/Ncfsc/Sp2fs	08aqT
+2	11	19		וְ/אֶ֨רֶץ֙	c/776	HC/Ncbsc	08zXi
+2	11	20		מֽוֹלַדְתֵּ֔/ךְ	4138	HNcfsc/Sp2fs	08H8a
+2	11	21		וַ/תֵּ֣לְכִ֔י	c/3212	HC/Vqw2fs	08Sjh
+2	11	22		אֶל	413	HR	08oYp
+2	11	23		עַ֕ם	5971 a	HNcmsa	08Pht
+2	11	24		אֲשֶׁ֥ר	834 a	HTr	08idy
+2	11	25		לֹא	3808	HTn	08PU6
+2	11	26		יָדַ֖עַתְּ	3045	HVqp2fs	08FCP
+2	11	27		תְּמ֥וֹל	8543	HD	08YuY
+2	11	28		שִׁלְשֽׁוֹם	8032	HNcmsa	088Js
+2	12	1		יְשַׁלֵּ֥ם	7999 a	HVpi3ms	08FyK
+2	12	2		יְהוָ֖ה	3068	HNp	08XjR
+2	12	3		פָּעֳלֵ֑/ךְ	6467	HNcmsc/Sp2fs	08jaD
+2	12	4		וּ/תְהִ֨י	c/1961	HC/Vqj3fs	08W7V
+2	12	5		מַשְׂכֻּרְתֵּ֜/ךְ	4909	HNcfsc/Sp2fs	08U2Y
+2	12	6		שְׁלֵמָ֗ה	8003	HAafsa	088na
+2	12	7		מֵ/עִ֤ם	m/5973 b	HR/R	08sgw
+2	12	8		יְהוָה֙	3068	HNp	08MDX
+2	12	9		אֱלֹהֵ֣י	430	HNcmpc	08pPp
+2	12	10		יִשְׂרָאֵ֔ל	3478	HNp	08ieN
+2	12	11		אֲשֶׁר	834 a	HTr	08Csj
+2	12	12		בָּ֖את	935	HVqp2fs	08rHn
+2	12	13		לַ/חֲס֥וֹת	l/2620	HR/Vqc	08ViB
+2	12	14		תַּֽחַת	8478	HR	08CFo
+2	12	15		כְּנָפָֽי/ו	3671	HNcfpc/Sp3ms	085Ja
+2	13	1		וַ֠/תֹּאמֶר	c/559	HC/Vqw3fs	08UXS
+2	13	2		אֶמְצָא	4672	HVqi1cs	08YQ8
+2	13	3		חֵ֨ן	2580	HNcmsa	08Abd
+2	13	4		בְּ/עֵינֶ֤י/ךָ	b/5869 a	HR/Ncbdc/Sp2ms	082UV
+2	13	5		אֲדֹנִ/י֙	113	HNcmsc/Sp1cs	08ZtS
+2	13	6		כִּ֣י	3588 a	HC	08gMU
+2	13	7		נִֽחַמְתָּ֔/נִי	5162	HVpp2ms/Sp1cs	08nWb
+2	13	8		וְ/כִ֥י	c/3588 a	HC/C	08GXk
+2	13	9		דִבַּ֖רְתָּ	1696	HVpp2ms	08TZa
+2	13	10		עַל	5921 a	HR	085qp
+2	13	11		לֵ֣ב	3820 a	HNcmsc	08uHZ
+2	13	12		שִׁפְחָתֶ֑/ךָ	8198	HNcfsc/Sp2ms	08pAL
+2	13	13		וְ/אָנֹכִי֙	c/595	HC/Pp1cs	08hSr
+2	13	14		לֹ֣א	3808	HTn	08ZMk
+2	13	15		אֶֽהְיֶ֔ה	1961	HVqi1cs	08irW
+2	13	16		כְּ/אַחַ֖ת	k/259	HR/Acfsc	08x72
+2	13	17		שִׁפְחֹתֶֽי/ךָ	8198	HNcfpc/Sp2ms	08FYV
+2	14	1		וַ/יֹּאמֶר֩	c/559	HC/Vqw3ms	08Uoo
+2	14	2		לָ֨/ה	l	HR/Sp3fs	08sC3
+2	14	3		בֹ֜עַז	1162	HNp	084CS
+2	14	4		לְ/עֵ֣ת	l/6256	HR/Ncbsc	086n2
+2	14	5		הָ/אֹ֗כֶל	d/400	HTd/Ncmsa	08HqY
+2	14	6		גֹּ֤שִֽׁי	5066	HVqv2fs	08BFZ
+2	14	7		הֲלֹם֙	1988	HD	08shy
+2	14	8		וְ/אָכַ֣לְתְּ	c/398	HC/Vqq2fs	08nzj
+2	14	9		מִן	4480 a	HR	08vpT
+2	14	10		הַ/לֶּ֔חֶם	d/3899	HTd/Ncbsa	083Sx
+2	14	11		וְ/טָבַ֥לְתְּ	c/2881	HC/Vqq2fs	08qVv
+2	14	12		פִּתֵּ֖/ךְ	6595 a	HNcfsc/Sp2fs	08Kov
+2	14	13		בַּ/חֹ֑מֶץ	b/2558	HRd/Ncmsa	08HNy
+2	14	14		וַ/תֵּ֨שֶׁב֙	c/3427	HC/Vqw3fs	08Ta6
+2	14	15		מִ/צַּ֣ד	m/6654	HR/Ncmsc	08ER2
+2	14	16		הַ/קּֽוֹצְרִ֔ים	d/7114 b	HTd/Vqrmpa	08yP1
+2	14	17		וַ/יִּצְבָּט	c/6642	HC/Vqw3ms	08w4T
+2	14	18		לָ֣/הּ	l	HR/Sp3fs	08Cyx
+2	14	19		קָלִ֔י	7039	HNcmsa	08qTT
+2	14	20		וַ/תֹּ֥אכַל	c/398	HC/Vqw3fs	08m55
+2	14	21		וַ/תִּשְׂבַּ֖ע	c/7646	HC/Vqw3fs	08AF1
+2	14	22		וַ/תֹּתַֽר	c/3498	HC/Vhw3fs	085ED
+2	15	1		וַ/תָּ֖קָם	c/6965 b	HC/Vqw3fs	08zCS
+2	15	2		לְ/לַקֵּ֑ט	l/3950	HR/Vpc	08LsC
+2	15	3		וַ/יְצַו֩	c/6680	HC/Vpw3ms	08B4x
+2	15	4		בֹּ֨עַז	1162	HNp	08JB6
+2	15	5		אֶת	853	HTo	08LzS
+2	15	6		נְעָרָ֜י/ו	5288	HNcmpc/Sp3ms	0883E
+2	15	7		לֵ/אמֹ֗ר	l/559	HR/Vqc	08hQD
+2	15	8		גַּ֣ם	1571	HTa	08LZD
+2	15	9		בֵּ֧ין	996	HR	086bH
+2	15	10		הָֽ/עֳמָרִ֛ים	d/6016 a	HTd/Ncmpa	08Ekx
+2	15	11		תְּלַקֵּ֖ט	3950	HVpi3fs	08PG7
+2	15	12		וְ/לֹ֥א	c/3808	HC/Tn	08EL8
+2	15	13		תַכְלִימֽוּ/הָ	3637	HVhi2mp/Sp3fs	08ufm
+2	16	1		וְ/גַ֛ם	c/1571	HC/Ta	08XSi
+2	16	2		שֹׁל	7997 a	HVqa	08ELV
+2	16	3		תָּשֹׁ֥לּוּ	7997 a	HVqi2mp	08Y6w
+2	16	4		לָ֖/הּ	l	HR/Sp3fs	08qLR
+2	16	5		מִן	4480 a	HR	08vfq
+2	16	6		הַ/צְּבָתִ֑ים	d/6653	HTd/Ncmpa	08Qsx
+2	16	7		וַ/עֲזַבְתֶּ֥ם	c/5800 a	HC/Vqq2mp	088KZ
+2	16	8		וְ/לִקְּטָ֖ה	c/3950	HC/Vpq3fs	08GXq
+2	16	9		וְ/לֹ֥א	c/3808	HC/Tn	08iCi
+2	16	10		תִגְעֲרוּ	1605	HVqi2mp	08vwH
+2	16	11		בָֽ/הּ	b	HR/Sp3fs	08dbM
+2	17	1		וַ/תְּלַקֵּ֥ט	c/3950	HC/Vpw3fs	08Dqb
+2	17	2		בַּ/שָּׂדֶ֖ה	b/7704 b	HRd/Ncmsa	08kCD
+2	17	3		עַד	5704	HR	08XgW
+2	17	4		הָ/עָ֑רֶב	d/6153	HTd/Ncmsa	086PV
+2	17	5		וַ/תַּחְבֹּט֙	c/2251	HC/Vqw3fs	08qGs
+2	17	6		אֵ֣ת	853	HTo	08w7p
+2	17	7		אֲשֶׁר	834 a	HTr	08k7H
+2	17	8		לִקֵּ֔טָה	3950	HVpp3fs	08r6F
+2	17	9		וַ/יְהִ֖י	c/1961	HC/Vqw3ms	08Ugz
+2	17	10		כְּ/אֵיפָ֥ה	k/374	HR/Ncfsa	08Mjg
+2	17	11		שְׂעֹרִֽים	8184	HNcfpa	08mdR
+2	18	1		וַ/תִּשָּׂא֙	c/5375	HC/Vqw3fs	08eWA
+2	18	2		וַ/תָּב֣וֹא	c/935	HC/Vqw3fs	08CqN
+2	18	3		הָ/עִ֔יר	d/5892 b	HTd/Ncfsa	08Cpt
+2	18	4		וַ/תֵּ֥רֶא	c/7200	HC/Vqw3fs	08aSi
+2	18	5		חֲמוֹתָ֖/הּ	2545	HNcfsc/Sp3fs	087VU
+2	18	6		אֵ֣ת	853	HTo	08eK3
+2	18	7		אֲשֶׁר	834 a	HTr	08c63
+2	18	8		לִקֵּ֑טָה	3950	HVpp3fs	08TuL
+2	18	9		וַ/תּוֹצֵא֙	c/3318	HC/Vhw3fs	08emQ
+2	18	10		וַ/תִּתֶּן	c/5414	HC/Vqw3fs	08uf4
+2	18	11		לָ֔/הּ	l	HR/Sp3fs	08jQv
+2	18	12		אֵ֥ת	853	HTo	08ME1
+2	18	13		אֲשֶׁר	834 a	HTr	08ht4
+2	18	14		הוֹתִ֖רָה	3498	HVhp3fs	083Yo
+2	18	15		מִ/שָּׂבְעָֽ/הּ	m/7648	HR/Ncmsc/Sp3fs	08pYb
+2	19	1		וַ/תֹּאמֶר֩	c/559	HC/Vqw3fs	08g5u
+2	19	2		לָ֨/הּ	l	HR/Sp3fs	08w6U
+2	19	3		חֲמוֹתָ֜/הּ	2545	HNcfsc/Sp3fs	08ifL
+2	19	4		אֵיפֹ֨ה	375	HTi	08LZU
+2	19	5		לִקַּ֤טְתְּ	3950	HVpp2fs	08yHT
+2	19	6		הַ/יּוֹם֙	d/3117	HTd/Ncmsa	089Dq
+2	19	7		וְ/אָ֣נָה	c/575	HC/D	087Vg
+2	19	8		עָשִׂ֔ית	6213 a	HVqp2fs	083LR
+2	19	9		יְהִ֥י	1961	HVqj3ms	08vdQ
+2	19	10		מַכִּירֵ֖/ךְ	5234 a	HVhrmsc/Sp2fs	08zAa
+2	19	11		בָּר֑וּךְ	1288	HVqsmsa	08HK3
+2	19	12		וַ/תַּגֵּ֣ד	c/5046	HC/Vhw3fs	08sCi
+2	19	13		לַ/חֲמוֹתָ֗/הּ	l/2545	HR/Ncfsc/Sp3fs	08S3d
+2	19	14		אֵ֤ת	853	HTo	08RFe
+2	19	15		אֲשֶׁר	834 a	HTr	08PfQ
+2	19	16		עָשְׂתָה֙	6213 a	HVqp3fs	08AwN
+2	19	17		עִמּ֔/וֹ	5973 a	HR/Sp3ms	08khc
+2	19	18		וַ/תֹּ֗אמֶר	c/559	HC/Vqw3fs	08kYA
+2	19	19		שֵׁ֤ם	8034	HNcmsc	08u6F
+2	19	20		הָ/אִישׁ֙	d/376	HTd/Ncmsa	08PYJ
+2	19	21		אֲשֶׁ֨ר	834 a	HTr	081Za
+2	19	22		עָשִׂ֧יתִי	6213 a	HVqp1cs	08gam
+2	19	23		עִמּ֛/וֹ	5973 a	HR/Sp3ms	08un5
+2	19	24		הַ/יּ֖וֹם	d/3117	HTd/Ncmsa	08WSe
+2	19	25		בֹּֽעַז	1162	HNp	08AFs
+2	20	1		וַ/תֹּ֨אמֶר	c/559	HC/Vqw3fs	08aJe
+2	20	2		נָעֳמִ֜י	5281	HNp	08g2t
+2	20	3		לְ/כַלָּתָ֗/הּ	l/3618	HR/Ncfsc/Sp3fs	088HV
+2	20	4		בָּר֥וּךְ	1288	HVqsmsa	08j8W
+2	20	5		הוּא֙	1931	HPp3ms	08h73
+2	20	6		לַ/יהוָ֔ה	l/3068	HR/Np	089Yh
+2	20	7		אֲשֶׁר֙	834 a	HTr	08SkM
+2	20	8		לֹא	3808	HTn	08yXK
+2	20	9		עָזַ֣ב	5800 a	HVqp3ms	08hDf
+2	20	10		חַסְדּ֔/וֹ	2617 a	HNcmsc/Sp3ms	08PuA
+2	20	11		אֶת	854	HR	08myi
+2	20	12		הַ/חַיִּ֖ים	d/2416 a	HTd/Aampa	08YLn
+2	20	13		וְ/אֶת	c/854	HC/R	08AXU
+2	20	14		הַ/מֵּתִ֑ים	d/4191	HTd/Vqrmpa	08reD
+2	20	15		וַ/תֹּ֧אמֶר	c/559	HC/Vqw3fs	08VFM
+2	20	16		לָ֣/הּ	l	HR/Sp3fs	08SGf
+2	20	17		נָעֳמִ֗י	5281	HNp	089jX
+2	20	18		קָר֥וֹב	7138	HAamsa	086t4
+2	20	19		לָ֨/נוּ֙	l	HR/Sp1cp	08Yu7
+2	20	20		הָ/אִ֔ישׁ	d/376	HTd/Ncmsa	08vL9
+2	20	21		מִֽ/גֹּאֲלֵ֖/נוּ	m/1350 a	HR/Vqrmsc/Sp1cp	08G2d
+2	20	22		הֽוּא	1931	HPp3ms	08xY3
+2	21	1		וַ/תֹּ֖אמֶר	c/559	HC/Vqw3fs	08Zmd
+2	21	2		ר֣וּת	7327	HNp	08Wyn
+2	21	3		הַ/מּוֹאֲבִיָּ֑ה	d/4125	HTd/Ngfsa	08njg
+2	21	4		גַּ֣ם	1571	HTa	08L6G
+2	21	5		כִּי	3588 a	HC	08EDP
+2	21	6		אָמַ֣ר	559	HVqp3ms	08QUP
+2	21	7		אֵלַ֗/י	413	HR/Sp1cs	08fv8
+2	21	8		עִם	5973 a	HR	082SX
+2	21	9		הַ/נְּעָרִ֤ים	d/5288	HTd/Ncmpa	08pwZ
+2	21	10		אֲשֶׁר	834 a	HTr	08KKJ
+2	21	11		לִ/י֙	l	HR/Sp1cs	08U9v
+2	21	12		תִּדְבָּקִ֔י/ן	1692	HVqi2fs/Sn	083V4
+2	21	13		עַ֣ד	5704	HR	08gJ1
+2	21	14		אִם	518 a	HC	08rWk
+2	21	15		כִּלּ֔וּ	3615	HVpp3cp	086gQ
+2	21	16		אֵ֥ת	853	HTo	08mSF
+2	21	17		כָּל	3605	HNcmsc	08awX
+2	21	18		הַ/קָּצִ֖יר	d/7105 a	HTd/Ncmsa	08wik
+2	21	19		אֲשֶׁר	834 a	HTr	08CVM
+2	21	20		לִֽ/י	l	HR/Sp1cs	08gbT
+2	22	1		וַ/תֹּ֥אמֶר	c/559	HC/Vqw3fs	08wMq
+2	22	2		נָעֳמִ֖י	5281	HNp	082GY
+2	22	3		אֶל	413	HR	08Doj
+2	22	4		ר֣וּת	7327	HNp	08m3h
+2	22	5		כַּלָּתָ֑/הּ	3618	HNcfsc/Sp3fs	08Djb
+2	22	6		ט֣וֹב	2896 a	HAamsa	08F5r
+2	22	7		בִּתִּ֗/י	1323	HNcfsc/Sp1cs	08V4p
+2	22	8		כִּ֤י	3588 a	HC	08HsZ
+2	22	9		תֵֽצְאִי֙	3318	HVqi2fs	08DgA
+2	22	10		עִם	5973 a	HR	08QCa
+2	22	11		נַ֣עֲרוֹתָ֔י/ו	5291	HNcfpc/Sp3ms	08nps
+2	22	12		וְ/לֹ֥א	c/3808	HC/Tn	08oA2
+2	22	13		יִפְגְּעוּ	6293	HVqi3mp	08CYW
+2	22	14		בָ֖/ךְ	b	HR/Sp2fs	08TDs
+2	22	15		בְּ/שָׂדֶ֥ה	b/7704 b	HR/Ncmsa	08fhx
+2	22	16		אַחֵֽר	312	HAamsa	08JPp
+2	23	1		וַ/תִּדְבַּ֞ק	c/1692	HC/Vqw3fs	08dWm
+2	23	2		בְּ/נַעֲר֥וֹת	b/5291	HR/Ncfpc	08BYg
+2	23	3		בֹּ֨עַז֙	1162	HNp	089by
+2	23	4		לְ/לַקֵּ֔ט	l/3950	HR/Vpc	08VRt
+2	23	5		עַד	5704	HR	08CPS
+2	23	6		כְּל֥וֹת	3615	HVqc	08fiV
+2	23	7		קְצִֽיר	7105 a	HNcmsc	08vAa
+2	23	8		הַ/שְּׂעֹרִ֖ים	d/8184	HTd/Ncfpa	088Na
+2	23	9		וּ/קְצִ֣יר	c/7105 a	HC/Ncmsc	08RZN
+2	23	10		הַֽ/חִטִּ֑ים	d/2406	HTd/Ncfpa	08krV
+2	23	11		וַ/תֵּ֖שֶׁב	c/3427	HC/Vqw3fs	08sQy
+2	23	12		אֶת	854	HR	08asy
+2	23	13		חֲמוֹתָֽ/הּ	2545	HNcfsc/Sp3fs	08rxG
+3	1	1		וַ/תֹּ֥אמֶר	c/559	HC/Vqw3fs	086fj
+3	1	2		לָ֖/הּ	l	HR/Sp3fs	08oGi
+3	1	3		נָעֳמִ֣י	5281	HNp	08PrG
+3	1	4		חֲמוֹתָ֑/הּ	2545	HNcfsc/Sp3fs	08Ao4
+3	1	5		בִּתִּ֞/י	1323	HNcfsc/Sp1cs	08fjK
+3	1	6		הֲ/לֹ֧א	i/3808	HTi/Tn	08Dwm
+3	1	7		אֲבַקֶּשׁ	1245	HVpi1cs	0831Z
+3	1	8		לָ֛/ךְ	l	HR/Sp2fs	08nRw
+3	1	9		מָנ֖וֹחַ	4494	HNcbsa	08qjY
+3	1	10		אֲשֶׁ֥ר	834 a	HTr	082oH
+3	1	11		יִֽיטַב	3190	HVqi3ms	08H3W
+3	1	12		לָֽ/ךְ	l	HR/Sp2fs	08wQL
+3	2	1		וְ/עַתָּ֗ה	c/6258	HC/D	084LW
+3	2	2		הֲ/לֹ֥א	i/3808	HTi/Tn	08q4j
+3	2	3		בֹ֨עַז֙	1162	HNp	08Jdu
+3	2	4		מֹֽדַעְתָּ֔/נוּ	4130	HNcfsc/Sp1cp	08cgg
+3	2	5		אֲשֶׁ֥ר	834 a	HTr	08x5W
+3	2	6		הָיִ֖ית	1961	HVqp2fs	08s3h
+3	2	7		אֶת	854	HR	08ymv
+3	2	8		נַעֲרוֹתָ֑י/ו	5291	HNcfpc/Sp3ms	0862T
+3	2	9		הִנֵּה	2009	HTm	08NmZ
+3	2	10		ה֗וּא	1931	HPp3ms	08RD4
+3	2	11		זֹרֶ֛ה	2219	HVqrmsa	08Xjv
+3	2	12		אֶת	853	HTo	08WVH
+3	2	13		גֹּ֥רֶן	1637	HNcbsc	08WMK
+3	2	14		הַ/שְּׂעֹרִ֖ים	d/8184	HTd/Ncfpa	08ctU
+3	2	15		הַ/לָּֽיְלָה	d/3915	HTd/Ncmsa	08CmP
+3	3	1		וְ/רָחַ֣צְתְּ	c/7364	HC/Vqq2fs	08LY2
+3	3	2		וָ/סַ֗כְתְּ	c/5480	HC/Vqq2fs	08k7w
+3	3	3		וְ/שַׂ֧מְתְּ	c/7760 a	HC/Vqq2fs	08JFy
+3	3	4	x-ketiv	שמלת/ך	8071	HNcfsc/Sp2fs	08Amf
+3	3	5		שִׂמְלֹתַ֛יִ/ךְ	8071	HNcfpc/Sp2fs	08i9m
+3	3	6		עָלַ֖יִ/ךְ	5921 a	HR/Sp2fs	08FCo
+3	3	7	x-ketiv	ו/ירדתי	c/3381	HC/Vqq1cs	08wNS
+3	3	8		וְ/יָרַ֣דְתְּ	c/3381	HC/Vqq2fs	08XPV
+3	3	9		הַ/גֹּ֑רֶן	d/1637	HTd/Ncbsa	08K9E
+3	3	10		אַל	408	HTn	08sNR
+3	3	11		תִּוָּדְעִ֣י	3045	HVNj2fs	08pww
+3	3	12		לָ/אִ֔ישׁ	l/376	HRd/Ncmsa	08d1k
+3	3	13		עַ֥ד	5704	HR	08Gpp
+3	3	14		כַּלֹּת֖/וֹ	3615	HVpc/Sp3ms	08T85
+3	3	15		לֶ/אֱכֹ֥ל	l/398	HR/Vqc	08E2x
+3	3	16		וְ/לִ/שְׁתּֽוֹת	c/l/8354	HC/R/Vqc	08vUM
+3	4	1		וִ/יהִ֣י	c/1961	HC/Vqj3ms	08pMW
+3	4	2		בְ/שָׁכְב֗/וֹ	b/7901	HR/Vqc/Sp3ms	08fiZ
+3	4	3		וְ/יָדַ֨עַתְּ֙	c/3045	HC/Vqq2fs	08FQf
+3	4	4		אֶת	853	HTo	08Gbx
+3	4	5		הַ/מָּקוֹם֙	d/4725	HTd/Ncmsa	08H82
+3	4	6		אֲשֶׁ֣ר	834 a	HTr	08XaZ
+3	4	7		יִשְׁכַּב	7901	HVqi3ms	08RGz
+3	4	8		שָׁ֔ם	8033	HD	08tQ1
+3	4	9		וּ/בָ֛את	c/935	HC/Vqq2fs	08oSR
+3	4	10		וְ/גִלִּ֥ית	c/1540	HC/Vpq2fs	08rUR
+3	4	11		מַרְגְּלֹתָ֖י/ו	4772	HNcfpc/Sp3ms	08NME
+3	4	12	x-ketiv	ו/שכבתי	c/7901	HC/Vqq1cs	08eQs
+3	4	13		וְ/שָׁכָ֑בְתְּ	c/7901	HC/Vqq2fs	08fE2
+3	4	14		וְ/הוּא֙	c/1931	HC/Pp3ms	08rio
+3	4	15		יַגִּ֣יד	5046	HVhi3ms	08hum
+3	4	16		לָ֔/ךְ	l	HR/Sp2fs	08UG5
+3	4	17		אֵ֖ת	853	HTo	08tZb
+3	4	18		אֲשֶׁ֥ר	834 a	HTr	08UEd
+3	4	19		תַּעַשִֽׂי/ן	6213 a	HVqi2fs/Sn	08zit
+3	5	1		וַ/תֹּ֖אמֶר	c/559	HC/Vqw3fs	08pcg
+3	5	2		אֵלֶ֑י/הָ	413	HR/Sp3fs	081pD
+3	5	3		כֹּ֛ל	3605	HNcmsa	08UCh
+3	5	4		אֲשֶׁר	834 a	HTr	08jZZ
+3	5	5		תֹּאמְרִ֥י	559	HVqi2fs	087a3
+3	5	6		אֵלַ֖/י	413	HR/Sp1cs	08k23
+3	5	7		אֶֽעֱשֶֽׂה	6213 a	HVqi1cs	08nxs
+3	6	1		וַ/תֵּ֖רֶד	c/3381	HC/Vqw3fs	08Rs7
+3	6	2		הַ/גֹּ֑רֶן	d/1637	HTd/Ncbsa	08x1q
+3	6	3		וַ/תַּ֕עַשׂ	c/6213 a	HC/Vqw3fs	08ozK
+3	6	4		כְּ/כֹ֥ל	k/3605	HR/Ncmsa	086Tj
+3	6	5		אֲשֶׁר	834 a	HTr	08Wp4
+3	6	6		צִוַּ֖תָּ/ה	6680	HVpp3fs/Sp3fs	08ayu
+3	6	7		חֲמוֹתָֽ/הּ	2545	HNcfsc/Sp3fs	08izi
+3	7	1		וַ/יֹּ֨אכַל	c/398	HC/Vqw3ms	08cNi
+3	7	2		בֹּ֤עַז	1162	HNp	082Z3
+3	7	3		וַ/יֵּשְׁתְּ֙	c/8354	HC/Vqw3ms	08bTo
+3	7	4		וַ/יִּיטַ֣ב	c/3190	HC/Vqw3ms	08hvK
+3	7	5		לִבּ֔/וֹ	3820 a	HNcmsc/Sp3ms	08XQw
+3	7	6		וַ/יָּבֹ֕א	c/935	HC/Vqw3ms	08Ssi
+3	7	7		לִ/שְׁכַּ֖ב	l/7901	HR/Vqc	08UtQ
+3	7	8		בִּ/קְצֵ֣ה	b/7097 a	HR/Ncbsc	08MVx
+3	7	9		הָ/עֲרֵמָ֑ה	d/6194	HTd/Ncfsa	084dp
+3	7	10		וַ/תָּבֹ֣א	c/935	HC/Vqw3fs	08nsw
+3	7	11		בַ/לָּ֔ט	b/3909	HRd/Ncmsa	08KGj
+3	7	12		וַ/תְּגַ֥ל	c/1540	HC/Vpw3fs	088xz
+3	7	13		מַרְגְּלֹתָ֖י/ו	4772	HNcfpc/Sp3ms	08y1Z
+3	7	14		וַ/תִּשְׁכָּֽב	c/7901	HC/Vqw3fs	08Uq9
+3	8	1		וַ/יְהִי֙	c/1961	HC/Vqw3ms	08TiM
+3	8	2		בַּ/חֲצִ֣י	b/2677	HR/Ncmsc	08NqW
+3	8	3		הַ/לַּ֔יְלָה	d/3915	HTd/Ncmsa	08emv
+3	8	4		וַ/יֶּחֱרַ֥ד	c/2729	HC/Vqw3ms	083r3
+3	8	5		הָ/אִ֖ישׁ	d/376	HTd/Ncmsa	08sEP
+3	8	6		וַ/יִּלָּפֵ֑ת	c/3943	HC/VNw3ms	08BYi
+3	8	7		וְ/הִנֵּ֣ה	c/2009	HC/Tm	08K78
+3	8	8		אִשָּׁ֔ה	802	HNcfsa	08LG5
+3	8	9		שֹׁכֶ֖בֶת	7901	HVqrfsa	08pvY
+3	8	10		מַרְגְּלֹתָֽי/ו	4772	HNcfpc/Sp3ms	08B6g
+3	9	1		וַ/יֹּ֖אמֶר	c/559	HC/Vqw3ms	08UDg
+3	9	2		מִי	4310	HTi	08Baw
+3	9	3		אָ֑תּ	859 c	HPp2fs	08MZ9
+3	9	4		וַ/תֹּ֗אמֶר	c/559	HC/Vqw3fs	08Svn
+3	9	5		אָנֹכִי֙	595	HPp1cs	08x62
+3	9	6		ר֣וּת	7327	HNp	08dQK
+3	9	7		אֲמָתֶ֔/ךָ	519	HNcfsc/Sp2ms	08dDm
+3	9	8		וּ/פָרַשְׂתָּ֤	c/6566	HC/Vqq2ms	08XwG
+3	9	9		כְנָפֶ֨/ךָ֙	3671	HNcfsc/Sp2ms	08iPC
+3	9	10		עַל	5921 a	HR	088E1
+3	9	11		אֲמָ֣תְ/ךָ֔	519	HNcfsc/Sp2ms	084vF
+3	9	12		כִּ֥י	3588 a	HC	08y7z
+3	9	13		גֹאֵ֖ל	1350 a	HVqrmsa	08bvs
+3	9	14		אָֽתָּה	859 a	HPp2ms	08Gxe
+3	10	1		וַ/יֹּ֗אמֶר	c/559	HC/Vqw3ms	08Qjd
+3	10	2		בְּרוּכָ֨ה	1288	HVqsfsa	08t98
+3	10	3		אַ֤תְּ	859 c	HPp2fs	08YfW
+3	10	4		לַֽ/יהוָה֙	l/3068	HR/Np	08P1s
+3	10	5		בִּתִּ֔/י	1323	HNcfsc/Sp1cs	08a9X
+3	10	6		הֵיטַ֛בְתְּ	3190	HVhp2fs	08RUp
+3	10	7		חַסְדֵּ֥/ךְ	2617 a	HNcmsc/Sp2fs	087Kw
+3	10	8		הָ/אַחֲר֖וֹן	d/314	HTd/Aamsa	08E6n
+3	10	9		מִן	4480 a	HR	084YU
+3	10	10		הָ/רִאשׁ֑וֹן	d/7223	HTd/Aamsa	08yMS
+3	10	11		לְ/בִלְתִּי	l/1115	HR/C	08RZD
+3	10	12		לֶ֗כֶת	3212	HVqc	08T97
+3	10	13		אַחֲרֵי֙	310 a	HR	085L1
+3	10	14		הַ/בַּ֣חוּרִ֔ים	d/970	HTd/Ncmpa	08nY7
+3	10	15		אִם	518 a	HC	08S83
+3	10	16		דַּ֖ל	1800	HAamsa	08SDb
+3	10	17		וְ/אִם	c/518 a	HC/C	08DKS
+3	10	18		עָשִֽׁיר	6223	HAamsa	08YKr
+3	11	1		וְ/עַתָּ֗ה	c/6258	HC/D	08r66
+3	11	2		בִּתִּ/י֙	1323	HNcfsc/Sp1cs	08TW5
+3	11	3		אַל	408	HTn	08KaN
+3	11	4		תִּ֣ירְאִ֔י	3372	HVqj2fs	08FsE
+3	11	5		כֹּ֥ל	3605	HNcmsa	087Np
+3	11	6		אֲשֶׁר	834 a	HTr	08965
+3	11	7		תֹּאמְרִ֖י	559	HVqi2fs	08MeK
+3	11	8		אֶֽעֱשֶׂה	6213 a	HVqi1cs	08Pw8
+3	11	9		לָּ֑/ךְ	l	HR/Sp2fs	08Bxn
+3	11	10		כִּ֤י	3588 a	HC	08Gne
+3	11	11		יוֹדֵ֨עַ֙	3045	HVqrmsa	08uXm
+3	11	12		כָּל	3605	HNcmsc	08Cmf
+3	11	13		שַׁ֣עַר	8179	HNcmsc	08K6T
+3	11	14		עַמִּ֔/י	5971 a	HNcmsc/Sp1cs	08XFF
+3	11	15		כִּ֛י	3588 a	HC	08gKP
+3	11	16		אֵ֥שֶׁת	802	HNcfsc	08YUv
+3	11	17		חַ֖יִל	2428	HNcmsa	08HQ9
+3	11	18		אָֽתְּ	859 c	HPp2fs	08D5P
+3	12	1		וְ/עַתָּה֙	c/6258	HC/D	08pVx
+3	12	2		כִּ֣י	3588 a	HC	08WAq
+3	12	3		אָמְנָ֔ם	551	HD	08PxM
+3	12	4		כִּ֥י	3588 a	HC	08oCH
+3	12	5	x-ketiv	אם	518 a	HC	08tQE
+3	12	6		גֹאֵ֖ל	1350 a	HVqrmsa	08wtX
+3	12	7		אָנֹ֑כִי	595	HPp1cs	08Hso
+3	12	8		וְ/גַ֛ם	c/1571	HC/Ta	08yS3
+3	12	9		יֵ֥שׁ	3426	HTm	08PHG
+3	12	10		גֹּאֵ֖ל	1350 a	HVqrmsa	081go
+3	12	11		קָר֥וֹב	7138	HAamsa	08XLB
+3	12	12		מִמֶּֽ/נִּי	4480 a	HR/Sp1cs	08KTJ
+3	13	1		לִ֣ינִי	3885 a	HVqv2fs	08twL
+3	13	2		הַ/לַּ֗יְלָה	d/3915	HTd/Ncmsa	083MS
+3	13	3		וְ/הָיָ֤ה	c/1961	HC/Vqq3ms	08GnD
+3	13	4		בַ/בֹּ֨קֶר֙	b/1242	HRd/Ncmsa	08rVJ
+3	13	5		אִם	518 a	HC	08w2R
+3	13	6		יִגְאָלֵ֥/ךְ	1350 a	HVqi3ms/Sp2fs	08JsR
+3	13	7		טוֹב֙	2896 a	HAamsa	08Sv8
+3	13	8		יִגְאָ֔ל	1350 a	HVqi3ms	08adR
+3	13	9		וְ/אִם	c/518 a	HC/C	08xek
+3	13	10		לֹ֨א	3808	HTn	08UEH
+3	13	11		יַחְפֹּ֧ץ	2654 a	HVqi3ms	08L2G
+3	13	12		לְ/גָֽאֳלֵ֛/ךְ	l/1350 a	HR/Vqc/Sp2fs	08oPm
+3	13	13		וּ/גְאַלְתִּ֥י/ךְ	c/1350 a	HC/Vqq1cs/Sp2fs	08azH
+3	13	14		אָנֹ֖כִי	595	HPp1cs	08fZA
+3	13	15		חַי	2416 a	HNcbsa	086Hj
+3	13	16		יְהוָ֑ה	3068	HNp	08UCE
+3	13	17		שִׁכְבִ֖י	7901	HVqv2fs	08dvY
+3	13	18		עַד	5704	HR	08YkN
+3	13	19		הַ/בֹּֽקֶר	d/1242	HTd/Ncmsa	08k6s
+3	14	1		וַ/תִּשְׁכַּ֤ב	c/7901	HC/Vqw3fs	08awY
+3	14	2	x-ketiv	מרגלת/ו	4772	HNcfsc/Sp3ms	08Wb1
+3	14	3		מַרְגְּלוֹתָי/וֹ֙	4772	HNcfpc/Sp3ms	08EAT
+3	14	4		עַד	5704	HR	08MzG
+3	14	5		הַ/בֹּ֔קֶר	d/1242	HTd/Ncmsa	08RBM
+3	14	6		וַ/תָּ֕קָם	c/6965 b	HC/Vqw3fs	08wzx
+3	14	7	x-ketiv	ב/טרום	b/2958	HR/D	087Vm
+3	14	8		בְּ/טֶ֛רֶם	b/2962	HR/D	08vSy
+3	14	9		יַכִּ֥יר	5234 a	HVhi3ms	08qgp
+3	14	10		אִ֖ישׁ	376	HNcmsa	08bcQ
+3	14	11		אֶת	853	HTo	08GFP
+3	14	12		רֵעֵ֑/הוּ	7453	HNcmsc/Sp3ms	08QZx
+3	14	13		וַ/יֹּ֨אמֶר֙	c/559	HC/Vqw3ms	08JH9
+3	14	14		אַל	408	HTn	08Cdg
+3	14	15		יִוָּדַ֔ע	3045	HVNj3ms	08Uv6
+3	14	16		כִּי	3588 a	HC	08eec
+3	14	17		בָ֥אָה	935	HVqp3fs	08bea
+3	14	18		הָ/אִשָּׁ֖ה	d/802	HTd/Ncfsa	08zx5
+3	14	19		הַ/גֹּֽרֶן	d/1637	HTd/Ncbsa	08SMW
+3	15	1		וַ/יֹּ֗אמֶר	c/559	HC/Vqw3ms	08GYp
+3	15	2		הָ֠בִי	3051	HVqv2fs	081GH
+3	15	3		הַ/מִּטְפַּ֧חַת	d/4304	HTd/Ncfsa	083QW
+3	15	4		אֲשֶׁר	834 a	HTr	08tAW
+3	15	5		עָלַ֛יִ/ךְ	5921 a	HR/Sp2fs	08DCB
+3	15	6		וְ/אֶֽחֳזִי	c/270	HC/Vqv2fs	08r2Z
+3	15	7		בָ֖/הּ	b	HR/Sp3fs	08don
+3	15	8		וַ/תֹּ֣אחֶז	c/270	HC/Vqw3fs	08cdc
+3	15	9		בָּ֑/הּ	b	HR/Sp3fs	08Ybs
+3	15	10		וַ/יָּ֤מָד	c/4058	HC/Vqw3ms	08iFe
+3	15	11		שֵׁשׁ	8337	HAcfsa	089w8
+3	15	12		שְׂעֹרִים֙	8184	HNcfpa	089fJ
+3	15	13		וַ/יָּ֣שֶׁת	c/7896	HC/Vqw3ms	08rMg
+3	15	14		עָלֶ֔י/הָ	5921 a	HR/Sp3fs	08T3v
+3	15	15		וַ/יָּבֹ֖א	c/935	HC/Vqw3ms	08e37
+3	15	16		הָ/עִֽיר	d/5892 b	HTd/Ncfsa	08F5j
+3	16	1		וַ/תָּבוֹא֙	c/935	HC/Vqw3fs	08drK
+3	16	2		אֶל	413	HR	081TS
+3	16	3		חֲמוֹתָ֔/הּ	2545	HNcfsc/Sp3fs	08e65
+3	16	4		וַ/תֹּ֖אמֶר	c/559	HC/Vqw3fs	08Fkx
+3	16	5		מִי	4310	HTi	08ZVs
+3	16	6		אַ֣תְּ	859 c	HPp2fs	08bmu
+3	16	7		בִּתִּ֑/י	1323	HNcfsc/Sp1cs	08eis
+3	16	8		וַ/תַּ֨גֶּד	c/5046	HC/Vhw3fs	08B8V
+3	16	9		לָ֔/הּ	l	HR/Sp3fs	08gjk
+3	16	10		אֵ֛ת	853	HTo	08tiD
+3	16	11		כָּל	3605	HNcmsa	08kXw
+3	16	12		אֲשֶׁ֥ר	834 a	HTr	08cHm
+3	16	13		עָֽשָׂה	6213 a	HVqp3ms	08Loa
+3	16	14		לָ֖/הּ	l	HR/Sp3fs	08NW8
+3	16	15		הָ/אִֽישׁ	d/376	HTd/Ncmsa	08Ufy
+3	17	1		וַ/תֹּ֕אמֶר	c/559	HC/Vqw3fs	08FCe
+3	17	2		שֵׁשׁ	8337	HAcfsa	08CBn
+3	17	3		הַ/שְּׂעֹרִ֥ים	d/8184	HTd/Ncfpa	08QFm
+3	17	4		הָ/אֵ֖לֶּה	d/428	HTd/Pdxcp	082st
+3	17	5		נָ֣תַן	5414	HVqp3ms	08rCW
+3	17	6		לִ֑/י	l	HR/Sp1cs	087gm
+3	17	7		כִּ֚י	3588 a	HC	08zkf
+3	17	8		אָמַ֣ר	559	HVqp3ms	08941
+3	17	9		אֵלַ֔/י	413	HR/Sp1cs	086C3
+3	17	10		אַל	408	HTn	08WMb
+3	17	11		תָּב֥וֹאִי	935	HVqj2fs	08ZgJ
+3	17	12		רֵיקָ֖ם	7387	HD	08Ft4
+3	17	13		אֶל	413	HR	08iMP
+3	17	14		חֲמוֹתֵֽ/ךְ	2545	HNcfsc/Sp2fs	08aom
+3	18	1		וַ/תֹּ֨אמֶר֙	c/559	HC/Vqw3fs	08xKf
+3	18	2		שְׁבִ֣י	3427	HVqv2fs	08EnU
+3	18	3		בִתִּ֔/י	1323	HNcfsc/Sp1cs	08Zax
+3	18	4		עַ֚ד	5704	HR	08Q2e
+3	18	5		אֲשֶׁ֣ר	834 a	HTr	08ZRJ
+3	18	6		תֵּֽדְעִ֔י/ן	3045	HVqi2fs/Sn	08YEi
+3	18	7		אֵ֖יךְ	349 a	HTi	08gvb
+3	18	8		יִפֹּ֣ל	5307	HVqi3ms	08bJa
+3	18	9		דָּבָ֑ר	1697	HNcmsa	0889f
+3	18	10		כִּ֣י	3588 a	HC	08re5
+3	18	11		לֹ֤א	3808	HTn	08Xh3
+3	18	12		יִשְׁקֹט֙	8252	HVqi3ms	08EyU
+3	18	13		הָ/אִ֔ישׁ	d/376	HTd/Ncmsa	08aci
+3	18	14		כִּֽי	3588 b	HC	08kbc
+3	18	15		אִם	518 b	HC	08baF
+3	18	16		כִּלָּ֥ה	3615	HVpp3ms	08ZNU
+3	18	17		הַ/דָּבָ֖ר	d/1697	HTd/Ncmsa	08KqQ
+3	18	18		הַ/יּֽוֹם	d/3117	HTd/Ncmsa	08gLV
+4	1	1		וּ/בֹ֨עַז	c/1162	HC/Np	08KTp
+4	1	2		עָלָ֣ה	5927	HVqp3ms	08rzR
+4	1	3		הַ/שַּׁעַר֮	d/8179	HTd/Ncmsa	08bh3
+4	1	4		וַ/יֵּ֣שֶׁב	c/3427	HC/Vqw3ms	08duZ
+4	1	5		שָׁם֒	8033	HD	08YHi
+4	1	6		וְ/הִנֵּ֨ה	c/2009	HC/Tm	08GV7
+4	1	7		הַ/גֹּאֵ֤ל	d/1350 a	HTd/Vqrmsa	08A76
+4	1	8		עֹבֵר֙	5674 a	HVqrmsa	08eHZ
+4	1	9		אֲשֶׁ֣ר	834 a	HTr	08ycY
+4	1	10		דִּבֶּר	1696	HVpp3ms	08ejK
+4	1	11		בֹּ֔עַז	1162	HNp	08Jb3
+4	1	12		וַ/יֹּ֛אמֶר	c/559	HC/Vqw3ms	08XXt
+4	1	13		ס֥וּרָ/ה	5493	HVqv2ms/Sh	08rKT
+4	1	14		שְׁבָ/ה	3427	HVqv2ms/Sh	08Q8c
+4	1	15		פֹּ֖ה	6311	HD	08rHh
+4	1	16		פְּלֹנִ֣י	6423	HPf	08mUo
+4	1	17		אַלְמֹנִ֑י	492	HAabsa	08Hfj
+4	1	18		וַ/יָּ֖סַר	c/5493	HC/Vqw3ms	08ACV
+4	1	19		וַ/יֵּשֵֽׁב	c/3427	HC/Vqw3ms	08ioH
+4	2	1		וַ/יִּקַּ֞ח	c/3947	HC/Vqw3ms	08FCG
+4	2	2		עֲשָׂרָ֧ה	6235	HAcmsa	087Jo
+4	2	3		אֲנָשִׁ֛ים	376	HNcmpa	08wKF
+4	2	4		מִ/זִּקְנֵ֥י	m/2205	HR/Aampc	08YU5
+4	2	5		הָ/עִ֖יר	d/5892 b	HTd/Ncfsa	08xmV
+4	2	6		וַ/יֹּ֣אמֶר	c/559	HC/Vqw3ms	08ZvX
+4	2	7		שְׁבוּ	3427	HVqv2mp	087Ch
+4	2	8		פֹ֑ה	6311	HD	08S67
+4	2	9		וַ/יֵּשֵֽׁבוּ	c/3427	HC/Vqw3mp	08Hmd
+4	3	1		וַ/יֹּ֨אמֶר֙	c/559	HC/Vqw3ms	084Yz
+4	3	2		לַ/גֹּאֵ֔ל	l/1350 a	HRd/Vqrmsa	08zbA
+4	3	3		חֶלְקַת֙	2513 a	HNcfsc	08koP
+4	3	4		הַ/שָּׂדֶ֔ה	d/7704 b	HTd/Ncmsa	08Mdv
+4	3	5		אֲשֶׁ֥ר	834 a	HTr	08TXv
+4	3	6		לְ/אָחִ֖י/נוּ	l/251	HR/Ncmsc/Sp1cp	08pbV
+4	3	7		לֶ/אֱלִימֶ֑לֶךְ	l/458	HR/Np	08MSY
+4	3	8		מָכְרָ֣ה	4376	HVqp3fs	08GXC
+4	3	9		נָעֳמִ֔י	5281	HNp	08Y6k
+4	3	10		הַ/שָּׁ֖בָה	d/7725	HTd/Vqp3fs	08ctR
+4	3	11		מִ/שְּׂדֵ֥ה	m/7704 b	HR/Ncmsc	08Qq3
+4	3	12		מוֹאָֽב	4124	HNp	08GdR
+4	4	1		וַ/אֲנִ֨י	c/589	HC/Pp1cs	08kV4
+4	4	2		אָמַ֜רְתִּי	559	HVqp1cs	08Zy7
+4	4	3		אֶגְלֶ֧ה	1540	HVqi1cs	08ozy
+4	4	4		אָזְנְ/ךָ֣	241	HNcfsc/Sp2ms	08H6W
+4	4	5		לֵ/אמֹ֗ר	l/559	HR/Vqc	08297
+4	4	6		קְ֠נֵה	7069	HVqv2ms	08Eyi
+4	4	7		נֶ֥גֶד	5048	HR	08kz6
+4	4	8		הַֽ/יֹּשְׁבִים֮	d/3427	HTd/Vqrmpa	08PZP
+4	4	9		וְ/נֶ֣גֶד	c/5048	HC/R	08tkv
+4	4	10		זִקְנֵ֣י	2205	HAampc	08YJk
+4	4	11		עַמִּ/י֒	5971 a	HNcmsc/Sp1cs	08zp3
+4	4	12		אִם	518 a	HC	08GVz
+4	4	13		תִּגְאַל֙	1350 a	HVqi2ms	08MRd
+4	4	14		גְּאָ֔ל	1350 a	HVqv2ms	08Ci2
+4	4	15		וְ/אִם	c/518 a	HC/C	08TD8
+4	4	16		לֹ֨א	3808	HTn	086R1
+4	4	17		יִגְאַ֜ל	1350 a	HVqi3ms	08c7o
+4	4	18		הַגִּ֣ידָ/ה	5046	HVhv2ms/Sh	082Ss
+4	4	19		לִּ֗/י	l	HR/Sp1cs	08JyU
+4	4	20	x-ketiv	ו/אדע	c/3045	HC/Vqi1cs	08uF7
+4	4	21		וְ/אֵֽדְעָה֙	c/3045	HC/Vqh1cs	08fbk
+4	4	22		כִּ֣י	3588 a	HC	08RxS
+4	4	23		אֵ֤ין	369	HTn	08PTT
+4	4	24		זוּלָֽתְ/ךָ֙	2108	HR/Sp2ms	081bY
+4	4	25		לִ/גְא֔וֹל	l/1350 a	HR/Vqc	08GMz
+4	4	26		וְ/אָנֹכִ֖י	c/595	HC/Pp1cs	08uCN
+4	4	27		אַחֲרֶ֑י/ךָ	310 a	HR/Sp2ms	08Wmn
+4	4	28		וַ/יֹּ֖אמֶר	c/559	HC/Vqw3ms	08Lri
+4	4	29		אָנֹכִ֥י	595	HPp1cs	08ymB
+4	4	30		אֶגְאָֽל	1350 a	HVqi1cs	08fac
+4	5	1		וַ/יֹּ֣אמֶר	c/559	HC/Vqw3ms	08X2q
+4	5	2		בֹּ֔עַז	1162	HNp	089d7
+4	5	3		בְּ/יוֹם	b/3117	HR/Ncmsc	08bj4
+4	5	4		קְנוֹתְ/ךָ֥	7069	HVqc/Sp2ms	08ZRD
+4	5	5		הַ/שָּׂדֶ֖ה	d/7704 b	HTd/Ncmsa	08iFV
+4	5	6		מִ/יַּ֣ד	m/3027	HR/Ncbsc	08JzQ
+4	5	7		נָעֳמִ֑י	5281	HNp	08qbn
+4	5	8		וּ֠/מֵ/אֵת	c/m/853	HC/R/To	08WeU
+4	5	9		ר֣וּת	7327	HNp	08TMW
+4	5	10		הַ/מּוֹאֲבִיָּ֤ה	d/4125	HTd/Ngfsa	08KvW
+4	5	11		אֵֽשֶׁת	802	HNcfsc	08wz5
+4	5	12		הַ/מֵּת֙	d/4191	HTd/Vqrmsa	08g5b
+4	5	13	x-ketiv	קניתי	7069	HVqp1cs	086Cg
+4	5	14		קָנִ֔יתָה	7069	HVqp2ms	08cqw
+4	5	15		לְ/הָקִ֥ים	l/6965 b	HR/Vhc	0876C
+4	5	16		שֵׁם	8034	HNcmsc	08t1W
+4	5	17		הַ/מֵּ֖ת	d/4191	HTd/Vqrmsa	08vfm
+4	5	18		עַל	5921 a	HR	08pjd
+4	5	19		נַחֲלָתֽ/וֹ	5159	HNcfsc/Sp3ms	08Atm
+4	6	1		וַ/יֹּ֣אמֶר	c/559	HC/Vqw3ms	08vFb
+4	6	2		הַ/גֹּאֵ֗ל	d/1350 a	HTd/Vqrmsa	08sFr
+4	6	3		לֹ֤א	3808	HTn	08Q98
+4	6	4		אוּכַל֙	3201	HVqi1cs	08e6Q
+4	6	5	x-ketiv	ל/גאול	l/1350 a	HR/Vqc	08Zzk
+4	6	6		לִ/גְאָל	l/1350 a	HR/Vqc	08Ynf
+4	6	7		לִ֔/י	l	HR/Sp1cs	085pP
+4	6	8		פֶּן	6435	HC	08Xxj
+4	6	9		אַשְׁחִ֖ית	7843	HVhi1cs	08eNB
+4	6	10		אֶת	853	HTo	08r8g
+4	6	11		נַחֲלָתִ֑/י	5159	HNcfsc/Sp1cs	08sJk
+4	6	12		גְּאַל	1350 a	HVqv2ms	08wBJ
+4	6	13		לְ/ךָ֤	l	HR/Sp2ms	08tvR
+4	6	14		אַתָּה֙	859 a	HPp2ms	08Uoi
+4	6	15		אֶת	853	HTo	08H29
+4	6	16		גְּאֻלָּתִ֔/י	1353	HNcfsc/Sp1cs	08m2e
+4	6	17		כִּ֥י	3588 a	HC	08WQ1
+4	6	18		לֹא	3808	HTn	087uv
+4	6	19		אוּכַ֖ל	3201	HVqi1cs	08Z1J
+4	6	20		לִ/גְאֹֽל	l/1350 a	HR/Vqc	08KZa
+4	7	1		וְ/זֹאת֩	c/2063	HC/Pdxfs	082u6
+4	7	2		לְ/פָנִ֨ים	l/6440	HR/Ncbpa	08CGY
+4	7	3		בְּ/יִשְׂרָאֵ֜ל	b/3478	HR/Np	08cy3
+4	7	4		עַל	5921 a	HR	085EE
+4	7	5		הַ/גְּאוּלָּ֤ה	d/1353	HTd/Ncfsa	087yo
+4	7	6		וְ/עַל	c/5921 a	HC/R	086ot
+4	7	7		הַ/תְּמוּרָה֙	d/8545	HTd/Ncfsa	082Sx
+4	7	8		לְ/קַיֵּ֣ם	l/6965 b	HR/Vpc	084mo
+4	7	9		כָּל	3605	HNcmsc	08RqC
+4	7	10		דָּבָ֔ר	1697	HNcmsa	08ESM
+4	7	11		שָׁלַ֥ף	8025	HVqp3ms	08mCp
+4	7	12		אִ֛ישׁ	376	HNcmsa	08DCR
+4	7	13		נַעֲל֖/וֹ	5275	HNcfsc/Sp3ms	089jq
+4	7	14		וְ/נָתַ֣ן	c/5414	HC/Vqq3ms	08uFy
+4	7	15		לְ/רֵעֵ֑/הוּ	l/7453	HR/Ncmsc/Sp3ms	08rnW
+4	7	16		וְ/זֹ֥את	c/2063	HC/Pdxfs	08to2
+4	7	17		הַ/תְּעוּדָ֖ה	d/8584	HTd/Ncfsa	08XrY
+4	7	18		בְּ/יִשְׂרָאֵֽל	b/3478	HR/Np	084De
+4	8	1		וַ/יֹּ֧אמֶר	c/559	HC/Vqw3ms	08dPn
+4	8	2		הַ/גֹּאֵ֛ל	d/1350 a	HTd/Vqrmsa	08Qve
+4	8	3		לְ/בֹ֖עַז	l/1162	HR/Np	083dz
+4	8	4		קְנֵה	7069	HVqv2ms	08vcq
+4	8	5		לָ֑/ךְ	l	HR/Sp2fs	084Ed
+4	8	6		וַ/יִּשְׁלֹ֖ף	c/8025	HC/Vqw3ms	08kfR
+4	8	7		נַעֲלֽ/וֹ	5275	HNcfsc/Sp3ms	08FUa
+4	9	1		וַ/יֹּאמֶר֩	c/559	HC/Vqw3ms	08RZP
+4	9	2		בֹּ֨עַז	1162	HNp	08qLo
+4	9	3		לַ/זְּקֵנִ֜ים	l/2205	HRd/Aampa	08UwQ
+4	9	4		וְ/כָל	c/3605	HC/Ncmsc	08EG9
+4	9	5		הָ/עָ֗ם	d/5971 a	HTd/Ncmsa	08fSj
+4	9	6		עֵדִ֤ים	5707	HNcmpa	08LGP
+4	9	7		אַתֶּם֙	859 d	HPp2mp	08oYa
+4	9	8		הַ/יּ֔וֹם	d/3117	HTd/Ncmsa	08L3V
+4	9	9		כִּ֤י	3588 a	HC	08Nkc
+4	9	10		קָנִ֨יתִי֙	7069	HVqp1cs	088qm
+4	9	11		אֶת	853	HTo	08XRb
+4	9	12		כָּל	3605	HNcmsc	08AkY
+4	9	13		אֲשֶׁ֣ר	834 a	HTr	08e5T
+4	9	14		לֶֽ/אֱלִימֶ֔לֶךְ	l/458	HR/Np	08MGG
+4	9	15		וְ/אֵ֛ת	c/853	HC/To	086q3
+4	9	16		כָּל	3605	HNcmsc	08MDa
+4	9	17		אֲשֶׁ֥ר	834 a	HTr	08WBd
+4	9	18		לְ/כִלְי֖וֹן	l/3630	HR/Np	08jGt
+4	9	19		וּ/מַחְל֑וֹן	c/4248	HC/Np	08tyS
+4	9	20		מִ/יַּ֖ד	m/3027	HR/Ncbsc	08k6N
+4	9	21		נָעֳמִֽי	5281	HNp	08mY8
+4	10	1		וְ/גַ֣ם	c/1571	HC/Ta	08Hod
+4	10	2		אֶת	853	HTo	08LbG
+4	10	3		ר֣וּת	7327	HNp	08jJf
+4	10	4		הַ/מֹּאֲבִיָּה֩	d/4125	HTd/Ngfsa	08zJw
+4	10	5		אֵ֨שֶׁת	802	HNcfsc	08Sho
+4	10	6		מַחְל֜וֹן	4248	HNp	088zu
+4	10	7		קָנִ֧יתִי	7069	HVqp1cs	086TZ
+4	10	8		לִ֣/י	l	HR/Sp1cs	08mQU
+4	10	9		לְ/אִשָּׁ֗ה	l/802	HR/Ncfsa	085oN
+4	10	10		לְ/הָקִ֤ים	l/6965 b	HR/Vhc	08HQC
+4	10	11		שֵׁם	8034	HNcmsc	08tFU
+4	10	12		הַ/מֵּת֙	d/4191	HTd/Vqrmsa	08QHV
+4	10	13		עַל	5921 a	HR	08ot3
+4	10	14		נַ֣חֲלָת֔/וֹ	5159	HNcfsc/Sp3ms	08HBY
+4	10	15		וְ/לֹא	c/3808	HC/Tn	085H9
+4	10	16		יִכָּרֵ֧ת	3772	HVNi3ms	08eWk
+4	10	17		שֵׁם	8034	HNcmsc	08UNQ
+4	10	18		הַ/מֵּ֛ת	d/4191	HTd/Vqrmsa	08GX8
+4	10	19		מֵ/עִ֥ם	m/5973 b	HR/R	08pky
+4	10	20		אֶחָ֖י/ו	251	HNcmpc/Sp3ms	083N5
+4	10	21		וּ/מִ/שַּׁ֣עַר	c/m/8179	HC/R/Ncmsc	08gv9
+4	10	22		מְקוֹמ֑/וֹ	4725	HNcmsc/Sp3ms	0828H
+4	10	23		עֵדִ֥ים	5707	HNcmpa	08cog
+4	10	24		אַתֶּ֖ם	859 d	HPp2mp	08dVq
+4	10	25		הַ/יּֽוֹם	d/3117	HTd/Ncmsa	08SmU
+4	11	1		וַ/יֹּ֨אמְר֜וּ	c/559	HC/Vqw3mp	08xRR
+4	11	2		כָּל	3605	HNcmsc	08NYp
+4	11	3		הָ/עָ֧ם	d/5971 a	HTd/Ncmsa	08Gjw
+4	11	4		אֲשֶׁר	834 a	HTr	089Na
+4	11	5		בַּ/שַּׁ֛עַר	b/8179	HRd/Ncmsa	08xjb
+4	11	6		וְ/הַ/זְּקֵנִ֖ים	c/d/2205	HC/Td/Aampa	0878y
+4	11	7		עֵדִ֑ים	5707	HNcmpa	08Vgg
+4	11	8		יִתֵּן֩	5414	HVqi3ms	08F1H
+4	11	9		יְהוָ֨ה	3068	HNp	08j2J
+4	11	10		אֶֽת	853	HTo	08ch4
+4	11	11		הָ/אִשָּׁ֜ה	d/802	HTd/Ncfsa	08etU
+4	11	12		הַ/בָּאָ֣ה	d/935	HTd/Vqrfsa	08ean
+4	11	13		אֶל	413	HR	08aJG
+4	11	14		בֵּיתֶ֗/ךָ	1004 b	HNcmsc/Sp2ms	08nF8
+4	11	15		כְּ/רָחֵ֤ל	k/7354	HR/Np	08wEW
+4	11	16		וּ/כְ/לֵאָה֙	c/k/3812	HC/R/Np	08fJd
+4	11	17		אֲשֶׁ֨ר	834 a	HTr	08eEh
+4	11	18		בָּנ֤וּ	1129	HVqp3cp	08K1s
+4	11	19		שְׁתֵּי/הֶם֙	8147	HAcfdc/Sp3mp	0876o
+4	11	20		אֶת	853	HTo	08omx
+4	11	21		בֵּ֣ית	1004 b	HNcmsc	08XBe
+4	11	22		יִשְׂרָאֵ֔ל	3478	HNp	088A2
+4	11	23		וַ/עֲשֵׂה	c/6213 a	HC/Vqv2ms	083Qm
+4	11	24		חַ֣יִל	2428	HNcmsa	08yeG
+4	11	25		בְּ/אֶפְרָ֔תָה	b/672	HR/Np	081NW
+4	11	26		וּ/קְרָא	c/7121	HC/Vqv2ms	08f13
+4	11	27		שֵׁ֖ם	8034	HNcmsa	085on
+4	11	28		בְּ/בֵ֥ית	b/1035+	HR/Np	08b2J
+4	11	29		לָֽחֶם	1035	HNp	08MnD
+4	12	1		וִ/יהִ֤י	c/1961	HC/Vqj3ms	082B3
+4	12	2		בֵֽיתְ/ךָ֙	1004 b	HNcmsc/Sp2ms	08eAA
+4	12	3		כְּ/בֵ֣ית	k/1004 b	HR/Ncmsc	08usA
+4	12	4		פֶּ֔רֶץ	6557	HNp	08bmL
+4	12	5		אֲשֶׁר	834 a	HTr	08DK9
+4	12	6		יָלְדָ֥ה	3205	HVqp3fs	087vQ
+4	12	7		תָמָ֖ר	8559	HNp	08JoL
+4	12	8		לִֽ/יהוּדָ֑ה	l/3063	HR/Np	08Zzg
+4	12	9		מִן	4480 a	HR	08k3m
+4	12	10		הַ/זֶּ֗רַע	d/2233	HTd/Ncmsa	08Q2N
+4	12	11		אֲשֶׁ֨ר	834 a	HTr	08Ggr
+4	12	12		יִתֵּ֤ן	5414	HVqi3ms	08hnA
+4	12	13		יְהוָה֙	3068	HNp	087tY
+4	12	14		לְ/ךָ֔	l	HR/Sp2ms	082Dp
+4	12	15		מִן	4480 a	HR	08BQa
+4	12	16		הַֽ/נַּעֲרָ֖ה	d/5291	HTd/Ncfsa	08qNm
+4	12	17		הַ/זֹּֽאת	d/2063	HTd/Pdxfs	084xx
+4	13	1		וַ/יִּקַּ֨ח	c/3947	HC/Vqw3ms	08E57
+4	13	2		בֹּ֤עַז	1162	HNp	08zfG
+4	13	3		אֶת	853	HTo	08y3Z
+4	13	4		רוּת֙	7327	HNp	08vtM
+4	13	5		וַ/תְּהִי	c/1961	HC/Vqw3fs	08BNu
+4	13	6		ל֣/וֹ	l	HR/Sp3ms	08QTj
+4	13	7		לְ/אִשָּׁ֔ה	l/802	HR/Ncfsa	08Tgd
+4	13	8		וַ/יָּבֹ֖א	c/935	HC/Vqw3ms	08hAp
+4	13	9		אֵלֶ֑י/הָ	413	HR/Sp3fs	08KNK
+4	13	10		וַ/יִּתֵּ֨ן	c/5414	HC/Vqw3ms	08nk3
+4	13	11		יְהוָ֥ה	3068	HNp	08wj3
+4	13	12		לָ֛/הּ	l	HR/Sp3fs	08vFK
+4	13	13		הֵרָי֖וֹן	2032	HNcmsa	08QNk
+4	13	14		וַ/תֵּ֥לֶד	c/3205	HC/Vqw3fs	08h1i
+4	13	15		בֵּֽן	1121 a	HNcmsa	08c5a
+4	14	1		וַ/תֹּאמַ֤רְנָה	c/559	HC/Vqw3fp	08MZK
+4	14	2		הַ/נָּשִׁים֙	d/802	HTd/Ncfpa	08Hx4
+4	14	3		אֶֽל	413	HR	08f6t
+4	14	4		נָעֳמִ֔י	5281	HNp	08BzF
+4	14	5		בָּר֣וּךְ	1288	HVqsmsa	08mrv
+4	14	6		יְהוָ֔ה	3068	HNp	08TVv
+4	14	7		אֲ֠שֶׁר	834 a	HTr	08ZUH
+4	14	8		לֹ֣א	3808	HTn	08HWF
+4	14	9		הִשְׁבִּ֥ית	7673 a	HVhp3ms	08rhu
+4	14	10		לָ֛/ךְ	l	HR/Sp2fs	087YX
+4	14	11		גֹּאֵ֖ל	1350 a	HVqrmsa	08caE
+4	14	12		הַ/יּ֑וֹם	d/3117	HTd/Ncmsa	08w2r
+4	14	13		וְ/יִקָּרֵ֥א	c/7121	HC/VNi3ms	08j2a
+4	14	14		שְׁמ֖/וֹ	8034	HNcmsc/Sp3ms	084ei
+4	14	15		בְּ/יִשְׂרָאֵֽל	b/3478	HR/Np	08iQS
+4	15	1		וְ/הָ֤יָה	c/1961	HC/Vqq3ms	08pu1
+4	15	2		לָ/ךְ֙	l	HR/Sp2fs	089Gr
+4	15	3		לְ/מֵשִׁ֣יב	l/7725	HR/Vhrmsa	08jGA
+4	15	4		נֶ֔פֶשׁ	5315	HNcbsa	08Q9B
+4	15	5		וּ/לְ/כַלְכֵּ֖ל	c/l/3557	HC/R/Vlc	088LK
+4	15	6		אֶת	853	HTo	08aWe
+4	15	7		שֵׂיבָתֵ֑/ךְ	7872	HNcfsc/Sp2fs	08JRh
+4	15	8		כִּ֣י	3588 a	HC	08iqH
+4	15	9		כַלָּתֵ֤/ךְ	3618	HNcfsc/Sp2fs	084ze
+4	15	10		אֲֽשֶׁר	834 a	HTr	08Eur
+4	15	11		אֲהֵבַ֨תֶ/ךְ֙	157	HVqp3fs/Sp2fs	08e9g
+4	15	12		יְלָדַ֔תּ/וּ	3205	HVqp3fs/Sp3ms	08hHu
+4	15	13		אֲשֶׁר	834 a	HTr	08C47
+4	15	14		הִיא֙	1931	HPp3fs	08TWu
+4	15	15		ט֣וֹבָה	2896 a	HAafsa	08EWV
+4	15	16		לָ֔/ךְ	l	HR/Sp2fs	08nDr
+4	15	17		מִ/שִּׁבְעָ֖ה	m/7651	HR/Acmsa	08NH6
+4	15	18		בָּנִֽים	1121 a	HNcmpa	08PP2
+4	16	1		וַ/תִּקַּ֨ח	c/3947	HC/Vqw3fs	08sgH
+4	16	2		נָעֳמִ֤י	5281	HNp	087YZ
+4	16	3		אֶת	853	HTo	08DLP
+4	16	4		הַ/יֶּ֨לֶד֙	d/3206	HTd/Ncmsa	08Wgd
+4	16	5		וַ/תְּשִׁתֵ֣/הוּ	c/7896	HC/Vqw3fs/Sp3ms	08tA5
+4	16	6		בְ/חֵיקָ֔/הּ	b/2436	HR/Ncmsc/Sp3fs	08FQu
+4	16	7		וַ/תְּהִי	c/1961	HC/Vqw3fs	08rxc
+4	16	8		ל֖/וֹ	l	HR/Sp3ms	08185
+4	16	9		לְ/אֹמֶֽנֶת	l/539	HR/Vqrfsa	08ssA
+4	17	1		וַ/תִּקְרֶאנָה֩	c/7121	HC/Vqw3fp	08un2
+4	17	2		ל֨/וֹ	l	HR/Sp3ms	084Ei
+4	17	3		הַ/שְּׁכֵנ֥וֹת	d/7934	HTd/Aafpa	08wp8
+4	17	4		שֵׁם֙	8034	HNcmsa	08fZr
+4	17	5		לֵ/אמֹ֔ר	l/559	HR/Vqc	08qsm
+4	17	6		יֻלַּד	3205	HVPp3ms	08Yvd
+4	17	7		בֵּ֖ן	1121 a	HNcmsa	08qo8
+4	17	8		לְ/נָעֳמִ֑י	l/5281	HR/Np	08Rvz
+4	17	9		וַ/תִּקְרֶ֤אנָֽה	c/7121	HC/Vqw3fp	08UiP
+4	17	10		שְׁמ/וֹ֙	8034	HNcmsc/Sp3ms	08zc2
+4	17	11		עוֹבֵ֔ד	5744	HNp	08jWU
+4	17	12		ה֥וּא	1931	HPp3ms	08WRL
+4	17	13		אֲבִי	1	HNcmsc	08MEe
+4	17	14		יִשַׁ֖י	3448	HNp	08Lz7
+4	17	15		אֲבִ֥י	1	HNcmsc	08C5b
+4	17	16		דָוִֽד	1732	HNp	08KGK
+4	18	1		וְ/אֵ֨לֶּה֙	c/428	HC/Pdxcp	08V8j
+4	18	2		תּוֹלְד֣וֹת	8435	HNcfpc	08PaR
+4	18	3		פָּ֔רֶץ	6557	HNp	08Env
+4	18	4		פֶּ֖רֶץ	6557	HNp	088Dt
+4	18	5		הוֹלִ֥יד	3205	HVhp3ms	08iSw
+4	18	6		אֶת	853	HTo	08cX6
+4	18	7		חֶצְרֽוֹן	2696	HNp	08nM3
+4	19	1		וְ/חֶצְרוֹן֙	c/2696	HC/Np	087Xe
+4	19	2		הוֹלִ֣יד	3205	HVhp3ms	08noN
+4	19	3		אֶת	853	HTo	08hHR
+4	19	4		רָ֔ם	7410	HNp	08CoS
+4	19	5		וְ/רָ֖ם	c/7410	HC/Np	08KXg
+4	19	6		הוֹלִ֥יד	3205	HVhp3ms	08Gq2
+4	19	7		אֶת	853	HTo	08sk8
+4	19	8		עַמִּֽינָדָֽב	5992	HNp	08Vfr
+4	20	1		וְ/עַמִּֽינָדָב֙	c/5992	HC/Np	08tkY
+4	20	2		הוֹלִ֣יד	3205	HVhp3ms	08r5i
+4	20	3		אֶת	853	HTo	082bH
+4	20	4		נַחְשׁ֔וֹן	5177	HNp	08wCy
+4	20	5		וְ/נַחְשׁ֖וֹן	c/5177	HC/Np	082ee
+4	20	6		הוֹלִ֥יד	3205	HVhp3ms	08b7E
+4	20	7		אֶת	853	HTo	0845a
+4	20	8		שַׂלְמָֽה	8009	HNp	08Gby
+4	21	1		וְ/שַׂלְמוֹן֙	c/8012	HC/Np	08t6e
+4	21	2		הוֹלִ֣יד	3205	HVhp3ms	084wi
+4	21	3		אֶת	853	HTo	08LNA
+4	21	4		בֹּ֔עַז	1162	HNp	08bU4
+4	21	5		וּ/בֹ֖עַז	c/1162	HC/Np	08R6Q
+4	21	6		הוֹלִ֥יד	3205	HVhp3ms	08LiE
+4	21	7		אֶת	853	HTo	08uCS
+4	21	8		עוֹבֵֽד	5744	HNp	08taS
+4	22	1		וְ/עֹבֵד֙	c/5744	HC/Np	08Erp
+4	22	2		הוֹלִ֣יד	3205	HVhp3ms	08azc
+4	22	3		אֶת	853	HTo	08HpH
+4	22	4		יִשָׁ֔י	3448	HNp	08wcd
+4	22	5		וְ/יִשַׁ֖י	c/3448	HC/Np	08DR2
+4	22	6		הוֹלִ֥יד	3205	HVhp3ms	088MF
+4	22	7		אֶת	853	HTo	085wJ
+4	22	8		דָּוִֽד	1732	HNp	08AuA

@@ -1,0 +1,8 @@
+# Live: fetched per chapter through the Cloudflare Worker (api.esv.org); no text is stored here.
+name = "English Standard Version (2016)"
+abbrev = "ESV"
+language = "en"
+license = "(c) Crossway; via api.esv.org, non-commercial use"
+upstream = "https://api.esv.org/"
+importer = "live"
+versification = "identity"

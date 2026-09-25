@@ -1,7 +1,7 @@
 /* Original-language helpers (Greek NT, Hebrew/Aramaic OT): morphology decoders,
    word display, and the lexicon popover. */
 import { el, escapeHtml } from './app.js';
-import { loadLexicon } from './data.js';
+import { lookupLexicon } from './data.js';
 
 /* ---------- morphology decoder ---------- */
 const MORPH_CASE = {N:'Nominative',G:'Genitive',D:'Dative',A:'Accusative',V:'Vocative'};
@@ -132,8 +132,8 @@ export async function showLexicon(strongs, anchor){
   positionPopover(anchor);
   el.lexPop.classList.add('show'); el.lexBackdrop.classList.add('show');
   if(!strongs) return;
-  const lex = await loadLexicon();
-  const entry = lex[strongs];
+  let entry = null;
+  try{ entry = await lookupLexicon(strongs); }catch(e){ /* treated as no entry */ }
   if(!entry){
     el.lexPop.innerHTML = '<div class="empty-state">No lexicon entry for '+strongs+'.</div>';
     return;

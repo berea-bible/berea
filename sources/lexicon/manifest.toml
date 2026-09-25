@@ -1,0 +1,11 @@
+[grc]
+name = "TBESG: Translators Brief lexicon of Extended Strongs for Greek"
+license = "CC BY 4.0, STEPBible.org (Tyndale House)"
+raw = "raw/greek/tbesg_lexicon.txt"
+importer = "tbesg"
+
+[hbo]
+name = "Strong's Hebrew and Aramaic Dictionary (HebrewStrong.xml)"
+license = "Public domain text, corrected by Open Scriptures (CC BY 4.0)"
+raw = "raw/HebrewLexicon/HebrewStrong.xml"
+importer = "hebrewstrong"

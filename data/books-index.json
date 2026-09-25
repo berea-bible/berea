@@ -829,7 +829,7 @@
         "149": 9,
         "150": 6
       },
-      "fatherVerseCount": 2454
+      "fatherVerseCount": 2447
     },
     {
       "id": "prov",
@@ -888,7 +888,7 @@
         "11": 10,
         "12": 14
       },
-      "fatherVerseCount": 221
+      "fatherVerseCount": 219
     },
     {
       "id": "song",
@@ -978,7 +978,7 @@
         "65": 25,
         "66": 24
       },
-      "fatherVerseCount": 1284
+      "fatherVerseCount": 1276
     },
     {
       "id": "jer",
@@ -1149,7 +1149,7 @@
         "13": 16,
         "14": 9
       },
-      "fatherVerseCount": 196
+      "fatherVerseCount": 195
     },
     {
       "id": "joel",
@@ -1256,7 +1256,7 @@
         "1": 15,
         "2": 23
       },
-      "fatherVerseCount": 35
+      "fatherVerseCount": 34
     },
     {
       "id": "zech",
@@ -1521,7 +1521,7 @@
         "5": 9,
         "6": 73
       },
-      "fatherVerseCount": 55,
+      "fatherVerseCount": 54,
       "translations": [
         "KJV",
         "WEB",
@@ -1674,7 +1674,7 @@
         "27": 66,
         "28": 20
       },
-      "fatherVerseCount": 1072
+      "fatherVerseCount": 1071
     },
     {
       "id": "mark",
@@ -1698,7 +1698,7 @@
         "15": 47,
         "16": 20
       },
-      "fatherVerseCount": 643
+      "fatherVerseCount": 642
     },
     {
       "id": "luke",
@@ -2075,7 +2075,7 @@
       "verseCounts": {
         "1": 14
       },
-      "fatherVerseCount": 15
+      "fatherVerseCount": 14
     },
     {
       "id": "jude",
@@ -2118,7 +2118,7 @@
     }
   ],
   "fatherAuthorCount": 241,
-  "fatherQuoteCount": 66106,
+  "fatherQuoteCount": 64690,
   "deuterocanonicalBookIds": [
     "1esd",
     "2esd",
@@ -2134,5 +2134,6 @@
     "prman",
     "1macc",
     "2macc"
-  ]
+  ],
+  "lexiconBucketSize": 500
 }

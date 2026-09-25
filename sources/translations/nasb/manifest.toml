@@ -1,0 +1,8 @@
+# Live: fetched per chapter through the Cloudflare Worker (api.bible); no text is stored here.
+name = "New American Standard Bible (1995)"
+abbrev = "NASB"
+language = "en"
+license = "(c) The Lockman Foundation; via api.bible"
+upstream = "https://api.bible/"
+importer = "live"
+versification = "identity"
