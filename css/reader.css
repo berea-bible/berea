@@ -121,7 +121,8 @@
 #pickerBackdrop.show{ display:block; }
 .picker-foot{ padding:10px 16px; border-top:1px solid var(--border); font-size:.72rem; color:var(--ink-faint); line-height:1.5; }
 
-#reading{ flex:1; overflow-y:auto; }
+/* pan-y: the browser scrolls and zooms; horizontal swipes are the chapter swipe (reader.js) */
+#reading{ flex:1; overflow-y:auto; overflow-x:hidden; touch-action:pan-y pinch-zoom; }
 #readingInner{ max-width:700px; margin:0 auto; padding:34px 26px 90px; }
 .chapter-heading{ font-family:'Spectral',serif; font-size:1.7rem; font-weight:700; margin:0 0 4px; }
 .chapter-sub{ color:var(--ink-dim); font-size:.85rem; margin:0 0 28px; }

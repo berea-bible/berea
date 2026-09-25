@@ -327,12 +327,60 @@ el.translationSelect.addEventListener('change', async ()=>{
   if(selected !== null && loc && state.rows.some(r=> r.verse === loc.verse)) openVerse(loc.verse);
   savePrefs();
 });
-function stepChapter(d){
-  const i = chapterList.indexOf(state.chapter) + d;
-  if(i >= 0 && i < chapterList.length) selectChapter(chapterList[i]);
+const hasStep = d=>{ const i = chapterList.indexOf(state.chapter) + d; return i >= 0 && i < chapterList.length; };
+async function stepChapter(d){
+  if(hasStep(d)) await selectChapter(chapterList[chapterList.indexOf(state.chapter) + d]);
 }
 el.prevCh.addEventListener('click', ()=> stepChapter(-1));
 el.nextCh.addEventListener('click', ()=> stepChapter(1));
+
+/* ---------- swipe between chapters (touch screens) ----------
+   Swipe left for the next chapter, right for the previous, within the book (like the arrow buttons).
+   The page follows the finger; at the first/last chapter it only gives a little and springs back.
+   Left alone: touches starting at the screen edge (the OS back/forward swipe), pinch-zoom (two
+   fingers), text selection, and mostly-vertical movement (scrolling). CSS touch-action: pan-y keeps
+   the browser's own scrolling and zoom while handing horizontal movement to this code. */
+const SWIPE = { distance: 60, ratio: 1.5, edge: 24, lock: 10 };
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let swipe = null;       // {x, y, dx, dy, axis: null | 'x' | 'y'}
+let swiping = false;    // a chapter change from a swipe is in progress
+function slide(x, animate){
+  el.readingInner.style.transition = animate && !reduceMotion.matches ? 'transform .2s ease-out, opacity .2s ease-out' : 'none';
+  el.readingInner.style.transform = x ? 'translateX(' + x + 'px)' : '';
+  el.readingInner.style.opacity = x ? String(Math.max(.35, 1 - Math.abs(x) / window.innerWidth)) : '';
+}
+const settle = ()=> new Promise(r=> reduceMotion.matches ? r() : setTimeout(r, 200));
+el.reading.addEventListener('touchstart', e=>{
+  const t = e.touches[0];
+  swipe = e.touches.length === 1 && !swiping && t.clientX > SWIPE.edge && t.clientX < window.innerWidth - SWIPE.edge
+    ? { x: t.clientX, y: t.clientY, dx: 0, dy: 0, axis: null } : null;
+}, { passive: true });
+el.reading.addEventListener('touchmove', e=>{
+  if(!swipe) return;
+  if(e.touches.length !== 1 || String(window.getSelection()).length){ slide(0, true); swipe = null; return; }
+  const t = e.touches[0];
+  swipe.dx = t.clientX - swipe.x; swipe.dy = t.clientY - swipe.y;
+  if(!swipe.axis && Math.hypot(swipe.dx, swipe.dy) > SWIPE.lock)
+    swipe.axis = Math.abs(swipe.dx) > Math.abs(swipe.dy) * SWIPE.ratio ? 'x' : 'y';
+  if(swipe.axis !== 'x') return;
+  const d = swipe.dx < 0 ? 1 : -1;
+  slide(hasStep(d) ? swipe.dx : swipe.dx * .2, false);     // rubber band at the ends of the book
+}, { passive: true });
+el.reading.addEventListener('touchend', async ()=>{
+  const s = swipe; swipe = null;
+  if(!s || s.axis !== 'x') return;
+  const d = s.dx < 0 ? 1 : -1;
+  if(Math.abs(s.dx) < SWIPE.distance || !hasStep(d)){ slide(0, true); return; }
+  swiping = true;
+  const w = window.innerWidth;
+  slide(-d * w * .4, true); await settle();                 // out the side it was pushed
+  await stepChapter(d);
+  slide(d * w * .4, false); el.readingInner.getBoundingClientRect();
+  slide(0, true); await settle();                           // the new chapter comes in from the other side
+  el.readingInner.style.transition = '';
+  swiping = false;
+});
+el.reading.addEventListener('touchcancel', ()=>{ swipe = null; slide(0, true); });
 el.interlinearCheck.addEventListener('change', async ()=>{
   state.showGreek = el.interlinearCheck.checked;
   await ensureOriginal();
