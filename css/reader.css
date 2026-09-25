@@ -141,6 +141,7 @@
 
 /* pan-y: the browser scrolls and zooms; horizontal swipes are the chapter swipe (reader.js) */
 #reading{ flex:1; overflow-y:auto; overflow-x:hidden; touch-action:pan-y pinch-zoom; }
+#reading.swiping{ overflow-y:hidden; }   /* frozen vertically while a chapter swipe is under way */
 #readingInner{ max-width:700px; margin:0 auto; padding:34px 26px 90px; }
 .chapter-heading{ font-family:'Spectral',serif; font-size:1.7rem; font-weight:700; margin:0 0 4px; }
 .chapter-sub{ color:var(--ink-dim); font-size:.85rem; margin:0 0 28px; }

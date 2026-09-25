@@ -392,8 +392,12 @@ el.nextCh.addEventListener('click', ()=> stepChapter(1));
    The page follows the finger; at the first/last chapter it only gives a little and springs back.
    Left alone: touches starting at the screen edge (the OS back/forward swipe), pinch-zoom (two
    fingers), text selection, and mostly-vertical movement (scrolling). CSS touch-action: pan-y keeps
-   the browser's own scrolling and zoom while handing horizontal movement to this code. */
-const SWIPE = { distance: 60, ratio: 1.5, edge: 24, lock: 10 };
+   the browser's own scrolling and zoom while handing horizontal movement to this code.
+   A gesture is one or the other, never both: once it reads as sideways (within the first few
+   pixels), vertical scrolling is cancelled (preventDefault) and frozen (.swiping: overflow hidden,
+   for browsers that had already started to scroll) until the finger lifts, so the text only moves
+   left and right. */
+const SWIPE = { distance: 60, ratio: 1.5, edge: 24, lock: 8 };
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let swipe = null;       // {x, y, dx, dy, axis: null | 'x' | 'y'}
 let swiping = false;    // a chapter change from a swipe is in progress
@@ -408,19 +412,23 @@ el.reading.addEventListener('touchstart', e=>{
   swipe = e.touches.length === 1 && !swiping && t.clientX > SWIPE.edge && t.clientX < window.innerWidth - SWIPE.edge
     ? { x: t.clientX, y: t.clientY, dx: 0, dy: 0, axis: null } : null;
 }, { passive: true });
+function endSwipe(){ swipe = null; el.reading.classList.remove('swiping'); }
 el.reading.addEventListener('touchmove', e=>{
   if(!swipe) return;
-  if(e.touches.length !== 1 || String(window.getSelection()).length){ slide(0, true); swipe = null; return; }
+  if(e.touches.length !== 1 || String(window.getSelection()).length){ slide(0, true); endSwipe(); return; }
   const t = e.touches[0];
   swipe.dx = t.clientX - swipe.x; swipe.dy = t.clientY - swipe.y;
-  if(!swipe.axis && Math.hypot(swipe.dx, swipe.dy) > SWIPE.lock)
+  if(!swipe.axis && Math.hypot(swipe.dx, swipe.dy) > SWIPE.lock){
     swipe.axis = Math.abs(swipe.dx) > Math.abs(swipe.dy) * SWIPE.ratio ? 'x' : 'y';
+    if(swipe.axis === 'x') el.reading.classList.add('swiping');
+  }
   if(swipe.axis !== 'x') return;
+  if(e.cancelable) e.preventDefault();                       // no vertical scrolling during a swipe
   const d = swipe.dx < 0 ? 1 : -1;
   slide(hasStep(d) ? swipe.dx : swipe.dx * .2, false);     // rubber band at the ends of the book
-}, { passive: true });
+}, { passive: false });
 el.reading.addEventListener('touchend', async ()=>{
-  const s = swipe; swipe = null;
+  const s = swipe; endSwipe();
   if(!s || s.axis !== 'x') return;
   const d = s.dx < 0 ? 1 : -1;
   if(Math.abs(s.dx) < SWIPE.distance || !hasStep(d)){ slide(0, true); return; }
@@ -433,7 +441,7 @@ el.reading.addEventListener('touchend', async ()=>{
   el.readingInner.style.transition = '';
   swiping = false;
 });
-el.reading.addEventListener('touchcancel', ()=>{ swipe = null; slide(0, true); });
+el.reading.addEventListener('touchcancel', ()=>{ endSwipe(); slide(0, true); });
 el.interlinearCheck.addEventListener('change', async ()=>{
   state.showGreek = el.interlinearCheck.checked;
   openLines.clear();                             // on: every verse shows it; off: all closed
