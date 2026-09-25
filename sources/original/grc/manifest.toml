@@ -5,3 +5,13 @@ raw = ["raw/greek/tagnt_matjhn.txt", "raw/greek/tagnt_actrev.txt"]
 upstream = "https://github.com/STEPBible/STEPBible-Data"
 importer = "tagnt"
 versification = "auto"
+
+[[map]]
+from = "PHP 1:16"
+to = "PHP 1:17"
+reason = "NA order: 'love' (NA 1:16) is KJV 1:17; pinned because TVTMS decides it by word count."
+
+[[map]]
+from = "PHP 1:17"
+to = "PHP 1:16"
+reason = "NA order (see 1:16)."

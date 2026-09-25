@@ -6,3 +6,13 @@ raw = "raw/translations/eng-asv.zefania.xml"
 upstream = "https://github.com/seven1m/open-bibles"
 importer = "zefania"
 versification = "auto"
+
+[[map]]
+from = "PHP 1:16"
+to = "PHP 1:17"
+reason = "ASV follows the Greek order (love, then contention); pinned because TVTMS decides it by word count."
+
+[[map]]
+from = "PHP 1:17"
+to = "PHP 1:16"
+reason = "ASV follows the Greek order (see 1:16)."

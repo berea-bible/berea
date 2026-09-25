@@ -6,3 +6,8 @@ raw = "raw/translations/eng-ylt.zefania.xml"   # New Testament only
 upstream = "https://github.com/seven1m/open-bibles"
 importer = "zefania"
 versification = "auto"
+
+[[override]]
+ref = "PHP 1:16-17"
+use = "identity"
+reason = "YLT keeps the KJV order; pinned because TVTMS decides it by word count."

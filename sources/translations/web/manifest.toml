@@ -7,3 +7,33 @@ upstream = "https://github.com/seven1m/open-bibles"
 importer = "usfx"
 versification = "auto"
 exclude = ["PS2", "3MA", "4MA"]   # not in the app yet; ordinals reserved in books.py
+
+[[override]]
+ref = "PHP 1:16-17"
+use = "identity"
+reason = "Word-count test misreads WEB as the Greek order; WEB keeps the KJV order (checked by content)."
+
+[[override]]
+ref = "SIR"
+use = "Eng-KJV"
+reason = "WEB numbers Sirach like the KJV and leaves blank the verses the Greek lacks (1:5, 20:32, ...), so TVTMS's '=Last' tests read it as the Greek+NRSV tradition and shift whole chapters."
+
+[[override]]
+ref = "ESG"
+use = "identity"
+reason = "WEB's Greek Esther carries the additions inline without verse numbers of their own; only WEB has this book (pivot ESG = its own numbering)."
+
+[[map]]
+from = "MAN 1:4-5"
+to = "MAN 1:4"
+reason = "WEB splits KJV 1:4 in two ('...tremble before your power; / for the majesty of your glory...'); TVTMS has no row for it."
+
+[[map]]
+from = "MAN 1:6-15"
+to = "MAN 1:5-14"
+reason = "WEB runs one verse ahead of the KJV after the split at 1:4-5."
+
+[[override]]
+ref = "TOB 7:1-18"
+use = "identity"
+reason = "TVTMS's Standard Tobit 7 has 16 verses (its Eng-KJV test is '7:16=Last'); this KJV and the WEB share an 18-verse division, so TVTMS reads them as Greek2 and merges pairs (7:11-12, 7:13-14, 7:17-18). No other source has Tobit, so both keep their own numbers."

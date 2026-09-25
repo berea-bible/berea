@@ -1,14 +1,21 @@
 # pipeline/
 
-**v2 (in progress, see `docs/v2-plan.md`):** `python3 pipeline/fetch.py` fills `raw/` (gitignored) from
-`sources/sources.lock.json`. `python3 pipeline/import_sources.py` then rebuilds `sources/` from `raw/`, in
-each source's own verse numbering. The app still reads `data/`, built by the pipeline below, until the
-switch-over.
+**`python3 pipeline/build.py` rebuilds everything from `raw/`** (see `docs/v2-plan.md`):
 
-**`python3 pipeline/build.py` regenerates all of `data/` from the raw sources** (the sibling
-`../pipeline` repo and its `build/raw/`), in the order: canon build → `remap_hebrew.py` →
-`build_deuterocanonical.py` → `build_dra.py` → `finalize.py`. See each script's docstring. The build is
-staged in `pipeline/.stage/` and swapped in only when every step succeeds; output is deterministic.
+| Script | Does |
+|---|---|
+| `fetch.py` | fills `raw/` (gitignored) from `sources/sources.lock.json`, checking every hash |
+| `import_sources.py` | `raw/` → `sources/`, each source in its own verse numbering (`importers/`) |
+| `compile.py` | `sources/` → `dist/`, via the TVTMS engine in `tvtms.py`; writes `dist/validation.json` and `dist/versification.txt`; fails on any error |
+| `compat.py` | `dist/` → `data/` in the pre-v2 format the app still reads |
+| `books.py` | the permanent book/ordinal table (vid = ord·2²⁰ + ch·2¹⁰ + v) |
+
+Corrections live in each source's `manifest.toml` (`[[override]]`, `[[map]]`, with reasons), never in
+code. **Everything below this line describes the pre-v2 scripts, which the build no longer runs; they are
+removed in phase 6.**
+
+The pre-v2 build ran, from the sibling `../pipeline` repo: canon build → `remap_hebrew.py` →
+`build_deuterocanonical.py` → `build_dra.py` → `finalize.py`.
 
 Offline data tooling. Nothing here is served or needed by the app. Python 3, standard library only.
 

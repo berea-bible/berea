@@ -6,3 +6,19 @@ license = "(c) Crossway; via api.esv.org, non-commercial use"
 upstream = "https://api.esv.org/"
 importer = "live"
 versification = "identity"
+
+# Checked against the published text: modern English numbering, which is the KJV's except for these.
+[[map]]
+from = "3JN 1:15"
+to = "3JN 1:14"
+reason = "The KJV's 3 John 1:14 includes the greetings this translation numbers 1:15."
+
+[[map]]
+from = "PHP 1:16"
+to = "PHP 1:17"
+reason = "Greek order: 'the latter do it out of love' comes first (KJV 1:17)."
+
+[[map]]
+from = "PHP 1:17"
+to = "PHP 1:16"
+reason = "Greek order (see 1:16)."

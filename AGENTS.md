@@ -46,7 +46,6 @@ original/<bookid>.json Tagged original-language words by chapter/verse:
 Greek for NT books, Hebrew/Aramaic for OT books
 (the app attaches it as `book.greek`); loaded only
 when the Greek/Hebrew line is on or its tab opens.
-fathers/<book>/<ch>.json, or "book/ch/i").
 fathers/<book>/<ch>.json Quote bodies [{father, quote, source_title,
 source_url}], each distinct quote stored once (in
 the chapter citing it first); loaded when the
@@ -55,8 +54,14 @@ lexicon/index-G.json, index-H.json {id: [lemma, translit, gloss, pos]},
 loaded on the first word click in that language.
 lexicon/G|H/<n>.json Definitions for Strong's n*500..n*500+499
 (bucket size in books-index `lexiconBucketSize`).
-pipeline/ Offline data tooling (not served): build_dra.py,
-versification.py; see pipeline/README.md.
+dist/ v2 runtime data, keyed by the shared verse ID (catalog.json,
+text/, orig/, lex/, comm/, validation.json, versification.txt).
+Generated; the app switches to it feature by feature (docs/v2-plan.md).
+sources/ v2 source layer, committed: each source in its own verse numbering,
+with a manifest.toml (overrides/maps) per source, and sources.lock.json.
+raw/ Upstream files (gitignored); `python3 pipeline/fetch.py` restores them.
+pipeline/ Offline data tooling (not served); see pipeline/README.md.
+docs/v2-plan.md The v2 data-architecture plan and per-phase results.
 README.md Project overview and local/GitHub Pages hosting.
 
 
@@ -167,51 +172,34 @@ that scheme.
   across `data/`, `USFM_ID` (for NASB/api.bible lookups), and the book picker.
   Don't introduce a second book-naming scheme.
 
-## Regenerating `data/`
+## Regenerating `data/` (and `dist/`)
 
-The JSON in `data/` comes from the Verbum data pipeline, a separate repo that
-lives next to this one (`../pipeline`, raw sources in `../pipeline/build/raw/`).
-It combines public-domain translation texts, a tagged Greek NT with Strong's
-numbers, a Greek-English lexicon, and a patristic-writings corpus filtered to
-genuine early-church sources (excluding pseudepigrapha, condemned/heretical
-writings, and anything post-800 AD or post-Reformation).
+The data combines public-domain translation texts, a tagged Greek NT and Hebrew OT with Strong's
+numbers, Greek and Hebrew lexicons, and a patristic-writings corpus filtered to genuine early-church
+sources (excluding pseudepigrapha, condemned/heretical writings, and anything post-800 AD or
+post-Reformation). Every upstream input is pinned in `sources/sources.lock.json`.
 
-**Regenerate everything with one command: `python3 pipeline/build.py`.** It
-builds into `pipeline/.stage/` and replaces `data/` only if every step
-passes, and two runs produce byte-identical output. The steps:
+**Regenerate everything with one command: `python3 pipeline/build.py`** (run `python3
+pipeline/fetch.py` first if `raw/` is missing). Two runs produce byte-identical output. The steps:
 
-1. `../pipeline/build_data.py`: the 66-book canon, lexicon and fathers.
-2. `pipeline/remap_hebrew.py`: OT Hebrew to KJV numbering, via TVTMS.
-3. `../pipeline/build_deuterocanonical.py`: the 14 books, plus the
-   Daniel/Esther fathers.
-4. `pipeline/build_dra.py`: the DRA from eBible.
-5. `pipeline/finalize.py`: data fixes (the WEB Romans doxology moved to
-   16:25–27, and `FATHERS_REF_FIXES`), a check that **fails the build if any
-   fathers reference points to a verse that doesn't exist in KJV numbering**,
-   and the split fathers/lexicon format.
+1. `pipeline/import_sources.py`: `raw/` → `sources/`, each source in its **own** verse numbering.
+2. `pipeline/compile.py`: `sources/` → `dist/`, mapping every source onto the pivot (TVTMS Standard
+   = KJV numbering) with `pipeline/tvtms.py`. It **fails, leaving `dist/` untouched, on any error**
+   in `dist/validation.json`: a verse with no pivot, a pivot that isn't a Standard verse, a fathers
+   reference to a verse that doesn't exist, or traditions that disagree.
+3. `pipeline/compat.py`: `dist/` → `data/` in the format the app reads today (KJV-keyed; 2 Esdras
+   uses the WEB's numbering). Temporary, until the app reads `dist/` (docs/v2-plan.md phase 5).
 
-Don't hand-edit `data/`, and don't run `../pipeline/build_data.py` into it
-directly: its output is only the first step's input.
+Don't hand-edit `data/`, `dist/` or the TSV/JSONL files in `sources/`: they're regenerated. Fix a
+source's alignment in its `manifest.toml` instead, with an `[[override]]` (force a TVTMS tradition,
+or keep the numbers) or a `[[map]]` (explicit native → pivot verses), each with a `reason`. Then
+rebuild and read `dist/validation.json` and `dist/versification.txt`. Word-count decisions are
+listed there for review, because TVTMS's word-count tests are unreliable in English. The existing
+overrides were checked by content against the KJV (see docs/v2-plan.md §11).
 
-OT Hebrew in `data/` is keyed to KJV (English) verse numbering, like the
-translations, `verseCounts`, and fathers. The pipeline's output used Hebrew
-(BHS/MT) numbering, so it was re-keyed once using STEPBible TVTMS
-(CC BY 4.0), with the detailed KJV/Hebrew tables overriding the summary
-list where they disagree (Neh 7:68-69). Result: every OT chapter's Hebrew
-verse keys match `translations.KJV`, except Neh 7:68, which has no Hebrew.
-Any regenerated OT data must be remapped the same way.
-
-The DRA is the exception: it is rebuilt by `pipeline/build_dra.py` (see
-`pipeline/README.md`) from eBible.org's Douay-Rheims 1899 (Vulgate order),
-re-keyed to KJV numbering with the Copenhagen Alliance mappings (`vul.json`
-composed with the inverse of `eng.json`, in `pipeline/versification.py`),
-plus reviewed per-verse overrides where the 1899 DRA divides verses
-differently. Psalm titles are prefixed onto verse 1; where one DRA verse
-covers two KJV verses its text sits on the first. Change DRA text or
-alignment by editing the pipeline and re-running it, not by hand-editing
-`data/`. Don't reintroduce open-bibles' `eng-dra.zefania.xml` (not Vulgate
-order; contains placeholders and lost verses). The pipeline is offline
-Python (stdlib only) and not part of the served app.
+The old scripts (`../pipeline`, `pipeline/build_dra.py`, `remap_hebrew.py`, `finalize.py`,
+`versification.py`) are no longer part of the build and are removed in phase 6. Don't reintroduce
+open-bibles' `eng-dra.zefania.xml` (not Vulgate order; contains placeholders and lost verses).
 
 ## Conventions
 

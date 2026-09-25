@@ -6,3 +6,19 @@ raw = "raw/translations/eng-kjv.osis.xml"
 upstream = "https://github.com/seven1m/open-bibles"
 importer = "osis"
 versification = "auto"
+
+# TVTMS's Standard is KJV numbering, so these pins only undo tests that misfire on this edition.
+[[override]]
+ref = "PHP 1:16-17"
+use = "identity"
+reason = "Word-count test (Php.1:16>Php.1:17) reads the KJV as the Greek order; the KJV defines the Standard order."
+
+[[override]]
+ref = "ADE 15:1-16"
+use = "identity"
+reason = "TVTMS's Latin2 rows (Vulgate Esth 15:1-19) have no test that excludes the KJV's 16-verse chapter 15; the KJV is the Standard here."
+
+[[override]]
+ref = "TOB 7:1-18"
+use = "identity"
+reason = "TVTMS's Standard Tobit 7 has 16 verses (its Eng-KJV test is '7:16=Last'); this KJV and the WEB share an 18-verse division, so TVTMS reads them as Greek2 and merges pairs (7:11-12, 7:13-14, 7:17-18). No other source has Tobit, so both keep their own numbers."

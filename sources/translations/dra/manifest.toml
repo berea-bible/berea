@@ -6,3 +6,169 @@ raw = "raw/engDRA_vpl.zip"
 upstream = "https://ebible.org/find/details.php?id=engDRA"
 importer = "vpl"
 versification = "auto"
+# The Vulgate's Tobit, Judith and Sirach are a different recension from the Greek the KJV/WEB translate:
+# their verses don't correspond, so they aren't linked (Compare says so). Their text stays in sources/.
+recension = ["TOB", "JDT", "SIR"]
+
+[[map]]
+from = "PHP 1:16"
+to = "PHP 1:17"
+reason = "The DRA follows the Vulgate/Greek order (love, then contention); pinned because TVTMS decides it by word count."
+
+[[map]]
+from = "PHP 1:17"
+to = "PHP 1:16"
+reason = "Vulgate/Greek order (see 1:16)."
+
+# ---- Where this 1899 edition divides verses differently from the Vulgate that TVTMS models.
+# Each placement was checked by content against the KJV (docs/v2-plan.md §11); most carry over the
+# hand-checked corrections of the old pipeline/build_dra.py.
+
+[[map]]
+from = "1TH 4:11"
+to = "1TH 4:11-12"
+reason = "DRA 4:11 covers KJV 4:11-12; TVTMS has no row for 1 Thess 4."
+
+[[map]]
+from = "1TH 4:12-17"
+to = "1TH 4:13-18"
+reason = "After 4:11 the DRA runs one behind the KJV."
+
+[[map]]
+from = "2TH 2:11"
+to = "2TH 2:11-12"
+reason = "DRA 2:11 covers KJV 2:11-12; TVTMS has no row for 2 Thess 2."
+
+[[map]]
+from = "2TH 2:12-16"
+to = "2TH 2:13-17"
+reason = "After 2:11 the DRA runs one behind the KJV."
+
+[[map]]
+from = "MAT 5:4"
+to = "MAT 5:5"
+reason = "The Vulgate order puts 'the meek' (KJV 5:5) before 'they that mourn' (KJV 5:4)."
+
+[[map]]
+from = "MAT 5:5"
+to = "MAT 5:4"
+reason = "See 5:4."
+
+[[map]]
+from = "NUM 27:3"
+to = "NUM 27:3-4"
+reason = "DRA 27:3 covers KJV 27:3-4."
+
+[[map]]
+from = "NUM 27:4-7"
+to = "NUM 27:5-8"
+reason = "After 27:3 the DRA runs one behind; DRA 27:8 finishes KJV 27:8 (TVTMS)."
+
+[[map]]
+from = "ISA 46:11"
+to = "ISA 46:11-12"
+reason = "DRA 46:11 covers KJV 46:11-12."
+
+[[map]]
+from = "ISA 46:12"
+to = "ISA 46:13"
+reason = "'I have brought my justice near' = KJV 46:13."
+
+[[map]]
+from = "DAN 3:77"
+to = "S3Y 1:55"
+reason = "This DRA keeps 'fountains' before 'seas and rivers', as the KJV does (TVTMS's Latin rows swap them)."
+
+[[map]]
+from = "DAN 3:78"
+to = "S3Y 1:56"
+reason = "See Dan 3:77."
+
+[[map]]
+from = "2MA 15:36-37"
+to = "2MA 15:36"
+reason = "DRA 15:36-37 together are KJV 15:36 (the decree and the day it names)."
+
+[[map]]
+from = "2MA 15:38-40"
+to = "2MA 15:37-39"
+reason = "After the merge the DRA runs one ahead of the KJV."
+
+# 1 Maccabees 1: DRA 1:4-5 = KJV 1:4, then the DRA runs ahead, with two more merges and the old
+# override's 1:52-53 = KJV 1:50-51 (content-checked; TVTMS's Latin rows keep 1:5-47 unshifted).
+[[map]]
+from = "1MA 1:5-31"
+to = "1MA 1:4-30"
+reason = "DRA 1:4-5 = KJV 1:4."
+
+[[map]]
+from = "1MA 1:32-35"
+to = "1MA 1:30-33"
+reason = "DRA 1:31-32 = KJV 1:30."
+
+[[map]]
+from = "1MA 1:36"
+to = "1MA 1:35"
+reason = "KJV 1:34 has no separate DRA verse."
+
+[[map]]
+from = "1MA 1:37-47"
+to = "1MA 1:35-45"
+reason = "DRA 1:36-37 = KJV 1:35."
+
+[[map]]
+from = "1MA 1:48-51"
+to = "1MA 1:45-48"
+reason = "DRA 1:47-48 = KJV 1:45; DRA 1:51 covers KJV 1:48 (TVTMS: 1:48-49)."
+
+[[map]]
+from = "1MA 1:52-53"
+to = "1MA 1:50-51"
+reason = "Old build_dra.py override: DRA 1:51 covers KJV 1:48-49."
+
+[[map]]
+from = "1MA 1:54-67"
+to = "1MA 1:51-64"
+reason = "DRA 1:53-54 = KJV 1:51."
+
+# Letter of Jeremiah (Baruch 6): KJV 6:1 is a superscription this DRA lacks, so it mostly runs one behind;
+# DRA 6:5, 6:40 and 6:43 close a KJV verse the previous DRA verse started.
+[[map]]
+from = "BAR 6:1-4"
+to = "LJE 6:2-5"
+reason = "KJV 6:1 (the superscription) has no DRA verse."
+
+[[map]]
+from = "BAR 6:5"
+to = "LJE 6:5"
+reason = "Closes KJV 6:5, begun by DRA 6:4."
+
+[[map]]
+from = "BAR 6:6-39"
+to = "LJE 6:7-40"
+reason = "One behind the KJV."
+
+[[map]]
+from = "BAR 6:40"
+to = "LJE 6:40"
+reason = "Closes KJV 6:40."
+
+[[map]]
+from = "BAR 6:41-42"
+to = "LJE 6:42-43"
+reason = "One behind the KJV."
+
+[[map]]
+from = "BAR 6:43-50"
+to = "LJE 6:43-50"
+reason = "DRA 6:43 closes KJV 6:43; then same numbers."
+
+[[map]]
+from = "BAR 6:51"
+to = "LJE 6:51-52"
+reason = "'...they are not gods, but the work of men's hands' = KJV 6:51-52."
+
+[[map]]
+from = "BAR 6:52-72"
+to = "LJE 6:53-73"
+reason = "One behind the KJV."

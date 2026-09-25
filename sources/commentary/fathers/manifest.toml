@@ -3,5 +3,130 @@ license = "See each quote's source_url"
 raw = "raw/fathers"
 upstream = "https://github.com/HistoricalChristianFaith/Commentaries-Database"
 importer = "fathers"
+# The corpus mostly cites in KJV/Hebrew-text numbering, so its refs keep their numbers; the entries
+# below were checked by reading the quotes (they carry over pipeline/finalize.py's FATHERS_REF_FIXES).
+# A [[map]] whose `from` is exactly a cited ref string also catches refs that aren't valid ranges.
 versification = "identity"
-# overrides and maps (Daniel 13-14, the reference fixes) are added with the engine in phase 3
+
+# Susanna and Bel are filed as "Daniel 13" and "Daniel 14". Checked by content, the corpus uses their
+# own (KJV) verse numbers there, not the Vulgate's (TVTMS's Latin rows put Vulgate Dan 14:1 at Bel 1:2;
+# 6 of the 7 Daniel 14 citations fit Bel at the same number).
+[[map]]
+from = "DAN 13:1-64"
+to = "SUS 1:1-64"
+reason = "Susanna, filed as Daniel 13 (same verse numbers)."
+
+[[map]]
+from = "DAN 14:1-42"
+to = "BEL 1:1-42"
+reason = "Bel and the Dragon, filed as Daniel 14 (same verse numbers)."
+
+[[map]]
+from = "GEN 19:36-11"
+to = "GEN 19:36-38"
+reason = "Jerome, '(Verse 36 and following)': a backwards range in the corpus file name; the chapter ends at 38."
+
+[[map]]
+from = "GEN 41:50-10"
+to = "GEN 41:50-52"
+reason = "Jerome, '(Verse 50 and following)': the two sons Manasseh and Ephraim (41:50-52)."
+
+[[map]]
+from = "ISA 13:18-4"
+to = "ISA 13:18-22"
+reason = "Jerome, '(Verse 18 and following)' on Babylon's fall, which runs on to 14:4; filed on the rest of chapter 13."
+
+[[map]]
+from = "ISA 13:23-27"
+to = "ISA 14:23-27"
+reason = "Jerome's commentary on Isaiah 14 filed as chapter 13."
+
+[[map]]
+from = "ISA 13:31-32"
+to = "ISA 14:31-32"
+reason = "Jerome's commentary on Isaiah 14 filed as chapter 13."
+
+[[map]]
+from = "ISA 19:26"
+to = "drop"
+reason = "'(Verse 25, 26.)': Isaiah 19 has 25 verses; the citation is also filed on 19:25."
+
+[[map]]
+from = "PSA 19:15"
+to = "PSA 19:14"
+reason = "Hebrew numbering."
+
+[[map]]
+from = "PSA 52:10"
+to = "PSA 52:9"
+reason = "Hebrew numbering."
+
+[[map]]
+from = "PSA 53:7"
+to = "PSA 53:6"
+reason = "Hebrew numbering."
+
+[[map]]
+from = "PSA 85:14"
+to = "PSA 85:13"
+reason = "Hebrew numbering."
+
+[[map]]
+from = "PSA 78:73"
+to = "PSA 78:72"
+reason = "Augustine's Latin numbering."
+
+[[map]]
+from = "PSA 79:14"
+to = "PSA 79:13"
+reason = "Augustine's Latin numbering."
+
+[[map]]
+from = "PSA 98:10"
+to = "drop"
+reason = "Latin numbering; the citation is also filed on 98:9, which it quotes."
+
+[[map]]
+from = "ECC 4:17"
+to = "ECC 5:1"
+reason = "Hebrew 4:17 = KJV 5:1 ('keep thy foot')."
+
+[[map]]
+from = "ECC 7:30"
+to = "drop"
+reason = "Latin numbering; the citation is also filed on 7:28-29."
+
+[[map]]
+from = "HAG 1:17"
+to = "HAG 1:7"
+reason = "'(Verse 17, 18.)' quotes Haggai 1:7-8."
+
+[[map]]
+from = "HAG 1:18"
+to = "HAG 1:8"
+reason = "'(Verse 17, 18.)' quotes Haggai 1:7-8."
+
+[[map]]
+from = "HOS 14:10"
+to = "HOS 14:9"
+reason = "Hebrew numbering."
+
+[[map]]
+from = "BAR 3:38"
+to = "drop"
+reason = "Vulgate 3:38; the citation is also filed on 3:36-37."
+
+[[map]]
+from = "MAT 6:38"
+to = "drop"
+reason = "Tertullian on faith and patience: no verse can be identified."
+
+[[map]]
+from = "MRK 16:33"
+to = "MRK 15:33"
+reason = "Darkness 'from the sixth hour' = Mark 15:33."
+
+[[map]]
+from = "3JN 1:15"
+to = "3JN 1:14"
+reason = "Greek 1:15 = the end of KJV 1:14."

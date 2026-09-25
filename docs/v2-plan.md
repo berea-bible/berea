@@ -1,6 +1,6 @@
 # Berea v2 data architecture: plan
 
-Status: phase 2 (sources) done, see §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
+Status: phase 3 (engine, compiler, dist/, compat) done, see §11; phase 2 (sources) in §10. Phase 1 (plan) approved with the §9 recommendations. The decisions in the step-2 brief are fixed: TVTMS Expanded
 for every source, separate deuterocanonical books, one pipeline (raw/ → sources/ → dist/), static site,
 Python stdlib, and the app working throughout via a compatibility data/. This document maps how the
 current code becomes v2, file by file. Open questions are in §9.
@@ -125,7 +125,7 @@ The lexicon and word files are also committed as `sources/`. Measured in phase 2
 | `reroute()` Esther 10:4–16:24 | nothing: identity lands on pivot EST 10:4–16:24, which the ADE re-map (§4) moves |
 | `fix_web_doxology` | nothing: the TVTMS `Greek2` row `Rom.14:24 → Rom.16:25` (test `Rom.16:24=Last`) |
 | `renumber_2esd_7`, `renumber_web_prman` | nothing if TVTMS's 2Es/Man rows cover them; otherwise a `[[map]]` (checked in phase 3) |
-| `remap_hebrew` Neh 7:68 fix, `SPLIT_BEFORE` | the engine uses the Expanded section, which has the detailed Neh rows; Ps 13:6 becomes `[[split]]` in `original/hbo/manifest.toml` |
+| `remap_hebrew` Neh 7:68 fix, `SPLIT_BEFORE` | nothing: the Expanded section's rows reproduce both (phase 3 found the Hebrew identical to today) |
 | DRA `SOURCE_OVERRIDES` / `TARGET_OVERRIDES` / `DRA_DEUTEROCANONICAL_FROM` | re-derived in phase 3 (§8): each old placement is a hand-checked reference; TVTMS decides first, and a disagreement becomes an `[[override]]`/`[[map]]` whose `reason` carries the old comment |
 | `WEB_SKIP={addesth}` | WEB's `ESG` is imported as its own native book (see §9 Q2) |
 | `NT_ONLY_TRANSLATIONS`, per-book `translations` lists | derived: a translation covers exactly the native books in its sources folder |
@@ -145,7 +145,7 @@ Ordinals are fixed forever. New books are appended and never renumbered:
 | 83+ | reserved for later: PS2 3MA 4MA ODA 4ES … |
 
 - ADE (Additions to Esther, KJV style) is a pivot-only code, since USFM has only ESG (Greek Esther).
-- After the TVTMS step, pivot EST 10:4–16:24 → ADE (same ch:v) and pivot BAR 6:v → LJE 1:v. As a result
+- After the TVTMS step, pivot EST 10:4–16:24 → ADE (same ch:v) and pivot BAR 6:v → LJE 6:v (keeping chapter 6, the KJV's own numbering). As a result
   every deuterocanonical text is its own pivot book, and canon filtering works at book level.
 - The display order comes from the canon profiles in `catalog.json`, not from ordinals:
   - protestant: the 66 books
@@ -231,14 +231,13 @@ reason = "..."
 from = "1TH 4:12-17"
 to   = "1TH 4:13-18"             # equal lengths pair 1:1; a single verse on one side = merge/split
 reason = "..."                   # to = "drop" removes the citation/verse (fathers only)
-
-[[split]]                        # word sources only: where a native verse divides between pivots
-ref = "PSA 13:6"
-before = "H7891"                 # default: after the atnach (Hebrew), at the midpoint otherwise
 ```
 
-`[[split]]` and `to = "drop"` are the two additions to the brief's format. Both are needed to carry over
-today's `SPLIT_BEFORE` and the 5 dropped fathers refs.
+`to = "drop"` is the one addition to the brief's format, needed for the 5 dropped fathers refs. Also
+supported: `recension = ["TOB", ...]` (books whose text isn't linked; absent reason "recension"), and a
+fathers `[[map]]` whose `from` is exactly a cited ref string, which catches refs that aren't valid ranges.
+The `[[split]]` list planned here turned out not to be needed: the atnach split reproduces today's
+Hebrew exactly, including Ps 13:6.
 
 ## 6. dist/ (runtime layer)
 
@@ -377,3 +376,90 @@ Source-format notes found in phase 2:
 - TAGNT numbers words within the NRSV verse, so under NA numbering (Mark 12:14–15) word numbers repeat.
   Each word row keeps the raw ref in `alt` (e.g. `12.15(12.14)`), which is what rebuilt today's KJV keying
   exactly.
+
+## 11. Phase 3 result: engine, compiler, dist/, compat
+
+`python3 pipeline/build.py` = `import_sources.py` → `compile.py` → `compat.py`. It takes about 18 s, and
+two runs give byte-identical `sources/`, `dist/` and `data/`. `dist/` has 1,750 files (102.5 MB):
+text 21 MB, orig 23 MB, lex 4.4 MB, comm 54 MB. `dist/validation.json` has **0 errors**.
+
+### Engine semantics settled against the data (`pipeline/tvtms.py`)
+
+- **`NotExist` = "no text".** The TVTMS header also asks for text in the previous verse, but the tests
+  don't use it that way: `Psa.9:30=NotExist` must be true for Hebrew Psalm 9, which ends at 21.
+- **`Exist` and `Last` count only verses with text.** WEB's blank placeholders (Rom 16:25, Sirach 20:32)
+  therefore don't count. That is right for Romans (WEB's doxology is detected) and wrong for Sirach,
+  which has an override.
+- **Untested rows (`AllBibles`) are defaults**, used only when no tested tradition passes.
+- **Range SourceRefs are summaries of the per-verse rows**, so they are skipped. Per-part rows (`!a`,
+  `!b`) are kept, and the Hebrew half-verses split at the atnach.
+- **A verse counts as a word-count decision only when a word-count test could change its outcome.**
+- **The Greek maps per word.** Each word's pivot is TAGNT's own KJV reference, which is finer than a
+  verse-level mapping (e.g. NA 1 John 2:14's first clause is KJV 2:13). Every word was checked against
+  the TVTMS verse mapping: 170 words sit on the neighbouring verse, and none further away.
+
+### Corrections (all in manifests, each with a reason)
+
+Every one was decided by comparing with today's hand-verified data and scoring word overlap with the
+KJV text.
+
+| Source | Entries |
+|---|---|
+| KJV | Phil 1:16–17 identity (word-count misfire); Additions to Esther 15 identity (Latin2 tests don't exclude the KJV); Tobit 7 identity (TVTMS's Standard Tobit 7 has 16 verses, this edition 18) |
+| WEB | Phil 1:16–17 identity; Sirach forced to `Eng-KJV` (blank placeholder verses defeat `=Last`); ESG identity; Prayer of Manasseh 1:4–15 maps (WEB splits KJV 1:4; TVTMS has no row); Tobit 7 identity |
+| ASV, DRA, Greek, NASB, ESV | Phil 1:16–17 swapped (Greek order); YLT pinned to identity |
+| NASB, ESV | also 3 John 1:15 → pivot 1:14 |
+| DRA | 30 maps where this 1899 edition divides verses differently from the Vulgate TVTMS models: 1–2 Thess (no TVTMS rows), 1 Macc 1, 2 Macc 15:36–40, the Letter of Jeremiah, Matt 5:4–5, Num 27, Isa 46:11–12, Prayer of Azariah 1:55–56. `recension = TOB, JDT, SIR`. |
+| fathers | Daniel 13 → Susanna and Daniel 14 → Bel with the same verse numbers (checked by content: TVTMS's Latin rows would put Bel one verse later, wrongly for this corpus); the 3 Jerome "and following" ranges; the 19 moves and 5 drops from `FATHERS_REF_FIXES`. Daniel 3:24–30 stays identity (checked: those citations are Hebrew/KJV numbering). |
+
+### Compatibility output vs. today's data/
+
+- 994 of 1,432 files are byte-identical.
+- Of the rest, 361 are fathers body files, which differ only in the order quotes are stored. Compared
+  as sets per verse, citations are identical except for 3 recovered Jerome quotes (Gen 19:36–38,
+  41:50–52, Isa 13:18–22).
+- 16 `original/` files: the 11 recovered Hebrew words, plus JSON key order (TR-only verses such as
+  John 5:4 used to be appended at the end of their chapter).
+- The index differs only in those counts and in Sirach 44 (22 verses: WEB 44:23 joins 44:22, as the
+  KJV has it).
+- Changed translation text, all accepted:
+
+  | Translation | Change | Why |
+  |---|---|---|
+  | DRA | Additions to Esther 15 (16 verses), Baruch 3:34–37, Prayer of Azariah 1:47–50, Rev 13:1 (now with 12:18), Psalm titles of 10/11/51/52/54/60 | TVTMS places them better than today (by KJV overlap) |
+  | DRA | Exod 39:17–18, Judg 21:24, Neh 12:33, Wis 19:12 and 19:20 | the verse covers two KJV verses and now sits on the first |
+  | ASV | Phil 1:16–17 | aligned by content |
+  | WEB | Prayer of Azariah 1:55–56 | printed numbers no longer in the text |
+  | WEB | Sir 44:23 | joins 44:22 |
+
+The app, run on the regenerated data/, passed the step-1 checks on desktop and iPhone (John 1:1, Psalm
+23, Wisdom 1:1, the Romans doxology, lazy loading, extended Strong's) with no console errors.
+
+### Word-count decisions
+
+There are 1,017 in all: ASV 181, KJV 196, WEB 184, DRA 238 and Hebrew 218; YLT and the Greek have none.
+
+- All the English ones keep their verse numbers.
+- The DRA's and the Hebrew's renumberings all match today's hand-verified placements, except DRA Exod
+  39:17–18, where the Vulgate condenses the text and neither placement can be confirmed; TVTMS is kept.
+- The full list is in `dist/validation.json`, and every decision in `dist/versification.txt`.
+
+### Remaining warnings (explained)
+
+- **ASV:** no separate psalm titles, so 116 are "missing".
+- **DRA: 28 psalm titles "missing".** The Vulgate folds them into verse 1, and TVTMS maps that verse to
+  pivot 1 alone.
+- **DRA: 5 missing verses.** Letter of Jeremiah 6:1 (the superscription), 6:6 and 6:41, and 1 Macc 1:34
+  and 1:49 (condensed).
+- **WEB: 8 missing verses** that the source doesn't have (Sirach 11:15–16, 22:10, 26:19; Prayer of
+  Azariah 1:19, 1:45–46, 1:49). They are absent today too.
+- **fathers:** 5 citation links dropped by maps.
+
+### For phase 5
+
+- **Load budget.** Opening John would load `catalog.json` + `text/KJV/JHN.json` +
+  `comm/fathers/idx/JHN.json`: about 203 KB (47 KB gzipped), versus 600 KB (172 KB gzipped) after step 1.
+  The Greek token file for John is 184 KB gzipped, versus 159 KB, because of the translit/editions
+  columns. It loads only with the Greek line or tab; the columns can be split off if that matters.
+- **Canon toggle.** The `catholic` profile excludes 1–2 Esdras and the Prayer of Manasseh, which the app
+  shows today under "Deuterocanonical". Decide whether "on" means `catholic` or a broader list.
